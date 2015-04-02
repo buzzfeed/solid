@@ -1,3 +1,4 @@
 # ignore sass/scss tmp files
 .sass-cache
 *.css.map
+*.css
