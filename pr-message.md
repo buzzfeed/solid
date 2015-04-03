@@ -1,0 +1,1 @@
+Switching Pantry back to Solid for the time being.
