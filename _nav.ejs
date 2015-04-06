@@ -1,0 +1,59 @@
+
+ <nav role='navigation' class='sidebar-nav p2 float-left'>
+  <ul class="sidebar-nav__menu">
+
+    <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
+    <li class="sidebar-nav__menu-item mb3">
+      <h2 class="sidebar-nav__link <%- current.path[0] == 'base' ? 'sidebar-nav__menu-item--current' : '' %>">
+        Base
+      </h2>
+      <ul class="sidebar-nav__submenu sidebar-nav__submenu--base">
+        <!-- find data inside base foler -->
+        <% for(var slug in public.base._data){ %> 
+          <!-- in base folder -->
+          <% var page = public.base %>
+          <!-- grab subnav menu title inside data.json in base folder -->
+          <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
+           <!-- grab subnav menu link inside data.json in base folder -->
+            <a class="sidebar-nav__link" href="/base/<%= slug %>">
+              <%= page._data[slug].title %>
+            </a>
+          </li>
+        <% }; %>
+      </ul>
+    </li>
+
+    <li class="sidebar-nav__menu-item mb3">
+      <h2 class="sidebar-nav__link <%- current.path[0] == 'interface' ? 'sidebar-nav__menu-item--current' : '' %>">
+        Interface
+      </h2>
+      <ul class="sidebar-nav__submenu sidebar-nav__submenu--interface">
+      <% for(var slug in public.interface._data){ %>
+        <% var page = public.interface %>
+        <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
+          <a class="sidebar-nav__link" href="/interface/<%= slug %>">
+            <%= page._data[slug].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ul>
+    </li>
+
+    <li class="sidebar-nav__menu-item mb3">
+      <h2 class="sidebar-nav__link <%- current.path[0] == 'layout' ? 'sidebar-nav__menu-item--current' : '' %>">
+        Layout
+      </h2>
+      <ul class="sidebar-nav__submenu sidebar-nav__submenu--layout">
+      <% for(var slug in public.layout._data){ %>
+        <% var page = public.layout %>
+        <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
+          <a class="sidebar-nav__link" href="/layout/<%= slug %>">
+            <%= page._data[slug].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ul>
+    </li>
+
+  </ul>
+</nav>
