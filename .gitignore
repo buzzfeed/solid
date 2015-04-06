@@ -1,4 +1,9 @@
 # ignore sass/scss tmp files
 .sass-cache
+
+# ignore generated css
 *.css.map
 *.css
+
+# ignore local node modules
+node_modules

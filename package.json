@@ -1,0 +1,21 @@
+{
+  "name": "solid",
+  "version": "1.0.0",
+  "description": "Solid CSS Styling",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buzzfeed/solid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buzzfeed/solid/issues"
+  },
+  "homepage": "https://github.com/buzzfeed/solid",
+  "dependencies": {
+    "harp": "^0.15.2"
+  }
+}
