@@ -1,21 +1,21 @@
 
- <nav role='navigation' class='sidebar-nav p2 float-left'>
-  <ul class="sidebar-nav__menu">
+ <nav role='navigation' class='p2 float-left'>
+  <ul>
 
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
-    <li class="sidebar-nav__menu-item mb3">
-      <h2 class="sidebar-nav__link <%- current.path[0] == 'base' ? 'sidebar-nav__menu-item--current' : '' %>">
+    <li class="mb3">
+      <h2 class="sidebar-nav__link <%- current.path[0] == 'base' ? '' : '' %>">
         Base
       </h2>
-      <ul class="sidebar-nav__submenu sidebar-nav__submenu--base">
+      <ul>
         <!-- find data inside base foler -->
         <% for(var slug in public.base._data){ %> 
           <!-- in base folder -->
           <% var page = public.base %>
           <!-- grab subnav menu title inside data.json in base folder -->
-          <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
+          <li class="<%- current.source == slug ? 'bold' : '' %>">
            <!-- grab subnav menu link inside data.json in base folder -->
-            <a class="sidebar-nav__link" href="/base/<%= slug %>">
+            <a href="/base/<%= slug %>">
               <%= page._data[slug].title %>
             </a>
           </li>
@@ -23,15 +23,15 @@
       </ul>
     </li>
 
-    <li class="sidebar-nav__menu-item mb3">
-      <h2 class="sidebar-nav__link <%- current.path[0] == 'interface' ? 'sidebar-nav__menu-item--current' : '' %>">
+    <li class="mb3">
+      <h2 class=" <%- current.path[0] == 'interface' ? '' : '' %>">
         Interface
       </h2>
-      <ul class="sidebar-nav__submenu sidebar-nav__submenu--interface">
+      <ul class="#">
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
-        <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
-          <a class="sidebar-nav__link" href="/interface/<%= slug %>">
+        <li class=" <%- current.source == slug ? 'bold' : '' %>">
+          <a href="/interface/<%= slug %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -39,15 +39,15 @@
     </ul>
     </li>
 
-    <li class="sidebar-nav__menu-item mb3">
-      <h2 class="sidebar-nav__link <%- current.path[0] == 'layout' ? 'sidebar-nav__menu-item--current' : '' %>">
+    <li class="mb3">
+      <h2 class=" <%- current.path[0] == 'layout' ? '' : '' %>">
         Layout
       </h2>
-      <ul class="sidebar-nav__submenu sidebar-nav__submenu--layout">
+      <ul>
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
-        <li class="sidebar-nav__submenu-item <%- current.source == slug ? 'sidebar-nav__submenu-item--current bold' : '' %>">
-          <a class="sidebar-nav__link" href="/layout/<%= slug %>">
+        <li class=" <%- current.source == slug ? 'bold' : '' %>">
+          <a href="/layout/<%= slug %>">
             <%= page._data[slug].title %>
           </a>
         </li>
