@@ -15,7 +15,7 @@ The harp webserver is used to display and develop the styling locally:
 
 ## Dev
 
-Install node dependencies (including harp ans sass):
+Install node dependencies (including **harp** and **sass**):
 
     npm install
 
