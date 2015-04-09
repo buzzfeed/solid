@@ -1,0 +1,14 @@
+{
+  "buttons": {
+    "title": "Buttons"
+  },
+  "forms": {
+    "title": "Forms"
+  },
+  "messaging": {
+    "title": "Messaging"
+  },
+  "tables": {
+    "title": "Tables"
+  }    
+}
