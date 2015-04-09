@@ -186,6 +186,16 @@ $space-4:   2rem; // 32px
   display: table;
 }
 
+// Rounded Corners and Circles
+
+.rounded{
+  border-radius:3px;
+}
+
+.circle{
+  border-radius:50%;
+}
+
 
 // Basscss Flex Object
 
