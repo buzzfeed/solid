@@ -1,10 +1,10 @@
 
- <nav role='navigation' class='p2 float-left'>
+ <nav class='p2 float-left'>
   <ul>
 
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
     <li class="mb3">
-      <h2 class="sidebar-nav__link <%- current.path[0] == 'base' ? '' : '' %>">
+      <h2 class="<%- current.path[0] == 'base' ? '' : '' %>">
         Base
       </h2>
       <ul>
