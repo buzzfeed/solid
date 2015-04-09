@@ -1,3 +1,5 @@
+// Color Fills
+
 .fill-red{
 	background-color:#e32;
 }
@@ -20,4 +22,22 @@
 
 .fill-gray-darker{
 	background-color:#222;
+}
+
+.fill-white{
+	background-color:#fff;
+}
+
+// Text Colors
+
+*, .text-gray-darker{
+	color:#222;
+}
+
+.text-gray{
+	color:#666;
+}
+
+.text-gray-lighter{
+	color:#999;
 }

@@ -186,7 +186,7 @@ $space-4:   2rem; // 32px
   display: table;
 }
 
-// Rounded Corners and Circles
+// Rounded Corners and Circles and Borders
 
 .rounded{
   border-radius:3px;
@@ -194,6 +194,10 @@ $space-4:   2rem; // 32px
 
 .circle{
   border-radius:50%;
+}
+
+.border{
+  border:1px solid rgba(0,0,0,.3);
 }
 
 
