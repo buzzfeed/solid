@@ -1,38 +1,52 @@
+// Headers
+
 h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1em;
 }
 
 h1, .type-1 {
   font-size: 2.25rem;
-  line-height: 1.1em;
 }
 
 h2, .type-2 {
   font-size: 1.375rem;
-  line-height: 1.1em;
 }
 
 h3, .type-3 {
   font-size: 1.125rem;
-  line-height: 1.1em;
 }
 
 h4, .type-4 {
   font-size: 1rem;
-  line-height: 1.1em;
 }
 
 h5, .type-5 {
   font-size: .75rem;
-  line-height: 1.1em;
 }
 
 h6, .type-6 {
   font-size: .625rem;
-  line-height: 1.1em;
 }
+
+// Body
 
 p {
   font-size: 1rem;
   line-height: 1.375em;
 }
+
+// Typography Emphasis and Styling
+.regular,
+.normal     { font-weight: 400; }
+.semibold   { font-weight: 600; }
+.bold       { font-weight: 700; }
+
+.italic       { font-style: italic; }
+.caps         { text-transform: uppercase; }
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+.nowrap       { white-space: nowrap; }
+.truncate     { white-space: nowrap; text-overflow: ellipsis; }
 
