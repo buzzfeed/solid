@@ -1,59 +1,80 @@
+// Variables
+
+	// Fills
+
+	$fill-red: #e32;
+	$fill-pink: #eb2649;
+	$fill-blue: #07e;
+	$fill-yellow: #fff600;
+	$fill-gray: #eaeaea;
+	$fill-gray-darker: #222;
+	$fill-white: #fff;
+
+	// Type Colors
+
+	$text-gray-lighter: #666;
+	$text-gray-lightest: #999;
+	$text-red: #e32;
+	$text-orange: #f49c1a;
+	$text-green: #6fb824;
+	$text-blue: #07e
+
 // Color Fills
 
-.fill-red{
-	background-color:#e32;
+.fill-red {
+	background-color:$fill-red;
 }
 
-.fill-pink{
-	background-color:#eb2649;
+.fill-pink {
+	background-color:$fill-pink;
 }
 
-.fill-blue{
-	background-color:#07e;
+.fill-blue {
+	background-color:$fill-blue;
 }
 
-.fill-yellow{
-	background-color:#fff600;
+.fill-yellow {
+	background-color:$fill-yellow;
 }
 
-.fill-gray{
-	background-color:#eaeaea;
+.fill-gray {
+	background-color:$fill-gray;
 }
 
-.fill-gray-darker{
-	background-color:#222;
+.fill-gray-darker {
+	background-color:$fill-gray-darker;
 }
 
-.fill-white{
-	background-color:#fff;
+.fill-white {
+	background-color:$fill-white;
 }
 
 // Text Colors
 
-body, .text-gray{
-	color:#333;
+body, .text-gray {
+	color:$text-gray;
 }
 
-.text-gray-lighter{
-	color:#666;
+.text-gray-lighter {
+	color:$text-gray-lighter;
 }
 
-.text-gray-lightest{
-	color:#999;
+.text-gray-lightest {
+	color:$text-gray-lightest;
 }
 
-.text-red{
-	color:#e32;
+.text-red {
+	color:$text-red;
 }
 
-.text-orange{
-	color:#f49c1a;
+.text-orange {
+	color:$text-orange;
 }
 
-.text-green{
-	color:#6fb824;
+.text-green {
+	color:$text-green;
 }
 
-a, .text-blue{
-	color:#07e
+a, .text-blue {
+	color:$text-blue;
 }
