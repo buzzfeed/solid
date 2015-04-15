@@ -2,19 +2,45 @@ input,textarea,select{
 	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 }
 
-.text-input{
-	padding: .75rem 1rem;
 
+.text-input{
+	background: #fff;
+	font-size: 1.125rem;
+    line-height: 1.1em;
+	padding: .75rem 1rem;
+	border: 1px solid #aaa;
+}
+
+.input-warning{
+	border: 1px solid #f49c1a;
 }
 
 .form-label{
 	display: block;
 	font-weight: 600;
 	margin-bottom: $space-1; 
-
 }
 
 .form-label-optional{
 	color: #999;
 	font-weight: normal;
 }
+
+.form-label-required{
+	color: #e32;
+	font-weight: normal;
+}
+
+.form-helper {
+	color: #999;
+	display: block;
+	margin-top: $space-1; 
+}
+
+.warning{
+	color: #f49c1a;
+	
+}
+
+
+
