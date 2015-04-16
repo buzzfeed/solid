@@ -1,18 +1,38 @@
 input,textarea,select{
 	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-}
-
-
-.text-input{
-	background: #fff;
-	font-size: 1.125rem;
-    line-height: 1.1em;
+	background: $fill-white;
+	font-size: $type-3;
+    line-height: $line-height;
 	padding: .75rem 1rem;
 	border: 1px solid #aaa;
 }
 
+// .text-input{
+// 	background: $fill-white;
+// 	font-size: $type-3;
+//     line-height: $line-height;
+// 	padding: .75rem 1rem;
+// 	border: 1px solid #aaa;
+// }
+
+select{
+	-webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    padding: .8rem 1rem; //is .8rem ok? this makes it exactly the same height as 1 of the inputs
+}
+
+
+
 .input-warning{
-	border: 1px solid #f49c1a;
+	border: 1px solid $text-orange;
+}
+
+.input-success{
+	border: 1px solid $text-green;
+}
+
+.input-error{
+	border: 1px solid $text-red;
 }
 
 .form-label{
@@ -22,24 +42,31 @@ input,textarea,select{
 }
 
 .form-label-optional{
-	color: #999;
+	color: $text-gray-lightest;
 	font-weight: normal;
 }
 
 .form-label-required{
-	color: #e32;
+	color: $text-red;
 	font-weight: normal;
 }
 
 .form-helper {
-	color: #999;
+	color: $text-gray-lightest;
 	display: block;
 	margin-top: $space-1; 
 }
 
 .warning{
-	color: #f49c1a;
-	
+	color: $text-orange;
+}
+
+.success{
+	color: $text-green;
+}
+
+.error{
+	color: $text-red;	
 }
 
 
