@@ -1,5 +1,5 @@
 input,textarea,select{
-	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+	font-family: inherit;
 	background: $fill-white;
 	font-size: $type-3;
     line-height: $line-height;
@@ -20,8 +20,6 @@ select{
     -webkit-border-radius: 0px;
     padding: .8rem 1rem; //is .8rem ok? this makes it exactly the same height as 1 of the inputs
 }
-
-
 
 .input-warning{
 	border: 1px solid $text-orange;
