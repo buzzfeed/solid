@@ -2,6 +2,9 @@
   "typography": {
     "title": "Typography"
   },
+  "typography_alternate": {
+    "title": "Typography Alternate"
+  },
   "colors": {
     "title": "Colors"
   }  

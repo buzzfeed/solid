@@ -60,16 +60,3 @@ p {
 .text-justify { text-align: justify; }
 .nowrap       { white-space: nowrap; }
 .truncate     { white-space: nowrap; text-overflow: ellipsis; }
-
-code {
-  width: 600px; // Remove this when grid comes in
-  font-family: Monaco, monospace;
-  -webkit-font-smoothing: antialiased;
-  
-  &.hljs {
-    background-color: #f0f0f0; // Override highlight.js background color
-    padding: $space-2 $space-1;
-    font-size: $type-5;
-    line-height: 1.6; // Not using the line-height variable because the typeface is Monaco, felt very tight at 1.1
-  }
-}
