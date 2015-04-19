@@ -278,3 +278,18 @@ $space-4:   2rem; // 32px
       -ms-flex: none;
           flex: none;
 }
+
+
+// Code Snipppet Syntax Highlighting https://highlightjs.org/
+
+code {
+  font-family: Monaco, monospace;
+  -webkit-font-smoothing: antialiased;
+
+  &.hljs { // Override highlight.js theme properties
+    background-color: $fill-gray; 
+    padding: $space-2 $space-1;
+    font-size: $type-5;
+    line-height: 1.5; // $line-height variable is too tight for this typeface
+  }
+}
