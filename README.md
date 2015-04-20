@@ -26,3 +26,23 @@ Run the harp server locally:
 Open the site in your web browser:
 
 <http://localhost:9000/>
+
+
+## Code Snippets
+
+To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside <%= ' ' %> 
+
+***Examples***
+
+To add documentation on an h2 or a p with a class of .type-2 in html:
+<pre> 
+    <code class="html"> <%= '<h2> Yale Will Offer Its First Online Degree </h2>' %> <br /> <%= '<p class="type-2"> Yale Will Offer Its First Online Degree </p>' %> 
+    </code>
+</pre>
+
+To add <code> documentation on the $type-2 variable in css:
+<pre> 
+    <code class="css"> <%= '.class { font-size: $type-2; }' %> </code>
+</pre>
+
+
