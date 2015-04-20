@@ -32,14 +32,19 @@ Open the site in your web browser:
 
 To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside <%= ' ' %> 
 
-**To add documentation to an h2 in html:**
+** To add documentation to an h2 tag in html: **
+```
+<pre>
+    <code> <%= '<h2> Sentence Here </h2>' %> </code>
+</pre>
+```
 
-&lt;pre&gt;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;class=&quot;html&quot;&gt;&nbsp;&lt;%=&nbsp;'&lt;h2&gt;&nbsp;Yale&nbsp;Will&nbsp;Offer&nbsp;Its&nbsp;First&nbsp;Online&nbsp;Degree&nbsp;&lt;/h2&gt;'&nbsp;%&gt;'&nbsp;&lt;/code&gt;
-<br>&lt;/pre&gt;
+** To add documentation to an h2 tag in html, and a p tag in html with class .type-1 **
+
+```<pre>
+    <code> <%= '<h2> Sentence Here </h2>' %> <br /> <%= '<p class="type-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+</pre>
+```
+
 
 **To add documentation to the $type-2 variable in css:**
-
-&lt;pre&gt;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;class=&quot;css&quot;&gt;&nbsp;&lt;%=&nbsp;'.class&nbsp;{&nbsp;font-size:&nbsp;$type-2;&nbsp;}'&nbsp;%&gt;&nbsp;&lt;/code&gt;
-<br>&lt;/pre&gt;
