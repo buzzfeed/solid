@@ -12,6 +12,7 @@
 
 	// Type Colors
 
+	$text-white: #fff;
 	$text-gray: #333;
 	$text-gray-lighter: #666;
 	$text-gray-lightest: #999;
@@ -54,6 +55,10 @@
 
 body, .text-gray {
 	color:$text-gray;
+}
+
+.text-white {
+	color:$text-white;
 }
 
 .text-gray-lighter {
