@@ -30,7 +30,12 @@ Open the site in your web browser:
 
 ## Code Snippets
 
-To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside `<%= ' ' %>`
+To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside 
+```
+<pre>
+    <code><%= ' ' %></code>
+</pre>
+```
 
 **Examples**
 
@@ -61,10 +66,11 @@ To add documentation to the `$type-2` variable in css:
 ```
 
 
-To add documentation to an `<h2>` in html, and a `<p>` in html with class `.type-1`
+To add documentation to an `<h2>` in html, a `<p>` in html with class `.type-1`, and the `$type-1` variable in css all in the same `<pre>` tag: 
 
 ```
 <pre>
-    <code> <%= '<h2> Sentence Here </h2>' %> <br /> <%= '<p class="type-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+    <code class="html"> <%= '<h1> Yale Will Offer Its First Online Degree </h1>' %> <br /> <%= '<p class="type-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+    <code class="css"> <%= ".class { font-size: $type-1; }" %> </code>
 </pre>
 ```
