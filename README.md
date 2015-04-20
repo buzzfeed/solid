@@ -37,8 +37,7 @@ To add code snippets/highlighted syntax to pages in solid, wrap your html/css in
 To add documentation to an h2 or a p with a class of .type-2 in html:
 
 &lt;pre&gt;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;class=&quot;html&quot;&gt;&nbsp;&lt;%=&nbsp;'&lt;h2&gt;&nbsp;Yale&nbsp;Will&nbsp;Offer&nbsp;Its&nbsp;First&nbsp;Online&nbsp;Degree&nbsp;&lt;/h2&gt;'&nbsp;%&gt;&nbsp;&lt;br&nbsp;/&gt;&nbsp;&lt;%=&nbsp;'&lt;p&nbsp;class=&quot;type-2&quot;&gt;&nbsp;Yale&nbsp;Will&nbsp;Offer&nbsp;Its&nbsp;First&nbsp;Online&nbsp;Degree&nbsp;&lt;/p&gt;'&nbsp;%&gt;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/code&gt;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;class=&quot;html&quot;&gt;&nbsp;&lt;%=&nbsp;'&lt;h2&gt;&nbsp;Yale&nbsp;Will&nbsp;Offer&nbsp;Its&nbsp;First&nbsp;Online&nbsp;Degree&nbsp;&lt;/h2&gt;'&nbsp;%&gt;'&nbsp;&lt;/code&gt;
 <br>&lt;/pre&gt;
 
 To add documentation to the $type-2 variable in css:
