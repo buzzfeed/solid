@@ -7,23 +7,28 @@
     <label class="block mb1 type-4">.text-input</label>
     <input type="text" class="text-input">
   </div>
+
    <div class="mb3">
     <label class="block mb1 type-4">.text-input with placeholder</label>
     <input type="text" placeholder="Type here" class="text-input">
   </div>
+
    <div class="mb3">
     <label class="block mb1 type-4">textarea</label>
-   <textarea></textarea>
+   <textarea class="textarea"></textarea>
   </div>
+
    <div class="mb3">
     <label class="block mb1 type-4">select</label>
     <select class="select">
       <option value="choose">Choose a personality</option>
       <option value="amazing">Amazing</option>
       <option value="boring">Boring</option>
-      <option value="fun">Fun</option>
+      <option value="fun">Fun</option> 
     </select>
+
   </div>
+
   <div class="mb3">
     <label class="block mb1 type-4">radio buttons</label>
     <input type="radio" id="option_1" value="option_1" name="options">
@@ -31,6 +36,7 @@
     <input type="radio" id="option_2" value="option_2" name="options">
     <label for="option_2">Option 2</label>
   </div>
+
   <div class="mb3">
     <label class="block mb1 type-4">checkbox</label>
     <input type="checkbox" id="option_1" value="option_1" name="options">
@@ -38,12 +44,13 @@
     <input type="checkbox" id="option_2" value="option_2" name="options">
     <label for="option_2">Option 2</label>
   </div>
+
    <div class="mb3">
     <label class="block mb1 type-4">date</label>
     <label class="form-label">Date of birth</label> 
-    <input type="date">
-    
-  
+    <input type="text" placeholder="MM" class="date">
+    <input type="text" placeholder="DD" class="date">
+    <input type="text" placeholder="YYYY" class="date date--year">
   </div>
 </section>
 
@@ -55,45 +62,52 @@
     <label class="form-label">Your name</label>
     <input type="text" class="text-input">
   </div>
-    <div class="mb3">
+
+  <div class="mb3">
     <label class="block mb1 type-4">.form-label-required</label>
     <label class="form-label">Your name <span class="form-label-required">*</span></label>
     <input type="text" class="text-input">
   </div>
+
   <div class="mb3">
     <label class="block mb1 type-4">.form-label-optional</label>
     <label class="form-label">Link <span class="form-label-optional">(optional)</span></label>
     <input type="text" class="text-input">
   </div>
-   <div class="mb3">
+  
+  <div class="mb3">
     <label class="block mb1 type-4">.form-helper</label>
     <label class="form-label">Your username</label>
     <input type="text" class="text-input">
     <label class="form-helper"> BTW, your username cannot be changed</label>
   </div>
-   <div class="mb3">
-    <label class="block mb1 type-4">.form-warning (WHAT DO I CALL THIS?)</label>
-    <label class="form-label warning">Your name</label>
-    <input type="text" class="text-input input-warning">
-    <label class="form-helper warning">Caps lock is on!</label>
+
+   <div class="mb3 form-warning">
+    <label class="block mb1 type-4">.form-warning</label>
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <label class="form-feedback">Caps lock is on!</label>
   </div>
-   <div class="mb3">
-    <label class="block mb1 type-4">.form-success (WHAT DO I CALL THIS?)</label>
-    <label class="form-label success">Your name</label>
-    <input type="text" class="text-input input-success">
-    <label class="form-helper success">Looks good!</label>
+
+   <div class="mb3 form-success">
+    <label class="block mb1 type-4">.form-success</label>
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <label class="form-feedback">Looks good!</label>
   </div>
-  <div class="mb3">
-    <label class="block mb1 type-4">.form-error (WHAT DO I CALL THIS?)</label>
-    <label class="form-label error">Your name</label>
-    <input type="text" class="text-input input-error">
-    <label class="form-helper error">This is an error message about your password.</label>
+
+  <div class="mb3 form-error">
+    <label class="block mb1 type-4">.form-error</label>
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <label class="form-feedback">This is an error message about your password.</label>
   </div>
-    <div class="mb3">
-    <label class="block mb1 type-4">.form-error .helper (WHAT DO I CALL THIS?) <br>You can use these messages together. If a field has helper text, the error (or success/warning) message appears above it.</label>
-    <label class="form-label error">Your name</label>
-    <input type="text" class="text-input input-error">
-    <label class="form-helper error">This is an error message about your password.</label>
+
+    <div class="mb3 form-error">
+    <label class="block mb1 type-4">.form-error .helper <br>You can use these messages together. If a field has helper text, the error (or success/warning) message appears above it.</label>
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <label class="form-feedback">This is an error message about your password.</label>
     <label class="form-helper"> BTW, your username cannot be changed</label>
   </div>
 
