@@ -32,7 +32,7 @@ Open the site in your web browser:
 
 To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside &lt;%= ' ' %&gt;
 
-***Examples***
+**Examples**
 
 To add documentation to an h2 or a p with a class of .type-2 in html:
 
