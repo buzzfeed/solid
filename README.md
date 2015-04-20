@@ -33,9 +33,10 @@ Open the site in your web browser:
 To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside 
 ```
 <pre>
-    <code><%= ' ' %></code>
+    <code><%= 'markup here' %></code>
 </pre>
 ```
+
 
 **Examples**
 
