@@ -30,19 +30,48 @@ Open the site in your web browser:
 
 ## Code Snippets
 
-To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside <%= ' ' %> 
-
-***Examples***
-
-To add documentation on an h2 or a p with a class of .type-2 in html:
-<pre> 
-    <code class="html"> <%= '<h2> Yale Will Offer Its First Online Degree </h2>' %> <br /> <%= '<p class="type-2"> Yale Will Offer Its First Online Degree </p>' %> 
-    </code>
+To add code snippets/highlighted syntax to pages in solid, wrap your markup inside <%= ' ' %>
+```
+<pre>
+    <code><%= 'markup here' %></code>
 </pre>
+```
 
-To add <code> documentation on the $type-2 variable in css:
-<pre> 
-    <code class="css"> <%= '.class { font-size: $type-2; }' %> </code>
+
+**Examples**
+
+To add documentation to an `<h2>` in html
+
+```
+<pre>
+    <code> <%= '<h2> Sentence Here </h2>' %> </code>
 </pre>
+```
 
 
+To add documentation to a `<p>` in html with class `.type-1`
+
+```
+<pre>
+    <code> <%= '<p class="type-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+</pre>
+```
+
+
+To add documentation to the `$type-2` variable in css:
+
+```
+<pre>
+    <code class="css"> <%= ".class { font-size: $type-1; }" %> </code>
+</pre>
+```
+
+
+To add documentation to an `<h2>` in html, a `<p>` in html with class `.type-1`, and the `$type-1` variable in css all in the same `<pre>` tag: 
+
+```
+<pre>
+    <code class="html"> <%= '<h1> Yale Will Offer Its First Online Degree </h1>' %> <br /> <%= '<p class="type-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+    <code class="css"> <%= ".class { font-size: $type-1; }" %> </code>
+</pre>
+```
