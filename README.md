@@ -30,7 +30,7 @@ Open the site in your web browser:
 
 ## Code Snippets
 
-To add code snippets/highlighted syntax to pages in solid, wrap your markup inside <%= ' ' %>: 
+To add code snippets/highlighted syntax to pages in solid, wrap your markup inside <%= ' ' %>
 ```
 <pre>
     <code><%= 'markup here' %></code>
