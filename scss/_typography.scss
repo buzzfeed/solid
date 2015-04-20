@@ -2,9 +2,9 @@
 $type-1:  2.25rem;   //  8px
 $type-2:  1.375rem;  // 16px
 $type-3:  1.125rem;  // 16px
-$type-4:   1rem;     // 16px
-$type-5:   .75rem;   // 12px
-$type-6:   .625rem;  // 10px
+$type-4:  1rem;      // 16px
+$type-5:  0.875rem;   // 12px
+$type-6:  0.625rem;  // 10px
 
 $line-height: 1.1;   // 1.1x the font-size
 
@@ -32,11 +32,11 @@ h4, .type-4 {
 }
 
 h5, .type-5 {
-  font-size: .75rem;
+  font-size: 0.875rem;
 }
 
 h6, .type-6 {
-  font-size: .625rem;
+  font-size: 0.625rem;
 }
 
 // Body
@@ -60,4 +60,3 @@ p {
 .text-justify { text-align: justify; }
 .nowrap       { white-space: nowrap; }
 .truncate     { white-space: nowrap; text-overflow: ellipsis; }
-

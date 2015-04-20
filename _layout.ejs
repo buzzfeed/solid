@@ -3,10 +3,13 @@
   <head>
     <title>Solid - Ingredients for Waffles and the Web</title>
     <link rel="stylesheet" type="text/css" href="/scss/base.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
   </head>
   <body style="height:100%;">
     <%- partial("_header") %>
     <%- partial("_nav") %>
     <%- yield %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>   
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
