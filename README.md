@@ -30,19 +30,22 @@ Open the site in your web browser:
 
 ## Code Snippets
 
-To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside <%= ' ' %> 
+To add code snippets/highlighted syntax to pages in solid, wrap your html/css inside &lt;%= ' ' %&gt;
 
 ***Examples***
 
 To add documentation to an h2 or a p with a class of .type-2 in html:
-<pre> 
-    <code class="html"> <%= '<h2> Yale Will Offer Its First Online Degree </h2>' %> <br /> <%= '<p class="type-2"> Yale Will Offer Its First Online Degree </p>' %> 
-    </code>
-</pre>
 
-To add <code> documentation to the $type-2 variable in css:
-<pre> 
-    <code class="css"> <%= '.class { font-size: $type-2; }' %> </code>
-</pre>
+&lt;pre&gt; 
+<br>    &lt;code class=&quot;html&quot;&gt; &lt;%= '&lt;h2&gt; Yale Will Offer Its First Online Degree &lt;/h2&gt;' %&gt; &lt;br /&gt; &lt;%= '&lt;p class=&quot;type-2&quot;&gt; Yale Will Offer Its First Online Degree &lt;/p&gt;' %&gt; 
+<br>    &lt;/code&gt;
+<br>&lt;/pre&gt;
+<br>
+
+To add documentation to the $type-2 variable in css:
+
+<br>&lt;pre&gt; 
+<br>    &lt;code class=&quot;css&quot;&gt; &lt;%= '.class { font-size: $type-2; }' %&gt; &lt;/code&gt;
+<br>&lt;/pre&gt;
 
 
