@@ -6,10 +6,18 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
   </head>
   <body style="height:100%;">
-    <%- partial("_header") %>
-    <%- partial("_nav") %>
-    <%- yield %>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>   
+    <div class="page-container">
+      <%- partial("_header") %>
+
+      <div class="row">
+        <%- partial("_nav") %>
+
+        <div class="main-content col-9 float-left">
+          <%- yield %>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
