@@ -22,7 +22,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .overflow-scroll { overflow: scroll; }
 
 .clearfix:before,
-.clearfix:after {
+%clearfix:before,
+.clearfix:after,
+%clearfix:after {
   content: " ";
   display: table;
 }
@@ -278,23 +280,4 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-}
-
-
-// Code Snipppet Syntax Highlighting https://highlightjs.org/
-
-code {
-  font-family: Monaco, monospace;
-  -webkit-font-smoothing: antialiased;
-
-  &.hljs { // Override highlight.js theme properties
-    background-color: $fill-gray; 
-    padding: $space-2 $space-1;
-    font-size: $type-5;
-    line-height: 1.5; // $line-height variable is too tight for this typeface
-  }
-}
-
-pre{
-  line-height:0;
 }

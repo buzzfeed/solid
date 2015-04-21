@@ -1,0 +1,74 @@
+// Code Snipppet Syntax Highlighting https://highlightjs.org/
+
+code {
+  font-family: Monaco, monospace;
+  -webkit-font-smoothing: antialiased;
+
+  &.hljs { // Override highlight.js theme properties
+    background-color: $fill-gray; 
+    padding: $space-2 $space-1;
+    font-size: $type-5;
+    line-height: 1.5; // $line-height variable is too tight for this typeface
+  }
+}
+
+pre{
+  line-height:0;
+}
+
+// Grid
+
+// styles for grid page in styleguide
+// should be moved in with presentational
+// styles for the styleguide
+.page-container {
+  max-width: 1020px;
+}
+
+.grid-container {
+  .row,
+  .row--no-gutter {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    *[class^="col-"] {
+      border: 1px solid #ababab;
+      border-radius: 5px;
+      min-height: 30px;
+      box-sizing: border-box;
+    }
+
+  }
+}
+
+// displays labels explaining grid functions
+@mixin grid-display-class($text) {
+  content: "#{$text}";
+  position: relative;
+  top: -15px;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+// add grid explanation classes
+@each $column-count in $grid-columns {
+  @for $i from 1 through $column-count {
+    .grid-container .col-#{$i}:before {
+      @include grid-display-class(".col-#{$i}");
+    }
+  }
+}
+
+// add push explanation classes
+@each $column-count in $grid-columns {
+  @for $i from 1 through $column-count {
+    .grid-container .push-#{$i}:after {
+      @include grid-display-class(".push-#{$i}");
+    }
+  }
+}
+
+// add centered explanation class
+.grid-container .col--centered:after {
+  @include grid-display-class(".col--centered");
+}
