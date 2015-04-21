@@ -1,11 +1,14 @@
 <h2 class="bold mb3">Colors</h2>
 
-<section class="mb3">
+<section class="mb4">
 	<h3 class="mb2 bold">Fill Colors</h3>
-
+	
 	<div class="fill-red text-white p2">.fill-red</div>
 	<div class="fill-blue text-white p2">.fill-blue</div>
 	<div class="fill-yellow p2">.fill-yellow</div>
+	<div class="fill-yellow-light p2">.fill-yellow-light</div>
+	<div class="fill-orange p2">.fill-orange</div>
+	<div class="fill-green p2">.fill-green</div>
 	<div class="fill-pink text-white p2">.fill-pink</div>
 	<div class="fill-gray p2">.fill-gray</div>
 	<div class="fill-gray-darker text-white p2">.fill-gray-darker</div>
@@ -13,48 +16,69 @@
 </section>
 
 <section>
-	<h3 class="mb2 bold">Text Colors</h3>
+	<h3 class="mb3 bold">Text Colors</h3>
 
-	<div>
-		<p class="text-gray type-2">This is the darkest gray and default text color.</p>
+	<div class="mb3">
+		
+		<p class="text-gray type-2 mb1">This is the darkest gray and default text color.</p>
+		<label class="block type-5 text-gray-lightest mb1">#333</label>
 		<pre>
 		    <code class="html"> <%= '<p class="text-gray type-2">This is the darkest gray and default text color.</p>' %> </code>
+		    <code class="css"> <%= ".class { color: $text-gray; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-gray-lighter type-2">This is a little lighter gray.</p>
+
+	<div class="mb3">
+		<p class="text-gray-lighter type-2 mb1">This is a little lighter gray.</p>
+		<label class="block type-5 text-gray-lightest mb1">#666</label>
 		<pre>
 	    	<code class="html"> <%= '<p class="text-gray-lighter type-2">This is a little lighter gray.</p>' %> </code>
+			<code class="css"> <%= ".class { color: $text-gray-lighter; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-gray-lightest type-2">This is the lightest gray text we use. Go no lighter!</p>
+
+	<div class="mb3">
+		<p class="text-gray-lightest type-2 mb1">This is the lightest gray text we use. Go no lighter!</p>
+		<label class="block type-5 text-gray-lightest mb1">#999</label>
 		<pre>
 	    	<code class="html"> <%= '<p class="text-gray-lightest type-2">This is the lightest gray text we use. Go no lighter!</p>' %> </code>
+	    	<code class="css"> <%= ".class { color: $text-gray-lightest; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-red type-2">This is red text for both brand text/headlines and error messaging. Be careful when mixing!</p>
+
+	<div class="mb3">
+		<p class="text-red type-2 mb1">This is red text for both brand text/headlines and error messaging. Be careful when mixing!</p>
+		<label class="block type-5 text-gray-lightest mb1">#e32</label>
 		<pre>
 	    	<code class="html"> <%= '<p class="text-red type-2">This is red text for both brand text/headlines and error messaging. Be careful when mixing!</p>' %> </code>
+	    	<code class="css"> <%= ".class { color: $text-red; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-orange type-2">This is orange text for warning messaging.</p>
+
+	<div class="mb3">
+		<p class="text-orange type-2 mb1">This is orange text for warning messaging.</p>
+		<label class="block type-5 text-gray-lightest mb1">#f49c1a</label>
 		<pre>
 		    <code class="html"> <%= '<p class="text-orange type-2">This is orange text for warning messaging.</p>' %> </code>
+		    <code class="css"> <%= ".class { color: $text-orange; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-green type-2">This is green text for success messaging.</p>
+
+	<div class="mb3">
+		<p class="text-green type-2 mb1">This is green text for success messaging.</p>
+		<label class="block type-5 text-gray-lightest mb1">#6fb824</label>
 		<pre>
 		    <code class="html"> <%= '<p class="text-green type-2">This is green text for success messaging.</p>' %> </code>
+		    <code class="css"> <%= ".class { color: $text-green; }" %> </code>
 		</pre>
 	</div>
-	<div>
-		<p class="text-blue type-2">This is our standard link color. It's on links by default.</p>
+
+	<div class="mb3">
+		<p class="text-blue type-2 mb1">This is our standard link color. It's on links by default.</p>
+		<label class="block type-5 text-gray-lightest mb1">#07e</label>
 		<pre>
 		    <code class="html"> <%= '<p class="text-blue type-2">This is our standard link color. It\'s on links by default.</p>' %> </code>
+		    <code class="css"> <%= ".class { color: $text-blue; }" %> </code>
 		</pre>
 	</div>
 
