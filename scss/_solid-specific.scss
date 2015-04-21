@@ -1,16 +1,22 @@
-//should be in a base mixins file
-%clearfix {
-  &:before,
-  &:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  &:after {
-    clear: both;
+// Code Snipppet Syntax Highlighting https://highlightjs.org/
+
+code {
+  font-family: Monaco, monospace;
+  -webkit-font-smoothing: antialiased;
+
+  &.hljs { // Override highlight.js theme properties
+    background-color: $fill-gray; 
+    padding: $space-2 $space-1;
+    font-size: $type-5;
+    line-height: 1.5; // $line-height variable is too tight for this typeface
   }
 }
+
+pre{
+  line-height:0;
+}
+
+// Grid
 
 // styles for grid page in styleguide
 // should be moved in with presentational
