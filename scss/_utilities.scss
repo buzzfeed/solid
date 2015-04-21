@@ -31,10 +31,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .float-left  { float: left; }
 .float-right { float: right; }
 
-.fit { max-width: 100%; }
-
 .half-width { width: 50%; }
 .full-width { width: 100%; }
+.fit { max-width: 100%; }
 
 // White Space
 
@@ -122,6 +121,17 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .px4 { padding-left:   $space-4; padding-right: $space-4;}
 .py4 { padding-top:    $space-4; padding-bottom: $space-4;}
 
+//Positioning
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.z1 { z-index: 100; }
+.z2 { z-index: 200; }
+.z3 { z-index: 300; }
+.z4 { z-index: 400; }
+
 .t0 { top:    0; }
 .r0 { right:  0; }
 .b0 { bottom: 0; }
@@ -146,17 +156,6 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .r4 { right:  $space-4; }
 .b4 { bottom: $space-4; }
 .l4 { left:   $space-4; }
-
-// Positioning
-
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed    { position: fixed; }
-
-.z1 { z-index: 100; }
-.z2 { z-index: 200; }
-.z3 { z-index: 300; }
-.z4 { z-index: 400; }
 
 .absolute-center {
   top: 0;
