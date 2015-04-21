@@ -1,0 +1,12 @@
+//
+// Grid Config
+// --------------------------------------------------
+
+// space between grid items
+$default-spacing: 1.5rem !default;
+
+$grid: (
+  columns: 12,
+  gutter: $default-spacing,
+  width: 100%
+) !default;
