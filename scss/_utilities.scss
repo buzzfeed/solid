@@ -14,6 +14,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .block        { display: block; }
 .inline-block { display: inline-block; }
 
+.show{ display: initial; }
+.hide{ display: none; }
+
 .overflow-hidden { overflow: hidden; }
 .overflow-auto   { overflow: auto; }
 .overflow-scroll { overflow: scroll; }
