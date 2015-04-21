@@ -36,17 +36,6 @@
   width: 5rem;
 }
 
-.input-warning{
-	border: 1px solid $text-orange;
-}
-
-.input-success{
-	border: 1px solid $text-green;
-}
-
-.input-error{
-	border: 1px solid $text-red;
-}
 
 .form-label{
 	display: block;
@@ -83,7 +72,7 @@
   }
 
 	.text-input	{
-		border-color: $text-orange;	
+		border-color: $fill-orange;	
 	}
 }
 
@@ -94,7 +83,7 @@
   }
 
   .text-input {
-    border-color: $text-green; 
+    border-color: $fill-green; 
   }
 }
 
@@ -105,6 +94,6 @@
   }
 
   .text-input {
-    border-color: $text-red; 
+    border-color: $fill-red; 
   }
 }
