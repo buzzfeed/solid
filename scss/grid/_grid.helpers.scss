@@ -1,0 +1,113 @@
+//
+// Grid Helpers
+// --------------------------------------------------
+
+$grid-columns: map-get($grid, columns);
+$grid-gutter: map-get($grid, gutter);
+
+%grid-parent {
+  @extend %clearfix;
+  margin-left: $grid-gutter * -1;
+}
+
+%grid-parent--no-gutter {
+  @extend %clearfix;
+}
+
+%grid-child {
+  float: left;
+  margin-left: $grid-gutter;
+}
+
+%grid-child--centered {
+  margin: 0 auto;
+  float: none;
+  position: relative;
+  right: - ($grid-gutter/2);
+}
+
+%grid-child--no-gutter {
+  float: left;
+}
+
+%grid-child--no-gutter--centered {
+  float: none;
+  margin: 0 auto;
+}
+
+%grid-child--padding-inside {
+  padding: 0 ($grid-gutter/2);
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+//
+// Grid Class Construction
+// --------------------------------------------------
+
+// Return the width of a column
+@function col-width($span, $total-columns: $grid-columns) {
+  $grid-width: map-get($grid, width);
+  @return ($grid-width / $total-columns * $span);
+}
+
+@mixin generate-grid-class($column-span, $total-columns, $gutter-outside){
+  >.col-#{$column-span} {
+    $col-width: col-width($column-span);
+
+    @if ($gutter-outside){
+      width: calc(#{$col-width} - #{$grid-gutter});
+
+    } @else {
+      width: #{$col-width};
+      @extend %grid-child--padding-inside;
+    }
+  }
+}
+
+@mixin generate-grid-classes($total-columns, $gutter-outside) {
+  @for $i from 1 through $total-columns {
+    @include generate-grid-class($i, $total-columns, $gutter-outside);
+  }
+}
+
+@mixin generate-push-class($column-span, $total-columns, $gutter-outside){
+  >.push-#{$column-span} {
+    $col-width: col-width($column-span);
+
+    @if ($gutter-outside){
+      margin-left: calc(#{$col-width} + #{$grid-gutter});
+    } @else {
+      margin-left: #{$col-width};
+    }
+  }
+}
+
+@mixin generate-push-classes($total-columns, $gutter-outside) {
+  @for $i from 1 through $total-columns {
+    @include generate-push-class($i, $total-columns, $gutter-outside);
+  } 
+}
+
+
+@mixin generate-centered-class($gutter-outside) {
+  >.col--centered {
+    @if ($gutter-outside){
+      @extend %grid-child--centered;
+    } @else {
+      @extend %grid-child--no-gutter--centered;
+    }
+  }
+}
+
+@mixin generate-grid($total-columns, $gutter-outside: true) {
+    @include generate-grid-classes($total-columns, $gutter-outside);
+    @include generate-push-classes($total-columns, $gutter-outside);
+    @include generate-centered-class($gutter-outside);
+}
