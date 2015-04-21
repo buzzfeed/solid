@@ -14,6 +14,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .block        { display: block; }
 .inline-block { display: inline-block; }
 
+.show{ display: initial; }
+.hide{ display: none; }
+
 .overflow-hidden { overflow: hidden; }
 .overflow-auto   { overflow: auto; }
 .overflow-scroll { overflow: scroll; }
@@ -28,10 +31,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .float-left  { float: left; }
 .float-right { float: right; }
 
-.fit { max-width: 100%; }
-
 .half-width { width: 50%; }
 .full-width { width: 100%; }
+.fit { max-width: 100%; }
 
 // White Space
 
@@ -119,6 +121,17 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .px4 { padding-left:   $space-4; padding-right: $space-4;}
 .py4 { padding-top:    $space-4; padding-bottom: $space-4;}
 
+//Positioning
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.z1 { z-index: 100; }
+.z2 { z-index: 200; }
+.z3 { z-index: 300; }
+.z4 { z-index: 400; }
+
 .t0 { top:    0; }
 .r0 { right:  0; }
 .b0 { bottom: 0; }
@@ -144,26 +157,6 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .b4 { bottom: $space-4; }
 .l4 { left:   $space-4; }
 
-// Positioning
-
-.relative { position: relative }
-.absolute { position: absolute }
-.fixed    { position: fixed }
-
-.z1 { z-index: 100 }
-.z2 { z-index: 200 }
-.z3 { z-index: 300 }
-.z4 { z-index: 400 }
-
-.absolute-center {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: table;
-}
-
 // Rounded Corners and Circles and Borders
 
 .rounded{
@@ -178,6 +171,21 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
   border:1px solid rgba(0,0,0,.3);
 }
 
+.border-top{
+  border-top:1px solid rgba(0,0,0,.3);
+}
+
+.border-right{
+  border-right:1px solid rgba(0,0,0,.3);
+}
+
+.border-bottom{
+  border-bottom:1px solid rgba(0,0,0,.3);
+}
+
+.border-left{
+  border-left:1px solid rgba(0,0,0,.3);
+}
 
 // Basscss Flex Object
 
@@ -285,4 +293,8 @@ code {
     font-size: $type-5;
     line-height: 1.5; // $line-height variable is too tight for this typeface
   }
+}
+
+pre{
+  line-height:0;
 }

@@ -1,0 +1,377 @@
+<h2 class="bold mb1">Utility Classes</h2>
+<p class="type-3 mb3">Use these classes to layout and lightly style content.</p>
+
+
+<section class="mb3">
+
+	<h3 class="mb2 bold">Floats</h3>
+
+	<div class="clearfix">
+		<div class="float-left">Left</div>
+		<div class="float-right">Right</div>
+	</div>
+
+	<pre>
+	  <code class="html"><%= '<div class="clearfix">' %><br><%= '  <div class="float-left">Left</div>' %><br><%= '  <div class="float-right">Right</div>' %><br><%= '</div>' %></code>
+	</pre>
+
+</section>
+
+<!--Inline/Block-->
+
+<section class="mb3">
+
+	<h3 class="mb2 bold">Block Types</h3>
+
+	<div>
+		<div class="inline">Inline</div>
+		<div class="inline-block">Inline Block</div>
+		<a href="#" class="block">Block</a>
+	</div>
+
+	<pre>
+	  <code class="html"><%= '<div>' %><br><%= '  <div class="inline">Inline</div>' %><br><%= '  <div class="inline-block">Inline Block</div>' %><br><%= '  <a href="#" class="block">Block</a>' %><br><%= '</div>' %></code>
+	</pre>
+
+</section>
+
+<!--Overflow-->
+
+<section class="mb3">
+
+	<h3 class="mb2 bold">Overflows</h3>
+
+	<div class="overflow-hidden" style="height:50px;">
+		When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!
+	</div>
+	<pre>
+		<code class="css">class { overflow: hidden; }</code>
+	</pre>
+
+	<div class="overflow-auto" style="height:50px;">
+		When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!
+	</div>
+	<pre>
+		<code class="css">class { overflow: auto; }</code>
+	</pre>
+
+	<div class="overflow-scroll" style="height:50px;">
+		When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!
+	</div>
+	<pre>
+		<code class="css">class { overflow: scroll; }</code>
+	</pre>
+
+</section>
+
+<!--Widths-->
+
+<section class="mb3">
+
+	<h3 class="mb1 bold">Widths</h3>
+	<p class="type-3 mb4">Some simple classes to make widths easier for you. And you and you and you!</p>
+
+	<div class="half-width border p2 mb1">.half-width</div>
+	<a href="#" class="full-width inline-block border mb1 p2">.full-width</a>
+	<div class="fit p2 border">.fit</div>
+
+	<pre>
+		<code class="css">.half-width { width: 50%; }
+.full-width { width: 100%; }
+.fit { max-width: 100%; }</code>
+	</pre>
+
+</section>
+
+<!--Spacing-->
+
+<section class="mb3">
+
+	<h3 class="mb1 bold">Spacing</h3>
+	<p class="type-3 mb4">This shorthand can be combined to set margin, padding and position in a number of ways: to all sides of an item at once, to just the x or y-axis or even to a single side. The spacing is based on the $space-n variables, where n increments from 0-4.</p>
+
+	<table class="full-width border rounded">
+		<thead class="bold border-bottom">
+			<td class="py2 px1">Prefixes</td>
+			<td class="py2 px1">Description</td>
+		</thead>
+		<tr class="border-bottom">
+			<td class="p1">m</td>
+			<td class="p1">margin</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">p</td>
+			<td class="p1">padding</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">t</td>
+			<td class="p1">top</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">r</td>
+			<td class="p1">right</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">b</td>
+			<td class="p1">bottom</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">l</td>
+			<td class="p1">left</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">x</td>
+			<td class="p1">x-axis</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">y</td>
+			<td class="p1">y-axis</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">z</td>
+			<td class="p1">z-index</td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">1</td>
+			<td class="p1">$space-1 <span class="type-5 text-gray-lightest ml1">.5rem</span></td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">2</td>
+			<td class="p1">$space-2 <span class="type-5 text-gray-lightest ml1">1rem</span></td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">3</td>
+			<td class="p1">$space-3 <span class="type-5 text-gray-lightest ml1">1.5rem</span></td>
+		</tr>
+		<tr class="border-bottom">
+			<td class="p1">4</td>
+			<td class="p1">$space-4 <span class="type-5 text-gray-lightest ml1">2rem</span></td>
+		</tr>
+	</table>
+
+</section>
+
+<!--Margins/Paddings-->
+
+<section class="mb3">
+
+	<h3 class="mb3 bold">Margin</h3>
+
+	<div class="inline-block border p2 mr0">.mr0</div><div class="inline-block border p2 mr1">.mr1</div><div class="inline-block border p2 mr2">.mr2</div><div class="inline-block border p2 mr3">.mr3</div><div class="inline-block border p2 mr4">.mr4</div>
+
+	<pre>
+		<code class="css">.m0  { margin:        0; }
+.mt0 { margin-top:    0; }
+.mr0 { margin-right:  0; }
+.mb0 { margin-bottom: 0; }
+.ml0 { margin-left:   0; }
+.mx0 { margin-left:   0; margin-right: 0;}
+.my0 { margin-top:    0; margin-bottom: 0;}
+
+.m1  { margin:        $space-1; }
+.mt1 { margin-top:    $space-1; }
+.mr1 { margin-right:  $space-1; }
+.mb1 { margin-bottom: $space-1; }
+.ml1 { margin-left:   $space-1; }
+.mx1 { margin-left:   $space-1; margin-right: $space-1;}
+.my1 { margin-top:    $space-1; margin-bottom: $space-1;}
+
+.m2  { margin:        $space-2; }
+.mt2 { margin-top:    $space-2; }
+.mr2 { margin-right:  $space-2; }
+.mb2 { margin-bottom: $space-2; }
+.ml2 { margin-left:   $space-2; }
+.mx2 { margin-left:   $space-2; margin-right: $space-2;}
+.my2 { margin-top:    $space-2; margin-bottom: $space-2;}
+
+.m3  { margin:        $space-3; }
+.mt3 { margin-top:    $space-3; }
+.mr3 { margin-right:  $space-3; }
+.mb3 { margin-bottom: $space-3; }
+.ml3 { margin-left:   $space-3; }
+.mx3 { margin-left:   $space-3; margin-right: $space-3;}
+.my3 { margin-top:    $space-3; margin-bottom: $space-3;}
+
+.m4  { margin:        $space-4; }
+.mt4 { margin-top:    $space-4; }
+.mr4 { margin-right:  $space-4; }
+.mb4 { margin-bottom: $space-4; }
+.ml4 { margin-left:   $space-4; }
+.mx4 { margin-left:   $space-4; margin-right: $space-4;}
+.my4 { margin-top:    $space-4; margin-bottom: $space-4;}
+
+.mx-auto { margin-left: auto; margin-right: auto; }</code>
+	</pre>
+
+</section>
+
+<section class="mb3">
+
+	<h3 class="mb3 bold">Padding</h3>
+
+	<div class="inline-block border p0">.p0</div>
+	<div class="inline-block border p1">.p1</div>
+	<div class="inline-block border p2">.p2</div>
+	<div class="inline-block border p3">.p3</div>
+	<div class="inline-block border p4">.p4</div>
+
+	<pre>
+		<code class="css">.p0  { padding:        0; }
+.pt0 { padding-top:    0; }
+.pr0 { padding-right:  0; }
+.pb0 { padding-bottom: 0; }
+.pl0 { padding-left:   0; }
+.px0 { padding-left:   0; padding-right: 0;}
+.py0 { padding-top:    0; padding-bottom: 0;}
+
+.p1  { padding:        $space-1; }
+.pt1 { padding-top:    $space-1; }
+.pr1 { padding-right:  $space-1; }
+.pb1 { padding-bottom: $space-1; }
+.pl1 { padding-left:   $space-1; }
+.px1 { padding-left:   $space-1; padding-right: $space-1;}
+.py1 { padding-top:    $space-1; padding-bottom: $space-1;}
+
+.p2  { padding:        $space-2; }
+.pt2 { padding-top:    $space-2; }
+.pr2 { padding-right:  $space-2; }
+.pb2 { padding-bottom: $space-2; }
+.pl2 { padding-left:   $space-2; }
+.px2 { padding-left:   $space-2; padding-right: $space-2;}
+.py2 { padding-top:    $space-2; padding-bottom: $space-2;}
+
+.p3  { padding:        $space-3; }
+.pt3 { padding-top:    $space-3; }
+.pr3 { padding-right:  $space-3; }
+.pb3 { padding-bottom: $space-3; }
+.pl3 { padding-left:   $space-3; }
+.px3 { padding-left:   $space-3; padding-right: $space-3;}
+.py3 { padding-top:    $space-3; padding-bottom: $space-3;}
+
+.p4  { padding:        $space-4; }
+.pt4 { padding-top:    $space-4; }
+.pr4 { padding-right:  $space-4; }
+.pb4 { padding-bottom: $space-4; }
+.pl4 { padding-left:   $space-4; }
+.px4 { padding-left:   $space-4; padding-right: $space-4;}
+.py4 { padding-top:    $space-4; padding-bottom: $space-4;}</code>
+	</pre>
+
+</section>
+
+<!--Positioning-->
+
+<section class="mb3">
+
+	<h3 class="mb1 bold">Positioning</h3>
+	<p class="type-3">Use these classes to position elements and give them z-index hierarchy.</p>
+
+	<pre>
+		<code class="css">.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.z1 { z-index: 100; }
+.z2 { z-index: 200; }
+.z3 { z-index: 300; }
+.z4 { z-index: 400; }
+
+.t0 { top:    0; }
+.r0 { right:  0; }
+.b0 { bottom: 0; }
+.l0 { left:   0; }
+
+.t1 { top:    $space-1; }
+.r1 { right:  $space-1; }
+.b1 { bottom: $space-1; }
+.l1 { left:   $space-1; }
+
+.t2 { top:    $space-2; }
+.r2 { right:  $space-2; }
+.b2 { bottom: $space-2; }
+.l2 { left:   $space-2; }
+
+.t3 { top:    $space-3; }
+.r3 { right:  $space-3; }
+.b3 { bottom: $space-3; }
+.l3 { left:   $space-3; }
+
+.t4 { top:    $space-4; }
+.r4 { right:  $space-4; }
+.b4 { bottom: $space-4; }
+.l4 { left:   $space-4; }</code>
+	</pre>
+
+</section>
+
+<!--Rounded/Circle-->
+
+<section class="mb3">
+
+	<h3 class="mb1 bold">Rounded Corners and Circles</h3>
+	<p class="type-3 mb3">Round off corners or make an element a circle using .rounded and .circle.</p>
+
+	<div class="inline-block fill-blue text-white p2 rounded">.rounded</div>
+
+	<pre>
+		<code class="html"><%= '<div class="inline-block fill-blue text-white p2 rounded">.rounded</div>' %></code>
+	</pre>
+
+	<pre>
+		<code class="css">.rounded{
+  border-radius:3px;
+}</code>
+	</pre>
+
+	<img src="/images/user.png" height="100" alt="user" class="circle" />
+
+	<pre>
+		<code class="html"><%= '<img src="/images/user.png" height="100" alt="user" class="circle" />' %></code>
+	</pre>
+
+	<pre>
+		<code class="css">.circle{
+  border-radius:50%;
+}</code>
+	</pre>
+
+</section>
+
+<!--Border-->
+
+<section class="mb3">
+
+	<h3 class="mb1 bold">Borders</h3>
+	<p class="type-3 mb3">Add a quick, semi-transparent border to an object.</p>
+
+	<div class="inline-block fill-gray mr2 p2 border">.border</div>
+	<div class="inline-block fill-gray mr2 p2 border-top">.border-top</div>
+	<div class="inline-block fill-gray mr2 p2 border-right">.border-right</div>
+	<div class="inline-block fill-gray mr2 p2 border-bottom">.border-bottom</div>
+	<div class="inline-block fill-gray mr2 p2 border-left">.border-left</div>
+
+	<pre>
+		<code class="css">.border{
+  border:1px solid rgba(0,0,0,.3);
+}
+
+.border-top{
+  border-top:1px solid rgba(0,0,0,.3);
+}
+
+.border-right{
+  border-right:1px solid rgba(0,0,0,.3);
+}
+
+.border-bottom{
+  border-bottom:1px solid rgba(0,0,0,.3);
+}
+
+.border-left{
+  border-left:1px solid rgba(0,0,0,.3);
+}</code>
+	</pre>
+
+</section>
+
+<!--Flex-->
