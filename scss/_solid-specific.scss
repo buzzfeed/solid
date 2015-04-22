@@ -3,12 +3,14 @@
 code {
   font-family: Monaco, monospace;
   -webkit-font-smoothing: antialiased;
-
-  &.hljs { // Override highlight.js theme properties
+  
+  // Override highlight.js theme properties
+  &.hljs { 
     background-color: $fill-gray; 
     padding: $space-2 $space-1;
     font-size: $type-5;
-    line-height: 1.5; // $line-height variable is too tight for this typeface
+    line-height: 1.75;
+    margin-top: $space-1;
   }
 }
 
