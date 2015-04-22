@@ -3,10 +3,6 @@
 code {
   font-family: Monaco, monospace;
   -webkit-font-smoothing: antialiased;
-
-  &.hljs { // Override highlight.js theme properties
-    background-color: $fill-gray-lighter; 
-
   
   // Override highlight.js theme properties
   &.hljs { 
