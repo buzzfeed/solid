@@ -1,3 +1,5 @@
+$input-height: $line-height + 1.75rem;
+
 .text-input,
 .textarea,
 .select,
@@ -5,9 +7,15 @@
 	font-family: inherit;
   background: $fill-white;
   font-size: $type-3;
-  line-height: $line-height + 1.75rem;
-  padding: 0 1rem;
-  border: 1px solid #aaa; 
+  line-height: $input-height;
+  padding: 0 $space-2;
+  border: 1px solid #aaa;
+}
+
+.textarea{
+  line-height: $line-height;
+  min-height: $input-height * 2;
+  padding: $space-2;
 }
 
 .select{
@@ -36,17 +44,6 @@
   width: 5rem;
 }
 
-.input-warning{
-	border: 1px solid $text-orange;
-}
-
-.input-success{
-	border: 1px solid $text-green;
-}
-
-.input-error{
-	border: 1px solid $text-red;
-}
 
 .form-label{
 	display: block;
@@ -83,7 +80,7 @@
   }
 
 	.text-input	{
-		border-color: $text-orange;	
+		border-color: $fill-orange;	
 	}
 }
 
@@ -94,7 +91,7 @@
   }
 
   .text-input {
-    border-color: $text-green; 
+    border-color: $fill-green; 
   }
 }
 
@@ -105,6 +102,6 @@
   }
 
   .text-input {
-    border-color: $text-red; 
+    border-color: $fill-red; 
   }
 }
