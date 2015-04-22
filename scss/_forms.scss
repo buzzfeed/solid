@@ -9,7 +9,7 @@ $input-height: $line-height + 1.75rem;
   font-size: $type-3;
   line-height: $input-height;
   padding: 0 $space-2;
-  border: 1px solid #aaa;
+  border: 1px solid $fill-gray;
 }
 
 .textarea{
