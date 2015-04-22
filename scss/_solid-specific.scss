@@ -5,7 +5,7 @@ code {
   -webkit-font-smoothing: antialiased;
 
   &.hljs { // Override highlight.js theme properties
-    background-color: $fill-gray-light; 
+    background-color: $fill-gray-lighter; 
     padding: $space-2 $space-1;
     font-size: $type-5;
     line-height: 1.5; // $line-height variable is too tight for this typeface
