@@ -3,7 +3,7 @@
 code {
   font-family: Monaco, monospace;
   -webkit-font-smoothing: antialiased;
-  word-wrap: break-word;
+  white-space: pre-wrap;
   
   // Override highlight.js theme properties
   &.hljs { 
