@@ -3,6 +3,7 @@
 code {
   font-family: Monaco, monospace;
   -webkit-font-smoothing: antialiased;
+  white-space: pre-wrap;
   
   // Override highlight.js theme properties
   &.hljs { 
@@ -14,8 +15,8 @@ code {
   }
 }
 
-pre{
-  line-height:0;
+pre {
+  line-height: 0;
 }
 
 // Grid
