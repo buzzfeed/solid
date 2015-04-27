@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html style="height:100%;">
+<html>
   <head>
     <title>Solid - Ingredients for Waffles and the Web</title>
     <link rel="stylesheet" type="text/css" href="/scss/base.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
   </head>
-  <body style="height:100%;">
-    <div class="page-container">
-      <%- partial("_header") %>
-
-      <div class="row">
-        <%- partial("_nav") %>
-
-        <div class="main-content col-9 float-left">
-          <%- yield %>
-        </div>
-      </div>
+  <body>
+    <nav class="p2 fixed t0 b0 l0 fill-gray-darker solid-nav">
+      <%- partial("_nav") %>
+    </nav>
+    <div class="p4 main-content">
+      <%- yield %>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
