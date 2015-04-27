@@ -52,7 +52,23 @@
           </a>
         </li>
       <% }; %>
-    </ul>
+      </ul>
+    </li>
+
+    <li class="mb3">
+      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'resources' ? '' : '' %>">
+        Resources
+      </h2>
+      <ul>
+      <% for(var slug in public.resources._data){ %>
+        <% var page = public.resources %>
+        <li class="mb1">
+          <a href="/resources/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
+            <%= page._data[slug].title %>
+          </a>
+        </li>
+      <% }; %>
+      </ul>
     </li>
 
   </ul>
