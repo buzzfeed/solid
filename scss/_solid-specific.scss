@@ -93,3 +93,9 @@ pre {
 .grid-container .col--centered:after {
   @include grid-display-class(".col--centered");
 }
+
+// Line Height Reset
+
+.line-height-0 {
+  line-height:0;
+}
