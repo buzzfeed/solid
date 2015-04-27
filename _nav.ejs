@@ -1,10 +1,10 @@
 
-  <h1 class="mb2"><a href="/">Solid</a></h1>
+  <h1 class="mb2"><a href="/" class="text-white">Solid</a></h1>
   <ul>
 
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
     <li class="mb3">
-      <h2 class="mb1 <%- current.path[0] == 'base' ? '' : '' %>">
+      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'base' ? '' : '' %>">
         Base
       </h2>
       <ul>
@@ -13,9 +13,9 @@
           <!-- in base folder -->
           <% var page = public.base %>
           <!-- grab subnav menu title inside data.json in base folder -->
-          <li class="mb1 <%- current.source == slug ? 'bold' : '' %>">
+          <li class="mb1">
            <!-- grab subnav menu link inside data.json in base folder -->
-            <a href="/base/<%= slug %>">
+            <a href="/base/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
               <%= page._data[slug].title %>
             </a>
           </li>
@@ -24,14 +24,14 @@
     </li>
 
     <li class="mb3">
-      <h2 class="mb1 <%- current.path[0] == 'interface' ? '' : '' %>">
+      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'interface' ? '' : '' %>">
         Interface
       </h2>
       <ul class="#">
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
-        <li class="mb1 <%- current.source == slug ? 'bold' : '' %>">
-          <a href="/interface/<%= slug %>">
+        <li class="mb1">
+          <a href="/interface/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -40,14 +40,14 @@
     </li>
 
     <li class="mb3">
-      <h2 class="mb1 <%- current.path[0] == 'layout' ? '' : '' %>">
+      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'layout' ? '' : '' %>">
         Layout
       </h2>
       <ul>
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
-        <li class="mb1 <%- current.source == slug ? 'bold' : '' %>">
-          <a href="/layout/<%= slug %>">
+        <li class="mb1">
+          <a href="/layout/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
