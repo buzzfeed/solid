@@ -15,7 +15,7 @@
           <!-- grab subnav menu title inside data.json in base folder -->
           <li>
            <!-- grab subnav menu link inside data.json in base folder -->
-            <a href="/base/<%= slug %>" class="block <%- current.source == slug ? 'text-orange' : '' %>">
+            <a href="/base/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
               <%= page._data[slug].title %>
             </a>
           </li>
@@ -31,7 +31,7 @@
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
         <li>
-          <a href="/interface/<%= slug %>" class="block <%- current.source == slug ? 'text-orange' : '' %>">
+          <a href="/interface/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -47,7 +47,7 @@
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
         <li>
-          <a href="/layout/<%= slug %>" class="block <%- current.source == slug ? 'text-orange' : '' %>">
+          <a href="/layout/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -63,7 +63,7 @@
       <% for(var slug in public.resources._data){ %>
         <% var page = public.resources %>
         <li>
-          <a href="/resources/<%= slug %>" class="block <%- current.source == slug ? 'text-orange' : '' %>">
+          <a href="/resources/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
