@@ -2,6 +2,9 @@
 
 .gutters .col{
 	margin-right: 3%;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .gutters .col-last{
