@@ -1,6 +1,6 @@
 
-  <h1 class="mb2"><a href="/" class="text-white">Solid</a></h1>
-  <ul>
+  <h1 class="mb2"><a href="/" class="block text-white">Solid</a></h1>
+  <ul class="solid-nav-items">
 
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
     <li class="mb3">
@@ -13,7 +13,7 @@
           <!-- in base folder -->
           <% var page = public.base %>
           <!-- grab subnav menu title inside data.json in base folder -->
-          <li class="mb1">
+          <li>
            <!-- grab subnav menu link inside data.json in base folder -->
             <a href="/base/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
               <%= page._data[slug].title %>
@@ -30,7 +30,7 @@
       <ul class="#">
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
-        <li class="mb1">
+        <li>
           <a href="/interface/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
             <%= page._data[slug].title %>
           </a>
@@ -46,7 +46,7 @@
       <ul>
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
-        <li class="mb1">
+        <li>
           <a href="/layout/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
             <%= page._data[slug].title %>
           </a>
@@ -62,7 +62,7 @@
       <ul>
       <% for(var slug in public.resources._data){ %>
         <% var page = public.resources %>
-        <li class="mb1">
+        <li>
           <a href="/resources/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
             <%= page._data[slug].title %>
           </a>
