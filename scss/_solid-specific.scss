@@ -66,7 +66,7 @@ pre {
 @mixin grid-display-class($text) {
   content: "#{$text}";
   position: relative;
-  top: -1.5rem;
+  top: -1.25rem;
   white-space: nowrap;
   @extend .type-5;
   @extend .text-gray-lightest;
