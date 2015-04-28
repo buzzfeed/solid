@@ -28,6 +28,7 @@ h6, .type-6 {
   font-size: 0.75rem;
 }
 
+
 // Body
 
 p {
@@ -35,17 +36,52 @@ p {
   line-height: 1.375em;
 }
 
-// Typography Emphasis and Styling
-.regular,
-.normal     { font-weight: 400; }
-.semibold   { font-weight: 600; }
-.bold       { font-weight: 700; }
 
-.italic       { font-style: italic; }
-.caps         { text-transform: uppercase; }
-.text-left    { text-align: left; }
-.text-center  { text-align: center; }
-.text-right   { text-align: right; }
-.text-justify { text-align: justify; }
-.nowrap       { white-space: nowrap; }
-.truncate     { white-space: nowrap; text-overflow: ellipsis; }
+// Typography Emphasis and Styling
+
+.regular, 
+.normal { 
+	font-weight: 400;
+}
+
+strong, 
+b, 
+.bold { 
+	font-weight: 600;
+}
+
+em, 
+i, 
+.italic { 
+	font-style: italic;
+}
+
+.caps  { 
+	text-transform: uppercase;
+}
+
+.text-left { 
+	text-align: left;
+}
+
+.text-center { 
+	text-align: center;
+}
+
+.text-right { 
+	text-align: right;
+}
+
+.text-justify { 
+	text-align: justify;
+}
+
+.nowrap { 
+	white-space: nowrap;
+}
+
+.truncate { 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
