@@ -1,8 +1,8 @@
 <h2 class="bold mb3">Typography</h2>
 
-<section>
+<section class="mb3">
 
-  <h3 class="mb3 bold">Headings</h3>
+  <h3 class="mb1 bold">Headings</h3>
   <div class="mb3">
     <h1 class="mb1">Yale Will Offer Its First Online Degree</h1>
     <label class="block type-5 text-gray-lightest">2.25 rem | 36px</label>
@@ -36,9 +36,9 @@
  
 </section>
 
-<section>
+<section class="mb3">
 
-  <h3 class="mb3 bold">Body</h3>
+  <h3 class="mb1 bold">Body</h3>
   <div class="mb3">
     <p class="mb1">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     <label class="block type-5 text-gray-lightest">1 rem/16px</label>
@@ -47,30 +47,32 @@
 
 </section>
 
-<section>
+<section class="mb3">
 
-  <h3 class="mb3 bold">Emphasis and Styling</h3>
+  <h3 class="mb1 bold">Emphasis and Styling</h3>
   <div class="mb3">
-    <p class="regular">Yale Will Offer Its First Online Degree</p>
-    <label class="block type-5 text-gray-lightest">Regular, Normal</label>
-    <pre><code class="html"><%= '<p class="regular">Yale Will Offer Its First Online Degree</p>' %></code></pre>
-  </div>
-  <div class="mb3">
-    <p><strong>Yale Will Offer Its First Online Degree</strong></p>
-    <label class="block type-5 text-gray-lightest">Bold, Semibold</label>
-    <pre><code class="html"><%= '<p><strong>Yale Will Offer Its First Online Degree</strong></p>' %></code></pre>
-    <pre><code class="html"><%= '<p class="bold">Yale Will Offer Its First Online Degree</p>' %></code></pre>
-  </div>
-  <div class="mb3">
-    <p><em>Yale Will Offer Its First Online Degree</em></p>
-    <label class="block type-5 text-gray-lightest">Italic</label>
-    <pre><code class="html"><%= '<p><em>Yale Will Offer Its First Online Degree</em></p>' %></code></pre>
-    <pre><code class="html"><%= '<p class="italic">Yale Will Offer Its First Online Degree</p>' %></code></pre>
-  </div>
-  <div class="mb3">
-    <p class="caps">Yale Will Offer Its First Online Degree</p>
-    <label class="block mb1 type-5 text-gray-lightest">Caps</label>
-    <pre><code class="html"><%= '<p class="caps">Yale Will Offer Its First Online Degree</p>' %></code></pre>
+    <p class="regular mb1">Regular, Normal</p>
+    <p class="mb1"><strong>Bold</strong></p>
+    <p class="mb1"><em>Italic</em></p>
+    <p class="caps mb1">Caps</p>
+    <p class="text-left mb1">Left align</p>
+    <p class="text-center mb1">Center</p>
+    <p class="text-right mb1">Right align</p>
+    <p class="text-justify mb1">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
+    <p class="nowrap mb1">No wrap</p>
+    <p class="truncate mb1">Truncate with ellipsis</p>
+    
+    <pre><code class="html"><%= '<p class="regular">Regular, Normal</p>' %>
+<%= '<p><strong>Bold</strong></p>' %>
+<%= '<p><em>Italic</em></p>' %>
+<%= '<p class="caps">Caps</p>' %>
+<%= '<p class="text-left">Left align</p>' %>
+<%= '<p class="text-center">Center</p>' %>
+<%= '<p class="text-right">Right align</p>' %>
+<%= '<p class="text-justify">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %>
+<%= '<p class="nowrap">No wrap</p>' %>
+<%= '<p class="truncate">Truncate with ellipsis…</p>' %></code></pre>
   </div>
 
 </section>
+
