@@ -49,13 +49,13 @@ pre {
 .grid-container {
   .row,
   .row--no-gutter {
-    margin-top: .5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 
     *[class^="col-"] {
-      border: 1px solid #ababab;
-      border-radius: 5px;
-      min-height: 30px;
+      background: $fill-gray-lighter;
+      border-radius: 1px;
+      min-height: 3rem;
       box-sizing: border-box;
     }
 
@@ -66,9 +66,10 @@ pre {
 @mixin grid-display-class($text) {
   content: "#{$text}";
   position: relative;
-  top: -15px;
+  top: -1.25rem;
   white-space: nowrap;
-  font-size: 10px;
+  @extend .type-5;
+  @extend .text-gray-lightest;
 }
 
 // add grid explanation classes

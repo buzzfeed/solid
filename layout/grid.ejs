@@ -1,87 +1,98 @@
+<h2 class="bold mb1">Fluid Grid</h2>
+<p class="mb3">A simple, fluid 12 column grid with gutters either outside or inside the grid.</p>
+
 <div class="grid-container">
-  <h2>Fluid Grid</h2>
-  <p>A simple, fluid 12 column grid with gutters either outside or inside the grid.</p>
-  <h3>.row</h3>
-  <div class="row">
-    <div class="col-12"></div>
+
+  <div class="mb4">  
+    <h3 class="mb3 bold">Row</h3>
+    <div class="row">
+      <div class="col-12"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-3 push-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col--centered"></div>
+    </div>
+
+    <pre><code class="html"><%= '<div class="row">' %><br><%= '  <div class="col-12"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row">' %><br><%= '  <div class="col-6"></div>' %><br><%= '  <div class="col-6"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row">' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row">' %><br><%= '  <div class="col-3 push-3"></div>' %><br><%= '  <div class="col-3"></div>' %><br><%= '  <div class="col-3"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row">' %><br><%= '  <div class="col-6 col--centered"></div>' %><br><%= '</div>' %></code></pre>
   </div>
 
-  <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
-  </div>
+  <div class="mb4">  
+    <h3 class="mb3 bold">Row, No Gutter</h3>
+    <div class="row--no-gutter">
+      <div class="col-12"></div>
+    </div>
 
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-  </div>
+    <div class="row--no-gutter">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
 
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-  </div>
+    <div class="row--no-gutter">
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
 
-  <div class="row">
-    <div class="col-3 push-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-  </div>
+    <div class="row--no-gutter">
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+    </div>
 
-  <div class="row">
-    <div class="col-6 col--centered"></div>
-  </div>
+    <div class="row--no-gutter">
+      <div class="col-3 push-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
 
-  <h3>.row--no-gutter</h3>
-  <div class="row--no-gutter">
-    <div class="col-12"></div>
-  </div>
+    <div class="row--no-gutter">
+      <div class="col-6 col--centered"></div>
+    </div>
 
-  <div class="row--no-gutter">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
+    <pre><code class="html"><%= '<div class="row--no-gutter">' %><br><%= '  <div class="col-12"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row--no-gutter">' %><br><%= '  <div class="col-6"></div>' %><br><%= '  <div class="col-6"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row--no-gutter">' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '  <div class="col-1"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row--no-gutter">' %><br><%= '  <div class="col-3 push-3"></div>' %><br><%= '  <div class="col-3"></div>' %><br><%= '  <div class="col-3"></div>' %><br><%= '</div>' %><br><br><%= '<div class="row--no-gutter">' %><br><%= '  <div class="col-6 col--centered"></div>' %><br><%= '</div>' %></code></pre>
   </div>
-
-  <div class="row--no-gutter">
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-  </div>
-
-  <div class="row--no-gutter">
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-    <div class="col-1"></div>
-  </div>
-
-  <div class="row--no-gutter">
-    <div class="col-3 push-3"></div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-  </div>
-
-  <div class="row--no-gutter">
-    <div class="col-6 col--centered"></div>
-  </div>
+  
 </div>
