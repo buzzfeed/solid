@@ -7,3 +7,6 @@
 
 # ignore local node modules
 node_modules
+
+# ignore weird image filesystem crap
+.DS_Store
