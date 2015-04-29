@@ -524,13 +524,13 @@ $bp-lg: 64rem;
 }
 
 //loop nest mixin
-// index = current column in the loop // prefix is empty by default, and then .sm-, .md-, .lg-, so on
+// index = current column in the loop // prefix is empty by default, and then .sm-, .md-, .lg- breakpoints, so on
 @mixin column($index:1, $prefix:'') { 
   .#{$prefix}col-#{$index} {
     width: 100% / $columns * $index;
     // loop through nested columns based
     // on parent column #
-    // this nesting logic needs to pass thru all breakpoint classes, probably should create a mixin?
+    // this nesting logic needs to pass thru all breakpoint classes, which is the purpose of this mixin
     @for $nested-index from 1 through $columns {
       .#{$prefix}col-#{$nested-index} {
         width: 100% / $index * $nested-index;
@@ -547,7 +547,7 @@ $bp-lg: 64rem;
 }
 
 // loop through columns
-// output is 100% the same as the above CSS
+// output is 100% the same as the above commented out CSS
 @for $i from 1 through $columns {
   @include column($i);
 
