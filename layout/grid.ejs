@@ -2,8 +2,8 @@
 
 <div class="mb4">
 
-  <h3 class="bold mb2">Grid, Without Gutters</h3>
-  <p class="mb2">This is our default 12-column grid. Each group of columns must be nested in a .clearfix parent element. Additionally, our default grid is gutter-less. You can add spacing between columns using our [padding utility classes](link).</p>
+  <h3 class="bold mb2">Grid Without Gutters</h3>
+  <p class="mb2">This is our default 12-column grid. Each group of columns must be nested in a .clearfix parent element. Additionally, our default grid is gutter-less. You can add spacing between columns using our <a href="/layout/utilities">padding utility classes.</a></p>
 
   <p class="mb2">Column classes range from .col-1 through .col-12 and can be mixed and matched, as well as nested within each other. Our grid is percentage-based, so column sizes are relative to the parent.</p>
 
@@ -11,14 +11,14 @@
 
   <div class="clearfix mt2 text-gray-lightest type-5">
     <label class="col col-12 text-gray-lightest">.col-12</label>
-    <div class="col col-12 p2 fill-gray-lighter"></div>
+    <div class="col col-12 grid-border p2 fill-gray-lighter"></div>
   </div>
 
   <div class="clearfix mt2 text-gray-lightest type-5">
     <label class="col col-6 text-gray-lightest">.col-6</label>
     <label class="col col-6 text-gray-lightest">.col-6</label>
-    <div class="col col-6 p2 fill-gray-lighter"></div>
-    <div class="col col-6 p2 fill-gray-lighter"></div>
+    <div class="col col-6 grid-border p2 fill-gray-lighter"></div>
+    <div class="grid-border col col-6 grid-border p2 fill-gray-lighter"></div>
   </div>  
 
   <div class="clearfix mt2 text-gray-lightest type-5">
@@ -26,10 +26,10 @@
     <label class="col col-3 text-gray-lightest">.col-3</label>
     <label class="col col-3 text-gray-lightest">.col-3</label>
     <label class="col col-3 text-gray-lightest">.col-3</label>
-    <div class="col col-3 p2 fill-gray-lighter"></div>
-    <div class="col col-3 p2 fill-gray-lighter"></div>
-    <div class="col col-3 p2 fill-gray-lighter"></div>
-    <div class="col col-3 p2 fill-gray-lighter"></div>
+    <div class="col col-3 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-3 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-3 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-3 p2 grid-border fill-gray-lighter"></div>
   </div>
 
 
@@ -46,18 +46,18 @@
     <label class="col col-1">.col-1</label>
     <label class="col col-1">.col-1</label>
     <label class="col col-1">.col-1</label>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
+    <div class="col col-1 grid-border p2 fill-gray-lighter"></div>
   </div>
 
   <div class="clearfix mt2 text-gray-lightest type-5">
@@ -65,26 +65,32 @@
     <label class="col col-3 text-gray-lightest">.col-3</label>
     <label class="col col-2 text-gray-lightest">.col-2</label>
     <label class="col col-6 text-gray-lightest">.col-6</label>
-    <div class="col col-1 p2 fill-gray-lighter"></div>
-    <div class="col col-3 p2 fill-gray-lighter"></div>
-    <div class="col col-2 p2 fill-gray-lighter"></div>
-    <div class="col col-6 p2 fill-gray-lighter"></div>
+    <div class="col col-1 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-3 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-2 p2 grid-border fill-gray-lighter"></div>
+    <div class="col col-6 p2 grid-border fill-gray-lighter"></div>
   </div>
-
 
   <div class="clearfix mt2 text-gray-lightest type-5">
     <label class="col col-4 offset-3 text-gray-lightest">.col-4 .offset-3</label>
-    <div class="col col-4 offset-3 p2 fill-gray-lighter"></div>
+    <div class="col col-4 offset-3 grid-border p2 fill-gray-lighter"></div>
   </div>
 
   <div class="clearfix mt2 text-gray-lightest type-5">
     <label class="col col-4 offset-5 text-gray-lightest">.col-4 .offset-5</label>
-    <div class="col col-4 offset-5 p2 fill-gray-lighter"></div>
+    <div class="col col-4 offset-5 grid-border p2 fill-gray-lighter"></div>
   </div>
 
   <div class="clearfix mt2 text-gray-lightest type-5">
     <label class="col col-4 offset-8 text-gray-lightest">.col-4 .offset-8</label>
-    <div class="col col-4 offset-8 p2 fill-gray-lighter"></div>
+    <div class="col col-4 offset-8 grid-border p2 fill-gray-lighter"></div>
+  </div>
+
+  <div class="clearfix text-gray-lightest type-5">
+    <label class="col col-8 text-gray-lightest">.col-2 nested inside .col-8</label>
+    <div class="col col-8 grid-border fill-gray-lighter">
+      <div class="col col-2 p2 grid-border fill-yellow-light"></div>
+    </div>
   </div>
 
 </div>
@@ -92,60 +98,115 @@
 
 <div class="mb4 clearfix">
 
-  <h3 class="bold">Grid, With Gutters</h3>
-  <p>The guttered grid columns include gutters with a padding right of 1.5%. </p>
+  <h3 class="bold mt4">Grid With Gutters</h3>
+  <p class="mb2">This is our 12-column grid with built-in gutters. To enable, add the .gutters class to your grid's .clearfix parent container. The resulting columns will have a padding-left and padding-right of 1%. Because these gutters are created with padding and not margin, you will need to nest your column content to avoid accidentally overriding the column layout.</p>
 
 
   <div class="gutters clearfix">
-  <div class="col col-12 mt2 text-gray-lightest type-5">
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <label class="col col-1">.col-1</label>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
-    </div>
-    <div class="col col-1">
-      <div class="p2 fill-gray-lighter"></div>
+
+  <div class="clearfix text-gray-lightest type-5">
+    <label class="col col-12 text-gray-lightest">.col-12</label>
+    <div class="col col-12">
+      <div class="grid-border p2 fill-gray-lighter"></div>
     </div>
   </div>
+
+  <div class="clearfix text-gray-lightest type-5">
+    <label class="col col-6 text-gray-lightest">.col-6</label>
+    <label class="col col-6 text-gray-lightest">.col-6</label>
+    <div class="col col-6">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-6">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+  </div>  
+
+  <div class="clearfix text-gray-lightest type-5">
+    <label class="col col-3 text-gray-lightest">.col-3</label>
+    <label class="col col-3 text-gray-lightest">.col-3</label>
+    <label class="col col-3 text-gray-lightest">.col-3</label>
+    <label class="col col-3 text-gray-lightest">.col-3</label>
+    <div class="col col-3">
+      <div class="grid-border p2 fill-gray-lighter"><div class="col col-1"><div class="grid-border p2 fill-yellow-light"></div></div></div>
+
+    </div>
+    <div class="col col-3">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-3">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-3">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+  </div>
+
+  <div class="text-gray-lightest type-5">
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <label class="col col-1">.col-1</label>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+    <div class="col col-1">
+      <div class="grid-border p2 fill-gray-lighter"></div>
+    </div>
+  </div>
+ </div>
 </div>
-</div>
+
+<div class="mb4 clearfix">
+
+  <h3 class="bold mt4">Responsive Grid</h3>
+  <div class="clearfix mt2 text-gray-lightest type-5">
+    <label class="col col-6 sm-col-12 text-gray-lightest">.col-6 .sm-col-12</label>
+    <label class="col col-6 sm-col-12 text-gray-lightest">.col-6 .sm-col-12</label>
+    <div class="col col-6 sm-col-12 grid-border p2 fill-gray-lighter"> <!-- a normal col-6 becomes a col-12 when appended with sm- breakpoint-->
+      <!-- <div class="col col-3 sm-col-6 grid-border p2 fill-yellow-light"></div> nesting works, in this case the nested div will ayways take up 50% of the parent-->
+    </div>
+    <div class="grid-border col col-6 sm-col-12 grid-border p2 fill-gray-lighter"></div>
+  </div> 
+
+</div> 
+
+
