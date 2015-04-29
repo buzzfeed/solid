@@ -567,7 +567,7 @@ $bp-lg: 64rem;
 // Gutters
 
 .gutters {
-  margin:0 -$gutter;
+  margin: 0 ($gutter * -1);
 }
 
 .gutters .col {

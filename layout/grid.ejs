@@ -128,7 +128,11 @@
     <label class="col col-3 text-gray-lightest">.col-3</label>
     <label class="col col-3 text-gray-lightest">.col-3</label>
     <div class="col col-3">
-      <div class="grid-border p2 fill-gray-lighter"><div class="col col-1"><div class="grid-border p2 fill-yellow-light"></div></div></div>
+      <div class="grid-border p2 fill-gray-lighter">
+        <div class="gutters col col-1"> <!-- adding the gutters class here this allows negative left margin on the nested div -->
+          <div class="grid-border p2 fill-yellow-light"></div>
+        </div>
+      </div>
 
     </div>
     <div class="col col-3">
