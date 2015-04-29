@@ -509,11 +509,6 @@
 // }
 
 
-
-// col-1, col-2, col-1 sm-col-12
-
-// http://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540
-
 $columns: 12;
 // $gutter: 1%; // this doesn't work when nesting columns inside the .gutters class (the gutter is always 1% of the parent, which means the nested gutter is smaller than the parent gutter. switching to rem value for now
 $gutter: 0.625rem;
@@ -531,18 +526,21 @@ $bp-lg: 64rem;
 @mixin column($index:1, $prefix:'') { 
   .#{$prefix}col-#{$index} {
     width: 100% / $columns * $index;
+
     // loop through nested columns based
     // on parent column #
     // this nesting logic needs to pass thru all breakpoint classes, which is the purpose of this mixin
-    @for $nested-index from 1 through $columns {
-      .#{$prefix}col-#{$nested-index} {
-        width: 100% / $index * $nested-index;
-      }
-      // nesting an offset inside of a column
-      .#{$prefix}offset-#{$nested-index} {
-        margin-left: 100% / $index * $nested-index;
-      }            
-    }
+
+    // @for $nested-index from 1 through $columns {
+    //   .#{$prefix}col-#{$nested-index} {
+    //     width: 100% / $index * $nested-index;
+    //   }
+    //   // nesting an offset inside of a column
+    //   .#{$prefix}offset-#{$nested-index} {
+    //     margin-left: 100% / $index * $nested-index;
+    //   }            
+    // }
+
   }
   .#{$prefix}offset-#{$index} {
     margin-left: 100% / $columns * $index;
