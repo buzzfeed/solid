@@ -3,6 +3,10 @@
 
 Solid is a living framework for all basic BuzzFeed styling and we want everyone to pitch in. Read on to learn how to contribute.
 
+## Dos and Don’ts
+
+Coming soon!
+
 ## Getting Started
 
 ### 1. Set Up 
@@ -91,3 +95,9 @@ Next, click the green **New pull request** button and select the following from 
 If all looks good, click the green **Create pull request** button.
 
 You should add a concise descriptive comment about what is in this merge, and then submit. Someone from the team will review your request, and work with you to ensure there will be no problems on merge.
+
+### 9. A Note on Merging
+
+Because of Github permissioning on buzzfeed repos, it *might* be possible for you to merge your own Pull Request. **Please don’t do this!** Always reach
+
+how not to contribute. We want to avoid people just pushing code into this without #solid looking at it and approving the PR. 
