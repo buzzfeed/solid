@@ -206,14 +206,12 @@
 <div class="mb4 clearfix">
 
   <h3 class="bold mt4">Responsive Grid</h3>
-  <p class="mb2">The responsive grid is implemented by adding breakpoint classes appended with the number of columns for that specific breakpoint. For example, if a .col-6 in the default layout should take up the entire .col-12 on the smallest breakpoint, the div would get classes .col-6 .sm-col-12. In this case, .col-6 is the default, but the smallest breakpoint will take class .sm-col-12, or full width.</p>
+  <p class="mb2">The responsive grid is implemented by adding breakpoint classes appended with the number of columns for that specific breakpoint. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .sm-col-12 .md-col-6.</p>
   <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="col col-6 sm-col-12 text-gray-lightest">.col-6 .sm-col-12</label>
-    <label class="col col-6 sm-col-12 text-gray-lightest">.col-6 .sm-col-12</label>
-    <div class="col col-6 sm-col-12 grid-border p2 fill-gray-lighter"> <!-- a normal col-6 becomes a col-12 when appended with sm- breakpoint-->
-      <!-- <div class="col col-3 sm-col-6 grid-border p2 fill-yellow-light"></div> nesting works, in this instance the nested div will always take up 50% of the parent-->
-    </div>
-    <div class="grid-border col col-6 sm-col-12 grid-border p2 fill-gray-lighter"></div>
+    <label class="col sm-col-12 text-gray-lightest">.col .sm-col-12 .md-col-6</label>
+    <div class="col sm-col-12 md-col-6 lg-col-3 grid-border p2 fill-gray-lighter"></div>
+    <div class="col sm-col-12 md-col-6 lg-col-3 grid-border p2 fill-gray-lighter"></div>
+    <div class="col sm-col-12 md-col-6 lg-col-3 grid-border p2 fill-gray-lighter"></div>
   </div> 
 
 </div> 
