@@ -537,17 +537,17 @@ $bp-lg: 64rem;
 @for $i from 1 through $columns {
   @include column($i);
 
-  @media (max-width: $bp-sm) {
-    @include column($i, 'sm-'); 
-  }   
+  // @media (max-width: $bp-sm) {
+  //   @include column($i, 'sm-'); 
+  // }   
 
-  @media (max-width: $bp-md) {
-    @include column($i, 'md-');                
-  }   
+  // @media (max-width: $bp-md) {
+  //   @include column($i, 'md-');                
+  // }   
 
-  @media (max-width: $bp-lg) {
-    @include column($i, 'lg-');               
-  }  
+  // @media (max-width: $bp-lg) {
+  //   @include column($i, 'lg-');               
+  // }  
 }
 
 // Gutters
