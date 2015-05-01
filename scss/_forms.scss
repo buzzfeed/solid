@@ -1,5 +1,15 @@
 $input-height: $line-height + 1.75rem;
 
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px; margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 // encoding this as utf8 is good!
 // https://css-tricks.com/probably-dont-base64-svg/
 $down-caret-uri: "<svg width='12' height='8' viewBox='0 0 488 285' xmlns='http://www.w3.org/2000/svg'><path d='M483.11 29.381l-24.449-24.485c-2.934-2.938-7.335-4.897-11.246-4.897-3.912 0-8.313 1.959-11.246 4.897l-192.168 192.448-192.168-192.448c-2.934-2.938-7.335-4.897-11.246-4.897-4.401 0-8.313 1.959-11.246 4.897l-24.449 24.485c-2.934 2.938-4.89 7.345-4.89 11.263s1.956 8.325 4.89 11.263l227.864 228.196c2.934 2.938 7.335 4.897 11.246 4.897 3.912 0 8.313-1.959 11.246-4.897l227.864-228.196c2.934-2.938 4.89-7.345 4.89-11.263s-1.956-8.325-4.89-11.263z' fill='#000'/></svg>";
@@ -16,7 +26,7 @@ $down-caret-uri: "<svg width='12' height='8' viewBox='0 0 488 285' xmlns='http:/
   border: 1px solid $fill-gray;
 }
 
-.textarea{
+.textarea {
   line-height: $line-height;
   min-height: $input-height * 2;
   padding: $space-2;
@@ -29,6 +39,32 @@ $down-caret-uri: "<svg width='12' height='8' viewBox='0 0 488 285' xmlns='http:/
 	-webkit-appearance: none;
   -webkit-border-radius: 0px;
   padding-right: 42px;
+}
+
+.radio {
+    @include visuallyhidden;
+}
+
+.radio + label {
+   cursor:pointer;  
+}
+
+.radio + label:before  {
+    content: "";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin: 0px 6px 0 0;
+    // vertical-align: middle;
+    border-radius: 50%;
+    background-color: $fill-white;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.radio:checked + label:before{
+  background-color: white;   
+  border: 5px solid #07e;
 }
 
 .date {
@@ -101,3 +137,4 @@ $down-caret-uri: "<svg width='12' height='8' viewBox='0 0 488 285' xmlns='http:/
     border-color: $fill-red; 
   }
 }
+
