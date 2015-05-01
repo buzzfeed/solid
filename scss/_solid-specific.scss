@@ -19,6 +19,10 @@ pre {
   line-height: 0;
 }
 
+.class-name {
+  color: $text-orange;
+}
+
 // Solid Nav
 
 .solid-nav {
@@ -45,65 +49,19 @@ pre {
   padding:.4rem 0;
 }
 
-// // Grid
+// Grid
 
-// // styles for grid page in styleguide
-// // should be moved in with presentational
-// // styles for the styleguide
-// .page-container {
-//   max-width: 1020px;
-// }
+.grid-border {
+  border: 1px solid lighten($fill-gray, 20%);
+  border-radius: 2px;
+}
 
-// .grid-container {
-//   .row,
-//   .row--no-gutter {
-//     margin-top: .5rem;
-//     margin-bottom: 1rem;
+.gutter-col {
+  height: $space-4; // Gutter col's don't display properly when created with only padding
+}
 
-//     *[class^="col-"] {
-//       border: 1px solid #ababab;
-//       border-radius: 5px;
-//       min-height: 30px;
-//       box-sizing: border-box;
-//     }
+.nested-col {
+  height: 100%;
+  border-right: 1px solid lighten($fill-gray, 20%); // Adds only a border-right to the nested div, since the parent element already gets class .grid-border
+}
 
-//   }
-// }
-
-// // displays labels explaining grid functions
-// @mixin grid-display-class($text) {
-//   content: "#{$text}";
-//   position: relative;
-//   top: -15px;
-//   white-space: nowrap;
-//   font-size: 10px;
-// }
-
-// // add grid explanation classes
-// @each $column-count in $grid-columns {
-//   @for $i from 1 through $column-count {
-//     .grid-container .col-#{$i}:before {
-//       @include grid-display-class(".col-#{$i}");
-//     }
-//   }
-// }
-
-// // add push explanation classes
-// @each $column-count in $grid-columns {
-//   @for $i from 1 through $column-count {
-//     .grid-container .push-#{$i}:after {
-//       @include grid-display-class(".push-#{$i}");
-//     }
-//   }
-// }
-
-// // add centered explanation class
-// .grid-container .col--centered:after {
-//   @include grid-display-class(".col--centered");
-// }
-
-// // Line Height Reset
-
-// .line-height-0 {
-//   line-height:0;
-// }
