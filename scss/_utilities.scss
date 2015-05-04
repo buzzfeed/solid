@@ -10,14 +10,10 @@ html {
 
 html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif;} // This is just for reference
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
-svg {
-    max-height:100%;
-}
+// Responsive Images
+img { max-width: 100%; height: auto; }
+svg { max-height:100%; }
 
 
 // Layout
