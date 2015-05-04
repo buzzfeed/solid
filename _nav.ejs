@@ -1,10 +1,10 @@
 
-  <h1 class="mb2"><a href="/" class="block text-white">Solid</a></h1>
+  <h1 class="mb4"><a href="/" class="block text-white">Solid</a></h1>
   <ul class="solid-nav-items">
 
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
     <li class="mb3">
-      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'base' ? '' : '' %>">
+      <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'base' ? '' : '' %>">
         Base
       </h2>
       <ul>
@@ -15,7 +15,7 @@
           <!-- grab subnav menu title inside data.json in base folder -->
           <li>
            <!-- grab subnav menu link inside data.json in base folder -->
-            <a href="/base/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
+            <a href="/base/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
               <%= page._data[slug].title %>
             </a>
           </li>
@@ -24,14 +24,14 @@
     </li>
 
     <li class="mb3">
-      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'interface' ? '' : '' %>">
+      <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'interface' ? '' : '' %>">
         Interface
       </h2>
       <ul class="#">
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
         <li>
-          <a href="/interface/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
+          <a href="/interface/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -40,14 +40,14 @@
     </li>
 
     <li class="mb3">
-      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'layout' ? '' : '' %>">
+      <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'layout' ? '' : '' %>">
         Layout
       </h2>
       <ul>
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
         <li>
-          <a href="/layout/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
+          <a href="/layout/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>
@@ -56,14 +56,14 @@
     </li>
 
     <li class="mb3">
-      <h2 class="mb1 text-gray-lightest <%- current.path[0] == 'resources' ? '' : '' %>">
+      <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'resources' ? '' : '' %>">
         Resources
       </h2>
       <ul>
       <% for(var slug in public.resources._data){ %>
         <% var page = public.resources %>
         <li>
-          <a href="/resources/<%= slug %>" class="block text-white <%- current.source == slug ? 'bold text-orange' : '' %>">
+          <a href="/resources/<%= slug %>" class="block <%- current.source == slug ? 'text-white' : '' %>">
             <%= page._data[slug].title %>
           </a>
         </li>

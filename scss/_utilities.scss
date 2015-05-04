@@ -1,9 +1,11 @@
 html {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
  
 *, *:before, *:after {
   box-sizing: inherit;
+  -moz-box-sizing: inherit;
 }
 
 html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif;} // This is just for reference
@@ -36,6 +38,7 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 .half-width { width: 50%; }
 .full-width { width: 100%; }
 .fit { max-width: 100%; }
+.full-height { height: 100%; }
 
 // White Space
 
@@ -170,23 +173,23 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 }
 
 .border{
-  border:1px solid rgba(0,0,0,.3);
+  border:1px solid rgba(0,0,0,.2);
 }
 
 .border-top{
-  border-top:1px solid rgba(0,0,0,.3);
+  border-top:1px solid rgba(0,0,0,.2);
 }
 
 .border-right{
-  border-right:1px solid rgba(0,0,0,.3);
+  border-right:1px solid rgba(0,0,0,.2);
 }
 
 .border-bottom{
-  border-bottom:1px solid rgba(0,0,0,.3);
+  border-bottom:1px solid rgba(0,0,0,.2);
 }
 
 .border-left{
-  border-left:1px solid rgba(0,0,0,.3);
+  border-left:1px solid rgba(0,0,0,.2);
 }
 
 // Basscss Flex Object
