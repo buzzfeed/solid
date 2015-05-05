@@ -1,0 +1,19 @@
+// Generate Breakpoints
+
+@mixin media($breakpoint) {
+  $queries: (
+    xs: 24rem,
+    sm: 40rem,
+    md: 52rem,
+    lg: 64rem,
+  );
+  
+  @if $breakpoint == 'all' {
+    @content;
+  } @else {
+    @media (min-width: #{map-get($queries, $breakpoint)}) {
+      @content;
+    }
+  }
+  
+}
