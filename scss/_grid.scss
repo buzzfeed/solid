@@ -1,110 +1,114 @@
-.col {
-	float:left;
-}
+// Base Column Float
 
-// Base Columns
+.col {
+ float: left;
+}
 
 @each $breakpoint in (all, xs, sm, md, lg) {
   $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-	@include media($breakpoint) {
+    @include media($breakpoint) {
 
-		.#{$breakpoint-prefix}col-1 {
-		    width: 8.333333333333332%;
-		}
+        // Columns
 
-		.#{$breakpoint-prefix}col-2 {
-		    width: 16.666666666666664%;
-		}
+        .#{$breakpoint-prefix}col-1 {
+            width: percentage(1/12);
+        }
 
-		.#{$breakpoint-prefix}col-3 {
-		    width: 25%;
-		}
+        .#{$breakpoint-prefix}col-2 {
+            width: percentage(2/12);
+        }
 
-		.#{$breakpoint-prefix}col-4 {
-		    width: 33.33333333333333%;
-		}
+        .#{$breakpoint-prefix}col-3 {
+            width: percentage(3/12);
+        }
 
-		.#{$breakpoint-prefix}col-5 {
-		    width: 41.66666666666667%;
-		}
+        .#{$breakpoint-prefix}col-4 {
+            width: percentage(4/12);
+        }
 
-		.#{$breakpoint-prefix}col-6 {
-		    width: 50%;
-		}
+        .#{$breakpoint-prefix}col-5 {
+            width: percentage(5/12);
+        }
 
-		.#{$breakpoint-prefix}col-7 {
-		    width: 58.333333333333336%;
-		}
+        .#{$breakpoint-prefix}col-6 {
+            width: percentage(6/12);
+        }
 
-		.#{$breakpoint-prefix}col-8 {
-		    width: 66.66666666666666%;
-		}
+        .#{$breakpoint-prefix}col-7 {
+            width: percentage(7/12);
+        }
 
-		.#{$breakpoint-prefix}col-9 {
-		    width: 75%;
-		}
+        .#{$breakpoint-prefix}col-8 {
+            width: percentage(8/12);
+        }
 
-		.#{$breakpoint-prefix}col-10 {
-		    width: 83.33333333333334%;
-		}
+        .#{$breakpoint-prefix}col-9 {
+            width: percentage(9/12);
+        }
 
-		.#{$breakpoint-prefix}col-11 {
-		    width: 91.66666666666666%;
-		}
+        .#{$breakpoint-prefix}col-10 {
+            width: percentage(10/12);
+        }
 
-		.#{$breakpoint-prefix}col-12 {
-		    width: 100%;
-		}
+        .#{$breakpoint-prefix}col-11 {
+            width: percentage(11/12);
+        }
 
-		// Base Offsets
+        .#{$breakpoint-prefix}col-12 {
+            width: percentage(12/12);
+        }
 
-		.#{$breakpoint-prefix}offset-1 {
-		    margin-left: 8.333333333333332%;
-		}
+        // Offsets
 
-		.#{$breakpoint-prefix}offset-2 {
-		    margin-left: 16.666666666666664%;
-		}
+        .#{$breakpoint-prefix}offset-1 {
+            margin-left: percentage(1/12);
+        }
 
-		.#{$breakpoint-prefix}offset-3 {
-		    margin-left: 25%;
-		}
+        .#{$breakpoint-prefix}offset-2 {
+            margin-left: percentage(2/12);
+        }
 
-		.#{$breakpoint-prefix}offset-4 {
-		    margin-left: 33.33333333333333%;
-		}
+        .#{$breakpoint-prefix}offset-3 {
+            margin-left: percentage(3/12);
+        }
 
-		.#{$breakpoint-prefix}offset-5 {
-		    margin-left: 41.66666666666667%;
-		}
+        .#{$breakpoint-prefix}offset-4 {
+            margin-left: percentage(4/12);
+        }
 
-		.#{$breakpoint-prefix}offset-6 {
-		    margin-left: 50%;
-		}
+        .#{$breakpoint-prefix}offset-5 {
+            margin-left: percentage(5/12);
+        }
 
-		.#{$breakpoint-prefix}offset-7 {
-		    margin-left: 58.333333333333336%;
-		}
+        .#{$breakpoint-prefix}offset-6 {
+            margin-left: percentage(6/12);
+        }
 
-		.#{$breakpoint-prefix}offset-8 {
-		    margin-left: 66.66666666666666%;
-		}
+        .#{$breakpoint-prefix}offset-7 {
+            margin-left: percentage(7/12);
+        }
 
-		.#{$breakpoint-prefix}offset-9 {
-		    margin-left: 75%;
-		}
+        .#{$breakpoint-prefix}offset-8 {
+            margin-left: percentage(8/12);
+        }
 
-		.#{$breakpoint-prefix}offset-10 {
-		    margin-left: 83.33333333333334%;
-		}
+        .#{$breakpoint-prefix}offset-9 {
+            margin-left: percentage(9/12);
+        }
 
-		.#{$breakpoint-prefix}offset-11 {
-		    margin-left: 91.66666666666666%;
-		}
-	}
+        .#{$breakpoint-prefix}offset-10 {
+            margin-left: percentage(10/12);
+        }
+
+        .#{$breakpoint-prefix}offset-11 {
+            margin-left: percentage(11/12);
+        }
+    }
 }
 
-// Gutters
+// Add gutters to the full grid
+
+$gutter: 0.625rem;
 
 .gutters {
   margin: 0 ($gutter * -1);
