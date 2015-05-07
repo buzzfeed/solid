@@ -4,9 +4,9 @@ body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type
   line-height: 1.3;
 }
 
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
 
 		h1, .#{$breakpoint-prefix}type-1 {
 		  font-size: 2.25rem;

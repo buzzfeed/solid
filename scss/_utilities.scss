@@ -12,9 +12,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 
 // Layout
 
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}inline       { display: inline; }
     .#{$breakpoint-prefix}block        { display: block; }
@@ -51,9 +51,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 
     // Margin
 
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}m0  { margin:        0; }
     .#{$breakpoint-prefix}mt0 { margin-top:    0; }
@@ -102,9 +102,9 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 
     //Padding
 
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}p0  { padding:        0; }
     .#{$breakpoint-prefix}pt0 { padding-top:    0; }
@@ -194,28 +194,28 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
       border-radius:50%;
     }
 
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}border{
-      border:1px solid rgba(0,0,0,.2);
+      border:$border-default;
     }
 
     .#{$breakpoint-prefix}border-top{
-      border-top:1px solid rgba(0,0,0,.2);
+      border-top:$border-default;
     }
 
     .#{$breakpoint-prefix}border-right{
-      border-right:1px solid rgba(0,0,0,.2);
+      border-right:$border-default;
     }
 
     .#{$breakpoint-prefix}border-bottom{
-      border-bottom:1px solid rgba(0,0,0,.2);
+      border-bottom:$border-default;
     }
 
     .#{$breakpoint-prefix}border-left{
-      border-left:1px solid rgba(0,0,0,.2);
+      border-left:$border-default;
     }
 
     }

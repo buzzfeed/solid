@@ -8,10 +8,11 @@
 //   $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
 //     @include media($breakpoint) {
 
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
+
         // Columns
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
 
         .#{$breakpoint-prefix}col-1 {
             width: percentage(1/12);
