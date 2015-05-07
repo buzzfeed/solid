@@ -1,15 +1,15 @@
-<h2 class="bold mb4">The Fluid Grid</h2>
+<h2 class="bold border-bottom mb4 pb2">The Fluid Grid</h2>
 
 <div class="mb4">
 
-  <h3 class="bold mb2">Grid Without Gutters</h3>
+  <h3 class="bold mb1">Grid Without Gutters</h3>
   <p class="mb2">This is our default 12-column grid. Each group of columns must be nested in a .clearfix parent element. Additionally, our default grid is gutter-less. You can add spacing between columns using our <a href="/layout/utilities">padding utility classes.</a></p>
 
   <p class="mb2">Column classes range from .col-1 through .col-12 and can be mixed and matched, as well as nested within each other. Our grid is percentage-based, so column sizes are relative to the parent.</p>
 
-  <p class="mb2">Offset classes are used to move columns left from their initial position on the grid. .offset-1 will shift a column right by a single column width. .offset-2 will shift by two column widths, and so on.</p>
+  <p class="mb3">Offset classes are used to move columns left from their initial position on the grid. .offset-1 will shift a column right by a single column width. .offset-2 will shift by two column widths, and so on.</p>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
+  <div class="clearfix text-gray-lightest type-5">
     <label class="col col-12 text-gray-lightest">.col-12</label>
     <div class="col col-12 border rounded p2 fill-gray-lighter"></div>
   </div>
@@ -104,8 +104,8 @@
 
 <div class="mb4 clearfix">
 
-  <h3 class="bold mt4">Grid With Gutters</h3>
-  <p class="mb2">This is our 12-column grid with built-in gutters. To enable, add the .gutters class to your grid's .clearfix parent container. The resulting columns will have a padding-left and padding-right of 1%. Because these gutters are created with padding and not margin, you will need to nest your column content to avoid accidentally overriding the column layout.</p>
+  <h3 class="bold mt4 mb1">Grid With Gutters</h3>
+  <p class="mb3">This is our 12-column grid with built-in gutters. To enable, add the .gutters class to your grid's .clearfix parent container. The resulting columns will have a padding-left and padding-right of 1%. Because these gutters are created with padding and not margin, you will need to nest your column content to avoid accidentally overriding the column layout.</p>
 
 
   <div class="gutters clearfix">
@@ -202,19 +202,3 @@
  </div>
 
 </div>
-
-<div class="mb4 clearfix">
-
-  <h3 class="bold mt4">Responsive Grid</h3>
-  <p class="mb2">The responsive grid is implemented by adding breakpoint classes appended with the number of columns for that specific breakpoint. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .sm-col-12 .md-col-6.</p>
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="col sm-col-12 text-gray-lightest">.col .xs-col-12 .md-col-6 .lg-col-3</label>
-    <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
-  </div> 
-
-</div> 
-
-

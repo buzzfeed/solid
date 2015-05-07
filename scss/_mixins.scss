@@ -1,0 +1,30 @@
+//Generate Breakpoint Prefixes
+
+// all of the breakpoint names and values
+// we may use this a lot, keep them somwhere safe
+$breakpoints: (
+  all: 0,
+  xs: 24rem,
+  sm: 40rem,
+  md: 52rem,
+  lg: 64rem,
+);
+
+// returns the apropriate media query
+// for the given breakpoint name
+@mixin media-query($breakpoint) {
+  @if $breakpoint == 'all' {
+    @content;
+  } @else {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+// generates a prefix based on the breakpoint
+// name it is passed
+@function breakpoint-prefix($breakpoint){
+  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
+  @return $breakpoint-prefix;
+};

@@ -1,38 +1,71 @@
 // Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
-  line-height: 1.3;
+  line-height: $line-height;
 }
 
-h1, .type-1 {
-  font-size: 2.25rem;
+h1{
+  font-size: $type-1;
 }
 
-h2, .type-2 {
-  font-size: 1.375rem;
+h2 {
+  font-size: $type-2;
 }
 
-h3, .type-3 {
-  font-size: 1.125rem;
+h3 {
+  font-size: $type-3;
 }
 
-h4, .type-4 {
-  font-size: 1rem;
+h4 {
+  font-size: $type-4;
 }
 
-h5, .type-5 {
-  font-size: 0.875rem;
+h5 {
+  font-size: $type-5;
 }
 
-h6, .type-6 {
-  font-size: 0.75rem;
+h6 {
+  font-size: $type-6;
+}
+
+// Type Size Classes + Responsive Prefixes
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  @include media-query($breakpoint-name){
+
+		.#{$breakpoint-prefix}type-1 {
+		  font-size: $type-1;
+		}
+
+		.#{$breakpoint-prefix}type-2 {
+		  font-size: $type-2;
+		}
+
+		.#{$breakpoint-prefix}type-3 {
+		  font-size: $type-3;
+		}
+
+		.#{$breakpoint-prefix}type-4 {
+		  font-size: $type-4;
+		}
+
+		.#{$breakpoint-prefix}type-5 {
+		  font-size: $type-5;
+		}
+
+		.#{$breakpoint-prefix}type-6 {
+		  font-size: $type-6;
+		}
+
+	}
 }
 
 
 // Body
 
 p {
-  font-size: 1rem;
+  font-size: $type-4;
   line-height: 1.375em;
 }
 
