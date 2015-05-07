@@ -4,9 +4,7 @@
  float: left;
 }
 
-// @each $breakpoint in (all, xs, sm, md, lg) {
-//   $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-//     @include media($breakpoint) {
+// Column and Offset Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  

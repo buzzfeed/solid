@@ -12,6 +12,8 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 
 // Layout
 
+// Some Layout Classes + Responsive Prefixes
+
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
   @include media-query($breakpoint-name){
@@ -38,18 +40,18 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
     }
 }
 
-    .clearfix:before,
-    %clearfix:before,
-    .clearfix:after,
-    %clearfix:after {
-      content: " ";
-      display: table;
-    }
-    .clearfix:after { clear: both; }
+.clearfix:before,
+%clearfix:before,
+.clearfix:after,
+%clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after { clear: both; }
 
-    // White Space
+// White Space
 
-    // Margin
+// Margins + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
@@ -100,7 +102,7 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
     }
 }
 
-    //Padding
+//Padding + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
@@ -148,51 +150,53 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 
     }
 }
-    //Positioning
+//Positioning
 
-    .relative { position: relative; }
-    .absolute { position: absolute; }
-    .fixed    { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
 
-    .z1 { z-index: 100; }
-    .z2 { z-index: 200; }
-    .z3 { z-index: 300; }
-    .z4 { z-index: 400; }
+.z1 { z-index: 100; }
+.z2 { z-index: 200; }
+.z3 { z-index: 300; }
+.z4 { z-index: 400; }
 
-    .t0 { top:    0; }
-    .r0 { right:  0; }
-    .b0 { bottom: 0; }
-    .l0 { left:   0; }
+.t0 { top:    0; }
+.r0 { right:  0; }
+.b0 { bottom: 0; }
+.l0 { left:   0; }
 
-    .t1 { top:    $space-1; }
-    .r1 { right:  $space-1; }
-    .b1 { bottom: $space-1; }
-    .l1 { left:   $space-1; }
+.t1 { top:    $space-1; }
+.r1 { right:  $space-1; }
+.b1 { bottom: $space-1; }
+.l1 { left:   $space-1; }
 
-    .t2 { top:    $space-2; }
-    .r2 { right:  $space-2; }
-    .b2 { bottom: $space-2; }
-    .l2 { left:   $space-2; }
+.t2 { top:    $space-2; }
+.r2 { right:  $space-2; }
+.b2 { bottom: $space-2; }
+.l2 { left:   $space-2; }
 
-    .t3 { top:    $space-3; }
-    .r3 { right:  $space-3; }
-    .b3 { bottom: $space-3; }
-    .l3 { left:   $space-3; }
+.t3 { top:    $space-3; }
+.r3 { right:  $space-3; }
+.b3 { bottom: $space-3; }
+.l3 { left:   $space-3; }
 
-    .t4 { top:    $space-4; }
-    .r4 { right:  $space-4; }
-    .b4 { bottom: $space-4; }
-    .l4 { left:   $space-4; }
+.t4 { top:    $space-4; }
+.r4 { right:  $space-4; }
+.b4 { bottom: $space-4; }
+.l4 { left:   $space-4; }
 
-    // Rounded Corners and Circles and Borders
+// Rounded Corners and Circles and Borders
 
-    .rounded{
-      border-radius:3px;
-    }
+.rounded{
+  border-radius:3px;
+}
 
-    .circle{
-      border-radius:50%;
-    }
+.circle{
+  border-radius:50%;
+}
+
+// Borders + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  

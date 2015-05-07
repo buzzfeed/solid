@@ -28,6 +28,8 @@ h6 {
   font-size: $type-6;
 }
 
+// Type Size Classes + Responsive Prefixes
+
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
   @include media-query($breakpoint-name){
