@@ -18,5 +18,5 @@
 
 // include an svg icon as a background image using variables
 @function svg-background($svg-variable) {
-  @return url("data:image/svg+xml;utf8,#{$svg-variable}");
+  @return url("data:image/svg+xml,#{$svg-variable}");
 }
