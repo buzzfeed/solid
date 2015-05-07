@@ -1,5 +1,13 @@
 // Headers
 
+
+//Hosted Typefaces – we'll eventually move these to their own partial 
+
+@font-face {
+  font-family: 'Caponi-Slab-Semibold';
+  src: url('fonts/Caponi/Caponi-Slab-Semibold.otf');
+}
+
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
   line-height: 1.3;
 }
@@ -84,4 +92,12 @@ i,
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+
+// Typeface Classes
+
+.slab {
+  font-family: 'Caponi-Slab-Semibold';
+  line-height:1.1;
 }
