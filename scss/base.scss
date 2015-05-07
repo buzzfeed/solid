@@ -1,18 +1,9 @@
 @import 'reset';
 @import 'variables';
 @import 'mixins';
-
-@each $breakpoint in (all, xs, sm, md, lg) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
-  @include media($breakpoint) {
-
-		@import 'colors';
-		@import 'typography';
-		@import 'utilities';
-		@import 'grid';
-		@import 'forms/forms';
-
-	}
-}
-
+@import 'colors';
+@import 'typography';
+@import 'utilities';
+@import 'grid';
+@import 'forms/forms';
 @import 'solid-specific';

@@ -9,6 +9,9 @@
 //     @include media($breakpoint) {
 
         // Columns
+@each $breakpoint in (all, xs, sm, md, lg) {
+  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
+  @include media($breakpoint) {
 
         .#{$breakpoint-prefix}col-1 {
             width: percentage(1/12);
@@ -103,8 +106,8 @@
         .#{$breakpoint-prefix}offset-11 {
             margin-left: percentage(11/12);
         }
-//     }
-// }
+    }
+}
 
 // Add gutters to the full grid
 

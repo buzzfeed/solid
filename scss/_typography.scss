@@ -4,28 +4,35 @@ body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type
   line-height: 1.3;
 }
 
-h1, .#{$breakpoint-prefix}type-1 {
-  font-size: 2.25rem;
-}
+@each $breakpoint in (all, xs, sm, md, lg) {
+  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
+  @include media($breakpoint) {
 
-h2, .#{$breakpoint-prefix}type-2 {
-  font-size: 1.375rem;
-}
+		h1, .#{$breakpoint-prefix}type-1 {
+		  font-size: 2.25rem;
+		}
 
-h3, .#{$breakpoint-prefix}type-3 {
-  font-size: 1.125rem;
-}
+		h2, .#{$breakpoint-prefix}type-2 {
+		  font-size: 1.375rem;
+		}
 
-h4, .#{$breakpoint-prefix}type-4 {
-  font-size: 1rem;
-}
+		h3, .#{$breakpoint-prefix}type-3 {
+		  font-size: 1.125rem;
+		}
 
-h5, .#{$breakpoint-prefix}type-5 {
-  font-size: 0.875rem;
-}
+		h4, .#{$breakpoint-prefix}type-4 {
+		  font-size: 1rem;
+		}
 
-h6, .#{$breakpoint-prefix}type-6 {
-  font-size: 0.75rem;
+		h5, .#{$breakpoint-prefix}type-5 {
+		  font-size: 0.875rem;
+		}
+
+		h6, .#{$breakpoint-prefix}type-6 {
+		  font-size: 0.75rem;
+		}
+
+	}
 }
 
 
