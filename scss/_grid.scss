@@ -10,97 +10,97 @@
 
         // Columns
 
-        @include responsive(col-1) {
+        .#{$breakpoint-prefix}col-1 {
             width: percentage(1/12);
         }
 
-        @include responsive(col-2) {
+        .#{$breakpoint-prefix}col-2 {
             width: percentage(2/12);
         }
 
-        @include responsive(col-3) {
+        .#{$breakpoint-prefix}col-3 {
             width: percentage(3/12);
         }
 
-        @include responsive(col-4) {
+        .#{$breakpoint-prefix}col-4 {
             width: percentage(4/12);
         }
 
-        @include responsive(col-5) {
+        .#{$breakpoint-prefix}col-5 {
             width: percentage(5/12);
         }
 
-        @include responsive(col-6) {
+        .#{$breakpoint-prefix}col-6 {
             width: percentage(6/12);
         }
 
-        @include responsive(col-7) {
+        .#{$breakpoint-prefix}col-7 {
             width: percentage(7/12);
         }
 
-        @include responsive(col-8) {
+        .#{$breakpoint-prefix}col-8 {
             width: percentage(8/12);
         }
 
-        @include responsive(col-9) {
+        .#{$breakpoint-prefix}col-9 {
             width: percentage(9/12);
         }
 
-        @include responsive(col-10) {
+        .#{$breakpoint-prefix}col-10 {
             width: percentage(10/12);
         }
 
-        @include responsive(col-11) {
+        .#{$breakpoint-prefix}col-11 {
             width: percentage(11/12);
         }
 
-        @include responsive(col-12) {
+        .#{$breakpoint-prefix}col-12 {
             width: percentage(12/12);
         }
 
         // Offsets
 
-        @include responsive(offset-1) {
+        .#{$breakpoint-prefix}offset-1 {
             margin-left: percentage(1/12);
         }
 
-        @include responsive(offset-2) {
+        .#{$breakpoint-prefix}offset-2 {
             margin-left: percentage(2/12);
         }
 
-        @include responsive(offset-3) {
+        .#{$breakpoint-prefix}offset-3 {
             margin-left: percentage(3/12);
         }
 
-        @include responsive(offset-4) {
+        .#{$breakpoint-prefix}offset-4 {
             margin-left: percentage(4/12);
         }
 
-        @include responsive(offset-5) {
+        .#{$breakpoint-prefix}offset-5 {
             margin-left: percentage(5/12);
         }
 
-        @include responsive(offset-6) {
+        .#{$breakpoint-prefix}offset-6 {
             margin-left: percentage(6/12);
         }
 
-        @include responsive(offset-7) {
+        .#{$breakpoint-prefix}offset-7 {
             margin-left: percentage(7/12);
         }
 
-        @include responsive(offset-8) {
+        .#{$breakpoint-prefix}offset-8 {
             margin-left: percentage(8/12);
         }
 
-        @include responsive(offset-9) {
+        .#{$breakpoint-prefix}offset-9 {
             margin-left: percentage(9/12);
         }
 
-        @include responsive(offset-10) {
+        .#{$breakpoint-prefix}offset-10 {
             margin-left: percentage(10/12);
         }
 
-        @include responsive(offset-11) {
+        .#{$breakpoint-prefix}offset-11 {
             margin-left: percentage(11/12);
         }
 //     }

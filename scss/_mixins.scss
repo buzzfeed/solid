@@ -15,16 +15,5 @@
       @content;
     }
   }
-}
-
-@mixin responsive($class) {
-  @each $breakpoint in (all, xs, sm, md, lg) {
-    $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
   
-    @include media($breakpoint) {
-      .#{$breakpoint-prefix}#{$class} {
-        @content
-      }
-    }
-  }
 }
