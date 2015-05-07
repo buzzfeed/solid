@@ -20,21 +20,102 @@
 
 <p class="mb4">As you can see, we're using our <b>.show</b> and <b>.hide</b> utility classes, but adding breakpoint prefixes to determine when to show and when to hide each div.</p>
 
-<div class="mb3">
+<div class="mb4">
 	<h3 class="bold mb1">How It Works</h3>
-	<p>Unlike typical responsive systems, Solid works responsively from the lowest breakpoint and up, as opposed to largest-to-smallest. This means thinking mobile-first and working our way up to our desktop layout when writing our markup.</p>
+	<p class="mb3">Unlike typical responsive systems, Solid works responsively from the lowest breakpoint and up, as opposed to largest-to-smallest. This means thinking mobile-first and working our way up to our desktop layout when writing our markup.</p>
+  <table class="full-width border rounded mb3">
+    <thead class="bold border-bottom">
+      <td class="py2 px1">Prefixes</td>
+      <td class="py2 px1">Description</td>
+    </thead>
+    <tr class="border-bottom">
+      <td class="p1">xs-</td>
+      <td class="p1">Apply at min-width of 24rem</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">sm-</td>
+      <td class="p1">Apply at min-width of 40rem</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">md-</td>
+      <td class="p1">Apply at min-width of 52rem</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">lg-</td>
+      <td class="p1">Apply at min-width of 64rem</td>
+    </tr>
+  </table>
+  <h4 class="bold mb1">What can I use these with?</h4>
+  <p class="mb3">Not all our utility classes are responsive. We've selected a set that seems relevant and useful, rather than make everything responsive. Below is a list of what's possible to make responsive by default:</p>
+  <table class="full-width border rounded mb3">
+    <thead class="bold border-bottom">
+      <td class="py2 px1">Responsive classes</td>
+      <td class="py2 px1">Description</td>
+    </thead>
+    <tr class="border-bottom">
+      <td class="p1">.col-1 to .col-12</td>
+      <td class="p1">Our grid system.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.type-1 to .type-6</td>
+      <td class="p1">Our type system.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.display-*</td>
+      <td class="p1">inline, block, inline-block</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.overflow-*</td>
+      <td class="p1">hidden, auto, scroll</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.show</td>
+      <td class="p1">Show content.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.hide</td>
+      <td class="p1">Hide content.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.m*</td>
+      <td class="p1">Margins</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.p*</td>
+      <td class="p1">Padding</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.half-width</td>
+      <td class="p1">Half the parent width.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.full-width</td>
+      <td class="p1">100% width.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.full-height</td>
+      <td class="p1">100% height.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.fit</td>
+      <td class="p1">100% max-width.</td>
+    </tr>
+    <tr class="border-bottom">
+      <td class="p1">.border, .border-*</td>
+      <td class="p1">Borders.</td>
+    </tr>
+  </table>
+
 </div>
 
 <div class="mb4 clearfix">
-
-  <h3 class="bold mt4">Responsive Grid</h3>
-  <p class="mb2">The responsive grid is implemented by adding breakpoint classes appended with the number of columns for that specific breakpoint. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .sm-col-12 .md-col-6.</p>
-  <div class="clearfix mt2 text-gray-lightest type-5">
+  <h3 class="bold mb1">Responsive Grid</h3>
+  <p class="mb3">The responsive grid is implemented by adding breakpoint prefixes to the column classes. For each breakpoint you want a new column-width, you'll add that class to the element. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .xs-col-12 .md-col-6.</p>
+  <div class="clearfix text-gray-lightest type-5">
     <label class="col sm-col-12 text-gray-lightest">.col .xs-col-12 .md-col-6 .lg-col-3</label>
     <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border rounded p2 fill-gray-lighter"></div>
   </div> 
-
 </div> 
