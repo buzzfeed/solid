@@ -20,7 +20,7 @@ html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif
     .#{$breakpoint-prefix}block        { display: block; }
     .#{$breakpoint-prefix}inline-block { display: inline-block; }
 
-    .#{$breakpoint-prefix}show{ display: initial; }
+    .#{$breakpoint-prefix}show{ display: block; }
     .#{$breakpoint-prefix}hide{ display: none; }
 
     .#{$breakpoint-prefix}overflow-hidden { overflow: hidden; }
