@@ -1,4 +1,26 @@
-<div class="xs-hide lg-show fill-green text-white">Large</div>
-<div class="xs-hide md-show lg-hide fill-orange text-white">Medium</div>
-<div class="xs-hide sm-show md-hide fill-blue text-white">Small</div>
-<div class="xs-show sm-hide fill-pink text-white">Extra Small</div>
+<h2 class="bold border-bottom mb4 pb2">Responsive Prefixes</h2>
+
+<div class="mb3">
+	<h3 class="bold mb1">An Introduction</h3>
+	<p>We've made our utility, typography and grid classes even more powerful by adding responsive prefixes. Using the prefixes xs, sm, md, and lg, you can quickly and easily adjust your layout and content as a user scales their browser down.</p>
+</div>
+
+<p class="bold mb1">Resize your browser and watch the div below for a quick example.</p>
+
+<div class="mb3">
+	<div class="xs-hide lg-show fill-green text-white p2">Large</div>
+	<div class="xs-hide md-show lg-hide fill-orange text-white p2">Medium</div>
+	<div class="xs-hide sm-show md-hide fill-blue text-white p2">Small</div>
+	<div class="xs-show sm-hide fill-pink text-white p2">Extra Small</div>
+</div>
+
+<p class="mb1">This is achieved with the markup below:</p>
+
+<pre class="mb3"><code class="html"><%= '<div class="xs-hide lg-show fill-green text-white p2">Large</div>' %><br><%= '<div class="xs-hide md-show lg-hide fill-orange text-white p2">Medium</div>' %><br><%= '<div class="xs-hide sm-show md-hide fill-blue text-white p2">Small</div>' %><br><%= '<div class="xs-show sm-hide fill-pink text-white p2">Extra Small</div>' %></code></pre>
+
+<p class="mb4">As you can see, we're using our <b>.show</b> and <b>.hide</b> utility classes, but adding breakpoint prefixes to determine when to show and when to hide each div.</p>
+
+<div class="mb3">
+	<h3 class="bold mb1">How It Works</h3>
+	<p>Unlike typical responsive systems, Solid works responsively from the lowest breakpoint and up, as opposed to largest-to-smallest. This means thinking mobile-first and working our way up to our desktop layout when writing our markup.</p>
+</div>
