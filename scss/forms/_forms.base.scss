@@ -120,12 +120,14 @@
 .form-helper {
 	color: $text-gray-lightest;
 	display: block;
-	margin-top: $space-1; 
+	margin-top: $space-1;
+  font-size: $type-5; 
 }
 
 .form-feedback {
   display: block;
   margin-top: $space-1; 
+  font-size: $type-5; 
 }
 
 .form-warning {
