@@ -1,0 +1,34 @@
+<% // tree function, generates links of files under the specified folder %>
+<% // usage: tree(public.sandbox.prototypes, "/sandbox/prototypes/") %>
+
+<% var filter = /(\.html$)/; %>
+<% var replace = /(\.html$)|(^index\.html$)/; %>
+
+<% function tree(head, tail) { %>
+  <% for (key in head) { %>
+    <% val = head[key]; %>
+    <% if (key !== '.git' && key !== '_data') { %>
+      <% if (key == '_contents') { %>
+        <% for (i in val) { %>
+          <% file = val[i] %>
+          <% if (filter.test(file) && !/^404\.html/.test(file)) { %>
+            <% file = file.replace(replace, ""); %>
+            <li><a target="_blank" href="<%= tail + file %>"><%= file %></a></li>
+          <% } %>
+        <% } %>
+      <% } else { %>
+        <% tree(val, tail + key + "/") %>
+      <% } %>
+    <% } %>
+  <% } %>
+<% } %>
+
+<section class="mb4">
+  <h2 class="mb1"> The Sandbox </h2>
+  <p class="mb4"> The Sandbox is an open and safe environment for designers to implement working prototypes and demo's using Solid as the CSS framework. To use, simply add a template file inside the Prototypes folder in Sandbox.</p>
+
+  <ul>
+    <% tree(public.sandbox.prototypes, "/sandbox/prototypes/") %>
+  </ul>
+
+</section>
