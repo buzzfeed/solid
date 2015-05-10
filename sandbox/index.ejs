@@ -13,7 +13,7 @@
           <% file = val[i] %>
           <% if (filter.test(file) && !/^404\.html/.test(file)) { %>
             <% file = file.replace(replace, ""); %>
-            <li><a target="_blank" href="<%= tail + file %>"><%= file %></a></li>
+            <li class="mb1"><a target="_blank" href="<%= tail + file %>"><%= file %></a></li>
           <% } %>
         <% } %>
       <% } else { %>
