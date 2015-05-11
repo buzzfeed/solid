@@ -3,14 +3,15 @@
 
 //Hosted Typefaces – we'll eventually move these to their own partial 
 
+
 @font-face {
- font-family: 'MyWebFont';
- src: url('webfont.eot'); /* IE9 Compat Modes */
- src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-      url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-      url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+ font-family: 'Caponi';
+ src: url('Caponi.eot'); /* IE9 Compat Modes */
+ src: url('Caponi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('Caponi.woff2') format('woff2'), /* Super Modern Browsers */
+      url('Caponi.woff') format('woff'), /* Pretty Modern Browsers */
+      url('Caponi.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('Caponi.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
