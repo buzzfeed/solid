@@ -1,18 +1,27 @@
-// Headers
-
-
 //Hosted Typefaces – we'll eventually move these to their own partial 
 
 
 @font-face {
  font-family: 'Caponi-Slab-Semibold';
- src: url('fonts/Caponi/CaponiSlab-Semibold.eot'); /* IE9 Compat Modes */
- src: url('fonts/Caponi/CaponiSlab-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('fonts/Caponi/CaponiSlab-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-      url('fonts/Caponi/CaponiSlab-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
-      url('fonts/Caponi/CaponiSlab-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('fonts/Caponi/CaponiSlab-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+ src: url('fonts/Caponi/CaponiSlab-Semibold-Web.eot'); /* IE9 Compat Modes */
+ src: url('fonts/Caponi/CaponiSlab-Semibold-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/Caponi/CaponiSlab-Semibold-Web.woff') format('woff'), /* Pretty Modern Browsers */
+      url('fonts/Caponi/CaponiSlab-Semibold-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+// Kerning for Caponi
+
+body {
+-moz-font-feature-settings: "liga", "kern";
+-moz-font-feature-settings:"liga=1, kern=1";
+-ms-font-feature-settings:"liga", "kern";
+-o-font-feature-settings:"liga", "kern";
+-webkit-font-feature-settings:"liga", "kern";
+font-feature-settings: "liga", "kern";
+}
+
+// Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
   line-height: $line-height;
@@ -153,7 +162,6 @@ i,
 .slab {
   font-family: 'Caponi-Slab-Semibold';
   line-height:1.1;
-  webkit-font-smoothing: antialiased;
   & h6 {
     font-family:'Proxima Nova';
   }
