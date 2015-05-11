@@ -48,3 +48,13 @@ pre {
 .solid-nav-items a{
   padding:.4rem 0;
 }
+
+// Welcome
+
+.find-help a{
+  text-decoration:none;
+}
+
+.find-help a:hover{
+  background:$fill-gray-lighter;
+}
