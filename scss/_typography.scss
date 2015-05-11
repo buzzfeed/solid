@@ -1,6 +1,5 @@
 //Hosted Typefaces – we'll eventually move these to their own partial 
 
-
 @font-face {
  font-family: 'Caponi-Slab-Semibold';
  src: url('fonts/Caponi/CaponiSlab-Semibold-Web.eot'); /* IE9 Compat Modes */
@@ -8,17 +7,6 @@
       url('fonts/Caponi/CaponiSlab-Semibold-Web.woff') format('woff'), /* Pretty Modern Browsers */
       url('fonts/Caponi/CaponiSlab-Semibold-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
       url('fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-// Kerning for Caponi
-
-body {
--moz-font-feature-settings: "liga", "kern";
--moz-font-feature-settings:"liga=1, kern=1";
--ms-font-feature-settings:"liga", "kern";
--o-font-feature-settings:"liga", "kern";
--webkit-font-feature-settings:"liga", "kern";
-font-feature-settings: "liga", "kern";
 }
 
 // Headers
@@ -162,6 +150,12 @@ i,
 .slab {
   font-family: 'Caponi-Slab-Semibold';
   line-height:1.1;
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings:"liga=1, kern=1";
+  -ms-font-feature-settings:"liga", "kern";
+  -o-font-feature-settings:"liga", "kern";
+  -webkit-font-feature-settings:"liga", "kern";
+  font-feature-settings: "liga", "kern";
   & h6 {
     font-family:'Proxima Nova';
   }
