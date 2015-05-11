@@ -1,5 +1,13 @@
 // Headers
 
+
+//Hosted Typefaces – we'll eventually move these to their own partial 
+
+@font-face {
+  font-family: 'Caponi-Slab-Semibold';
+  src: url('fonts/Caponi/Caponi-Slab-Semibold.otf');
+}
+
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
   line-height: $line-height;
 }
@@ -24,8 +32,11 @@ h5 {
   font-size: $type-5;
 }
 
-h6 {
-  font-size: $type-6;
+h6, .type-6 {
+  font-size: 0.75rem;
+  &.slab {
+      font-family:'Proxima Nova';
+    }
 }
 
 // Type Size Classes + Responsive Prefixes
@@ -130,3 +141,14 @@ i,
 .decoration-line-through{
 	text-decoration: line-through;
 }
+
+// Typeface Classes //
+
+.slab {
+  font-family: 'Caponi-Slab-Semibold';
+  line-height:1.1;
+  & h6 {
+    font-family:'Proxima Nova';
+  }
+}
+
