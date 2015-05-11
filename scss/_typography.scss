@@ -34,6 +34,9 @@ h5, .type-5 {
 
 h6, .type-6 {
   font-size: 0.75rem;
+  &.slab {
+      font-family:'Proxima Nova';
+    }
 }
 
 
@@ -100,4 +103,7 @@ i,
 .slab {
   font-family: 'Caponi-Slab-Semibold';
   line-height:1.1;
+  & h6 {
+    font-family:'Proxima Nova';
+  }
 }
