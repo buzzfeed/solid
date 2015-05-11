@@ -1,0 +1,26 @@
+// avatars need to be a fixed with, the type floated right to it isn't dynamically sized, so why would the image be?
+
+
+.prototype-news {
+  max-width: 1200px;
+}
+
+.byline_avatar-size, .byline_map-size {
+  width: 34px;
+  height: 34px; 
+}
+
+.light-border {
+  border: 1px solid #DFDFDF;
+  border-radius: 2px;
+}
+
+.no-wrap {
+  word-wrap: 
+}
+
+a {
+  text-decoration: none;
+}
+
+
