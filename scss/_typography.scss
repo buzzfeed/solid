@@ -5,13 +5,13 @@
 
 
 @font-face {
- font-family: 'Caponi';
- src: url('Caponi.eot'); /* IE9 Compat Modes */
- src: url('Caponi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('Caponi.woff2') format('woff2'), /* Super Modern Browsers */
-      url('Caponi.woff') format('woff'), /* Pretty Modern Browsers */
-      url('Caponi.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('Caponi.svg#svgFontName') format('svg'); /* Legacy iOS */
+ font-family: 'Caponi-Slab-Semibold';
+ src: url('fonts/Caponi/CaponiSlab-Semibold.eot'); /* IE9 Compat Modes */
+ src: url('fonts/Caponi/CaponiSlab-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/Caponi/CaponiSlab-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/Caponi/CaponiSlab-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+      url('fonts/Caponi/CaponiSlab-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('fonts/Caponi/CaponiSlab-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
