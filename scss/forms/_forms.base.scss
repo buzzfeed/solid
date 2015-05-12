@@ -15,26 +15,27 @@
 }
 
 .select {
-  background-image: svg-background($down-caret);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 16px) center;
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0px;
-  padding-right: 42px;
-  height: $input-height;
+  @include select;
 }
 
 .text-input--small,
-.select--small,
 .date--small {
   @extend .text-input;
   font-size: $type-5;
   line-height: $input-height-small;   
 }
 
+.form-label--small {
+  @extend .form-label;
+  font-size: $type-5;
+}
+
 .select--small {
-//background position, sizing and padding-right changes here
+  @include select; 
+  @extend .text-input;
+  font-size: $type-5;
+  line-height: $input-height-small;   
+  height: $input-height-small + .1rem;
 }
 
 .textarea {

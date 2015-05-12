@@ -13,6 +13,18 @@
   width: 1px;
 }
 
+// hide from humans not screen readers
+@mixin select {
+  background-image: svg-background($down-caret);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+  padding-right: 42px;
+  height: $input-height + .1rem;
+}
+
 // SVG Background Images
 // -------------------------
 

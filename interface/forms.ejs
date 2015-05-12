@@ -97,11 +97,40 @@
   <div class="xs-col-12 lg-col-8 mb4 fill-gray-lighter rounded border">  
     <div class="p3">
       <label class="block mb1 type-4 bold">Small text input</label>
-      <label class="block type-4 text-gray-lighter">This is a default small text input. To use any input at a smaller size, apply the <code>.small</code> class.</label>
+      <label class="block type-4 text-gray-lighter">This is a small text input. This should be used when you need to save space.</label>
     </div>
     <div class="fill-white p3">
       <input type="text" class="text-input--small mb2">
       <pre><code class="html"><%='<input type="text" class="text-input--small mb2">'%></code></pre>
+    </div>
+  </div>
+
+  <div class="xs-col-12 lg-col-8 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block mb1 type-4 bold">Small text input with label</label>
+      <label class="block type-4 text-gray-lighter">This is a small text input with a label.</label>
+    </div>
+  <div class="fill-white p3">
+    <label class="form-label--small">Your name</label>
+    <input type="text" class="text-input--small mb2">
+    <pre><code class="html"><%='<label class="form-label--small">Your name</label>'%><br/><%='<input type="text" class="text-input--small mb2">'%></code></pre>
+    </div>
+  </div>
+
+
+  <div class="xs-col-12 lg-col-8 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block mb1 type-4 bold">Small select</label>
+      <label class="block type-4 text-gray-lighter">This is a small select menu.</label>
+    </div>
+    <div class="fill-white p3">
+      <select class="select--small mb2">
+        <option value="choose">Choose a personality</option>
+        <option value="amazing">Amazing</option>
+        <option value="boring">Boring</option>
+        <option value="fun">Fun</option> 
+      </select>
+      <pre><code class="html"><%= '<select class="select--small mb2">'%><br/>  <%='<option value="choose">Choose a personality</option>'%><br/>  <%='<option value="amazing">Amazing</option>'%><br/>  <%='<option value="boring">Boring</option>'%><br/>  <%='<option value="fun">Fun</option>'%><br/><%='</select>'  %> </code></pre>
     </div>
   </div>
 
@@ -154,7 +183,7 @@
     <div class="mb4 form-error">
     <label class="block mb1 type-4">.form-error .helper <br>You can use these messages together. If a field has helper text, the error (or success/warning) message appears above it.</label>
     <label class="form-label">Your name</label>
-    <input type="text" class="text-input text-input_small">
+    <input type="text" class="text-input">
     <label class="form-feedback">This is an error message about your password.</label>
     <label class="form-helper"> BTW, your username cannot be changed</label>
   </div>
