@@ -145,6 +145,10 @@ i,
 	text-decoration: line-through;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 // Typeface Classes //
 
 .slab {
@@ -158,6 +162,13 @@ i,
   font-feature-settings: "liga", "kern";
   & h6 {
     font-family:'Proxima Nova';
+  }
+  &.bold {
+    font-family: 'Caponi-Slab-Semibold';
+    font-weight: normal;
+  }
+  &.italic {
+    font-family: 'Caponi-Slab-Semibold';
   }
 }
 
