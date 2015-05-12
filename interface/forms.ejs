@@ -1,7 +1,7 @@
 <h2 class="bold border-bottom mb4 pb2">Forms</h2>
 
 <section class="mb4">
-  <h3 class="mb2 bold">Inputs</h3>
+  <h3 class="mb2 bold">Default Inputs</h3>
 
   <div class="xs-col-12 lg-col-8 mb4 fill-gray-lighter rounded border">  
     <div class="p3">
@@ -85,10 +85,27 @@
    <div class="mb4">
     <label class="block mb1 type-4">date</label>
     <label class="form-label">Date of birth</label> 
-    <input type="text" placeholder="MM" class="date">
-    <input type="text" placeholder="DD" class="date">
-    <input type="text" placeholder="YYYY" class="date date--year">
+    <input type="text" placeholder="MM" maxlength="2" class="date">
+    <input type="text" placeholder="DD" maxlength="2" class="date">
+    <input type="text" placeholder="YYYY" maxlength="4" class="date">
   </div>
+</section>
+
+<section class="mb4">
+  <h3 class="mb2 bold">Small Inputs</h3>
+
+  <div class="xs-col-12 lg-col-8 mb4 fill-gray-lighter rounded border">  
+    <div class="p3">
+      <label class="block mb1 type-4 bold">Small text input</label>
+      <label class="block type-4 text-gray-lighter">This is a default small text input. To use any input at a smaller size, apply the <code>.small</code> class.</label>
+    </div>
+    <div class="fill-white p3">
+      <input type="text" class="text-input small mb2">
+      <pre><code class="html"><%='<input type="text" class="text-input small mb2">'%></code></pre>
+    </div>
+  </div>
+
+
 </section>
 
 <section class="mb4">
@@ -137,9 +154,11 @@
     <div class="mb4 form-error">
     <label class="block mb1 type-4">.form-error .helper <br>You can use these messages together. If a field has helper text, the error (or success/warning) message appears above it.</label>
     <label class="form-label">Your name</label>
-    <input type="text" class="text-input">
+    <input type="text" class="text-input text-input_small">
     <label class="form-feedback">This is an error message about your password.</label>
     <label class="form-helper"> BTW, your username cannot be changed</label>
   </div>
   </div>
 </section>
+
+

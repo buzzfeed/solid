@@ -8,16 +8,16 @@
 .date {
 	font-family: inherit;
   background: $fill-white;
-  font-size: $type-3;
+  font-size: $type-4;
   line-height: $input-height;
-  padding: 0 $space-2;
+  padding: 0 .75rem;
   border: 1px solid $fill-gray;
 }
 
 .textarea {
   line-height: $line-height;
   min-height: $input-height * 2;
-  padding: $space-2; 
+  padding: .75rem; 
 }
 
 .select {
@@ -29,6 +29,11 @@
   border-radius: 0px;
   padding-right: 42px;
   height: $input-height;
+}
+
+.small{
+  font-size: $type-5;
+  line-height: $input-height-small;   
 }
 
 .radio {
@@ -95,12 +100,9 @@
 
 .date {
   display: inline;
-  width: $space-4 * 2;
-  margin-right: $space-1;
-}
-
-.date--year {
-  width: 5rem;
+  text-align: center;
+  width: $space-3 * 3;
+  margin-right: $space-1 / 2;
 }
 
 .form-label {
