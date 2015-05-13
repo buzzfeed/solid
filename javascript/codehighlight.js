@@ -19,7 +19,7 @@ function SelectText(element) {
 }
 
 $(function() {
-    $('label').on('click', function(e) {
+    $('.js-highlight').on('click', function(e) {
         SelectText(e.currentTarget);
     });
 });
