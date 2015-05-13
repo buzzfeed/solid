@@ -5,8 +5,28 @@
 $input-height: $line-height + 1.5rem;
 $input-height-small: $line-height + 1rem;
 
-@mixin input-base {
-  font-family: inherit;
+// Adds some base custom styles to radio buttons and checkboxes. 
+// In order to specify shape, border radius is applied 
+// in class name for the element.
+@mixin option-input-style {
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px 0 0;
+    position: relative;
+    bottom: -2px;
+    background-color: $fill-white;
+    border: 1px solid $fill-gray;
+  }
+}
+
+.text-input,
+.textarea,
+.select,
+.date-input {
+	font-family: inherit;
   background: $fill-white;
   font-size: $type-4;
   height: $input-height;
@@ -14,51 +34,30 @@ $input-height-small: $line-height + 1rem;
   border: 1px solid $fill-gray;
 }
 
-@mixin select-base {
+.select {
   background-image: svg-background($down-caret);
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
   background-size: 12px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0px;
+  border-radius: 0;
   padding-right: 42px;
   height: $input-height;
 }
 
-@mixin form-label-base {
-  display: block;
-  font-weight: 600;
-  margin-bottom: $space-1; 
-}
-
-.text-input,
-.textarea,
-.select,
-.date {
-	@include input-base;
-}
-
-.select {
-  @include select-base;
-}
-
 .select--small,
 .text-input--small,
-.date--small {
-  @include input-base;
+.date-input--small {
   font-size: $type-5;
   height: $input-height-small;   
 }
 
 .form-label--small {
-  @include form-label-base;
   font-size: $type-5;
 }
 
 .select--small {
-  @include input-base;
-  @include select-base; 
   font-size: $type-5;   
   height: $input-height-small;
   background-size: 10px;
@@ -78,19 +77,10 @@ $input-height-small: $line-height + 1rem;
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
+  @include option-input-style;
 
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0 6px 0 0;
-    position: relative;
-    bottom: -2px;
+  &:before {   
     border-radius: 50%;
-    background-color: $fill-white;
-    border: 1px solid #aaa;
-    box-sizing: border-box;
   }
 }
 
@@ -108,19 +98,10 @@ $input-height-small: $line-height + 1rem;
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
+  @include option-input-style;
 
-  &:before {
-    content: "";
-    display:inline-block;
-    width:14px;
-    height:14px;
-    margin: 0 6px 0 0;
-    position: relative;
-    bottom: -2px;
+  &:before { 
     border-radius: 30%;
-    background-color: $fill-white;
-    border: 1px solid #aaa;
-    box-sizing: border-box;
   }
 }
 
@@ -132,7 +113,7 @@ $input-height-small: $line-height + 1rem;
   border-style: none;
 }
 
-.date {
+.date-input {
   display: inline;
   text-align: center;
   width: $space-3 * 3;
@@ -141,7 +122,9 @@ $input-height-small: $line-height + 1rem;
 
 // labels, etc
 .form-label {
-  @include form-label-base;
+  display: block;
+  font-weight: 600;
+  margin-bottom: $space-1; 
 }
 
 .form-label--optional {
