@@ -28,3 +28,19 @@ $breakpoints: (
   $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
   @return $breakpoint-prefix;
 };
+
+// hide from humans not screen readers
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px; margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// include an svg icon as a background image using variables
+@function svg-background($svg-variable) {
+  @return url("data:image/svg+xml,#{$svg-variable}");
+}

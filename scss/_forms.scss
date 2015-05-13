@@ -2,48 +2,74 @@
 // Forms Base Styles
 // --------------------------------------------------
 
-.text-input,
-.textarea,
-.select,
-.date {
-	font-family: inherit;
+$input-height: $line-height + 1.5rem;
+$input-height-small: $line-height + 1rem;
+
+@mixin input-base {
+  font-family: inherit;
   background: $fill-white;
   font-size: $type-4;
-  line-height: $input-height;
+  height: $input-height;
   padding: 0 .75rem;
   border: 1px solid $fill-gray;
 }
 
-.select {
-  @include select;
+@mixin select-base {
+  background-image: svg-background($down-caret);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  background-size: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+  padding-right: 42px;
+  height: $input-height;
 }
 
+@mixin form-label-base {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $space-1; 
+}
+
+.text-input,
+.textarea,
+.select,
+.date {
+	@include input-base;
+}
+
+.select {
+  @include select-base;
+}
+
+.select--small,
 .text-input--small,
 .date--small {
-  @extend .text-input;
+  @include input-base;
   font-size: $type-5;
-  line-height: $input-height-small;   
+  height: $input-height-small;   
 }
 
 .form-label--small {
-  @extend .form-label;
+  @include form-label-base;
   font-size: $type-5;
 }
 
 .select--small {
-  @include select; 
-  @extend .text-input;
-  font-size: $type-5;
-  line-height: $input-height-small;   
-  height: $input-height-small + .1rem;
+  @include input-base;
+  @include select-base; 
+  font-size: $type-5;   
+  height: $input-height-small;
+  background-size: 10px;
 }
 
 .textarea {
-  line-height: $line-height;
   min-height: $input-height * 2;
   padding: .75rem; 
 }
 
+// hide system radio button in order to use custom style
 .radio {
   @include visuallyhidden;
 }
@@ -52,20 +78,20 @@
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
-}
 
-.radio-label:before {
-  content: "";
-  display:inline-block;
-  width:14px;
-  height:14px;
-  margin: 0 6px 0 0;
-  position: relative;
-  bottom: -2px;
-  border-radius: 50%;
-  background-color: $fill-white;
-  border: 1px solid #aaa;
-  box-sizing: border-box;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px 0 0;
+    position: relative;
+    bottom: -2px;
+    border-radius: 50%;
+    background-color: $fill-white;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+  }
 }
 
 .radio:checked + .radio-label:before{
@@ -73,7 +99,7 @@
   border: 5px solid #07e;
 }
 
-
+// hide system checkbox in order to use custom style
 .checkbox {
   @include visuallyhidden;
 }
@@ -82,20 +108,20 @@
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
-}
 
-.checkbox + label:before {
-  content: "";
-  display:inline-block;
-  width:14px;
-  height:14px;
-  margin: 0 6px 0 0;
-  position: relative;
-  bottom: -2px;
-  border-radius: 30%;
-  background-color: $fill-white;
-  border: 1px solid #aaa;
-  box-sizing: border-box;
+  &:before {
+    content: "";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin: 0 6px 0 0;
+    position: relative;
+    bottom: -2px;
+    border-radius: 30%;
+    background-color: $fill-white;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+  }
 }
 
 .checkbox:checked + label:before{
@@ -113,10 +139,9 @@
   margin-right: $space-1 / 2;
 }
 
+// labels, etc
 .form-label {
-	display: block;
-	font-weight: 600;
-	margin-bottom: $space-1; 
+  @include form-label-base;
 }
 
 .form-label--optional {
