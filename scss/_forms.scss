@@ -2,35 +2,73 @@
 // Forms Base Styles
 // --------------------------------------------------
 
+$input-height: $line-height + 1.5rem;
+$input-height-small: $line-height + 1rem;
+
+// Adds some base custom styles to radio buttons and checkboxes. 
+// In order to specify shape, border radius is applied 
+// in class name for the element.
+@mixin option-input-style {
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px 0 0;
+    position: relative;
+    bottom: -2px;
+    background-color: $fill-white;
+    border: 1px solid $fill-gray;
+  }
+}
+
 .text-input,
 .textarea,
 .select,
-.date {
-	font-family: inherit;
+.date-input {
+  font-family: inherit;
   background: $fill-white;
-  font-size: $type-3;
-  line-height: $input-height;
-  padding: 0 $space-2;
+  font-size: $type-4;
+  height: $input-height;
+  padding: 0 .75rem;
   border: 1px solid $fill-gray;
-}
-
-.textarea {
-  line-height: $line-height;
-  min-height: $input-height * 2;
-  padding: $space-2; 
 }
 
 .select {
   background-image: svg-background($down-caret);
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
-	-webkit-appearance: none;
+  background-size: 12px;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0px;
+  border-radius: 0;
   padding-right: 42px;
   height: $input-height;
 }
 
+.select--small,
+.text-input--small,
+.date-input--small {
+  font-size: $type-5;
+  height: $input-height-small;   
+}
+
+.form-label--small {
+  font-size: $type-5;
+}
+
+.select--small {
+  font-size: $type-5;   
+  height: $input-height-small;
+  background-size: 10px;
+}
+
+.textarea {
+  min-height: $input-height * 2;
+  padding: .75rem; 
+}
+
+// hide system radio button in order to use custom style
 .radio {
   @include visuallyhidden;
 }
@@ -39,20 +77,11 @@
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
-}
+  @include option-input-style;
 
-.radio-label:before {
-  content: "";
-  display:inline-block;
-  width:14px;
-  height:14px;
-  margin: 0 6px 0 0;
-  position: relative;
-  bottom: -2px;
-  border-radius: 50%;
-  background-color: $fill-white;
-  border: 1px solid #aaa;
-  box-sizing: border-box;
+  &:before {   
+    border-radius: 50%;
+  }
 }
 
 .radio:checked + .radio-label:before{
@@ -60,7 +89,7 @@
   border: 5px solid #07e;
 }
 
-
+// hide system checkbox in order to use custom style
 .checkbox {
   @include visuallyhidden;
 }
@@ -69,20 +98,11 @@
   cursor:pointer; 
   margin: 0 0 6px 0;
   display: block;
-}
+  @include option-input-style;
 
-.checkbox + label:before {
-  content: "";
-  display:inline-block;
-  width:14px;
-  height:14px;
-  margin: 0 6px 0 0;
-  position: relative;
-  bottom: -2px;
-  border-radius: 30%;
-  background-color: $fill-white;
-  border: 1px solid #aaa;
-  box-sizing: border-box;
+  &:before { 
+    border-radius: 30%;
+  }
 }
 
 .checkbox:checked + label:before{
@@ -93,36 +113,34 @@
   border-style: none;
 }
 
-.date {
+.date-input {
   display: inline;
-  width: $space-4 * 2;
-  margin-right: $space-1;
+  text-align: center;
+  width: $space-3 * 3;
+  margin-right: $space-1 / 2;
 }
 
-.date--year {
-  width: 5rem;
-}
-
+// labels, etc
 .form-label {
-	display: block;
-	font-weight: 600;
-	margin-bottom: $space-1; 
+  display: block;
+  font-weight: 600;
+  margin-bottom: $space-1; 
 }
 
 .form-label--optional {
-	color: $text-gray-lightest;
-	font-weight: normal;
+  color: $text-gray-lightest;
+  font-weight: normal;
 }
 
 .form-label--required {
-	color: $text-red;
-	font-weight: normal;
+  color: $text-red;
+  font-weight: normal;
 }
 
 .form-helper {
-	color: $text-gray-lightest;
-	display: block;
-	margin-top: $space-1;
+  color: $text-gray-lightest;
+  display: block;
+  margin-top: $space-1;
   font-size: $type-5; 
 }
 
@@ -138,9 +156,9 @@
     color: $text-orange;  
   }
 
-	.text-input	{
-		border-color: $fill-orange;	
-	}
+  .text-input {
+    border-color: $fill-orange; 
+  }
 }
 
 .form-success {
