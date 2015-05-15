@@ -12,11 +12,11 @@ $input-height-small: $line-height + 1rem;
   &:before {
     content: "";
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: .75rem;
+    height: .75rem;
     margin: 0 6px 0 0;
     position: relative;
-    bottom: -2px;
+    bottom: -1px;
     background-color: $fill-white;
     border: 1px solid $fill-gray;
   }
@@ -38,11 +38,11 @@ $input-height-small: $line-height + 1rem;
   background-image: svg-background($down-caret);
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
-  background-size: 12px;
+  background-size: .6875rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-  padding-right: 42px;
+  padding-right: 2.5rem;
   height: $input-height;
 }
 
@@ -60,7 +60,7 @@ $input-height-small: $line-height + 1rem;
 .select--small {
   font-size: $type-5;   
   height: $input-height-small;
-  background-size: 10px;
+  background-size: .5rem;
 }
 
 .textarea {
@@ -86,7 +86,7 @@ $input-height-small: $line-height + 1rem;
 
 .radio:checked + .radio-label:before{
   background-color: white;   
-  border: 5px solid #07e;
+  border: 4px solid #07e;
 }
 
 // hide system checkbox in order to use custom style
@@ -109,7 +109,8 @@ $input-height-small: $line-height + 1rem;
   background-image: svg-background($checkmark);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $fill-blue;   
+  background-color: $fill-blue;  
+  background-size: .5rem; 
   border-style: none;
 }
 
@@ -169,11 +170,12 @@ $input-height-small: $line-height + 1rem;
 
   .form-feedback:before{
     content: "";
-    height: 14px;
-    width: 14px;
+    height: .875rem;
+    width: .875rem;
     display:inline-block;
     background-image: svg-background($checkmark);
     background-repeat: no-repeat;
+    background-size: .5rem;
     background-color: $fill-green;
     border-radius: 50%;
     background-position: center;
