@@ -3,12 +3,12 @@
 code {
   display: inline-block;
   padding: 2px 4px;
+  border-radius: 4px;
   background-color: $fill-blue;
   font-family: Monaco, monospace;
   font-size: $type-6;
   color: $text-white;
   font-weight: bold;
-  border-radius: 4px;
   white-space: pre-wrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
