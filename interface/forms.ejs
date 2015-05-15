@@ -3,21 +3,10 @@
 <section class="mb4">
   <h3 class="mb2 bold">Default Inputs</h3>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">  
-    <div class="p3">
-      <label class="block type-4 bold">Text input</label>
-      <label class="block type-4 text-gray-lighter">This is a default text input. </label>
-    </div>
-    <div class="fill-white p3">
-      <input type="text" class="text-input mb2">
-      <pre><code class="html"><%='<input type="text" class="text-input mb2">'%></code></pre>
-    </div>
-  </div>
-
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Text input with label</label>
-      <label class="block type-4 text-gray-lighter">A text input should always have a label. Labels should be written in sentence case.</label>
+      <label class="block type-4 text-gray-lighter">A text input should always have a label. Labels should be written in sentence case and are always placed on top of the input.</label>
     </div>
   <div class="fill-white p3">
     <label class="form-label">Your name</label>
@@ -29,10 +18,11 @@
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Text input with placeholder text</label>
-      <label class="block type-4 text-gray-lighter">This is a default text input with placeholder text inside. Placeholder text should only be used when necessary. Otherwise, please use a form label to label the input. A good use of placeholder text would be to inform the user of what they should/can type in the field. This only applies if the placeholder is useful  helpful information </label>
+      <label class="block type-4 text-gray-lighter">This is a default text input with placeholder text inside. Placeholder text should only be used when necessary. A good use of placeholder text would be to inform the user of what they should/can type in the field.</label>
     </div>
     <div class="fill-white p3">
-      <input type="text" placeholder="Type here" class="text-input mb2">
+      <label class="form-label">Your website</label>
+      <input type="text" placeholder="www.example.com" class="text-input mb2">
       <pre><code class="html"><%= '<input type="text" placeholder="Type here" class="text-input mb2">'%> </code></pre>
     </div>
   </div>
@@ -40,9 +30,10 @@
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Textarea</label>
-      <label class="block type-4 text-gray-lighter">Textareas should be used when a field may be filled out with more than one line of text. An example use case is for comments or for a field in a contact form.</label>
+      <label class="block type-4 text-gray-lighter">Textareas should be used when a field may be filled out with more than one line of text. An example use case is for comments or for a field in a contact form. Generally aim for 52-78 characters per line.</label>
    </div>
    <div class="fill-white p3">
+      <label class="form-label">Comments</label>
       <textarea class="textarea mb2"></textarea>
       <pre><code class="html"><%= '<textarea class="textarea mb2"></textarea>'%> </code></pre>
     </div>
@@ -50,8 +41,8 @@
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
-      <label class="block type-4 bold">Select</label>
-      <label class="block type-4 text-gray-lighter">Selects are drop down menus and they can be used when you need the user to select one option out of many.</label>
+      <label class="block type-4 bold">Select menu</label>
+      <label class="block type-4 text-gray-lighter">Selects are drop down menus and they can be used when you need the user to select one option out of many. You can put a label on top of the select if the text inside the menu is not descriptive enough.</label>
     </div>
     <div class="fill-white p3">
       <select class="select mb2">
@@ -105,21 +96,11 @@
     <pre><code class="html"><%= '<label class="form-label">Date of birth</label> '%><br/><%='<input type="text" placeholder="MM" maxlength="2" class="date-input">'%><br/><%='<input type="text" placeholder="DD" maxlength="2" class="date-input">'%><br/><%='<input type="text" placeholder="YYYY" maxlength="4" class="date-input">' %> </code></pre>
   </div>
   </div>
+
 </section>
 
 <section class="mb4">
   <h3 class="mb2 bold">Small Inputs</h3>
-
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">  
-    <div class="p3">
-      <label class="block type-4 bold">Small text input</label>
-      <label class="block type-4 text-gray-lighter">This is a small text input. This should be used when you need to save space.</label>
-    </div>
-    <div class="fill-white p3">
-      <input type="text" class="text-input text-input--small mb2">
-      <pre><code class="html"><%='<input type="text" class="text-input text-input--small mb2">'%></code></pre>
-    </div>
-  </div>
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
@@ -132,7 +113,6 @@
     <pre><code class="html"><%='<label class="form-label form-label--small">Your name</label>'%><br/><%='<input type="text" class="text-input--small mb2">'%></code></pre>
     </div>
   </div>
-
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
@@ -150,60 +130,103 @@
     </div>
   </div>
 
-
 </section>
 
 <section class="mb4">
   <h3 class="mb2 bold">Labels and Messaging</h3>
 
-  <div class="mb4">
-    <label class="block mb1 type-4">.form-label--required</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Required form label</label>
+      <label class="block type-4 text-gray-lighter">Use this asterisk when a form field is required by placing the asterisk in a span and using the modifier <code>.form-label--required</code>. Only label fields as required when it is the least commonly used type of field in a form.</label>
+    </div>
+  <div class="fill-white p3">
     <label class="form-label">Your name <span class="form-label--required">*</span></label>
-    <input type="text" class="text-input">
+    <input type="text" class="text-input mb2">
+    <pre><code class="html"><%= '<label class="form-label">Your name <span class="form-label--required">*</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+  </div>
   </div>
 
-  <div class="mb4">
-    <label class="block mb1 type-4">.form-label--optional</label>
-    <label class="form-label">Link <span class="form-label--optional">(optional)</span></label>
-    <input type="text" class="text-input">
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Optional form label</label>
+      <label class="block type-4 text-gray-lighter">Use this text when a form field is optional by placing the "(optional)" text in a span and using the modifier <code>.form-label--optional</code></label>
+    </div>
+    <div class="fill-white p3">
+      <label class="form-label">Link <span class="form-label--optional">(optional)</span></label>
+      <input type="text" class="text-input mb2">
+      <pre><code class="html"><%= '<label class="form-label">Link <span class="form-label--optional">(optional)</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+    </div>
   </div>
   
-  <div class="mb4">
-    <label class="block mb1 type-4">.form-helper</label>
-    <label class="form-label">Your username</label>
-    <input type="text" class="text-input">
-    <label class="form-helper"> BTW, your username cannot be changed</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Helper text</label>
+      <label class="block type-4 text-gray-lighter">Helper text is only placed below the input. It helps gives hints to the user about how to fill out the form. Only use this helper text if you have to!</label>
+    </div>
+    
+    <div class="fill-white p3">
+      <label class="form-label">Your username</label>
+      <input type="text" class="text-input">
+      <label class="form-helper mb3"> BTW, your username cannot be changed</label>
+      <pre><code class="html"><%='<label class="form-label">Your username</label>'%><br/><%='<input type="text" class="text-input">'%><br/><%='<label class="form-helper"> BTW, your username cannot be changed</label>'%></code></pre>
+    </div>
   </div>
 
-   <div class="mb4 form-warning">
-    <label class="block mb1 type-4">.form-warning</label>
-    <label class="form-label">Your name</label>
-    <input type="text" class="text-input">
-    <label class="form-feedback">Caps lock is on!</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Warning message</label>
+      <label class="block type-4 text-gray-lighter">Input label and input border turn orange, and the warning message is placed below the input. The label, input, and message must be wrapped in a div with class <code>form-warning</code>.</label>
+    </div>
+    <div class="fill-white form-warning p3">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <label class="form-feedback mb3">Caps lock is on!</label>
+      <pre><code class="html"><%='<div class="form-warning">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">Caps lock is on!</label>'%><br/><%='</div>'%></code></pre>
+    </div>
   </div>
 
-   <div class="mb4 form-success">
-    <label class="block mb1 type-4">.form-success</label>
-    <label class="form-label">Your name</label>
-    <input type="text" class="text-input">
-    <label class="form-feedback">Looks good!</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Error message</label>
+      <label class="block type-4 text-gray-lighter">Input label and input border turn red, and the error message is placed below the input. The label, input, and message must be wrapped in a div with class <code>form-error</code>.</label>
+    </div>
+    <div class="fill-white form-error p3">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <label class="form-feedback mb3">This is an error message about your password.</label>
+       <pre><code class="html"><%='<div class="form-error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='</div>'%></code></pre>
+    </div>
   </div>
 
-  <div class="mb4 form-error">
-    <label class="block mb1 type-4">.form-error</label>
-    <label class="form-label">Your name</label>
-    <input type="text" class="text-input">
-    <label class="form-feedback">This is an error message about your password.</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+     <label class="block type-4 bold">Success message</label>
+     <label class="block type-4 text-gray-lighter">Input label and input border turn green, and the success message is placed below the input. It appears once the error is cleared. The label, input, and message must be wrapped in a div with class <code>form-success</code>.</label>
+    </div>
+    <div class="fill-white form-success p3">
+        <label class="form-label">Your name</label>
+        <input type="text" class="text-input">
+        <label class="form-feedback mb3">Looks good!</label>
+        <pre><code class="html"><%='<div class="form-success">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">Looks good!</label>'%><br/><%='</div>'%></code></pre>
+    </div>
   </div>
 
-    <div class="mb4 form-error">
-    <label class="block mb1 type-4">.form-error .helper <br>You can use these messages together. If a field has helper text, the error (or success/warning) message appears above it.</label>
-    <label class="form-label">Your name</label>
-    <input type="text" class="text-input">
-    <label class="form-feedback">This is an error message about your password.</label>
-    <label class="form-helper"> BTW, your username cannot be changed</label>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Error message + helper text</label>
+      <label class="block type-4 text-gray-lighter">You can use these messages together. If a field has helper text, the error (or success/warning) message appears above the helper text.</label>
+    </div>
+    <div class="fill-white form-error p3">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <label class="form-feedback">This is an error message about your password.</label>
+      <label class="form-helper mb3">Your password must contain at least 8 characters.</label>
+      <pre><code class="html"><%='<div class="form-error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='   <label class="form-helper"> BTW, your username cannot be changed</label>'%><br/><%='</div>'%></code></pre>
+    </div>
   </div>
-  </div>
+ 
 </section>
 
 
