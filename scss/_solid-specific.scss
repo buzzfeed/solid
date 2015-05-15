@@ -1,17 +1,21 @@
 // Code Snipppet Syntax Highlighting https://highlightjs.org/
 
 code {
-  display: inline-block;
-  padding: 2px 4px;
-  border-radius: 4px;
-  background-color: $fill-blue;
   font-family: Monaco, monospace;
-  font-size: $type-6;
-  color: $text-white;
-  font-weight: bold;
   white-space: pre-wrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  // Inline code blocks
+  &.js-highlight {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: $fill-blue;
+    font-size: $type-5;
+    color: $text-white;
+    font-weight: bold;
+  }
   
   // Override highlight.js theme properties
   &.hljs { 
