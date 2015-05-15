@@ -169,8 +169,8 @@ $input-height-small: $line-height + 1rem;
 
   .form-feedback:before{
     content: "";
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     display:inline-block;
     background-image: svg-background($checkmark);
     background-repeat: no-repeat;
