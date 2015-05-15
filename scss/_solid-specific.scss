@@ -3,10 +3,11 @@
 code {
   display: inline-block;
   padding: 2px 4px;
-  background-color: mix($fill-green, $fill-white, $weight: 10%);
+  background-color: $fill-blue;
   font-family: Monaco, monospace;
-  font-size: $type-5;
-  color: $text-green;
+  font-size: $type-6;
+  color: $text-white;
+  font-weight: bold;
   border-radius: 4px;
   white-space: pre-wrap;
   -webkit-font-smoothing: antialiased;
@@ -24,10 +25,6 @@ code {
 
 pre {
   line-height: 0;
-}
-
-.class-name {
-  color: $text-orange;
 }
 
 // Solid Nav
