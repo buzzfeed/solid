@@ -3,10 +3,10 @@
 code {
   display: inline-block;
   padding: 2px 4px;
-  background-color: mix($fill-red, $fill-white, $weight: 10%);
+  background-color: mix($fill-green, $fill-white, $weight: 10%);
   font-family: Monaco, monospace;
   font-size: $type-5;
-  color: $text-red;
+  color: $text-green;
   border-radius: 4px;
   white-space: pre-wrap;
   -webkit-font-smoothing: antialiased;
