@@ -156,16 +156,30 @@
 <section class="mb4">
   <h3 class="mb2 bold">Labels and Messaging</h3>
 
-  <div class="mb4">
-    <label class="block mb1 type-4">.form-label--required</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Required form label</label>
+      <label class="block type-4 text-gray-lighter">Use this asterisk when a form field is required by placing the asterisk in a span and using the modifier <code>.form-label--required</code></label>
+    </div>
+
+  <div class="fill-white p3">
     <label class="form-label">Your name <span class="form-label--required">*</span></label>
-    <input type="text" class="text-input">
+    <input type="text" class="text-input mb2">
+    <pre><code class="html"><%= '<label class="form-label">Your name <span class="form-label--required">*</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+  </div>
   </div>
 
-  <div class="mb4">
-    <label class="block mb1 type-4">.form-label--optional</label>
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">Optional form label</label>
+      <label class="block type-4 text-gray-lighter">Use this text when a form field is optional by placing the "(optional)" text in a span and using the modifier <code>.form-label--optional</code></label>
+    </div>
+
+    <div class="fill-white p3">
     <label class="form-label">Link <span class="form-label--optional">(optional)</span></label>
-    <input type="text" class="text-input">
+    <input type="text" class="text-input mb2">
+    <pre><code class="html"><%= '<label class="form-label">Link <span class="form-label--optional">(optional)</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+    </div>
   </div>
   
   <div class="mb4">
