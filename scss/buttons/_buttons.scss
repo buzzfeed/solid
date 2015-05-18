@@ -1,0 +1,41 @@
+$base-color: $fill-blue;
+$button-height: $line-height + 1.5rem;
+
+.button {
+  font-family: inherit;
+  height: $button-height;
+  padding: 0 1rem;
+  font-size: $type-4;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.button--primary {
+  background-color: $fill-blue;
+  color: $fill-white; //we need white text color
+}
+
+.button--primary:hover {
+  background-color: darken( $base-color, 20%); 
+  transition: all 0.3s ease 0s;
+}
+
+.button--primary:active {
+  background-color: darken( $base-color, 35%); 
+}
+
+.button--secondary {
+  border: 1px solid $fill-blue;
+  color: $text-blue;
+  background: none;
+}
+
+.button--secondary:hover {
+  background-color: $fill-blue;
+  color: $fill-white;
+}
