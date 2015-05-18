@@ -2,8 +2,20 @@
 
 code {
   font-family: Monaco, monospace;
-  -webkit-font-smoothing: antialiased;
   white-space: pre-wrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Inline code blocks
+  &.js-highlight {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: $fill-blue;
+    font-size: $type-5;
+    color: $text-white;
+    font-weight: bold;
+  }
   
   // Override highlight.js theme properties
   &.hljs { 
@@ -17,10 +29,6 @@ code {
 
 pre {
   line-height: 0;
-}
-
-.class-name {
-  color: $text-orange;
 }
 
 // Solid Nav

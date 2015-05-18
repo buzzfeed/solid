@@ -1,0 +1,30 @@
+@import "../_variables.scss";
+
+.social-icon {
+  width:20px;
+  height:20px;
+}
+
+.fill-twitter-icon {
+	fill:$fill-twitter;
+	background-color:#fff;
+}
+
+.fill-facebook-icon {
+	fill:$fill-facebook;
+	background-color:#fff;
+}
+
+.fill-tumblr-icon {
+	fill:$fill-tumblr;
+	background-color:#fff;
+}
+
+.border-dashed {
+  border:1px solid rgb(0,0,0);
+  border-style:dashed; 
+}
+
+.prototype-hive {
+  max-width: 1200px;
+}
