@@ -1,15 +1,14 @@
   <button class="solid-nav__menu float-right"></button>
   <h1 class="mb4 solid-nav__header type-2 sm-type-1"><a href="/" class="block text-white">Solid</a></h1>
-  <ul class="solid-nav-items">
-
+  <ul class="list-unstyled solid-nav-items">
     <!-- if the current is this page in the navigation, then highlight it (give it an active class, for ex) -->
     <li class="mb3">
       <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'base' ? '' : '' %>">
         Base
       </h2>
-      <ul>
+      <ul class="list-unstyled">
         <!-- find data inside base foler -->
-        <% for(var slug in public.base._data){ %> 
+        <% for(var slug in public.base._data){ %>
           <!-- in base folder -->
           <% var page = public.base %>
           <!-- grab subnav menu title inside data.json in base folder -->
@@ -27,7 +26,7 @@
       <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'interface' ? '' : '' %>">
         Interface
       </h2>
-      <ul class="#">
+      <ul class="list-unstyled">
       <% for(var slug in public.interface._data){ %>
         <% var page = public.interface %>
         <li>
@@ -43,7 +42,7 @@
       <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'layout' ? '' : '' %>">
         Layout
       </h2>
-      <ul>
+      <ul class="list-unstyled">
       <% for(var slug in public.layout._data){ %>
         <% var page = public.layout %>
         <li>
@@ -59,7 +58,7 @@
       <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'resources' ? '' : '' %>">
         Resources
       </h2>
-      <ul>
+      <ul class="list-unstyled">
       <% for(var slug in public.resources._data){ %>
         <% var page = public.resources %>
         <li>
@@ -75,6 +74,6 @@
       <h2 class="mb1 text-white bold type-5 caps <%- current.path[0] == 'resources' ? '' : '' %>">
         <a class="text-orange" href="/sandbox" class="block <%- current.source == slug ? 'text-white' : '' %>">Sandbox</a>
       </h2>
-    </li>    
+    </li>
 
   </ul>

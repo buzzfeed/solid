@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
- 
+
 *, *:before, *:after {
   box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -20,7 +20,7 @@ img { max-width: 100%; height: auto; }
 // Some Layout Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}inline       { display: inline; }
@@ -103,7 +103,7 @@ img { max-width: 100%; height: auto; }
 // Margins + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}m0  { margin:        0; }
@@ -197,7 +197,7 @@ img { max-width: 100%; height: auto; }
 //Padding + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}p0  { padding:        0; }
@@ -293,7 +293,7 @@ img { max-width: 100%; height: auto; }
 // Borders + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}border{
@@ -317,4 +317,10 @@ img { max-width: 100%; height: auto; }
     }
 
     }
+}
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
 }
