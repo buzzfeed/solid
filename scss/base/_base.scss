@@ -1,8 +1,6 @@
 // Normalize Resets and Rem values
 
-abbr[title] {
-  border-bottom: none;
-}
+// Ensure we only define type using our default classes.
 
 small {
   font-size: 1rem;
@@ -12,6 +10,8 @@ sub,
 sup {
   font-size: 1rem;
 }
+
+// Switching from ems to rems for consistency and our own sanity.
 
 sup {
   top: -0.5rem;
@@ -28,19 +28,18 @@ samp {
 	font-size: 1rem;
 }
 
+// We should define fieldset with classes if we're going to define it.
+
 fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
 
+// Making sure that bold is 600, since we use semibold instead.
+
 optgroup {
   font-weight: 600;
-}
-
-mark {
-  background: transparent;
-  color: inherit;
 }
 
 // Resets
@@ -65,6 +64,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+// We should establish our own style for blockquotes.
 
 blockquote, q {
 	quotes: none;
