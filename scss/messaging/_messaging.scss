@@ -1,12 +1,21 @@
 .page-message {
   padding: .75rem;
   font-size: $type-4;
+  font-weight: 600;
   margin: 0.125rem 0 0 0;
 }
 
 .page-message--error {
   background-color: $fill-red-light;
   color: $text-red;
+}
+
+.page-message--error a {
+    color: $text-red;
+}
+
+.page-message--error a:hover {
+    color: $text-blue;
 }
 
 .page-message--error:before{
