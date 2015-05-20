@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BuzzFeed Hive | Create new asset</title>
+    <title>BuzzFeed Hive | Edit</title>
     <link rel="stylesheet" type="text/css" href="/scss/base.css">
     <link rel="stylesheet" type="text/css" href="/scss/prototypes/hive.css">
   </head>
   <body class="prototype-hive mx-auto py4">
-    <h1 class="bold mb4">BuzzFeed Hive | Create new asset</h1>
+    <h1 class="bold mb4">BuzzFeed Hive | Edit asset</h1>
     <form post="hive_manage_v1">
     <section class="clearfix">
       <div class="half-width float-left p2">
-        <label class="form-label">New asset <span class="form-label--required">*</span></label>
-        <div class="border-dashed text-center mb4">
-          Drag and drop<br />
-          or click to upload
-        </div>
+        <label class="form-label">Primary asset</label>
+        <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11255688_811143125642874_1370881178_n.jpg" class="mb4">
         <label class="form-label">Title <span class="form-label--required">*</span></label>
-        <input type="text" class="text-input mb4">
+        <input type="text" class="text-input mb4" value="Mom tattoo">
         <label class="form-label" placeholder="buzzfeed username">Authors <span class="form-label--required">*</span></label>
+        <p><strong>Zoe Burnett</strong> (x)</p> 
         <input type="text" class="text-input mb4"><input type="button" value ="Add">
       </div>
       <div class="half-width float-right p2">
         <label class="form-label">Description <span class="form-label--optional">(optional)</span></label>
         <textarea class="textarea mb4"></textarea>
         <label class="form-label">Tags <span class="form-label--optional">(optional)</span></label>
-        <input type="text" class="text-input mb4">
+        <input type="text" class="text-input mb4" value="illustration, mom, tatoo">
         <label class="form-label">Links <span class="form-label--optional">(optional)</span></label>
+        <p><input type="text" class="text-input" placeholder="Vine, BuzzFeed, Facebook, etc." value="https://instagram.com/p/2gZzY-vgPY/"></p>
+        <p><input type="text" class="text-input" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://yrbff.tumblr.com/post/118636984340/happy-mothers-day-by-dreambeam-for-yrbff"></p>
+        <p><input type="text" class="text-input" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://imgur.com/gallery/r3CR4oN"></p>
         <input type="text" class="text-input mb4" placeholder="Vine, BuzzFeed, Facebook, etc."><input type="button" value ="Add">
       </div>
     </section>
     <section class="clearfix">
-      <input type="submit" value="Create">
+      <input type="submit" value="Save">
     </section>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
