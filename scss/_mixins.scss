@@ -28,9 +28,3 @@ $breakpoints: (
   $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
   @return $breakpoint-prefix;
 };
-
-// returns a font size in rems when given a pixel size
-@function px-to-rem($size) {
-  $remSize: $size / $base-font-size;
-  @return #{$remSize}rem;
-}
