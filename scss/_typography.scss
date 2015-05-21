@@ -1,14 +1,3 @@
-//Hosted Typefaces – we'll eventually move these to their own partial 
-
-@font-face {
- font-family: 'Caponi-Slab-Semibold';
- src: url('fonts/Caponi/CaponiSlab-Semibold-Web.eot'); /* IE9 Compat Modes */
- src: url('fonts/Caponi/CaponiSlab-Semibold-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('fonts/Caponi/CaponiSlab-Semibold-Web.woff') format('woff'), /* Pretty Modern Browsers */
-      url('fonts/Caponi/CaponiSlab-Semibold-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
 // Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
@@ -170,7 +159,7 @@ i,
 h6.slab, 
 .type-6 .slab,
 .slab.type-6 {
-  font-family: 'Caponi-Slab-Semibold';
+  font-family: 'Proxima-Nova';
   font-weight: normal;
 }
 
