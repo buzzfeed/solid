@@ -45,10 +45,6 @@ h6, .type-6 {
     }
 }
 
-p {
-  font-size: $type-4;
-}
-
 // Type Size Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
