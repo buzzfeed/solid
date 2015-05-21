@@ -1,41 +1,90 @@
-$base-color: $fill-blue;
+$button-primary-color: $fill-blue;
+$button-delete-color: $fill-red;
 $button-height: $line-height + 1.5rem;
 
-.button {
+.button-primary,
+.button-secondary,
+.button-primary--delete,
+.button-secondary--delete,
+.button-disabled
+.button-small {
   font-family: inherit;
   height: $button-height;
   padding: 0 1rem;
   font-size: $type-4;
   border-radius: 3px;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
 }
 
-.button:hover {
-  cursor: pointer;
-  transition: all 0.2s ease 0s;
-}
-
-.button--primary {
+.button-primary {
   background-color: $fill-blue;
-  color: $fill-white; //we need white text color
+  color: $text-white;
+
+  &:not(.button-disabled):hover {
+    background-color: darken( $button-primary-color, 20%);
+  }
+
+  &:not(.button-disabled):active {    
+    background-color: darken( $button-primary-color, 35%);
+  }
 }
 
-.button--primary:hover {
-  background-color: darken( $base-color, 20%); 
-  transition: all 0.3s ease 0s;
-}
-
-.button--primary:active {
-  background-color: darken( $base-color, 35%); 
-}
-
-.button--secondary {
+.button-secondary {
   border: 1px solid $fill-blue;
   color: $text-blue;
   background: none;
+
+  &:not(.button-disabled):hover {
+    background-color: $fill-blue;
+    color: $fill-white; 
+  }
+
+  &:not(.button-disabled):active {   
+    background-color: darken( $button-primary-color, 35%); 
+  }
 }
 
-.button--secondary:hover {
-  background-color: $fill-blue;
-  color: $fill-white;
+.button-primary--delete {
+  background-color: $fill-red;
+  color: $text-white; 
+
+  &:not(.button-disabled):hover {
+    background-color: darken( $button-delete-color, 20%); 
+  }
+
+  &:not(.button-disabled):active {   
+    background-color: darken( $button-delete-color, 35%); 
+  }
 }
+
+.button-secondary--delete {
+  border: 1px solid $fill-red;
+  color: $text-red;
+  background: none;
+
+  &:not(.button-disabled):hover {
+    background-color: $fill-red;
+    color: $fill-white; 
+  }
+
+  &:not(.button-disabled):active {   
+    background-color: darken( $button-delete-color, 35%); 
+  }
+}
+
+.button-disabled {
+  opacity: .3;
+
+  &:hover {
+    cursor: default;
+    transition: none;
+  }
+}
+
+
+
