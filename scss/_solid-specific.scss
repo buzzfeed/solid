@@ -2,8 +2,20 @@
 
 code {
   font-family: Monaco, monospace;
-  -webkit-font-smoothing: antialiased;
   white-space: pre-wrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Inline code blocks
+  &.js-highlight {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: $fill-blue;
+    font-size: $type-5;
+    color: $text-white;
+    font-weight: bold;
+  }
   
   // Override highlight.js theme properties
   &.hljs { 
@@ -19,15 +31,12 @@ pre {
   line-height: 0;
 }
 
-.class-name {
-  color: $text-orange;
-}
-
 // Solid Nav
 
 .solid-nav {
   border-top:10px solid $fill-pink;
-  width:12em;
+  width:12rem;
+  overflow: auto;
 }
 
 .solid-nav a{
@@ -42,11 +51,60 @@ pre {
 
 .main-content{
   border-top:10px solid $fill-blue;
-  margin-left:12em;
+  margin-left:12rem;
 }
 
 .solid-nav-items a{
   padding:.4rem 0;
+}
+
+.solid-nav__menu {
+  display: none;
+}
+
+.solid-nav button {
+  padding: .75rem;
+  outline:none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+}
+
+@media (max-width: 40rem) {
+  .solid-nav {
+    width:100%;
+    height:44px;
+    overflow: hidden;
+    border-top:2px solid $fill-pink;
+    -webkit-transition: height 200ms ease-out;
+    transition: height 200ms ease-out;
+  }
+
+  .solid-nav__menu {
+    display: block;
+    background-image: svg-background($menu);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1rem;
+    background-color: transparent;
+  }
+
+  .solid-nav--visible .solid-nav__menu {
+    background-image: svg-background($x);
+  }
+
+  .main-content{
+    margin-left: 0;
+    margin-top: 44px;
+  }
+
+  .solid-nav.solid-nav--visible {
+    height:100%;
+  }
+
+  .solid-nav.solid-nav--overflow {
+    overflow:scroll;
+  }
 }
 
 // Welcome
