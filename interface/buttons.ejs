@@ -6,12 +6,26 @@
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
+      <label class="block type-4 bold">How to make a button</label>
+      <label class="block type-4 text-gray-lighter">Use an <code>a</code> element styled like a button when the button is linking somewhere. Use a <code>button</code> element when you are submitting to a database (Submit, Load More, etc.). They look <strong>exactly</strong> the same!</label>
+    </div>
+  <div class="fill-white p3">
+    <a class="button button--primary" href="">This button links somewhere</a>
+    <pre class="mb3"><code class="html"><%='<a class="button button--primary" href="">This button links!</a>'%></code></pre>
+
+    <button class="button button--primary">This button submits a form</button>
+    <pre><code class="html"><%='<button class="button button--primary">This button submits a form!</button>'%></code></pre>
+    </div>
+  </div>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
       <label class="block type-4 bold">Primary button</label>
       <label class="block type-4 text-gray-lighter">The primary button is used for actions where the button takes a forceful action, or a <i>primary</i> action on the page. It’s used for cases like <strong>Yes</strong>/No and <strong>Add</strong>/Cancel. It’s also used for things like Sign Up and Log in. </label>
     </div>
   <div class="fill-white p3">
-    <a class="button-primary" href="">Add</a>
-    <pre><code class="html"><%='<a class="button-primary" href="">Add</a>'%></code></pre>
+    <a class="button button--primary" href="">Add</a>
+    <pre><code class="html"><%='<a class="button button--primary" href="">Add</a>'%></code></pre>
     </div>
   </div>
 
@@ -21,54 +35,34 @@
       <label class="block type-4 text-gray-lighter">The secondary button is used for actions that are less important than the primary action (if there is one). This button is used for things like Yes/<strong>No</strong> and Add/<strong>Cancel</strong>. It also can be used to load more content, like Load more and More news. This button does not have a background fill. </label>
     </div>
   <div class="fill-white p3">
-    <a class="button-secondary mb3" href="">Cancel</a>
-    <pre><code class="html"><%='<a class="button-secondary" href="">Cancel</a>'%></code></pre>
-    </div>
-  </div>
-
-</section>
-
-
-<section class="mb4">
-  <h3 class="bold">Delete Buttons</h3>
-  <h4 class="mb3">By default, buttons size to the width of the text inside them.</h4>
-
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
-    <div class="p3">
-      <label class="block type-4 bold">Primary delete button</label>
-      <label class="block type-4 text-gray-lighter">Use this button only for deleting! The primary delete button should be used when you want the delete action to be a primary action on the page.</label>
-    </div>
-  <div class="fill-white p3">
-    <button class="button-primary--delete mb2">Delete</button>
-    <pre><code class="html"><%='<button class="button-primary--delete">Delete</button>'%></code></pre>
+    <a class="button button--secondary" href="">Cancel</a>
+    <pre><code class="html"><%='<a class="button button--secondary" href="">Cancel</a>'%></code></pre>
     </div>
   </div>
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
-      <label class="block type-4 bold">Secondary delete button</label>
-      <label class="block type-4 text-gray-lighter">Use this button only for deleting! The secondary delete button should be used when you want the delete action to be a secondary action on the page.</label>
+      <label class="block type-4 bold">Delete button</label>
+      <label class="block type-4 text-gray-lighter">Use this button only for deleting! Please don't use this for any other type of negative or dangerous action. It should only be used if something is going to be deleted after clicking this button.</label>
     </div>
   <div class="fill-white p3">
-    <button class="button-secondary--delete mb2">Delete</button>
-    <pre><code class="html"><%='<button class="button-secondary--delete">Delete</button>'%></code></pre>
+    <a class="button button--delete" href="">Delete</a>
+    <pre><code class="html"><%='<a class="button button--delete" href="">Delete</a>'%></code></pre>
     </div>
   </div>
 
 </section>
 
 <section class="mb4">
-  <h3 class="bold">Disabled Buttons</h3>
-  <h4 class="mb3">By default, buttons size to the width of the text inside them.</h4>
-
+  <h3 class="bold mb2">Disabled Buttons</h3>
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Disabled primary button</label>
       <label class="block type-4 text-gray-lighter">This button is disabled and cannot be clicked.</label>
     </div>
   <div class="fill-white p3">
-    <button class="button-primary button-disabled mb2">Add</button>
-    <pre><code class="html"><%='<button class="button-primary button-disabled">Add</button>'%></code></pre>
+    <a class="button button--primary button--disabled" href="">Add</a>
+    <pre><code class="html"><%='<a class="button button--primary button--disabled" href="">Add</a>'%></code></pre>
     </div>
   </div>
 
@@ -78,8 +72,8 @@
       <label class="block type-4 text-gray-lighter">This button is disabled and cannot be clicked.</label>
     </div>
   <div class="fill-white p3">
-    <button class="button-secondary button-disabled mb2">Cancel</button>
-    <pre><code class="html"><%='<button class="button-secondary button-disabled>Cancel</button>'%></code></pre>
+    <a class="button button--secondary button--disabled" href="">Cancel</a>
+    <pre><code class="html"><%='<a class="button button--secondary button--disabled" href="">Cancel</a>'%></code></pre>
     </div>
   </div>
 
@@ -89,19 +83,8 @@
       <label class="block type-4 text-gray-lighter">This button is disabled and cannot be clicked.</label>
     </div>
   <div class="fill-white p3">
-    <button class="button-primary--delete button-disabled mb2">Delete</button>
-    <pre><code class="html"><%='<button class="button-primary--delete button-disabled">Delete</button>'%></code></pre>
-    </div>
-  </div>
-
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
-    <div class="p3">
-      <label class="block type-4 bold">Disabled secondary delete button</label>
-      <label class="block type-4 text-gray-lighter">This button is disabled and cannot be clicked.</label>
-    </div>
-  <div class="fill-white p3">
-    <button class="button-secondary--delete button-disabled mb2">Delete</button>
-    <pre><code class="html"><%='<button class="button-secondary--delete button-disabled">Delete</button>'%></code></pre>
+    <a class="button button--delete button--disabled" href="">Delete</a>
+    <pre><code class="html"><%='<a class="button button--delete button--disabled" href="">Delete</a>'%></code></pre>
     </div>
   </div>
 
