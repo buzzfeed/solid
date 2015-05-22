@@ -79,7 +79,7 @@ $button-delete-color: $fill-red;
   }
 
   &:not(.button--disabled):active {   
-    background-color: darken( $button-primary-color, 35%); 
+    background-color: darken( $button-primary-color, 20%); 
   }
 }
 
