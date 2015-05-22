@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>Solid - Ingredients for Waffles and the Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/scss/base.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/zenburn.min.css">
   </head>
   <body>
-    <nav class="p3 fixed t0 b0 l0 fill-gray-darker solid-nav">
+    <nav class="p1 sm-p3 fixed t0 b0 l0 fill-gray-darker solid-nav">
       <%- partial("_nav") %>
     </nav>
     <div class="p4 main-content">
@@ -16,5 +17,20 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <script src="/javascript/codehighlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      $(document).ready(function(){
+        $('.solid-nav__menu').on('click', function(){
+          $('.solid-nav').toggleClass('solid-nav--visible');
+        })
+        $('.solid-nav').on('transitionend', function(){
+          if ($('.solid-nav').hasClass('solid-nav--visible')) {
+            $('.solid-nav').addClass('solid-nav--overflow');
+          }
+          else {
+            $('.solid-nav').removeClass('solid-nav--overflow');
+          }
+        });
+      });
+    </script>
   </body>
 </html>

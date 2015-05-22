@@ -1,3 +1,5 @@
+<<<<<<< HEAD:scss/_typography.scss
+=======
 //Hosted Typefaces – we'll eventually move these to their own partial 
 
 @font-face {
@@ -9,6 +11,7 @@
       url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+>>>>>>> origin/master:scss/typography/_typography.scss
 // Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
@@ -75,7 +78,8 @@ h6, .type-6 {
 	}
 }
 
-
+<<<<<<< HEAD:scss/_typography.scss
+=======
 // Body
 
 p {
@@ -84,17 +88,18 @@ p {
 }
 
 
+>>>>>>> origin/master:scss/typography/_typography.scss
 // Typography Emphasis and Styling
 
 .regular, 
 .normal { 
-	font-weight: 400;
+	font-weight: $regular;
 }
 
 strong, 
 b, 
 .bold { 
-	font-weight: 600;
+	font-weight: $bold;
 }
 
 em, 
@@ -149,7 +154,7 @@ i,
   white-space: nowrap;
 }
 
-// Typeface Classes //
+// Typeface Classes 
 
 .slab {
   font-family: 'Caponi-Slab-Semibold';
@@ -160,9 +165,6 @@ i,
   -o-font-feature-settings:"liga", "kern";
   -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
-  & h6 {
-    font-family:'Proxima Nova';
-  }
   &.bold {
     font-family: 'Caponi-Slab-Semibold';
     font-weight: normal;
@@ -171,4 +173,18 @@ i,
     font-family: 'Caponi-Slab-Semibold';
   }
 }
+
+// Caponi should never be an h6 or .type-6
+
+.slab h6,
+h6.slab, 
+.type-6 .slab,
+.slab.type-6 {
+  font-family: 'Proxima-Nova';
+  font-weight: normal;
+}
+
+
+
+
 

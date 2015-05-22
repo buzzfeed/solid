@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
- 
+
 *, *:before, *:after {
   box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -20,7 +20,7 @@ img { max-width: 100%; height: auto; }
 // Some Layout Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}inline       { display: inline; }
@@ -53,108 +53,6 @@ img { max-width: 100%; height: auto; }
     display: table;
 }
 .clearfix:after { clear: both; }
-
-// White Space
-
-// Margins + Responsive Prefixes
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
-  @include media-query($breakpoint-name){
-
-    .#{$breakpoint-prefix}m0  { margin:        0; }
-    .#{$breakpoint-prefix}mt0 { margin-top:    0; }
-    .#{$breakpoint-prefix}mr0 { margin-right:  0; }
-    .#{$breakpoint-prefix}mb0 { margin-bottom: 0; }
-    .#{$breakpoint-prefix}ml0 { margin-left:   0; }
-    .#{$breakpoint-prefix}mx0 { margin-left:   0; margin-right: 0;}
-    .#{$breakpoint-prefix}my0 { margin-top:    0; margin-bottom: 0;}
-
-    .#{$breakpoint-prefix}m1  { margin:        $space-1; }
-    .#{$breakpoint-prefix}mt1 { margin-top:    $space-1; }
-    .#{$breakpoint-prefix}mr1 { margin-right:  $space-1; }
-    .#{$breakpoint-prefix}mb1 { margin-bottom: $space-1; }
-    .#{$breakpoint-prefix}ml1 { margin-left:   $space-1; }
-    .#{$breakpoint-prefix}mx1 { margin-left:   $space-1; margin-right: $space-1;}
-    .#{$breakpoint-prefix}my1 { margin-top:    $space-1; margin-bottom: $space-1;}
-
-    .#{$breakpoint-prefix}m2  { margin:        $space-2; }
-    .#{$breakpoint-prefix}mt2 { margin-top:    $space-2; }
-    .#{$breakpoint-prefix}mr2 { margin-right:  $space-2; }
-    .#{$breakpoint-prefix}mb2 { margin-bottom: $space-2; }
-    .#{$breakpoint-prefix}ml2 { margin-left:   $space-2; }
-    .#{$breakpoint-prefix}mx2 { margin-left:   $space-2; margin-right: $space-2;}
-    .#{$breakpoint-prefix}my2 { margin-top:    $space-2; margin-bottom: $space-2;}
-
-    .#{$breakpoint-prefix}m3  { margin:        $space-3; }
-    .#{$breakpoint-prefix}mt3 { margin-top:    $space-3; }
-    .#{$breakpoint-prefix}mr3 { margin-right:  $space-3; }
-    .#{$breakpoint-prefix}mb3 { margin-bottom: $space-3; }
-    .#{$breakpoint-prefix}ml3 { margin-left:   $space-3; }
-    .#{$breakpoint-prefix}mx3 { margin-left:   $space-3; margin-right: $space-3;}
-    .#{$breakpoint-prefix}my3 { margin-top:    $space-3; margin-bottom: $space-3;}
-
-    .#{$breakpoint-prefix}m4  { margin:        $space-4; }
-    .#{$breakpoint-prefix}mt4 { margin-top:    $space-4; }
-    .#{$breakpoint-prefix}mr4 { margin-right:  $space-4; }
-    .#{$breakpoint-prefix}mb4 { margin-bottom: $space-4; }
-    .#{$breakpoint-prefix}ml4 { margin-left:   $space-4; }
-    .#{$breakpoint-prefix}mx4 { margin-left:   $space-4; margin-right: $space-4;}
-    .#{$breakpoint-prefix}my4 { margin-top:    $space-4; margin-bottom: $space-4;}
-
-    .#{$breakpoint-prefix}mx-auto { margin-left: auto; margin-right: auto; }
-
-    }
-}
-
-//Padding + Responsive Prefixes
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
-  @include media-query($breakpoint-name){
-
-    .#{$breakpoint-prefix}p0  { padding:        0; }
-    .#{$breakpoint-prefix}pt0 { padding-top:    0; }
-    .#{$breakpoint-prefix}pr0 { padding-right:  0; }
-    .#{$breakpoint-prefix}pb0 { padding-bottom: 0; }
-    .#{$breakpoint-prefix}pl0 { padding-left:   0; }
-    .#{$breakpoint-prefix}px0 { padding-left:   0; padding-right: 0;}
-    .#{$breakpoint-prefix}py0 { padding-top:    0; padding-bottom: 0;}
-
-    .#{$breakpoint-prefix}p1  { padding:        $space-1; }
-    .#{$breakpoint-prefix}pt1 { padding-top:    $space-1; }
-    .#{$breakpoint-prefix}pr1 { padding-right:  $space-1; }
-    .#{$breakpoint-prefix}pb1 { padding-bottom: $space-1; }
-    .#{$breakpoint-prefix}pl1 { padding-left:   $space-1; }
-    .#{$breakpoint-prefix}px1 { padding-left:   $space-1; padding-right: $space-1;}
-    .#{$breakpoint-prefix}py1 { padding-top:    $space-1; padding-bottom: $space-1;}
-
-    .#{$breakpoint-prefix}p2  { padding:        $space-2; }
-    .#{$breakpoint-prefix}pt2 { padding-top:    $space-2; }
-    .#{$breakpoint-prefix}pr2 { padding-right:  $space-2; }
-    .#{$breakpoint-prefix}pb2 { padding-bottom: $space-2; }
-    .#{$breakpoint-prefix}pl2 { padding-left:   $space-2; }
-    .#{$breakpoint-prefix}px2 { padding-left:   $space-2; padding-right: $space-2;}
-    .#{$breakpoint-prefix}py2 { padding-top:    $space-2; padding-bottom: $space-2;}
-
-    .#{$breakpoint-prefix}p3  { padding:        $space-3; }
-    .#{$breakpoint-prefix}pt3 { padding-top:    $space-3; }
-    .#{$breakpoint-prefix}pr3 { padding-right:  $space-3; }
-    .#{$breakpoint-prefix}pb3 { padding-bottom: $space-3; }
-    .#{$breakpoint-prefix}pl3 { padding-left:   $space-3; }
-    .#{$breakpoint-prefix}px3 { padding-left:   $space-3; padding-right: $space-3;}
-    .#{$breakpoint-prefix}py3 { padding-top:    $space-3; padding-bottom: $space-3;}
-
-    .#{$breakpoint-prefix}p4  { padding:        $space-4; }
-    .#{$breakpoint-prefix}pt4 { padding-top:    $space-4; }
-    .#{$breakpoint-prefix}pr4 { padding-right:  $space-4; }
-    .#{$breakpoint-prefix}pb4 { padding-bottom: $space-4; }
-    .#{$breakpoint-prefix}pl4 { padding-left:   $space-4; }
-    .#{$breakpoint-prefix}px4 { padding-left:   $space-4; padding-right: $space-4;}
-    .#{$breakpoint-prefix}py4 { padding-top:    $space-4; padding-bottom: $space-4;}
-
-    }
-}
 
 // White Space
 
@@ -202,6 +100,57 @@ img { max-width: 100%; height: auto; }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
 
+// Margins + Responsive Prefixes
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
+  @include media-query($breakpoint-name){
+
+    .#{$breakpoint-prefix}m0  { margin:        0; }
+    .#{$breakpoint-prefix}mt0 { margin-top:    0; }
+    .#{$breakpoint-prefix}mr0 { margin-right:  0; }
+    .#{$breakpoint-prefix}mb0 { margin-bottom: 0; }
+    .#{$breakpoint-prefix}ml0 { margin-left:   0; }
+    .#{$breakpoint-prefix}mx0 { margin-left:   0; margin-right: 0;}
+    .#{$breakpoint-prefix}my0 { margin-top:    0; margin-bottom: 0;}
+
+    .#{$breakpoint-prefix}m1  { margin:        $space-1; }
+    .#{$breakpoint-prefix}mt1 { margin-top:    $space-1; }
+    .#{$breakpoint-prefix}mr1 { margin-right:  $space-1; }
+    .#{$breakpoint-prefix}mb1 { margin-bottom: $space-1; }
+    .#{$breakpoint-prefix}ml1 { margin-left:   $space-1; }
+    .#{$breakpoint-prefix}mx1 { margin-left:   $space-1; margin-right: $space-1;}
+    .#{$breakpoint-prefix}my1 { margin-top:    $space-1; margin-bottom: $space-1;}
+
+    .#{$breakpoint-prefix}m2  { margin:        $space-2; }
+    .#{$breakpoint-prefix}mt2 { margin-top:    $space-2; }
+    .#{$breakpoint-prefix}mr2 { margin-right:  $space-2; }
+    .#{$breakpoint-prefix}mb2 { margin-bottom: $space-2; }
+    .#{$breakpoint-prefix}ml2 { margin-left:   $space-2; }
+    .#{$breakpoint-prefix}mx2 { margin-left:   $space-2; margin-right: $space-2;}
+    .#{$breakpoint-prefix}my2 { margin-top:    $space-2; margin-bottom: $space-2;}
+
+    .#{$breakpoint-prefix}m3  { margin:        $space-3; }
+    .#{$breakpoint-prefix}mt3 { margin-top:    $space-3; }
+    .#{$breakpoint-prefix}mr3 { margin-right:  $space-3; }
+    .#{$breakpoint-prefix}mb3 { margin-bottom: $space-3; }
+    .#{$breakpoint-prefix}ml3 { margin-left:   $space-3; }
+    .#{$breakpoint-prefix}mx3 { margin-left:   $space-3; margin-right: $space-3;}
+    .#{$breakpoint-prefix}my3 { margin-top:    $space-3; margin-bottom: $space-3;}
+
+    .#{$breakpoint-prefix}m4  { margin:        $space-4; }
+    .#{$breakpoint-prefix}mt4 { margin-top:    $space-4; }
+    .#{$breakpoint-prefix}mr4 { margin-right:  $space-4; }
+    .#{$breakpoint-prefix}mb4 { margin-bottom: $space-4; }
+    .#{$breakpoint-prefix}ml4 { margin-left:   $space-4; }
+    .#{$breakpoint-prefix}mx4 { margin-left:   $space-4; margin-right: $space-4;}
+    .#{$breakpoint-prefix}my4 { margin-top:    $space-4; margin-bottom: $space-4;}
+
+    .#{$breakpoint-prefix}mx-auto { margin-left: auto; margin-right: auto; }
+
+    }
+}
+
 
 //Padding
 
@@ -245,6 +194,54 @@ img { max-width: 100%; height: auto; }
 .px4 { padding-left:   $space-4; padding-right: $space-4;}
 .py4 { padding-top:    $space-4; padding-bottom: $space-4;}
 
+//Padding + Responsive Prefixes
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
+  @include media-query($breakpoint-name){
+
+    .#{$breakpoint-prefix}p0  { padding:        0; }
+    .#{$breakpoint-prefix}pt0 { padding-top:    0; }
+    .#{$breakpoint-prefix}pr0 { padding-right:  0; }
+    .#{$breakpoint-prefix}pb0 { padding-bottom: 0; }
+    .#{$breakpoint-prefix}pl0 { padding-left:   0; }
+    .#{$breakpoint-prefix}px0 { padding-left:   0; padding-right: 0;}
+    .#{$breakpoint-prefix}py0 { padding-top:    0; padding-bottom: 0;}
+
+    .#{$breakpoint-prefix}p1  { padding:        $space-1; }
+    .#{$breakpoint-prefix}pt1 { padding-top:    $space-1; }
+    .#{$breakpoint-prefix}pr1 { padding-right:  $space-1; }
+    .#{$breakpoint-prefix}pb1 { padding-bottom: $space-1; }
+    .#{$breakpoint-prefix}pl1 { padding-left:   $space-1; }
+    .#{$breakpoint-prefix}px1 { padding-left:   $space-1; padding-right: $space-1;}
+    .#{$breakpoint-prefix}py1 { padding-top:    $space-1; padding-bottom: $space-1;}
+
+    .#{$breakpoint-prefix}p2  { padding:        $space-2; }
+    .#{$breakpoint-prefix}pt2 { padding-top:    $space-2; }
+    .#{$breakpoint-prefix}pr2 { padding-right:  $space-2; }
+    .#{$breakpoint-prefix}pb2 { padding-bottom: $space-2; }
+    .#{$breakpoint-prefix}pl2 { padding-left:   $space-2; }
+    .#{$breakpoint-prefix}px2 { padding-left:   $space-2; padding-right: $space-2;}
+    .#{$breakpoint-prefix}py2 { padding-top:    $space-2; padding-bottom: $space-2;}
+
+    .#{$breakpoint-prefix}p3  { padding:        $space-3; }
+    .#{$breakpoint-prefix}pt3 { padding-top:    $space-3; }
+    .#{$breakpoint-prefix}pr3 { padding-right:  $space-3; }
+    .#{$breakpoint-prefix}pb3 { padding-bottom: $space-3; }
+    .#{$breakpoint-prefix}pl3 { padding-left:   $space-3; }
+    .#{$breakpoint-prefix}px3 { padding-left:   $space-3; padding-right: $space-3;}
+    .#{$breakpoint-prefix}py3 { padding-top:    $space-3; padding-bottom: $space-3;}
+
+    .#{$breakpoint-prefix}p4  { padding:        $space-4; }
+    .#{$breakpoint-prefix}pt4 { padding-top:    $space-4; }
+    .#{$breakpoint-prefix}pr4 { padding-right:  $space-4; }
+    .#{$breakpoint-prefix}pb4 { padding-bottom: $space-4; }
+    .#{$breakpoint-prefix}pl4 { padding-left:   $space-4; }
+    .#{$breakpoint-prefix}px4 { padding-left:   $space-4; padding-right: $space-4;}
+    .#{$breakpoint-prefix}py4 { padding-top:    $space-4; padding-bottom: $space-4;}
+
+    }
+}
 
 //Positioning
 
@@ -296,7 +293,7 @@ img { max-width: 100%; height: auto; }
 // Borders + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
     .#{$breakpoint-prefix}border{
@@ -320,4 +317,10 @@ img { max-width: 100%; height: auto; }
     }
 
     }
+}
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
 }

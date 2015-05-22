@@ -1,10 +1,11 @@
-@import 'reset';
 @import 'variables';
 @import 'mixins';
+@import 'base/normalize';
+@import 'base/base';
 @import 'colors/colors';
 @import 'typography/typography';
 @import 'utilities/utilities';
 @import 'grid/grid';
 @import 'forms/forms';
-@import 'solid-specific';
 @import 'buttons/buttons';
+@import 'solid-specific';
