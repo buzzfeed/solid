@@ -1,6 +1,41 @@
+// Reset Button
+//
+// In an article on CSS-Tricks
+// (http://css-tricks.com/use-button-element/),
+// Chris Coyier explains that:
+// "if a button doesn’t have a meaningful
+// href, it’s a <button>"; which makes sense.
+//
+// This placeholder resets <button>'s
+// default styling, so we can use
+// <button>s where it makes without
+// worrying about the styling.
+// -------------------------
+@mixin button-reset {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 0;
+  white-space: nowrap;
+  @include prefix((appearance: none), webkit);
+  @include prefix((user-select: none));
+
+  &,
+  &:active {
+    &:focus {
+      outline: 0;
+    }
+
+  }
+
+}
+
+
 $button-primary-color: $fill-blue;
 $button-delete-color: $fill-red;
-$button-height: $line-height + 1.5rem;
+$button-height: 3rem;
 
 .button-primary,
 .button-secondary,
@@ -8,15 +43,17 @@ $button-height: $line-height + 1.5rem;
 .button-secondary--delete,
 .button-disabled
 .button-small {
+  @include button-reset;
   font-family: inherit;
   height: $button-height;
-  padding: 0 1rem;
+  padding: .75rem 1rem;
   font-size: $type-4;
   border-radius: 3px;
+  text-decoration: none;
   border: none;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
     transition: background-color 0.3s ease 0s;
   }
 }
