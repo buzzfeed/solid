@@ -109,5 +109,9 @@ $button-delete-color: $fill-red;
   padding: .5625rem .875rem;
 }
 
+.button+.button {
+  margin-left: .375rem;
+}
+
 
 
