@@ -1,17 +1,3 @@
-<<<<<<< HEAD:scss/_typography.scss
-=======
-//Hosted Typefaces – we'll eventually move these to their own partial 
-
-@font-face {
- font-family: 'Caponi-Slab-Semibold';
- src: url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.eot'); /* IE9 Compat Modes */
- src: url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.woff') format('woff'), /* Pretty Modern Browsers */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
->>>>>>> origin/master:scss/typography/_typography.scss
 // Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
@@ -78,17 +64,6 @@ h6, .type-6 {
 	}
 }
 
-<<<<<<< HEAD:scss/_typography.scss
-=======
-// Body
-
-p {
-  font-size: $type-4;
-  line-height: 1.375em;
-}
-
-
->>>>>>> origin/master:scss/typography/_typography.scss
 // Typography Emphasis and Styling
 
 .regular, 
