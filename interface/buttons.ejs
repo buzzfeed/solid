@@ -1,22 +1,35 @@
 <h2 class="bold border-bottom mb4 pb2">Buttons</h2>
 
 <section class="mb4">
-  <h3 class="bold">Default Buttons</h3>
-  <h4 class="mb3">By default, buttons size to the width of the text inside them.</h4>
-
+  <h3 class="bold">How to define a button</h3>
+  <h4 class="xs-col-12 lg-col-9 mb3">Is your button linking somewhere or performing an action on the page? They look <strong>exactly</strong> the same, but will be defined differently in the html.</h4>
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
-      <label class="block type-4 bold">How to make a button</label>
-      <label class="block type-4 text-gray-lighter">Use an <code>a</code> element styled like a button when the button is linking somewhere. Use a <code>button</code> element when you are submitting to a database (Submit, Load More, etc.). They look <strong>exactly</strong> the same!</label>
+      <label class="block type-4 bold">A button that links</label>
+      <label class="block type-4 text-gray-lighter">Use an <code>a</code> element that's styled like a button.</label>
     </div>
   <div class="fill-white p3">
     <a class="button button--primary" href="">Check out this page</a>
-    <pre class="mb3"><code class="html"><%='<a class="button button--primary" href="">This button links!</a>'%></code></pre>
-
-    <button class="button button--primary">Submit form</button>
-    <pre><code class="html"><%='<button class="button button--primary">This button submits a form!</button>'%></code></pre>
+    <pre class="mt1"><code class="html"><%='<a class="button button--primary" href="">This button links!</a>'%></code></pre>
     </div>
   </div>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <label class="block type-4 bold">A button that performs an action on the page</label>
+      <label class="block type-4 text-gray-lighter">Use a <code>button</code> element when you are submitting to a database (Submit, Load More, etc.).</label>
+    </div>
+  <div class="fill-white p3">
+    <button class="button button--primary">Submit form</button>
+    <pre class="mt1"><code class="html"><%='<button class="button button--primary">This button submits a form!</button>'%></code></pre>
+    </div>
+  </div>
+
+  </section>
+
+<section class="mb4">
+  <h3 class="bold">Default Buttons</h3>
+  <h4 class="mb3">By default, buttons size to the width of the text inside them.</h4>
 
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">

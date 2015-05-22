@@ -48,6 +48,7 @@ $button-delete-color: $fill-red;
   cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
+  text-align: center;
 
   &:hover {
     transition: background-color 0.3s ease 0s;
