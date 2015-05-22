@@ -34,21 +34,20 @@
 
 $button-primary-color: $fill-blue;
 $button-delete-color: $fill-red;
-$button-height: $line-height + 1.5rem;
 
 .button,
 .button--disabled,
 .button--small {
   @include button-reset;
   font-family: inherit;
-  height: $button-height;
+  height: $line-height;
   padding: .75rem 1rem;
   font-size: $type-4;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px solid transparent;
   cursor: pointer;
   display: inline-block;
+  border: 1px solid transparent;
 
   &:hover {
     transition: background-color 0.3s ease 0s;
@@ -103,6 +102,11 @@ $button-height: $line-height + 1.5rem;
     cursor: default;
     transition: none;
   }
+}
+
+.button--small {
+  font-size: $type-5;
+  padding: .5625rem .875rem;
 }
 
 
