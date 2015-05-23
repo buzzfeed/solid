@@ -1,6 +1,6 @@
 <h2 class="bold border-bottom mb4 pb2">The Fluid Grid</h2>
 
-<div class="mb4">
+<div class="mb4 pb2">
 
   <h3 class="bold mb1">The Grid</h3>
 
@@ -14,11 +14,14 @@
 
   <p class="mb1">And here's the code:</p>
 
-  <pre class="mb4"><code class="html"><%='<div class="clearfix">'%>
+  <pre><code class="html"><%='<div class="clearfix">'%>
   <%='<div class="col col-3">.col .col-3</div>'%>
   <%='<div class="col col-4">.col .col-4</div>'%>
   <%='<div class="col col-5">.col .col-5</div>'%>
 <%='</div>'%></code></pre>
+
+</div>
+<div class="mb4 pb2">
 
   <h3 class="bold mb1">Spacing Columns</h3>
 
@@ -38,7 +41,7 @@
 
   <p class="mb1">Here's how it works in code:</p>
 
-   <pre class="mb4"><code class="html"><%='<div class="clearfix">'%>
+   <pre><code class="html"><%='<div class="clearfix">'%>
   <%='<div class="col col-3 pr1">'%>
     <%='<div class="border p1">.col .col-3 .pr1</div>'%>
   <%='</div>'%>
@@ -50,6 +53,9 @@
   <%='</div>'%>
 <%='</div>'%></code></pre>
 
+</div>
+<div class="mb4 pb2">
+
   <h3 class="bold mb1">Nesting Columns</h3>
 
   <p class="mb3">Since our grid is percentage-based, it can be nested within itself. When you nest a new grid, the columns are sized relative to the parent. Like so:</p>
@@ -57,21 +63,21 @@
   <div class="clearfix mb3">
     <div class="col col-6 border-left border-top border-bottom p1">
       <p class="mb1">.col .col-6</p>
-      <div class="col col-4 fill-yellow p1">.col .col-4</div>
-      <div class="col col-4 fill-yellow p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
       <div class="col col-4 fill-yellow p1">.col .col-4</div>
     </div>
     <div class="col col-6 border p1">
       <p class="mb1">.col .col-6</p>
-      <div class="col col-4 fill-yellow p1">.col .col-4</div>
-      <div class="col col-4 fill-yellow p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
       <div class="col col-4 fill-yellow p1">.col .col-4</div>
     </div>
   </div>
 
   <p class="mb1">And the code:</p>
 
-  <pre class="mb4"><code class="html"><%='<div class="clearfix">'%>
+  <pre><code class="html"><%='<div class="clearfix">'%>
   <%='<div class="col col-6">'%>
     <%='<p>.col .col-6</p>'%>
     <%='<div class="col col-4">.col .col-4</div>'%>
@@ -87,3 +93,59 @@
 <%='</div>'%></code></pre>
 
 </div>
+
+<div class="mb4 clearfix">
+  <h3 class="bold mb1">Responsive Grid</h3>
+
+  <p class="mb3">The responsive grid is implemented by adding breakpoint prefixes to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .xs-col-12 .md-col-6.</p>
+
+  <div class="clearfix mb3">
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+  </div>
+
+  <p class="mb1">Here's how it's done:</p>
+
+  <pre><code class="html"><%='<div class="clearfix">'%>
+  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
+    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
+    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
+    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
+  <%='</div>'%>
+  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
+    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
+    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
+    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
+  <%='</div>'%>
+  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
+    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
+    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
+    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
+  <%='</div>'%>
+  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
+    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
+    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
+    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
+  <%='</div>'%>
+<%='</div>'%></code></pre>
+
+
+</div> 
