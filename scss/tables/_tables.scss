@@ -48,3 +48,16 @@ td {
 }
 
 // Adding table layout
+
+.table {
+	display: table;
+}
+
+.td, .th {
+	display: table-cell;
+}
+
+.tr {
+	display: table-row;
+}
+
