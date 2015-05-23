@@ -1,0 +1,50 @@
+// Default table style
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+}
+
+th, td {
+  padding: $space-1;
+}
+
+th {
+	vertical-align: bottom
+}
+
+td {
+	vertical-align: top
+}
+
+// Add a border to a table
+
+.table-border {
+	border: $border-default;
+	border-radius: 3px;
+}
+
+.table-border th {
+	border-bottom: $border-default;
+}
+
+.table-border td, .table-border th {
+	padding: $space-2;
+}
+
+.table-border tr td {
+	border-bottom: $border-default;
+}
+
+.table-border tr:last-child td {
+	border-bottom: none;
+}
+
+// Adding table layout
