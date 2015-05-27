@@ -1,14 +1,3 @@
-//Hosted Typefaces – we'll eventually move these to their own partial 
-
-@font-face {
- font-family: 'Caponi-Slab-Semibold';
- src: url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.eot'); /* IE9 Compat Modes */
- src: url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.woff') format('woff'), /* Pretty Modern Browsers */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('typography/fonts/Caponi/CaponiSlab-Semibold-Web.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
 // Headers
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
@@ -36,7 +25,7 @@ h5 {
 }
 
 h6, .type-6 {
-  font-size: 0.75rem;
+  font-size: $type-6;
   &.slab {
       font-family:'Proxima Nova';
     }
@@ -75,25 +64,17 @@ h6, .type-6 {
 	}
 }
 
-// Body
-
-p {
-  font-size: $type-4;
-  line-height: 1.375em;
-}
-
-
 // Typography Emphasis and Styling
 
 .regular, 
 .normal { 
-	font-weight: 400;
+	font-weight: $regular;
 }
 
 strong, 
 b, 
 .bold { 
-	font-weight: 600;
+	font-weight: $bold;
 }
 
 em, 
@@ -148,7 +129,7 @@ i,
   white-space: nowrap;
 }
 
-// Typeface Classes //
+// Typeface Classes 
 
 .slab {
   font-family: 'Caponi-Slab-Semibold';
@@ -159,9 +140,6 @@ i,
   -o-font-feature-settings:"liga", "kern";
   -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
-  & h6 {
-    font-family:'Proxima Nova';
-  }
   &.bold {
     font-family: 'Caponi-Slab-Semibold';
     font-weight: normal;
@@ -170,4 +148,18 @@ i,
     font-family: 'Caponi-Slab-Semibold';
   }
 }
+
+// Caponi should never be an h6 or .type-6
+
+.slab h6,
+h6.slab, 
+.type-6 .slab,
+.slab.type-6 {
+  font-family: 'Proxima-Nova';
+  font-weight: normal;
+}
+
+
+
+
 
