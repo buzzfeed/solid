@@ -1,204 +1,179 @@
 <h2 class="bold border-bottom mb4 pb2">The Fluid Grid</h2>
 
-<div class="mb4">
+<div class="mb4 pb2">
 
-  <h3 class="bold mb1">Grid Without Gutters</h3>
-  <p class="mb2">This is our default 12-column grid. Each group of columns must be nested in a .clearfix parent element. Additionally, our default grid is gutter-less. You can add spacing between columns using our <a href="/layout/utilities">padding utility classes.</a></p>
+  <h3 class="bold mb1">The Grid</h3>
 
-  <p class="mb2">Column classes range from col-1 through col-12 and can be mixed and matched, as well as nested within each other. Our grid is percentage-based, so column sizes are relative to the parent.</p>
+  <p class="mb1">For laying out pages, BuzzFeed uses a 12-column, fluid grid system (which can be made responsive using our breakpoint prefixes, we'll get to that later). In order to begin using the grid, wrap your main grid columns in a <code class="js-highlight">.clearfix</code> container. You'll then need to use our <code class="js-highlight">.col</code> and <code class="js-highlight">.col-n</code> (where n is 1-12) classes to both float and then set the width of each column. Any given row can be made up of up to 12-columns, but can be less if you'd like!</p>
 
-  <p class="mb3">Offset classes are used to move columns left from their initial position on the grid. offset-1 will shift a column right by a single column width. offset-2 will shift by two column widths, and so on.</p>
+  <p class="mb3">You can see an example below:</p>
 
-  <div class="clearfix text-gray-lightest type-5">
-    <label class="js-highlight col col-12 text-gray-lightest">col-12</label>
-    <div class="col col-12 border rounded p2 fill-gray-lighter"></div>
+  <div class="clearfix mb3">
+    <div class="col col-3 border-left border-top border-bottom p1">.col .col-3</div>
+    <div class="col col-4 border p1">.col .col-4</div>
+    <div class="col col-5 border-right border-top border-bottom p1">.col .col-5</div>
   </div>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-6 text-gray-lightest">col-6</label>
-    <label class="js-highlight col col-6 text-gray-lightest">col-6</label>
-    <div class="col col-6 border rounded p2 fill-gray-lighter"></div>
-    <div class="border rounded col col-6 border rounded p2 fill-gray-lighter"></div>
-  </div>  
+  <p class="mb1">And here's the code:</p>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-3 text-gray-lightest">col-3</label>
-    <label class="js-highlight col col-3 text-gray-lightest">col-3</label>
-    <label class="js-highlight col col-3 text-gray-lightest">col-3</label>
-    <label class="js-highlight col col-3 text-gray-lightest">col-3</label>
-    <div class="col col-3 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-3 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-3 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-3 p2 border rounded fill-gray-lighter"></div>
-  </div>
-
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-    <div class="col col-1 border rounded p2 fill-gray-lighter"></div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-1 text-gray-lightest">col-1</label>
-    <label class="js-highlight col col-3 text-gray-lightest">col-3</label>
-    <label class="js-highlight col col-2 text-gray-lightest">col-2</label>
-    <label class="js-highlight col col-6 text-gray-lightest">col-6</label>
-    <div class="col col-1 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-3 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-2 p2 border rounded fill-gray-lighter"></div>
-    <div class="col col-6 p2 border rounded fill-gray-lighter"></div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-4 offset-3 text-gray-lightest">col-4 offset-3</label>
-    <div class="col col-4 offset-3 border rounded p2 fill-gray-lighter"></div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <div class="col col-2 border rounded p2 fill-gray-lighter">
-      
-    </div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-4 offset-5 text-gray-lightest">col-4 offset-5</label>
-    <div class="col col-4 offset-5 border rounded p2 fill-gray-lighter"></div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-4 offset-8 text-gray-lightest">col-4 offset-8</label>
-    <div class="col col-4 offset-8 border rounded p2 fill-gray-lighter"></div>
-  </div>
-
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-8 text-gray-lightest">col-2 nested inside .col-8</label>
-    <div class="col col-8 border rounded fill-gray-lighter">
-      <div class="col col-2 p2 fill-yellow-light"></div>
-    </div>
-  </div>
+  <pre><code class="html"><%='<div class="clearfix">'%>
+  <%='<div class="col col-3">.col .col-3</div>'%>
+  <%='<div class="col col-4">.col .col-4</div>'%>
+  <%='<div class="col col-5">.col .col-5</div>'%>
+<%='</div>'%></code></pre>
 
 </div>
+<div class="mb4 pb2">
 
+  <h3 class="bold mb1">Column Spacing and Offsets</h3>
+
+  <p class="mb4">In order to add space around your columns, use our offset classes (which we'll get to momentarily) or our <a href="/layout/utilities/">padding utility classes</a>  and wrap your column's content in a separate container. <b>Do not use margin or your grid will wrap.</b></p>
+
+  <h4 class="bold mb1">Using Padding to Space Columns</h4>
+
+  <p class="mb3">Here's an example of using padding classes to space your grid columns:</p>
+
+  <div class="clearfix mb3">
+    <div class="col col-3 pr1">
+      <div class="border p1">.col .col-3 .pr1</div>
+    </div>
+    <div class="col col-4 pr2">
+      <div class="border p1">.col .col-4 .pr2</div>
+    </div>
+    <div class="col col-5">
+      <div class="border p1">.col .col-5</div>
+    </div>
+  </div>
+
+  <p class="mb1">Here's how it works in code:</p>
+
+   <pre class="mb4"><code class="html"><%='<div class="clearfix">'%>
+  <%='<div class="col col-3 pr1">'%>
+    <%='<div class="border p1">.col .col-3 .pr1</div>'%>
+  <%='</div>'%>
+  <%='<div class="col col-4 pr2">'%>
+    <%='<div class="border p1">.col .col-4 .pr2</div>'%>
+  <%='</div>'%>
+  <%='<div class="col col-5">'%>
+    <%='<div class="border p1">.col .col-5</div>'%>
+  <%='</div>'%>
+<%='</div>'%></code></pre>
+
+
+  <h4 class="bold mb1">Column Offsets</h4>
+
+  <p class="mb3">Use the <code class="js-highlight">.offset-n</code> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <code class="js-highlight">.offset-1</code> moves your div to the left by one column width, then <code class="js-highlight">.offset-2</code> moves it to column widths, and so on. Here's an example:</p>
+
+  <div class="clearfix mb2">
+    <div class="col col-8 offset-2 border p1">.col-8 .offset-2</div>
+  </div>
+  <div class="clearfix">
+    <div class="col col-3 offset-2 border p1">.col-3 .offset-2</div>
+    <div class="col col-3 offset-2 border p1">.col-3 .offset-2</div>
+  </div>
+
+
+</div>
+<div class="mb4 pb2">
+
+  <h3 class="bold mb1">Nesting Columns</h3>
+
+  <p class="mb3">Since our grid is percentage-based, it can be nested within itself. When you nest a new grid, the columns are sized relative to the parent. Like so:</p>
+
+  <div class="clearfix mb3">
+    <div class="col col-6 border-left border-top border-bottom p1">
+      <p class="mb1">.col .col-6</p>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow p1">.col .col-4</div>
+    </div>
+    <div class="col col-6 border p1">
+      <p class="mb1">.col .col-6</p>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow border-right p1">.col .col-4</div>
+      <div class="col col-4 fill-yellow p1">.col .col-4</div>
+    </div>
+  </div>
+
+  <p class="mb1">And the code:</p>
+
+  <pre><code class="html"><%='<div class="clearfix">'%>
+  <%='<div class="col col-6">'%>
+    <%='<p>.col .col-6</p>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+  <%='</div>'%>
+  <%='<div class="col col-6">'%>
+    <%='<p>.col .col-6</p>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+    <%='<div class="col col-4">.col .col-4</div>'%>
+  <%='</div>'%>
+<%='</div>'%></code></pre>
+
+</div>
 
 <div class="mb4 clearfix">
+  <h3 class="bold mb1">Responsive Grid</h3>
 
-  <h3 class="bold mt4 mb1">Grid With Gutters</h3>
-  <p class="mb3">This is our 12-column grid with built-in gutters. To enable, add the .gutters class to your grid's .clearfix parent container. The resulting columns will have a padding-left and padding-right of 1%. Because these gutters are created with padding and not margin, you will need to nest your column content to avoid accidentally overriding the column layout.</p>
+  <p class="mb3">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width, <code class="js-highlight">.col-12</code>, at the smallest breakpoint, and half width, <code class="js-highlight">.col-6</code>, at the medium breakpoint, the div would get classes <code class="js-highlight">.xs-col-12</code> <code class="js-highlight">.md-col-6.</code> <b>Resize your browser to see the full effect below:</b></p>
 
-
-  <div class="gutters clearfix">
-
-  <div class="clearfix text-gray-lightest type-5">
-    <label class="js-highlight col col-12">col-12</label>
-    <div class="col col-12">
-      <div class="border rounded fill-gray-lighter p2"></div>
+  <div class="clearfix mb3">
+    <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
   </div>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-6">col-6</label>
-    <label class="js-highlight col col-6">col-6</label>
-    <div class="col col-6">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-6">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-  </div>  
+  <p class="mb1">Here's how it's done:</p>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-3">col-6 nested inside .col-3</label>
-    <label class="js-highlight col col-3">col-3</label>
-    <label class="js-highlight col col-3">col-3</label>
-    <label class="js-highlight col col-3">col-3</label>
-    <div class="col col-3">
-      <div class="border rounded fill-gray-lighter">
-        <div class="col-6 fill-yellow-light p2"></div>
-      </div>
-    </div>
-    <div class="col col-3">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-3">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-3">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-  </div>
+  <pre><code class="html"><%= '<div class="clearfix mb3">' %>
+  <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+<%= '</div>' %></code></pre>
 
-  <div class="clearfix mt2 text-gray-lightest type-5">
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <label class="js-highlight col col-1">col-1</label>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-    <div class="col col-1">
-      <div class="border rounded fill-gray-lighter p2"></div>
-    </div>
-  </div>
- </div>
 
-</div>
+</div> 

@@ -8,19 +8,35 @@ code {
 
   // Inline code blocks
   &.js-highlight {
+    border: $border-default;
     display: inline-block;
     padding: 2px 4px;
-    border-radius: 4px;
-    background-color: $fill-blue;
-    font-size: $type-5;
-    color: $text-white;
+    border-radius: 2px;
+    background-color: $fill-gray-lighter;
+    font-size: $type-6;
+    color: $text-red;
     font-weight: bold;
+    margin: 3px 0;
+  }
+
+  // In case we use the Konami code for our code snippets
+
+  &.konami {
+    background: -moz-linear-gradient(left, red, orange, yellow, green, 
+    blue, indigo, violet);
+    background: -webkit-gradient(linear, left center, right center, from(red), 
+    color-stop(14%, orange), color-stop(28%, yellow), color-stop(42%, green), 
+    color-stop(56%, blue), color-stop(70%, indigo), to(violet)); 
+    background: -o-linear-gradient(left, red, orange, yellow, green, 
+    blue, indigo, violet);
+    background: -ms-linear-gradient(left, red, orange, yellow, green, 
+    blue, indigo, violet);
   }
   
   // Override highlight.js theme properties
   &.hljs { 
     background-color: $fill-gray-darker; 
-    padding: $space-2 $space-1;
+    padding: $space-2;
     font-size: $type-5;
     line-height: 1.75;
     margin-top: $space-1;
