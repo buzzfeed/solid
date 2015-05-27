@@ -36,6 +36,7 @@ img { max-width: 100%; height: auto; }
 
     .#{$breakpoint-prefix}float-left  { float: left; }
     .#{$breakpoint-prefix}float-right { float: right; }
+    .#{$breakpoint-prefix}float-none { float: none; }
 
     .#{$breakpoint-prefix}half-width { width: 50%; }
     .#{$breakpoint-prefix}full-width { width: 100%; }
