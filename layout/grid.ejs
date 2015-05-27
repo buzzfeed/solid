@@ -100,23 +100,27 @@
   <p class="mb3">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width (.col-12) at the smallest breakpoint, and half width (.col-6) at the medium breakpoint, the div would get classes .xs-col-12 .md-col-6. <b>Resize your browser to see the full effect below:</b></p>
 
   <div class="clearfix mb3">
-    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
-      <p class="xs-show md-hide">.xs-col-12</p>
+    <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
-      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
-      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
     <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
-      <p class="xs-show md-hide">.xs-col-12</p>
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
@@ -124,28 +128,32 @@
 
   <p class="mb1">Here's how it's done:</p>
 
-  <pre><code class="html"><%='<div class="clearfix">'%>
-  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
-    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
-    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
-    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
-  <%='</div>'%>
-  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
-    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
-    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
-    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
-  <%='</div>'%>
-  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
-    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
-    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
-    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
-  <%='</div>'%>
-  <%='<div class="col xs-col-12 md-col-6 lg-col-3">'%>
-    <%='<p class="xs-show md-hide">.xs-col-12</p>'%>
-    <%='<p class="xs-hide md-show lg-hide">.md-col-6</p>'%>
-    <%='<p class="xs-hide lg-show">.lg-col-3</p>'%>
-  <%='</div>'%>
-<%='</div>'%></code></pre>
+  <pre><code class="html"><%= '<div class="clearfix mb3">' %>
+  <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+<%= '</div>' %></code></pre>
 
 
 </div> 
