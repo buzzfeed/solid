@@ -25,7 +25,7 @@ h5 {
 }
 
 h6, .type-6 {
-  font-size: 0.75rem;
+  font-size: $type-6;
   &.slab {
       font-family:'Proxima Nova';
     }
