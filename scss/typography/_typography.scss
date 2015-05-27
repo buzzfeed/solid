@@ -34,7 +34,7 @@ h6, .type-6 {
 // Type Size Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
 		.#{$breakpoint-prefix}type-1 {
@@ -66,48 +66,48 @@ h6, .type-6 {
 
 // Typography Emphasis and Styling
 
-.regular, 
-.normal { 
+.regular,
+.normal {
 	font-weight: $regular;
 }
 
-strong, 
-b, 
-.bold { 
+strong,
+b,
+.bold {
 	font-weight: $bold;
 }
 
-em, 
-i, 
-.italic { 
+em,
+i,
+.italic {
 	font-style: italic;
 }
 
-.caps  { 
+.caps  {
 	text-transform: uppercase;
 }
 
-.text-left { 
+.text-left {
 	text-align: left;
 }
 
-.text-center { 
+.text-center {
 	text-align: center;
 }
 
-.text-right { 
+.text-right {
 	text-align: right;
 }
 
-.text-justify { 
+.text-justify {
 	text-align: justify;
 }
 
-.nowrap { 
+.nowrap {
 	white-space: nowrap;
 }
 
-.truncate { 
+.truncate {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -129,7 +129,7 @@ i,
   white-space: nowrap;
 }
 
-// Typeface Classes 
+// Typeface Classes
 
 .slab {
   font-family: 'Caponi-Slab-Semibold';
@@ -152,14 +152,15 @@ i,
 // Caponi should never be an h6 or .type-6
 
 .slab h6,
-h6.slab, 
+h6.slab,
 .type-6 .slab,
 .slab.type-6 {
   font-family: 'Proxima-Nova';
   font-weight: normal;
 }
 
-
-
-
-
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
