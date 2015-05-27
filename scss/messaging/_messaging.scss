@@ -3,8 +3,21 @@
   font-size: $type-4;
   font-weight: 600;
   margin: 0.125rem 0 0 0;
+}
 
-  &:before {
+.page-message--error {
+  background-color: $fill-red-light;
+  color: $text-red;
+}
+
+.page-message--success {
+  background-color: $fill-green-light;
+  color: $text-green;
+}
+
+
+.page-message__text {
+ &:before {
     content: "";
     height: 1rem;
     width: 1rem;
@@ -14,36 +27,47 @@
     position: relative;
     bottom: -2px;
     margin: 0 .5rem 0 0;
-
   }
 }
 
-.page-message--error {
-  background-color: $fill-red-light;
-  color: $text-red;
+.page-message__text--error {
+    color: $text-red;
+    &:before {
+    background-image: svg-background($exclamation-circle);
+    background-size: 1rem;
+  }
 }
 
-.page-message--error a {
-    color: $text-red;
+.page-message__text--success {
+    color: $text-green;
+    &:before {
+    background-image: svg-background($checkmark);
+    background-size: .625rem;
+    background-color: $fill-green;
+    border-radius: 50%;
+  }
 }
 
 .page-message--error a:hover {
     color: $text-blue;
 }
 
-.page-message--error:before {
-  background-image: svg-background($exclamation-circle);
-  background-size: 1rem;
-}
+// .page-message--error a{
+//     color: $text-red;
+// }
 
-.page-message--success {
-  background-color: $fill-green-light;
-  color: $text-green;
-}
 
-.page-message--success:before {
-  background-image: svg-background($checkmark);
-  background-size: .625rem;
-  background-color: $fill-green;
-  border-radius: 50%;
-}
+
+// .page-message--error:before {
+//   background-image: svg-background($exclamation-circle);
+//   background-size: 1rem;
+// }
+
+
+
+// .page-message--success:before {
+//   background-image: svg-background($checkmark);
+//   background-size: .625rem;
+//   background-color: $fill-green;
+//   border-radius: 50%;
+// }

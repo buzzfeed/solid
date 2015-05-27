@@ -29,23 +29,30 @@
 </section>
 
 
+
+
+
 <section class="mb4">
   <h3 class="mb2 bold">Default page level messaging with action link</h3>
-
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Error message with link</label>
       <label class="block type-4 text-gray-lighter">This error message appears when there is an error and you want to link to the exact spot on the page where the error is occuring.</label>
     </div>
+
   <div class="fill-white p3">
-    <div class="page-message page-message--error">
-      <a href="">Add 9 image credits</a>
-      <div class="float-right">
-        <input type="checkbox" class="checkbox" id="image_credits" value="image_credits" name="checkboxes">
-        <label for="image_credits">I want to publish without image credits.</label> 
-      </div>
+    <div class="clearfix page-message page-message--error">
+
+    <div class="col xs-col-12 md-col-6 xs-mb1 md-mb0">
+      <a class="page-message__text page-message__text--error" href="">Add 9 image credits</a>
     </div>
-    <pre><code class="html"><%='<div class="page-message page-message--error">'%><br/><%='  <a href="">Add 9 image credits</a>'%><br/><%='  <div class="float-right">'%><br/><%='    <input type="checkbox" class="checkbox" id="image_credits" value="image_credits" name="checkboxes">'%><br/><%='    <label for="image_credits">I want to publish without image credits.</label>'%><br/><%='  </div>'%><br/><%='</div>'%></code></pre>
+   
+    <div class="col xs-col-12 md-col-6 text-right">
+      <input type="checkbox" class="checkbox" id="image_credits2" value="image_credits" name="checkboxes">
+      <label for="image_credits2">I want to publish without image credits.</label> 
     </div>
   </div>
+    </div>
+  </div>
+
  </section> 
