@@ -37,92 +37,100 @@ h6, .type-6 {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
-		.#{$breakpoint-prefix}type-1 {
-		  font-size: $type-1;
-		}
+    .#{$breakpoint-prefix}type-1 {
+      font-size: $type-1;
+    }
 
-		.#{$breakpoint-prefix}type-2 {
-		  font-size: $type-2;
-		}
+    .#{$breakpoint-prefix}type-2 {
+      font-size: $type-2;
+    }
 
-		.#{$breakpoint-prefix}type-3 {
-		  font-size: $type-3;
-		}
+    .#{$breakpoint-prefix}type-3 {
+      font-size: $type-3;
+    }
 
-		.#{$breakpoint-prefix}type-4 {
-		  font-size: $type-4;
-		}
+    .#{$breakpoint-prefix}type-4 {
+      font-size: $type-4;
+    }
 
-		.#{$breakpoint-prefix}type-5 {
-		  font-size: $type-5;
-		}
+    .#{$breakpoint-prefix}type-5 {
+      font-size: $type-5;
+    }
 
-		.#{$breakpoint-prefix}type-6 {
-		  font-size: $type-6;
-		}
+    .#{$breakpoint-prefix}type-6 {
+      font-size: $type-6;
+    }
 
-	}
+  }
 }
 
 // Typography Emphasis and Styling
 
 .regular,
 .normal {
-	font-weight: $regular;
+  font-weight: $regular;
 }
 
 strong,
 b,
 .bold {
-	font-weight: $bold;
+  font-weight: $bold;
 }
 
 em,
 i,
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .caps  {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.text-left {
-	text-align: left;
-}
+// Text Alignment + Responsive Prefixes
 
-.text-center {
-	text-align: center;
-}
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
+  @include media-query($breakpoint-name){
 
-.text-right {
-	text-align: right;
-}
+    .#{$breakpoint-prefix}text-left {
+      text-align: left;
+    }
 
-.text-justify {
-	text-align: justify;
+    .#{$breakpoint-prefix}text-center {
+      text-align: center;
+    }
+
+    .#{$breakpoint-prefix}text-right {
+      text-align: right;
+    }
+
+    .#{$breakpoint-prefix}text-justify {
+      text-align: justify;
+    }
+  } 
 }
 
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .truncate {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .decoration-none{
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .decoration-underline{
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .decoration-line-through{
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .no-wrap {
@@ -160,6 +168,7 @@ h6.slab,
 }
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
+
 .list-unstyled {
     padding-left: 0;
     list-style: none;
