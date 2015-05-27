@@ -6,7 +6,10 @@
 @import 'colors/colors';
 @import 'typography/typography';
 @import 'tables/tables';
-@import 'utilities/utilities';
 @import 'grid/grid';
 @import 'forms/forms';
+@import 'buttons/buttons';
+
+// These two should always be last. Don't put anything past this line.
+@import 'utilities/utilities';
 @import 'solid-specific';

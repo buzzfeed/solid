@@ -9,9 +9,10 @@
       <label class="block type-4 text-gray-lighter">A text input should always have a label. Labels should be written in sentence case and are always placed on top of the input.</label>
     </div>
   <div class="fill-white p3">
-    <label class="form-label">Your name</label>
-    <input type="text" class="text-input mb2">
-    <pre><code class="html"><%='<label class="form-label">Your name</label>'%><br/><%='<input type="text" class="text-input mb2">'%></code></pre>
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <button class="button button--primary">Add</button>
+      <pre><code class="html"><%='<label class="form-label">Your name</label>'%><br/><%='<input type="text" class="text-input">'%><br/><%='<button class="button button--primary">Add</button>'%></code></pre>
     </div>
   </div>
 
@@ -23,7 +24,8 @@
     <div class="fill-white p3">
       <label class="form-label">Your website</label>
       <input type="text" placeholder="www.example.com" class="text-input mb2">
-      <pre><code class="html"><%= '<input type="text" placeholder="Type here" class="text-input mb2">'%> </code></pre>
+      <button class="button button--primary">Add</button>
+      <pre><code class="html"><%='<label class="form-label">Your name</label>'%><br/><%='<input type="text" placeholder="www.example.com" class="text-input">'%><br/><%='<button class="button button--primary">Add</button>'%></code></pre>
     </div>
   </div>
 
@@ -35,7 +37,7 @@
    <div class="fill-white p3">
       <label class="form-label">Comments</label>
       <textarea class="textarea mb2"></textarea>
-      <pre><code class="html"><%= '<textarea class="textarea mb2"></textarea>'%> </code></pre>
+      <pre><code class="html"><%='<label class="form-label">Comments</label>'%><br/><%='<textarea class="textarea mb2"></textarea>'%> </code></pre>
     </div>
   </div>
 
@@ -110,6 +112,7 @@
   <div class="fill-white p3">
     <label class="form-label form-label--small">Your name</label>
     <input type="text" class="text-input text-input--small mb2">
+    <a class="button button--primary button--small" href="">Add</a>
     <pre><code class="html"><%='<label class="form-label form-label--small">Your name</label>'%><br/><%='<input type="text" class="text-input--small mb2">'%></code></pre>
     </div>
   </div>
@@ -166,6 +169,7 @@
     </div>
     
     <div class="fill-white p3">
+
       <label class="form-label">Your username</label>
       <input type="text" class="text-input">
       <label class="form-helper mb3"> BTW, your username cannot be changed</label>
@@ -212,7 +216,6 @@
     </div>
   </div>
 
-
   <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
     <div class="p3">
       <label class="block type-4 bold">Error message + helper text</label>
@@ -228,5 +231,4 @@
   </div>
  
 </section>
-
 

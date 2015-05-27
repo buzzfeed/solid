@@ -1,0 +1,118 @@
+// Reset Button
+//
+// In an article on CSS-Tricks
+// (http://css-tricks.com/use-button-element/),
+// Chris Coyier explains that:
+// "if a button doesn’t have a meaningful
+// href, it’s a <button>"; which makes sense.
+//
+// This placeholder resets <button>'s
+// default styling, so we can use
+// <button>s where it makes without
+// worrying about the styling.
+// -------------------------
+@mixin button-reset {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 0;
+  white-space: nowrap;
+  @include prefix((appearance: none), webkit);
+  @include prefix((user-select: none));
+
+  &,
+  &:active {
+    &:focus {
+      outline: 0;
+    }
+
+  }
+
+}
+
+$button-primary-color: $fill-blue;
+$button-delete-color: $fill-red;
+
+.button,
+.button--disabled,
+.button--small {
+  @include button-reset;
+  font-family: inherit;
+  height: $line-height;
+  padding: .75rem 1rem;
+  font-size: $type-4;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+
+  &:hover {
+    transition: background-color 0.3s ease 0s;
+  }
+}
+
+.button--primary {
+  background-color: $fill-blue;
+  color: $text-white;
+
+  &:not(.button--disabled):hover {
+    background-color: darken( $button-primary-color, 20%);
+  }
+
+  &:not(.button--disabled):active {    
+    background-color: darken( $button-primary-color, 35%);
+  }
+}
+
+.button--secondary {
+  border: 1px solid $fill-blue;
+  color: $text-blue;
+  background: none;
+
+  &:not(.button--disabled):hover {
+    background-color: $fill-blue;
+    color: $fill-white; 
+  }
+
+  &:not(.button--disabled):active {   
+    background-color: darken( $button-primary-color, 20%); 
+  }
+}
+
+.button--delete {
+  background-color: $fill-red;
+  color: $text-white; 
+
+  &:not(.button--disabled):hover {
+    background-color: darken( $button-delete-color, 20%); 
+  }
+
+  &:not(.button--disabled):active {   
+    background-color: darken( $button-delete-color, 35%); 
+  }
+}
+
+.button--disabled {
+  opacity: .3;
+
+  &:hover {
+    cursor: default;
+    transition: none;
+  }
+}
+
+.button--small {
+  font-size: $type-5;
+  padding: .5625rem .875rem;
+}
+
+.button+.button {
+  margin-left: .375rem;
+}
+
+
+
