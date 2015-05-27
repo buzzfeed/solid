@@ -17,46 +17,46 @@ th, td {
 }
 
 th {
-	vertical-align: bottom
+  vertical-align: bottom
 }
 
 td {
-	vertical-align: top
+  vertical-align: top
 }
 
 // Add a border to a table
 
 .table-border {
-	border: $border-default;
-	border-radius: 3px;
+  border: $border-default;
+  border-radius: 3px;
 }
 
 .table-border th {
-	border-bottom: $border-default;
+  border-bottom: $border-default;
 }
 
 .table-border td, .table-border th {
-	padding: $space-2;
+  padding: $space-2;
 }
 
 .table-border tr td {
-	border-bottom: $border-default;
+  border-bottom: $border-default;
 }
 
 .table-border tr:last-child td {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 // Adding table layout
 
 .table {
-	display: table;
+  display: table;
 }
 
 .td, .th {
-	display: table-cell;
+  display: table-cell;
 }
 
 .tr {
-	display: table-row;
+  display: table-row;
 }
