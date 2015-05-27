@@ -4,21 +4,69 @@
 	<h3 class="bold mb1">An Introduction</h3>
 	<p class="mb3">We've made our utility, typography and grid classes even more powerful by adding responsive prefixes. Using the prefixes xs, sm, md, and lg, you can quickly and easily adjust your layout and content as a user scales their browser down.</p>
 
-  <p class="bold mb1">Resize your browser and watch the div below for a quick example.</p>
+  <p class="bold mb1">Resize your browser to see our Extra Small, Small, Medium and Large breakpoints.</p>
 
-  <div class="mb3">
-  	<div class="xs-hide lg-show fill-green text-white p2">Large</div>
-  	<div class="xs-hide md-show lg-hide fill-orange text-white p2">Medium</div>
-  	<div class="xs-hide sm-show md-hide fill-blue text-white p2">Small</div>
-  	<div class="xs-show sm-hide fill-pink text-white p2">Extra Small</div>
+  <div class="mb1">
+  	<div class="xs-hide lg-show text-green">Large</div>
+  	<div class="xs-hide md-show lg-hide text-orange">Medium</div>
+  	<div class="xs-hide sm-show md-hide text-blue">Small</div>
+  	<div class="xs-show sm-hide text-red">Extra Small</div>
+  </div>
+  <div class="clearfix mb3">
+    <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
+      <p class="xs-show sm-hide">.xs-col-12</p>
+      <p class="xs-hide sm-show md-hide">.sm-col-12</p>
+      <p class="xs-hide md-show lg-hide">.md-col-6</p>
+      <p class="xs-hide lg-show">.lg-col-3</p>
+    </div>
   </div>
 
   <p>This is achieved with the markup below. As you can see, we're using our <b>.show</b> and <b>.hide</b> utility classes, but adding breakpoint prefixes to determine when to show and when to hide each div:</p>
 
-  <pre><code class="html"><%= '<div class="xs-hide lg-show fill-green text-white p2">Large</div>' %>
-<%= '<div class="xs-hide md-show lg-hide fill-orange text-white p2">Medium</div>' %>
-<%= '<div class="xs-hide sm-show md-hide fill-blue text-white p2">Small</div>' %>
-<%= '<div class="xs-show sm-hide fill-pink text-white p2">Extra Small</div>' %></code></pre>
+  <pre><code class="html"><%= '<div class="clearfix mb3">' %>
+  <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
+    <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
+    <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
+    <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
+    <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
+  <%= '</div>' %>
+<%= '</div>' %></code></pre>
 
 </div>
 
