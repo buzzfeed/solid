@@ -11,7 +11,9 @@
     </div>
   <div class="fill-white p3">
     <div class="page-message page-message--error">
-      <div class="page-message__text">Oh no, something went wrong.</div>
+      <div class="page-message__text">Oh no, something went wrong. 
+        <a class="page-message__action" href="">Fix this error.</a>
+      </div>
     </div>
     <pre><code class="html"><%='<div class="page-message page-message--error">'%><br/><%=' <div class="page-message__text">Oh no, something went wrong.</div>'%><br/><%='</div'%></code></pre> 
   </div>
@@ -24,34 +26,12 @@
     </div>
   <div class="fill-white p3">
     <div class="page-message page-message--success">
-      <div class="page-message__text">Your settings have been saved.</div>
+      <div class="page-message__text">Your settings have been saved.
+      <a class="page-message__action" href="">Fix this error.</a>
+      </div>
     </div>
     <pre><code class="html"><%='<div class="page-message page-message--success">'%><br/><%=' <div class="page-message__text">Your settings have been saved.</div>'%><br/><%='</div'%></code></pre>
     </div>
   </div>
 
 </section>
-
-<section class="mb4">
-  <h3 class="mb2 bold">Default page level messaging with action link</h3>
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
-    <div class="p3">
-      <label class="block type-4 bold">Error message with link</label>
-      <label class="block type-4 text-gray-lighter">This error message appears when there is an error and you want to link to the exact spot on the page where the error is occuring.</label>
-    </div>
-
-  <div class="fill-white p3">
-    <div class="clearfix page-message page-message--error">
-      <div class="col xs-col-12 md-col-6 xs-mb1 md-mb0">
-        <a class="page-message__text page-message__action" href="">Add 9 image credits</a>
-      </div>
-      <div class="col xs-col-12 md-col-6 text-right">
-        <input type="checkbox" class="checkbox" id="image_credits2" value="image_credits" name="checkboxes">
-        <label for="image_credits2">I want to publish without image credits.</label> 
-      </div>
-    </div>
-    <pre><code class="html"><%='<div class="clearfix page-message page-message--error">'%><br/><%=' <div class="col xs-col-12 md-col-6 xs-mb1 md-mb0">'%><br/><%='  <a class="page-message__text page-message__action" href="">Add 9 image credits</a>'%><br><%='</div>'%><br/><%=' <div class="col xs-col-12 md-col-6 text-right">'%><br/><%='  <input type="checkbox" class="checkbox" id="image_credits2" value="image_credits" name="checkboxes">'%><br><%='  <label for="image_credits2">I want to publish without image credits.</label>'%><br><%='</div>'%></code></pre>
-  </div>
-</div>
-
- </section> 

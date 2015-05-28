@@ -21,10 +21,10 @@
 }
 
 .page-message--error {
-  background-color: $fill-red-light;
+  background-color: $fill-red-lighter;
   color: $text-red;
 
-  .page-message__text {
+  .page-message__text, .page-message__action {
       color: $text-red;
 
       &:before {
@@ -35,10 +35,10 @@
 }
 
 .page-message--success {
-  background-color: $fill-green-light;
+  background-color: $fill-green-lighter;
   color: $text-green;
 
-  .page-message__text {
+  .page-message__text, .page-message__action {
       color: $text-green;
 
       &:before {
