@@ -32,6 +32,8 @@
 
 }
 
+$button-height: 2.625rem;
+$button-height-small: 2rem;
 $button-primary-color: $fill-blue;
 $button-delete-color: $fill-red;
 
@@ -40,8 +42,8 @@ $button-delete-color: $fill-red;
 .button--small {
   @include button-reset;
   font-family: inherit;
-  height: $line-height;
-  padding: .75rem 1rem;
+  height: $button-height;
+  padding: .625rem .875rem;
   font-size: $type-4;
   border-radius: 3px;
   text-decoration: none;
@@ -107,7 +109,8 @@ $button-delete-color: $fill-red;
 
 .button--small {
   font-size: $type-5;
-  padding: .5625rem .875rem;
+  padding: .375rem .625rem;
+  height: $button-height-small;
 }
 
 .button+.button {
