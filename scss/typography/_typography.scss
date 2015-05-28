@@ -1,41 +1,68 @@
-// Headers
+//
+// Typography Base Styles
+// --------------------------------------------------
 
-body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
+
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.type-1, 
+.type-2, 
+.type-3, 
+.type-4, 
+.type-5, 
+.type-6 {
   line-height: $line-height;
 }
 
-h1{
+h1,
+.type-1 { 
   font-size: $type-1;
 }
 
-h2 {
+h2,
+.type-2 {
   font-size: $type-2;
 }
 
-h3 {
+h3,
+.type-3 {
   font-size: $type-3;
 }
 
-h4 {
+h4,
+.type-4 {
   font-size: $type-4;
 }
 
-h5 {
+h5,
+.type-5 {
   font-size: $type-5;
 }
 
-h6, .type-6 {
+h6, 
+.type-6 {
   font-size: $type-6;
+
   &.slab {
-      font-family:'Proxima Nova';
-    }
+    font-family: "Proxima Nova";
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 // Type Size Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
+  
+  @include media-query($breakpoint-name) {
 
     .#{$breakpoint-prefix}type-1 {
       font-size: $type-1;
@@ -83,7 +110,7 @@ i,
   font-style: italic;
 }
 
-.caps  {
+.caps {
   text-transform: uppercase;
 }
 
@@ -91,7 +118,8 @@ i,
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
+
+  @include media-query($breakpoint-name) {
 
     .#{$breakpoint-prefix}text-left {
       text-align: left;
@@ -121,15 +149,15 @@ i,
   text-overflow: ellipsis;
 }
 
-.decoration-none{
+.decoration-none {
   text-decoration: none;
 }
 
-.decoration-underline{
+.decoration-underline {
   text-decoration: underline;
 }
 
-.decoration-line-through{
+.decoration-line-through {
   text-decoration: line-through;
 }
 
@@ -144,12 +172,14 @@ i,
   -o-font-feature-settings:"liga", "kern";
   -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
+
   &.bold {
-    font-family: 'Caponi-Slab-Semibold';
+    font-family: "Caponi-Slab-Semibold";
     font-weight: normal;
   }
+
   &.italic {
-    font-family: 'Caponi-Slab-Semibold';
+    font-family: "Caponi-Slab-Semibold";
   }
 }
 
@@ -159,7 +189,7 @@ i,
 h6.slab,
 .type-6 .slab,
 .slab.type-6 {
-  font-family: 'Proxima-Nova';
+  font-family: "Proxima-Nova";
   font-weight: normal;
 }
 
@@ -173,7 +203,33 @@ ul {
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 
 .list-unstyled {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+// Link Styles
+
+.link-blue {
+  color: $text-blue;
+  
+  &:hover {
+    color: darken($text-blue, 20%);
+  }
+}
+
+.link-gray {
+  color: $text-gray;
+
+  &:hover {
+    color: $text-blue;
+  }
+}
+
+.link-gray--lightest {
+  color: $text-gray--lightest;
+
+  &:hover {
+    color: $text-gray;
+  }
 }
