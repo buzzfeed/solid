@@ -1,8 +1,13 @@
+// This first set is required in order to use the rest.
+
 @import 'variables';
 @import 'mixins';
-@import 'fonts/font-faces';
 @import 'base/normalize';
 @import 'base/base';
+@import 'fonts/font-faces';
+
+// Feature-specific CSS. The order of these doesn't matter so much, but even so, please import them in this order to preserve our sanity.
+
 @import 'colors/colors';
 @import 'typography/typography';
 @import 'tables/tables';
@@ -11,5 +16,6 @@
 @import 'buttons/buttons';
 
 // These two should always be last. Don't put anything past this line.
+
 @import 'utilities/utilities';
 @import 'solid-specific';
