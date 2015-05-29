@@ -210,24 +210,44 @@ img { max-width: 100%; height: auto; }
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
   @include media-query($breakpoint-name){
 
-    .#{$breakpoint-prefix}border{
-      border:$border-default;
+    .#{$breakpoint-prefix}border {
+      border:$border;
     }
 
-    .#{$breakpoint-prefix}border-top{
-      border-top:$border-default;
+    .#{$breakpoint-prefix}border-top {
+      border-top:$border;
     }
 
-    .#{$breakpoint-prefix}border-right{
-      border-right:$border-default;
+    .#{$breakpoint-prefix}border-right {
+      border-right:$border;
     }
 
-    .#{$breakpoint-prefix}border-bottom{
-      border-bottom:$border-default;
+    .#{$breakpoint-prefix}border-bottom {
+      border-bottom:$border;
     }
 
-    .#{$breakpoint-prefix}border-left{
-      border-left:$border-default;
+    .#{$breakpoint-prefix}border-left {
+      border-left:$border;
+    }
+
+    .#{$breakpoint-prefix}border--lighter {
+      border:$border--lighter;
+    }
+
+    .#{$breakpoint-prefix}border-top--lighter {
+      border-top:$border--lighter;
+    }
+
+    .#{$breakpoint-prefix}border-right--lighter {
+      border-right:$border--lighter;
+    }
+
+    .#{$breakpoint-prefix}border-bottom--lighter {
+      border-bottom:$border--lighter;
+    }
+
+    .#{$breakpoint-prefix}border-left--lighter {
+      border-left:$border--lighter;
     }
 
     }

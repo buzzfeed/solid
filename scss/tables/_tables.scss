@@ -27,12 +27,12 @@ td {
 // Add a border to a table
 
 .table-border {
-  border: $border-default;
+  border: $border;
   border-radius: 3px;
 }
 
 .table-border th {
-  border-bottom: $border-default;
+  border-bottom: $border;
 }
 
 .table-border td, .table-border th {
@@ -40,7 +40,7 @@ td {
 }
 
 .table-border tr td {
-  border-bottom: $border-default;
+  border-bottom: $border;
 }
 
 .table-border tr:last-child td {
