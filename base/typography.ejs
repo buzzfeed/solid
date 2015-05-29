@@ -4,34 +4,29 @@
 
   <h3 class="mb1 bold">Headings</h3>
   <div class="mb2">
-    <p>h1, .type-1</p>
-    <p class="mb1 block type-5 text-gray-lightest">2.25 rem | 36px</p>
-    <h1>BuzzFeed is the social news and entertainment company</h1>
+    <p class="text-gray-lightest">h1, .type-1</p>
+    <h1>BuzzFeed is the social news and entertainment company (2.25 rem, 36px)</h1>   
   </div>
-  <div class="mb2">
-    <p>h2, .type-2</p>
-    <label class="mb1 block type-5 text-gray-lightest">1.375rem | 22px</label>
-    <h2>BuzzFeed is the social news and entertainment company</h2>
+  <div class="mb3">
+    <p class="text-gray-lightest">h2, .type-2</p>
+    <h2>BuzzFeed is the social news and entertainment company (1.375rem, 22px)</h2>
   </div>
-  <div class="mb2">
-    <p>h3, .type-3</p>
-    <label class="mb1 block type-5 text-gray-lightest">1.125rem | 18px</label>
-    <h3>BuzzFeed is the social news and entertainment company</h3>
+  <div class="mb3">
+    <p class="text-gray-lightest">h3, .type-3</p>
+    <h3>BuzzFeed is the social news and entertainment company (1.125rem, 18px)</h3>
   </div>
-  <div class="mb2">
-    <p>h4, .type-4</p>
-    <label class="mb1 block type-5 text-gray-lightest">1rem | 16px</label>
-    <h4>BuzzFeed is the social news and entertainment company</h4>
+  <div class="mb3">
+    <p class="text-gray-lightest">h4, .type-4</p>
+    <h4>BuzzFeed is the social news and entertainment company (1rem, 16px)</h4>
   </div>
-  <div class="mb2">
-    <p>h5, .type-5</p>
-    <label class="mb1 block type-5 text-gray-lightest">0.875rem | 14px</label>
-    <h5>BuzzFeed is the social news and entertainment company</h5>
+  <div class="mb3">
+    <p class="text-gray-lightest">h5, .type-5</p>
+    <h5>BuzzFeed is the social news and entertainment company (0.875rem, 14px)</h5>
   </div>
-  <div class="mb1">
-    <p>h6, .type-6</p>
-    <label class="mb1 block type-5 text-gray-lightest">0.75rem | 12px</label>
-    <h6>BuzzFeed is the social news and entertainment company</h6>
+  <div class="mb3">
+    <p class="text-gray-lightest">h6, .type-6</p>
+    <h6>BuzzFeed is the social news and entertainment company (0.75rem, 12px)</h6>
+
   </div>
 
 <pre class="xs-col-12"><code class="html"><%= '<h1>BuzzFeed is the social news and entertainment company</h1>' %>
@@ -58,9 +53,8 @@
 
   <h3 class="mb1 bold">Body</h3>
   <div class="mb1">
-    <p>p, .type-4</p>
-    <label class="block type-5 text-gray-lightest mb1">1 rem/16px</label>
-    <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
+    <p class="mb1 text-gray-lightest">p, .type-4</p>
+    <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M. (1 rem, 16px)</p>
   </div>
 
 <pre><code class="html"><%= '<p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
@@ -70,22 +64,23 @@
 <section class="mb4">
 
   <h3 class="mb1 bold">Emphasis and Styling</h3>
+
   <div class="mb3">
-    <p class="regular mb1">BuzzFeed is the social news and entertainment company</p>
-    <label class="block type-5 text-gray-lightest">Regular, Normal</label>
-    <pre><code class="html"><%= '<p class="regular">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+    <p class="text-gray-lightest">.regular</p>
+    <p class="bold mb1"><span class="regular">BuzzFeed is the</span> social news and entertainment company</p>
+    <pre><code class="html"><%= '<p class="bold"><span class="regular">BuzzFeed is the</span>social news and entertainment company</p>' %></code></pre>
   </div>
   <div class="mb3">
+    <p class="text-gray-lightest">strong, .bold</p>
     <p class="mb1"><strong>BuzzFeed is the social news and entertainment company</strong></p>
-    <label class="block type-5 text-gray-lightest">Bold, Semibold</label>
 <pre><code class="html"><%= '<p><strong>BuzzFeed is the social news and entertainment company</strong></p>' %>
 <%= '<p class="bold">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   </div>
   <div class="mb3">
+    <p class="text-gray-lightest">em, .italic</p> 
     <p class="mb1"><em>BuzzFeed is the social news and entertainment company</em></p>
-    <label class="block type-5 text-gray-lightest">Italic</label>
-    <pre><code class="html"><%= '<p><em>BuzzFeed is the social news and entertainment company</em></p>' %></code></pre>
-    <pre><code class="html"><%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+<pre><code class="html"><%= '<p><em>BuzzFeed is the social news and entertainment company</em></p>' %>
+<%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   </div>
   <div class="mb3">
     <p class="mb1 caps">BuzzFeed is the social news and entertainment company</p>
