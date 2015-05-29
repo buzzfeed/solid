@@ -1,8 +1,7 @@
 <h2 class="bold border-bottom mb4 pb2">Typography</h2>
 
-<section>
+<section class="xs-col-12 lg-col-9 mb4">
 
-  <div class="xs-col-12 lg-col-9 mb4">
     <div>
       <label class="mb1 block type-4 bold">Headings</label>
       <label class="block type-4">Headers set in Proxima range from <code class="js-highlight">h1</code> through <code class="js-highlight">h6</code>. Alternately, classes <code class="js-highlight">.type-1</code> through <code class="js-highlight">.type-6</code> mirror header element styles respectively, and can be used on any element to allow for flexible styling without affecting semantic markup. Header elements and type classes have no margins attached and inherit a line height 1.3x relative to the type size. </label>
@@ -50,7 +49,6 @@
 <%= '<h6>BuzzFeed is the social news and entertainment company</h6>' %>
 <%= '<p class="type-6">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
     
-    </div>
   </div>
 
 </section>
@@ -58,11 +56,11 @@
 <section class="xs-col-12 lg-col-9 mb4">
 
   <h3 class="mb1 bold">Body</h3>
-  <label class="block type-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. If you want a different element to be styled as the default, you can also use the class <code class="js-highlight">.type-4</code>. Optimal line length for body text should be no longer than (x) characters.</label>
+  <label class="block type-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. You can also use the class <code class="js-highlight">.type-4</code> to style any element as body text. Optimal line length for body text should be no longer than (x) characters.</label>
 
   <div>
     <div class="my2">
-      <p class="mb1 text-gray-lightest">p, .type-4</p>
+      <p class="text-gray-lightest">p, .type-4</p>
       <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M. (1 rem, 16px)</p>
     </div>
 <pre><code class="html"><%= '<p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
@@ -144,7 +142,7 @@
 
 <section class="xs-col-12 lg-col-9 mb4">
 
-  <h3 class="mb1 bold">Overflow and Truncation</h3>
+  <h3 class="mb1 bold">Overflow</h3>
 
     <div class="mb3">
       <div class="my2">
@@ -164,60 +162,91 @@
 
 </section>
 
-<section class="mb4">
+<section class="xs-col-12 lg-col-9 mb4">
 
-  <h3 class="mb1 bold">Slab Headings</h3>
+  <div>
+    <h3 class="mb1 bold">Slab Headings</h3>
+    <p class="block">Caponi is BuzzFeed's slab typeface. It's default (and singular weight) is semibold. Caponi is intended to be used for News headlines only, and should never be smaller than an <code class="js-highlight">h5</code>, or 0.875 rem. An <code class="js-highlight">h6</code>, or anything classed with <code class="js-highlight">.type-6</code>, in combination with the <code class="js-highlight">.slab</code> class will default to Proxima. Headlines set in Caponi should be paired with body text set in Proxima.</p>
+  </div>
+  <div>
+  <div class="my2">
+    <p class="text-gray-lightest">.slab h1, slab .type-1</p>
+    <h1 class="slab">BuzzFeed is the social news and entertainment company (2.25 rem, 36px)</h1>   
+  </div>
   <div class="mb3">
-    <p class="mb3">Caponi is BuzzFeed's slab typeface. It's default (and singular weight) is semibold. Caponi is intended to be used for News headlines only, and should never be smaller than an h5, or 0.875 rem. An h6, or anything classed with .type-6, in combination with the .slab class will default to Proxima. Headlines set in Caponi should be paired with body text set in Proxima.</p>
-    <div class="mb3">
-      <h1 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h1>
-      <label class="block type-5 text-gray-lightest">2.25 rem | 36px</label>
-      <pre><code class="html"><%= '<h1 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h1>' %></code></pre>
-    </div>
-    <div class="mb3">
-      <h2 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h2>
-      <label class="block type-5 text-gray-lightest">1.375 rem | 22px</label>
-      <pre><code class="html"><%= '<h2 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h2>' %></code></pre>
-    </div>
-    <div class="mb3">
-      <h3 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h3>
-      <label class="block type-5 text-gray-lightest">1.125 rem | 18px</label>
-      <pre><code class="html"><%= '<h3 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h3>' %></code></pre>
-    </div>
-    <div class="mb3">
-      <h4 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h4>
-      <label class="block type-5 text-gray-lightest">1 rem | 16px</label>
-      <pre><code class="html"><%= '<h4 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h4>' %></code></pre>
-   </div>
-    <div class="mb3">
-      <h5 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h5>
-      <label class="block type-5 text-gray-lightest">0.875 rem | 14px</label>
-      <pre><code class="html"><%= '<h5 class="slab my1">BuzzFeed Is The Social News And Entertainment Company</h5>' %></code></pre>
-   </div>
+    <p class="text-gray-lightest">.slab h2, .slab .type-2</p>
+    <h2 class="slab">BuzzFeed is the social news and entertainment company (1.375rem, 22px)</h2>
+  </div>
+  <div class="mb3">
+    <p class="text-gray-lightest">.slab h3, .slab .type-3</p>
+    <h3 class="slab">BuzzFeed is the social news and entertainment company (1.125rem, 18px)</h3>
+  </div>
+  <div class="mb3">
+    <p class="text-gray-lightest">.slab h4, .slab .type-4</p>
+    <h4 class="slab">BuzzFeed is the social news and entertainment company (1rem, 16px)</h4>
+  </div>
+  <div class="mb3">
+    <p class="text-gray-lightest">.slab h5, .slab .type-5</p>
+    <h5 class="slab">BuzzFeed is the social news and entertainment company (0.875rem, 14px)</h5>
+  </div>
+<pre class="xs-col-12"><code class="html"><%= '<h1 class="slab">BuzzFeed is the social news and entertainment company</h1>' %>
+
+<%= '<h2 class="slab">BuzzFeed is the social news and entertainment company</h2>' %>
+
+<%= '<h3 class="slab">BuzzFeed is the social news and entertainment company</h3>' %>
+
+<%= '<h4 class="slab">BuzzFeed is the social news and entertainment company</h4>' %>
+
+<%= '<h5 class="slab">BuzzFeed is the social news and entertainment company</h5>' %>
+
+<%= '<h6 class="slab">BuzzFeed is the social news and entertainment company</h6>' %></code></pre>
+    
+  </div>
 
 </section>
 
-<hr>
+<section class="xs-col-12 lg-col-9 mb4">
 
-<!--List-Unstyled-->
-<section class="mb4">
+ <div class="my2">
+    <h3 class="mb1 bold">Unstyled Lists</h3>
+    <label class="block type-4 mb1">This class keeps list items block level, and removes default browser styling.</label>
+    <p class="text-gray-lightest">.list-unstyled</p>
+    <ul class="list-unstyled">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Tell Me That You Love Me More</li>
+    </ul>
+</div>
 
-  <h3 class="mb1 bold">List Unstyled</h3>
-  <p class="mb2">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
-
-  <ul class="list-unstyled">
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Tell Me That You Love Me More</li>
-  </ul>
-
-  <pre><code class="css"><%= '<ul class="list-unstyled">' %>
-  <%= '  <li>...</li>' %>
-  <%= '  <li>...</li>' %>
-  <%= '  <li>...</li>' %>
-  <%= '</ul>' %></code></pre>
+<pre><code class="html"><%= '<ul class="list-unstyled">' %>
+<%= '  <li>...</li>' %>
+<%= '  <li>...</li>' %>
+<%= '  <li>...</li>' %>
+<%= '</ul>' %></code></pre>
 
 </section>
-<!--Flex-->
+
+<section class="xs-col-12 lg-col-9 mb4">
+
+ <div class="my2">
+    <h3 class="mb1 bold">Unstyled Lists</h3>
+    <label class="block type-4 mb1">This class keeps list items block level, and removes default browser styling.</label>
+    <p class="text-gray-lightest">.list-unstyled</p>
+    <ul class="list-unstyled">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Tell Me That You Love Me More</li>
+    </ul>
+</div>
+
+<pre><code class="html"><%= '<ul class="list-unstyled">' %>
+<%= '  <li>...</li>' %>
+<%= '  <li>...</li>' %>
+<%= '  <li>...</li>' %>
+<%= '</ul>' %></code></pre>
+
+</section>
