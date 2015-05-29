@@ -15,7 +15,14 @@
         <a class="page-message__action" href="">Fix this error.</a>
       </div>
     </div>
-    <pre><code class="html"><%='<div class="page-message page-message--error">'%><br/><%=' <div class="page-message__text">Oh no, something went wrong.</div>'%><br/><%='</div'%></code></pre> 
+
+<pre><code class="html"><%='<div class="page-message page-message--error">'%>
+  <%='<div class="page-message__text">Oh no, something went wrong.'%>
+    <%='<a class="page-message__action" href="">Fix this error.</a>'%>
+  <%='</div>'%>
+<%='</div>'%>
+</code></pre> 
+
   </div>
 </div>
 
@@ -27,10 +34,17 @@
   <div class="fill-white p3">
     <div class="page-message page-message--success">
       <div class="page-message__text">Your settings have been saved.
-      <a class="page-message__action" href="">Fix this error.</a>
+      <a class="page-message__action" href="">View your settings.</a>
       </div>
     </div>
-    <pre><code class="html"><%='<div class="page-message page-message--success">'%><br/><%=' <div class="page-message__text">Your settings have been saved.</div>'%><br/><%='</div'%></code></pre>
+    
+<pre><code class="html"><%='<div class="page-message page-message--success">'%>
+  <%='<div class="page-message__text">Your settings have been saved.'%>
+    <%='<a class="page-message__action" href="">View your settings.</a>'%>
+  <%='</div>'%>
+<%='</div>'%>
+</code></pre> 
+
     </div>
   </div>
 
