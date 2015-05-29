@@ -1,4 +1,4 @@
-// This first set is required in order to use the rest.
+// Set up (please don't muss with this order).
 
 @import 'variables';
 @import 'mixins';
@@ -15,7 +15,7 @@
 @import 'forms/forms';
 @import 'buttons/buttons';
 
-// These two should always be last. Don't put anything past this line.
+// Utilities and Solid-Specific Files Must Be Called Last.
 
 @import 'utilities/utilities';
 @import 'solid-specific';
