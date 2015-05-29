@@ -2,8 +2,8 @@
 // Forms Base Styles
 // --------------------------------------------------
 
-$input-height: $line-height + 1.5rem;
-$input-height-small: $line-height + 1rem;
+$input-height: 2.625rem;
+$input-height-small: 2rem;
 
 // Adds some base custom styles to radio buttons and checkboxes. 
 // In order to specify shape, border radius is applied 
@@ -30,7 +30,7 @@ $input-height-small: $line-height + 1rem;
   background: $fill-white;
   font-size: $type-4;
   height: $input-height;
-  padding: 0 .75rem;
+  padding: .625rem .75rem;
   border: 1px solid $fill-gray;
 }
 
@@ -49,8 +49,9 @@ $input-height-small: $line-height + 1rem;
 .select--small,
 .text-input--small,
 .date-input--small {
-  font-size: $type-5;
-  height: $input-height-small;   
+  font-size: $type-5; 
+  height: $input-height-small;
+  padding: .5rem .625rem;
 }
 
 .form-label--small {
@@ -58,8 +59,7 @@ $input-height-small: $line-height + 1rem;
 }
 
 .select--small {
-  font-size: $type-5;   
-  height: $input-height-small;
+  padding: 0 2rem 0 .625rem;
   background-size: .5rem;
 }
 

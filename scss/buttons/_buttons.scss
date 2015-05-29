@@ -32,16 +32,16 @@
 
 }
 
-$button-primary-color: $fill-blue;
-$button-delete-color: $fill-red;
+$button-height: 2.625rem;
+$button-height-small: 2rem;
 
 .button,
 .button--disabled,
 .button--small {
   @include button-reset;
   font-family: inherit;
-  height: $line-height;
-  padding: .75rem 1rem;
+  height: $button-height;
+  padding: .625rem .875rem;
   font-size: $type-4;
   border-radius: 3px;
   text-decoration: none;
@@ -60,11 +60,11 @@ $button-delete-color: $fill-red;
   color: $text-white;
 
   &:not(.button--disabled):hover {
-    background-color: darken( $button-primary-color, 20%);
+    background-color: darken( $fill-blue, 20%);
   }
 
   &:not(.button--disabled):active {    
-    background-color: darken( $button-primary-color, 35%);
+    background-color: darken( $fill-blue, 35%);
   }
 }
 
@@ -79,7 +79,7 @@ $button-delete-color: $fill-red;
   }
 
   &:not(.button--disabled):active {   
-    background-color: darken( $button-primary-color, 20%); 
+    background-color: darken( $fill-blue, 20%); 
   }
 }
 
@@ -88,11 +88,11 @@ $button-delete-color: $fill-red;
   color: $text-white; 
 
   &:not(.button--disabled):hover {
-    background-color: darken( $button-delete-color, 20%); 
+    background-color: darken( $fill-red, 20%); 
   }
 
   &:not(.button--disabled):active {   
-    background-color: darken( $button-delete-color, 35%); 
+    background-color: darken( $fill-red, 35%); 
   }
 }
 
@@ -107,7 +107,8 @@ $button-delete-color: $fill-red;
 
 .button--small {
   font-size: $type-5;
-  padding: .5625rem .875rem;
+  padding: .375rem .625rem;
+  height: $button-height-small;
 }
 
 .button+.button {
