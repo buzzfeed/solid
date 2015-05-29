@@ -1,4 +1,10 @@
-// Headers
+//
+// Typography Base Styles
+// --------------------------------------------------
+
+$link-blue: $text-gray;
+$link-gray: sdf;
+$link-gray-lightest: sdfsd;
 
 body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
   line-height: $line-height;
@@ -29,6 +35,10 @@ h6, .type-6 {
   &.slab {
       font-family:'Proxima Nova';
     }
+}
+
+a {
+  text-decoration: none;
 }
 
 // Type Size Classes + Responsive Prefixes
@@ -164,3 +174,34 @@ h6.slab,
     padding-left: 0;
     list-style: none;
 }
+
+// Link Styles
+
+.link-blue{
+  color: $text-blue;
+  &:hover {
+    color: darken($text-blue, 20%);
+  }
+}
+
+.link-gray{
+  color: $text-gray;
+  &:hover {
+    color: lighten($text-gray, 35%);
+  }
+}
+
+.link-gray--v2{
+  color: $text-gray;
+  &:hover {
+    color: $text-blue;
+  }
+}
+
+.link-gray--lightest{
+  color: $text-gray-lightest;
+  &:hover {
+    color: darken($text-gray-lightest, 20%);
+  }
+}
+
