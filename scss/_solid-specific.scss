@@ -14,9 +14,7 @@ code {
     border-radius: 2px;
     background-color: $fill-gray-lighter;
     font-size: $type-6;
-    color: $text-red;
-    font-weight: bold;
-    margin: 3px 0;
+    color: #d14;
   }
 
   // In case we use the Konami code for our code snippets
@@ -35,11 +33,10 @@ code {
   
   // Override highlight.js theme properties
   &.hljs { 
-    background-color: $fill-gray-darker; 
+    background-color: $fill-gray-lighter; 
     padding: $space-2;
     font-size: $type-5;
     line-height: 1.75;
-    margin-top: $space-1;
   }
 }
 
