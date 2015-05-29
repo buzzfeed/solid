@@ -1,8 +1,13 @@
+// Set up (please don't muss with this order).
+
 @import 'variables';
 @import 'mixins';
-@import 'fonts/font-faces';
 @import 'base/normalize';
 @import 'base/base';
+@import 'fonts/font-faces';
+
+// Solid Sections
+
 @import 'colors/colors';
 @import 'typography/typography';
 @import 'tables/tables';
@@ -10,6 +15,7 @@
 @import 'forms/forms';
 @import 'buttons/buttons';
 
-// These two should always be last. Don't put anything past this line.
+// Utilities and Solid-Specific Files Must Be Called Last.
+
 @import 'utilities/utilities';
 @import 'solid-specific';
