@@ -17,7 +17,7 @@ The harp webserver is used to display and develop the styling locally:
 
 Install node dependencies + gemfile:
 
-    make build
+    make dev
 
 Run the harp server locally:
 
