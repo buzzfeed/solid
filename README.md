@@ -15,17 +15,23 @@ The harp webserver is used to display and develop the styling locally:
 
 ## Dev
 
-Install node dependencies (including **harp** and **sass**):
+Install node dependencies + gemfile:
 
-    npm install
+    make dev
 
 Run the harp server locally:
 
-    ./node_modules/.bin/harp server
+    make run
 
 Open the site in your web browser:
 
 <http://localhost:9000/>
+
+## Linting
+
+To run scss_lint:
+
+scss-lint (filename)
 
 
 ## Code Snippets
