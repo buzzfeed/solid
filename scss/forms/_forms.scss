@@ -75,7 +75,6 @@ $input-height-small: 2rem;
 
 .radio-label {
   cursor:pointer; 
-  margin: 0 0 .375rem 0;
   display: block;
   @include option-input-style;
 
@@ -96,7 +95,6 @@ $input-height-small: 2rem;
 
 .checkbox + label {
   cursor:pointer; 
-  margin: 0 0 .375rem 0;
   display: block;
   @include option-input-style;
 
