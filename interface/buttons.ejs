@@ -113,5 +113,64 @@
     <a class="button button--delete" href="">Delete</a>
     </div>
   </div>
+</section>
+
+ 
+ <section class="mb4">
+  <h3 class="bold mb2">Segmented button</h3>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">    
+    <div class="p3">
+        <label class="block type-4 bold">Default segmented button</label> 
+        <label class="block type-4 text-gray-lighter">This should only be used with 3 or more options. If you have only 2 options, use radio buttons.</label>
+    </div>
+    <div class="fill-white p3">
+      <div class="segmented-button">
+        <input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
+        <label class="segmented-button-label" for="cool_guy_1">Option 1</label>  
+        <input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
+        <label class="segmented-button-label" for="cool_guy_2">Option 2</label>
+        <input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
+        <label class="segmented-button-label" for="cool_guy_3">Option 3</label>
+     </div>
+<pre class="mt2"><code class="html"><%='<div class="segmented-button">'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
+<%='</div>'%>
+</code></pre>
+    </div>
+  </div>
+</div>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">    
+    <div class="p3">
+        <label class="block type-4 bold">Small segmented button</label> 
+        <label class="block type-4 text-gray-lighter">This should only be used with 3 or more options. If you have only 2 options, use radio buttons.</label>
+    </div>
+    <div class="fill-white p3">
+      <div class="segmented-button">
+        <input type="radio" class="segmented-button" id="cool_dude_1" value="cool_dude_1" name="cool_dudes" checked="checked">
+        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_1">Option 1</label>  
+        <input type="radio" class="segmented-button" id="cool_dude_2" value="cool_dude_2" name="cool_dudes">
+        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_2">Option 2</label>
+        <input type="radio" class="segmented-button" id="cool_dude_3" value="cool_dude_3" name="cool_dudes">
+        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_3">Option 3</label>
+     </div>
+<pre class="mt2"><code class="html"><%='<div class="segmented-button">'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
+  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_1">Option 1</label>'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
+  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_2">Option 2</label>'%>
+  <%='<input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
+  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_3">Option 3</label>'%>
+<%='</div>'%>
+</code></pre>
+    </div>
+  </div>
+</div>
 
 </section>
