@@ -21,7 +21,7 @@
 }
 
 .page-message--error {
-  background-color: $fill-red-lighter;
+  background-color: $fill-red--lighter;
   color: $text-red;
 
   .page-message__text, .page-message__action {
@@ -35,7 +35,7 @@
 }
 
 .page-message--success {
-  background-color: $fill-green-lighter;
+  background-color: $fill-green--lighter;
   color: $text-green;
 
   .page-message__text, .page-message__action {

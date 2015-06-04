@@ -12,7 +12,7 @@ code {
     display: inline-block;
     padding: 2px 4px;
     border-radius: 2px;
-    background-color: $fill-gray-lighter;
+    background-color: $fill-gray--lighter;
     font-size: $type-6;
     color: #d14;
   }
@@ -33,7 +33,7 @@ code {
   
   // Override highlight.js theme properties
   &.hljs { 
-    background-color: $fill-gray-lighter; 
+    background-color: $fill-gray--lighter; 
     padding: $space-2;
     font-size: $type-5;
     line-height: 1.75;
@@ -127,5 +127,5 @@ pre {
 }
 
 .find-help a:hover{
-  background:$fill-gray-lighter;
+  background:$fill-gray--lighter;
 }

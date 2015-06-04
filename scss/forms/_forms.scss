@@ -127,7 +127,7 @@ $input-height-small: 2rem;
 }
 
 .form-label--optional {
-  color: $text-gray-lightest;
+  color: $text-gray--lightest;
   font-weight: normal;
 }
 
@@ -137,7 +137,7 @@ $input-height-small: 2rem;
 }
 
 .form-helper {
-  color: $text-gray-lightest;
+  color: $text-gray--lightest;
   display: block;
   margin-top: $space-1;
   font-size: $type-5; 
