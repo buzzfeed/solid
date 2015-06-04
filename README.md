@@ -1,27 +1,34 @@
 # solid
 
-This repo will collect all basic BuzzFeed styling CSS.
+Solid is a base style library. It will be used as the core styling for Buzzfeed products.
 
-It is implemented in SASS/SCSS.
+## Set Up
 
-The harp webserver is used to display and develop the styling locally:
+### Dependencies
 
-<http://harpjs.com/>
+[Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)
 
-> The static web server with built-in preprocessing.
+This installation guide assumes that you have the Buzzfeed webapp installed.
 
-> Harp serves Jade, Markdown, EJS, CoffeeScript, Sass, LESS and Stylus as HTML, CSS & JavaScript—no configuration necessary.
+### Downloading the repo
 
+Open a terminal window. Clone the repo into a new folder:
 
-## Dev
+`git clone https://github.com/primer/primer.git /opt/buzzfeed/solid`
 
-Install node dependencies + gemfile:
+Move into that directory
 
-    make dev
+`cd /opt/buzzfeed/solid`
 
-Run the harp server locally:
+### Build the app
 
-    make run
+Build Solid's dependencies
+
+`make dev`
+
+### Run locally
+
+`make run`
 
 Open the site in your web browser:
 
@@ -29,10 +36,11 @@ Open the site in your web browser:
 
 ## Linting
 
+We use scss lint to keep our scss clean and consistent.
+
 To run scss_lint:
 
-scss-lint (filename)
-
+`scss-lint scss/`
 
 ## Code Snippets
 
