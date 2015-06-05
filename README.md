@@ -6,9 +6,7 @@ Solid is a base style library. It will be used as the core styling for Buzzfeed 
 
 ### Dependencies
 
-[Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)
-
-This installation guide assumes that you have the Buzzfeed webapp installed.
+This installation guide assumes that you have the [Buzzfeed webapp](https://github.com/buzzfeed/buzzfeed) installed. That will set you up with the correct versions of node and ruby.
 
 ### Downloading the repo
 
