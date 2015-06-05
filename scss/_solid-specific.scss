@@ -20,15 +20,15 @@ code {
   // In case we use the Konami code for our code snippets
 
   &.konami {
-    background: -moz-linear-gradient(left, red, orange, yellow, green, 
-    blue, indigo, violet);
-    background: -webkit-gradient(linear, left center, right center, from(red), 
-    color-stop(14%, orange), color-stop(28%, yellow), color-stop(42%, green), 
-    color-stop(56%, blue), color-stop(70%, indigo), to(violet)); 
-    background: -o-linear-gradient(left, red, orange, yellow, green, 
-    blue, indigo, violet);
-    background: -ms-linear-gradient(left, red, orange, yellow, green, 
-    blue, indigo, violet);
+    background: -moz-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
+    #00f, #4b0082, #ee82ee);
+    background: -webkit-gradient(linear, left center, right center, from(#f00), 
+    color-stop(14%, #ffa500), color-stop(28%, #ff0), color-stop(42%, #008000), 
+    color-stop(56%, #00f), color-stop(70%, #4b0082), to(#ee82ee)); 
+    background: -o-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
+    #00f, #4b0082, #ee82ee);
+    background: -ms-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
+    #00f, #4b0082, #ee82ee);
   }
   
   // Override highlight.js theme properties
@@ -47,48 +47,48 @@ pre {
 // Solid Nav
 
 .solid-nav {
-  border-top:10px solid $fill-pink;
-  width:12rem;
+  border-top: 10px solid $fill-pink;
+  width: 12rem;
   overflow: auto;
+
+  a {
+    text-decoration: none;
+    transition: color ease-in-out .1s;
+  }
+  
+  a:hover {
+    color: #fff;
+    transition: color ease-in-out .1s;
+  }
+
+  button {
+    padding: .75rem;
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+  }
 }
 
-.solid-nav a{
-  text-decoration:none;
-  transition:color ease-in-out .1s;
+.main-content {
+  border-top: 10px solid $fill-blue;
+  margin-left: 12rem;
 }
 
-.solid-nav a:hover{
-  color:#fff;
-  transition:color ease-in-out .1s;
-}
-
-.main-content{
-  border-top:10px solid $fill-blue;
-  margin-left:12rem;
-}
-
-.solid-nav-items a{
-  padding:.4rem 0;
+.solid-nav-items a {
+  padding: .4rem 0;
 }
 
 .solid-nav__menu {
   display: none;
 }
 
-.solid-nav button {
-  padding: .75rem;
-  outline:none;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;  
-}
-
 @media (max-width: 40rem) {
   .solid-nav {
-    width:100%;
-    height:44px;
+    width: 100%;
+    height: 44px;
     overflow: hidden;
-    border-top:2px solid $fill-pink;
+    border-top: 2px solid $fill-pink;
     -webkit-transition: height 200ms ease-out;
     transition: height 200ms ease-out;
   }
@@ -106,26 +106,26 @@ pre {
     background-image: svg-background($x);
   }
 
-  .main-content{
+  .main-content {
     margin-left: 0;
     margin-top: 44px;
   }
 
   .solid-nav.solid-nav--visible {
-    height:100%;
+    height: 100%;
   }
 
   .solid-nav.solid-nav--overflow {
-    overflow:scroll;
+    overflow: scroll;
   }
 }
 
 // Welcome
 
-.find-help a{
-  text-decoration:none;
+.find-help a {
+  text-decoration: none;
 }
 
-.find-help a:hover{
-  background:$fill-gray--lighter;
+.find-help a:hover {
+  background: $fill-gray--lighter;
 }
