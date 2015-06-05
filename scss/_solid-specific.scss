@@ -1,5 +1,8 @@
-// Code Snipppet Syntax Highlighting https://highlightjs.org/
+// Solid-Specific colors
+$js-highlight-magenta: #d14;
 
+
+// Code Snipppet Syntax Highlighting https://highlightjs.org/
 code {
   font-family: Monaco, monospace;
   white-space: pre-wrap;
@@ -14,21 +17,7 @@ code {
     border-radius: 2px;
     background-color: $fill-gray--lighter;
     font-size: $type-6;
-    color: #d14;
-  }
-
-  // In case we use the Konami code for our code snippets
-
-  &.konami {
-    background: -moz-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
-    #00f, #4b0082, #ee82ee);
-    background: -webkit-gradient(linear, left center, right center, from(#f00), 
-    color-stop(14%, #ffa500), color-stop(28%, #ff0), color-stop(42%, #008000), 
-    color-stop(56%, #00f), color-stop(70%, #4b0082), to(#ee82ee)); 
-    background: -o-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
-    #00f, #4b0082, #ee82ee);
-    background: -ms-linear-gradient(left, #f00, #ffa500, #ff0, #008000, 
-    #00f, #4b0082, #ee82ee);
+    color: $js-highlight-magenta;
   }
   
   // Override highlight.js theme properties
@@ -57,7 +46,7 @@ pre {
   }
   
   a:hover {
-    color: #fff;
+    color: $text-white;
     transition: color ease-in-out .1s;
   }
 
@@ -66,7 +55,7 @@ pre {
     outline: none;
     border: 0;
     -webkit-appearance: none;
-    -moz-appearance: none;  
+    -moz-appearance: none; 
   }
 }
 
@@ -89,7 +78,6 @@ pre {
     height: 44px;
     overflow: hidden;
     border-top: 2px solid $fill-pink;
-    -webkit-transition: height 200ms ease-out;
     transition: height 200ms ease-out;
   }
 
