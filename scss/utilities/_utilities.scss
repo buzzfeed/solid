@@ -1,15 +1,16 @@
 html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif; // This is just for reference
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   -moz-box-sizing: inherit;
 }
-
-html {font-size: 16px; font-family: "Proxima Nova", Helvetica, Arial, sans-serif;} // This is just for reference
-
 
 // Responsive Images
 img { max-width: 100%; height: auto; }
@@ -21,22 +22,23 @@ img { max-width: 100%; height: auto; }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
 
-    .#{$breakpoint-prefix}inline       { display: inline; }
-    .#{$breakpoint-prefix}block        { display: block; }
+  @include media-query($breakpoint-name) {
+
+    .#{$breakpoint-prefix}inline {       display: inline; }
+    .#{$breakpoint-prefix}block {        display: block; }
     .#{$breakpoint-prefix}inline-block { display: inline-block; }
 
-    .#{$breakpoint-prefix}show{ display: block; }
-    .#{$breakpoint-prefix}hide{ display: none; }
+    .#{$breakpoint-prefix}show { display: block; }
+    .#{$breakpoint-prefix}hide { display: none; }
 
     .#{$breakpoint-prefix}overflow-hidden { overflow: hidden; }
-    .#{$breakpoint-prefix}overflow-auto   { overflow: auto; }
+    .#{$breakpoint-prefix}overflow-auto {   overflow: auto; }
     .#{$breakpoint-prefix}overflow-scroll { overflow: scroll; }
 
-    .#{$breakpoint-prefix}float-left  { float: left; }
+    .#{$breakpoint-prefix}float-left {  float: left; }
     .#{$breakpoint-prefix}float-right { float: right; }
-    .#{$breakpoint-prefix}float-none { float: none; }
+    .#{$breakpoint-prefix}float-none {  float: none; }
 
     .#{$breakpoint-prefix}half-width { width: 50%; }
     .#{$breakpoint-prefix}full-width { width: 100%; }
@@ -50,9 +52,10 @@ img { max-width: 100%; height: auto; }
 %clearfix:before,
 .clearfix:after,
 %clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
+
 .clearfix:after { clear: both; }
 
 // White Space
@@ -61,17 +64,18 @@ img { max-width: 100%; height: auto; }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
 
-    .#{$breakpoint-prefix}m0  { margin:        0; }
-    .#{$breakpoint-prefix}mt0 { margin-top:    0; }
-    .#{$breakpoint-prefix}mr0 { margin-right:  0; }
+  @include media-query($breakpoint-name) {
+
+    .#{$breakpoint-prefix}m0 {  margin: 0; }
+    .#{$breakpoint-prefix}mt0 { margin-top: 0; }
+    .#{$breakpoint-prefix}mr0 { margin-right: 0; }
     .#{$breakpoint-prefix}mb0 { margin-bottom: 0; }
-    .#{$breakpoint-prefix}ml0 { margin-left:   0; }
-    .#{$breakpoint-prefix}mx0 { margin-left:   0; margin-right: 0;}
-    .#{$breakpoint-prefix}my0 { margin-top:    0; margin-bottom: 0;}
+    .#{$breakpoint-prefix}ml0 { margin-left: 0; }
+    .#{$breakpoint-prefix}mx0 { margin-left: 0; margin-right: 0; }
+    .#{$breakpoint-prefix}my0 { margin-top: 0; margin-bottom: 0; }
 
-    .#{$breakpoint-prefix}m1  { margin:        $space-1; }
+    .#{$breakpoint-prefix}m1 {  margin:        $space-1; }
     .#{$breakpoint-prefix}mt1 { margin-top:    $space-1; }
     .#{$breakpoint-prefix}mr1 { margin-right:  $space-1; }
     .#{$breakpoint-prefix}mb1 { margin-bottom: $space-1; }
@@ -79,7 +83,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}mx1 { margin-left:   $space-1; margin-right: $space-1;}
     .#{$breakpoint-prefix}my1 { margin-top:    $space-1; margin-bottom: $space-1;}
 
-    .#{$breakpoint-prefix}m2  { margin:        $space-2; }
+    .#{$breakpoint-prefix}m2 {  margin:        $space-2; }
     .#{$breakpoint-prefix}mt2 { margin-top:    $space-2; }
     .#{$breakpoint-prefix}mr2 { margin-right:  $space-2; }
     .#{$breakpoint-prefix}mb2 { margin-bottom: $space-2; }
@@ -87,7 +91,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}mx2 { margin-left:   $space-2; margin-right: $space-2;}
     .#{$breakpoint-prefix}my2 { margin-top:    $space-2; margin-bottom: $space-2;}
 
-    .#{$breakpoint-prefix}m3  { margin:        $space-3; }
+    .#{$breakpoint-prefix}m3 {  margin:        $space-3; }
     .#{$breakpoint-prefix}mt3 { margin-top:    $space-3; }
     .#{$breakpoint-prefix}mr3 { margin-right:  $space-3; }
     .#{$breakpoint-prefix}mb3 { margin-bottom: $space-3; }
@@ -95,7 +99,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}mx3 { margin-left:   $space-3; margin-right: $space-3;}
     .#{$breakpoint-prefix}my3 { margin-top:    $space-3; margin-bottom: $space-3;}
 
-    .#{$breakpoint-prefix}m4  { margin:        $space-4; }
+    .#{$breakpoint-prefix}m4 {  margin:        $space-4; }
     .#{$breakpoint-prefix}mt4 { margin-top:    $space-4; }
     .#{$breakpoint-prefix}mr4 { margin-right:  $space-4; }
     .#{$breakpoint-prefix}mb4 { margin-bottom: $space-4; }
@@ -112,9 +116,10 @@ img { max-width: 100%; height: auto; }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
+  
+  @include media-query($breakpoint-name) {
 
-    .#{$breakpoint-prefix}p0  { padding:        0; }
+    .#{$breakpoint-prefix}p0 {  padding:        0; }
     .#{$breakpoint-prefix}pt0 { padding-top:    0; }
     .#{$breakpoint-prefix}pr0 { padding-right:  0; }
     .#{$breakpoint-prefix}pb0 { padding-bottom: 0; }
@@ -122,7 +127,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}px0 { padding-left:   0; padding-right: 0;}
     .#{$breakpoint-prefix}py0 { padding-top:    0; padding-bottom: 0;}
 
-    .#{$breakpoint-prefix}p1  { padding:        $space-1; }
+    .#{$breakpoint-prefix}p1 {  padding:        $space-1; }
     .#{$breakpoint-prefix}pt1 { padding-top:    $space-1; }
     .#{$breakpoint-prefix}pr1 { padding-right:  $space-1; }
     .#{$breakpoint-prefix}pb1 { padding-bottom: $space-1; }
@@ -130,7 +135,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}px1 { padding-left:   $space-1; padding-right: $space-1;}
     .#{$breakpoint-prefix}py1 { padding-top:    $space-1; padding-bottom: $space-1;}
 
-    .#{$breakpoint-prefix}p2  { padding:        $space-2; }
+    .#{$breakpoint-prefix}p2 {  padding:        $space-2; }
     .#{$breakpoint-prefix}pt2 { padding-top:    $space-2; }
     .#{$breakpoint-prefix}pr2 { padding-right:  $space-2; }
     .#{$breakpoint-prefix}pb2 { padding-bottom: $space-2; }
@@ -138,7 +143,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}px2 { padding-left:   $space-2; padding-right: $space-2;}
     .#{$breakpoint-prefix}py2 { padding-top:    $space-2; padding-bottom: $space-2;}
 
-    .#{$breakpoint-prefix}p3  { padding:        $space-3; }
+    .#{$breakpoint-prefix}p3 {  padding:        $space-3; }
     .#{$breakpoint-prefix}pt3 { padding-top:    $space-3; }
     .#{$breakpoint-prefix}pr3 { padding-right:  $space-3; }
     .#{$breakpoint-prefix}pb3 { padding-bottom: $space-3; }
@@ -146,7 +151,7 @@ img { max-width: 100%; height: auto; }
     .#{$breakpoint-prefix}px3 { padding-left:   $space-3; padding-right: $space-3;}
     .#{$breakpoint-prefix}py3 { padding-top:    $space-3; padding-bottom: $space-3;}
 
-    .#{$breakpoint-prefix}p4  { padding:        $space-4; }
+    .#{$breakpoint-prefix}p4 {  padding:        $space-4; }
     .#{$breakpoint-prefix}pt4 { padding-top:    $space-4; }
     .#{$breakpoint-prefix}pr4 { padding-right:  $space-4; }
     .#{$breakpoint-prefix}pb4 { padding-bottom: $space-4; }
@@ -161,7 +166,7 @@ img { max-width: 100%; height: auto; }
 
 .relative { position: relative; }
 .absolute { position: absolute; }
-.fixed    { position: fixed; }
+.fixed {    position: fixed; }
 
 .z1 { z-index: 100; }
 .z2 { z-index: 200; }
@@ -196,58 +201,59 @@ img { max-width: 100%; height: auto; }
 
 // Rounded Corners and Circles and Borders
 
-.rounded{
-  border-radius:3px;
+.rounded {
+  border-radius: 3px;
 }
 
-.circle{
-  border-radius:50%;
+.circle {
+  border-radius: 50%;
 }
 
 // Borders + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
+
+  @include media-query($breakpoint-name) {
 
     .#{$breakpoint-prefix}border {
-      border:$border;
+      border: $border;
     }
 
     .#{$breakpoint-prefix}border-top {
-      border-top:$border;
+      border-top: $border;
     }
 
     .#{$breakpoint-prefix}border-right {
-      border-right:$border;
+      border-right: $border;
     }
 
     .#{$breakpoint-prefix}border-bottom {
-      border-bottom:$border;
+      border-bottom: $border;
     }
 
     .#{$breakpoint-prefix}border-left {
-      border-left:$border;
+      border-left: $border;
     }
 
     .#{$breakpoint-prefix}border--lighter {
-      border:$border--lighter;
+      border: $border--lighter;
     }
 
     .#{$breakpoint-prefix}border-top--lighter {
-      border-top:$border--lighter;
+      border-top: $border--lighter;
     }
 
     .#{$breakpoint-prefix}border-right--lighter {
-      border-right:$border--lighter;
+      border-right: $border--lighter;
     }
 
     .#{$breakpoint-prefix}border-bottom--lighter {
-      border-bottom:$border--lighter;
+      border-bottom: $border--lighter;
     }
 
     .#{$breakpoint-prefix}border-left--lighter {
-      border-left:$border--lighter;
+      border-left: $border--lighter;
     }
 
     }
