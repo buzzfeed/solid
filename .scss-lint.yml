@@ -15,7 +15,6 @@ exclude:
   - 'scss/buttons/**'
   - 'scss/tables/**'
   - 'scss/_font-faces.scss'
-  - 'scss/_mixins.scss'
   - 'scss/_solid-specific.scss'
   - 'scss/_variables.scss'
 
