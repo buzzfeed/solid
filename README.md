@@ -12,7 +12,7 @@ This installation guide assumes that you have the [Buzzfeed webapp](https://gith
 
 Open a terminal window. Clone the repo into a new folder:
 
-`git clone https://github.com/primer/primer.git /opt/buzzfeed/solid`
+`git clone https://github.com/buzzfeed/solid.git /opt/buzzfeed/solid`
 
 Move into that directory
 
