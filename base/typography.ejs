@@ -138,38 +138,37 @@
 
 </section>
 
-<hr>
+<section class="mb3 mt3">
+  <h2 class="mb1">Lists</h2>
+  <p class="mb3">Please note, there's no need to add a class for ordered and unordered lists, they get automatically get the styling below.</p>
 
-<!--List-Unstyled-->
-<section class="mb3">
-  <h2 class="mb3">Lists</h2>
-
-  <h3 class="bold">Ordered</h3>
-  <p class="mb2">For listing of explicitly ordered items.</p>
-
-  <div class="border mb3 rounded">
-    <div class="fill-white p2">
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <h3 class="bold">Ordered</h3>
+      <p class="text-gray-lighter">For listing of explicitly ordered items.</p>
+    </div>
+    <div class="fill-white p3">
       <ol>
         <li>John</li>
         <li>Paul</li>
         <li>George</li>
         <li>Ringo</li>
       </ol>
-    </div>
 
-<pre><code class="css"><%= '<ol>' %>
+<pre class="mt2"><code class="css"><%= '<ol>' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
 <%= '</ol>' %></code></pre>
-
+    </div>
   </div>
 
-  <h3 class="bold">Unstyled</h3>
-  <p class="mb2">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
-
-  <div class="border mb3 rounded">
-    <div class="fill-white p2">
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+    <div class="p3">
+      <h3 class="bold">Unstyled</h3>
+      <p class="text-gray-lighter">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
+    </div>
+    <div class="fill-white p3">
       <ul class="list-unstyled">
         <li>One</li>
         <li>Two</li>
@@ -177,14 +176,13 @@
         <li>Four</li>
         <li>Tell Me That You Love Me More</li>
       </ul>
-    </div>
 
-<pre><code class="css"><%= '<ul class="list-unstyled">' %>
+<pre class="mt2"><code class="css"><%= '<ul class="list-unstyled">' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
 <%= '</ul>' %></code></pre>
-
+    </div>
   </div>
 </section>
 <!--Flex-->
