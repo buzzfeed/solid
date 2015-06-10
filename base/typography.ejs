@@ -142,10 +142,10 @@
   <h2 class="mb1">Lists</h2>
   <p class="mb3">Please note, there's no need to add a class for ordered and unordered lists, they get automatically get the styling below.</p>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
     <div class="p3">
       <h3 class="bold">Ordered</h3>
-      <p class="text-gray-lighter">For listing of explicitly ordered items.</p>
+      <p class="text-gray--lighter">For listing of explicitly ordered items.</p>
     </div>
     <div class="fill-white p3">
       <ol>
@@ -163,10 +163,31 @@
     </div>
   </div>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray-lighter rounded border">
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
+    <div class="p3">
+      <h3 class="bold">Unordered</h3>
+      <p class="text-gray--lighter">For items that are not explicitly ordered.</p>
+    </div>
+    <div class="fill-white p3">
+      <ul>
+        <li>John</li>
+        <li>Paul</li>
+        <li>George</li>
+        <li>Ringo</li>
+      </ul>
+
+<pre class="mt2"><code class="html"><%= '<ul>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+<%= '</ul>' %></code></pre>
+    </div>
+  </div>
+
+  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
     <div class="p3">
       <h3 class="bold">Unstyled</h3>
-      <p class="text-gray-lighter">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
+      <p class="text-gray--lighter">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
     </div>
     <div class="fill-white p3">
       <ul class="list-unstyled">
