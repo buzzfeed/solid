@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose readDependencies npm-shrinkwrap.json is overriding dependencies
+5 info shrinkwrap file "/Users/cwatkins/Sites/solid/npm-shrinkwrap.json"
+6 verbose readDependencies returned deps { harp: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz' }
+7 verbose install where, deps [ '/Users/cwatkins/Sites/solid', [ 'harp' ] ]
+8 verbose install where, peers [ '/Users/cwatkins/Sites/solid', [] ]
+9 info preinstall solid@1.0.0
+10 verbose readDependencies npm-shrinkwrap.json is overriding dependencies
+11 info shrinkwrap file "/Users/cwatkins/Sites/solid/npm-shrinkwrap.json"
+12 verbose readDependencies returned deps { harp: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz' }
+13 silly cache add args [ 'harp@https://registry.npmjs.org/harp/-/harp-0.15.2.tgz',
+13 silly cache add   null ]
+14 verbose cache add spec harp@https://registry.npmjs.org/harp/-/harp-0.15.2.tgz
+15 silly cache add parsed spec { raw: 'harp@https://registry.npmjs.org/harp/-/harp-0.15.2.tgz',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'harp',
+15 silly cache add   rawSpec: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz',
+15 silly cache add   spec: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz',
+15 silly cache add   type: 'remote' }
+16 silly mapToRegistry name harp@https://registry.npmjs.org/harp/-/harp-0.15.2.tgz
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/harp@https://registry.npmjs.org/harp/-/harp-0.15.2.tgz
+20 verbose addRemoteTarball https://registry.npmjs.org/harp/-/harp-0.15.2.tgz not in flight; adding
+21 verbose addRemoteTarball [ 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz', null ]
+22 info retry fetch attempt 1 at 8:37:57 AM
+23 info attempt registry request try #1 at 8:37:57 AM
+24 http fetch GET https://registry.npmjs.org/harp/-/harp-0.15.2.tgz
+25 verbose request id 5b444bc3dea57910
+26 http fetch 200 https://registry.npmjs.org/harp/-/harp-0.15.2.tgz
+27 silly fetchAndShaCheck shasum 9303f06a7ffb43ed7d5432944d8b784408c7c69f
+28 verbose addTmpTarball /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/registry.npmjs.org/harp/-/harp-0.15.2.tgz not in flight; adding
+29 verbose addTmpTarball validating metadata from /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/registry.npmjs.org/harp/-/harp-0.15.2.tgz
+30 verbose tar unpack /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/registry.npmjs.org/harp/-/harp-0.15.2.tgz
+31 verbose tar unpacking to /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/unpack-ed86a94ed5af
+32 silly gentlyRm /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/unpack-ed86a94ed5af is being purged
+33 verbose gentlyRm don't care about contents; nuking /var/folders/h1/91wt6l09031gc1x10xxns8qw0000gn/T/npm-18961-ef709168/unpack-ed86a94ed5af
+34 silly gunzTarPerm modes [ '755', '644' ]
+35 silly gunzTarPerm extractEntry package.json
+36 silly gunzTarPerm extractEntry .npmignore
+37 silly gunzTarPerm extractEntry README.md
+38 silly gunzTarPerm extractEntry bin/harp
+39 silly gunzTarPerm extractEntry lib/helpers.js
+40 silly gunzTarPerm extractEntry lib/index.js
+41 silly gunzTarPerm extractEntry lib/middleware.js
+42 silly gunzTarPerm extractEntry lib/skin.js
+43 silly gunzTarPerm extractEntry lib/default_boilerplate/404.jade
+44 silly gunzTarPerm extractEntry lib/default_boilerplate/_layout.jade
+45 silly gunzTarPerm extractEntry lib/default_boilerplate/index.jade
+46 silly gunzTarPerm extractEntry lib/default_boilerplate/main.less
+47 silly gunzTarPerm extractEntry lib/templates/404.jade
+48 silly gunzTarPerm extractEntry lib/templates/_layout.jade
+49 silly gunzTarPerm extractEntry lib/templates/css/harp.css
+50 silly gunzTarPerm extractEntry lib/templates/error.jade
+51 silly gunzTarPerm extractEntry lib/templates/index.jade
+52 silly gunzTarPerm extractEntry lib/templates/start.jade
+53 silly cache afterAdd harp@0.15.2
+54 verbose afterAdd /Users/cwatkins/.npm/harp/0.15.2/package/package.json not in flight; writing
+55 verbose afterAdd /Users/cwatkins/.npm/harp/0.15.2/package/package.json written
+56 silly install resolved [ { name: 'harp',
+56 silly install resolved     version: '0.15.2',
+56 silly install resolved     description: 'Static web server with built in preprocessing',
+56 silly install resolved     author: { name: 'Brock Whitten', email: 'brock@chloi.io' },
+56 silly install resolved     contributors:
+56 silly install resolved      [ [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object],
+56 silly install resolved        [Object] ],
+56 silly install resolved     keywords:
+56 silly install resolved      [ 'static web server',
+56 silly install resolved        'static site generator',
+56 silly install resolved        'sass',
+56 silly install resolved        'less',
+56 silly install resolved        'stylus',
+56 silly install resolved        'markdown',
+56 silly install resolved        'jade',
+56 silly install resolved        'ejs',
+56 silly install resolved        'coffeescript' ],
+56 silly install resolved     homepage: 'http://harpjs.com',
+56 silly install resolved     bugs: { url: 'http://github.com/sintaxi/harp/issues' },
+56 silly install resolved     main: './lib/index.js',
+56 silly install resolved     repository: { type: 'git', url: 'https://github.com/sintaxi/harp.git' },
+56 silly install resolved     dependencies:
+56 silly install resolved      { terraform: '0.10.3',
+56 silly install resolved        commander: '2.0.0',
+56 silly install resolved        connect: '2.9.0',
+56 silly install resolved        'fs-extra': '0.6.4',
+56 silly install resolved        async: '0.2.9',
+56 silly install resolved        mime: '1.2.11',
+56 silly install resolved        'download-github-repo': '0.1.3',
+56 silly install resolved        'envy-json': '0.2.0' },
+56 silly install resolved     devDependencies:
+56 silly install resolved      { mocha: '1.8.1',
+56 silly install resolved        should: '3.1.2',
+56 silly install resolved        request: '2.30.0',
+56 silly install resolved        cheerio: '~0.13.1',
+56 silly install resolved        nixt: '~0.3.0' },
+56 silly install resolved     scripts: { test: 'mocha --reporter spec -t 5000' },
+56 silly install resolved     license: 'MIT',
+56 silly install resolved     preferGlobal: true,
+56 silly install resolved     readmeFilename: 'README.md',
+56 silly install resolved     bin: { harp: './bin/harp' },
+56 silly install resolved     engines: { node: '>=0.10' },
+56 silly install resolved     readme: '# Harp\n\n> zero-configuration web server with built in pre-processing\n\n### What is Harp?\n\nHarp is a static web server that also serves Jade, Markdown, EJS, Less, Stylus, Sass, and CoffeeScript **as** HTML, CSS, and JavaScript without any configuration. It supports the beloved layout/partial paradigm and it has flexible metadata and global objects for traversing the file system and injecting custom data into templates. Optionally, Harp can also compile your project down to static assets for hosting behind any valid HTTP server.\n\n### Why?\n\nPre-compilers are becoming extremely powerful and shipping front-ends as static assets has many upsides. It\'s simple, it\'s easy to maintain, it\'s low risk, easy to scale, and requires low cognitive overhead. I wanted a lightweight web server that was powerful enough for me to abandon web frameworks for dead simple front-end publishing.\n\n### Features\n\n- easy installation, easy to use\n- fast and lightweight\n- robust (clean urls, intelligent path redirects)\n- built in pre-processing\n- first-class layout and partial support\n- built in LRU caching in production mode\n- can export assets to HTML/CSS/JS\n- does not require a build steps or grunt task\n- fun to use\n\n### Supported Pre-Processors\n\n|                 | Language Superset                                                 | Whitespace Sensitive\n| --------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------\n| **HTML**        | [EJS](http://embeddedjs.com/)                                     | [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/)\n| **CSS**         | [LESS](http://lesscss.org/), [Sass (SCSS)](http://sass-lang.com/) | [Stylus](http://learnboost.github.io/stylus/), [Sass](http://sass-lang.com/)\n| **JavaScript**  | (TBD)                                                             | [CoffeeScript](http://coffeescript.org/)\n\n### Resources\n\n- **Server Documentation** - [harpjs.com/docs/](http://harpjs.com/docs/)\n- **Platform Documentation** - [harp.io/docs](https://harp.io/docs)\n- **Source Code** - [github.com/sintaxi/harp](https://github.com/sintaxi/harp)\n\n\nAuthored and maintained by [@sintaxi](http://twitter.com/sintaxi). Made for the [@HarpPlatform](http://twitter.com/HarpPlatform).\n\n---\n\n### Installation\n\n    sudo npm install -g harp\n\n### Quick Start\n\nCreating a new harp application is a breeze...\n\n    harp init myproj\n    harp server myproj\n\nYour Harp application is now running at [http://localhost:9000]()\n\n---\n\n## Documentation\n\nHarp can be used as a library or as a command line utility.\n\n### CLI Usage\n\n    Usage: harp [command] [options]\n\n    Commands:\n\n      init [path]                 initalize new harp application (defaults to current directory)\n      server [path] [options]     start harp server\n      compile [path] [options]    compile project to static assets\n      multihost [path] [options]  start harp server to host directory of harp apps\n\n    Options:\n\n      -h, --help     output usage information\n      -V, --version  output the version number\n\nStart the server in root of your application by running...\n\n    harp server\n\nYou may optionally supply a port to listen on...\n\n    harp server --port 8002\n\nCompile an application from the root of your application by running...\n\n    harp compile\n\nYou may optionally pass in a path to where you want the compiled assets to go...\n\n    harp compile --output /path/to/cordova/project/www\n\n### Lib Usage\n\nYou may also use harp as a node library for compiling or running as a server.\n\nServe up a harp application...\n\n```js\nvar harp = require("harp")\nharp.server(projectPath [,args] [,callback])\n```\n\n**Or** compile harp application\n\n```js\nvar harp = require("harp")\nharp.compile(projectPath [,outputPath] [, callback])\n```\n\n**Or** use as Connect/ExpressJS middleware\n\n```js\nvar express = require("express");\nvar harp = require("harp");\nvar app = express();\n\napp.configure(function(){\n  app.use(express.static(__dirname + "/public"));\n  app.use(harp.mount(__dirname + "/public"));\n});\n```\n\n## License\n\nCopyright © 2012–2014 [Chloi Inc](http://chloi.io). All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+56 silly install resolved     _id: 'harp@0.15.2',
+56 silly install resolved     _shasum: '9303f06a7ffb43ed7d5432944d8b784408c7c69f',
+56 silly install resolved     _resolved: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz',
+56 silly install resolved     _from: 'https://registry.npmjs.org/harp/-/harp-0.15.2.tgz' } ]
+57 info install harp@0.15.2 into /Users/cwatkins/Sites/solid
+58 info installOne harp@0.15.2
+59 verbose installOne of harp to /Users/cwatkins/Sites/solid not in flight; installing
+60 warn locking Error: EACCES, open '/Users/cwatkins/.npm/_locks/harp-2a93b34429134a46.lock'
+60 warn locking     at Error (native)
+60 warn locking  /Users/cwatkins/.npm/_locks/harp-2a93b34429134a46.lock failed { [Error: EACCES, open '/Users/cwatkins/.npm/_locks/harp-2a93b34429134a46.lock']
+60 warn locking   errno: -13,
+60 warn locking   code: 'EACCES',
+60 warn locking   path: '/Users/cwatkins/.npm/_locks/harp-2a93b34429134a46.lock' }
+61 verbose stack Error: Attempt to unlock /Users/cwatkins/Sites/solid/node_modules/harp, which hasn't been locked
+61 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+61 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1004:5)
+61 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1008:20
+61 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+61 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+61 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+61 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+62 verbose cwd /Users/cwatkins/Sites/solid
+63 error Darwin 14.3.0
+64 error argv "node" "/usr/local/bin/npm" "install"
+65 error node v0.12.2
+66 error npm  v2.7.4
+67 error Attempt to unlock /Users/cwatkins/Sites/solid/node_modules/harp, which hasn't been locked
+68 error If you need help, you may report this error at:
+68 error     <https://github.com/npm/npm/issues>
+69 verbose exit [ 1, true ]
