@@ -192,6 +192,7 @@ ul {
 
 .link-blue{
   color: $text-blue;
+  
   &:hover {
     color: darken($text-blue, 20%);
   }
@@ -199,6 +200,7 @@ ul {
 
 .link-gray{
   color: $text-gray;
+
   &:hover {
     color: $text-blue;
   }
@@ -206,7 +208,9 @@ ul {
 
 .link-gray--lightest{
   color: $text-gray--lightest;
+
   &:hover {
     color: $text-gray;
   }
 }
+
