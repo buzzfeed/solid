@@ -6,11 +6,23 @@ $link-blue: $text-gray;
 $link-gray: sdf;
 $link-gray-lightest: sdfsd;
 
-body, h1, h2, h3, h4, h5, h6, .type-1, .type-2, .type-3, .type-4, .type-5, .type-6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.type-1,
+.type-2,
+.type-3,
+.type-4,
+.type-5,
+.type-6 {
   line-height: $line-height;
 }
 
-h1{
+h1 {
   font-size: $type-1;
 }
 
@@ -30,11 +42,13 @@ h5 {
   font-size: $type-5;
 }
 
-h6, .type-6 {
+h6,
+.type-6 {
   font-size: $type-6;
+
   &.slab {
-      font-family:'Proxima Nova';
-    }
+    font-family: "Proxima Nova";
+  }
 }
 
 a {
@@ -45,8 +59,8 @@ a {
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
 
+  @include media-query($breakpoint-name) {
     .#{$breakpoint-prefix}type-1 {
       font-size: $type-1;
     }
@@ -70,7 +84,6 @@ a {
     .#{$breakpoint-prefix}type-6 {
       font-size: $type-6;
     }
-
   }
 }
 
@@ -93,7 +106,7 @@ i,
   font-style: italic;
 }
 
-.caps  {
+.caps {
   text-transform: uppercase;
 }
 
@@ -101,8 +114,8 @@ i,
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  @include media-query($breakpoint-name){
 
+  @include media-query($breakpoint-name) {
     .#{$breakpoint-prefix}text-left {
       text-align: left;
     }
@@ -118,7 +131,7 @@ i,
     .#{$breakpoint-prefix}text-justify {
       text-align: justify;
     }
-  } 
+  }
 }
 
 .nowrap {
@@ -131,45 +144,47 @@ i,
   text-overflow: ellipsis;
 }
 
-.decoration-none{
+.decoration-none {
   text-decoration: none;
 }
 
-.decoration-underline{
+.decoration-underline {
   text-decoration: underline;
 }
 
-.decoration-line-through{
+.decoration-line-through {
   text-decoration: line-through;
 }
 
 // Typeface Classes
 
 .slab {
-  font-family: 'Caponi-Slab-Semibold';
-  line-height:1.1;
-  -moz-font-feature-settings: "liga", "kern";
-  -moz-font-feature-settings:"liga=1, kern=1";
-  -ms-font-feature-settings:"liga", "kern";
-  -o-font-feature-settings:"liga", "kern";
-  -webkit-font-feature-settings:"liga", "kern";
+  font-family: "Caponi-Slab-Semibold";
+  line-height: 1.1;
+  // Needed b/c chrome still needs prefix
+  // scss-lint:disable VendorPrefix
+  -webkit-font-feature-settings: "liga", "kern";
   font-feature-settings: "liga", "kern";
+  // scss-lint:enable VendorPrefix
   &.bold {
-    font-family: 'Caponi-Slab-Semibold';
+    font-family: "Caponi-Slab-Semibold";
     font-weight: normal;
   }
+
   &.italic {
-    font-family: 'Caponi-Slab-Semibold';
+    font-family: "Caponi-Slab-Semibold";
   }
 }
 
 // Caponi should never be an h6 or .type-6
 
+// scss-lint:disable QualifyingElement
 .slab h6,
+// scss-lint:enable QualifyingElement
 h6.slab,
 .type-6 .slab,
 .slab.type-6 {
-  font-family: 'Proxima-Nova';
+  font-family: "Proxima-Nova";
   font-weight: normal;
 }
 
@@ -183,22 +198,22 @@ ul {
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 
 .list-unstyled {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 // Link Styles
 
-.link-blue{
+.link-blue {
   color: $text-blue;
-  
+
   &:hover {
     color: darken($text-blue, 20%);
   }
 }
 
-.link-gray{
+.link-gray {
   color: $text-gray;
 
   &:hover {
@@ -206,11 +221,10 @@ ul {
   }
 }
 
-.link-gray--lightest{
+.link-gray--lightest {
   color: $text-gray--lightest;
 
   &:hover {
     color: $text-gray;
   }
 }
-
