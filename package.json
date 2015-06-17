@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/buzzfeed/solid.git"
+    "url": "git+https://github.com/buzzfeed/solid.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,66 +19,16 @@
     "harp": "^0.15.2"
   },
   "contributors": [
-    {
-      "name": "Emily Brick",
-      "email": "brick.emily@gmail.com",
-      "url": "https://github.com/emilybrick",
-      "contributions": 46,
-      "additions": "na",
-      "deletions": "na",
-      "hireable": false
-    },
-    {
-      "name": "Allison Chefec",
-      "email": null,
-      "url": "https://github.com/allisonchefec",
-      "contributions": 29,
-      "additions": "na",
-      "deletions": "na"
-    },
-    {
-      "name": "Cap Watkins",
-      "email": "cwatkins@gmail.com",
-      "url": "https://github.com/capwatkins",
-      "contributions": 18,
-      "additions": "na",
-      "deletions": "na",
-      "hireable": false
-    },
-    {
-      "name": "John Niedermeyer",
-      "email": "john@nieder.me",
-      "url": "https://github.com/niederme",
-      "contributions": 7,
-      "additions": "na",
-      "deletions": "na",
-      "hireable": false
-    },
-    {
-      "name": "Finn Smith",
-      "email": "finn@timeghost.net",
-      "url": "https://github.com/finn",
-      "contributions": 3,
-      "additions": "na",
-      "deletions": "na",
-      "hireable": true
-    },
-    {
-      "name": "Sam Thurman",
-      "email": null,
-      "url": "https://github.com/samthurman",
-      "contributions": 2,
-      "additions": "na",
-      "deletions": "na"
-    },
-    {
-      "name": "Elaine Dunlap",
-      "email": null,
-      "url": "https://github.com/medun",
-      "contributions": 1,
-      "additions": "na",
-      "deletions": "na",
-      "hireable": false
-    }
-  ]
+    "Emily Brick <brick.emily@gmail.com> (https://github.com/emilybrick)",
+    "Allison Chefec (https://github.com/allisonchefec)",
+    "Cap Watkins <cwatkins@gmail.com> (https://github.com/capwatkins)",
+    "John Niedermeyer <john@nieder.me> (https://github.com/niederme)",
+    "Finn Smith <finn@timeghost.net> (https://github.com/finn)",
+    "Sam Thurman (https://github.com/samthurman)",
+    "Elaine Dunlap (https://github.com/medun)"
+  ],
+  "main": "index.js",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
 }
