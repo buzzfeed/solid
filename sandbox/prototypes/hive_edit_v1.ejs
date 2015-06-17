@@ -16,7 +16,8 @@
         <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11255688_811143125642874_1370881178_n.jpg" class="mb4">
         <label class="form-label" placeholder="buzzfeed username">Authors <span class="form-label--required">*</span></label>
         <p><strong>Zoe Burnett</strong> (x)</p> 
-        <input type="text" class="text-input mb4 half-width"><input type="button" value ="Add">
+        <input type="text" class="text-input mb4 half-width">
+        <input type="button" class="button button--primary" value ="Add">
       </div>
       <div class="half-width float-right pl2">
         <label class="form-label">Description <span class="form-label--optional">(optional)</span></label>
@@ -24,14 +25,24 @@
         <label class="form-label">Tags <span class="form-label--optional">(optional)</span></label>
         <input type="text" class="text-input mb4 full-width" value="illustration, mom, tatoo">
         <label class="form-label">Links <span class="form-label--optional">(optional)</span></label>
-        <p><input type="text" class="text-input mb2 full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="https://instagram.com/p/2gZzY-vgPY/"></p>
-        <p><input type="text" class="text-input mb2 full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://yrbff.tumblr.com/post/118636984340/happy-mothers-day-by-dreambeam-for-yrbff"></p>
-        <p><input type="text" class="text-input mb2 full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://imgur.com/gallery/r3CR4oN"></p>
-        <input type="text" class="text-input mb4 half-width" placeholder="Vine, BuzzFeed, Facebook, etc."><input type="button" value ="Add">
+        <div class="form-success mb2">
+          <input type="text" class="text-input full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="https://instagram.com/p/2gZzY-vgPY/">
+          <label class="form-feedback">This link is regonized and being tracked</label>
+        </div>
+        <div class="form-success mb2">
+          <input type="text" class="text-input full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://yrbff.tumblr.com/post/118636984340/happy-mothers-day-by-dreambeam-for-yrbff">
+          <label class="form-feedback">This link is regonized and being tracked</label>
+        </div>
+        <div class="form-warning mb2">
+          <input type="text" class="text-input full-width" placeholder="Vine, BuzzFeed, Facebook, etc." value="http://somenewthing.com/r3CR4oN">
+          <label class="form-feedback">This link is unrecognized and not being tracked. Please contact [data email].</label>
+        </div>
+        <input type="text" class="text-input mb4 half-width" placeholder="Vine, BuzzFeed, Facebook, etc.">
+        <input type="button" class="button button--primary" value ="Add">
       </div>
     </section>
     <section class="clearfix">
-      <input type="submit" value="Save">
+      <a class="button button--secondary" href="">Cancel</a> <input type="submit" value="Save" class="button button--primary">
     </section>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
