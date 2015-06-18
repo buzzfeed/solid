@@ -10,28 +10,32 @@
     <form post="hive_manage_v1">
     <section class="clearfix">
       <div class="half-width float-left pr2">
-        <label class="form-label">Title <span class="form-label--required">*</span></label>
+        <label class="form-label">Name <span class="form-label--required">*</span></label>
         <input type="text" class="text-input mb4 full-width">
-        <label class="form-label">New asset <span class="form-label--required">*</span></label>
+        <label class="form-label">File <span class="form-label--required">*</span></label>
         <div class="border-dashed text-center mb4">
           Drag and drop<br />
           or click to upload
         </div>
         <label class="form-label" placeholder="buzzfeed username">Authors <span class="form-label--required">*</span></label>
+        <input type="text" class="text-input mb2 half-width" value="Kevin Merritt">
+        <input type="button" value ="Remove" class="button button--delete">
         <input type="text" class="text-input mb4 half-width">
-        <input type="button" value ="Add" class="button button--secondary">
+        <input type="button" value ="Add" class="button button--primary">
       </div>
       <div class="half-width float-right pl2">
-        <label class="form-label">Caption/Notes <span class="form-label--optional">(optional)</span></label>
+        <label class="form-label">Description <span class="form-label--optional">(optional)</span></label>
         <textarea class="textarea mb4 full-width" value="Suggested caption"></textarea>
         <label class="form-label">Tags <span class="form-label--optional">(optional)</span></label>
-        <input type="text" class="text-input mb4 full-width">
+        <input type="text" class="text-input full-width">
+        <label class="form-helper mb4">Separate tags with commas.</label>
         <label class="form-label">Links <span class="form-label--optional">(optional)</span></label>
         <input type="text" class="text-input mb4 half-width" placeholder="Vine, BuzzFeed, Facebook, etc.">
-        <input type="button" value ="Add" class="button button--secondary">
+        <input type="button" value ="Add" class="button button--primary">
       </div>
     </section>
     <section class="clearfix">
+      <a href="#" class="button button--secondary">Cancel</a>
       <input type="submit" value="Create" class="button button--primary">
     </section>
     </form>
