@@ -4,7 +4,6 @@
 scss_files: 'scss/'
 
 exclude: 
-  - 'scss/colors/**'
   - 'scss/fonts/**'
   - 'scss/grid/**'
   - 'scss/prototypes/**'
