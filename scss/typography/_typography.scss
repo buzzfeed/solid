@@ -51,9 +51,9 @@ h6,
   }
 }
 
-// wouldn't it make more sense to @extend .link-blue; here? 
+// wouldn't it make more sense to @extend .link-blue; here?
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: $text-blue;
 
   &:hover {
@@ -166,20 +166,21 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: "Caponi-Slab-Semibold";
-  line-height: 1.1;
-  // Needed b/c chrome still needs prefix
-  // scss-lint:disable VendorPrefix
-  -webkit-font-feature-settings: "liga", "kern";
+  font-family: "Caponi Slab";
+  font-weight: 600;
+  line-height:1.1;
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings:"liga=1, kern=1";
+  -ms-font-feature-settings:"liga", "kern";
+  -o-font-feature-settings:"liga", "kern";
+  -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
-  // scss-lint:enable VendorPrefix
   &.bold {
-    font-family: "Caponi-Slab-Semibold";
-    font-weight: normal;
+    font-weight: 600;
   }
 
   &.italic {
-    font-family: "Caponi-Slab-Semibold";
+    font-weight: 600;
   }
 }
 
@@ -191,8 +192,8 @@ i,
 h6.slab,
 .type-6 .slab,
 .slab.type-6 {
-  font-family: "Proxima-Nova";
-  font-weight: normal;
+  font-family: "Proxima Nova";
+  font-weight: 400;
 }
 
 // Ordered and unordered list, list items are block level
