@@ -74,7 +74,7 @@ $input-height-small: 2rem;
 }
 
 .radio-label {
-  cursor:pointer; 
+  cursor: pointer; 
   display: block;
   @include option-input-style;
 
@@ -83,27 +83,28 @@ $input-height-small: 2rem;
   }
 }
 
-.radio:checked + .radio-label:before{
-  background-color: white;   
-  border: 4px solid #07e;
+.radio:checked + .radio-label:before {
+  background-color: $fill-white;   
+  border: 4px solid $fill-blue;
 }
 
 // hide system checkbox in order to use custom style
 .checkbox {
   @include visuallyhidden;
-}
 
-.checkbox + label {
-  cursor:pointer; 
-  display: block;
-  @include option-input-style;
+  + label {
+    cursor: pointer; 
+    display: block;
+    @include option-input-style;
 
-  &:before { 
-    border-radius: 30%;
+    &:before { 
+      border-radius: 30%;
+    }
   }
+  
 }
 
-.checkbox:checked + label:before{
+.checkbox:checked + label:before {
   background-image: svg-background($checkmark);
   background-repeat: no-repeat;
   background-position: center;
@@ -166,11 +167,11 @@ $input-height-small: 2rem;
     color: $text-green;  
   }
 
-  .form-feedback:before{
+  .form-feedback:before {
     content: "";
     height: .875rem;
     width: .875rem;
-    display:inline-block;
+    display: inline-block;
     background-image: svg-background($checkmark);
     background-repeat: no-repeat;
     background-size: .5rem;
