@@ -4,7 +4,7 @@
 
 html {
   font-size: 16px;
-  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif; // This is just for reference
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif; // This is just for reference
 }
 
 body,
@@ -47,9 +47,9 @@ h6 {
   font-size: $text-6;
 }
 
-// wouldn't it make more sense to @extend .link-blue; here? 
+// wouldn't it make more sense to @extend .link-blue; here?
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: $text-blue;
 
   &:hover {
@@ -125,7 +125,8 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: "Caponi-Slab-Semibold";
+  font-family: "Caponi Slab";
+  font-weight: 600;
   line-height: 1.1;
   // Needed b/c chrome still needs prefix
   // scss-lint:disable VendorPrefix
@@ -133,12 +134,11 @@ i,
   font-feature-settings: "liga", "kern";
   // scss-lint:enable VendorPrefix
   &.bold {
-    font-family: "Caponi-Slab-Semibold";
-    font-weight: normal;
+    font-weight: 600;
   }
 
   &.italic {
-    font-family: "Caponi-Slab-Semibold";
+    font-weight: 600;
   }
 }
 
@@ -151,7 +151,7 @@ i,
 h6.slab,
 .text-6 .slab,
 .slab.text-6 {
-  font-family: "Proxima-Nova";
+  font-family: "Proxima Nova";
   font-weight: normal;
 }
 
