@@ -108,7 +108,7 @@ i,
     .#{$breakpoint-prefix}text-justify {
       text-align: justify;
     }
-  } 
+  }
 }
 
 .nowrap {
@@ -136,7 +136,8 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: 'Caponi-Slab-Semibold';
+  font-family: "Caponi Slab";
+  font-weight: 600;
   line-height:1.1;
   -moz-font-feature-settings: "liga", "kern";
   -moz-font-feature-settings:"liga=1, kern=1";
@@ -144,13 +145,6 @@ i,
   -o-font-feature-settings:"liga", "kern";
   -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
-  &.bold {
-    font-family: 'Caponi-Slab-Semibold';
-    font-weight: normal;
-  }
-  &.italic {
-    font-family: 'Caponi-Slab-Semibold';
-  }
 }
 
 // Caponi should never be an h6 or .type-6
@@ -159,8 +153,8 @@ i,
 h6.slab,
 .type-6 .slab,
 .slab.type-6 {
-  font-family: 'Proxima-Nova';
-  font-weight: normal;
+  font-family: "Proxima Nova";
+  font-weight: 400;
 }
 
 // Ordered and unordered list, list items are block level
