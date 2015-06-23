@@ -51,7 +51,7 @@ $button-height-small: 2rem;
   text-align: center;
 
   &:hover {
-    transition: background-color 0.3s ease 0s;
+    transition: background-color .3s ease 0s;
   }
 }
 
@@ -60,11 +60,11 @@ $button-height-small: 2rem;
   color: $text-white;
 
   &:not(.button--disabled):hover {
-    background-color: darken( $fill-blue, 20%);
+    background-color: darken($fill-blue, 20%);
   }
 
   &:not(.button--disabled):active {    
-    background-color: darken( $fill-blue, 35%);
+    background-color: darken($fill-blue, 35%);
   }
 }
 
@@ -79,7 +79,7 @@ $button-height-small: 2rem;
   }
 
   &:not(.button--disabled):active {   
-    background-color: darken( $fill-blue, 20%); 
+    background-color: darken($fill-blue, 20%); 
   }
 }
 
@@ -88,11 +88,11 @@ $button-height-small: 2rem;
   color: $text-white; 
 
   &:not(.button--disabled):hover {
-    background-color: darken( $fill-red, 20%); 
+    background-color: darken($fill-red, 20%); 
   }
 
   &:not(.button--disabled):active {   
-    background-color: darken( $fill-red, 35%); 
+    background-color: darken($fill-red, 35%); 
   }
 }
 
@@ -122,6 +122,10 @@ $button-height-small: 2rem;
   border-radius: 3px;
   text-decoration: none;
   color: $text-blue;
+
+  input {
+    @include visuallyhidden;
+  }
   
 }
 
@@ -134,22 +138,18 @@ $button-height-small: 2rem;
   height: $button-height;
 
   &:hover {
-    transition: background-color 0.3s ease 0s;
+    transition: background-color .3s ease 0s;
     background-color: $fill-gray--lighter;
   }
 
   &:last-of-type {
-    border: none;
+    border: 0;
   }
 }
 
 .segmented-button:checked + .segmented-button-label {
   background-color: $fill-gray--lighter; 
   color: $text-gray;
-}
-
-.segmented-button input {
-  @include visuallyhidden;
 }
 
 .segmented-button-label--small {
