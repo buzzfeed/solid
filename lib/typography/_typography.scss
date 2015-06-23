@@ -127,12 +127,20 @@ i,
 .slab {
   font-family: "Caponi Slab";
   font-weight: 600;
+<<<<<<< HEAD:lib/typography/_typography.scss
   line-height: 1.1;
   // Needed b/c chrome still needs prefix
   // scss-lint:disable VendorPrefix
   -webkit-font-feature-settings: "liga", "kern";
+=======
+  line-height:1.1;
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings:"liga=1, kern=1";
+  -ms-font-feature-settings:"liga", "kern";
+  -o-font-feature-settings:"liga", "kern";
+  -webkit-font-feature-settings:"liga", "kern";
+>>>>>>> reformat webfont declaration to follow 'style linking' rule:scss/typography/_typography.scss
   font-feature-settings: "liga", "kern";
-  // scss-lint:enable VendorPrefix
   &.bold {
     font-weight: 600;
   }
@@ -149,10 +157,17 @@ i,
 .slab h6,
 // scss-lint:enable QualifyingElement
 h6.slab,
+<<<<<<< HEAD:lib/typography/_typography.scss
 .text-6 .slab,
 .slab.text-6 {
   font-family: "Proxima Nova";
   font-weight: normal;
+=======
+.type-6 .slab,
+.slab.type-6 {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+>>>>>>> reformat webfont declaration to follow 'style linking' rule:scss/typography/_typography.scss
 }
 
 // Ordered and unordered list, list items are block level
