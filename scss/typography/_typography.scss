@@ -51,8 +51,14 @@ h6,
   }
 }
 
+// wouldn't it make more sense to @extend .link-blue; here? 
 a {
-  text-decoration: none;
+  text-decoration: none; 
+  color: $text-blue;
+
+  &:hover {
+    color: darken($text-blue, 20%);
+  }
 }
 
 // Type Size Classes + Responsive Prefixes
@@ -228,3 +234,5 @@ ul {
     color: $text-gray;
   }
 }
+
+
