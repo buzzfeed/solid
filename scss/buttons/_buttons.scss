@@ -158,3 +158,12 @@ $button-height-small: 2rem;
   font-size: $type-5; 
 }
 
+// This overrides link styles so that button text doesn't inherit global a styling
+ 
+a.button {
+
+  &:hover {
+    color: $text-white;
+  }
+}
+
