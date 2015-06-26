@@ -4,14 +4,10 @@
 scss_files: 'scss/'
 
 exclude: 
-  - 'scss/colors/**'
   - 'scss/fonts/**'
-  - 'scss/forms/**'
   - 'scss/grid/**'
   - 'scss/prototypes/**'
   - 'scss/typography/**'
-  - 'scss/buttons/**'
-  - 'scss/tables/**'
   - 'scss/_font-faces.scss'
   - 'scss/_mixins.scss'
   - 'scss/_variables.scss'

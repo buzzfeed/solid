@@ -10,18 +10,16 @@ table {
 th {
   text-align: left;
   font-weight: 600;
+  vertical-align: bottom;
 }
 
-th, td {
+th, 
+td {
   padding: $space-1;
 }
 
-th {
-  vertical-align: bottom
-}
-
 td {
-  vertical-align: top
+  vertical-align: top;
 }
 
 // Add a border to a table
@@ -29,23 +27,26 @@ td {
 .table-border {
   border: $border;
   border-radius: 3px;
+
+  th {
+    border-bottom: $border;
+  }
+
+  tr td {
+    border-bottom: $border;
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
 }
 
+.table-border td, 
 .table-border th {
-  border-bottom: $border;
-}
-
-.table-border td, .table-border th {
   padding: $space-2;
 }
 
-.table-border tr td {
-  border-bottom: $border;
-}
 
-.table-border tr:last-child td {
-  border-bottom: none;
-}
 
 // Adding table layout
 
@@ -53,7 +54,8 @@ td {
   display: table;
 }
 
-.td, .th {
+.td, 
+.th {
   display: table-cell;
 }
 
