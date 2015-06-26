@@ -58,6 +58,7 @@ a {
 
   &:hover {
     color: darken($text-blue, 20%);
+    transition: color .3s ease 0s;
   }
 }
 
