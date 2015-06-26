@@ -2,49 +2,47 @@
 // Typography Base Styles
 // --------------------------------------------------
 
+$link-blue: $text-gray;
+$link-gray: sdf;
+$link-gray-lightest: sdfsd;
 
-body, 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-.type-1, 
-.type-2, 
-.type-3, 
-.type-4, 
-.type-5, 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.type-1,
+.type-2,
+.type-3,
+.type-4,
+.type-5,
 .type-6 {
   line-height: $line-height;
 }
 
-h1,
-.type-1 { 
+h1 {
   font-size: $type-1;
 }
 
-h2,
-.type-2 {
+h2 {
   font-size: $type-2;
 }
 
-h3,
-.type-3 {
+h3 {
   font-size: $type-3;
 }
 
-h4,
-.type-4 {
+h4 {
   font-size: $type-4;
 }
 
-h5,
-.type-5 {
+h5 {
   font-size: $type-5;
 }
 
-h6, 
+h6,
 .type-6 {
   font-size: $type-6;
 
@@ -53,17 +51,23 @@ h6,
   }
 }
 
+// wouldn't it make more sense to @extend .link-blue; here? 
 a {
-  text-decoration: none;
+  text-decoration: none; 
+  color: $text-blue;
+
+  &:hover {
+    color: darken($text-blue, 20%);
+    transition: color .3s ease 0s;
+  }
 }
 
 // Type Size Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-  
-  @include media-query($breakpoint-name) {
 
+  @include media-query($breakpoint-name) {
     .#{$breakpoint-prefix}type-1 {
       font-size: $type-1;
     }
@@ -87,7 +91,6 @@ a {
     .#{$breakpoint-prefix}type-6 {
       font-size: $type-6;
     }
-
   }
 }
 
@@ -120,7 +123,6 @@ i,
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
 
   @include media-query($breakpoint-name) {
-
     .#{$breakpoint-prefix}text-left {
       text-align: left;
     }
@@ -136,7 +138,7 @@ i,
     .#{$breakpoint-prefix}text-justify {
       text-align: justify;
     }
-  } 
+  }
 }
 
 .nowrap {
@@ -164,15 +166,13 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: 'Caponi-Slab-Semibold';
-  line-height:1.1;
-  -moz-font-feature-settings: "liga", "kern";
-  -moz-font-feature-settings:"liga=1, kern=1";
-  -ms-font-feature-settings:"liga", "kern";
-  -o-font-feature-settings:"liga", "kern";
-  -webkit-font-feature-settings:"liga", "kern";
+  font-family: "Caponi-Slab-Semibold";
+  line-height: 1.1;
+  // Needed b/c chrome still needs prefix
+  // scss-lint:disable VendorPrefix
+  -webkit-font-feature-settings: "liga", "kern";
   font-feature-settings: "liga", "kern";
-
+  // scss-lint:enable VendorPrefix
   &.bold {
     font-family: "Caponi-Slab-Semibold";
     font-weight: normal;
@@ -185,7 +185,9 @@ i,
 
 // Caponi should never be an h6 or .type-6
 
+// scss-lint:disable QualifyingElement
 .slab h6,
+// scss-lint:enable QualifyingElement
 h6.slab,
 .type-6 .slab,
 .slab.type-6 {
@@ -212,7 +214,7 @@ ul {
 
 .link-blue {
   color: $text-blue;
-  
+
   &:hover {
     color: darken($text-blue, 20%);
   }
@@ -233,3 +235,4 @@ ul {
     color: $text-gray;
   }
 }
+
