@@ -258,3 +258,10 @@ img { max-width: 100%; height: auto; }
 
     }
 }
+
+// Vertical Centering – this needs to be applied to the parent class of the elements you are trying to center
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
