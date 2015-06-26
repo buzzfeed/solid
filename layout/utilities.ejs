@@ -295,8 +295,6 @@
 .b4 { bottom: $space-4; }
 .l4 { left:   $space-4; }
 
-.vertical-center { display: flex; align-items: center; }</code></pre>
-
 </section>
 
 <!--Rounded/Circle-->
@@ -387,6 +385,22 @@
 .border-left--lighter {
   border-left:1px solid rgba(0,0,0,.1);
 }</code></pre>
+
+</section>
+
+<section>
+
+<h3 class="mb1 bold">Vertical Center</h3>
+<p class="mb2">Vertically center the children of a parent element</p>
+  <div class="mb2 clearfix block">
+    <div class="float-left vertical-center fill-gray--lighter mr2 p2 border--lighter"><div class="circle p2 mr1 fill-blue"></div>.vertical-center</div>
+  </div>
+
+  <pre><code class="css">.vertical-center {
+  display: flex; 
+  align-items: center;
+}</code></pre>
+
 
 </section>
 
