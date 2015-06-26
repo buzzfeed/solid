@@ -1,9 +1,9 @@
 <!-- Desktop Nav -->
 
-<nav class="xs-col-3 md-col-2 p3 fixed t0 b0 l0 overflow-auto fill-gray--lighter border-right xs-hide sm-show solid-nav">
+<nav class="xs-col-3 md-col-2 p3 fixed t0 b0 l0 overflow-auto fill-gray--lighter border-right xs-hide sm-show">
   <h1 class="mb2"><a href="/">Solid</a></h1>
 
-  <ol class="list-unstyled">
+  <ol class="list-unstyled solid-nav">
     <li>
       <h2 class="type-4 bold">Base</h2>
     </li>
@@ -44,8 +44,10 @@
       </li>
     <% }; %>
 
-    <li><a href="/sandbox" class="block">Sandbox</a>
-  </li>
+    <% for(var slug in public.sandbox._data){ %>
+    <% var page = public.sandbox %>
+      <li><a href="/sandbox/<%= slug %>" class="block <%- current.source == slug ? 'text-red' : '' %>">Sandbox</a></li>
+    <% }; %>
   </ol>
 </nav>
 
@@ -70,9 +72,9 @@
     </li>
     <% for(var slug in public.interface._data){ %>
     <% var page = public.interface %>
-    <li>
-      <a href="/interface/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
-    </li>
+      <li>
+        <a href="/interface/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
+      </li>
     <% }; %>
 
     <li>
@@ -80,9 +82,9 @@
     </li>
     <% for(var slug in public.layout._data){ %>
     <% var page = public.layout %>
-    <li>
-      <a href="/layout/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
-    </li>
+      <li>
+        <a href="/layout/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
+      </li>
     <% }; %>
 
     <li>
@@ -90,13 +92,16 @@
     </li>
     <% for(var slug in public.resources._data){ %>
     <% var page = public.resources %>
-    <li>
-      <a href="/resources/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
-    </li>
+      <li>
+        <a href="/resources/<%= slug %>" class="block p2 border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
+      </li>
     <% }; %>
 
-    <li>
-      <a href="/sandbox" class="block p2 text-orange border-bottom--lighter">Sandbox</a>
-    </li>
+    <% for(var slug in public.sandbox._data){ %>
+    <% var page = public.sandbox %>
+      <li>
+        <a href="/sandbox/<%= slug %>" class="block p2 text-orange border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>">Sandbox</a>
+      </li>
+    <% }; %>
   </ol>
 </nav>
