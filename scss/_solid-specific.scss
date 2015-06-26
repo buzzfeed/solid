@@ -55,8 +55,11 @@ pre {
 
 }
 
-.solid-nav__menu {
-  display: none;
+.nav-carat {
+  background-image: svg-background($down-caret);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) center;
+  background-size: .6875rem;
 }
 
 // Welcome
