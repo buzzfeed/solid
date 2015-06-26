@@ -7,30 +7,26 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
   </head>
   <body>
-    <nav class="p1 sm-p3 fixed t0 b0 l0 fill-gray--darker solid-nav">
-      <%- partial("_nav") %>
-    </nav>
-    <div class="p4 main-content">
-      <%- yield %>
+    <%- partial("_nav") %>
+    <div class="col xs-col-12 sm-col-9 sm-offset-3">
+      <div class="col xs-col-12 xs-p2 sm-col-10 sm-offset-1">
+        <%- yield %>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <script src="/javascript/codehighlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-      $(document).ready(function(){
-        $('.solid-nav__menu').on('click', function(){
-          $('.solid-nav').toggleClass('solid-nav--visible');
-        })
-        $('.solid-nav').on('transitionend', function(){
-          if ($('.solid-nav').hasClass('solid-nav--visible')) {
-            $('.solid-nav').addClass('solid-nav--overflow');
-          }
-          else {
-            $('.solid-nav').removeClass('solid-nav--overflow');
-          }
-        });
-      });
+    <script type="text/javascript">
+    <!--
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    //-->
     </script>
   </body>
 </html>
