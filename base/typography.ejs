@@ -1,33 +1,33 @@
-<section class="xs-col-12 lg-col-9 mb4">
-    <div>
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
+    <div class="mb3">
       <h2 class="mb1 bold">Headers</h2>
       <label class="block type-4">Headers set in Proxima range from <code class="js-highlight">h1</code> through <code class="js-highlight">h6</code>. Alternately, classes <code class="js-highlight">.type-1</code> through <code class="js-highlight">.type-6</code> mirror header element styles respectively, and can be used on any element to allow for flexible styling without affecting semantic markup. Header elements and type classes have no margins attached and inherit a line height 1.3x relative to the type size. </label>
     </div>
 
     <div>
-      <div class="my2">
-        <p class="text-gray--lightest">h1, .type-1</p>
-        <h1>BuzzFeed is the social news and entertainment company (2.25 rem, 36px)</h1>   
+      <div class="mb3">
+        <p class="text-gray--lightest">h1, .type-1 | 2.25rem, 36px</p>
+        <h1>BuzzFeed is the social news and entertainment company</h1>   
       </div>
       <div class="mb3">
-        <p class="text-gray--lightest">h2, .type-2</p>
-        <h2>BuzzFeed is the social news and entertainment company (1.375rem, 22px)</h2>
+        <p class="text-gray--lightest">h2, .type-2 | 1.375rem, 22px</p>
+        <h2 class="pt1">BuzzFeed is the social news and entertainment company</h2>
       </div>
       <div class="mb3">
-        <p class="text-gray--lightest">h3, .type-3</p>
-        <h3>BuzzFeed is the social news and entertainment company (1.125rem, 18px)</h3>
+        <p class="text-gray--lightest">h3, .type-3 | 1.125rem, 18px</p>
+        <h3 class="pt1">BuzzFeed is the social news and entertainment company</h3>
       </div>
       <div class="mb3">
-        <p class="text-gray--lightest">h4, .type-4</p>
-        <h4>BuzzFeed is the social news and entertainment company (1rem, 16px)</h4>
+        <p class="text-gray--lightest">h4, .type-4 | 1rem, 16px</p>
+        <h4 class="pt1">BuzzFeed is the social news and entertainment company</h4>
       </div>
       <div class="mb3">
-        <p class="text-gray--lightest">h5, .type-5</p>
-        <h5>BuzzFeed is the social news and entertainment company (0.875rem, 14px)</h5>
+        <p class="text-gray--lightest">h5, .type-5 | 0.875rem, 14px</p>
+        <h5 class="pt1">BuzzFeed is the social news and entertainment company</h5>
       </div>
       <div class="mb3">
-        <p class="text-gray--lightest">h6, .type-6</p>
-        <h6>BuzzFeed is the social news and entertainment company (0.75rem, 12px)</h6>
+        <p class="text-gray--lightest">h6, .type-6 | 0.75rem, 12px</p>
+        <h6 class="pt1">BuzzFeed is the social news and entertainment company</h6>
       </div>
 
 <pre class="xs-col-12"><code class="html"><%= '<h1>BuzzFeed is the social news and entertainment company</h1>' %>
@@ -51,98 +51,93 @@
     </div>
 </section>
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
-  <h2 class="mb1 bold">Body</h2>
-  <label class="block type-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. You can also use the class <code class="js-highlight">.type-4</code> to style any element as body text. Optimal line length for body text is around 75 characters per line.</label>
-
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
+  <div class="mb2">
+    <h2 class="mb1 bold">Body</h2>
+    <label class="block type-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. You can also use the class <code class="js-highlight">.type-4</code> to style any element as body text. Optimal line length for body text is around 75 characters per line.</label>
+  </div>
   <div>
-    <div class="my2">
-      <p class="text-gray--lightest">p, .type-4</p>
-      <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M. (1 rem, 16px)</p>
+    <div class="mb2">
+      <p class="text-gray--lightest">p, .type-4 | 1rem, 16px</p>
+      <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 <pre><code class="html"><%= '<p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
   </div>
 </section>
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
-  <h2 class="mb1 bold">Emphasis</h2>
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
+  <h2 class="mb2 bold">Emphasis</h2>
 
   <div class="mb3">
-    <div class="my2">
-      <p class="text-gray--lightest">.regular</p>
-      <p class="bold mb1"><span class="regular">BuzzFeed is the</span> social news and entertainment company</p>
-    </div>
-<pre><code class="html"><%= '<p class="bold"><span class="regular">BuzzFeed is the</span>social news and entertainment company</p>' %></code></pre>
+    <p class="text-gray--lightest">.regular</p>
+    <p class="bold"><span class="regular">BuzzFeed is the</span> social news and entertainment company</p>
   </div>
 
   <div class="mb3">
-    <div class="my2">
-      <p class="text-gray--lightest">strong, .bold</p>
-      <p class="mb1"><strong>BuzzFeed is the social news and entertainment company</strong></p>
-    </div>
-<pre><code class="html"><%= '<p><strong>BuzzFeed is the social news and entertainment company</strong></p>' %>
-<%= '<p class="bold">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+    <p class="text-gray--lightest">strong, .bold</p>
+    <p><strong>BuzzFeed is the social news and entertainment company</strong></p>
   </div>
 
   <div class="mb3">
-    <div class="my2">
-      <p class="text-gray--lightest">em, .italic</p> 
-      <p class="mb1"><em>BuzzFeed is the social news and entertainment company</em></p>
-    </div>
-<pre><code class="html"><%= '<p><em>BuzzFeed is the social news and entertainment company</em></p>' %>
-<%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+    <p class="text-gray--lightest">em, .italic</p> 
+    <p><em>BuzzFeed is the social news and entertainment company</em></p>
   </div>
 
   <div class="mb3">
-    <div class="my2">
-      <p class="text-gray--lightest">.caps</p>    
-      <p class="mb1 caps">BuzzFeed is the social news and entertainment company</p>
-    </div>
-<pre><code class="html"><%= '<p class="caps">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+    <p class="text-gray--lightest">.caps</p>    
+    <p class="caps">BuzzFeed is the social news and entertainment company</p>
   </div>
+
+<pre><code class="html"><%= '<p class="bold"><span class="regular">BuzzFeed is the</span>social news and entertainment company</p>' %>
+
+<%= '<p class="bold">BuzzFeed is the social news and entertainment company</p>' %>
+
+<%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %>
+
+<%= '<p class="caps">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
+  
 </section>
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
-  <h2 class="mb1 bold">Overflow</h2>
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
+  <h2 class="mb2 bold">Overflow</h2>
 
-    <div class="mb3">
-      <div class="my2">
-        <p class="text-gray--lightest">.nowrap</p>
-        <p class="mb1 nowrap overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
-      </div>
-<pre><code class="html"><%= '<p class="nowrap">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
+    <div class="mb2">
+      <p class="text-gray--lightest">.nowrap</p>
+      <p class="nowrap overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 
-    <div class="mb3">
-      <div class="my2">
-        <p class="text-gray--lightest">.truncate</p>
-        <p class="mb1 half-width truncate overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
-      </div>
-<pre><code class="html"><%= '<p class="nowrap">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
+    <div class="mb2">
+      <p class="text-gray--lightest">.truncate</p>
+      <p class="half-width truncate overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
+
+<pre><code class="html"><%= '<p class="nowrap">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %>
+
+<%= '<p class="nowrap">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
+    
 </section>
 
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
   <h2 class="mb1 bold">Alignment</h2>
 
-  <div class="my2">
+  <div>
     <div class="mb4">
       <p class="text-gray--lightest">.text-left</p>
       <p class="mb1 text-left border py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
-    <div class="mb4">
+    <div class="mb3">
       <p class="text-gray--lightest">.text-right</p>
       <p class="mb1 text-right border py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
-    <div class="mb4">
+    <div class="mb3">
       <p class="text-gray--lightest">.text-center</p>
-      <p class="mb1 text-center border py2">BuzzFeed is the social news and entertainment company</p>
+      <p class="text-center border py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
-    <div class="mb4">
+    <div class="mb3">
       <p class="text-gray--lightest">.text-justify</p>
       <p class="mb1 text-justify border py2">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
@@ -153,35 +148,35 @@
 </div>
 </section>
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
   <div class="mb2">
-    <h2 class="mb1 bold">Slab Headings</h2>
+    <h2 class="mb1 bold">Slab Headers</h2>
     <p class="block">Caponi is BuzzFeed's slab typeface. It's default (and singular weight) is semibold. Caponi is intended to be used for News headlines only, and should never be smaller than an <code class="js-highlight">h5</code>, or 0.875 rem. An <code class="js-highlight">h6</code>, or anything classed with <code class="js-highlight">.type-6</code>, in combination with the <code class="js-highlight">.slab</code> class will default to Proxima. Headlines set in Caponi should be paired with body text set in Proxima.</p>
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h1, slab .type-1</p>
-    <h1 class="slab">BuzzFeed is the social news and entertainment company (2.25 rem, 36px)</h1>   
+    <p class="text-gray--lightest">.slab h1, slab .type-1 | 2.25rem, 36px</p>
+    <h1 class="pt1 slab">BuzzFeed is the social news and entertainment company</h1>   
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h2, .slab .type-2</p>
-    <h2 class="slab">BuzzFeed is the social news and entertainment company (1.375rem, 22px)</h2>
+    <p class="text-gray--lightest">.slab h2, .slab .type-2 | 1.375rem, 22px</p>
+    <h2 class="pt1 slab">BuzzFeed is the social news and entertainment company</h2>
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h3, .slab .type-3</p>
-    <h3 class="slab">BuzzFeed is the social news and entertainment company (1.125rem, 18px)</h3>
+    <p class="text-gray--lightest">.slab h3, .slab .type-3 | 1.125rem, 18px</p>
+    <h3 class="pt1 slab">BuzzFeed is the social news and entertainment company</h3>
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h4, .slab .type-4</p>
-    <h4 class="slab">BuzzFeed is the social news and entertainment company (1rem, 16px)</h4>
+    <p class="text-gray--lightest">.slab h4, .slab .type-4 | 1rem, 16px</p>
+    <h4 class="pt1 slab">BuzzFeed is the social news and entertainment company</h4>
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h5, .slab .type-5</p>
-    <h5 class="slab">BuzzFeed is the social news and entertainment company (0.875rem, 14px)</h5>
+    <p class="text-gray--lightest">.slab h5, .slab .type-5 | 0.875rem, 14px</p>
+    <h5 class="pt1 slab">BuzzFeed is the social news and entertainment company</h5>
   </div>
 
 <pre class="xs-col-12"><code class="html"><%= '<h1 class="slab">BuzzFeed is the social news and entertainment company</h1>' %>
@@ -196,7 +191,7 @@
 </section>
 
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
   <h2 class="mb1 bold">Links</h2>
   <p>Our default link is blue. For other link colors, refer to the Links section on our <a href="./colors">Colors</a> page.</p>
     <div class="mb3">
@@ -209,58 +204,35 @@
 
 </section>
 
-<section class="xs-col-12 lg-col-9 pt1 mb4 pt2">
+<section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
   <h2 class="mb1 bold">Lists</h2>
-  <p class="mb3">Please note, there's no need to add a class for ordered and unordered lists, they get automatically get the styling below.</p>
+  <p class="mb3">Please note that there's no need to add a class for ordered and unordered lists, they inherit the default list styling below.</p>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Ordered</h3>
-      <p class="text-gray--lighter">For listing of explicitly ordered items.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Ordered<span class="type-4 regular text-gray--lightest ml1">ol</span></h4>
+    <p class="mb2">For listing of explicitly ordered items.</p>
       <ol>
         <li>John</li>
         <li>Paul</li>
         <li>George</li>
         <li>Ringo</li>
       </ol>
-
-<pre class="mt2"><code class="html"><%= '<ol>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-<%= '</ol>' %></code></pre>
-    </div>
   </div>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Unordered</h3>
-      <p class="text-gray--lighter">For items that are not explicitly ordered.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Unordered<span class="type-4 regular text-gray--lightest ml1">ul</span></h4>
+    <p class="mb2">For items that are not explicitly ordered.</p>
       <ul>
         <li>John</li>
         <li>Paul</li>
         <li>George</li>
         <li>Ringo</li>
       </ul>
-
-<pre class="mt2"><code class="html"><%= '<ul>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-<%= '</ul>' %></code></pre>
-    </div>
   </div>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Unstyled</h3>
-      <p class="text-gray--lighter">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Unstyled<span class="type-4 regular text-gray--lightest ml1">.list-unstyled</span></h4>
+    <p class="mb2">Adding the class <code class="js-highlight">.list-unstyled</code> to a list keeps list items block level, but removes default browser padding and list styling.</p>
       <ul class="list-unstyled">
         <li>One</li>
         <li>Two</li>
@@ -268,13 +240,26 @@
         <li>Four</li>
         <li>Tell Me That You Love Me More</li>
       </ul>
+  </div>
 
-<pre class="mt2"><code class="html"><%= '<ul class="list-unstyled">' %>
+
+<pre class="mt2"><code class="html"><%= '<ol>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+<%= '</ol>' %>
+
+<%= '<ul>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+<%= '</ul>' %>
+
+<%= '<ul class="list-unstyled">' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
 <%= '</ul>' %></code></pre>
-    </div>
-  </div>
+
 </section>
 <!--Flex-->
