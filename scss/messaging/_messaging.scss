@@ -20,6 +20,10 @@
   }
 }
 
+.page-message__action {
+  text-decoration: underline;
+}
+
 .page-message--error {
   background-color: $fill-red--lighter;
   color: $text-red;
