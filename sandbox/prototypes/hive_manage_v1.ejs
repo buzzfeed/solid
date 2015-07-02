@@ -29,7 +29,6 @@
   <body class="prototype-hive mx-auto py4">
     <h1 class="bold mb4">BuzzFeed Hive</h1>
     <div class="inline-block mb4">
-      <input type="text" class="text-input--small">
       <select class="select select--small">
         <option value="choose">All teams</option>
         <option value="amazing">BFF</option>
@@ -37,17 +36,12 @@
         <option value="fun">News</option> 
         <option value="fun">Life</option> 
       </select>
-      <select class="select select--small">
-        <option value="choose">All platforms</option>
-        <option value="amazing">BuzzFeed</option>
-        <option value="boring">Facebook</option>
-        <option value="fun">Instagram</option> 
-        <option value="fun">Tumblr</option> 
-        <option value="fun">Twitter</option> 
-        <option value="fun">Vine</option> 
-        <option value="fun">None</option> 
-      </select>
-      <input type="submit" value="Search" class="button button--primary button--small">
+      From: [date picker] To: [date picker]
+      <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
+      <label class="radio-label inline-block mr1" for="option_1">All assets</label>
+      <input type="radio" class="radio" id="option_2" value="option_2" name="options">
+      <label class="radio-label inline-block" for="option_2">Only my assets</label> 
+      <a href="#" class="button button--primary button--small">Filter</a>
     </div>
     <section class="clearfix mb2">  
       <div class="col col-3 pr1">
@@ -66,6 +60,7 @@
           <h6 class="text-right text-gray-lightest">May 8, 2015, 1:56 p.m.</h6>
           <h3>Mom tattoo</h3>
           <h5>By Zoe Burnett</h5>
+          <!-- Later, we'll add the icons of where this asset is published, like this:
           <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
             <use xlink:href="#tumblr"></use>
           </svg>
@@ -75,36 +70,19 @@
           <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
             <use xlink:href="#tweet"></use>
           </svg>
+          -->
       </div>
       <div class="col col-3 pr1">
           <img src="https://scontent-lga.cdninstagram.com/hphotos-xfa1/t51.2885-15/11226767_1604947256455775_1187032526_n.jpg" class="border">
           <h6 class="text-right text-gray-lightest">May 5, 2015, 10:08 a.m.</h6>
           <h3>Mom sorry I haven't called card</h3>
           <h5>By Adam Kurtz</h5>
-          <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
-            <use xlink:href="#tumblr"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-facebook-icon social-icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
-            <use xlink:href="#tweet"></use>
-          </svg>
       </div>
       <div class="col col-3 pr1">
           <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11249254_1391479781179994_1525186099_n.jpg" class="border">
           <h6 class="text-right text-gray-lightest">May 5, 2015, 9:32 a.m.</h6>
           <h3>Stages of eating an entire pizza</h3>
           <h5 >By Adam Kurtz</h5>
-          <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
-            <use xlink:href="#tumblr"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-facebook-icon social-icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
-            <use xlink:href="#tweet"></use>
-          </svg>
       </div>
     </section>
     <section class="clearfix">  
