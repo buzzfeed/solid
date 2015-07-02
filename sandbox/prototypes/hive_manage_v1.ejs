@@ -29,38 +29,38 @@
   <body class="prototype-hive mx-auto py4">
     <h1 class="bold mb4">BuzzFeed Hive</h1>
     <div class="inline-block mb4">
-      <select class="select">
+      <select class="select select--small">
         <option value="choose">All teams</option>
         <option value="amazing">BFF</option>
         <option value="boring">Buzz</option>
         <option value="fun">News</option> 
         <option value="fun">Life</option> 
       </select>
-      <select class="select">
-        <option value="choose">All platforms</option>
-        <option value="amazing">BuzzFeed</option>
-        <option value="boring">Facebook</option>
-        <option value="fun">Instagram</option> 
-        <option value="fun">Tumblr</option> 
-        <option value="fun">Twitter</option> 
-        <option value="fun">Vine</option> 
-        <option value="fun">Nowhere</option> 
-      </select>
-      <input type="submit" value="Filter">
+      From: [date picker] To: [date picker]
+      <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
+      <label class="radio-label inline-block mr1" for="option_1">All assets</label>
+      <input type="radio" class="radio" id="option_2" value="option_2" name="options">
+      <label class="radio-label inline-block" for="option_2">Only my assets</label> 
+      <a href="#" class="button button--primary button--small">Filter</a>
     </div>
     <section class="clearfix mb2">  
       <div class="col col-3 pr1">
           <a href="hive_create_v1">
-          <img src="http://placehold.it/300x300" class="border">
+          <!-- img src="http://placehold.it/300x300" class="border" -->
+          <div class="border-dashed text-center full-width" style="height:293px;width:293px;vertical-align: middle;display: table-cell;">
+            Drag and drop<br />
+            or click to upload
+          </div>
           <h6 class="text-right text-gray-lightest">buzzzz</h6>
           <h3>Create new asset</h3>
           </a>
       </div>
       <div class="col col-3 pr1">
-          <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11255688_811143125642874_1370881178_n.jpg" class="border">
+          <a href="hive_edit_v1"><img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11255688_811143125642874_1370881178_n.jpg" class="border"></a>
           <h6 class="text-right text-gray-lightest">May 8, 2015, 1:56 p.m.</h6>
           <h3>Mom tattoo</h3>
           <h5>By Zoe Burnett</h5>
+          <!-- Later, we'll add the icons of where this asset is published, like this:
           <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
             <use xlink:href="#tumblr"></use>
           </svg>
@@ -70,36 +70,19 @@
           <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
             <use xlink:href="#tweet"></use>
           </svg>
+          -->
       </div>
       <div class="col col-3 pr1">
           <img src="https://scontent-lga.cdninstagram.com/hphotos-xfa1/t51.2885-15/11226767_1604947256455775_1187032526_n.jpg" class="border">
           <h6 class="text-right text-gray-lightest">May 5, 2015, 10:08 a.m.</h6>
           <h3>Mom sorry I haven't called card</h3>
           <h5>By Adam Kurtz</h5>
-          <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
-            <use xlink:href="#tumblr"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-facebook-icon social-icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
-            <use xlink:href="#tweet"></use>
-          </svg>
       </div>
       <div class="col col-3 pr1">
           <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11249254_1391479781179994_1525186099_n.jpg" class="border">
           <h6 class="text-right text-gray-lightest">May 5, 2015, 9:32 a.m.</h6>
           <h3>Stages of eating an entire pizza</h3>
           <h5 >By Adam Kurtz</h5>
-          <svg viewBox="0 0 512 512" class="fill-tumblr-icon social-icon">
-            <use xlink:href="#tumblr"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-facebook-icon social-icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-          <svg viewBox="0 0 512 512" class="fill-twitter-icon social-icon">
-            <use xlink:href="#tweet"></use>
-          </svg>
       </div>
     </section>
     <section class="clearfix">  
