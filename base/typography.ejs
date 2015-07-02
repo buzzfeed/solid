@@ -155,7 +155,7 @@
   </div>
 
   <div class="mb3">
-    <p class="text-gray--lightest">.slab h1, slab .type-1<span class="type-6 ml1">(2.25rem, 36px)</span></p>
+    <p class="text-gray--lightest">.slab h1, slab .type-1<span class="type-6  ml1">(2.25rem, 36px)</span></p>
     <h1 class="slab">BuzzFeed is the social news and entertainment company</h1>   
   </div>
 
@@ -206,56 +206,33 @@
 
 <section class="xs-col-12 lg-col-9 mb4 border-bottom--lighter pb4">
   <h2 class="mb1 bold">Lists</h2>
-  <p class="mb3">Please note, there's no need to add a class for ordered and unordered lists, they get automatically get the styling below.</p>
+  <p class="mb3">Please note that there's no need to add a class for ordered and unordered lists, they inherit the default list styling below.</p>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Ordered</h3>
-      <p class="text-gray--lighter">For listing of explicitly ordered items.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Ordered<span class="type-4 regular text-gray--lightest ml1">ol</span></h4>
+    <p class="mb2">For listing of explicitly ordered items.</p>
       <ol>
         <li>John</li>
         <li>Paul</li>
         <li>George</li>
         <li>Ringo</li>
       </ol>
-
-<pre class="mt2"><code class="html"><%= '<ol>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-<%= '</ol>' %></code></pre>
-    </div>
   </div>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Unordered</h3>
-      <p class="text-gray--lighter">For items that are not explicitly ordered.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Unordered<span class="type-4 regular text-gray--lightest ml1">ul</span></h4>
+    <p class="mb2">For items that are not explicitly ordered.</p>
       <ul>
         <li>John</li>
         <li>Paul</li>
         <li>George</li>
         <li>Ringo</li>
       </ul>
-
-<pre class="mt2"><code class="html"><%= '<ul>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-  <%= '<li>…</li>' %>
-<%= '</ul>' %></code></pre>
-    </div>
   </div>
 
-  <div class="xs-col-12 lg-col-9 mb4 fill-gray--lighter rounded border">
-    <div class="p3">
-      <h3 class="bold">Unstyled</h3>
-      <p class="text-gray--lighter">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
-    </div>
-    <div class="fill-white p3">
+  <div class="xs-col-12 mb4">
+    <h4 class="bold">Unstyled<span class="type-4 regular text-gray--lightest ml1">.list-unstyled</span></h4>
+    <p class="mb2">Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
       <ul class="list-unstyled">
         <li>One</li>
         <li>Two</li>
@@ -263,13 +240,26 @@
         <li>Four</li>
         <li>Tell Me That You Love Me More</li>
       </ul>
+  </div>
 
-<pre class="mt2"><code class="html"><%= '<ul class="list-unstyled">' %>
+
+<pre class="mt2"><code class="html"><%= '<ol>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+<%= '</ol>' %>
+
+<%= '<ul>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+  <%= '<li>…</li>' %>
+<%= '</ul>' %>
+
+<%= '<ul class="list-unstyled">' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
   <%= '<li>…</li>' %>
 <%= '</ul>' %></code></pre>
-    </div>
-  </div>
+
 </section>
 <!--Flex-->
