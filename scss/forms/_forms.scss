@@ -18,7 +18,7 @@ $input-height-small: 2rem;
     position: relative;
     bottom: -1px;
     background-color: $fill-white;
-    border: 1px solid $fill-gray;
+    border: $border;
   }
 }
 
@@ -31,7 +31,7 @@ $input-height-small: 2rem;
   font-size: $type-4;
   height: $input-height;
   padding: .625rem .75rem;
-  border: 1px solid $fill-gray;
+  border: $border;
 }
 
 .select {
