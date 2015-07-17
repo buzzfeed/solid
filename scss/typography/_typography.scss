@@ -2,9 +2,10 @@
 // Typography Base Styles
 // --------------------------------------------------
 
-$link-blue: $text-gray;
-$link-gray: sdf;
-$link-gray-lightest: sdfsd;
+html {
+  font-size: 16px;
+  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif; // This is just for reference
+}
 
 body,
 h1,
@@ -47,7 +48,7 @@ h6,
   font-size: $type-6;
 
   &.slab {
-    font-family: "Proxima Nova";
+    font-family: "Proxima-Nova";
   }
 }
 
