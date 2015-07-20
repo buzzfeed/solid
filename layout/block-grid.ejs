@@ -62,15 +62,13 @@
     </li>
   </ul>
 
-  <p class="mb2">And the code:</p>
+  <p class="mb2"><span class="text-red">Important note:</span> When developing a Block Grid, you'll need to place all <code class="js-highlight">block-grid-item</code> elements on the same line to avoid the extra space added automatically by the html. Here's the code:</p>
 
   <div class="mb4 pb4">
 
-<pre><code class="html"><%='<div class="block-grid block-grid-3">'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-<%='</div>'%></code></pre>
+<pre><code class="html"><%='<ul class="block-grid block-grid-3">'%>
+  <%='<li class="block-grid-item">Content goes here.</li><li class="block-grid-item">Content goes here.</li><li class="block-grid-item">Content goes here.</li>'%>
+<%='</ul>'%></code></pre>
 
   </div>
 
@@ -140,11 +138,9 @@
 
   <div class="mb4 pb4">
 
-<pre><code class="html"><%='<div class="block-grid xs-block-grid-2 md-block-grid-3 lg-block-grid-4">'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-  <%='<div class="block-grid-item">Content goes here.</div>'%>
-<%='</div>'%></code></pre>
+<pre><code class="html"><%='<ul class="block-grid xs-block-grid-2 md-block-grid-3 lg-block-grid-4">'%>
+  <%='<li class="block-grid-item">Content goes here.</li><li class="block-grid-item">Content goes here.</li><li class="block-grid-item">Content goes here.</li>'%>
+<%='</ul>'%></code></pre>
 
   </div>
 
