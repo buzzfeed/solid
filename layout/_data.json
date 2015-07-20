@@ -2,6 +2,9 @@
   "grid": {
     "title": "Grid"
   },
+  "block-grid": {
+    "title": "Block Grid"
+  },
   "responsive": {
     "title": "Responsive"
   },
