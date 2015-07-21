@@ -1,6 +1,6 @@
 // Variables
 
-$gutter: .625rem;
+$gutter: .5rem;
 
 
 // Base Column Float
@@ -120,9 +120,9 @@ $gutter: .625rem;
 // Add gutters to the full grid
 
 .gutters {
-  margin: 0 ($gutter * -1);
+  margin: 0 (-$gutter);
 
-  .col {
+  >.col {
     padding: 0 $gutter;
   }
 }
