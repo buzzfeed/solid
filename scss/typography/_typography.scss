@@ -14,38 +14,38 @@ h3,
 h4,
 h5,
 h6,
-.type-1,
-.type-2,
-.type-3,
-.type-4,
-.type-5,
-.type-6 {
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6 {
   line-height: $line-height;
 }
 
 h1 {
-  font-size: $type-1;
+  font-size: $text-1;
 }
 
 h2 {
-  font-size: $type-2;
+  font-size: $text-2;
 }
 
 h3 {
-  font-size: $type-3;
+  font-size: $text-3;
 }
 
 h4 {
-  font-size: $type-4;
+  font-size: $text-4;
 }
 
 h5 {
-  font-size: $type-5;
+  font-size: $text-5;
 }
 
 h6,
-.type-6 {
-  font-size: $type-6;
+.text-6 {
+  font-size: $text-6;
 
   &.slab {
     font-family: "Proxima-Nova";
@@ -63,34 +63,34 @@ a {
   }
 }
 
-// Type Size Classes + Responsive Prefixes
+// Text Size Classes + Responsive Prefixes
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
 
   @include media-query($breakpoint-name) {
-    .#{$breakpoint-prefix}type-1 {
-      font-size: $type-1;
+    .#{$breakpoint-prefix}text-1 {
+      font-size: $text-1;
     }
 
-    .#{$breakpoint-prefix}type-2 {
-      font-size: $type-2;
+    .#{$breakpoint-prefix}text-2 {
+      font-size: $text-2;
     }
 
-    .#{$breakpoint-prefix}type-3 {
-      font-size: $type-3;
+    .#{$breakpoint-prefix}text-3 {
+      font-size: $text-3;
     }
 
-    .#{$breakpoint-prefix}type-4 {
-      font-size: $type-4;
+    .#{$breakpoint-prefix}text-4 {
+      font-size: $text-4;
     }
 
-    .#{$breakpoint-prefix}type-5 {
-      font-size: $type-5;
+    .#{$breakpoint-prefix}text-5 {
+      font-size: $text-5;
     }
 
-    .#{$breakpoint-prefix}type-6 {
-      font-size: $type-6;
+    .#{$breakpoint-prefix}text-6 {
+      font-size: $text-6;
     }
   }
 }
@@ -184,14 +184,14 @@ i,
   }
 }
 
-// Caponi should never be an h6 or .type-6
+// Caponi should never be an h6 or .text-6
 
 // scss-lint:disable QualifyingElement
 .slab h6,
 // scss-lint:enable QualifyingElement
 h6.slab,
-.type-6 .slab,
-.slab.type-6 {
+.text-6 .slab,
+.slab.text-6 {
   font-family: "Proxima-Nova";
   font-weight: normal;
 }
