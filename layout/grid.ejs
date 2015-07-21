@@ -1,6 +1,6 @@
-<div class="mb4 pb2">
+<div class="mb4 pb4">
 
-  <h3 class="bold mb1">The Grid</h3>
+  <h2 class="bold mb1">The Grid</h2>
 
   <p class="mb1">For laying out pages, BuzzFeed uses a 12-column, fluid grid system (which can be made responsive using our breakpoint prefixes, we'll get to that later). In order to begin using the grid, wrap your main grid columns in a <code class="js-highlight">.clearfix</code> container. You'll then need to use our <code class="js-highlight">.col</code> and <code class="js-highlight">.col-n</code> (where n is 1-12) classes to both float and then set the width of each column. Any given row can be made up of up to 12-columns, but can be less if you'd like!</p>
 
@@ -21,15 +21,50 @@
 <%='</div>'%></code></pre>
 
 </div>
-<div class="mb4 pb2">
+<div class="mb4 pb4">
 
-  <h3 class="bold mb1">Column Spacing and Offsets</h3>
+  <h2 class="bold mb1">Gutters, Column Padding and Offsets</h2>
 
   <p class="mb4">In order to add space around your columns, use our offset classes (which we'll get to momentarily) or our <a href="/layout/utilities">padding utility classes</a>  and wrap your column's content in a separate container. <b>Do not use margin or your grid will wrap.</b></p>
 
-  <h4 class="bold mb1">Using Padding to Space Columns</h4>
+  <h3 class="bold mb1">Automatic Gutters</h3>
 
-  <p class="mb3">Here's an example of using padding classes to space your grid columns:</p>
+  <p class="mb3">The easiest way to set up column gutters is to add a <code class="js-highlight">.gutters</code> class to your wrapping div, which results in a 1rem gutter between each column. Note that nesting columns do not receive automatic gutters, allowing you the flexibility to add them yourself with another <code class="js-highlight">.gutters</code> class or with our padding utility classes:
+
+  <div class="clearfix gutters mb3">
+    <div class="col col-4">
+      <div class="p1 border rounded">.col</div>
+    </div>
+    <div class="col col-4">
+      <div class="p1 border rounded">.col</div>
+    </div>
+    <div class="col col-4">
+      <div class="col col-4 p1 border rounded">.col</div>
+      <div class="col col-4 p1 border rounded">.col</div>
+      <div class="col col-4 p1 border rounded">.col</div>
+    </div>
+  </div>
+
+  <p class="mb1">Here's how it works in code</p>
+
+   <pre class="mb4"><code class="html"><%='<div class="clearfix gutters">'%>
+  <%='<div class="col col-4">'%>
+    <%='<div class="p1 border rounded">.col</div>'%>
+  <%='</div>'%>
+  <%='<div class="col col-4">'%>
+    <%='<div class="p1 border rounded">.col</div>'%>
+  <%='</div>'%>
+  <%='<div class="col col-4">'%>
+    <%='<div class="col col-4 p1 border rounded">.col</div>'%>
+    <%='<div class="col col-4 p1 border rounded">.col</div>'%>
+    <%='<div class="col col-4 p1 border rounded">.col</div>'%>
+  <%='</div>'%>
+<%='</div>'%></code></pre>
+
+
+  <h3 class="bold mb1">Using Padding to Space Columns</h3>
+
+  <p class="mb3">Here's an example of using <a href="/layout/utilities">padding utility classes</a> to space your grid columns:</p>
 
   <div class="clearfix mb3">
     <div class="col col-3 pr1">
@@ -58,7 +93,7 @@
 <%='</div>'%></code></pre>
 
 
-  <h4 class="bold mb1">Column Offsets</h4>
+  <h3 class="bold mb1">Column Offsets</h3>
 
   <p class="mb3">Use the <code class="js-highlight">.offset-n</code> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <code class="js-highlight">.offset-1</code> moves your div to the left by one column width, then <code class="js-highlight">.offset-2</code> moves it to column widths, and so on. Here's an example:</p>
 
@@ -72,9 +107,9 @@
 
 
 </div>
-<div class="mb4 pb2">
+<div class="mb4 pb4">
 
-  <h3 class="bold mb1">Nesting Columns</h3>
+  <h2 class="bold mb1">Nesting Columns</h2>
 
   <p class="mb3">Since our grid is percentage-based, it can be nested within itself. When you nest a new grid, the columns are sized relative to the parent. Like so:</p>
 
@@ -113,7 +148,7 @@
 </div>
 
 <div class="mb4 clearfix">
-  <h3 class="bold mb1">Responsive Grid</h3>
+  <h2 class="bold mb1">Responsive Grid</h2>
 
   <p class="mb3">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width, <code class="js-highlight">.col-12</code>, at the smallest breakpoint, and half width, <code class="js-highlight">.col-6</code>, at the medium breakpoint, the div would get classes <code class="js-highlight">.xs-col-12</code> <code class="js-highlight">.md-col-6.</code> <b>Resize your browser to see the full effect below:</b></p>
 
