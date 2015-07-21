@@ -111,9 +111,6 @@ $button-height-small: 2rem;
   height: $button-height-small;
 }
 
-.button+.button {
-  margin-left: .375rem;
-}
 
 .segmented-button {
   position: relative;
