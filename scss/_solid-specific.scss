@@ -16,7 +16,7 @@ code {
     padding: 2px 4px;
     border-radius: 2px;
     background-color: $fill-gray--lighter;
-    font-size: $type-6;
+    font-size: $text-6;
     color: $js-highlight-magenta;
   }
   
@@ -24,7 +24,7 @@ code {
   &.hljs { 
     background-color: $fill-gray--lighter; 
     padding: $space-2;
-    font-size: $type-5;
+    font-size: $text-5;
     line-height: 1.75;
   }
 }

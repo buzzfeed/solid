@@ -28,7 +28,7 @@ $input-height-small: 2rem;
 .date-input {
   font-family: inherit;
   background: $fill-white;
-  font-size: $type-4;
+  font-size: $text-4;
   height: $input-height;
   padding: .625rem .75rem;
   border: $border;
@@ -49,13 +49,13 @@ $input-height-small: 2rem;
 .select--small,
 .text-input--small,
 .date-input--small {
-  font-size: $type-5; 
+  font-size: $text-5; 
   height: $input-height-small;
   padding: .5rem .625rem;
 }
 
 .form-label--small {
-  font-size: $type-5;
+  font-size: $text-5;
 }
 
 .select--small {
@@ -141,13 +141,13 @@ $input-height-small: 2rem;
   color: $text-gray--lightest;
   display: block;
   margin-top: $space-1;
-  font-size: $type-5; 
+  font-size: $text-5; 
 }
 
 .form-feedback {
   display: block;
   margin-top: $space-1; 
-  font-size: $type-5; 
+  font-size: $text-5; 
 }
 
 .form-warning {

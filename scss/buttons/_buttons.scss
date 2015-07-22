@@ -42,7 +42,7 @@ $button-height-small: 2rem;
   font-family: inherit;
   height: $button-height;
   padding: .625rem .875rem;
-  font-size: $type-4;
+  font-size: $text-4;
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
@@ -106,7 +106,7 @@ $button-height-small: 2rem;
 }
 
 .button--small {
-  font-size: $type-5;
+  font-size: $text-5;
   padding: .375rem .625rem;
   height: $button-height-small;
 }
@@ -152,7 +152,7 @@ $button-height-small: 2rem;
 .segmented-button-label--small {
   padding: .5rem .625rem;
   height: $button-height-small;
-  font-size: $type-5; 
+  font-size: $text-5; 
 }
 
 // This overrides link styles so that button text doesn't inherit global a styling
