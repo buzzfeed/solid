@@ -13,7 +13,7 @@
           <% file = val[i] %>
           <% if (filter.test(file) && !/^404\.html/.test(file)) { %>
             <% file = file.replace(replace, ""); %>
-            <li class="mb1"><a target="_blank" href="<%= tail + file %>"><%= file %></a></li>
+            <li class="xs-mb1"><a target="_blank" href="<%= tail + file %>"><%= file %></a></li>
           <% } %>
         <% } %>
       <% } else { %>
@@ -23,16 +23,16 @@
   <% } %>
 <% } %>
 
-<section class="mb4">
-  <h3 class="mb2 bold">The Sandbox for Prototyping</h3>
-  <p class="mb2">The Sandbox is an open and safe environment for designers to implement working prototypes and demos using Solid as the CSS framework. To use, simply add a template file inside the Prototypes folder in Sandbox.</p>
-  <p class="mb2">Each template created in the Prototypes folder will need it's own head and body tags, since that's been stripped from this layout to allow for more customization and flexibility. To include your own CSS overrides, create a stylesheet for your prototype inside /scss/prototypes. Include the stylesheet underneath the base.css include (see below). A default wrapper example is inside example_prototype.ejs for replicating. The wrapper should look something like this: </p>
+<section class="xs-mb4">
+  <h3 class="xs-mb2 bold">The Sandbox for Prototyping</h3>
+  <p class="xs-mb2">The Sandbox is an open and safe environment for designers to implement working prototypes and demos using Solid as the CSS framework. To use, simply add a template file inside the Prototypes folder in Sandbox.</p>
+  <p class="xs-mb2">Each template created in the Prototypes folder will need it's own head and body tags, since that's been stripped from this layout to allow for more customization and flexibility. To include your own CSS overrides, create a stylesheet for your prototype inside /scss/prototypes. Include the stylesheet underneath the base.css include (see below). A default wrapper example is inside example_prototype.ejs for replicating. The wrapper should look something like this: </p>
 
-  <pre><code class="html"><%=' <!-- This is just an example. Include this wrapper into your prototype templates to get started -->'%><br><%=' <!DOCTYPE html>'%><br><%=' <html>'%><br><%='  <head>'%><br><%='   <title>Prototype Example</title>'%><br><%='   <link rel="stylesheet" type="text/css" href="/scss/base.css">'%><br><%='   <!--Your Custom CSS File (if you need it)-->'%><br><%='   <!--<link rel="stylesheet" type="text/css" href="/scss/prototypes/your-custom-css.css">-->'%><br><%='  </head>'%><br><%='  <body>'%><br><%='   <!-- Your content goes here -->'%><br><%='    <h1 class="p4">This is an example of how your .ejs template should be formatted.</h1>'%><br><%='    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>'%><br><%='  </body>'%><br><%=' </html>'%></code></pre>
+  <pre><code class="html"><%=' <!-- This is just an example. Include this wrapper into your prototype templates to get started -->'%><br><%=' <!DOCTYPE html>'%><br><%=' <html>'%><br><%='  <head>'%><br><%='   <title>Prototype Example</title>'%><br><%='   <link rel="stylesheet" type="text/css" href="/scss/base.css">'%><br><%='   <!--Your Custom CSS File (if you need it)-->'%><br><%='   <!--<link rel="stylesheet" type="text/css" href="/scss/prototypes/your-custom-css.css">-->'%><br><%='  </head>'%><br><%='  <body>'%><br><%='   <!-- Your content goes here -->'%><br><%='    <h1 class="xs-p4">This is an example of how your .ejs template should be formatted.</h1>'%><br><%='    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>'%><br><%='  </body>'%><br><%=' </html>'%></code></pre>
 </section>
 
 <section>
-  <h3 class="mb1 bold">Prototypes</h3>
+  <h3 class="xs-mb1 bold">Prototypes</h3>
   <ul>
     <% tree(public.sandbox.prototypes, "/sandbox/prototypes/") %>
   </ul>

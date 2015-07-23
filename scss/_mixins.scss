@@ -1,10 +1,9 @@
-//Generate Breakpoint Prefixes
+//Generate Breakpoint Prefixes2
 
 // all of the breakpoint names and values
 // we may use this a lot, keep them somwhere safe
 $breakpoints: (
-  all: 0,
-  xs: 0rem,
+  xs: 0,
   sm: 40rem,
   md: 52rem,
   lg: 64rem,
@@ -13,7 +12,7 @@ $breakpoints: (
 // returns the apropriate media query
 // for the given breakpoint name
 @mixin media-query($breakpoint) {
-  @if $breakpoint == "all" {
+  @if $breakpoint == "xs" {
     @content;
   } @else {
     @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
@@ -25,9 +24,25 @@ $breakpoints: (
 // generates a prefix based on the breakpoint
 // name it is passed
 @function breakpoint-prefix($breakpoint) {
-  $breakpoint-prefix: if($breakpoint != all, "#{$breakpoint}-", null);
+  $breakpoint-prefix: "#{$breakpoint}-";
   @return $breakpoint-prefix;
 };
+
+// nest content inside breakpoint prefix classes
+// in the apropriate media query block
+@mixin generate-breakpoint-prefixes {
+ @each $breakpoint-name, $breakpoint-value in $breakpoints {
+   $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
+   
+   @include media-query($breakpoint-name){
+     
+     // Columns
+     .#{$breakpoint-prefix} {
+       @content;
+     }
+   }
+ }
+}
 
 // hide from humans not screen readers
 @mixin visuallyhidden {
