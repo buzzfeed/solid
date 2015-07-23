@@ -1,4 +1,6 @@
-// Set up (please don't muss with this order).
+// Import order is extremely important. Please be mindful when adding to or touching this file.
+
+// Setup
 
 @import "variables";
 @import "mixins";
@@ -6,16 +8,16 @@
 @import "base/base";
 @import "fonts/font-faces";
 
-// Solid Sections
+// Solid Modules
 
-@import "colors/colors";
-@import "typography/typography";
+@import 'messaging/messaging';
+@import "buttons/buttons";
+@import "forms/forms";
 @import "tables/tables";
 @import "grid/grid";
 @import "block-grid/block-grid";
-@import "forms/forms";
-@import "buttons/buttons";
-@import 'messaging/messaging';
+@import "typography/typography";
+@import "colors/colors";
 
 // Utilities and Solid-Specific Files Must Be Called Last.
 
