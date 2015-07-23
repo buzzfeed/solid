@@ -43,13 +43,8 @@ h5 {
   font-size: $text-5;
 }
 
-h6,
-.text-6 {
-  font-size: $text-6;
-
-  &.slab {
-    font-family: "Proxima-Nova";
-  }
+h6 {
+  font-size: $type-6;
 }
 
 // wouldn't it make more sense to @extend .link-blue; here? 
@@ -184,7 +179,8 @@ i,
   }
 }
 
-// Caponi should never be an h6 or .text-6
+
+// Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
 
 // scss-lint:disable QualifyingElement
 .slab h6,

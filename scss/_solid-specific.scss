@@ -11,12 +11,8 @@ code {
 
   // Inline code blocks
   &.js-highlight {
-    border: $border;
     display: inline-block;
-    padding: 2px 4px;
-    border-radius: 2px;
-    background-color: $fill-gray--lighter;
-    font-size: $text-6;
+    font-size: $type-5;
     color: $js-highlight-magenta;
   }
   
