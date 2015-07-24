@@ -11,11 +11,34 @@
   vertical-align: top;
 }
 
-@include generate-breakpoint-prefixes {
-  &block-grid-1 .block-grid-item { width: 100%; }
-  &block-grid-2 .block-grid-item { width: percentage(1/2); }
-  &block-grid-3 .block-grid-item { width: percentage(1/3); }
-  &block-grid-4 .block-grid-item { width: percentage(1/4); }
-  &block-grid-5 .block-grid-item { width: percentage(1/5); }
-  &block-grid-6 .block-grid-item { width: percentage(1/6); }
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+
+  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);  
+
+  @include media-query($breakpoint-name) {
+
+    .#{$breakpoint-prefix}block-grid-1 .block-grid-item {
+      width: 100%;
+    }
+
+    .#{$breakpoint-prefix}block-grid-2 .block-grid-item {
+      width: percentage(1/2);
+    }
+
+    .#{$breakpoint-prefix}block-grid-3 .block-grid-item {
+      width: percentage(1/3);
+    }
+
+    .#{$breakpoint-prefix}block-grid-4 .block-grid-item {
+      width: percentage(1/4);
+    }
+
+    .#{$breakpoint-prefix}block-grid-5 .block-grid-item {
+      width: percentage(1/5);
+    }
+
+    .#{$breakpoint-prefix}block-grid-6 .block-grid-item {
+      width: percentage(1/6);
+    }
+  }
 }

@@ -1,35 +1,35 @@
-<div class="xs-mb4 xs-pb2">
-	<h3 class="bold xs-mb1">An Introduction</h3>
-	<p class="xs-mb3">We've made our utility, typography and grid classes even more powerful by adding responsive prefixes. Using the prefixes xs, sm, md, and lg, you can quickly and easily adjust your layout and content as a user scales their browser down.</p>
+<div class="mb4 pb2">
+	<h3 class="bold mb1">An Introduction</h3>
+	<p class="mb3">We've made our utility, typography and grid classes even more powerful by adding responsive prefixes. Using the prefixes xs, sm, md, and lg, you can quickly and easily adjust your layout and content as a user scales their browser down.</p>
 
-  <p class="bold xs-mb1">Resize your browser to see our Extra Small, Small, Medium and Large breakpoints.</p>
+  <p class="bold mb1">Resize your browser to see our Extra Small, Small, Medium and Large breakpoints.</p>
 
-  <div class="xs-mb1">
+  <div class="mb1">
   	<div class="xs-hide lg-show text-green">Large</div>
   	<div class="xs-hide md-show lg-hide text-orange">Medium</div>
   	<div class="xs-hide sm-show md-hide text-blue">Small</div>
   	<div class="xs-show sm-hide text-red">Extra Small</div>
   </div>
-  <div class="clearfix xs-mb3">
-    <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 xs-border xs-p1">
+  <div class="clearfix mb3">
+    <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">
       <p class="xs-show sm-hide">.xs-col-12</p>
       <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
       <p class="xs-show sm-hide">.xs-col-12</p>
       <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
       <p class="xs-show sm-hide">.xs-col-12</p>
       <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
       <p class="xs-hide lg-show">.lg-col-3</p>
     </div>
-    <div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">
+    <div class="col xs-col-12 md-col-6 lg-col-3 border p1">
       <p class="xs-show sm-hide">.xs-col-12</p>
       <p class="xs-hide sm-show md-hide">.sm-col-12</p>
       <p class="xs-hide md-show lg-hide">.md-col-6</p>
@@ -37,28 +37,28 @@
     </div>
   </div>
 
-  <p>This is achieved with the markup below. As you can see, we're using our <code class="js-highlight">.xs-show</code> and <code class="js-highlight">.xs-hide</code> utility classes, but adding breakpoint prefixes to determine when to xs-show and when to xs-hide each div:</p>
+  <p>This is achieved with the markup below. As you can see, we're using our <code class="js-highlight">.show</code> and <code class="js-highlight">.hide</code> utility classes, but adding breakpoint prefixes to determine when to show and when to hide each div:</p>
 
-  <pre><code class="html"><%= '<div class="clearfix xs-mb3">' %>
-  <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 xs-border xs-p1">' %>
+  <pre><code class="html"><%= '<div class="clearfix mb3">' %>
+  <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 border p1">' %>
     <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
     <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
     <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
     <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
   <%= '</div>' %>
-  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
     <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
     <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
     <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
     <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
   <%= '</div>' %>
-  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
     <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
     <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
     <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
     <%= '<p class="xs-hide lg-show">.lg-col-3</p>' %>
   <%= '</div>' %>
-  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 xs-border xs-p1">' %>
+  <%= '<div class="col xs-col-12 md-col-6 lg-col-3 border p1">' %>
     <%= '<p class="xs-show sm-hide">.xs-col-12</p>' %>
     <%= '<p class="xs-hide sm-show md-hide">.sm-col-12</p>' %>
     <%= '<p class="xs-hide md-show lg-hide">.md-col-6</p>' %>
@@ -68,11 +68,11 @@
 
 </div>
 
-<div class="xs-mb4 xs-pb2">
+<div class="mb4 pb2">
 
-	<h3 class="bold xs-mb1">How It Works</h3>
+	<h3 class="bold mb1">How It Works</h3>
 
-	<p class="xs-mb3">Unlike typical responsive systems, Solid works responsively from the lowest breakpoint and up, as opposed to largest-to-smallest. This means thinking mobile-first and working our way up to our desktop layout when writing our markup.</p>
+	<p class="mb3">Unlike typical responsive systems, Solid works responsively from the lowest breakpoint and up, as opposed to largest-to-smallest. This means thinking mobile-first and working our way up to our desktop layout when writing our markup.</p>
   
   <table class="table-border">
     <tr>
@@ -99,11 +99,11 @@
 
 </div>
 
-<div class="xs-mb4 xs-pb2">
+<div class="mb4 pb2">
 
-  <h3 class="bold xs-mb1">What can I use these with?</h3>
+  <h3 class="bold mb1">What can I use these with?</h3>
 
-  <p class="xs-mb3">Not all our utility classes are responsive. We've selected a set that seems relevant and useful, rather than make everything responsive. Below is a list of what's possible to make responsive by default:</p>
+  <p class="mb3">Not all our utility classes are responsive. We've selected a set that seems relevant and useful, rather than make everything responsive. Below is a list of what's possible to make responsive by default:</p>
 
   <table class="table-border">
     <tr>
@@ -111,15 +111,15 @@
       <th>Description</th>
     </tr>
     <tr>
-      <td>.xs-col-1 to .xs-col-12</td>
+      <td>.col-1 to .col-12</td>
       <td><a href="/layout/grid">Our grid system.</a></td>
     </tr>
     <tr>
-      <td>.xs-offset-1 to .xs-offset-12</td>
+      <td>.offset-1 to .offset-12</td>
       <td>Offset classes for the grid columns.</td>
     </tr>
     <tr>
-      <td>.xs-text-1 to .xs-text-6</td>
+      <td>.text-1 to .text-6</td>
       <td>Our type system.</td>
     </tr>
     <tr>
@@ -128,23 +128,23 @@
     </tr>
     <tr>
       <td>.display-*</td>
-      <td>xs-inline, xs-block, xs-inline-block</td>
+      <td>inline, block, inline-block</td>
     </tr>
     <tr>
-      <td>.xs-float-*</td>
+      <td>.float-*</td>
       <td>left, right, none</td>
     </tr>
     <tr>
-      <td>.xs-overflow-*</td>
+      <td>.overflow-*</td>
       <td>hidden, auto, scroll</td>
     </tr>
     <tr>
-      <td>.xs-show</td>
-      <td>xs-show content.</td>
+      <td>.show</td>
+      <td>Show content.</td>
     </tr>
     <tr>
-      <td>.xs-hide</td>
-      <td>xs-hide content.</td>
+      <td>.hide</td>
+      <td>Hide content.</td>
     </tr>
     <tr>
       <td>.m*</td>
@@ -155,24 +155,24 @@
       <td>Padding</td>
     </tr>
     <tr>
-      <td>.xs-half-width</td>
+      <td>.half-width</td>
       <td>Half the parent width.</td>
     </tr>
     <tr>
-      <td>.xs-full-width</td>
+      <td>.full-width</td>
       <td>100% width.</td>
     </tr>
     <tr>
-      <td>.xs-full-height</td>
+      <td>.full-height</td>
       <td>100% height.</td>
     </tr>
     <tr>
-      <td>.xs-fit</td>
+      <td>.fit</td>
       <td>100% max-width.</td>
     </tr>
     <tr>
-      <td>.xs-border, .xs-border-*</td>
-      <td>xs-borders.</td>
+      <td>.border, .border-*</td>
+      <td>Borders.</td>
     </tr>
   </table>
 

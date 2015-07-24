@@ -144,7 +144,7 @@ linters:
 
   SpaceBeforeBrace:
     enabled: true
-    allow_single_line_padding: true
+    allow_single_line_padding: false
 
   SpaceBetweenParens:
     enabled: true
