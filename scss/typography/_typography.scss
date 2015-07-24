@@ -59,35 +59,13 @@ a {
 }
 
 // Text Size Classes + Responsive Prefixes
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-
-  @include media-query($breakpoint-name) {
-    .#{$breakpoint-prefix}text-1 {
-      font-size: $text-1;
-    }
-
-    .#{$breakpoint-prefix}text-2 {
-      font-size: $text-2;
-    }
-
-    .#{$breakpoint-prefix}text-3 {
-      font-size: $text-3;
-    }
-
-    .#{$breakpoint-prefix}text-4 {
-      font-size: $text-4;
-    }
-
-    .#{$breakpoint-prefix}text-5 {
-      font-size: $text-5;
-    }
-
-    .#{$breakpoint-prefix}text-6 {
-      font-size: $text-6;
-    }
-  }
+@include generate-breakpoint-prefixes {
+  &text-1 { font-size: $text-1; }
+  &text-2 { font-size: $text-2; }
+  &text-3 { font-size: $text-3; }
+  &text-4 { font-size: $text-4; }
+  &text-5 { font-size: $text-5; }
+  &text-6 { font-size: $text-6; }
 }
 
 // Typography Emphasis and Styling
@@ -115,26 +93,11 @@ i,
 
 // Text Alignment + Responsive Prefixes
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  $breakpoint-prefix: breakpoint-prefix($breakpoint-name);
-
-  @include media-query($breakpoint-name) {
-    .#{$breakpoint-prefix}text-left {
-      text-align: left;
-    }
-
-    .#{$breakpoint-prefix}text-center {
-      text-align: center;
-    }
-
-    .#{$breakpoint-prefix}text-right {
-      text-align: right;
-    }
-
-    .#{$breakpoint-prefix}text-justify {
-      text-align: justify;
-    }
-  }
+@include generate-breakpoint-prefixes {
+  &text-left { text-align: left; }
+  &text-center { text-align: center; }
+  &text-right { text-align: right; }
+  &text-justify { text-align: justify; }
 }
 
 .nowrap {
