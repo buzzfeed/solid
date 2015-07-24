@@ -13,24 +13,22 @@ img { max-width: 100%; height: auto; }
 
 
 // Layout
+.overflow-hidden { overflow: hidden; }
+.overflow-auto   { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+
+.float-left  { float: left; }
+.float-right { float: right; }
+.float-none  { float: none; }
 
 // Some Layout Classes + Responsive Prefixes
 @include generate-breakpoint-prefixes {
-
   &inline       { display: inline; }
   &block        { display: block; }
   &inline-block { display: inline-block; }
 
   &show { display: block; }
   &hide { display: none; }
-
-  &overflow-hidden { overflow: hidden; }
-  &overflow-auto   { overflow: auto; }
-  &overflow-scroll { overflow: scroll; }
-
-  &float-left  { float: left; }
-  &float-right { float: right; }
-  &float-none  { float: none; }
 
   &half-width  { width: 50%; }
   &full-width  { width: 100%; }
