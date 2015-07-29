@@ -18,6 +18,9 @@
   "devDependency": {
     "harp": "^0.15.2"
   },
+  "files": [
+    "lib"
+  ],
   "contributors": [
     {
       "name": "Emily Brick",
