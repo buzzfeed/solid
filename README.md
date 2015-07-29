@@ -2,6 +2,21 @@
 
 Solid is a base style library. It will be used as the core styling for Buzzfeed products.
 
+## Including Solid in Your Project
+
+### Dependencies
+You must have NPM installed. If you have installed the [Buzzfeed webapp](https://github.com/buzzfeed/buzzfeed) congrats! You already do.
+
+### Install
+Append the repository to your project's package.json's dependency list:
+ ```
+ "bfwd": "git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION>"
+ ```
+This will give you `solid.scss` and all of its scss files inside `node_modules`. This package only includes the static, uncompiled SCSS files. Whether you want to build them into your project with Grunt, Gulp, etc. is up to you.
+
+## Building the Solid Styleguide
+The solid styleguide lets you view Solid along with all of its documentation.
+
 ## Set Up
 
 ### Dependencies

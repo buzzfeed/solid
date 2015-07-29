@@ -19,7 +19,6 @@
 @import "typography/typography";
 @import "colors/colors";
 
-// Utilities and Solid-Specific Files Must Be Called Last.
+// Utilities Must Be Called Last.
 
 @import "utilities/utilities";
-@import "solid-specific";
