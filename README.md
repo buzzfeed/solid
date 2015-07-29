@@ -10,7 +10,7 @@ You must have NPM installed. If you have installed the [Buzzfeed webapp](https:/
 ### Install
 Append the repository to your project's package.json's dependency list:
  ```
- "bfwd": "git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION>"
+ "solid": "git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION>"
  ```
 This will give you `solid.scss` and all of its scss files inside `node_modules`. This package only includes the static, uncompiled SCSS files. Whether you want to build them into your project with Grunt, Gulp, etc. is up to you.
 
