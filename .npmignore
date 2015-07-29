@@ -1,13 +1,2 @@
-# ignore all files
-*
-
-# except scss files
-!*.scss
-!lib/*
-
-# except for fonts
-!lib/fonts/*
-!lib/fonts/*/*
-
-# also ignore Solid styleguide specific scss
+# ignore solid specific SCSS
 lib/solid-specific.scss
