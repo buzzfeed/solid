@@ -12,6 +12,11 @@ Append the repository to your project's package.json's dependency list:
  ```
  "solid": "git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION>"
  ```
+or using Bower:
+```
+bower install git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION> --save
+```
+
 This will give you `solid.scss` and all of its scss files inside `node_modules/solid/lib`. This package includes the static, uncompiled SCSS files. Whether you want to build them into your project with Grunt, Gulp, etc. is up to you.
 
 Including the package using a github URL will also include all of the styleguide's template `.ejs` files. Please disregard.
@@ -96,7 +101,7 @@ To add documentation to the `$text-2` variable in css:
 ```
 
 
-To add documentation to an `<h2>` in html, a `<p>` in html with class `.text-1`, and the `$text-1` variable in css all in the same `<pre>` tag: 
+To add documentation to an `<h2>` in html, a `<p>` in html with class `.text-1`, and the `$text-1` variable in css all in the same `<pre>` tag:
 
 ```
 <pre>
