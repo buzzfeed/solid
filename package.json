@@ -15,9 +15,6 @@
     "url": "https://github.com/buzzfeed/solid/issues"
   },
   "homepage": "https://github.com/buzzfeed/solid",
-  "devDependency": {
-    "harp": "^0.15.2"
-  },
   "files": [
     "lib"
   ],
@@ -83,5 +80,8 @@
       "deletions": "na",
       "hireable": false
     }
-  ]
+  ],
+  "devDependencies": {
+    "harp": "^0.15.2"
+  }
 }
