@@ -47,12 +47,14 @@ h6, .text-6 {
   font-size: $text-6;
 }
 
+
+// This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
 a {
   text-decoration: none; 
-  color: $link-blue;
+  color: $text-blue;
 
   &:hover {
-    color: darken($link-blue, 20%);
+    color: darken($text-blue, 20%);
     transition: color .3s ease 0s;
   }
 }
