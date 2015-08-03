@@ -5,7 +5,7 @@
 
   <ol class="list-unstyled solid-nav">
     <li>
-      <h2 class="xs-text-4 bold">Base</h2>
+      <h2 class="text-4 bold">Base</h2>
     </li>
     <% for(var slug in public.base._data){ %>
     <% var page = public.base %>
@@ -15,7 +15,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-4 bold xs-mt2">Interface</h2>
+      <h2 class="text-4 bold xs-mt2">Interface</h2>
     </li>
     <% for(var slug in public.interface._data){ %>
     <% var page = public.interface %>
@@ -25,7 +25,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-4 bold xs-mt2">Layout</h2>
+      <h2 class="text-4 bold xs-mt2">Layout</h2>
     </li>
     <% for(var slug in public.layout._data){ %>
     <% var page = public.layout %>
@@ -35,7 +35,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-4 bold xs-mt2">Resources</h2>
+      <h2 class="text-4 bold xs-mt2">Resources</h2>
     </li>
     <% for(var slug in public.resources._data){ %>
     <% var page = public.resources %>
@@ -54,14 +54,14 @@
 <!-- Mobile Nav -->
 
 <nav class="xs-col-12 fill-white xs-show sm-hide">
-  <a href="#" class="xs-text-2 vertical-center xs-block xs-p2 fill-gray--lighter xs-border-bottom--lighter text-gray bold nav-carat" onclick="toggle_visibility('solid-menu');"><span class="solid-logo-xs">Solid</span><span><%= title %></span></a>
+  <a href="#" class="text-2 vertical-center xs-block xs-p2 fill-gray--lighter xs-border-bottom--lighter text-gray bold nav-carat" onclick="toggle_visibility('solid-menu');"><span class="solid-logo-xs">Solid</span><span><%= title %></span></a>
 
   <ol class="list-unstyled" id="solid-menu" style="display:none;">
     <li>
       <a href="/" class="xs-block p2 border-bottom--lighter">Welcome</a>
     </li>
     <li>
-      <h2 class="xs-text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Base</h2>
+      <h2 class="text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Base</h2>
     </li>
     <% for(var slug in public.base._data){ %>
     <% var page = public.base %>
@@ -71,7 +71,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Interface</h2>
+      <h2 class="text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Interface</h2>
     </li>
     <% for(var slug in public.interface._data){ %>
     <% var page = public.interface %>
@@ -81,7 +81,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Layout</h2>
+      <h2 class="text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Layout</h2>
     </li>
     <% for(var slug in public.layout._data){ %>
     <% var page = public.layout %>
@@ -91,7 +91,7 @@
     <% }; %>
 
     <li>
-      <h2 class="xs-text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Resources</h2>
+      <h2 class="text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Resources</h2>
     </li>
     <% for(var slug in public.resources._data){ %>
     <% var page = public.resources %>

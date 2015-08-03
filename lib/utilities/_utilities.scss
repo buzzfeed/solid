@@ -17,15 +17,15 @@ img { max-width: 100%; height: auto; }
 .overflow-auto   { overflow: auto; }
 .overflow-scroll { overflow: scroll; }
 
-.float-left  { float: left; }
-.float-right { float: right; }
-.float-none  { float: none; }
-
 // Some Layout Classes + Responsive Prefixes
 @include generate-breakpoint-prefixes {
   &inline       { display: inline; }
   &block        { display: block; }
   &inline-block { display: inline-block; }
+
+  &float-left  { float: left; }
+  &float-right { float: right; }
+  &float-none  { float: none; }
 
   &show { display: block; }
   &hide { display: none; }
