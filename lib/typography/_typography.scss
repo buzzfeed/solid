@@ -23,37 +23,36 @@ h6,
   line-height: $line-height;
 }
 
-h1 {
+h1, .text-1 {
   font-size: $text-1;
 }
 
-h2 {
+h2, .text-2 {
   font-size: $text-2;
 }
 
-h3 {
+h3, .text-3 {
   font-size: $text-3;
 }
 
-h4 {
+h4, .text-4 {
   font-size: $text-4;
 }
 
-h5 {
+h5, .text-5 {
   font-size: $text-5;
 }
 
-h6 {
+h6, .text-6 {
   font-size: $text-6;
 }
 
-// wouldn't it make more sense to @extend .link-blue; here? 
 a {
   text-decoration: none; 
-  color: $text-blue;
+  color: $link-blue;
 
   &:hover {
-    color: darken($text-blue, 20%);
+    color: darken($link-blue, 20%);
     transition: color .3s ease 0s;
   }
 }
