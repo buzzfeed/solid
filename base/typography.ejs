@@ -1,32 +1,32 @@
 <section class="xs-col-12 lg-col-9 xs-mb4 xs-border-bottom--lighter xs-pb4">
     <div class="xs-mb3">
       <h2 class="xs-mb1 bold">Headers</h2>
-      <label class="xs-block text-4">Headers set in Proxima range from <code class="js-highlight">h1</code> through <code class="js-highlight">h6</code>. Alternately, classes <code class="js-highlight">.text-1</code> through <code class="js-highlight">.text-6</code> mirror header element styles respectively, and can be used on any element to allow for flexible styling without affecting semantic markup. Header elements and text scale classes have no margins attached and inherit a line height 1.3x relative to the text size. </label>
+      <label class="xs-block text-4">Headers set in Proxima range from <code class="js-highlight">h1</code> through <code class="js-highlight">h6</code>. Alternately, classes <code class="js-highlight">text-1</code> through <code class="js-highlight">text-6</code> mirror header element styles respectively, and can be used on any element to allow for flexible styling without affecting semantic markup. Header elements and text scale classes have no margins attached and inherit a line height 1.3x relative to the text size. </label>
     </div>
 
     <div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h1, .text-1 | 2.25rem, 36px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h1</span>, <span class="js-highlight">text-1</span> | 2.25rem, 36px</p>
         <h1>BuzzFeed is the social news and entertainment company</h1>   
       </div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h2, .text-2 | 1.375rem, 22px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h2</span>, <span class="js-highlight">text-2</span> | 1.375rem, 22px</p>
         <h2 class="xs-pt1">BuzzFeed is the social news and entertainment company</h2>
       </div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h3, .text-3 | 1.125rem, 18px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h3</span>, <span class="js-highlight">text-3</span> | 1.125rem, 18px</p>
         <h3 class="xs-pt1">BuzzFeed is the social news and entertainment company</h3>
       </div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h4, .text-4 | 1rem, 16px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h4</span>, <span class="js-highlight">text-4</span> | 1rem, 16px</p>
         <h4 class="xs-pt1">BuzzFeed is the social news and entertainment company</h4>
       </div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h5, .text-5 | 0.875rem, 14px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h5</span>, <span class="js-highlight">text-5</span> | 0.875rem, 14px</p>
         <h5 class="xs-pt1">BuzzFeed is the social news and entertainment company</h5>
       </div>
       <div class="xs-mb3">
-        <p class="text-gray--lightest">h6, .text-6 | 0.75rem, 12px</p>
+        <p class="text-gray--lightest"><span class="js-highlight">h6</span>, <span class="js-highlight">text-6</span> | 0.75rem, 12px</p>
         <h6 class="xs-pt1">BuzzFeed is the social news and entertainment company</h6>
       </div>
 
@@ -54,11 +54,11 @@
 <section class="xs-col-12 lg-col-9 xs-mb4 xs-border-bottom--lighter xs-pb4">
   <div class="xs-mb2">
     <h2 class="xs-mb1 bold">Body</h2>
-    <label class="xs-block text-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. You can also use the class <code class="js-highlight">.text-4</code> to style any element as body text. Optimal line length for body text is around 75 characters per line.</label>
+    <label class="xs-block text-4">Body text, or <code class="js-highlight">p</code>, is the base font size for our typographic system. You can also use the class <code class="js-highlight">text-4</code> to style any element as body text. Optimal line length for body text is around 75 characters per line.</label>
   </div>
   <div>
     <div class="xs-mb2">
-      <p class="text-gray--lightest">p, .text-4 | 1rem, 16px</p>
+      <p class="text-gray--lightest"><span class="js-highlight">p</span>, <span class="js-highlight">text-4</span> | 1rem, 16px</p>
       <p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 <pre><code class="html"><%= '<p>BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>' %></code></pre>
@@ -69,32 +69,30 @@
   <h2 class="xs-mb2 bold">Emphasis</h2>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.regular</p>
-    <p class="bold"><span class="regular">BuzzFeed is the</span> social news and entertainment company</p>
+    <p class="text-gray--lightest js-highlight">regular</p>
+    <p class="bold xs-mb1"><span class="regular">BuzzFeed is the</span> social news and entertainment company</p>
+    <pre><code class="html"><%= '<p class="bold"><span class="regular">BuzzFeed is the</span>social news and entertainment company</p>' %></code></pre>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">strong, .bold</p>
-    <p><strong>BuzzFeed is the social news and entertainment company</strong></p>
+    <p class="text-gray--lightest"><span class="js-highlight">strong</span>, <span class="js-highlight">bold</span></p>
+    <p class="xs-mb1"><strong>BuzzFeed is the social news and entertainment company</strong></p>
+    <pre><code class="html"><%= '<strong>BuzzFeed is the social news and entertainment company</strong>' %>
+<%= '<p class="bold">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">em, .italic</p> 
-    <p><em>BuzzFeed is the social news and entertainment company</em></p>
+    <p class="text-gray--lightest"><span class="js-highlight">em</span>, <span class="js-highlight">italic</span></p> 
+    <p class="xs-mb1"><em>BuzzFeed is the social news and entertainment company</em></p>
+    <pre><code class="html"><%= '<em>BuzzFeed is the social news and entertainment company</em>' %>
+<%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.caps</p>    
-    <p class="caps">BuzzFeed is the social news and entertainment company</p>
+    <p class="text-gray--lightest js-highlight">caps</p>    
+    <p class="caps xs-mb1">BuzzFeed is the social news and entertainment company</p>
+    <pre><code class="html"><%= '<p class="caps">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   </div>
-
-<pre><code class="html"><%= '<p class="bold"><span class="regular">BuzzFeed is the</span>social news and entertainment company</p>' %>
-
-<%= '<p class="bold">BuzzFeed is the social news and entertainment company</p>' %>
-
-<%= '<p class="italic">BuzzFeed is the social news and entertainment company</p>' %>
-
-<%= '<p class="caps">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
   
 </section>
 
@@ -102,12 +100,12 @@
   <h2 class="xs-mb2 bold">Overflow</h2>
 
     <div class="xs-mb2">
-      <p class="text-gray--lightest">.nowrap</p>
+      <p class="text-gray--lightest js-highlight">nowrap</p>
       <p class="nowrap overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 
     <div class="xs-mb2">
-      <p class="text-gray--lightest">.truncate</p>
+      <p class="text-gray--lightest js-highlight">truncate</p>
       <p class="xs-half-width truncate overflow-hidden">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 
@@ -123,22 +121,22 @@
 
   <div>
     <div class="xs-mb4">
-      <p class="text-gray--lightest">.xs-text-left</p>
+      <p class="text-gray--lightest js-highlight">xs-text-left</p>
       <p class="xs-mb1 xs-text-left xs-border xs-py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
     <div class="xs-mb3">
-      <p class="text-gray--lightest">.xs-text-right</p>
+      <p class="text-gray--lightest js-highlight">xs-text-right</p>
       <p class="xs-mb1 xs-text-right xs-border xs-py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
     <div class="xs-mb3">
-      <p class="text-gray--lightest">.xs-text-center</p>
+      <p class="text-gray--lightest js-highlight">xs-text-center</p>
       <p class="xs-text-center xs-border xs-py2">BuzzFeed is the social news and entertainment company</p>
     </div>
 
     <div class="xs-mb3">
-      <p class="text-gray--lightest">.xs-text-justify</p>
+      <p class="text-gray--lightest js-highlight">xs-text-justify</p>
       <p class="xs-mb1 xs-text-justify xs-border xs-py2">BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M.</p>
     </div>
 <pre><code class="html"><%= '<p class="xs-text-left">BuzzFeed is the social news and entertainment company</p>' %></code></pre>
@@ -151,31 +149,31 @@
 <section class="xs-col-12 lg-col-9 xs-mb4 xs-border-bottom--lighter xs-pb4">
   <div class="xs-mb2">
     <h2 class="xs-mb1 bold">Slab Headers</h2>
-    <p class="xs-block">Caponi is BuzzFeed's slab typeface. It's default (and singular weight) is semibold. Caponi is intended to be used for News headlines only, and should never be smaller than an <code class="js-highlight">h5</code>, or 0.875 rem. An <code class="js-highlight">h6</code>, or anything classed with <code class="js-highlight">.text-6</code>, in combination with the <code class="js-highlight">.slab</code> class will default to Proxima. Headlines set in Caponi should be paired with body text set in Proxima.</p>
+    <p class="xs-block">Caponi is BuzzFeed's slab typeface. It's default (and singular weight) is semibold. Caponi is intended to be used for News headlines only, and should never be smaller than an <code class="js-highlight">h5</code>, or 0.875 rem. An <code class="js-highlight">h6</code>, or anything classed with <code class="js-highlight">text-6</code>, in combination with the <code class="js-highlight">slab</code> class will default to Proxima. Headlines set in Caponi should be paired with body text set in Proxima.</p>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.slab h1, slab .text-1 | 2.25rem, 36px</p>
+    <p class="text-gray--lightest"><span class="js-highlight">h1</span> <span class="js-highlight">slab</span>, <span class="js-highlight">slab text-1</span> | 2.25rem, 36px</p>
     <h1 class="xs-pt1 slab">BuzzFeed is the social news and entertainment company</h1>   
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.slab h2, .slab .text-2 | 1.375rem, 22px</p>
+    <p class="text-gray--lightest"><span class="js-highlight">h2</span> <span class="js-highlight">slab</span>, <span class="js-highlight">slab text-2</span> | 1.375rem, 22px</p>
     <h2 class="xs-pt1 slab">BuzzFeed is the social news and entertainment company</h2>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.slab h3, .slab .text-3 | 1.125rem, 18px</p>
+    <p class="text-gray--lightest"><span class="js-highlight">h3</span> <span class="js-highlight">slab</span>, <span class="js-highlight">slab text-3</span> | 1.125rem, 18px</p>
     <h3 class="xs-pt1 slab">BuzzFeed is the social news and entertainment company</h3>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.slab h4, .slab .text-4 | 1rem, 16px</p>
+    <p class="text-gray--lightest"><span class="js-highlight">h4</span> <span class="js-highlight">slab</span>, <span class="js-highlight">slab text-4</span> | 1rem, 16px</p>
     <h4 class="xs-pt1 slab">BuzzFeed is the social news and entertainment company</h4>
   </div>
 
   <div class="xs-mb3">
-    <p class="text-gray--lightest">.slab h5, .slab .text-5 | 0.875rem, 14px</p>
+    <p class="text-gray--lightest"><span class="js-highlight">h5</span> <span class="js-highlight">slab</span>, <span class="js-highlight">slab text-5</span> | 0.875rem, 14px</p>
     <h5 class="xs-pt1 slab">BuzzFeed is the social news and entertainment company</h5>
   </div>
 
@@ -196,7 +194,7 @@
   <p>Our default link is blue. For other link colors, refer to the Links section on our <a href="./colors">Colors</a> page.</p>
     <div class="xs-mb3">
       <div class="xs-my2">
-        <p class="text-gray--lightest">a, .link-blue</p>
+        <p class="text-gray--lightest"><span class="js-highlight">a</span>, <span class="js-highlight">link-blue</span></p>
         <a class="link-blue" href="#">BuzzFeed is the social news and entertainment company</a>
       </div>
 <pre><code class="html"><%= '<a class="link-blue" href="#">BuzzFeed is the social news and entertainment company</a>' %></code></pre>
@@ -209,7 +207,7 @@
   <p class="xs-mb3">Please note that there's no need to add a class for ordered and unordered lists, they inherit the default list styling below.</p>
 
   <div class="xs-col-12 xs-mb4">
-    <h4 class="bold">Ordered<span class="text-4 regular text-gray--lightest xs-ml1">ol</span></h4>
+    <h4 class="bold">Ordered<span class="text-4 regular text-gray--lightest xs-ml1 js-highlight">ol</span></h4>
     <p class="xs-mb2">For listing of explicitly ordered items.</p>
       <ol>
         <li>John</li>
@@ -220,7 +218,7 @@
   </div>
 
   <div class="xs-col-12 xs-mb4">
-    <h4 class="bold">Unordered<span class="text-4 regular text-gray--lightest xs-ml1">ul</span></h4>
+    <h4 class="bold">Unordered<span class="text-4 regular text-gray--lightest xs-ml1 js-highlight">ul</span></h4>
     <p class="xs-mb2">For items that are not explicitly ordered.</p>
       <ul>
         <li>John</li>
@@ -231,8 +229,8 @@
   </div>
 
   <div class="xs-col-12 xs-mb4">
-    <h4 class="bold">Unstyled<span class="text-4 regular text-gray--lightest xs-ml1">.list-unstyled</span></h4>
-    <p class="xs-mb2">Adding the class <code class="js-highlight">.list-unstyled</code> to a list keeps list items xs-block level, but removes default browser padding and list styling.</p>
+    <h4 class="bold">Unstyled<span class="text-4 regular text-gray--lightest xs-ml1 js-highlight">list-unstyled</span></h4>
+    <p class="xs-mb2">Adding the class <code class="js-highlight">list-unstyled</code> to a list keeps list items xs-block level, but removes default browser padding and list styling.</p>
       <ul class="list-unstyled">
         <li>One</li>
         <li>Two</li>
