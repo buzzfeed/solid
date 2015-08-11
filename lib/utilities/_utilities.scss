@@ -13,9 +13,9 @@ img { max-width: 100%; height: auto; }
 
 
 // Layout
-.overflow-hidden { overflow: hidden; }
-.overflow-auto   { overflow: auto; }
-.overflow-scroll { overflow: scroll; }
+.xs-overflow-hidden { overflow: hidden; }
+.xs-overflow-auto   { overflow: auto; }
+.xs-overflow-scroll { overflow: scroll; }
 
 // Some Layout Classes + Responsive Prefixes
 @include generate-breakpoint-prefixes {
@@ -145,40 +145,44 @@ img { max-width: 100%; height: auto; }
 
 //Positioning
 
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed {    position: fixed; }
 
-.z1 { z-index: 100; }
-.z2 { z-index: 200; }
-.z3 { z-index: 300; }
-.z4 { z-index: 400; }
+@include generate-breakpoint-prefixes {
 
-.t0 { top:    0; }
-.r0 { right:  0; }
-.b0 { bottom: 0; }
-.l0 { left:   0; }
+&relative { position: relative; }
+&absolute { position: absolute; }
+&fixed {    position: fixed; }
 
-.t1 { top:    $space-1; }
-.r1 { right:  $space-1; }
-.b1 { bottom: $space-1; }
-.l1 { left:   $space-1; }
+&z1 { z-index: 100; }
+&z2 { z-index: 200; }
+&z3 { z-index: 300; }
+&z4 { z-index: 400; }
 
-.t2 { top:    $space-2; }
-.r2 { right:  $space-2; }
-.b2 { bottom: $space-2; }
-.l2 { left:   $space-2; }
+&t0 { top:    0; }
+&r0 { right:  0; }
+&b0 { bottom: 0; }
+&l0 { left:   0; }
 
-.t3 { top:    $space-3; }
-.r3 { right:  $space-3; }
-.b3 { bottom: $space-3; }
-.l3 { left:   $space-3; }
+&t1 { top:    $space-1; }
+&r1 { right:  $space-1; }
+&b1 { bottom: $space-1; }
+&l1 { left:   $space-1; }
 
-.t4 { top:    $space-4; }
-.r4 { right:  $space-4; }
-.b4 { bottom: $space-4; }
-.l4 { left:   $space-4; }
+&t2 { top:    $space-2; }
+&r2 { right:  $space-2; }
+&b2 { bottom: $space-2; }
+&l2 { left:   $space-2; }
 
+&t3 { top:    $space-3; }
+&r3 { right:  $space-3; }
+&b3 { bottom: $space-3; }
+&l3 { left:   $space-3; }
+
+&t4 { top:    $space-4; }
+&r4 { right:  $space-4; }
+&b4 { bottom: $space-4; }
+&l4 { left:   $space-4; }
+
+}
 
 // Rounded Corners and Circles and Borders
 
