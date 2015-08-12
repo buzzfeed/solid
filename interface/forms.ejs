@@ -7,10 +7,12 @@
       <label class="xs-block text-4 text-gray--lighter">A text input should always have a label. Labels should be written in sentence case and are always placed on top of the input.</label>
     </div>
   <div class="fill-white xs-p3">
+    <fieldset class="form-fieldset">
       <label class="form-label">Your name</label>
-      <input type="text" class="text-input">
+      <input type="text" class="text-input"/>
       <button class="button button--primary xs-mb2">Add</button>
-      <pre><code class="html"><%='<label class="form-label">Your name</label>'%><br/><%='<input type="text" class="text-input">'%><br/><%='<button class="button button--primary">Add</button>'%></code></pre>
+    </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%='<label class="form-label">Your name</label>'%><br/>  <%='<input type="text" class="text-input"/>'%><br/>  <%='<button class="button button--primary">Add</button>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -20,22 +22,28 @@
       <label class="xs-block text-4 text-gray--lighter">This is a default text input with placeholder text inside. Placeholder text should only be used when necessary. A good use of placeholder text would be to inform the user of what they should/can type in the field.</label>
     </div>
     <div class="fill-white xs-p3">
-      <label class="form-label">Your website</label>
-      <input type="text" placeholder="www.example.com" class="text-input xs-mb2">
-      <button class="button button--primary">Add</button>
-      <pre><code class="html"><%='<label class="form-label">Your name</label>'%><br/><%='<input type="text" placeholder="www.example.com" class="text-input">'%><br/><%='<button class="button button--primary">Add</button>'%></code></pre>
+      <fieldset class="form-fieldset">
+        <label class="form-label">Your website</label>
+        <input type="text" placeholder="www.example.com" class="text-input xs-mb2"/>
+        <button class="button button--primary">Add</button>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%='<label class="form-label">Your name</label>'%><br/>  <%='<input type="text" placeholder="www.example.com" class="text-input"/>'%><br/>  <%='<button class="button button--primary">Add</button>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
   <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
     <div class="xs-p3">
-      <label class="xs-block text-4 bold">Textarea</label>
-      <label class="xs-block text-4 text-gray--lighter">Textareas should be used when a field may be filled out with more than one line of text. An example use case is for comments or for a field in a contact form. Generally aim for 52-78 characters per line.</label>
+      <fieldset class="form-fieldset">
+        <label class="xs-block text-4 bold">Textarea</label>
+        <label class="xs-block text-4 text-gray--lighter">Textareas should be used when a field may be filled out with more than one line of text. An example use case is for comments or for a field in a contact form. Generally aim for 52-78 characters per line.</label>
+      </fieldset>
    </div>
    <div class="fill-white xs-p3">
+    <fieldset class="form-fieldset">
       <label class="form-label">Comments</label>
       <textarea class="textarea xs-mb2"></textarea>
-      <pre><code class="html"><%='<label class="form-label">Comments</label>'%><br/><%='<textarea class="textarea xs-mb2"></textarea>'%> </code></pre>
+    </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%='<label class="form-label">Comments</label>'%><br/>  <%='<textarea class="textarea xs-mb2"></textarea>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -45,13 +53,15 @@
       <label class="xs-block text-4 text-gray--lighter">Selects are drop down menus and they can be used when you need the user to select one option out of many. You can put a label on top of the select if the text inside the menu is not descriptive enough.</label>
     </div>
     <div class="fill-white xs-p3">
-      <select class="select xs-mb2">
-        <option value="choose">Choose a personality</option>
-        <option value="amazing">Amazing</option>
-        <option value="boring">Boring</option>
-        <option value="fun">Fun</option> 
-      </select>
-      <pre><code class="html"><%= '<select class="select xs-mb2">'%><br/>  <%='<option value="choose">Choose a personality</option>'%><br/>  <%='<option value="amazing">Amazing</option>'%><br/>  <%='<option value="boring">Boring</option>'%><br/>  <%='<option value="fun">Fun</option>'%><br/><%='</select>'  %> </code></pre>
+      <fieldset class="form-fieldset">
+        <select class="select xs-mb2">
+          <option value="choose">Choose a personality</option>
+          <option value="amazing">Amazing</option>
+          <option value="boring">Boring</option>
+          <option value="fun">Fun</option> 
+        </select>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<select class="select xs-mb2">'%><br/>    <%='<option value="choose">Choose a personality</option>'%><br/>    <%='<option value="amazing">Amazing</option>'%><br/>    <%='<option value="boring">Boring</option>'%><br/>    <%='<option value="fun">Fun</option>'%><br/>  <%='</select>'  %><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -61,11 +71,13 @@
         <label class="xs-block text-4 text-gray--lighter">Radio buttons let you choose from two or more options. You can only choose one option in the set.</label>
     </div>
     <div class="fill-white xs-p3">
-      <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
-      <label class="radio-label" for="option_1">Option 1</label>  
-      <input type="radio" class="radio" id="option_2" value="option_2" name="options">
-      <label class="radio-label" for="option_2">Option 2</label>
-       <pre><code class="html"><%= '<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%><br/><%='<label class="radio-label" for="option_1">Option 1</label>'%><br/><%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%><br/><%='<label class="radio-label" for="option_2">Option 2</label>' %> </code></pre>
+      <fieldset class="form-fieldset">
+        <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked"/>
+        <label class="radio-label" for="option_1">Option 1</label>  
+        <input type="radio" class="radio" id="option_2" value="option_2" name="options"/>
+        <label class="radio-label" for="option_2">Option 2</label>
+      </flieldset>
+       <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked"/>'%><br/>  <%='<label class="radio-label" for="option_1">Option 1</label>'%><br/>  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options"/>'%><br/>  <%='<label class="radio-label" for="option_2">Option 2</label>' %><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -75,11 +87,13 @@
       <label class="xs-block text-4 text-gray--lighter">Checkboxes let you choose from two or more options. You can choose more than one option in the set.</label>
     </div>
     <div class="fill-white xs-p3">
-      <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes">
-      <label for="check_1">Option 1</label> 
-      <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">
-      <label for="check_2">Option 2</label>
-       <pre><code class="html"><%= '<input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes">'%><br/><%='<label for="check_1">Option 1</label>'%><br/><%='<input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">'%><br/><%='<label for="check_2">Option 2</label>' %> </code></pre>
+      <fieldset class="form-fieldset">
+        <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes"/>
+        <label for="check_1">Option 1</label> 
+        <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes"/>
+        <label for="check_2">Option 2</label>
+      </fieldset>
+       <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes"/>'%><br/>  <%='<label for="check_1">Option 1</label>'%><br/>  <%='<input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes"/>'%><br/>  <%='<label for="check_2">Option 2</label>' %><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -89,11 +103,13 @@
     <label class="xs-block text-4 text-gray--lighter">Use this to enter a MM/DD/YYYY date. Use the <code class="js-highlight">maxlength</code> attribute to define the number of characters for each input.</label>
   </div>
   <div class="fill-white xs-p3">
-    <label class="form-label">Date of birth</label> 
-    <input type="text" placeholder="MM" maxlength="2" class="date-input">
-    <input type="text" placeholder="DD" maxlength="2" class="date-input">
-    <input type="text" placeholder="YYYY" maxlength="4" class="date-input xs-mb2">
-    <pre><code class="html"><%= '<label class="form-label">Date of birth</label> '%><br/><%='<input type="text" placeholder="MM" maxlength="2" class="date-input">'%><br/><%='<input type="text" placeholder="DD" maxlength="2" class="date-input">'%><br/><%='<input type="text" placeholder="YYYY" maxlength="4" class="date-input">' %> </code></pre>
+    <fieldset class="form-fieldset">
+      <label class="form-label">Date of birth</label> 
+      <input type="text" placeholder="MM" maxlength="2" class="date-input"/>
+      <input type="text" placeholder="DD" maxlength="2" class="date-input"/>
+      <input type="text" placeholder="YYYY" maxlength="4" class="date-input xs-mb2"/>
+    </fieldset>
+    <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<label class="form-label">Date of birth</label> '%><br/>  <%='<input type="text" placeholder="MM" maxlength="2" class="date-input"/>'%><br/>  <%='<input type="text" placeholder="DD" maxlength="2" class="date-input"/>'%><br/>  <%='<input type="text" placeholder="YYYY" maxlength="4" class="date-input"/>' %><br/><%='</fieldset>'%> </code></pre>
   </div>
   </div>
 
@@ -108,10 +124,12 @@
       <label class="xs-block text-4 text-gray--lighter">This is a small text input with a label.</label>
     </div>
   <div class="fill-white xs-p3">
-    <label class="form-label form-label--small">Your name</label>
-    <input type="text" class="text-input text-input--small xs-mb2">
-    <a class="button button--primary button--small" href="">Add</a>
-    <pre><code class="html"><%='<label class="form-label form-label--small">Your name</label>'%><br/><%='<input type="text" class="text-input--small">'%></code></pre>
+    <fieldset class="form-fieldset">
+      <label class="form-label form-label--small">Your name</label>
+      <input type="text" class="text-input text-input--small xs-mb2"/>
+      <a class="button button--primary button--small" href="">Add</a>
+    </fieldset>
+    <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%='<label class="form-label form-label--small">Your name</label>'%><br/>  <%='<input type="text" class="text-input--small"/>'%><br/><%='</fieldset">'%></code></pre>
     </div>
   </div>
 
@@ -121,13 +139,15 @@
       <label class="xs-block text-4 text-gray--lighter">This is a small select menu.</label>
     </div>
     <div class="fill-white xs-p3">
-      <select class="select select--small xs-mb2">
-        <option value="choose">Choose a personality</option>
-        <option value="amazing">Amazing</option>
-        <option value="boring">Boring</option>
-        <option value="fun">Fun</option> 
-      </select>
-      <pre><code class="html"><%= '<select class="select select--small xs-mb2">'%><br/>  <%='<option value="choose">Choose a personality</option>'%><br/>  <%='<option value="amazing">Amazing</option>'%><br/>  <%='<option value="boring">Boring</option>'%><br/>  <%='<option value="fun">Fun</option>'%><br/><%='</select>'  %> </code></pre>
+      <fieldset class="form-fieldset">
+        <select class="select select--small xs-mb2">
+          <option value="choose">Choose a personality</option>
+          <option value="amazing">Amazing</option>
+          <option value="boring">Boring</option>
+          <option value="fun">Fun</option> 
+        </select>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<select class="select select--small xs-mb2">'%><br/>    <%='<option value="choose">Choose a personality</option>'%><br/>    <%='<option value="amazing">Amazing</option>'%><br/>    <%='<option value="boring">Boring</option>'%><br/>    <%='<option value="fun">Fun</option>'%><br/>  <%='</select>'  %><br/><%='</fieldset'%></code></pre>
     </div>
   </div>
 
@@ -142,9 +162,11 @@
       <label class="xs-block text-4 text-gray--lighter">Use this asterisk when a form field is required by placing the asterisk in a span and using the modifier <code class="js-highlight">.form-label--required</code>. Only label fields as required when it is the least commonly used type of field in a form.</label>
     </div>
   <div class="fill-white xs-p3">
-    <label class="form-label">Your name <span class="form-label--required">*</span></label>
-    <input type="text" class="text-input xs-mb2">
-    <pre><code class="html"><%= '<label class="form-label">Your name <span class="form-label--required">*</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+    <fieldset class="form-fieldset">
+      <label class="form-label">Your name <span class="form-label--required">*</span></label>
+      <input type="text" class="text-input xs-mb2"/>
+    </fieldset>
+    <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<label class="form-label">Your name <span class="form-label--required">*</span></label>'%><br/>  <%='<input type="text" class="text-input"/>'%><br/><%='</fieldset>'%></code></pre>
   </div>
   </div>
 
@@ -154,9 +176,11 @@
       <label class="xs-block text-4 text-gray--lighter">Use this text when a form field is optional by placing the "(optional)" text in a span and using the modifier <code class="js-highlight">.form-label--optional</code></label>
     </div>
     <div class="fill-white xs-p3">
-      <label class="form-label">Link <span class="form-label--optional">(optional)</span></label>
-      <input type="text" class="text-input xs-mb2">
-      <pre><code class="html"><%= '<label class="form-label">Link <span class="form-label--optional">(optional)</span></label>'%><br/><%='<input type="text" class="text-input">'%></code></pre>
+      <fieldset class="form-fieldset">
+        <label class="form-label">Link <span class="form-label--optional">(optional)</span></label>
+        <input type="text" class="text-input xs-mb2"/>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%= '<label class="form-label">Link <span class="form-label--optional">(optional)</span></label>'%><br/>  <%='<input type="text" class="text-input"/>'%><br/><%='</fieldset">'%></code></pre>
     </div>
   </div>
   
@@ -167,11 +191,12 @@
     </div>
     
     <div class="fill-white xs-p3">
-
-      <label class="form-label">Your username</label>
-      <input type="text" class="text-input">
-      <label class="form-helper xs-mb3"> BTW, your username cannot be changed</label>
-      <pre><code class="html"><%='<label class="form-label">Your username</label>'%><br/><%='<input type="text" class="text-input">'%><br/><%='<label class="form-helper"> BTW, your username cannot be changed</label>'%></code></pre>
+      <fieldset class="form-fieldset">
+        <label class="form-label">Your username</label>
+        <input type="text" class="text-input"/>
+        <label class="form-helper xs-mb3"> BTW, your username cannot be changed</label>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br/>  <%='<label class="form-label">Your username</label>'%><br/>  <%='<input type="text" class="text-input"/>'%><br/>  <%='<label class="form-helper"> BTW, your username cannot be changed</label>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -180,11 +205,13 @@
       <label class="xs-block text-4 bold">Warning message</label>
       <label class="xs-block text-4 text-gray--lighter">Input label and input xs-border turn orange, and the warning message is placed below the input. The label, input, and message must be wrapped in a div with class <code class="js-highlight">form--warning</code>.</label>
     </div>
-    <div class="fill-white form--warning xs-p3">
-      <label class="form-label">Your name</label>
-      <input type="text" class="text-input">
-      <label class="form-feedback xs-mb3">Caps lock is on!</label>
-      <pre><code class="html"><%='<div class="form--warning">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">Caps lock is on!</label>'%><br/><%='</div>'%></code></pre>
+    <div class="fill-white xs-p3">
+      <fieldset class="form-fieldset form-fieldset--warning">
+        <label class="form-label">Your name</label>
+        <input type="text" class="text-input"/>
+        <label class="form-feedback xs-mb3">Caps lock is on!</label>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset form-fieldset--warning">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input"/>'%><br/><%='   <label class="form-feedback">Caps lock is on!</label>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -193,11 +220,13 @@
       <label class="xs-block text-4 bold">Error message</label>
       <label class="xs-block text-4 text-gray--lighter">Input label and input xs-border turn red, and the error message is placed below the input. The label, input, and message must be wrapped in a div with class <code class="js-highlight">form--error</code>.</label>
     </div>
-    <div class="fill-white form--error xs-p3">
-      <label class="form-label">Your name</label>
-      <input type="text" class="text-input">
-      <label class="form-feedback xs-mb3">This is an error message about your password.</label>
-       <pre><code class="html"><%='<div class="form--error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='</div>'%></code></pre>
+    <div class="fill-white xs-p3">
+      <fieldset class="form-fieldset form-fieldset--error">
+        <label class="form-label">Your name</label>
+        <input type="text" class="text-input"/>
+        <label class="form-feedback xs-mb3">This is an error message about your password.</label>
+      </fieldset>
+       <pre><code class="html"><%='<fieldset class="form-fieldset form-fieldset--error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input"/>'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='</div>'%></code></pre>
     </div>
   </div>
 
@@ -206,11 +235,13 @@
      <label class="xs-block text-4 bold">Success message</label>
      <label class="xs-block text-4 text-gray--lighter">Input label and input xs-border turn green, and the success message is placed below the input. It appears once the error is cleared. The label, input, and message must be wrapped in a div with class <code class="js-highlight">form--success</code>.</label>
     </div>
-    <div class="fill-white form--success xs-p3">
+    <div class="fill-white xs-p3">
+      <fieldset class="form-fieldset form-fieldset--success">
         <label class="form-label">Your name</label>
-        <input type="text" class="text-input">
+        <input type="text" class="text-input"/>
         <label class="form-feedback xs-mb3">Looks good!</label>
-        <pre><code class="html"><%='<div class="form--success">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">Looks good!</label>'%><br/><%='</div>'%></code></pre>
+      </fieldset>
+        <pre><code class="html"><%='<fieldset class="form-fieldset form-fieldset--success">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input"/>'%><br/><%='   <label class="form-feedback">Looks good!</label>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
 
@@ -219,12 +250,14 @@
       <label class="xs-block text-4 bold">Error message + helper text</label>
       <label class="xs-block text-4 text-gray--lighter">You can use these messages together. If a field has helper text, the error (or success/warning) message appears above the helper text.</label>
     </div>
-    <div class="fill-white form--error xs-p3">
-      <label class="form-label">Your name</label>
-      <input type="text" class="text-input">
-      <label class="form-feedback">This is an error message about your password.</label>
-      <label class="form-helper xs-mb3">Your password must contain at least 8 characters.</label>
-      <pre><code class="html"><%='<div class="form--error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input">'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='   <label class="form-helper"> BTW, your username cannot be changed</label>'%><br/><%='</div>'%></code></pre>
+    <div class="fill-white xs-p3">
+      <fieldset class="form-fieldset form-fieldset--error">
+        <label class="form-label">Your name</label>
+        <input type="text" class="text-input"/>
+        <label class="form-feedback">This is an error message about your password.</label>
+        <label class="form-helper xs-mb3">Your password must contain at least 8 characters.</label>
+      </fieldset>
+      <pre><code class="html"><%='<fieldset class="form-fieldset form-fieldset--error">'%><br/><%='   <label class="form-label">Your name</label>'%><br/><%='   <input type="text" class="text-input"/>'%><br/><%='   <label class="form-feedback">This is an error message about your password.</label>'%><br/><%='   <label class="form-helper"> BTW, your username cannot be changed</label>'%><br/><%='</fieldset>'%></code></pre>
     </div>
   </div>
  
