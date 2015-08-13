@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <p>This is achieved with the markup below. As you can see, we're using our <code class="js-highlight">xs-show</code> and <code class="js-highlight">xs-hide</code> utility classes, but adding breakpoint prefixes to determine when to xs-show and when to xs-hide each div:</p>
+  <p>This is achieved with the markup below. As you can see, we're using our <code class="js-highlight">xs-show</code> and <code class="js-highlight">xs-hide</code> utility classes, but adding breakpoint prefixes to determine when to show and when to hide each div:</p>
 
   <pre><code class="html"><%= '<div class="clearfix xs-mb3">' %>
   <%= '<div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 xs-border xs-p1">' %>
@@ -119,16 +119,20 @@
       <td>Offset classes for the grid columns.</td>
     </tr>
     <tr>
-      <td>text-1 to text-6</td>
-      <td>Our type system.</td>
-    </tr>
-    <tr>
-      <td>text-*</td>
+      <td>xs-text-*</td>
       <td>left, center, right, justify</td>
     </tr>
     <tr>
-      <td>.display-*</td>
-      <td>xs-inline, xs-block, xs-inline-block</td>
+      <td>xs-inline</td>
+      <td>display inline</td>
+    </tr>
+    <tr>
+      <td>xs-block</td>
+      <td>display block</td>
+    </tr>
+    <tr>
+      <td>xs-inline-block</td>
+      <td>display inline-block</td>
     </tr>
     <tr>
       <td>xs-float-*</td>
@@ -147,11 +151,11 @@
       <td>xs-hide content.</td>
     </tr>
     <tr>
-      <td>m*</td>
+      <td>xs-m*</td>
       <td>Margins</td>
     </tr>
     <tr>
-      <td>p*</td>
+      <td>xs-p*</td>
       <td>Padding</td>
     </tr>
     <tr>
@@ -172,7 +176,7 @@
     </tr>
     <tr>
       <td>xs-border, xs-border-*</td>
-      <td>xs-borders.</td>
+      <td>borders</td>
     </tr>
   </table>
 
