@@ -150,7 +150,7 @@ $input-height-small: 2rem;
   font-size: $text-5; 
 }
 
-.form-warning {
+.form-fieldset--warning {
   .form-feedback,
   .form-label {
     color: $text-orange;  
@@ -161,7 +161,7 @@ $input-height-small: 2rem;
   }
 }
 
-.form-success {
+.form-fieldset--success {
   .form-feedback,
   .form-label {
     color: $text-green;  
@@ -188,7 +188,7 @@ $input-height-small: 2rem;
   }
 }
 
-.form-error {
+.form-fieldset--error {
   .form-feedback,
   .form-label {
     color: $text-red;  
