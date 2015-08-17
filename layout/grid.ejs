@@ -2,7 +2,7 @@
 
   <h2 class="bold xs-mb1">The Grid</h2>
 
-  <p class="xs-mb1">For laying out pages, BuzzFeed uses a 12-column, fluid grid system (which can be made responsive using our breakpoint prefixes, we'll get to that later). In order to begin using the grid, wrap your main grid columns in a <code class="js-highlight">clearfix</code> container. You'll then need to use our <code class="js-highlight">col</code> and <code class="js-highlight">col-n</code> (where n is 1-12) classes to both float and then set the width of each column. Any given row can be made up of up to 12-columns, but can be less if you'd like!</p>
+  <p class="xs-mb1">For laying out pages, BuzzFeed uses a 12-column, fluid grid system (which can be made responsive using our breakpoint prefixes, we'll get to that later). In order to begin using the grid, wrap your main grid columns in a <code class="js-highlight">clearfix</code> container. You'll then need to use a <code class="js-highlight">col</code> class to float the columns and a <code class="js-highlight">col-n</code> (where n is 1-12) class to set the width of each column. Any given row can be made up of up to 12-columns, but can be less if you'd like!</p>
 
   <p class="xs-mb3">You can see an example below:</p>
 
@@ -95,7 +95,8 @@
 
   <h3 class="bold xs-mb1">Column Offsets</h3>
 
-  <p class="xs-mb3">Use the <code class="js-highlight">xs-offset-n</code> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <code class="js-highlight">xs-offset-1</code> moves your div to the left by one column width, then <code class="js-highlight">xs-offset-2</code> moves it to column widths, and so on. Here's an example:</p>
+
+  <p class="xs-mb3">Use the <code class="js-highlight">offset-n</code> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <code class="js-highlight">xs-offset-1</code> moves your div to the right by one column width, then <code class="js-highlight">xs-offset-2</code> moves it to the right by two column widths, and so on. Here's an example:</p>
 
   <div class="clearfix xs-mb2">
     <div class="col xs-col-8 xs-offset-2 xs-border xs-p1">xs-col-8 xs-offset-2</div>
@@ -150,7 +151,7 @@
 <div class="xs-mb4 clearfix">
   <h2 class="bold xs-mb1">Responsive Grid</h2>
 
-  <p class="xs-mb3">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width, <code class="js-highlight">xs-col-12</code>, at the smallest breakpoint, and half width, <code class="js-highlight">xs-col-6</code>, at the medium breakpoint, the div would get classes <code class="js-highlight">xs-col-12</code> <code class="js-highlight">md-col-6.</code> <b>Resize your browser to see the full effect below:</b></p>
+  <p class="xs-mb3">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes. For each breakpoint that you need a new column-width for, you'll add that class to the element. For example, if a div should take up the full width at the smallest breakpoint, you'll need <code class="js-highlight">xs-col-12</code>. Additionally, if you want the div to take up half the width at the medium breakpoint, you'll need <code class="js-highlight">md-col-6</code>. Therefore, the div would get both classes <code class="js-highlight">xs-col-12</code> <code class="js-highlight">md-col-6.</code> <b>Resize your browser to see the full effect below:</b></p>
 
   <div class="clearfix xs-mb3">
     <div class="col xs-col-12 sm-col-12 md-col-6 lg-col-3 xs-border xs-p1">
