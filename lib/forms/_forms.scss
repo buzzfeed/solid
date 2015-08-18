@@ -54,9 +54,6 @@ $input-height-small: 2rem;
   padding: .5rem .625rem;
 }
 
-.form-label--small {
-  font-size: $text-5;
-}
 
 .select--small {
   padding: 0 2rem 0 .625rem;
@@ -125,6 +122,13 @@ $input-height-small: 2rem;
   display: block;
   font-weight: 600;
   margin-bottom: $space-1; 
+}
+
+// form label small has less margin bottom than default size form labels 
+// in order for the entire unit to scale down proportionately 
+.form-label--small {
+  font-size: $text-5;
+  margin-bottom: .25rem;
 }
 
 .form-label--optional {
