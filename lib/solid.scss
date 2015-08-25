@@ -6,11 +6,10 @@
 @import "mixins";
 @import "base/normalize";
 @import "base/base";
-@import "fonts/font-faces";
 
 // Solid Modules
 
-@import 'messaging/messaging';
+@import "messaging/messaging";
 @import "buttons/buttons";
 @import "forms/forms";
 @import "tables/tables";

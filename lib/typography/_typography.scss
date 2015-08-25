@@ -2,9 +2,13 @@
 // Typography Base Styles
 // --------------------------------------------------
 
+//fonts
+$sans: "Proxima-Nova", Helvetica, Arial, sans-serif;
+$slab: "Caponi-Slab-Semibold", Georgia, serif;
+
 html {
   font-size: 16px;
-  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif; // This is just for reference
+  font-family: $sans; // This is just for reference
 }
 
 body,
@@ -23,27 +27,33 @@ h6,
   line-height: $line-height;
 }
 
-h1, .text-1 {
+h1,
+.text-1 {
   font-size: $text-1;
 }
 
-h2, .text-2 {
+h2,
+.text-2 {
   font-size: $text-2;
 }
 
-h3, .text-3 {
+h3,
+.text-3 {
   font-size: $text-3;
 }
 
-h4, .text-4 {
+h4,
+.text-4 {
   font-size: $text-4;
 }
 
-h5, .text-5 {
+h5,
+.text-5 {
   font-size: $text-5;
 }
 
-h6, .text-6 {
+h6,
+.text-6 {
   font-size: $text-6;
 }
 
@@ -116,7 +126,7 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: "Caponi-Slab-Semibold";
+  font-family: $slab;
   line-height: 1.1;
   // Needed b/c chrome still needs prefix
   // scss-lint:disable VendorPrefix
@@ -124,12 +134,12 @@ i,
   font-feature-settings: "liga", "kern";
   // scss-lint:enable VendorPrefix
   &.bold {
-    font-family: "Caponi-Slab-Semibold";
+    font-family: $slab;
     font-weight: normal;
   }
 
   &.italic {
-    font-family: "Caponi-Slab-Semibold";
+    font-family: $slab;
   }
 }
 
@@ -142,7 +152,7 @@ i,
 h6.slab,
 .text-6 .slab,
 .slab.text-6 {
-  font-family: "Proxima-Nova";
+  font-family: $sans;
   font-weight: normal;
 }
 
