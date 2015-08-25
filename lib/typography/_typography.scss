@@ -3,12 +3,12 @@
 // --------------------------------------------------
 
 //fonts
-$serif: "Proxima-Nova", Helvetica, Arial, sans-serif;
+$sans: "Proxima-Nova", Helvetica, Arial, sans-serif;
 $slab: "Caponi-Slab-Semibold", Georgia, serif;
 
 html {
   font-size: 16px;
-  font-family: $serif; // This is just for reference
+  font-family: $sans; // This is just for reference
 }
 
 body,
@@ -126,7 +126,7 @@ i,
 // Typeface Classes
 
 .slab {
-  font-family: "Caponi-Slab-Semibold", Georgia, serif;
+  font-family: $slab;
   line-height: 1.1;
   // Needed b/c chrome still needs prefix
   // scss-lint:disable VendorPrefix
@@ -134,12 +134,12 @@ i,
   font-feature-settings: "liga", "kern";
   // scss-lint:enable VendorPrefix
   &.bold {
-    font-family: "Caponi-Slab-Semibold", Georgia, serif;
+    font-family: $slab;
     font-weight: normal;
   }
 
   &.italic {
-    font-family: "Caponi-Slab-Semibold", Georgia, serif;
+    font-family: $slab;
   }
 }
 
@@ -152,7 +152,7 @@ i,
 h6.slab,
 .text-6 .slab,
 .slab.text-6 {
-  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+  font-family: $sans;
   font-weight: normal;
 }
 
