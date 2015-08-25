@@ -1,14 +1,18 @@
 .block-grid {
   font-size: 0;
-  margin: 0 -.5rem -1rem;
+  margin: 0 -.5rem;
   padding: 0;
+}
+
+.block-grid--marginfix {
+  margin: -.5rem;
 }
 
 .block-grid-item {
   display: inline-block;
   font-size: 1rem;
   vertical-align: top;
-  margin: 0 .5rem 1rem;
+  margin: 1rem .5rem 0;
 }
 
 @function calc-margin($block-grid-width) {
