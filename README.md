@@ -8,9 +8,9 @@ Solid is a base style library. It will be used as the core styling for Buzzfeed 
 You must have NPM installed. If you have installed the [Buzzfeed webapp](https://github.com/buzzfeed/buzzfeed) congrats! You already do.
 
 ### Install
-Append the repository to your project's package.json's dependency list:
+When inside your project directory type:
  ```
- "solid": "git+ssh://git@github.com:buzzfeed/solid.git#<RELEASE_VERSION>"
+ npm install bf-solid --save
  ```
 or using Bower:
 ```

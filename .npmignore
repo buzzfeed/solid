@@ -1,2 +1,6 @@
-# ignore solid specific SCSS
+#ignore all base files
+/*
+#except lib
+!lib
+#don't include solid specific
 lib/solid-specific.scss
