@@ -112,7 +112,7 @@ $button-height-small: 2rem;
 }
 
 
-.segmented-button {
+.segmented-button, .segmented-button--small {
   position: relative;
   display: inline-block;
   border: $border;
@@ -126,7 +126,7 @@ $button-height-small: 2rem;
   
 }
 
-.segmented-button-label, .segmented-button-label--small {
+.segmented-button-label {
   display: inline-block;
   cursor: pointer;
   float: left;
@@ -144,12 +144,13 @@ $button-height-small: 2rem;
   }
 }
 
-.segmented-button input:checked + .segmented-button-label {
+.segmented-button input:checked + .segmented-button-label,
+.segmented-button--small input:checked + .segmented-button-label {
   background-color: $fill-gray--lighter; 
   color: $text-gray;
 }
 
-.segmented-button-label--small {
+.segmented-button--small .segmented-button-label {
   padding: .5rem .625rem;
   height: $button-height-small;
   font-size: $text-5; 
