@@ -144,7 +144,7 @@ $button-height-small: 2rem;
   }
 }
 
-.segmented-button:checked + .segmented-button-label {
+.segmented-button input:checked + .segmented-button-label {
   background-color: $fill-gray--lighter; 
   color: $text-gray;
 }

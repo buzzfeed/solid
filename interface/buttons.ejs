@@ -104,25 +104,29 @@
 
   <h2 class="bold xs-mb2">Segmented Buttons</h2>
 
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button--small</code></span> class for smaller versions of all Solid's button types.</p>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">segmented-button</code></span> class for smaller versions of all Solid's button types.</p>
 
   <div class="segmented-button">
-    <input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
-    <label class="segmented-button-label" for="cool_guy_1">Option 1</label>  
-    <input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
+
+    <input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
+    <label class="segmented-button-label" for="cool_guy_1">Option 1</label>
+
+    <input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
     <label class="segmented-button-label" for="cool_guy_2">Option 2</label>
-    <input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
+
+    <input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
     <label class="segmented-button-label" for="cool_guy_3">Option 3</label>
+
   </div>
+
   <pre class="xs-mt2"><code class="html"><%='<div class="segmented-button">'%>
-    <%='<input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
-    <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
-    <%='<input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
-    <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
-    <%='<input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
-    <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
-  <%='</div>'%>
-  </code></pre>
+  <%='<input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
+  <%='<input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
+  <%='<input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
+  <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
+<%='</div>'%></code></pre>
 
 </section>
 
