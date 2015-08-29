@@ -126,7 +126,7 @@ $button-height-small: 2rem;
   
 }
 
-.segmented-button-label {
+.segmented-button-label, .segmented-button-label--small {
   display: inline-block;
   cursor: pointer;
   float: left;
