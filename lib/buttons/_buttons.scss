@@ -134,7 +134,7 @@ $button-height-small: 2rem;
   text-decoration: none;
   color: $text-blue;
 
-  input {
+  .button-group__radio {
     @include visuallyhidden;
   }
   
@@ -158,8 +158,8 @@ $button-height-small: 2rem;
   }
 }
 
-.button-group input:checked + .button-group__item,
-.button-group--small input:checked + .button-group__item {
+.button-group .button-group__radio:checked + .button-group__item,
+.button-group--small .button-group__radio:checked + .button-group__item {
   background-color: $fill-gray--lighter;
   color: $text-gray;
 }
