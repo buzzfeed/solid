@@ -1,4 +1,4 @@
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb2 bold">Floats</h3>
 
@@ -13,7 +13,7 @@
 
 <!--Inline/xs-block-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb2 bold">xs-block Types</h3>
 
@@ -29,7 +29,7 @@
 
 <!--Overflow-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb2 bold">Overflows</h3>
 
@@ -61,7 +61,7 @@
 
 <!--Widths-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb2 bold">Widths</h3>
 
@@ -78,7 +78,7 @@ xs-fit { max-width: 100%; }</code></pre>
 
 <!--Spacing-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb1 bold">Spacing</h3>
 	<p class="xs-mb2">This shorthand can be combined to set margin, padding and position in a number of ways: to all sides of an item at once, to just the x or y-axis or even to a single side. The spacing is based on the $space-n variables, where n increments from 0-4.</p>
@@ -138,18 +138,26 @@ xs-fit { max-width: 100%; }</code></pre>
 			<td>4</td>
 			<td>$space-4 <span class="text-5 text-gray--lightest xs-ml1">2rem</span></td>
 		</tr>
+		<tr>
+			<td>5</td>
+			<td>$space-5 <span class="text-5 text-gray--lightest xs-ml1">4rem</span></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>$space-6 <span class="text-5 text-gray--lightest xs-ml1">6rem</span></td>
+		</tr>
 	</table>
 
 </section>
 
 <!--Margins/Paddings-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb3 bold">Margin</h3>
 
 	<div class="xs-mb2">
-		<div class="xs-inline-block xs-border xs-p2 xs-mr0">xs-mr0</div><div class="xs-inline-block xs-border xs-p2 xs-mr1">xs-mr1</div><div class="xs-inline-block xs-border xs-p2 xs-mr2">xs-mr2</div><div class="xs-inline-block xs-border xs-p2 xs-mr3">xs-mr3</div><div class="xs-inline-block xs-border xs-p2 xs-mr4">xs-mr4</div>
+		<div class="xs-inline-block xs-border xs-p2 xs-mr0">xs-mr0</div><div class="xs-inline-block xs-border xs-p2 xs-mr1">xs-mr1</div><div class="xs-inline-block xs-border xs-p2 xs-mr2">xs-mr2</div><div class="xs-inline-block xs-border xs-p2 xs-mr3">xs-mr3</div><div class="xs-inline-block xs-border xs-p2 xs-mr4">xs-mr4</div><div class="xs-inline-block xs-border xs-p2 xs-mr5">xs-mr5</div><div class="xs-inline-block xs-border xs-p2 xs-mr6">xs-mr6</div>
 	</div>
 
 	<pre><code class="css">xs-m0  { margin:        0; }
@@ -192,11 +200,27 @@ xs-ml4 { margin-left:   $space-4; }
 xs-mx4 { margin-left:   $space-4; margin-right: $space-4;}
 xs-my4 { margin-top:    $space-4; margin-bottom: $space-4;}
 
+xs-m5  { margin:        $space-5; }
+xs-mt5 { margin-top:    $space-5; }
+xs-mr5 { margin-right:  $space-5; }
+xs-mb5 { margin-bottom: $space-5; }
+xs-ml5 { margin-left:   $space-5; }
+xs-mx5 { margin-left:   $space-5; margin-right: $space-5;}
+xs-my5 { margin-top:    $space-5; margin-bottom: $space-5;}
+
+xs-m6  { margin:        $space-6; }
+xs-mt6 { margin-top:    $space-6; }
+xs-mr6 { margin-right:  $space-6; }
+xs-mb6 { margin-bottom: $space-6; }
+xs-ml6 { margin-left:   $space-6; }
+xs-mx6 { margin-left:   $space-6; margin-right: $space-6;}
+xs-my6 { margin-top:    $space-6; margin-bottom: $space-6;}
+
 xs-mx-auto { margin-left: auto; margin-right: auto; }</code></pre>
 
 </section>
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb3 bold">Padding</h3>
 
@@ -206,6 +230,8 @@ xs-mx-auto { margin-left: auto; margin-right: auto; }</code></pre>
 		<div class="xs-inline-block xs-border xs-p2">xs-p2</div>
 		<div class="xs-inline-block xs-border xs-p3">xs-p3</div>
 		<div class="xs-inline-block xs-border xs-p4">xs-p4</div>
+		<div class="xs-inline-block xs-border xs-p5">xs-p5</div>
+		<div class="xs-inline-block xs-border xs-p6">xs-p6</div>
 	</div>
 
 	<pre><code class="css">xs-p0  { padding:        0; }
@@ -246,13 +272,31 @@ xs-pr4 { padding-right:  $space-4; }
 xs-pb4 { padding-bottom: $space-4; }
 xs-pl4 { padding-left:   $space-4; }
 xs-px4 { padding-left:   $space-4; padding-right: $space-4;}
-xs-py4 { padding-top:    $space-4; padding-bottom: $space-4;}</code></pre>
+xs-py4 { padding-top:    $space-4; padding-bottom: $space-4;}
+
+xs-p5  { padding:        $space-5; }
+xs-pt5 { padding-top:    $space-5; }
+xs-pr5 { padding-right:  $space-5; }
+xs-pb5 { padding-bottom: $space-5; }
+xs-pl5 { padding-left:   $space-5; }
+xs-px5 { padding-left:   $space-5; padding-right: $space-5;}
+xs-py5 { padding-top:    $space-5; padding-bottom: $space-5;}
+
+xs-p6  { padding:        $space-6; }
+xs-pt6 { padding-top:    $space-6; }
+xs-pr6 { padding-right:  $space-6; }
+xs-pb6 { padding-bottom: $space-6; }
+xs-pl6 { padding-left:   $space-6; }
+xs-px6 { padding-left:   $space-6; padding-right: $space-6;}
+xs-py6 { padding-top:    $space-6; padding-bottom: $space-6;}
+
+</code></pre>
 
 </section>
 
 <!--Positioning-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb1 bold">Positioning</h3>
 	<p class="xs-mb2">Use these classes to position elements and give them z-index hierarchy.</p>
@@ -291,11 +335,21 @@ xs-r4 { right:  $space-4; }
 xs-b4 { bottom: $space-4; }
 xs-l4 { left:   $space-4; }
 
+xs-t5 { top:    $space-5; }
+xs-r5 { right:  $space-5; }
+xs-b5 { bottom: $space-5; }
+xs-l5 { left:   $space-5; }
+
+xs-t6 { top:    $space-6; }
+xs-r6 { right:  $space-6; }
+xs-b6 { bottom: $space-6; }
+xs-l6 { left:   $space-6; }
+
 </section>
 
 <!--Rounded/Circle-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb1 bold">Rounded Corners and Circles</h3>
 	<p class="xs-mb2">Round off corners or make an element a circle using <code class="js-highlight">rounded</code> and <code class="js-highlight">circle</code>.</p>
@@ -325,7 +379,7 @@ xs-l4 { left:   $space-4; }
 
 <!--Border-->
 
-<section class="xs-mb4 xs-pb2">
+<section class="xs-mb5 xs-pb2">
 
 	<h3 class="xs-mb1 bold">xs-borders</h3>
 	<p class="xs-mb4">Add a quick, semi-transparent xs-border to an object.</p>
