@@ -64,6 +64,10 @@ $button-height-small: 2rem;
     color: $text-white;
   }
 
+  &.button--disabled:hover {
+    color: $text-white;
+  }
+
   &:not(.button--disabled):active {    
     background-color: darken($fill-blue, 35%);
   }
@@ -79,17 +83,26 @@ $button-height-small: 2rem;
     color: $text-white;
   }
 
+  &.button--disabled:hover {
+    color: $text-blue;
+  }
+
   &:not(.button--disabled):active {   
     background-color: darken($fill-blue, 20%); 
   }
 }
 
-.button--delete {
+.button--negative {
   background-color: $fill-red;
   color: $text-white; 
 
   &:not(.button--disabled):hover {
+    color: $text-white; 
     background-color: darken($fill-red, 20%); 
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
   }
 
   &:not(.button--disabled):active {   
@@ -156,13 +169,3 @@ $button-height-small: 2rem;
   height: $button-height-small;
   font-size: $text-5; 
 }
-
-// This overrides link styles so that button text doesn't inherit global a styling
- 
-a.button {
-
-  &:hover {
-    color: $text-white;
-  }
-}
-
