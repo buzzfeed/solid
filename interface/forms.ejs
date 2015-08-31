@@ -1,85 +1,127 @@
-<section class="xs-mb4">
-  <h3 class="xs-mb2 bold">Default Inputs</h3>
+<section class="xs-mb4 xs-pb2">
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Text input with label</label>
-      <label class="xs-block text-4 text-gray--lighter">A text input should always have a label. Labels should be written in sentence case and are always placed on top of the input.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <fieldset class="form-fieldset">
-      <label class="form-label">Your name</label>
-      <input type="text" class="text-input">
-      <button class="button button--primary xs-mb2">Add</button>
-    </fieldset>
-      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br>  <%='<label class="form-label">Your name</label>'%><br>  <%='<input type="text" class="text-input">'%><br>  <%='<button class="button button--primary">Add</button>'%><br><%='</fieldset>'%></code></pre>
-    </div>
-  </div>
+  <h2 class="xs-mb2 bold">Form Labels</h2>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Text input with placeholder text</label>
-      <label class="xs-block text-4 text-gray--lighter">This is a default text input with placeholder text inside. Placeholder text should only be used when necessary. A good use of placeholder text would be to inform the user of what they should/can type in the field.</label>
-    </div>
-    <div class="fill-white xs-p3">
-      <fieldset class="form-fieldset">
-        <label class="form-label">Your website</label>
-        <input type="text" placeholder="www.example.com" class="text-input xs-mb2">
-        <button class="button button--primary">Add</button>
-      </fieldset>
-      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br>  <%='<label class="form-label">Your name</label>'%><br>  <%='<input type="text" placeholder="www.example.com" class="text-input">'%><br>  <%='<button class="button button--primary">Add</button>'%><br><%='</fieldset>'%></code></pre>
-    </div>
-  </div>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label</code></span> class to get our default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case.</p>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <fieldset class="form-fieldset">
-        <label class="xs-block text-4 bold">Textarea</label>
-        <label class="xs-block text-4 text-gray--lighter">Textareas should be used when a field may be filled out with more than one line of text. An example use case is for comments or for a field in a contact form. Generally aim for 52-78 characters per line.</label>
-      </fieldset>
-   </div>
-   <div class="fill-white xs-p3">
-    <fieldset class="form-fieldset">
-      <label class="form-label">Comments</label>
-      <textarea class="textarea xs-mb2"></textarea>
-    </fieldset>
-      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br>  <%='<label class="form-label">Comments</label>'%><br>  <%='<textarea class="textarea xs-mb2"></textarea>'%><br><%='</fieldset>'%></code></pre>
-    </div>
-  </div>
+  <form class="xs-mb4">
+    <label class="form-label">Add your website</label>
+  </form>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Select menu</label>
-      <label class="xs-block text-4 text-gray--lighter">Selects are drop down menus and they can be used when you need the user to select one option out of many. You can put a label on top of the select if the text inside the menu is not descriptive enough.</label>
-    </div>
-    <div class="fill-white xs-p3">
-      <fieldset class="form-fieldset">
-        <select class="select xs-mb2">
-          <option value="choose">Choose a personality</option>
-          <option value="amazing">Amazing</option>
-          <option value="boring">Boring</option>
-          <option value="fun">Fun</option> 
-        </select>
-      </fieldset>
-      <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br>  <%= '<select class="select xs-mb2">'%><br>    <%='<option value="choose">Choose a personality</option>'%><br>    <%='<option value="amazing">Amazing</option>'%><br>    <%='<option value="boring">Boring</option>'%><br>    <%='<option value="fun">Fun</option>'%><br>  <%='</select>'  %><br><%='</fieldset>'%></code></pre>
-    </div>
-  </div>
+  <pre><code class="html"><%='<form>'%>
+  <%='<label class="form-label">Choose a username</label>'%>
+<%='</form>'%></code></pre>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">    
-    <div class="xs-p3">
-        <label class="xs-block text-4 bold">Radio buttons</label> 
-        <label class="xs-block text-4 text-gray--lighter">Radio buttons let you choose from two or more options. You can only choose one option in the set.</label>
-    </div>
-    <div class="fill-white xs-p3">
-      <fieldset class="form-fieldset">
-        <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
-        <label class="radio-label" for="option_1">Option 1</label>  
-        <input type="radio" class="radio" id="option_2" value="option_2" name="options">
-        <label class="radio-label" for="option_2">Option 2</label>
-      </flieldset>
-       <pre><code class="html"><%='<fieldset class="form-fieldset">'%><br>  <%= '<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%><br>  <%='<label class="radio-label" for="option_1">Option 1</label>'%><br>  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%><br>  <%='<label class="radio-label" for="option_2">Option 2</label>' %><br><%='</fieldset>'%></code></pre>
-    </div>
-  </div>
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="xs-mb2 bold">Text Inputs</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">text-input</code></span> class to get our default styling for text inputs. BuzzFeed text inputs are always paired with a label to give users context. Placeholder text is used for additional context when necessary.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add your website</label>
+    <input type="text" class="text-input" placeholder="www.example.com">
+  </form>
+
+  <pre><code class="html"><%='<form>'%>
+  <%='<label class="form-label">Choose a username</label>'%>
+  <%='<input type="text" class="text-input" placeholder="www.example.com">'%>
+<%='</form>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="xs-mb2 bold">Textareas</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">textarea</code></span> class to get our default styling for textareas. When choosing a type size and width for textareas, Solid suggests aiming for a measure of 52-78 characters.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add a comment</label>
+    <textarea class="textarea"></textarea>
+  </form>
+
+  <pre><code class="html"><%='<form>'%>
+  <%='<label class="form-label">Add a Comment</label>'%>
+  <%='<textarea class="textarea"></textarea>'%>
+<%='</form>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="xs-mb2 bold">Select Fields</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">select</code></span> class to get our default styling for select fields. Optionally, use a form label above your select if the default text is not desrcriptive enough, if the default is one of the valid select options, or if the selection will be saved and viewable again later.</p>
+
+  <form class="xs-mb4">
+    <select class="select">
+      <option value="choose">Choose your personality</option>
+      <option value="amazing">Amazing</option>
+      <option value="boring">Boring</option>
+      <option value="fun">Fun</option> 
+    </select>
+  </form>
+
+  <pre><code class="html"><%='<form>'%>
+  <%='<select class="select">'%>
+    <%='<option value="choose">Choose your personality</option>'%>
+    <%='<option value="amazing">Amazing</option>'%>
+    <%='<option value="boring">Boring</option>'%>
+    <%='<option value="fun">Fun</option>'%>
+  <%='</select>'%>
+<%='</form>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="xs-mb2 bold">Radio Buttons</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">radio</code></span> and <span class="nowrap">.<code class="js-highlight">radio-label</code></span> classes to get Solid's default styling for radio inputs.</p>
+
+  <form class="xs-mb4">
+    <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
+    <label class="radio-label" for="option_1">Option 1</label>  
+    <input type="radio" class="radio" id="option_2" value="option_2" name="options">
+    <label class="radio-label" for="option_2">Option 2</label>
+  </form>
+
+  <pre><code class="html"><%='<form>'%>
+  <%='<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
+  <%='<label class="radio-label" for="option_1">Option 1</label>'%>
+  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%>
+  <%='<label class="radio-label" for="option_2">Option 2</label>'%>
+<%='</form>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="xs-mb2 bold">Checkboxes</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">checkbox</code></span> class to get Solid's default styling for radio inputs.</p>
+
+  <form class="xs-mb4">
+    <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes">
+    <label for="check_1">Option 1</label> 
+    <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">
+    <label for="check_2">Option 2</label>
+  </form>
+
+  <pre><code class="html"><%='<form>'%>
+  <%='<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
+  <%='<label class="radio-label" for="option_1">Option 1</label>'%>
+  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%>
+  <%='<label class="radio-label" for="option_2">Option 2</label>'%>
+<%='</form>'%></code></pre>
+
+</section>
+
+
+<section class="xs-mb4 xs-pb2">
 
   <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">  
     <div class="xs-p3">  
