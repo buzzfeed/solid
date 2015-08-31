@@ -61,6 +61,7 @@ $button-height-small: 2rem;
 
   &:not(.button--disabled):hover {
     background-color: darken($fill-blue, 20%);
+    color: $text-white;
   }
 
   &:not(.button--disabled):active {    
@@ -75,7 +76,7 @@ $button-height-small: 2rem;
 
   &:not(.button--disabled):hover {
     background-color: $fill-blue;
-    color: $fill-white; 
+    color: $text-white;
   }
 
   &:not(.button--disabled):active {   
