@@ -1,180 +1,169 @@
-<section class="xs-mb4">
-  <h3 class="bold">Default Buttons</h3>
-  <h4 class="xs-col-12 lg-col-9 xs-mb3">By default, buttons size to the width of the text inside them. 
-  </h4>
+<!--<section class="xs-mb4 xs-pb2">
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Primary button</label>
-      <label class="xs-block text-4 text-gray--lighter">The primary button is used for actions where the button takes a forceful action, or a <i>primary</i> action on the page. It’s used for cases like <strong>Yes</strong>/No and <strong>Add</strong>/Cancel. <br><br>
-      <strong>For a button that links,</strong> use an <code class="js-highlight">a</code> element that's styled like a button. <br><br>
-      <strong>For a button that performs an action on this page,</strong> use a <code class="js-highlight">button</code> element when you are submitting to a database (Submit, Load More, etc.).</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <a class="button button--primary" href="">Link</a>
+  <h2 class="bold xs-mb2">Buttons</h2>
+
+  <p class="xs-mb4">Solid provides a variety as buttons to use as links or page actions. The default <span class="nowrap">.<code class="js-highlight">button</code></span> class applies a base reset, padding and type size to both buttons and links.</p>
+
+  <p class="xs-mb1">.<code class="js-highlight">button</code></p>
+
+  <a href="#" class="button">Link</a> <button class="button">Button</button>
+
+</section>-->
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="bold xs-mb2">Primary Buttons</h2>
+
+  <p class="xs-mb4">This button type is used for primary links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1">.<code class="js-highlight">button--primary</code></p>
+    <a class="button button--primary" href="#">Link</a>
     <button class="button button--primary">Button</button>
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--primary" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--primary">Button</button>'%></code></pre>
-    </div>
   </div>
+  <pre class="xs-mt2"><code class="html"><%='<a class="button button--primary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mt1"><code class="html"><%='<button class="button button--primary">Button</button>'%></code></pre>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Secondary button</label>
-      <label class="xs-block text-4 text-gray--lighter">The secondary button is used for actions that are less important than the primary action (if there is one). This button is used for things like Yes/<strong>No</strong> and Add/<strong>Cancel</strong>. It also can be used to load more content, like Load more and More news. This button does not have a background fill. <br><br> 
-      <strong>For a button that links,</strong> use an <code class="js-highlight">a</code> element that's styled like a button. <br><br>
-      <strong>For a button that performs an action on this page,</strong> use a <code class="js-highlight">button</code> element when you are submitting to a database (Submit, Load More, etc.).</label></label>
-    </div>
-  <div class="fill-white xs-p3">
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="bold xs-mb2">Secondary Buttons</h2>
+
+  <p class="xs-mb4">This button type is used for secondary links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1">.<code class="js-highlight">button--secondary</code></p>
     <a class="button button--secondary" href="">Link</a>
     <button class="button button--secondary">Button</button>
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--secondary" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--secondary">Button</button>'%></code></pre>
-    </div>
   </div>
+  <pre class="xs-mt2"><code class="html"><%='<a class="button button--secondary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mt1"><code class="html"><%='<button class="button button--secondary">Button</button>'%></code></pre>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Delete button</label>
-      <label class="xs-block text-4 text-gray--lighter">Use this button only for deleting! Please don't use this for any other type of negative or dangerous action. It should only be used if something is going to be deleted after clicking this button.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <button class="button button--delete">Delete</button>
-    <pre class="xs-mt2"><code class="html"><%='<button class="button button--delete">Delete</button>'%></code></pre>
-    </div>
-  </div>
-
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Disabled buttons</label>
-      <label class="xs-block text-4 text-gray--lighter">This button is disabled and cannot be clicked. Use the <code class="js-highlight">button--disabled</code> class to make a disabled button.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <a class="button button--primary button--disabled" href="">Link</a>
-    <button class="button button--primary button--disabled">Button</button>
-    <a class="button button--secondary button--disabled" href="">Link</a>
-    <button class="button button--secondary button--disabled">Button</button>
-    <button class="button button--delete button--disabled">Delete</button>
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--primary button--disabled" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--primary button--disabled">Button</button>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<a class="button button--secondary button--disabled" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--secondary button--disabled">Button</button>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--delete button--disabled">Delete</button>'%></code></pre>
-    </div>
-  </div>
-
-
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Small buttons</label>
-      <label class="xs-block text-4 text-gray--lighter">Use the <code class="js-highlight">button--small</code> class to make a small button.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <a class="button button--primary button--small" href="">Link</a>
-    <button class="button button--primary button--small">Button</button>
-    <a class="button button--secondary button--small" href="">Link</a>
-    <button class="button button--secondary button--small">Button</button>
-    <button class="button button--delete button--small">Delete</button>
-
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--primary button--small" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--primary button--small">Button</button>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<a class="button button--secondary button--small" href="">Link</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--secondary button--small">Button</button>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<button class="button button--delete button--small">Delete</button>'%></code></pre>
-    </div>
-  </div>
-
- 
 </section>
 
-<section class="xs-mb4">
-  <h3 class="bold xs-mb2">Using multiple buttons together</h3>
+<section class="xs-mb4 xs-pb2">
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Primary button as primary action</label>
-      <label class="xs-block text-4 text-gray--lighter">The primary button should always be placed to the right of the secondary button. Add an <code class="js-highlight">xs-mr1</code> class to the button on the left to space out the buttons.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <a class="button button--secondary xs-mr1" href="">Cancel</a>
-    <a class="button button--primary" href="">Add</a>
+  <h2 class="bold xs-mb2">Negative Buttons</h2>
 
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--secondary xs-mr1" href="">Cancel</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<a class="button button--primary" href="">Add</a>'%></code></pre>
-    </div>
+  <p class="xs-mb4">This button type is used for destructive or negative links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1">.<code class="js-highlight">button--negative</code></p>
+    <a class="button button--negative" href="">Link</a>
+    <button class="button button--negative">Button</button>
   </div>
+  <pre class="xs-mt2"><code class="html"><%='<a class="button button--negative" href="">Link</a>'%></code></pre>
+  <pre class="xs-mt1"><code class="html"><%='<button class="button button--negative">Button</button>'%></code></pre>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">
-    <div class="xs-p3">
-      <label class="xs-block text-4 bold">Delete button as primary action</label>
-      <label class="xs-block text-4 text-gray--lighter">The delete button should always be placed to the right of the secondary button. Add an <code class="js-highlight">xs-mr1</code> class to the button on the left to space out the buttons.</label>
-    </div>
-  <div class="fill-white xs-p3">
-    <a class="button button--secondary xs-mr1" href="">Cancel</a>
-    <a class="button button--delete" href="">Delete</a>
-
-    <pre class="xs-mt2"><code class="html"><%='<a class="button button--secondary xs-mr1" href="">Cancel</a>'%></code></pre>
-    <pre class="xs-mt1"><code class="html"><%='<a class="button button--delete" href="">Delete</a>'%></code></pre>
-    </div>
-  </div>
 </section>
 
- 
- <section class="xs-mb4">
-  <h3 class="bold xs-mb2">Segmented button</h3>
+<section class="xs-mb4 xs-pb2">
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">    
-    <div class="xs-p3">
-        <label class="xs-block text-4 bold">Default segmented button</label> 
-        <label class="xs-block text-4 text-gray--lighter">This should only be used with 3 or more options. If you have only 2 options, use radio buttons.</label>
-    </div>
-    <div class="fill-white xs-p3">
-      <div class="segmented-button">
-        <input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
-        <label class="segmented-button-label" for="cool_guy_1">Option 1</label>  
-        <input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
-        <label class="segmented-button-label" for="cool_guy_2">Option 2</label>
-        <input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
-        <label class="segmented-button-label" for="cool_guy_3">Option 3</label>
-     </div>
-<pre class="xs-mt2"><code class="html"><%='<div class="segmented-button">'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
-<%='</div>'%>
-</code></pre>
-    </div>
-  </div>
-</div>
+  <h2 class="bold xs-mb2">Disabled Buttons</h2>
 
-  <div class="xs-col-12 lg-col-9 xs-mb4 fill-gray--lighter rounded xs-border">    
-    <div class="xs-p3">
-        <label class="xs-block text-4 bold">Small segmented button</label> 
-        <label class="xs-block text-4 text-gray--lighter">This should only be used with 3 or more options. If you have only 2 options, use radio buttons.</label>
-    </div>
-    <div class="fill-white xs-p3">
-      <div class="segmented-button">
-        <input type="radio" class="segmented-button" id="cool_dude_1" value="cool_dude_1" name="cool_dudes" checked="checked">
-        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_1">Option 1</label>  
-        <input type="radio" class="segmented-button" id="cool_dude_2" value="cool_dude_2" name="cool_dudes">
-        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_2">Option 2</label>
-        <input type="radio" class="segmented-button" id="cool_dude_3" value="cool_dude_3" name="cool_dudes">
-        <label class="segmented-button-label segmented-button-label--small" for="cool_dude_3">Option 3</label>
-     </div>
-<pre class="xs-mt2"><code class="html"><%='<div class="segmented-button">'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
-  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_1">Option 1</label>'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
-  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_2">Option 2</label>'%>
-  <%='<input type="radio" class="segmented-button" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
-  <%='<label class="segmented-button-label segmented-button-label--small" for="cool_dude_3">Option 3</label>'%>
-<%='</div>'%>
-</code></pre>
-    </div>
+  <p class="xs-mb4">This button type is used for inactive links and page actions.</p>
+
+  <div class="xs-mb4">
+    <a class="button--disabled button--primary" href="">Link</a>
+    <button class="button--disabled button--primary">Button</button>
+    <a class="button--disabled button--secondary" href="">Link</a>
+    <button class="button--disabled button--secondary">Button</button>
+    <button class="button--disabled button--negative">Delete</button>
   </div>
-</div>
+  <pre class="xs-mb1"><code class="html"><%='<a class="button--disabled button--primary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<button class="button--disabled button--primary">Button</button>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<a class="button--disabled button--secondary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<button class="button--disabled button--secondary">Button</button>'%></code></pre>
+  <pre><code class="html"><%='<button class="button--disabled button--negative">Delete</button>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="bold xs-mb2">Small Buttons</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button--small</code></span> class for smaller versions of all Solid's button types.</p>
+
+  <div class="xs-mb4">
+    <a class="button--small button--primary" href="#">Link</a>
+    <button class="button--small button--primary">Button</button>
+    <a class="button--small button--secondary" href="#">Link</a>
+    <button class="button--small button--secondary">Button</button>
+    <button class="button--small button--negative">Delete</button>
+  </div>
+  <pre class="xs-mb1"><code class="html"><%='<a class="button--small button--primary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<button class="button--small button--primary">Button</button>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<a class="button--small button--secondary" href="">Link</a>'%></code></pre>
+  <pre class="xs-mb1"><code class="html"><%='<button class="button--small button--secondary">Button</button>'%></code></pre>
+  <pre><code class="html"><%='<button class="button--small button--negative">Delete</button>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="bold xs-mb2">Button Groups</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button-group</code></span> class and a combination of radio inputs (<span class="nowrap">.<code class="js-highlight">button-group__radio</code></span>) and labels (<span class="nowrap">.<code class="js-highlight">button-group__item</code></span>) to create segmented controls. This pattern should only be used when there are at least 3 buttons.</p>
+  
+  <form>
+
+    <div class="button-group">
+
+      <input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">
+      <label class="button-group__item" for="option_1">Option 1</label>
+
+      <input class="button-group__radio" type="radio" id="option_2" value="option_2" name="options">
+      <label class="button-group__item" for="option_2">Option 2</label>
+
+      <input class="button-group__radio" type="radio" id="option_3" value="option_3" name="options">
+      <label class="button-group__item" for="option_3">Option 3</label>
+
+    </div>
+
+  </form>
+
+  <pre class="xs-mt2"><code class="html"><%='<div class="segmented-button">'%>
+  <%='<input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
+  <%='<label class="button-group__item" for="option_1">Option 1</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_2" value="option_2" name="options">'%>
+  <%='<label class="button-group__item" for="option_2">Option 2</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_3" value="option_3" name="options">'%>
+  <%='<label class="button-group__item" for="option_3">Option 3</label>'%>
+<%='</div>'%></code></pre>
+
+</section>
+
+<section class="xs-mb4 xs-pb2">
+
+  <h2 class="bold xs-mb2">Small Button Groups</h2>
+
+  <p class="xs-mb4">Simply use <span class="nowrap">.<code class="js-highlight">button-group--small</code></span> to create a smaller version of the segmented button above.</p>
+
+  <form>
+
+    <div class="button-group--small">
+
+      <input class="button-group__radio" type="radio" id="option_4" value="option_4" name="options" checked="checked">
+      <label class="button-group__item" for="option_4">Option 4</label>
+
+      <input class="button-group__radio" type="radio" id="option_5" value="option_5" name="options">
+      <label class="button-group__item" for="option_5">Option 5</label>
+
+      <input class="button-group__radio" type="radio" id="option_6" value="option_6" name="options">
+      <label class="button-group__item" for="option_6">Option 6</label>
+
+    </div>
+  
+  </form>
+
+  <pre class="xs-mt2"><code class="html"><%='<div class="button-group--small">'%>
+  <%='<input class="button-group__radio" type="radio" id="option_4" value="option_4" name="options" checked="checked">'%>
+  <%='<label class="button-group__item" for="option_4">Option 4</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_5" value="option_5" name="options">'%>
+  <%='<label class="button-group__item" for="option_5">Option 5</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_6" value="option_6" name="options">'%>
+  <%='<label class="button-group__item" for="option_6">Option 6</label>'%>
+<%='</div>'%></code></pre>
 
 </section>

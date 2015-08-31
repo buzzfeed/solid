@@ -61,6 +61,11 @@ $button-height-small: 2rem;
 
   &:not(.button--disabled):hover {
     background-color: darken($fill-blue, 20%);
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
   }
 
   &:not(.button--disabled):active {    
@@ -75,7 +80,11 @@ $button-height-small: 2rem;
 
   &:not(.button--disabled):hover {
     background-color: $fill-blue;
-    color: $fill-white; 
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-blue;
   }
 
   &:not(.button--disabled):active {   
@@ -83,12 +92,17 @@ $button-height-small: 2rem;
   }
 }
 
-.button--delete {
+.button--negative {
   background-color: $fill-red;
   color: $text-white; 
 
   &:not(.button--disabled):hover {
+    color: $text-white; 
     background-color: darken($fill-red, 20%); 
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
   }
 
   &:not(.button--disabled):active {   
@@ -112,7 +126,7 @@ $button-height-small: 2rem;
 }
 
 
-.segmented-button {
+.button-group, .button-group--small {
   position: relative;
   display: inline-block;
   border: $border;
@@ -120,13 +134,13 @@ $button-height-small: 2rem;
   text-decoration: none;
   color: $text-blue;
 
-  input {
+  .button-group__radio {
     @include visuallyhidden;
   }
   
 }
 
-.segmented-button-label {
+.button-group__item {
   display: inline-block;
   cursor: pointer;
   float: left;
@@ -144,23 +158,14 @@ $button-height-small: 2rem;
   }
 }
 
-.segmented-button:checked + .segmented-button-label {
-  background-color: $fill-gray--lighter; 
+.button-group .button-group__radio:checked + .button-group__item,
+.button-group--small .button-group__radio:checked + .button-group__item {
+  background-color: $fill-gray--lighter;
   color: $text-gray;
 }
 
-.segmented-button-label--small {
+.button-group--small .button-group__item {
   padding: .5rem .625rem;
   height: $button-height-small;
   font-size: $text-5; 
 }
-
-// This overrides link styles so that button text doesn't inherit global a styling
- 
-a.button {
-
-  &:hover {
-    color: $text-white;
-  }
-}
-
