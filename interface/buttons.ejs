@@ -102,68 +102,68 @@
 
 <section class="xs-mb4 xs-pb2">
 
-  <h2 class="bold xs-mb2">Segmented Buttons</h2>
+  <h2 class="bold xs-mb2">Button Groups</h2>
 
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">segmented-button</code></span> and a combination of radio inputs and labels to create segmented controls. This pattern should only be used when there are at least three buttons.</p>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button-group</code></span> and a combination of radio inputs and labels to create segmented controls. This pattern should only be used when there are at least three buttons.</p>
   
   <form>
 
-    <div class="segmented-button">
+    <div class="button-group">
 
-      <input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
-      <label class="segmented-button-label" for="cool_guy_1">Option 1</label>
+      <input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">
+      <label class="button-group__item" for="option_1">Option 1</label>
 
-      <input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
-      <label class="segmented-button-label" for="cool_guy_2">Option 2</label>
+      <input class="button-group__radio" type="radio" id="option_2" value="option_2" name="options">
+      <label class="button-group__item" for="option_2">Option 2</label>
 
-      <input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
-      <label class="segmented-button-label" for="cool_guy_3">Option 3</label>
+      <input class="button-group__radio" type="radio" id="option_3" value="option_3" name="options">
+      <label class="button-group__item" for="option_3">Option 3</label>
 
     </div>
 
   </form>
 
   <pre class="xs-mt2"><code class="html"><%='<div class="segmented-button">'%>
-  <%='<input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
-  <%='<input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
-  <%='<input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
+  <%='<label class="button-group__item" for="option_1">Option 1</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_2" value="option_2" name="options">'%>
+  <%='<label class="button-group__item" for="option_2">Option 2</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_3" value="option_3" name="options">'%>
+  <%='<label class="button-group__item" for="option_3">Option 3</label>'%>
 <%='</div>'%></code></pre>
 
 </section>
 
 <section class="xs-mb4 xs-pb2">
 
-  <h2 class="bold xs-mb2">Small Segmented Buttons</h2>
+  <h2 class="bold xs-mb2">Small Button Groups</h2>
 
-  <p class="xs-mb4">Simply use <span class="nowrap">.<code class="js-highlight">segemented-button--small</code></span> to create a smaller version of the segmented button above.</p>
+  <p class="xs-mb4">Simply use <span class="nowrap">.<code class="js-highlight">button-group--small</code></span> to create a smaller version of the segmented button above.</p>
 
   <form>
 
-    <div class="segmented-button--small">
+    <div class="button-group--small">
 
-      <input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">
-      <label class="segmented-button-label" for="cool_guy_1">Option 1</label>
+      <input class="button-group__radio" type="radio" id="option_4" value="option_4" name="options" checked="checked">
+      <label class="button-group__item" for="option_4">Option 4</label>
 
-      <input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">
-      <label class="segmented-button-label" for="cool_guy_2">Option 2</label>
+      <input class="button-group__radio" type="radio" id="option_5" value="option_5" name="options">
+      <label class="button-group__item" for="option_5">Option 5</label>
 
-      <input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">
-      <label class="segmented-button-label" for="cool_guy_3">Option 3</label>
+      <input class="button-group__radio" type="radio" id="option_6" value="option_6" name="options">
+      <label class="button-group__item" for="option_6">Option 6</label>
 
     </div>
   
   </form>
 
-  <pre class="xs-mt2"><code class="html"><%='<div class="segmented-button--small">'%>
-  <%='<input type="radio" id="cool_guy_1" value="cool_guy_1" name="cool_guys" checked="checked">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_1">Option 1</label>'%>
-  <%='<input type="radio" id="cool_guy_2" value="cool_guy_2" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_2">Option 2</label>'%>
-  <%='<input type="radio" id="cool_guy_3" value="cool_guy_3" name="cool_guys">'%>
-  <%='<label class="segmented-button-label" for="cool_guy_3">Option 3</label>'%>
+  <pre class="xs-mt2"><code class="html"><%='<div class="button-group--small">'%>
+  <%='<input class="button-group__radio" type="radio" id="option_4" value="option_4" name="options" checked="checked">'%>
+  <%='<label class="button-group__item" for="option_4">Option 1</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_5" value="option_5" name="options">'%>
+  <%='<label class="button-group__item" for="option_5">Option 2</label>'%>
+  <%='<input class="button-group__radio" type="radio" id="option_6" value="option_6" name="options">'%>
+  <%='<label class="button-group__item" for="option_6">Option 3</label>'%>
 <%='</div>'%></code></pre>
 
 </section>

@@ -113,7 +113,7 @@ $button-height-small: 2rem;
 }
 
 
-.segmented-button, .segmented-button--small {
+.button-group, .button-group--small {
   position: relative;
   display: inline-block;
   border: $border;
@@ -127,7 +127,7 @@ $button-height-small: 2rem;
   
 }
 
-.segmented-button-label {
+.button-group__item {
   display: inline-block;
   cursor: pointer;
   float: left;
@@ -145,13 +145,13 @@ $button-height-small: 2rem;
   }
 }
 
-.segmented-button input:checked + .segmented-button-label,
-.segmented-button--small input:checked + .segmented-button-label {
-  background-color: $fill-gray--lighter; 
+.button-group input:checked + .button-group__item,
+.button-group--small input:checked + .button-group__item {
+  background-color: $fill-gray--lighter;
   color: $text-gray;
 }
 
-.segmented-button--small .segmented-button-label {
+.button-group--small .button-group__item {
   padding: .5rem .625rem;
   height: $button-height-small;
   font-size: $text-5; 
