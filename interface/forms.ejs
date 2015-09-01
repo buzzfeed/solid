@@ -2,30 +2,16 @@
 
   <h2 class="xs-mb2 bold">Form Labels</h2>
 
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label</code></span> class to get default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case.</p>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label</code></span> class to get default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case. Additionally, use the <span class="nowrap">.<code class="js-highlight">form-label--required</code></span> class around an asterisk to declare a field required. If a field needs to be marked as optional, wrap "(optional)" in <span class="nowrap">.<code class="js-highlight">form-label--optional</code></span>.</p>
 
   <form class="xs-mb4">
     <label class="form-label">Add your website</label>
-  </form>
-
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label">Add your website</label>'%>
-<%='</form>'%></code></pre>
-
-</section>
-
-<section class="xs-mb4 xs-pb2">
-
-  <h2 class="xs-mb2 bold">Required and Optional Form Labels</h2>
-
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label--required</code></span> class around an asterisk to declare a field required. If a field needs to be marked as optional, wrap "(optional)" in <span class="nowrap">.<code class="js-highlight">form-label--optional</code></span>.</p>
-
-  <form class="xs-mb4">
     <label class="form-label">Add your website <span class="form-label--required">*</span></label>
     <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
   </form>
 
   <pre><code class="html"><%='<form>'%>
+  <%='<label class="form-label">Add your website</label>'%>
   <%='<label class="form-label">Add your website <span class="form-label--required">*</span></label>'%>
   <%='<label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>'%>
 <%='</form>'%></code></pre>
