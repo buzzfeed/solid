@@ -68,19 +68,19 @@ $input-height-small: 2rem;
 // hide system radio button in order to use custom style
 .radio {
   @include visuallyhidden;
-}
 
-.radio-label {
-  cursor: pointer; 
-  display: block;
-  @include option-input-style;
+  + label {
+    cursor: pointer; 
+    display: block;
+    @include option-input-style;
 
-  &:before {   
-    border-radius: 50%;
+    &:before {   
+      border-radius: 50%;
+    }
   }
 }
 
-.radio:checked + .radio-label:before {
+.radio:checked + label:before {
   background-color: $fill-white;   
   border: 4px solid $fill-blue;
 }
@@ -108,13 +108,6 @@ $input-height-small: 2rem;
   background-color: $fill-blue;  
   background-size: .5rem; 
   border-style: none;
-}
-
-.date-input {
-  display: inline;
-  text-align: center;
-  width: $space-3 * 3;
-  margin-right: $space-1 / 2;
 }
 
 // labels, etc
