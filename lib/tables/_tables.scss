@@ -51,6 +51,8 @@ td {
 // Adding table layout
 
 .table {
+  border-collapse: separate;
+  border-spacing: 0;
   display: table;
 }
 

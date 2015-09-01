@@ -1,10 +1,10 @@
-<div class="xs-mb4 xs-pb2">
+<section class="xs-mb6">
 
-  <h3 class="bold xs-mb1">Borderless Tables</h3>
+  <h2 class="bold xs-mb2">Default Table</h2>
 
-  <p class="xs-mb3">You can add tables without using any classes at all. Just use the table, th, tr and td html elements to build. When considering whether or not to use the table element, consider whether or not the information inside is tabular data. Additionally, you can set the width of individual columns using <a href="/layout/grid">our grid's column classes,</a> as shown below:</p>
+  <p class="xs-mb4">Solid's default <code class="js-highlight">table</code> styling doesn't require any utility classes. Optionally, the width of individual columns can be set using <a href="/layout/grid">Solid's column classes,</a> as shown below:</p>
 
-  <table class="xs-mb3 xs-col-12 md-col-10">
+  <table class="xs-mb4 xs-col-12 md-col-10">
     <tr>
       <th class="xs-col-6">Title</th>
       <th class="xs-col-3">Views</th>
@@ -26,8 +26,6 @@
       <td>1.7x</td>
     </tr>
   </table>
-
-  <p>Here's what it looks like in code:</p>
 
 <pre><code class="html"><%='<table>'%>
   <%='<tr>'%>
@@ -52,17 +50,16 @@
   <%='</tr>'%>
 <%='</table>'%></code></pre>
 
-</div>
+</section>
 
-<div class="xs-mb4 xs-pb2">
+<section class="xs-mb6">
 
-  <h3 class="bold xs-mb1">Bordered Tables</h3>
+  <h2 class="bold xs-mb2">Bordered Table</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">table-border</code></span> class to automatically add borders to your table and all its rows.</p>
 
 
-  <p class="xs-mb3">Use the class <code class="js-highlight">table-border</code> to automatically add xs-borders to your table and all its rows.</p>
-
-
-  <table class="table-border xs-mb3 xs-col-12 md-col-10">
+  <table class="table-border xs-mb4 xs-col-12 md-col-10">
     <tr>
       <th class="xs-col-6">Title</th>
       <th class="xs-col-3">Views</th>
@@ -84,8 +81,6 @@
       <td>1.7x</td>
     </tr>
   </table>
-
-  <p>And the implementation:</p>
 
 <pre><code class="html"><%='<table class="table-border">'%>
   <%='<tr>'%>
@@ -111,21 +106,19 @@
 <%='</table>'%></code></pre>
 
 
-</div>
+</section>
 
-<div class="xs-mb4 xs-pb2">
+<section class="xs-mb4 xs-pb2">
 
-  <h3 class="bold xs-mb1">Faux Table Layout</h3>
+  <h2 class="bold xs-mb2">Faux Table Layout</h2>
 
-  <p class="xs-mb3">Sometimes, you'll want to give content the layout properties of a table without using the html elements. Using the classnames <code class="js-highlight">table</code>, <code class="js-highlight">th</code>, <code class="js-highlight">tr</code> and <code class="js-highlight">td</code>, you can add a table layout to non-tabular content.</p>
+  <p class="xs-mb4">To give content the layout properties of a table without using the <code class="js-highlight">table</code> element, use the <span class="nowrap">.<code class="js-highlight">table</code></span>, <span class="nowrap">.<code class="js-highlight">th</code></span>, <span class="nowrap">.<code class="js-highlight">tr</code></span> and <span class="nowrap">.<code class="js-highlight">td</code></span> classes.</p>
 
   <div class="table xs-mb3">
-    <div class="td fill-gray--lighter xs-border-right xs-p2">Lines of different lengths</div>
-    <div class="td fill-gray--lighter xs-border-right xs-p2">Will automatically expand their inner divs to be as tall as each other.</div>
-    <div class="td fill-gray--lighter xs-p2">Because tables are the most amazing things in the whole world don't you agree? Wait where are you going? Come back!</div>
+    <div class="td">Lines of different lengths</div>
+    <div class="td">Will automatically expand their inner divs to be as tall as each other.</div>
+    <div class="td">Because tables are the most amazing things in the whole world don't you agree? Wait where are you going? Come back!</div>
   </div>
-
-  <p>And the code:</p>
 
 <pre><code class="html"><%='<div class="table">'%>
   <%='<div class="td">Lines of different lengths</div>'%>
@@ -133,4 +126,4 @@
   <%='<div class="td">Because tables are the most amazing things in the whole world don\'t you agree? Wait where are you going? Come back!</div>'%>
 <%='</div>'%></code></pre>
 
-</div>
+</section>
