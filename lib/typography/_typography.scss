@@ -156,6 +156,14 @@ h6.slab,
   font-weight: normal;
 }
 
+// Caponi Specific Line-Height Per Font-Size
+h1.slab,
+.text-1.slab,
+h2.slab,
+.text-2.slab, {
+  line-height: 1.1;
+}
+
 // Ordered and unordered list, list items are block level
 
 ol,
