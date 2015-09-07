@@ -33,6 +33,14 @@
         <a href="/layout/<%= slug %>" class="xs-block <%- current.source == slug ? 'text-red' : '' %>"><%= page._data[slug].title %></a>
       </li>
     <% }; %>
+
+    <li>
+      <h2 class="text-4 bold xs-mt2">Sandbox</h2>
+    </li>
+    <% for(var slug in public.sandbox._data){ %>
+    <% var page = public.sandbox %>
+      <li><a href="/sandbox/<%= slug %>" class="xs-block <%- current.source == slug ? 'text-red' : '' %>">Sandbox</a></li>
+    <% }; %>
   </ol>
 </nav>
 
@@ -75,5 +83,14 @@
       </li>
     <% }; %>
 
+    <li>
+      <h2 class="text-5 bold xs-px2 xs-py1 fill-gray--lighter xs-border-bottom--lighter">Sandbox</h2>
+    </li>
+    <% for(var slug in public.sandbox._data){ %>
+    <% var page = public.sandbox %>
+      <li>
+        <a href="/sandbox/<%= slug %>" class="xs-block xs-p2 text-orange xs-border-bottom--lighter <%- current.source == slug ? 'text-red' : '' %>">Sandbox</a>
+      </li>
+    <% }; %>
   </ol>
 </nav>
