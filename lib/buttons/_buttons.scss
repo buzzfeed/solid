@@ -170,3 +170,58 @@ $button-height-small: 2rem;
   height: $button-height-small;
   font-size: $text-5; 
 }
+
+.button--facebook {
+  background-color: $fill-facebook;
+  color: $text-white;
+
+  &:not(.button--disabled):hover {
+    background-color: darken($fill-facebook, 20%);
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
+  }
+
+  &:not(.button--disabled):active {    
+    background-color: darken($fill-facebook, 35%);
+  }
+}
+
+.button--google {
+  background-color: $fill-google;
+  color: $text-white;
+
+  &:not(.button--disabled):hover {
+    background-color: darken($fill-google, 20%);
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
+  }
+
+  &:not(.button--disabled):active {    
+    background-color: darken($fill-google, 35%);
+  }
+}
+
+.button--icon {
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $fill-white;
+    margin: .05rem .625rem 0 0;
+  }
+}
+
+.button--small.button--icon { 
+  svg {
+    width: 14px;
+    height: 14px;
+    margin: .05rem .325rem 0 0;
+  }
+}
+
+
