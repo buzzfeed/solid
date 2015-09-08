@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 $input-height: 2.625rem;
-$input-height-small: 2rem;
+$input-height-small: $space-4;  // 2rem
 
 // Adds some base custom styles to radio buttons and checkboxes. 
 // In order to specify shape, border radius is applied 
@@ -37,7 +37,7 @@ $input-height-small: 2rem;
 .select {
   background-image: svg-background($down-caret);
   background-repeat: no-repeat;
-  background-position: calc(100% - 1rem) center;
+  background-position: calc(100% - $space-2) center;  // 100% - 1rem
   background-size: .6875rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -51,13 +51,13 @@ $input-height-small: 2rem;
 .date-input--small {
   font-size: $text-5; 
   height: $input-height-small;
-  padding: .5rem .625rem;
+  padding: $space-1 .625rem;
 }
 
 
 .select--small {
-  padding: 0 2rem 0 .625rem;
-  background-size: .5rem;
+  padding: 0 $space-4 0 .625rem;  // 0 2rem 0 .625rem
+  background-size: $space-1;  // .5rem
 }
 
 .textarea {
@@ -106,14 +106,14 @@ $input-height-small: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $fill-blue;  
-  background-size: .5rem; 
+  background-size: $space-1; 
   border-style: none;
 }
 
 // labels, etc
 .form-label {
   display: block;
-  font-weight: 600;
+  font-weight: $bold;
   margin-bottom: $space-1; 
 }
 
@@ -126,12 +126,12 @@ $input-height-small: 2rem;
 
 .form-label--optional {
   color: $text-gray--lightest;
-  font-weight: normal;
+  font-weight: $regular;
 }
 
 .form-label--required {
   color: $text-red;
-  font-weight: normal;
+  font-weight: $regular;
 }
 
 .form-helper {
@@ -171,7 +171,7 @@ $input-height-small: 2rem;
     display: inline-block;
     background-image: svg-background($checkmark);
     background-repeat: no-repeat;
-    background-size: .5rem;
+    background-size: $space-1;
     background-color: $fill-green;
     border-radius: 50%;
     background-position: center;

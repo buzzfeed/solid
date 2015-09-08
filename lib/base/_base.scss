@@ -4,19 +4,19 @@
 // Ensure we only define type using our default classes.
 
 small {
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 sub,
 sup {
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 
 // Switching from ems to rems for consistency and our own sanity.
 
 sup {
-  top: -.5rem;
+  top: (-$space-1);
 }
 
 sub {
@@ -27,7 +27,7 @@ code,
 kbd,
 pre,
 samp {
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 
@@ -43,7 +43,7 @@ fieldset {
 // Making sure that bold is 600, since we use semibold instead.
 
 optgroup {
-  font-weight: 600;
+  font-weight: $bold;
 }
 
 
