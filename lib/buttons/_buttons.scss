@@ -171,57 +171,61 @@ $button-height-small: 2rem;
   font-size: $text-5; 
 }
 
-.button--facebook {
-  background-color: $fill-facebook;
-  color: $text-white;
-
-  &:not(.button--disabled):hover {
-    background-color: darken($fill-facebook, 20%);
-    color: $text-white;
-  }
-
-  &.button--disabled:hover {
-    color: $text-white;
-  }
-
-  &:not(.button--disabled):active {    
-    background-color: darken($fill-facebook, 35%);
-  }
-}
-
-.button--google {
-  background-color: $fill-google;
-  color: $text-white;
-
-  &:not(.button--disabled):hover {
-    background-color: darken($fill-google, 20%);
-    color: $text-white;
-  }
-
-  &.button--disabled:hover {
-    color: $text-white;
-  }
-
-  &:not(.button--disabled):active {    
-    background-color: darken($fill-google, 35%);
-  }
-}
 
 .button--icon {
-  svg {
+  >svg {
     width: 16px;
     height: 16px;
     fill: $fill-white;
-    margin: .05rem .625rem 0 0;
+    margin: .05rem .45rem 0 0;
   }
 }
 
 .button--small.button--icon { 
-  svg {
+  >svg {
     width: 14px;
     height: 14px;
     margin: .05rem .325rem 0 0;
   }
 }
 
+.button--secondary.button--icon { 
+  >svg {
+    fill: $fill-blue;
+  }
+  &:hover svg {
+    fill: $fill-white;
+  }
+}
+
+// All social buttons have similar styles
+// use this to generate their style
+// -------------------------
+
+@mixin social-button($color) {
+  background-color: $color;
+  color: $text-white;
+
+  &:not(.button--disabled):hover {
+    background-color: darken($color, 20%);
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
+  }
+
+  &:not(.button--disabled):active {    
+    background-color: darken($color, 35%);
+  }
+}
+
+
+.button--facebook {
+  @include social-button($fill-facebook);
+}
+
+.button--google {
+  @include social-button($fill-google);
+}
 
