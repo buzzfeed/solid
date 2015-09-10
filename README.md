@@ -34,11 +34,17 @@ This installation guide assumes that you have the [Buzzfeed webapp](https://gith
 
 Open a terminal window. Clone the repo into a new folder:
 
-`git clone https://github.com/buzzfeed/solid.git /opt/buzzfeed/solid`
+`git clone git@github.com:buzzfeed/solid.git /opt/buzzfeed/solid`
 
 Move into that directory
 
 `cd /opt/buzzfeed/solid`
+
+### Prepare required directories
+
+```bash
+[ ! -d /buzzfeed ] && sudo mkdir -p /buzzfeed && sudo chown `id -u`:`id -g` /buzzfeed
+```
 
 ### Build the app
 
