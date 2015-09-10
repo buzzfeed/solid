@@ -225,7 +225,30 @@ $button-height-small: 2rem;
   @include social-button($fill-facebook);
 }
 
+.button--twitter {
+  @include social-button($fill-twitter);
+}
+
 .button--google {
   @include social-button($fill-google);
 }
 
+.button--linkedin {
+  @include social-button($fill-linkedin);
+}
+
+.button--pinterest {
+  @include social-button($fill-pinterest);
+}
+
+.button--tumblr {
+  @include social-button($fill-tumblr);
+}
+
+.button--youtube {
+  @include social-button($fill-youtube);
+}
+
+.button--instagram {
+  @include social-button($fill-instagram);
+}
