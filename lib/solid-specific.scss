@@ -7,26 +7,23 @@
 // Solid-Specific colors
 $js-highlight-magenta: #d14;
 
-.solid-logo {
+.solid-logo,
+.solid-logo-xs {
   display: inline-block;
   background: svg-background($solid-logo);
-  height: 33px;
-  width: 100px;
   position: relative;
+  height: 33px;
   left: -$space-1;
   text-indent: -999em;
   overflow: hidden;
 }
 
+.solid-logo {
+  width: 100px;
+}
+
 .solid-logo-xs {
-  display: inline-block;
-  background: svg-background($solid-logo-xs);
-  height: 33px;
   width: 37px;
-  position: relative;
-  left: -$space-1;
-  text-indent: -999em;
-  overflow: hidden;
 }
 
 // Code Snipppet Syntax Highlighting https://highlightjs.org/
