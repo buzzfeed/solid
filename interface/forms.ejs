@@ -129,17 +129,17 @@
   <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">checkbox</code></span> class alongside a <code class="js-highlight">label</code> to get Solid's default styling for radio inputs.</p>
 
   <form class="xs-mb4">
-    <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes">
+    <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes" checked="checked">
     <label for="check_1">Option 1</label> 
     <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">
     <label for="check_2">Option 2</label>
   </form>
 
   <pre><code class="html"><%='<form>'%>
-  <%='<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
-  <%='<label class="radio-label" for="option_1">Option 1</label>'%>
-  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%>
-  <%='<label class="radio-label" for="option_2">Option 2</label>'%>
+  <%='<input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes" checked="checked">'%>
+  <%='<label for="check_1">Option 1</label>'%>
+  <%='<input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">'%>
+  <%='<label for="check_2">Option 2</label>'%>
 <%='</form>'%></code></pre>
 
 </section>
