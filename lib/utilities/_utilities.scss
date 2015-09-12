@@ -178,6 +178,7 @@ img { max-width: 100%; height: auto; }
 &relative { position: relative; }
 &absolute { position: absolute; }
 &fixed {    position: fixed; }
+&static {   position: static; }
 
 &z1 { z-index: 100; }
 &z2 { z-index: 200; }
@@ -255,11 +256,4 @@ img { max-width: 100%; height: auto; }
   &border-bottom--lighter { border-bottom: $border--lighter; }
   &border-left--lighter   { border-left: $border--lighter; }
 
-}
-
-// Vertical Centering – this needs to be applied to the parent class of the elements you are trying to center
-
-.vertical-center {
-  display: flex;
-  align-items: center;
 }

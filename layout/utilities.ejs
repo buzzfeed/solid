@@ -246,172 +246,148 @@
   <p class="xs-mb4">Padding can be set from 0-6 spacing units on any side or axis, in the example below, <span class="nowrap">.<code class="js-highlight">xs-p0</code></span> through <span class="nowrap">.<code class="js-highlight">xs-p6</code></span> are used to set each element's padding to the various spacing values.</p>
 
   <div class="xs-mb4 font-size-0">
-    <div class="xs-inline-block xs-border p0">xs-p0</div>
-    <div class="xs-inline-block xs-border xs-p1">xs-p1</div>
-    <div class="xs-inline-block xs-border xs-p2">xs-p2</div>
-    <div class="xs-inline-block xs-border xs-p3">xs-p3</div>
-    <div class="xs-inline-block xs-border xs-p4">xs-p4</div>
-    <div class="xs-inline-block xs-border xs-p5">xs-p5</div>
-    <div class="xs-inline-block xs-border xs-p6">xs-p6</div>
+    <div class="xs-inline-block xs-border p0">.xs-p0</div>
+    <div class="xs-inline-block xs-border xs-p1">.xs-p1</div>
+    <div class="xs-inline-block xs-border xs-p2">.xs-p2</div>
+    <div class="xs-inline-block xs-border xs-p3">.xs-p3</div>
+    <div class="xs-inline-block xs-border xs-p4">.xs-p4</div>
+    <div class="xs-inline-block xs-border xs-p5">.xs-p5</div>
+    <div class="xs-inline-block xs-border xs-p6">.xs-p6</div>
   </div>
 
       <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p0">.xs-p0</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p1">.xs-p1</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p2">.xs-p2</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p3">.xs-p3</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p4">.xs-p4</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p5">.xs-p5</div>'%>
-  <%='<div class="xs-inline-block xs-border xs-p6">.xs-p6</div>'%></code></pre>
+<%='<div class="xs-inline-block xs-border xs-p1">.xs-p1</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p2">.xs-p2</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p3">.xs-p3</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p4">.xs-p4</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p5">.xs-p5</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p6">.xs-p6</div>'%></code></pre>
 
 </section>
 
 <!--Positioning-->
 
-<section class="xs-mb5 xs-pb2">
+<section class="xs-mb6">
 
-  <h3 class="xs-mb1 bold">Positioning</h3>
-  <p class="xs-mb2">Use these classes to position elements and give them z-index hierarchy.</p>
+  <h3 class="xs-mb2 bold">Positioning</h3>
 
-  <pre><code class="css">xs-relative { position: relative; }
-xs-absolute { position: absolute; }
-xs-fixed    { position: fixed; }
+  <p class="xs-mb4">Solid includes classes for setting an element's position and hierarchy. For positioning, an element can be set to <span class="nowrap">.<code class="js-highlight">xs-relative</code></span>, <span class="nowrap">.<code class="js-highlight">xs-absolute</code></span>, <span class="nowrap">.<code class="js-highlight">xs-fixed</code></span> or <span class="nowrap">.<code class="js-highlight">xs-static</code></span>. Setting z-index and top, right, bottom, left positioning can be done by using the shorthand from the previous table.</p>
 
-xs-z1 { z-index: 100; }
-xs-z2 { z-index: 200; }
-xs-z3 { z-index: 300; }
-xs-z4 { z-index: 400; }
+  <div class="xs-mb4">
+    <div class="xs-border xs-p2">
+      <div class="xs-relative xs-t2 xs-l2 xs-border">.xs-relative .xs-t2 .xs-l2</div>
+    </div>
+  </div>
 
-xs-t0 { top:    0; }
-xs-r0 { right:  0; }
-xs-b0 { bottom: 0; }
-xs-l0 { left:   0; }
+  <div class="xs-mb4">
+    <div class="xs-relative xs-border xs-p2">
+      .xs-relative
+      <div class="xs-absolute xs-t0 xs-l6 xs-border">.xs-absolute .xs-t0 .xs-l6</div>
+    </div>
+  </div>
 
-xs-t1 { top:    $space-1; }
-xs-r1 { right:  $space-1; }
-xs-b1 { bottom: $space-1; }
-xs-l1 { left:   $space-1; }
+  <div class="xs-mb4">
+    <div class="xs-relative xs-p4">
+      <div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 xs-z1</div>
+      <div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t2 .xs-l2 xs-z2</div>
+    </div>
+  </div>
 
-xs-t2 { top:    $space-2; }
-xs-r2 { right:  $space-2; }
-xs-b2 { bottom: $space-2; }
-xs-l2 { left:   $space-2; }
+  <pre><code class="html"><%='<div class="xs-border xs-p2">'%>
+  <%='<div class="xs-relative xs-t2 xs-l2 xs-border">.xs-relative .xs-t2 .xs-l2</div>'%>
+<%='</div>'%>
 
-xs-t3 { top:    $space-3; }
-xs-r3 { right:  $space-3; }
-xs-b3 { bottom: $space-3; }
-xs-l3 { left:   $space-3; }
+<%='<div class="xs-relative xs-border xs-p2">'%>
+  <%='.xs-relative'%>
+  <%='<div class="xs-absolute xs-t0 xs-l6 xs-border">.xs-absolute .xs-t0 .xs-l6</div>'%>
+<%='</div>'%>
 
-xs-t4 { top:    $space-4; }
-xs-r4 { right:  $space-4; }
-xs-b4 { bottom: $space-4; }
-xs-l4 { left:   $space-4; }
-
-xs-t5 { top:    $space-5; }
-xs-r5 { right:  $space-5; }
-xs-b5 { bottom: $space-5; }
-xs-l5 { left:   $space-5; }
-
-xs-t6 { top:    $space-6; }
-xs-r6 { right:  $space-6; }
-xs-b6 { bottom: $space-6; }
-xs-l6 { left:   $space-6; }
+<%='<div class="xs-relative xs-p4">'%>
+  <%='<div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 xs-z1</div>'%>
+  <%='<div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t2 .xs-l2 xs-z2</div>'%>
+<%='</div>'%></code></pre>
 
 </section>
 
-<!--Rounded/Circle-->
+<h2 class="xs-mb4 xs-pb3 xs-border-bottom bold">Style Utilities</h2>
 
-<section class="xs-mb5 xs-pb2">
+<!--Rounded Corners-->
 
-  <h3 class="xs-mb1 bold">Rounded Corners and Circles</h3>
-  <p class="xs-mb2">Round off corners or make an element a circle using <code class="js-highlight">rounded</code> and <code class="js-highlight">circle</code>.</p>
+<section class="xs-mb5">
 
-  <section class="xs-mb4 xs-pb2">
+  <h3 class="xs-mb2 bold">Rounded Corners</h3>
 
-    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded">rounded</div>
-    <pre class="xs-mb4"><code class="css">rounded { xs-border-radius: 3px; }</code></pre>
+  <p class="xs-mb4">Round off corners using <span class="nowrap">.<code class="js-highlight">rounded</code></span>, <span class="nowrap">.<code class="js-highlight">rounded-top</code></span> and <span class="nowrap">.<code class="js-highlight">rounded-bottom</code></span>.</p>
 
-    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-top">rounded-top</div>
-    <pre class="xs-mb4"><code class="css">rounded-top {xs-border-radius:3px;}</code></pre>
-
-    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-bottom">rounded-bottom</div>
-    <pre><code class="css">rounded-bottom { xs-border-radius:3px; }</code></pre>
-
-  </section>
-
-  <div class="xs-col-6 sm-col-2">
-    <img src="/images/user.png" height="100" alt="user" class="circle xs-mb2" />
+  <div class="xs-mb4">
+    <div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>
+    <div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>
+    <div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>
   </div>
 
-  <pre><code class="html"><%= '<img src="/images/user.png" height="100" alt="user" class="circle" />' %></code></pre>
-
-  <pre><code class="css">.circle { xs-border-radius:50%; }</code></pre>
+  <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>'%></code></pre>
 
 </section>
 
-<!--Border-->
+<!--Circles-->
 
-<section class="xs-mb5 xs-pb2">
+<section class="xs-mb5">
 
-  <h3 class="xs-mb1 bold">xs-borders</h3>
-  <p class="xs-mb4">Add a quick, semi-transparent xs-border to an object.</p>
+  <h3 class="xs-mb2 bold">Circles</h3>
 
-  <p class="xs-mb2 bold">Default xs-border</p>
-  <div class="xs-mb2">
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border">xs-border</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top">xs-border-top</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right">xs-border-right</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom">xs-border-bottom</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left">xs-border-left</div>
-  </div>
+  <p class="xs-mb4">Create a circle out of an element with the same width and height using the <span class="nowrap">.<code class="js-highlight">circle</code></span> class.</p>
 
-  <pre><code class="css xs-mb4">xs-border {
-  xs-border:1px solid rgba(0,0,0,.2);
-}
+  <img src="/images/user.png" height="100" width="100" alt="user" class="circle xs-mb2" />
 
-xs-border-top {
-  xs-border-top:1px solid rgba(0,0,0,.2);
-}
-
-xs-border-right {
-  xs-border-right:1px solid rgba(0,0,0,.2);
-}
-
-xs-border-bottom {
-  xs-border-bottom:1px solid rgba(0,0,0,.2);
-}
-
-xs-border-left {
-  xs-border-left:1px solid rgba(0,0,0,.2);
-}</code></pre>
-
-<p class="xs-mb2 bold">Lighter xs-border</p>
-  <div class="xs-mb2">
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border--lighter">xs-border--lighter</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top--lighter">xs-border-top--lighter</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right--lighter">xs-border-right--lighter</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom--lighter">xs-border-bottom--lighter</div>
-    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left--lighter">xs-border-left--lighter</div>
-  </div>
-
-  <pre><code class="css">xs-border--lighter {
-  xs-border:1px solid rgba(0,0,0,.1);
-}
-
-xs-border-top--lighter {
-  xs-border-top:1px solid rgba(0,0,0,.1);
-}
-
-xs-border-right--lighter {
-  xs-border-right:1px solid rgba(0,0,0,.1);
-}
-
-xs-border-bottom--lighter {
-  xs-border-bottom:1px solid rgba(0,0,0,.1);
-}
-
-xs-border-left--lighter {
-  xs-border-left:1px solid rgba(0,0,0,.1);
-}</code></pre>
+  <pre><code class="html"><%= '<img src="/images/user.png" width="100" height="100" alt="user" class="circle" />' %></code></pre>
 
 </section>
 
+
+<!--Borders-->
+
+<section class="xs-mb5">
+
+  <h3 class="xs-mb2 bold">Borders</h3>
+
+  <p class="xs-mb4">Borders in Solid are semi-transparent so they work with nearly any fill they're applied on top of. Use <span class="nowrap">.<code class="js-highlight">xs-border</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-top</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-right</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-bottom</code></span> and <span class="nowrap">.<code class="js-highlight">xs-border-left</code></span> to adjust outlines on elements.</p>
+
+  <div class="xs-mb4">
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border">.xs-border</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-top">.xs-border-top</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-right">.xs-border-right</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-left">.xs-border-left</div>
+  </div>
+
+  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border">.xs-border</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-top">.xs-border-top</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-right">.xs-border-right</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom">.xs-border-bottom</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-left">.xs-border-left</div>'%></code></pre>
+
+</section>
+
+<section class="xs-mb5">
+
+  <h3 class="xs-mb2 bold">Lighter Borders</h3>
+
+  <p class="xs-mb4">Adding <code class="js-highlight">--lighter</code> to the border classes above results in a slightly more transparent border</p>
+
+  <div class="xs-mb4">
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>
+  </div>
+
+  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>'%></code></pre>
+
+</section>
