@@ -16,7 +16,7 @@ img { max-width: 100%; height: auto; }
   &overflow-hidden { overflow: hidden; }
   &overflow-auto   { overflow: auto; }
   &overflow-scroll { overflow: scroll; }
-  &overflow-static { overflow: static; }
+  &overflow-visible { overflow: visible; }
 
   &hide { display: none; }
   &inline       { display: inline; }
