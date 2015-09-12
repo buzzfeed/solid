@@ -109,7 +109,7 @@
 
 <!--Widths-->
 
-<section class="xs-mb5 xs-pb2">
+<section class="xs-mb5">
 
   <h3 class="xs-mb2 bold">Width and Height</h3>
 
@@ -132,73 +132,78 @@
 
 <!--Spacing-->
 
-<section class="xs-mb5 xs-pb2">
+<section class="xs-mb5">
 
-  <h3 class="xs-mb1 bold">Spacing</h3>
-  <p class="xs-mb2">This shorthand can be combined to set margin, padding and position in a number of ways: to all sides of an item at once, to just the x or y-axis or even to a single side. The spacing is based on the $space-n variables, where n increments from 0-4.</p>
+  <h3 class="xs-mb2 bold">Spacing</h3>
+
+  <p class="xs-mb4">This shorthand prefix and spacing unit system can be combined to set an element's margin, padding and position.</p>
 
   <table class="table-border">
     <th>Prefixes</td>
     <th>Description</td>
     <tr>
-      <td>m</td>
-      <td>margin</td>
+      <td><code class="js-highlight">xs-m</code></td>
+      <td>Margin</td>
     </tr>
     <tr>
-      <td>p</td>
-      <td>padding</td>
+      <td><code class="js-highlight">xs-p</code></td>
+      <td>Padding</td>
     </tr>
     <tr>
-      <td>t</td>
-      <td>top</td>
+      <td><code class="js-highlight">xs-t</code></td>
+      <td>Top</td>
     </tr>
     <tr>
-      <td>r</td>
-      <td>right</td>
+      <td><code class="js-highlight">xs-r</code></td>
+      <td>Right</td>
     </tr>
     <tr>
-      <td>b</td>
-      <td>bottom</td>
+      <td><code class="js-highlight">xs-b</code></td>
+      <td>Bottom</td>
     </tr>
     <tr>
-      <td>l</td>
-      <td>left</td>
+      <td><code class="js-highlight">xs-l</code></td>
+      <td>Left</td>
     </tr>
     <tr>
-      <td>x</td>
+      <td><code class="js-highlight">xs-mx</code>, <code class="js-highlight">xs-px</code></td>
       <td>x-axis</td>
     </tr>
     <tr>
-      <td>y</td>
+      <td><code class="js-highlight">xs-my</code>, <code class="js-highlight">xs-py</code></td>
       <td>y-axis</td>
     </tr>
     <tr>
-      <td>z</td>
+      <td><code class="js-highlight">xs-z</code></td>
       <td>z-index</td>
     </tr>
     <tr>
+      <td>0</td>
+      <td>0rem</td>
+    </tr>
+    <tr>
       <td>1</td>
-      <td>$space-1 <span class="text-5 text-gray--lightest xs-ml1">.5rem</span></td>
+      <td>.5rem <span class="text-5 text-gray--lightest xs-ml1">$space-1</span></td>
     </tr>
     <tr>
       <td>2</td>
-      <td>$space-2 <span class="text-5 text-gray--lightest xs-ml1">1rem</span></td>
+      <td>1rem <span class="text-5 text-gray--lightest xs-ml1">$space-2</span></td>
     </tr>
     <tr>
       <td>3</td>
-      <td>$space-3 <span class="text-5 text-gray--lightest xs-ml1">1.5rem</span></td>
+      <td>1.5rem <span class="text-5 text-gray--lightest xs-ml1">$space-3</span></td>
     </tr>
     <tr>
       <td>4</td>
-      <td>$space-4 <span class="text-5 text-gray--lightest xs-ml1">2rem</span></td>
+      <td>2rem <span class="text-5 text-gray--lightest xs-ml1">$space-4</span></td>
     </tr>
     <tr>
       <td>5</td>
-      <td>$space-5 <span class="text-5 text-gray--lightest xs-ml1">3rem</span></td>
+      <td>3rem <span class="text-5 text-gray--lightest xs-ml1">$space-5</span></td>
     </tr>
     <tr>
       <td>6</td>
-      <td>$space-6 <span class="text-5 text-gray--lightest xs-ml1">4.5rem</span></td>
+      <td>4.5rem <span class="text-5 text-gray--lightest xs-ml1">$space-6</span></td>
     </tr>
   </table>
 
@@ -206,79 +211,39 @@
 
 <!--Margins/Paddings-->
 
-<section class="xs-mb5 xs-pb2">
+<section class="xs-mb5">
 
-  <h3 class="xs-mb3 bold">Margin</h3>
+  <h3 class="xs-mb2 bold">Margin</h3>
 
-  <div class="xs-mb2">
-    <div class="xs-inline-block xs-border xs-p2 xs-mr0">xs-mr0</div><div class="xs-inline-block xs-border xs-p2 xs-mr1">xs-mr1</div><div class="xs-inline-block xs-border xs-p2 xs-mr2">xs-mr2</div><div class="xs-inline-block xs-border xs-p2 xs-mr3">xs-mr3</div><div class="xs-inline-block xs-border xs-p2 xs-mr4">xs-mr4</div><div class="xs-inline-block xs-border xs-p2 xs-mr5">xs-mr5</div><div class="xs-inline-block xs-border xs-p2 xs-mr6">xs-mr6</div>
+  <p class="xs-mb4">Margin can be set from 0-6 spacing units, as well as set to <span class="nowrap">.<code class="js-highlight">xs-mx-auto</code></span> for horizontal centering. In the example below, <span class="nowrap">.<code class="js-highlight">xs-mr0</code></span> through <span class="nowrap">.<code class="js-highlight">xs-mr6</code></span> are use to set margin-right to the various spacing values.</p>
+
+  <div class="xs-mb4 font-size-0">
+    <div class="xs-inline-block xs-border xs-p1 xs-mr0">.xs-mr0</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr1">.xs-mr1</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr2">.xs-mr2</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr3">.xs-mr3</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr4">.xs-mr4</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr5">.xs-mr5</div>
+    <div class="xs-inline-block xs-border xs-p1 xs-mr6">.xs-mr6</div>
+    <div class="xs-col-6 xs-border xs-p1 xs-mt2 xs-mx-auto">.xs-mx-auto</div>
   </div>
 
-  <pre><code class="css">xs-m0  { margin:        0; }
-xs-mt0 { margin-top:    0; }
-xs-mr0 { margin-right:  0; }
-xs-mb0 { margin-bottom: 0; }
-xs-ml0 { margin-left:   0; }
-xs-mx0 { margin-left:   0; margin-right: 0;}
-xs-my0 { margin-top:    0; margin-bottom: 0;}
-
-xs-m1  { margin:        $space-1; }
-xs-mt1 { margin-top:    $space-1; }
-xs-mr1 { margin-right:  $space-1; }
-xs-mb1 { margin-bottom: $space-1; }
-xs-ml1 { margin-left:   $space-1; }
-xs-mx1 { margin-left:   $space-1; margin-right: $space-1;}
-xs-my1 { margin-top:    $space-1; margin-bottom: $space-1;}
-
-xs-m2  { margin:        $space-2; }
-xs-mt2 { margin-top:    $space-2; }
-xs-mr2 { margin-right:  $space-2; }
-xs-mb2 { margin-bottom: $space-2; }
-xs-ml2 { margin-left:   $space-2; }
-xs-mx2 { margin-left:   $space-2; margin-right: $space-2;}
-xs-my2 { margin-top:    $space-2; margin-bottom: $space-2;}
-
-xs-m3  { margin:        $space-3; }
-xs-mt3 { margin-top:    $space-3; }
-xs-mr3 { margin-right:  $space-3; }
-xs-mb3 { margin-bottom: $space-3; }
-xs-ml3 { margin-left:   $space-3; }
-xs-mx3 { margin-left:   $space-3; margin-right: $space-3;}
-xs-my3 { margin-top:    $space-3; margin-bottom: $space-3;}
-
-xs-m4  { margin:        $space-4; }
-xs-mt4 { margin-top:    $space-4; }
-xs-mr4 { margin-right:  $space-4; }
-xs-mb4 { margin-bottom: $space-4; }
-xs-ml4 { margin-left:   $space-4; }
-xs-mx4 { margin-left:   $space-4; margin-right: $space-4;}
-xs-my4 { margin-top:    $space-4; margin-bottom: $space-4;}
-
-xs-m5  { margin:        $space-5; }
-xs-mt5 { margin-top:    $space-5; }
-xs-mr5 { margin-right:  $space-5; }
-xs-mb5 { margin-bottom: $space-5; }
-xs-ml5 { margin-left:   $space-5; }
-xs-mx5 { margin-left:   $space-5; margin-right: $space-5;}
-xs-my5 { margin-top:    $space-5; margin-bottom: $space-5;}
-
-xs-m6  { margin:        $space-6; }
-xs-mt6 { margin-top:    $space-6; }
-xs-mr6 { margin-right:  $space-6; }
-xs-mb6 { margin-bottom: $space-6; }
-xs-ml6 { margin-left:   $space-6; }
-xs-mx6 { margin-left:   $space-6; margin-right: $space-6;}
-xs-my6 { margin-top:    $space-6; margin-bottom: $space-6;}
-
-xs-mx-auto { margin-left: auto; margin-right: auto; }</code></pre>
+    <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p1 xs-mr0">.xs-mr0</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr1">.xs-mr1</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr2">.xs-mr2</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr3">.xs-mr3</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr4">.xs-mr4</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr5">.xs-mr5</div>'%>
+<%='<div class="xs-inline-block xs-border xs-p1 xs-mr6">.xs-mr6</div>'%>
+<%='<div class="xs-col-6 xs-border xs-p1 xs-mt2 xs-mx-auto">.xs-mx-auto</div>'%></code></pre>
 
 </section>
 
 <section class="xs-mb5 xs-pb2">
 
-  <h3 class="xs-mb3 bold">Padding</h3>
+  <h3 class="xs-mb2 bold">Padding</h3>
 
-  <div class="xs-mb2">
+  <div class="xs-mb4 font-size-0">
     <div class="xs-inline-block xs-border p0">xs-p0</div>
     <div class="xs-inline-block xs-border xs-p1">xs-p1</div>
     <div class="xs-inline-block xs-border xs-p2">xs-p2</div>
@@ -287,64 +252,6 @@ xs-mx-auto { margin-left: auto; margin-right: auto; }</code></pre>
     <div class="xs-inline-block xs-border xs-p5">xs-p5</div>
     <div class="xs-inline-block xs-border xs-p6">xs-p6</div>
   </div>
-
-  <pre><code class="css">xs-p0  { padding:        0; }
-xs-pt0 { padding-top:    0; }
-xs-pr0 { padding-right:  0; }
-xs-pb0 { padding-bottom: 0; }
-xs-pl0 { padding-left:   0; }
-xs-px0 { padding-left:   0; padding-right: 0;}
-xs-py0 { padding-top:    0; padding-bottom: 0;}
-
-xs-p1  { padding:        $space-1; }
-xs-pt1 { padding-top:    $space-1; }
-xs-pr1 { padding-right:  $space-1; }
-xs-pb1 { padding-bottom: $space-1; }
-xs-pl1 { padding-left:   $space-1; }
-xs-px1 { padding-left:   $space-1; padding-right: $space-1;}
-xs-py1 { padding-top:    $space-1; padding-bottom: $space-1;}
-
-xs-p2  { padding:        $space-2; }
-xs-pt2 { padding-top:    $space-2; }
-xs-pr2 { padding-right:  $space-2; }
-xs-pb2 { padding-bottom: $space-2; }
-xs-pl2 { padding-left:   $space-2; }
-xs-px2 { padding-left:   $space-2; padding-right: $space-2;}
-xs-py2 { padding-top:    $space-2; padding-bottom: $space-2;}
-
-xs-p3  { padding:        $space-3; }
-xs-pt3 { padding-top:    $space-3; }
-xs-pr3 { padding-right:  $space-3; }
-xs-pb3 { padding-bottom: $space-3; }
-xs-pl3 { padding-left:   $space-3; }
-xs-px3 { padding-left:   $space-3; padding-right: $space-3;}
-xs-py3 { padding-top:    $space-3; padding-bottom: $space-3;}
-
-xs-p4  { padding:        $space-4; }
-xs-pt4 { padding-top:    $space-4; }
-xs-pr4 { padding-right:  $space-4; }
-xs-pb4 { padding-bottom: $space-4; }
-xs-pl4 { padding-left:   $space-4; }
-xs-px4 { padding-left:   $space-4; padding-right: $space-4;}
-xs-py4 { padding-top:    $space-4; padding-bottom: $space-4;}
-
-xs-p5  { padding:        $space-5; }
-xs-pt5 { padding-top:    $space-5; }
-xs-pr5 { padding-right:  $space-5; }
-xs-pb5 { padding-bottom: $space-5; }
-xs-pl5 { padding-left:   $space-5; }
-xs-px5 { padding-left:   $space-5; padding-right: $space-5;}
-xs-py5 { padding-top:    $space-5; padding-bottom: $space-5;}
-
-xs-p6  { padding:        $space-6; }
-xs-pt6 { padding-top:    $space-6; }
-xs-pr6 { padding-right:  $space-6; }
-xs-pb6 { padding-bottom: $space-6; }
-xs-pl6 { padding-left:   $space-6; }
-xs-px6 { padding-left:   $space-6; padding-right: $space-6;}
-xs-py6 { padding-top:    $space-6; padding-bottom: $space-6;}
-
-</code></pre>
 
 </section>
 
