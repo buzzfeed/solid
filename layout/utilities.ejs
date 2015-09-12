@@ -1,13 +1,13 @@
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb2 bold">Floats</h3>
+  <h3 class="xs-mb2 bold">Floats</h3>
 
-	<div class="clearfix xs-border xs-p1 xs-col-12 md-col-4 xs-mb2">
-		<div class="xs-float-left xs-border xs-p1">xs-float-left</div>
-		<div class="xs-float-right xs-border xs-p1">xs-float-right</div>
-	</div>
+  <div class="clearfix xs-border xs-p1 xs-col-12 md-col-4 xs-mb2">
+    <div class="xs-float-left xs-border xs-p1">xs-float-left</div>
+    <div class="xs-float-right xs-border xs-p1">xs-float-right</div>
+  </div>
 
-	<pre><code class="html"><%= '<div class="clearfix">' %><br><%= '  <div class="xs-float-left">Left</div>' %><br><%= '  <div class="xs-float-right">Right</div>' %><br><%= '</div>' %></code></pre>
+  <pre><code class="html"><%= '<div class="clearfix">' %><br><%= '  <div class="xs-float-left">Left</div>' %><br><%= '  <div class="xs-float-right">Right</div>' %><br><%= '</div>' %></code></pre>
 
 </section>
 
@@ -15,15 +15,21 @@
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb2 bold">xs-block Types</h3>
+  <h3 class="xs-mb2 bold">Display Types</h3>
 
-	<div class="xs-mb2">
-		<div class="xs-inline xs-border xs-p1">xs-inline</div>
-		<div class="xs-inline-block xs-border xs-p1">xs-inline-block</div>
-		<a href="#" class="xs-block xs-border xs-p1 xs-mt1">xs-block</a>
-	</div>
+  <div class="xs-mb2">
+    <div class="xs-hide xs-border xs-p1">xs-hide</div>
+    <div class="xs-inline xs-border xs-p1">xs-inline</div>
+    <div class="xs-inline-block xs-border xs-p1">xs-inline-block</div>
+    <a href="#" class="xs-block xs-border xs-p1 xs-mt1">xs-block</a>
+  </div>
 
-	<pre><code class="html"><%= '<div>' %><br><%= '  <div class="xs-inline">xs-inline</div>' %><br><%= '  <div class="xs-inline-block">xs-inline xs-block</div>' %><br><%= '  <a href="#" class="xs-block">xs-block</a>' %><br><%= '</div>' %></code></pre>
+  <pre><code class="html"><%='<div>'%>
+  <%='<div class="xs-hide">.xs-hide</div>'%>
+  <%='<div class="xs-inline">.xs-inline</div>'%>
+  <%='<div class="xs-inline-block">.xs-inline-block</div>'%>
+  <%='<a href="#" class="xs-block">.xs-block</a>'%>
+<%= '</div>'%></code></pre>
 
 </section>
 
@@ -31,31 +37,31 @@
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb2 bold">Overflows</h3>
+  <h3 class="xs-mb2 bold">Overflows</h3>
 
-	<section class="xs-mb4">
-		<div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">
-			<h3 class="text-5 xs-mb1">xs-overflow-hidden</h3>
-			<p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
-		</div>
-		<pre><code class="css">class { xs-overflow: hidden; }</code></pre>
-	</section>
+  <section class="xs-mb4">
+    <div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">
+      <h3 class="text-5 xs-mb1">xs-overflow-hidden</h3>
+      <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
+    </div>
+    <pre><code class="css">class { xs-overflow: hidden; }</code></pre>
+  </section>
 
-	<section class="xs-mb4">
-		<div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">
-			<h3 class="text-5 xs-mb1">xs-overflow-auto</h3>
-			<p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
-		</div>
-		<pre><code class="css">class { xs-overflow: auto; }</code></pre>
-	</section>
+  <section class="xs-mb4">
+    <div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">
+      <h3 class="text-5 xs-mb1">xs-overflow-auto</h3>
+      <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
+    </div>
+    <pre><code class="css">class { xs-overflow: auto; }</code></pre>
+  </section>
 
-	<section>
-		<div class="xs-overflow-scroll xs-border xs-p2 xs-mb2" style="height:85px;">
-			<h3 class="text-5 xs-mb1">xs-overflow-scroll</h3>
-			<p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
-		</div>
-		<pre><code class="css">class { xs-overflow: scroll; }</code></pre>
-	</section>
+  <section>
+    <div class="xs-overflow-scroll xs-border xs-p2 xs-mb2" style="height:85px;">
+      <h3 class="text-5 xs-mb1">xs-overflow-scroll</h3>
+      <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers to invent a combustible lemon that burns your house down!</p>
+    </div>
+    <pre><code class="css">class { xs-overflow: scroll; }</code></pre>
+  </section>
 
 </section>
 
@@ -63,14 +69,14 @@
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb2 bold">Widths</h3>
+  <h3 class="xs-mb2 bold">Widths</h3>
 
-	<div class="xs-mb2">
-		<div class="xs-half-width xs-border xs-p2 xs-mb1">xs-half-width</div>
-		<a href="#" class="xs-full-width xs-inline-block xs-border xs-mb1 xs-p2">xs-full-width</a>
-		<div class="xs-fit xs-p2 xs-border">xs-fit</div>
-	</div>
-	<pre><code class="css">xs-half-width { width: 50%; }
+  <div class="xs-mb2">
+    <div class="xs-half-width xs-border xs-p2 xs-mb1">xs-half-width</div>
+    <a href="#" class="xs-full-width xs-inline-block xs-border xs-mb1 xs-p2">xs-full-width</a>
+    <div class="xs-fit xs-p2 xs-border">xs-fit</div>
+  </div>
+  <pre><code class="css">xs-half-width { width: 50%; }
 xs-full-width { width: 100%; }
 xs-fit { max-width: 100%; }</code></pre>
 
@@ -80,73 +86,73 @@ xs-fit { max-width: 100%; }</code></pre>
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb1 bold">Spacing</h3>
-	<p class="xs-mb2">This shorthand can be combined to set margin, padding and position in a number of ways: to all sides of an item at once, to just the x or y-axis or even to a single side. The spacing is based on the $space-n variables, where n increments from 0-4.</p>
+  <h3 class="xs-mb1 bold">Spacing</h3>
+  <p class="xs-mb2">This shorthand can be combined to set margin, padding and position in a number of ways: to all sides of an item at once, to just the x or y-axis or even to a single side. The spacing is based on the $space-n variables, where n increments from 0-4.</p>
 
-	<table class="table-border">
-		<th>Prefixes</td>
-		<th>Description</td>
-		<tr>
-			<td>m</td>
-			<td>margin</td>
-		</tr>
-		<tr>
-			<td>p</td>
-			<td>padding</td>
-		</tr>
-		<tr>
-			<td>t</td>
-			<td>top</td>
-		</tr>
-		<tr>
-			<td>r</td>
-			<td>right</td>
-		</tr>
-		<tr>
-			<td>b</td>
-			<td>bottom</td>
-		</tr>
-		<tr>
-			<td>l</td>
-			<td>left</td>
-		</tr>
-		<tr>
-			<td>x</td>
-			<td>x-axis</td>
-		</tr>
-		<tr>
-			<td>y</td>
-			<td>y-axis</td>
-		</tr>
-		<tr>
-			<td>z</td>
-			<td>z-index</td>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>$space-1 <span class="text-5 text-gray--lightest xs-ml1">.5rem</span></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>$space-2 <span class="text-5 text-gray--lightest xs-ml1">1rem</span></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>$space-3 <span class="text-5 text-gray--lightest xs-ml1">1.5rem</span></td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>$space-4 <span class="text-5 text-gray--lightest xs-ml1">2rem</span></td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>$space-5 <span class="text-5 text-gray--lightest xs-ml1">3rem</span></td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>$space-6 <span class="text-5 text-gray--lightest xs-ml1">4.5rem</span></td>
-		</tr>
-	</table>
+  <table class="table-border">
+    <th>Prefixes</td>
+    <th>Description</td>
+    <tr>
+      <td>m</td>
+      <td>margin</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>padding</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>top</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>right</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>bottom</td>
+    </tr>
+    <tr>
+      <td>l</td>
+      <td>left</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x-axis</td>
+    </tr>
+    <tr>
+      <td>y</td>
+      <td>y-axis</td>
+    </tr>
+    <tr>
+      <td>z</td>
+      <td>z-index</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>$space-1 <span class="text-5 text-gray--lightest xs-ml1">.5rem</span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>$space-2 <span class="text-5 text-gray--lightest xs-ml1">1rem</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>$space-3 <span class="text-5 text-gray--lightest xs-ml1">1.5rem</span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>$space-4 <span class="text-5 text-gray--lightest xs-ml1">2rem</span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>$space-5 <span class="text-5 text-gray--lightest xs-ml1">3rem</span></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>$space-6 <span class="text-5 text-gray--lightest xs-ml1">4.5rem</span></td>
+    </tr>
+  </table>
 
 </section>
 
@@ -154,13 +160,13 @@ xs-fit { max-width: 100%; }</code></pre>
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb3 bold">Margin</h3>
+  <h3 class="xs-mb3 bold">Margin</h3>
 
-	<div class="xs-mb2">
-		<div class="xs-inline-block xs-border xs-p2 xs-mr0">xs-mr0</div><div class="xs-inline-block xs-border xs-p2 xs-mr1">xs-mr1</div><div class="xs-inline-block xs-border xs-p2 xs-mr2">xs-mr2</div><div class="xs-inline-block xs-border xs-p2 xs-mr3">xs-mr3</div><div class="xs-inline-block xs-border xs-p2 xs-mr4">xs-mr4</div><div class="xs-inline-block xs-border xs-p2 xs-mr5">xs-mr5</div><div class="xs-inline-block xs-border xs-p2 xs-mr6">xs-mr6</div>
-	</div>
+  <div class="xs-mb2">
+    <div class="xs-inline-block xs-border xs-p2 xs-mr0">xs-mr0</div><div class="xs-inline-block xs-border xs-p2 xs-mr1">xs-mr1</div><div class="xs-inline-block xs-border xs-p2 xs-mr2">xs-mr2</div><div class="xs-inline-block xs-border xs-p2 xs-mr3">xs-mr3</div><div class="xs-inline-block xs-border xs-p2 xs-mr4">xs-mr4</div><div class="xs-inline-block xs-border xs-p2 xs-mr5">xs-mr5</div><div class="xs-inline-block xs-border xs-p2 xs-mr6">xs-mr6</div>
+  </div>
 
-	<pre><code class="css">xs-m0  { margin:        0; }
+  <pre><code class="css">xs-m0  { margin:        0; }
 xs-mt0 { margin-top:    0; }
 xs-mr0 { margin-right:  0; }
 xs-mb0 { margin-bottom: 0; }
@@ -222,19 +228,19 @@ xs-mx-auto { margin-left: auto; margin-right: auto; }</code></pre>
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb3 bold">Padding</h3>
+  <h3 class="xs-mb3 bold">Padding</h3>
 
-	<div class="xs-mb2">
-		<div class="xs-inline-block xs-border p0">xs-p0</div>
-		<div class="xs-inline-block xs-border xs-p1">xs-p1</div>
-		<div class="xs-inline-block xs-border xs-p2">xs-p2</div>
-		<div class="xs-inline-block xs-border xs-p3">xs-p3</div>
-		<div class="xs-inline-block xs-border xs-p4">xs-p4</div>
-		<div class="xs-inline-block xs-border xs-p5">xs-p5</div>
-		<div class="xs-inline-block xs-border xs-p6">xs-p6</div>
-	</div>
+  <div class="xs-mb2">
+    <div class="xs-inline-block xs-border p0">xs-p0</div>
+    <div class="xs-inline-block xs-border xs-p1">xs-p1</div>
+    <div class="xs-inline-block xs-border xs-p2">xs-p2</div>
+    <div class="xs-inline-block xs-border xs-p3">xs-p3</div>
+    <div class="xs-inline-block xs-border xs-p4">xs-p4</div>
+    <div class="xs-inline-block xs-border xs-p5">xs-p5</div>
+    <div class="xs-inline-block xs-border xs-p6">xs-p6</div>
+  </div>
 
-	<pre><code class="css">xs-p0  { padding:        0; }
+  <pre><code class="css">xs-p0  { padding:        0; }
 xs-pt0 { padding-top:    0; }
 xs-pr0 { padding-right:  0; }
 xs-pb0 { padding-bottom: 0; }
@@ -298,10 +304,10 @@ xs-py6 { padding-top:    $space-6; padding-bottom: $space-6;}
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb1 bold">Positioning</h3>
-	<p class="xs-mb2">Use these classes to position elements and give them z-index hierarchy.</p>
+  <h3 class="xs-mb1 bold">Positioning</h3>
+  <p class="xs-mb2">Use these classes to position elements and give them z-index hierarchy.</p>
 
-	<pre><code class="css">xs-relative { position: relative; }
+  <pre><code class="css">xs-relative { position: relative; }
 xs-absolute { position: absolute; }
 xs-fixed    { position: fixed; }
 
@@ -351,29 +357,29 @@ xs-l6 { left:   $space-6; }
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb1 bold">Rounded Corners and Circles</h3>
-	<p class="xs-mb2">Round off corners or make an element a circle using <code class="js-highlight">rounded</code> and <code class="js-highlight">circle</code>.</p>
+  <h3 class="xs-mb1 bold">Rounded Corners and Circles</h3>
+  <p class="xs-mb2">Round off corners or make an element a circle using <code class="js-highlight">rounded</code> and <code class="js-highlight">circle</code>.</p>
 
-	<section class="xs-mb4 xs-pb2">
+  <section class="xs-mb4 xs-pb2">
 
-		<div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded">rounded</div>
-		<pre class="xs-mb4"><code class="css">rounded { xs-border-radius: 3px; }</code></pre>
+    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded">rounded</div>
+    <pre class="xs-mb4"><code class="css">rounded { xs-border-radius: 3px; }</code></pre>
 
-		<div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-top">rounded-top</div>
-		<pre class="xs-mb4"><code class="css">rounded-top {xs-border-radius:3px;}</code></pre>
+    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-top">rounded-top</div>
+    <pre class="xs-mb4"><code class="css">rounded-top {xs-border-radius:3px;}</code></pre>
 
-		<div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-bottom">rounded-bottom</div>
-		<pre><code class="css">rounded-bottom { xs-border-radius:3px; }</code></pre>
+    <div class="xs-inline-block fill-blue text-white xs-p2 xs-mb2 rounded-bottom">rounded-bottom</div>
+    <pre><code class="css">rounded-bottom { xs-border-radius:3px; }</code></pre>
 
-	</section>
+  </section>
 
-	<div class="xs-col-6 sm-col-2">
-		<img src="/images/user.png" height="100" alt="user" class="circle xs-mb2" />
-	</div>
+  <div class="xs-col-6 sm-col-2">
+    <img src="/images/user.png" height="100" alt="user" class="circle xs-mb2" />
+  </div>
 
-	<pre><code class="html"><%= '<img src="/images/user.png" height="100" alt="user" class="circle" />' %></code></pre>
+  <pre><code class="html"><%= '<img src="/images/user.png" height="100" alt="user" class="circle" />' %></code></pre>
 
-	<pre><code class="css">.circle { xs-border-radius:50%; }</code></pre>
+  <pre><code class="css">.circle { xs-border-radius:50%; }</code></pre>
 
 </section>
 
@@ -381,19 +387,19 @@ xs-l6 { left:   $space-6; }
 
 <section class="xs-mb5 xs-pb2">
 
-	<h3 class="xs-mb1 bold">xs-borders</h3>
-	<p class="xs-mb4">Add a quick, semi-transparent xs-border to an object.</p>
+  <h3 class="xs-mb1 bold">xs-borders</h3>
+  <p class="xs-mb4">Add a quick, semi-transparent xs-border to an object.</p>
 
-	<p class="xs-mb2 bold">Default xs-border</p>
-	<div class="xs-mb2">
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border">xs-border</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top">xs-border-top</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right">xs-border-right</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom">xs-border-bottom</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left">xs-border-left</div>
-	</div>
+  <p class="xs-mb2 bold">Default xs-border</p>
+  <div class="xs-mb2">
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border">xs-border</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top">xs-border-top</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right">xs-border-right</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom">xs-border-bottom</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left">xs-border-left</div>
+  </div>
 
-	<pre><code class="css xs-mb4">xs-border {
+  <pre><code class="css xs-mb4">xs-border {
   xs-border:1px solid rgba(0,0,0,.2);
 }
 
@@ -414,15 +420,15 @@ xs-border-left {
 }</code></pre>
 
 <p class="xs-mb2 bold">Lighter xs-border</p>
-	<div class="xs-mb2">
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border--lighter">xs-border--lighter</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top--lighter">xs-border-top--lighter</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right--lighter">xs-border-right--lighter</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom--lighter">xs-border-bottom--lighter</div>
-		<div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left--lighter">xs-border-left--lighter</div>
-	</div>
+  <div class="xs-mb2">
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border--lighter">xs-border--lighter</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-top--lighter">xs-border-top--lighter</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-right--lighter">xs-border-right--lighter</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-bottom--lighter">xs-border-bottom--lighter</div>
+    <div class="xs-inline-block fill-gray--lighter xs-mr2 xs-p2 xs-border-left--lighter">xs-border-left--lighter</div>
+  </div>
 
-	<pre><code class="css">xs-border--lighter {
+  <pre><code class="css">xs-border--lighter {
   xs-border:1px solid rgba(0,0,0,.1);
 }
 

@@ -19,6 +19,7 @@ img { max-width: 100%; height: auto; }
 
 // Some Layout Classes + Responsive Prefixes
 @include generate-breakpoint-prefixes {
+  &hide { display: none; }
   &inline       { display: inline; }
   &block        { display: block; }
   &inline-block { display: inline-block; }
@@ -26,9 +27,6 @@ img { max-width: 100%; height: auto; }
   &float-left  { float: left; }
   &float-right { float: right; }
   &float-none  { float: none; }
-
-  &show { display: block; }
-  &hide { display: none; }
 
   &half-width  { width: 50%; }
   &full-width  { width: 100%; }
