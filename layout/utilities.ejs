@@ -111,16 +111,22 @@
 
 <section class="xs-mb5 xs-pb2">
 
-  <h3 class="xs-mb2 bold">Widths</h3>
+  <h3 class="xs-mb2 bold">Width and Height</h3>
 
-  <div class="xs-mb2">
-    <div class="xs-half-width xs-border xs-p2 xs-mb1">xs-half-width</div>
-    <a href="#" class="xs-full-width xs-inline-block xs-border xs-mb1 xs-p2">xs-full-width</a>
-    <div class="xs-fit xs-p2 xs-border">xs-fit</div>
+  <p class="xs-mb4">Most widths are achieved using Solid's <a href="/layout/grid/">grid classes</a>. However, Solid also provides an <span class="nowrap">.<code class="js-highlight">xs-fit</code></span> class for setting an element's max-width to 100%, as well as <span class="nowrap">.<code class="js-highlight">xs-full-height</code></span> to set an element's height to 100%.</p>
+
+  <div class="xs-mb4">
+    <div class="xs-fit xs-border xs-mb1">.xs-fit</div>
+    <div style="height:85px;" class="xs-border xs-p1">
+      <div class="xs-full-height xs-border xs-col-4">.xs-full-height</div>
+    </div>
   </div>
-  <pre><code class="css">xs-half-width { width: 50%; }
-xs-full-width { width: 100%; }
-xs-fit { max-width: 100%; }</code></pre>
+
+  <pre><code class="html"><%='<div class="xs-fit xs-border xs-mb1">.xs-fit</div>'%>
+
+<%='<div style="height:85px;" class="xs-border xs-p1">'%>
+  <%='<div class="xs-full-height xs-border xs-col-4">.xs-full-height</div>'%>
+<%='</div>'%></code></pre>
 
 </section>
 
