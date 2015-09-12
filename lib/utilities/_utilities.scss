@@ -11,14 +11,13 @@ html {
 // Responsive Images
 img { max-width: 100%; height: auto; }
 
-
-// Layout
-.xs-overflow-hidden { overflow: hidden; }
-.xs-overflow-auto   { overflow: auto; }
-.xs-overflow-scroll { overflow: scroll; }
-
 // Some Layout Classes + Responsive Prefixes
 @include generate-breakpoint-prefixes {
+  &overflow-hidden { overflow: hidden; }
+  &overflow-auto   { overflow: auto; }
+  &overflow-scroll { overflow: scroll; }
+  &overflow-static { overflow: static; }
+
   &hide { display: none; }
   &inline       { display: inline; }
   &block        { display: block; }
@@ -28,8 +27,6 @@ img { max-width: 100%; height: auto; }
   &float-right { float: right; }
   &float-none  { float: none; }
 
-  &half-width  { width: 50%; }
-  &full-width  { width: 100%; }
   &fit         { max-width: 100%; }
   &full-height { height: 100%; }
 

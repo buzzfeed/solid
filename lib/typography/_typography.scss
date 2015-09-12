@@ -57,7 +57,6 @@ h6,
   font-size: $text-6;
 }
 
-
 // This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
 a {
   text-decoration: none; 
