@@ -37,7 +37,7 @@ $input-height-small: 2rem;
 .select {
   background-image: svg-background($down-caret);
   background-repeat: no-repeat;
-  background-position: calc(100% - $space-2) center;  // 100% - 1rem
+  background-position: calc(100% - 1rem) center;
   background-size: .6875rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -57,7 +57,7 @@ $input-height-small: 2rem;
 
 .select--small {
   padding: 0 $space-4 0 .625rem;  // 0 2rem 0 .625rem
-  background-size: $space-1;  // .5rem
+  background-size: .5rem;
 }
 
 .textarea {
@@ -106,7 +106,7 @@ $input-height-small: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $fill-blue;  
-  background-size: $space-1; 
+  background-size: .5rem; 
   border-style: none;
 }
 
@@ -171,7 +171,7 @@ $input-height-small: 2rem;
     display: inline-block;
     background-image: svg-background($checkmark);
     background-repeat: no-repeat;
-    background-size: $space-1;
+    background-size: .5rem;
     background-color: $fill-green;
     border-radius: 50%;
     background-position: center;
