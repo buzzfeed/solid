@@ -34,7 +34,7 @@
 
     &:before {
       background-image: svg-background($exclamation-circle);
-      background-size: 1rem;
+      background-size: $space-2;  // 1rem
     }
   }
 }
