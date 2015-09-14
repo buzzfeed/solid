@@ -1,7 +1,7 @@
 .page-message {
   padding: .75rem;
-  font-size: $text-4;
-  font-weight: 600;
+  font-size: $base-font-size;
+  font-weight: $bold;
   margin: .125rem 0 0;
 }
 
@@ -16,7 +16,7 @@
     background-position: center;
     position: relative;
     bottom: -2px;
-    margin: 0 .5rem 0 0;
+    margin: 0 $space-1 0 0; // 0 .5rem 0 0
   }
 }
 

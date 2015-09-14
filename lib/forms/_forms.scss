@@ -51,12 +51,12 @@ $input-height-small: 2rem;
 .date-input--small {
   font-size: $text-5; 
   height: $input-height-small;
-  padding: .5rem .625rem;
+  padding: $space-1 .625rem;
 }
 
 
 .select--small {
-  padding: 0 2rem 0 .625rem;
+  padding: 0 $space-4 0 .625rem;  // 0 2rem 0 .625rem
   background-size: .5rem;
 }
 
@@ -113,7 +113,7 @@ $input-height-small: 2rem;
 // labels, etc
 .form-label {
   display: block;
-  font-weight: 600;
+  font-weight: $bold;
   margin-bottom: $space-1; 
 }
 
@@ -126,12 +126,12 @@ $input-height-small: 2rem;
 
 .form-label--optional {
   color: $text-gray--lightest;
-  font-weight: normal;
+  font-weight: $regular;
 }
 
 .form-label--required {
   color: $text-red;
-  font-weight: normal;
+  font-weight: $regular;
 }
 
 .form-helper {
