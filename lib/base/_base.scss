@@ -1,52 +1,6 @@
 // Normalize Resets and Rem values
 
 
-// Ensure we only define type using our default classes.
-
-small {
-  font-size: $base-font-size;
-}
-
-sub,
-sup {
-  font-size: $base-font-size;
-}
-
-
-// Switching from ems to rems for consistency and our own sanity.
-
-sup {
-  top: (-$space-1);
-}
-
-sub {
-  bottom: -.25rem;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-size: $base-font-size;
-}
-
-
-// We should define fieldset with classes if we're going to define it.
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-
-// Making sure that bold is 600, since we use semibold instead.
-
-optgroup {
-  font-weight: $bold;
-}
-
-
 // Resets
 
 html, 
@@ -136,6 +90,52 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+
+// Ensure we only define type using our default classes.
+
+small {
+  font-size: $base-font-size;
+}
+
+sub,
+sup {
+  font-size: $base-font-size;
+}
+
+
+// Switching from ems to rems for consistency and our own sanity.
+
+sup {
+  top: (-$space-1);
+}
+
+sub {
+  bottom: -.25rem;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: $base-font-size;
+}
+
+
+// We should define fieldset with classes if we're going to define it.
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Making sure that bold is 600, since we use semibold instead.
+
+optgroup {
+  font-weight: $bold;
 }
 
 
