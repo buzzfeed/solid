@@ -126,7 +126,8 @@ $button-height-small: 2rem;
 }
 
 
-.button-group, .button-group--small {
+.button-group, 
+.button-group--small {
   position: relative;
   display: inline-block;
   border: $border;
@@ -165,7 +166,7 @@ $button-height-small: 2rem;
 }
 
 .button-group--small .button-group__item {
-  padding: .5rem .625rem;
+  padding: $space-1 .625rem;
   height: $button-height-small;
   font-size: $text-5; 
 }

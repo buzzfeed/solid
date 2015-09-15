@@ -7,7 +7,7 @@ $sans: "Proxima-Nova", Helvetica, Arial, sans-serif;
 $slab: "Caponi-Slab-Semibold", Georgia, serif;
 
 html {
-  font-size: 16px;
+  font-size: $base-font-size;
   font-family: $sans; // This is just for reference
 }
 
@@ -134,7 +134,7 @@ i,
   // scss-lint:enable VendorPrefix
   &.bold {
     font-family: $slab;
-    font-weight: normal;
+    font-weight: $regular;
   }
 
   &.italic {
@@ -152,7 +152,7 @@ h6.slab,
 .text-6 .slab,
 .slab.text-6 {
   font-family: $sans;
-  font-weight: normal;
+  font-weight: $regular;
 }
 
 // Caponi Specific Line-Height Per Font-Size
