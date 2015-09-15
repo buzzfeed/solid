@@ -1,8 +1,8 @@
 .page-message {
+  margin-top: .125rem;
   padding: .75rem;
   font-size: $base-font-size;
   font-weight: $bold;
-  margin: .125rem 0 0;
 }
 
 .page-message__text {
@@ -11,12 +11,12 @@
     content: "";
     height: 1rem;
     width: 1rem;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     bottom: -2px;
-    margin: $space-1;
+    display: inline-block;
+    margin-right: $space-1;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

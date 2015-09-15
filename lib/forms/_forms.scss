@@ -14,7 +14,7 @@ $input-height-small: 2rem;
     display: inline-block;
     width: .75rem;
     height: .75rem;
-    margin: 0 .375rem 0 0;
+    margin-right: .375rem;
     position: relative;
     bottom: -1px;
     background-color: $fill-white;
@@ -175,7 +175,7 @@ $input-height-small: 2rem;
     background-color: $fill-green;
     border-radius: 50%;
     background-position: center;
-    margin: 0 .375rem 0 0;
+    margin-right: .375rem;
     position: relative;
     bottom: -2px;
   }
