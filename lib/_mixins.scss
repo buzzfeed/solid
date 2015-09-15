@@ -27,7 +27,7 @@ $breakpoints: (
  @each $breakpoint-name, $breakpoint-value in $breakpoints {
    $breakpoint-prefix: "#{$breakpoint-name}-";
    
-   @include media-query($breakpoint-name){
+   @include media-query($breakpoint-name) {
      
      // Columns
      .#{$breakpoint-prefix} {

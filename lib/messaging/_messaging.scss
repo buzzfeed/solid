@@ -16,7 +16,7 @@
     background-position: center;
     position: relative;
     bottom: -2px;
-    margin: 0 $space-1 0 0; // 0 .5rem 0 0
+    margin: $space-1;
   }
 }
 
@@ -34,7 +34,7 @@
 
     &:before {
       background-image: svg-background($exclamation-circle);
-      background-size: $space-2;  // 1rem
+      background-size: $space-2;
     }
   }
 }

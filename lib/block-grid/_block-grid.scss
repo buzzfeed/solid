@@ -8,7 +8,7 @@
   display: inline-block;
   font-size: $base-font-size;
   vertical-align: top;
-  margin: $space-1;  // .5rem
+  margin: $space-1;
 }
 
 @function calc-margin($block-grid-width) {
