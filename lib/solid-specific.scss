@@ -84,18 +84,12 @@ pre {
   background-size: .6875rem;
 }
 
-// Welcome
+// Remove spaces between example elements
 
-.find-help a {
-  text-decoration: none;
+.font-size-0 {
+  font-size: 0;
 }
 
-.find-help a:hover {
-  background: $fill-gray--lighter;
-}
-
-// Resources > Logos
-
-.line-height-0 {
-  line-height: 0;
+.font-size-0 > * {
+  font-size: 16px;
 }
