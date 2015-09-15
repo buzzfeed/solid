@@ -6,20 +6,20 @@
   &block-grid-5,
   &block-grid-6 { 
     font-size: 0;
-    margin: -.5rem;
+    margin: (-$space-1);
     padding: 0;
   }
 }
 
 .block-grid__item {
   display: inline-block;
-  font-size: 1rem;
+  margin: $space-1;
+  font-size: $base-font-size;
   vertical-align: top;
-  margin: .5rem;
 }
 
 @function calc-margin($block-grid-width) {
-  @return calc(#{$block-grid-width} - 1rem);
+  @return calc(#{$block-grid-width} - $space-2);
 }
 
 @include generate-breakpoint-prefixes {
