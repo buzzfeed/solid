@@ -69,7 +69,7 @@ linters:
     enabled: true
 
   ImportantRule:
-    enabled: true
+    enabled: false
 
   ImportPath:
     enabled: true
@@ -134,8 +134,7 @@ linters:
     enabled: true
 
   SpaceAfterPropertyColon:
-    enabled: true
-    exclude: 'scss/utilities/_utilities.scss'
+    enabled: false
 
   SpaceAfterPropertyName:
     enabled: true

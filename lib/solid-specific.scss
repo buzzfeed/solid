@@ -113,8 +113,7 @@ pre {
 
 .solid-nav__group.active {
   border-left: .375rem solid $fill-blue;
-}
-
+  background-repeat: no-repeat;
 .solid-nav__group.active .solid-nav__item {
   color: $text-gray;
 }
@@ -128,3 +127,16 @@ pre {
 .font-size-0 > * {
   font-size: $base-font-size;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  @include prefix((box-sizing: inherit), moz)
+}
+
+// Responsive Images
+img { max-width: 100%; height: auto; }
