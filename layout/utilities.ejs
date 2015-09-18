@@ -345,18 +345,18 @@
   <p class="xs-mb4">Borders in Solid are semi-transparent so they work with nearly any fill they're applied on top of. Use <span class="nowrap">.<code class="js-highlight">xs-border</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-top</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-right</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-bottom</code></span> and <span class="nowrap">.<code class="js-highlight">xs-border-left</code></span> to adjust outlines on elements.</p>
 
   <div class="xs-mb4">
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border">.xs-border</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-top">.xs-border-top</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-right">.xs-border-right</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-left">.xs-border-left</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border">.xs-border</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-top">.xs-border-top</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-right">.xs-border-right</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom">.xs-border-bottom</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-left">.xs-border-left</div>'%></code></pre>
+  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>'%></code></pre>
 
 </section>
 
@@ -364,20 +364,42 @@
 
   <h3 class="xs-mb2 bold">Lighter Borders</h3>
 
-  <p class="xs-mb4">Adding <code class="js-highlight">--lighter</code> to the border classes above results in a slightly more transparent border</p>
+  <p class="xs-mb4">Adding <code class="js-highlight">--lighter</code> to the border classes above results in a slightly more transparent border.</p>
 
   <div class="xs-mb4">
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>  
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>'%></code></pre>
+  <pre><code class="html"><%='<div class="xs-inline-block xs-mb2 xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>'%>
+<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>'%></code></pre>
+
+</section>
+
+<section class="xs-mb6">
+
+  <h3 class="xs-mb2 bold">Removing Borders</h3>
+
+  <p class="xs-mb4">When a border needs to be removed (at a breakpoint, for instance), use <span class="nowrap">.<code class="js-highlight">xs-border-none</code></span> classes.</p>
+
+  <div class="xs-mb4">
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>
+    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>
+  </div>
+
+  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>'%>
+<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>'%></code></pre>
 
 </section>
