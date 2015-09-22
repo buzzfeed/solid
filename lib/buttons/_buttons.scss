@@ -170,3 +170,88 @@ $button-height-small: 2rem;
   height: $button-height-small;
   font-size: $text-5; 
 }
+
+
+.button--icon {
+  >svg {
+    width: 1rem;
+    height: 1rem;
+    fill: $fill-white;
+    margin-right: .5rem;
+    position: relative;
+    top: .0625rem;
+  }
+}
+
+.button--small.button--icon { 
+  >svg {
+    width: .875rem;
+    height: .875rem;
+    margin-right: .3125rem;
+    position: relative;
+  }
+}
+
+.button--secondary.button--icon { 
+  >svg {
+    fill: $fill-blue;
+  }
+  &:hover svg {
+    fill: $fill-white;
+  }
+}
+
+// All social buttons have similar styles
+// use this to generate their style
+// -------------------------
+
+@mixin social-button($color) {
+  background-color: $color;
+  color: $text-white;
+
+  &:not(.button--disabled):hover {
+    background-color: darken($color, 20%);
+    color: $text-white;
+  }
+
+  &.button--disabled:hover {
+    color: $text-white;
+  }
+
+  &:not(.button--disabled):active {    
+    background-color: darken($color, 35%);
+  }
+}
+
+
+.button--facebook {
+  @include social-button($fill-facebook);
+}
+
+.button--twitter {
+  @include social-button($fill-twitter);
+}
+
+.button--google {
+  @include social-button($fill-google);
+}
+
+.button--linkedin {
+  @include social-button($fill-linkedin);
+}
+
+.button--pinterest {
+  @include social-button($fill-pinterest);
+}
+
+.button--tumblr {
+  @include social-button($fill-tumblr);
+}
+
+.button--youtube {
+  @include social-button($fill-youtube);
+}
+
+.button--instagram {
+  @include social-button($fill-instagram);
+}
