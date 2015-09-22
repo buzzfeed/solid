@@ -153,7 +153,8 @@ $input-height-small: 2rem;
     color: $text-orange;  
   }
 
-  .text-input {
+  .text-input,
+  .select {
     border-color: $fill-orange; 
   }
 }
@@ -180,7 +181,8 @@ $input-height-small: 2rem;
     bottom: -2px;
   }
 
-  .text-input {
+  .text-input,
+  .select {
     border-color: $fill-green; 
   }
 }
@@ -191,7 +193,8 @@ $input-height-small: 2rem;
     color: $text-red;  
   }
 
-  .text-input {
-    border-color: $fill-red; 
+  .text-input,
+  .select {
+    border-color: $fill-red;
   }
 }
