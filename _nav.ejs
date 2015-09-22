@@ -14,9 +14,18 @@
 
   <div class="solid-nav__items xs-hide sm-block">
 
-    <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header" for="css-menu">CSS Library</label>
+    <ol class="list-unstyled sm-hide">
 
-    <ol class="list-unstyled solid_nav__css xs-mb4">
+      <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/">About Solid</a>
+
+      </li>
+    </ol>
+
+    <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">CSS Library</label>
+
+    <ol class="list-unstyled xs-mb4">
 
       <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
 
@@ -170,9 +179,9 @@
       </li>
     </ol>
 
-    <label class="xs-block text-6 caps bold xs-mb1 sm-mb2 solid-nav__header" for="components-menu">Components</label>
+    <label class="xs-block text-6 caps bold xs-mb1 sm-mb2 solid-nav__header">Components</label>
 
-    <ol class="list-unstyled xs-pb3 sm-pb0 solid-nav__components">
+    <ol class="list-unstyled xs-pb3 sm-pb0">
 
       <li class="solid-nav__group <%- current.source == 'messaging' ? 'active' : '' %>">
 
