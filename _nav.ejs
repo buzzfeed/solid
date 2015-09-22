@@ -1,175 +1,186 @@
 <!-- Desktop Nav -->
 
-<nav class="xs-col-12 sm-col-3 lg-col-2 sm-fixed xs-t0 xs-b0 xs-l0 xs-overflow-auto xs-py3 sm-pb6 xs-border-bottom sm-border-bottom-none sm-border-right fill-white">
+<nav class="xs-col-12 sm-col-3 lg-col-2 sm-fixed xs-t0 sm-b0 xs-l0 xs-overflow-auto sm-py3 sm-pb6 xs-border-bottom sm-border-bottom-none sm-border-right fill-white solid-nav">
   
-  <h1 class="xs-mb4 solid-header"><a href="/" class="solid-logo">Solid</a></h1>
+  <h1 class="xs-relative xs-py3 sm-py0 sm-mb4 solid-header">
+    <div class="xs-hide sm-block">
+      <a href="/" class="solid-logo">Solid</a>
+    </div>
+    <div class="sm-hide solid-header--mobile">
+      <span class="solid-logo">Solid</span>
+      <div class="xs-absolute solid-header__caret"></div>
+    </div>
+  </h1>
 
-  <label class="xs-block text-6 bold caps xs-mb2 solid-nav__header" for="css-menu">CSS Library</label>
+  <div class="solid-nav__items xs-hide sm-block">
 
-  <ol class="list-unstyled solid_nav__css xs-mb4">
+    <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header" for="css-menu">CSS Library</label>
 
-    <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
+    <ol class="list-unstyled solid_nav__css xs-mb4">
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/base/typography">Typography</a>
+      <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
 
-      <% if (current.source == 'typography') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#headers" class="xs-block xs-px3 solid-nav__subitem">Headers and Sizes</a></li>
-          <li class="xs-py1"><a href="#slab" class="xs-block xs-px3 solid-nav__subitem">Slab Headers</a></li>
-          <li class="xs-py1"><a href="#emphasis" class="xs-block xs-px3 solid-nav__subitem">Emphasis</a></li>
-          <li class="xs-py1"><a href="#overflow" class="xs-block xs-px3 solid-nav__subitem">Overflow</a></li>
-          <li class="xs-py1"><a href="#alignment" class="xs-block xs-px3 solid-nav__subitem">Alignment</a></li>
-          <li class="xs-py1"><a href="#lists" class="xs-block xs-px3 solid-nav__subitem">Lists</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/base/typography">Typography</a>
 
-    </li>
-    
-    <li class="solid-nav__group <%- current.source == 'colors' ? 'active' : '' %>">
+        <% if (current.source == 'typography') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#headers" class="xs-block xs-px3 solid-nav__subitem">Headers and Sizes</a></li>
+            <li class="xs-py1"><a href="#slab" class="xs-block xs-px3 solid-nav__subitem">Slab Headers</a></li>
+            <li class="xs-py1"><a href="#emphasis" class="xs-block xs-px3 solid-nav__subitem">Emphasis</a></li>
+            <li class="xs-py1"><a href="#overflow" class="xs-block xs-px3 solid-nav__subitem">Overflow</a></li>
+            <li class="xs-py1"><a href="#alignment" class="xs-block xs-px3 solid-nav__subitem">Alignment</a></li>
+            <li class="xs-py1"><a href="#lists" class="xs-block xs-px3 solid-nav__subitem">Lists</a></li>
+          </ul>
+        <% } %>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/base/colors">Colors</a>
+      </li>
+      
+      <li class="solid-nav__group <%- current.source == 'colors' ? 'active' : '' %>">
 
-      <% if (current.source == 'colors') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#fill-colors" class="xs-block xs-px3 solid-nav__subitem">Fill Colors</a></li>
-          <li class="xs-py1"><a href="#social-fill-colors" class="xs-block xs-px3 solid-nav__subitem">Social Fill Colors</a></li>
-          <li class="xs-py1"><a href="#text-colors" class="xs-block xs-px3 solid-nav__subitem">Text Colors</a></li>
-          <li class='xs-py1'><a href="#link-colors" class="xs-block xs-px3 solid-nav__subitem">Link Colors</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/base/colors">Colors</a>
 
-    </li>
+        <% if (current.source == 'colors') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#fill-colors" class="xs-block xs-px3 solid-nav__subitem">Fill Colors</a></li>
+            <li class="xs-py1"><a href="#social-fill-colors" class="xs-block xs-px3 solid-nav__subitem">Social Fill Colors</a></li>
+            <li class="xs-py1"><a href="#text-colors" class="xs-block xs-px3 solid-nav__subitem">Text Colors</a></li>
+            <li class='xs-py1'><a href="#link-colors" class="xs-block xs-px3 solid-nav__subitem">Link Colors</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'buttons' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/interface/buttons">Buttons</a>
+      <li class="solid-nav__group <%- current.source == 'buttons' ? 'active' : '' %>">
 
-      <% if (current.source == 'buttons') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#primary-buttons" class="xs-block xs-px3 solid-nav__subitem">Primary Buttons</a></li>
-          <li class="xs-py1"><a href="#secondary-buttons" class="xs-block xs-px3 solid-nav__subitem">Secondary Buttons</a></li>
-          <li class="xs-py1"><a href="#negative-buttons" class="xs-block xs-px3 solid-nav__subitem">Negative Buttons</a></li>
-          <li class='xs-py1'><a href="#disabled-buttons" class="xs-block xs-px3 solid-nav__subitem">Disabled Buttons</a></li>
-          <li class='xs-py1'><a href="#small-buttons" class="xs-block xs-px3 solid-nav__subitem">Small Buttons</a></li>
-          <li class='xs-py1'><a href="#button-groups" class="xs-block xs-px3 solid-nav__subitem">Button Groups</a></li>
-          <li class='xs-py1'><a href="#small-button-groups" class="xs-block xs-px3 solid-nav__subitem">Small Button Groups</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/buttons">Buttons</a>
 
-    </li>
+        <% if (current.source == 'buttons') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#primary-buttons" class="xs-block xs-px3 solid-nav__subitem">Primary Buttons</a></li>
+            <li class="xs-py1"><a href="#secondary-buttons" class="xs-block xs-px3 solid-nav__subitem">Secondary Buttons</a></li>
+            <li class="xs-py1"><a href="#negative-buttons" class="xs-block xs-px3 solid-nav__subitem">Negative Buttons</a></li>
+            <li class='xs-py1'><a href="#disabled-buttons" class="xs-block xs-px3 solid-nav__subitem">Disabled Buttons</a></li>
+            <li class='xs-py1'><a href="#small-buttons" class="xs-block xs-px3 solid-nav__subitem">Small Buttons</a></li>
+            <li class='xs-py1'><a href="#button-groups" class="xs-block xs-px3 solid-nav__subitem">Button Groups</a></li>
+            <li class='xs-py1'><a href="#small-button-groups" class="xs-block xs-px3 solid-nav__subitem">Small Button Groups</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'forms' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/interface/forms">Forms</a>
+      <li class="solid-nav__group <%- current.source == 'forms' ? 'active' : '' %>">
 
-      <% if (current.source == 'forms') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#form-labels" class="xs-block xs-px3 solid-nav__subitem">Form Labels</a></li>
-          <li class="xs-py1"><a href="#text-inputs" class="xs-block xs-px3 solid-nav__subitem">Text Inputs</a></li>
-          <li class="xs-py1"><a href="#helper-text" class="xs-block xs-px3 solid-nav__subitem">Helper Text</a></li>
-          <li class='xs-py1'><a href="#textareas" class="xs-block xs-px3 solid-nav__subitem">Textareas</a></li>
-          <li class='xs-py1'><a href="#select-fields" class="xs-block xs-px3 solid-nav__subitem">Select Fields</a></li>
-          <li class='xs-py1'><a href="#radio-buttons" class="xs-block xs-px3 solid-nav__subitem">Radio Buttons</a></li>
-          <li class='xs-py1'><a href="#checkboxes" class="xs-block xs-px3 solid-nav__subitem">Checkboxes</a></li>
-          <li class='xs-py1'><a href="#small-form-labels" class="xs-block xs-px3 solid-nav__subitem">Small Form Labels</a></li>
-          <li class='xs-py1'><a href="#small-text-inputs" class="xs-block xs-px3 solid-nav__subitem">Small Text Inputs</a></li>
-          <li class='xs-py1'><a href="#small-select-fields" class="xs-block xs-px3 solid-nav__subitem">Small Select Fields</a></li>
-          <li class='xs-py1'><a href="#form-warnings" class="xs-block xs-px3 solid-nav__subitem">Form Warnings</a></li>
-          <li class='xs-py1'><a href="#form-errors" class="xs-block xs-px3 solid-nav__subitem">Form Errors</a></li>
-          <li class='xs-py1'><a href="#form-success" class="xs-block xs-px3 solid-nav__subitem">Form Success</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/forms">Forms</a>
 
-    </li>
+        <% if (current.source == 'forms') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#form-labels" class="xs-block xs-px3 solid-nav__subitem">Form Labels</a></li>
+            <li class="xs-py1"><a href="#text-inputs" class="xs-block xs-px3 solid-nav__subitem">Text Inputs</a></li>
+            <li class="xs-py1"><a href="#helper-text" class="xs-block xs-px3 solid-nav__subitem">Helper Text</a></li>
+            <li class='xs-py1'><a href="#textareas" class="xs-block xs-px3 solid-nav__subitem">Textareas</a></li>
+            <li class='xs-py1'><a href="#select-fields" class="xs-block xs-px3 solid-nav__subitem">Select Fields</a></li>
+            <li class='xs-py1'><a href="#radio-buttons" class="xs-block xs-px3 solid-nav__subitem">Radio Buttons</a></li>
+            <li class='xs-py1'><a href="#checkboxes" class="xs-block xs-px3 solid-nav__subitem">Checkboxes</a></li>
+            <li class='xs-py1'><a href="#small-form-labels" class="xs-block xs-px3 solid-nav__subitem">Small Form Labels</a></li>
+            <li class='xs-py1'><a href="#small-text-inputs" class="xs-block xs-px3 solid-nav__subitem">Small Text Inputs</a></li>
+            <li class='xs-py1'><a href="#small-select-fields" class="xs-block xs-px3 solid-nav__subitem">Small Select Fields</a></li>
+            <li class='xs-py1'><a href="#form-warnings" class="xs-block xs-px3 solid-nav__subitem">Form Warnings</a></li>
+            <li class='xs-py1'><a href="#form-errors" class="xs-block xs-px3 solid-nav__subitem">Form Errors</a></li>
+            <li class='xs-py1'><a href="#form-success" class="xs-block xs-px3 solid-nav__subitem">Form Success</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'tables' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/interface/tables">Tables</a>
+      <li class="solid-nav__group <%- current.source == 'tables' ? 'active' : '' %>">
 
-      <% if (current.source == 'tables') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#default-table" class="xs-block xs-px3 solid-nav__subitem">Default Table</a></li>
-          <li class="xs-py1"><a href="#bordered-table" class="xs-block xs-px3 solid-nav__subitem">Bordered Table</a></li>
-          <li class="xs-py1"><a href="#faux-table-layout" class="xs-block xs-px3 solid-nav__subitem">Faux Table Layout</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/tables">Tables</a>
 
-    </li>
+        <% if (current.source == 'tables') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#default-table" class="xs-block xs-px3 solid-nav__subitem">Default Table</a></li>
+            <li class="xs-py1"><a href="#bordered-table" class="xs-block xs-px3 solid-nav__subitem">Bordered Table</a></li>
+            <li class="xs-py1"><a href="#faux-table-layout" class="xs-block xs-px3 solid-nav__subitem">Faux Table Layout</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'grid' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/layout/grid">Grid</a>
+      <li class="solid-nav__group <%- current.source == 'grid' ? 'active' : '' %>">
 
-      <% if (current.source == 'grid') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#the-grid" class="xs-block xs-px3 solid-nav__subitem">The Grid</a></li>
-          <li class="xs-py1"><a href="#columns-are-for-layout" class="xs-block xs-px3 solid-nav__subitem">Columns Are for Layout</a></li>
-          <li class="xs-py1"><a href="#nesting-columns" class="xs-block xs-px3 solid-nav__subitem">Nesting Columns</a></li>
-          <li class="xs-py1"><a href="#gutters-automatic" class="xs-block xs-px3 solid-nav__subitem">Gutters (automatic)</a></li>
-          <li class="xs-py1"><a href="#gutters-manual" class="xs-block xs-px3 solid-nav__subitem">Gutters (manual)</a></li>
-          <li class="xs-py1"><a href="#column-offsets" class="xs-block xs-px3 solid-nav__subitem">Columns Offsets</a></li>
-          <li class="xs-py1"><a href="#responsive-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Grid</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/grid">Grid</a>
 
-    </li>
+        <% if (current.source == 'grid') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#the-grid" class="xs-block xs-px3 solid-nav__subitem">The Grid</a></li>
+            <li class="xs-py1"><a href="#columns-are-for-layout" class="xs-block xs-px3 solid-nav__subitem">Columns Are for Layout</a></li>
+            <li class="xs-py1"><a href="#nesting-columns" class="xs-block xs-px3 solid-nav__subitem">Nesting Columns</a></li>
+            <li class="xs-py1"><a href="#gutters-automatic" class="xs-block xs-px3 solid-nav__subitem">Gutters (automatic)</a></li>
+            <li class="xs-py1"><a href="#gutters-manual" class="xs-block xs-px3 solid-nav__subitem">Gutters (manual)</a></li>
+            <li class="xs-py1"><a href="#column-offsets" class="xs-block xs-px3 solid-nav__subitem">Columns Offsets</a></li>
+            <li class="xs-py1"><a href="#responsive-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Grid</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'block-grid' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/layout/block-grid">Block Grid</a>
+      <li class="solid-nav__group <%- current.source == 'block-grid' ? 'active' : '' %>">
 
-      <% if (current.source == 'block-grid') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#basic-block-grid" class="xs-block xs-px3 solid-nav__subitem">Basic Block Grid</a></li>
-          <li class="xs-py1"><a href="#responsive-block-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Block Grid</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/block-grid">Block Grid</a>
 
-    </li>
+        <% if (current.source == 'block-grid') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#basic-block-grid" class="xs-block xs-px3 solid-nav__subitem">Basic Block Grid</a></li>
+            <li class="xs-py1"><a href="#responsive-block-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Block Grid</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'responsive' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/layout/responsive">Responsive</a>
+      <li class="solid-nav__group <%- current.source == 'responsive' ? 'active' : '' %>">
 
-      <% if (current.source == 'responsive') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#responsive-prefixes" class="xs-block xs-px3 solid-nav__subitem">Responsive Prefixes</a></li>
-          <li class="xs-py1"><a href="#how-it-works" class="xs-block xs-px3 solid-nav__subitem">How It Works</a></li>
-          <li class="xs-py1"><a href="#what-has-a-responsive-prefix" class="xs-block xs-px3 solid-nav__subitem">What Has a Responsive Prefix</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/responsive">Responsive</a>
 
-    </li>
+        <% if (current.source == 'responsive') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#responsive-prefixes" class="xs-block xs-px3 solid-nav__subitem">Responsive Prefixes</a></li>
+            <li class="xs-py1"><a href="#how-it-works" class="xs-block xs-px3 solid-nav__subitem">How It Works</a></li>
+            <li class="xs-py1"><a href="#what-has-a-responsive-prefix" class="xs-block xs-px3 solid-nav__subitem">What Has a Responsive Prefix</a></li>
+          </ul>
+        <% } %>
 
-    <li class="solid-nav__group <%- current.source == 'utilities' ? 'active' : '' %>">
+      </li>
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/layout/utilities">Utility Classes</a>
+      <li class="solid-nav__group <%- current.source == 'utilities' ? 'active' : '' %>">
 
-      <% if (current.source == 'utilities') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#about-utility-classes" class="xs-block xs-px3 solid-nav__subitem">About Utility Classes</a></li>
-          <li class="xs-py1"><a href="#layout-utilities" class="xs-block xs-px3 solid-nav__subitem">Layout Utilities</a></li>
-          <li class="xs-py1"><a href="#style-utilities" class="xs-block xs-px3 solid-nav__subitem">Style Utilities</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/utilities">Utility Classes</a>
 
-    </li>
-  </ol>
+        <% if (current.source == 'utilities') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#about-utility-classes" class="xs-block xs-px3 solid-nav__subitem">About Utility Classes</a></li>
+            <li class="xs-py1"><a href="#layout-utilities" class="xs-block xs-px3 solid-nav__subitem">Layout Utilities</a></li>
+            <li class="xs-py1"><a href="#style-utilities" class="xs-block xs-px3 solid-nav__subitem">Style Utilities</a></li>
+          </ul>
+        <% } %>
 
-  <label class="xs-block text-6 caps bold xs-mb2 solid-nav__header" for="components-menu">Components</label>
+      </li>
+    </ol>
 
-  <ol class="list-unstyled solid-nav__components">
+    <label class="xs-block text-6 caps bold xs-mb1 sm-mb2 solid-nav__header" for="components-menu">Components</label>
 
-    <li class="solid-nav__group <%- current.source == 'messaging' ? 'active' : '' %>">
+    <ol class="list-unstyled xs-pb3 sm-pb0 solid-nav__components">
 
-      <a class="xs-block xs-px2 xs-py1 bold solid-nav__item" href="/interface/messaging">Messaging</a>
+      <li class="solid-nav__group <%- current.source == 'messaging' ? 'active' : '' %>">
 
-      <% if (current.source == 'messaging') { %>
-        <ul class="list-unstyled text-5 xs-hide sm-block">
-          <li class="xs-py1"><a href="#success-and-error-messages" class="xs-block xs-px3 solid-nav__subitem">Success and Error Messages</a></li>
-        </ul>
-      <% } %>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/messaging">Messaging</a>
 
-    </li>
-  </ol>
+        <% if (current.source == 'messaging') { %>
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#success-and-error-messages" class="xs-block xs-px3 solid-nav__subitem">Success and Error Messages</a></li>
+          </ul>
+        <% } %>
+
+      </li>
+    </ol>
+  </div>
 </nav>
