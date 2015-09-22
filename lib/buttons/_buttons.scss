@@ -255,3 +255,7 @@ $button-height-small: 2rem;
 .button--instagram {
   @include social-button($fill-instagram);
 }
+
+.button--vine {
+  @include social-button($fill-vine);
+}
