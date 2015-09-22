@@ -174,18 +174,18 @@ $button-height-small: 2rem;
 
 .button--icon {
   >svg {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     fill: $fill-white;
-    margin: .05rem .45rem 0 0;
+    margin: .05rem .5rem 0 0;
   }
 }
 
 .button--small.button--icon { 
   >svg {
-    width: 14px;
-    height: 14px;
-    margin: .05rem .325rem 0 0;
+    width: .875rem;
+    height: .875rem;
+    margin: .05rem .3125rem 0 0;
   }
 }
 
