@@ -3,8 +3,8 @@
 // --------------------------------------------------
 
 //fonts
-$sans: "Proxima-Nova", Helvetica, Arial, sans-serif;
-$slab: "Caponi-Slab-Semibold", Georgia, serif;
+$sans: "Proxima Nova", Helvetica, Arial, sans-serif;
+$slab: "Caponi Slab", Georgia, serif;
 
 html {
   font-size: $base-font-size;
@@ -59,7 +59,7 @@ h6,
 
 // This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: $text-blue;
 
   &:hover {
