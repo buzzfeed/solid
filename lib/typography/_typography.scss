@@ -11,44 +11,50 @@ html {
   font-family: $sans; // This is just for reference
 }
 
-h1,
-.text-1 {
-  font-size: $text-1;
-  line-height: 1.1;
+body {
+  font-size:   $text-4;
+  line-height: $line-height-4;
 }
 
-h2,
-h6 {
-  line-height: $line-height;
-  line-height: 1.2;
+h1 {
+  font-size:   $text-1;
+  line-height: $line-height-1;
 }
 
-h1 { font-size: $text-1; }
-h2 { font-size: $text-2; }
-h3 { font-size: $text-3; }
-h4 { font-size: $text-4; }
-h5 { font-size: $text-5; }
-h6 { font-size: $text-6; }
-
-body,
-h4,
-.text-4 {
-  font-size: $text-4;
-  line-height: 1.5;
+h2 { 
+  font-size:   $text-2;
+  line-height: $line-height-2;
 }
-// scss-lint:enable QualifyingElement
+
+h3 { 
+  font-size:   $text-3;
+  line-height: $line-height-3;
+}
+
+h4 {
+  font-size:   $text-4;
+  line-height: $line-height-4;
+}
+
+h5 { 
+  font-size:   $text-5;
+  line-height: $line-height-5;
+}
+
+h6 { 
+  font-size:   $text-6;
+  line-height: $line-height-6;
+}
+
 
 // Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
-  font-size: $text-5;
-  line-height: 1.4;
-}
 
 // scss-lint:disable QualifyingElement
 .slab h6,
 // scss-lint:enable QualifyingElement
-.text-6 {
-  font-size: $text-6;
-  line-height: 1.4;
+h6.slab {
+  font-family: $sans;
+  font-weight: $regular;
 }
 
 // This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
@@ -63,12 +69,6 @@ a {
 }
 
 // Typography Emphasis and Styling
-
-.regular,
-.normal {
-  font-weight: $regular;
-}
-
 strong,
 b {
   font-weight: $bold;
@@ -101,21 +101,37 @@ ul {
 }
 
 // Utility Classes
-.text-1,
-.text-2,
-.text-3,
-.text-4,
-.text-5,
-.text-6 {
-  line-height: $line-height !important;
+
+.text-1 { 
+  font-size:   $text-1       !important;
+  line-height: $line-height-1 !important;
 }
 
-.text-1 { font-size: $text-1 !important; }
-.text-2 { font-size: $text-2 !important; }
-.text-3 { font-size: $text-3 !important; }
-.text-4 { font-size: $text-4 !important; }
-.text-5 { font-size: $text-5 !important; }
-.text-6 { font-size: $text-6 !important; }
+.text-2 { 
+  font-size:   $text-2       !important;
+  line-height: $line-height-2 !important;
+}
+
+.text-3 { 
+  font-size:   $text-3       !important;
+  line-height: $line-height-3 !important;
+}
+
+.text-4 { 
+  font-size:   $text-4       !important;
+  line-height: $line-height-4 !important;
+}
+
+.text-5 { 
+  font-size:   $text-5       !important;
+  line-height: $line-height-5 !important;
+}
+
+.text-6 { 
+  font-size:   $text-6       !important;
+  line-height: $line-height-6 !important;
+}
+
 
 // Typography Emphasis and Styling
 
