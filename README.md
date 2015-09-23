@@ -9,9 +9,9 @@ You must have NPM installed. If you have installed the [Buzzfeed webapp](https:/
 
 ### Install
 When inside your project directory type:
- ```
- npm install bf-solid --save
- ```
+```
+npm install bf-solid --save
+```
 or using Bower:
 ```
 bower install git+ssh://git@github.com/buzzfeed/solid.git#<RELEASE_VERSION> --save
@@ -19,7 +19,26 @@ bower install git+ssh://git@github.com/buzzfeed/solid.git#<RELEASE_VERSION> --sa
 
 This will give you `solid.scss` and all of its scss files inside `node_modules/solid/lib`. This package includes the static, uncompiled SCSS files. Whether you want to build them into your project with Grunt, Gulp, etc. is up to you.
 
-Including the package using a github URL will also include all of the styleguide's template `.ejs` files. Please disregard.
+### Grunt Usage
+
+#### (with grunt-sass)
+
+Grunt-sass uses libsass to compile your sass. Use includePaths to make solid available as an scss import.
+
+```
+  sass: {
+    dist: {
+      options: {
+        includePaths: 'node_modules/bf-solid/lib'
+      },
+      files: {
+        'path/to/output.css': 'path/to/input.scss'
+      }
+    }
+});
+```
+
+Then in your scss import file import solid with `@import "solid";`
 
 ## Building the Solid Styleguide
 The solid styleguide lets you view Solid along with all of its documentation.
