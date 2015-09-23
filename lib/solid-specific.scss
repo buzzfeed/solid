@@ -77,6 +77,9 @@ pre {
 
 // Solid Nav
 
+.solid-header--desktop-logo,
+.solid-nav__items { display: none; }
+
 .solid-header,
 .solid-nav__header {
   padding-left: 1.375rem;
@@ -113,18 +116,16 @@ pre {
 
 .solid-nav__group.active {
   border-left: .375rem solid $fill-blue;
-}
 
-.solid-nav__group.active .solid-nav__item {
-  color: $text-gray;
+  .solid-nav__item {
+    color: $text-gray;    
+  }
 }
 
 // Remove spaces between example elements
 
 .font-size-0 {
   font-size: 0;
-}
 
-.font-size-0 > * {
-  font-size: $base-font-size;
+  > * { font-size: $base-font-size; }
 }

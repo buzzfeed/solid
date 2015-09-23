@@ -11,41 +11,50 @@ html {
   font-family: $sans; // This is just for reference
 }
 
-h1,
-.text-1 {
-  font-size: $text-1;
-  line-height: 1.1;
+body {
+  font-size:   $text-4;
+  line-height: $line-height-4;
 }
 
-h2,
-.text-2 {
-  font-size: $text-2;
-  line-height: 1.2;
+h1 {
+  font-size:   $text-1;
+  line-height: $line-height-1;
 }
 
-h3,
-.text-3 {
-  font-size: $text-3;
-  line-height: 1.3;
+h2 { 
+  font-size:   $text-2;
+  line-height: $line-height-2;
 }
 
-body,
-h4,
-.text-4 {
-  font-size: $text-4;
-  line-height: 1.5;
+h3 { 
+  font-size:   $text-3;
+  line-height: $line-height-3;
 }
 
-h5,
-.text-5 {
-  font-size: $text-5;
-  line-height: 1.4;
+h4 {
+  font-size:   $text-4;
+  line-height: $line-height-4;
 }
 
-h6,
-.text-6 {
-  font-size: $text-6;
-  line-height: 1.4;
+h5 { 
+  font-size:   $text-5;
+  line-height: $line-height-5;
+}
+
+h6 { 
+  font-size:   $text-6;
+  line-height: $line-height-6;
+}
+
+
+// Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
+
+// scss-lint:disable QualifyingElement
+.slab h6,
+// scss-lint:enable QualifyingElement
+h6.slab {
+  font-family: $sans;
+  font-weight: $regular;
 }
 
 // This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
@@ -60,137 +69,138 @@ a {
 }
 
 // Typography Emphasis and Styling
-
-.regular,
-.normal {
-  font-weight: $regular;
-}
-
 strong,
-b,
-.bold {
+b {
   font-weight: $bold;
 }
 
 em,
-i,
-.italic {
+i {
   font-style: italic;
-}
-
-.caps {
-  text-transform: uppercase;
-}
-
-// Text Alignment + Responsive Prefixes
-
-@include generate-breakpoint-prefixes {
-  &text-left { text-align: left; }
-  &text-center { text-align: center; }
-  &text-right { text-align: right; }
-  &text-justify { text-align: justify; }
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.decoration-none {
-  text-decoration: none;
-}
-
-.decoration-underline {
-  text-decoration: underline;
-}
-
-.decoration-line-through {
-  text-decoration: line-through;
-}
-
-// Typeface Classes
-
-.slab {
-  font-family: $slab;
-  line-height: 1.1;
-  // Needed b/c chrome still needs prefix
-  // scss-lint:disable VendorPrefix
-  -webkit-font-feature-settings: "liga", "kern";
-  font-feature-settings: "liga", "kern";
-  // scss-lint:enable VendorPrefix
-  &.bold {
-    font-family: $slab;
-    font-weight: $regular;
-  }
-
-  &.italic {
-    font-family: $slab;
-  }
-}
-
-
-// Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
-
-// scss-lint:disable QualifyingElement
-.slab h6,
-// scss-lint:enable QualifyingElement
-h6.slab,
-.text-6 .slab,
-.slab.text-6 {
-  font-family: $sans;
-  font-weight: $regular;
-}
-
-// Caponi Specific Line-Height Per Font-Size
-h1.slab,
-.text-1.slab,
-h2.slab,
-.text-2.slab, {
-  line-height: 1.1;
 }
 
 // Ordered and unordered list, list items are block level
 
 ol,
 ul {
-  padding-left: $space-4;
+  padding-left: $space-4 !important;
+}
+
+// Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
+
+.text-6 .slab,
+.slab.text-6 {
+  font-family: $sans    !important;
+  font-weight: $regular !important;
+}
+
+// Caponi Specific Line-Height Per Font-Size
+.text-1.slab,
+.text-2.slab, {
+  line-height: 1.1 !important;
+}
+
+// Utility Classes
+
+.text-1 { 
+  font-size:   $text-1       !important;
+  line-height: $line-height-1 !important;
+}
+
+.text-2 { 
+  font-size:   $text-2       !important;
+  line-height: $line-height-2 !important;
+}
+
+.text-3 { 
+  font-size:   $text-3       !important;
+  line-height: $line-height-3 !important;
+}
+
+.text-4 { 
+  font-size:   $text-4       !important;
+  line-height: $line-height-4 !important;
+}
+
+.text-5 { 
+  font-size:   $text-5       !important;
+  line-height: $line-height-5 !important;
+}
+
+.text-6 { 
+  font-size:   $text-6       !important;
+  line-height: $line-height-6 !important;
+}
+
+
+// Typography Emphasis and Styling
+
+.regular,
+.normal { font-weight:    $regular  !important; }
+
+.bold   { font-weight:    $bold     !important; }
+.italic { font-style:     italic    !important; }
+.caps   { text-transform: uppercase !important; }
+
+// Text Alignment + Responsive Prefixes
+
+@include generate-breakpoint-prefixes {
+  &text-left    { text-align: left    !important; }
+  &text-center  { text-align: center  !important; }
+  &text-right   { text-align: right   !important; }
+  &text-justify { text-align: justify !important; }
+}
+
+.nowrap { white-space: nowrap !important; }
+.truncate {
+  white-space:   nowrap   !important;
+  overflow:      hidden   !important;
+  text-overflow: ellipsis !important;
+}
+
+.decoration-none         { text-decoration: none         !important; }
+.decoration-underline    { text-decoration: underline    !important; }
+.decoration-line-through { text-decoration: line-through !important; }
+
+// Typeface Classes
+
+.slab {
+  font-family: $slab !important;
+  line-height: 1.1   !important;
+  // Needed b/c chrome still needs prefix
+  // scss-lint:disable VendorPrefix
+  -webkit-font-feature-settings: "liga", "kern" !important;
+  font-feature-settings:         "liga", "kern" !important;
+  // scss-lint:enable VendorPrefix
+  &.bold {
+    font-family: $slab    !important;
+    font-weight: $regular !important;
+  }
+
+  &.italic { font-family: $slab !important; }
 }
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 
 .list-unstyled {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
+  margin-left:  0    !important;
+  padding-left: 0    !important;
+  list-style:   none !important;
 }
 
 // Link Styles
 
 .link-blue {
-  color: $text-blue;
-
-  &:hover {
-    color: darken($text-blue, 20%);
+  color: $text-blue !important;
+  &:hover { color: darken($text-blue, 20%) !important; }
   }
-}
 
 .link-gray {
-  color: $text-gray;
-
-  &:hover {
-    color: $text-blue;
+  color: $text-gray !important;
+  &:hover { color: $text-blue !important; }
   }
-}
 
 .link-gray--lighter {
-  color: $text-gray--lightest;
-
-  &:hover {
-    color: $text-gray;
-  }
+  color: $text-gray--lightest !important;
+  &:hover { color: $text-gray !important; }
 }

@@ -25,25 +25,17 @@ td {
 // Add a border to a table
 
 .table-border {
-  border: $border;
-  border-radius: 3px;
+  border:        $border !important;
+  border-radius: 3px     !important;
 
-  th {
-    border-bottom: $border;
-  }
-
-  tr td {
-    border-bottom: $border;
-  }
-
-  tr:last-child td {
-    border-bottom: 0;
-  }
+  th {               border-bottom: $border !important; }
+  tr td {            border-bottom: $border !important; }
+  tr:last-child td { border-bottom: 0       !important; }
 }
 
 .table-border td, 
 .table-border th {
-  padding: $space-2;
+  padding: $space-2 !important;
 }
 
 
@@ -51,16 +43,11 @@ td {
 // Adding table layout
 
 .table {
-  border-collapse: separate;
-  border-spacing: 0;
-  display: table;
+  border-collapse: separate !important;
+  border-spacing:  0        !important;
+  display:         table    !important;
 }
 
 .td, 
-.th {
-  display: table-cell;
-}
-
-.tr {
-  display: table-row;
-}
+.th { display: table-cell !important; }
+.tr { display: table-row !important; }

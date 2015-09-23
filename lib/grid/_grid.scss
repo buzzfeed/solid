@@ -14,41 +14,41 @@ $gutter: $space-1;
 @include generate-breakpoint-prefixes {
 
   // Columns
-  &col-1  { width: percentage(1/12);  }
-  &col-2  { width: percentage(2/12);  }
-  &col-3  { width: percentage(3/12);  }
-  &col-4  { width: percentage(4/12);  }
-  &col-5  { width: percentage(5/12);  }
-  &col-6  { width: percentage(6/12);  }
-  &col-7  { width: percentage(7/12);  }
-  &col-8  { width: percentage(8/12);  }
-  &col-9  { width: percentage(9/12);  }
-  &col-10 { width: percentage(10/12); }
-  &col-11 { width: percentage(11/12); }
-  &col-12 { width: percentage(12/12); }
+  &col-1  { width: percentage(1/12)  !important; }
+  &col-2  { width: percentage(2/12)  !important; }
+  &col-3  { width: percentage(3/12)  !important; }
+  &col-4  { width: percentage(4/12)  !important; }
+  &col-5  { width: percentage(5/12)  !important; }
+  &col-6  { width: percentage(6/12)  !important; }
+  &col-7  { width: percentage(7/12)  !important; }
+  &col-8  { width: percentage(8/12)  !important; }
+  &col-9  { width: percentage(9/12)  !important; }
+  &col-10 { width: percentage(10/12) !important; }
+  &col-11 { width: percentage(11/12) !important; }
+  &col-12 { width: percentage(12/12) !important; }
 
   // Offsets
 
-  &offset-1  { margin-left: percentage(1/12);  }
-  &offset-2  { margin-left: percentage(2/12);  }
-  &offset-3  { margin-left: percentage(3/12);  }
-  &offset-4  { margin-left: percentage(4/12);  }
-  &offset-5  { margin-left: percentage(5/12);  }
-  &offset-6  { margin-left: percentage(6/12);  }
-  &offset-7  { margin-left: percentage(7/12);  }
-  &offset-8  { margin-left: percentage(8/12);  }
-  &offset-9  { margin-left: percentage(9/12);  }
-  &offset-10 { margin-left: percentage(10/12); }
-  &offset-11 { margin-left: percentage(11/12); }
+  &offset-1  { margin-left: percentage(1/12)  !important; }
+  &offset-2  { margin-left: percentage(2/12)  !important; }
+  &offset-3  { margin-left: percentage(3/12)  !important; }
+  &offset-4  { margin-left: percentage(4/12)  !important; }
+  &offset-5  { margin-left: percentage(5/12)  !important; }
+  &offset-6  { margin-left: percentage(6/12)  !important; }
+  &offset-7  { margin-left: percentage(7/12)  !important; }
+  &offset-8  { margin-left: percentage(8/12)  !important; }
+  &offset-9  { margin-left: percentage(9/12)  !important; }
+  &offset-10 { margin-left: percentage(10/12) !important; }
+  &offset-11 { margin-left: percentage(11/12) !important; }
 }
 
 
 // Add gutters to the full grid
 
 .gutters {
-  margin: 0 (-$gutter);
+  margin: 0 (-$gutter) !important;
 
   >.col {
-    padding: 0 $gutter;
+    padding: 0 $gutter !important;
   }
 }
