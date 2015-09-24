@@ -19,7 +19,7 @@
 }
 
 @function calc-margin($block-grid-width) {
-  @return calc(#{$block-grid-width} - #{$space-2}) !important;
+  @return calc(#{$block-grid-width} - #{$space-2});
 }
 
 @include generate-breakpoint-prefixes {

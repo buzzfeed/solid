@@ -161,3 +161,16 @@ body {
 a {
   color: $text-blue;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  @include prefix((box-sizing: inherit), moz)
+}
+
+// Responsive Images
+img { max-width: 100%; height: auto; }
