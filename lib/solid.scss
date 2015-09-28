@@ -1,23 +1,8 @@
-// Import order is extremely important. Please be mindful when adding to or touching this file.
+//
+// Solid
+// --------------------------------------------------
 
-// Setup
-
-@import "variables";
-@import "mixins";
-@import "base/normalize";
-@import "base/base";
-
-// Solid Modules
-
-@import "messaging/messaging";
-@import "buttons/buttons";
-@import "forms/forms";
-@import "tables/tables";
-@import "grid/grid";
-@import "block-grid/block-grid";
-@import "typography/typography";
-@import "colors/colors";
-
-// Utilities Must Be Called Last.
-
-@import "utilities/utilities";
+@import "solid-helpers";
+@import "solid-base";
+@import "solid-utilities";
+@import "solid-components";

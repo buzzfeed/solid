@@ -1,0 +1,40 @@
+//
+// Style Utility Classes
+// --------------------------------------------------
+// These classes make extensive use of the
+// generate-breakpoint-prefixes mixin, which
+// adds prefixes such as `xs-` to the class.
+// see more in `/_mixins.scss`
+
+// Rounded Corners, Circles
+// -------------------------
+
+.rounded {        border-radius: 3px         !important; }
+.rounded-top {    border-radius: 3px 3px 0 0 !important; }
+.rounded-bottom { border-radius: 0 0 3px 3px !important; }
+.circle {         border-radius: 50%         !important; }
+
+// Borders
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+
+  &border        { border: $border        !important; }
+  &border-top    { border-top: $border    !important; }
+  &border-right  { border-right: $border  !important; }
+  &border-bottom { border-bottom: $border !important; }
+  &border-left   { border-left: $border   !important; }
+
+  &border--lighter        { border: $border--lighter        !important; }
+  &border-top--lighter    { border-top: $border--lighter    !important; }
+  &border-right--lighter  { border-right: $border--lighter  !important; }
+  &border-bottom--lighter { border-bottom: $border--lighter !important; }
+  &border-left--lighter   { border-left: $border--lighter   !important; }
+
+  &border-none        { border: none; }
+  &border-top-none    { border-top: none; }
+  &border-right-none  { border-right: none; }
+  &border-bottom-none { border-bottom: none; }
+  &border-left-none   { border-left: none; }
+
+}

@@ -1,35 +1,16 @@
-// Default table style
+//
+// Table Utility Classes
+// --------------------------------------------------
 
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  max-width: 100%;
-  width: 100%;
-}
-
-th {
-  text-align: left;
-  font-weight: $bold;
-  vertical-align: bottom;
-}
-
-th, 
-td {
-  padding: $space-1;
-}
-
-td {
-  vertical-align: top;
-}
-
-// Add a border to a table
+// Border
+// -------------------------
 
 .table-border {
   border:        $border !important;
   border-radius: 3px     !important;
 
-  th {               border-bottom: $border !important; }
-  tr td {            border-bottom: $border !important; }
+  th               { border-bottom: $border !important; }
+  tr td            { border-bottom: $border !important; }
   tr:last-child td { border-bottom: 0       !important; }
 }
 
@@ -40,7 +21,8 @@ td {
 
 
 
-// Adding table layout
+// Layout
+// -------------------------
 
 .table {
   border-collapse: separate !important;

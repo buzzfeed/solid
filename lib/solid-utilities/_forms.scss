@@ -5,6 +5,8 @@
 $input-height: 2.625rem;
 $input-height-small: 2rem;
 
+// Option Input Style
+// -------------------------
 // Adds some base custom styles to radio buttons and checkboxes. 
 // In order to specify shape, border radius is applied 
 // in class name for the element.
@@ -111,6 +113,7 @@ $input-height-small: 2rem;
 }
 
 // labels, etc
+// -------------------------
 .form-label {
   display: block;
   font-weight: $bold;
