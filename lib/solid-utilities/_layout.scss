@@ -1,4 +1,15 @@
-// Some Layout Classes + Responsive Prefixes
+//
+// Layout Utility Classes
+// --------------------------------------------------
+// These classes make extensive use of the
+// generate-breakpoint-prefixes mixin, which
+// adds prefixes such as `xs-` to the class.
+// see more in `/_mixins.scss`
+
+
+// Display
+// -------------------------
+
 @include generate-breakpoint-prefixes {
   &overflow-hidden  { overflow: hidden  !important; }
   &overflow-auto    { overflow: auto    !important; }
@@ -19,22 +30,10 @@
 
 }
 
-.clearfix:before,
-%clearfix:before,
-.clearfix:after,
-%clearfix:after {
-  content: " "   !important;
-  display: table !important;
-}
-
-.clearfix:after { clear: both !important; }
-
-// White Space
-
-// Margins + Responsive Prefixes
+// Margin
+// -------------------------
 
 @include generate-breakpoint-prefixes {
-
   &m0 {  margin: 0        !important; }
   &mt0 { margin-top: 0    !important; }
   &mr0 { margin-right: 0  !important; }
@@ -92,13 +91,12 @@
   &my6 { margin-top:    $space-6 !important; margin-bottom: $space-6 !important;}
 
   &mx-auto { margin-left: auto !important; margin-right: auto !important; }
+}
 
-  }
-
-// //Padding + Responsive Prefixes
+// Padding
+// -------------------------
 
 @include generate-breakpoint-prefixes {
-
   &p0  { padding:        0 !important; }
   &pt0 { padding-top:    0 !important; }
   &pr0 { padding-right:  0 !important; }
@@ -154,88 +152,67 @@
   &pl6 { padding-left:   $space-6 !important; }
   &px6 { padding-left:   $space-6 !important; padding-right: $space-6  !important;}
   &py6 { padding-top:    $space-6 !important; padding-bottom: $space-6 !important;}
-
-  }
-
-//Positioning
-
-
-@include generate-breakpoint-prefixes {
-
-&relative { position: relative !important; }
-&absolute { position: absolute !important; }
-&fixed    { position: fixed    !important; }
-&static   { position: static   !important; }
-
-&z1 { z-index: 100 !important; }
-&z2 { z-index: 200 !important; }
-&z3 { z-index: 300 !important; }
-&z4 { z-index: 400 !important; }
-
-&t0 { top:    0 !important; }
-&r0 { right:  0 !important; }
-&b0 { bottom: 0 !important; }
-&l0 { left:   0 !important; }
-
-&t1 { top:    $space-1 !important; }
-&r1 { right:  $space-1 !important; }
-&b1 { bottom: $space-1 !important; }
-&l1 { left:   $space-1 !important; }
-
-&t2 { top:    $space-2 !important; }
-&r2 { right:  $space-2 !important; }
-&b2 { bottom: $space-2 !important; }
-&l2 { left:   $space-2 !important; }
-
-&t3 { top:    $space-3 !important; }
-&r3 { right:  $space-3 !important; }
-&b3 { bottom: $space-3 !important; }
-&l3 { left:   $space-3 !important; }
-
-&t4 { top:    $space-4 !important; }
-&r4 { right:  $space-4 !important; }
-&b4 { bottom: $space-4 !important; }
-&l4 { left:   $space-4 !important; }
-
-&t5 { top:    $space-5 !important; }
-&r5 { right:  $space-5 !important; }
-&b5 { bottom: $space-5 !important; }
-&l5 { left:   $space-5 !important; }
-
-&t6 { top:    $space-6 !important; }
-&r6 { right:  $space-6 !important; }
-&b6 { bottom: $space-6 !important; }
-&l6 { left:   $space-6 !important; }
-
 }
 
-// Rounded Corners and Circles and Borders
-
-.rounded {        border-radius: 3px         !important; }
-.rounded-top {    border-radius: 3px 3px 0 0 !important; }
-.rounded-bottom { border-radius: 0 0 3px 3px !important; }
-.circle {         border-radius: 50%         !important; }
-
-// // Borders + Responsive Prefixes
+// Positioning
+// -------------------------
 
 @include generate-breakpoint-prefixes {
+  &relative { position: relative !important; }
+  &absolute { position: absolute !important; }
+  &fixed    { position: fixed    !important; }
+  &static   { position: static   !important; }
 
-  &border        { border: $border        !important; }
-  &border-top    { border-top: $border    !important; }
-  &border-right  { border-right: $border  !important; }
-  &border-bottom { border-bottom: $border !important; }
-  &border-left   { border-left: $border   !important; }
+  &z1 { z-index: 100 !important; }
+  &z2 { z-index: 200 !important; }
+  &z3 { z-index: 300 !important; }
+  &z4 { z-index: 400 !important; }
 
-  &border--lighter        { border: $border--lighter        !important; }
-  &border-top--lighter    { border-top: $border--lighter    !important; }
-  &border-right--lighter  { border-right: $border--lighter  !important; }
-  &border-bottom--lighter { border-bottom: $border--lighter !important; }
-  &border-left--lighter   { border-left: $border--lighter   !important; }
+  &t0 { top:    0 !important; }
+  &r0 { right:  0 !important; }
+  &b0 { bottom: 0 !important; }
+  &l0 { left:   0 !important; }
 
-  &border-none        { border: none; }
-  &border-top-none    { border-top: none; }
-  &border-right-none  { border-right: none; }
-  &border-bottom-none { border-bottom: none; }
-  &border-left-none   { border-left: none; }
+  &t1 { top:    $space-1 !important; }
+  &r1 { right:  $space-1 !important; }
+  &b1 { bottom: $space-1 !important; }
+  &l1 { left:   $space-1 !important; }
 
+  &t2 { top:    $space-2 !important; }
+  &r2 { right:  $space-2 !important; }
+  &b2 { bottom: $space-2 !important; }
+  &l2 { left:   $space-2 !important; }
+
+  &t3 { top:    $space-3 !important; }
+  &r3 { right:  $space-3 !important; }
+  &b3 { bottom: $space-3 !important; }
+  &l3 { left:   $space-3 !important; }
+
+  &t4 { top:    $space-4 !important; }
+  &r4 { right:  $space-4 !important; }
+  &b4 { bottom: $space-4 !important; }
+  &l4 { left:   $space-4 !important; }
+
+  &t5 { top:    $space-5 !important; }
+  &r5 { right:  $space-5 !important; }
+  &b5 { bottom: $space-5 !important; }
+  &l5 { left:   $space-5 !important; }
+
+  &t6 { top:    $space-6 !important; }
+  &r6 { right:  $space-6 !important; }
+  &b6 { bottom: $space-6 !important; }
+  &l6 { left:   $space-6 !important; }
 }
+
+// Helpers
+// -------------------------
+
+.clearfix:before,
+%clearfix:before,
+.clearfix:after,
+%clearfix:after {
+  content: " "   !important;
+  display: table !important;
+}
+
+.clearfix:after { clear: both !important; }

@@ -1,4 +1,12 @@
-//Generate Breakpoint Prefixes2
+//
+// Mixins
+// --------------------------------------------------
+
+// Generate Breakpoint Prefixes
+// -------------------------
+// this mixin adds breakpoint prefixes
+// from the list of breakpoints to the
+// beginning of a block of css selectors
 
 // all of the breakpoint names and values
 // we may use this a lot, keep them somwhere safe
@@ -55,11 +63,10 @@ $breakpoints: (
 
 
 // Prefix
-//
+// -------------------------
 // CSS vendor prefix mixin for desktops
 // e.g. p {@include prefix((transform: translate(-50%, -50%)), webkit ms);}
 // Credit: http://www.sitepoint.com/sass-mixins-kickstart-project/
-// -------------------------
 
 @mixin prefix($map, $vendors: webkit moz ms o) {
 
@@ -67,9 +74,7 @@ $breakpoints: (
     @if $vendors {
 
       @each $vendor in $vendors {
-// CSS vendor prefix mixin for desktops
         #{"-" + $vendor + "-" + $prop}: #{$value};
-// -------------------------
       }
 
     }

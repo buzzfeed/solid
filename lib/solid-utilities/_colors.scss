@@ -1,4 +1,9 @@
+//
+// Color Utility Classes
+// --------------------------------------------------
+
 // Color Fills
+// -------------------------
 
 .fill-red {               background-color: $fill-red             !important; }
 .fill-red--lighter {      background-color: $fill-red--lighter    !important; }
@@ -17,6 +22,7 @@
 
 
 // Social Fill Colors
+// -------------------------
 
 .fill-facebook {          background-color: $fill-facebook        !important; }
 .fill-twitter {           background-color: $fill-twitter         !important; }
@@ -30,6 +36,7 @@
 .fill-snapchat {          background-color: $fill-snapchat        !important; }
 
 // Text Colors
+// -------------------------
 
 .text-gray {              color: $text-gray           !important; }
 .text-white {             color: $text-white          !important; }

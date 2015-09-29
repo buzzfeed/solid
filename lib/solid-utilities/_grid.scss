@@ -1,19 +1,26 @@
+//
+// Grid Utility Classes
+// --------------------------------------------------
+
 // Variables
+// -------------------------
 
 $gutter: $space-1;
 
 
 // Base Column Float
+// -------------------------
+// must be applied to every column
 
 .col {
   float: left;
 }
 
-// Column and Offset Classes + Responsive Prefixes
+// Responsive Column and Offset Classes
+// -------------------------
 
 @include generate-breakpoint-prefixes {
 
-  // Columns
   &col-1  { width: percentage(1/12)  !important; }
   &col-2  { width: percentage(2/12)  !important; }
   &col-3  { width: percentage(3/12)  !important; }
@@ -26,8 +33,6 @@ $gutter: $space-1;
   &col-10 { width: percentage(10/12) !important; }
   &col-11 { width: percentage(11/12) !important; }
   &col-12 { width: percentage(12/12) !important; }
-
-  // Offsets
 
   &offset-1  { margin-left: percentage(1/12)  !important; }
   &offset-2  { margin-left: percentage(2/12)  !important; }
@@ -44,7 +49,6 @@ $gutter: $space-1;
 
 
 // Add gutters to the full grid
-
 .gutters {
   margin: 0 (-$gutter) !important;
 

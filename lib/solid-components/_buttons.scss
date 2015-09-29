@@ -1,5 +1,10 @@
-// Reset Button
 //
+// Button Classes
+// --------------------------------------------------
+
+
+// Reset Button
+// -------------------------
 // In an article on CSS-Tricks
 // (http://css-tricks.com/use-button-element/),
 // Chris Coyier explains that:
@@ -10,7 +15,7 @@
 // default styling, so we can use
 // <button>s where it makes without
 // worrying about the styling.
-// -------------------------
+
 @mixin button-reset {
   cursor: pointer;
   margin: 0;
@@ -203,8 +208,6 @@ $button-height-small: 2rem;
 
 // All social buttons have similar styles
 // use this to generate their style
-// -------------------------
-
 @mixin social-button($color) {
   background-color: $color;
   color: $text-white;

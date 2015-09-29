@@ -1,7 +1,10 @@
-// Normalize Resets and Rem values
+//
+// Base
+// --------------------------------------------------
 
 
 // Resets
+// -------------------------
 
 html, 
 body, 
@@ -92,6 +95,8 @@ video {
   vertical-align: baseline;
 }
 
+// Specific Overrides
+// -------------------------
 
 // Ensure we only define type using our default classes.
 
