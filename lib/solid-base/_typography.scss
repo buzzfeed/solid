@@ -43,7 +43,9 @@ h6 {
 }
 
 
-// Caponi should never be an h6 or .type-6, these classes disallow that from happening (type will default to Proxima)
+// Caponi should never be an h6 or .type-6, 
+// these classes disallow that from happening
+// (type will default to Proxima)
 
 // scss-lint:disable QualifyingElement
 .slab h6,
@@ -53,7 +55,10 @@ h6.slab {
   font-weight: $regular;
 }
 
-// This is getting the color from $text-blue instead of $link-blue because $link-blue does not exist as a variable. .link-blue using the $text-blue variable
+// This is getting the color from $text-blue 
+// instead of $link-blue because $link-blue 
+// does not exist as a variable. .link-blue
+// using the $text-blue variable
 a {
   text-decoration: none; 
   color: $text-blue;
@@ -75,8 +80,8 @@ i {
   font-style: italic;
 }
 
-// Ordered and unordered list, list items are block level
-
+// Ordered and unordered list,
+// list items are block level
 ol,
 ul {
   padding-left: $space-4 !important;

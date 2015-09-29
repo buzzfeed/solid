@@ -1,9 +1,13 @@
 // Styles only used by the Solid styleguide
 
 // Setup
+// -------------------------
+
 @import "solid-helpers";
 
 // Fonts
+// -------------------------
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/ProximaNova-Regular-webfont.woff2") format("woff2"), url("../fonts/ProximaNova-Regular-webfont.woff") format("woff");
@@ -29,6 +33,7 @@
 $js-highlight-magenta: #d14;
 
 // Solid Logo
+// -------------------------
 
 .solid-logo,
 .solid-logo--xs {
@@ -48,6 +53,8 @@ $js-highlight-magenta: #d14;
 }
 
 // Code Snipppet Syntax Highlighting https://highlightjs.org/
+// -------------------------
+
 code {
   font-family: Monaco, monospace;
   white-space: pre-wrap;
@@ -75,6 +82,7 @@ pre {
 }
 
 // Solid Nav
+// -------------------------
 
 .solid-header--desktop-logo,
 .solid-nav__items { display: none; }
@@ -122,7 +130,6 @@ pre {
 }
 
 // Remove spaces between example elements
-
 .font-size-0 {
   font-size: 0;
 
