@@ -10,5 +10,8 @@
   },
   "tables": {
     "title": "Tables"
+  },
+  "button-groups": {
+    "title": "Button Groups"
   }
 }
