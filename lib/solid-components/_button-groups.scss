@@ -1,0 +1,47 @@
+//
+// Button Groups
+// --------------------------------------------------
+
+.button-group,
+.button-group--small {
+  position: relative;
+  display: inline-block;
+  border: $border;
+  border-radius: 3px;
+  text-decoration: none;
+  color: $text-blue;
+
+  .button-group__radio {
+    @include visuallyhidden;
+  }
+}
+
+.button-group__item {
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+  padding: .625rem .875rem;
+  border-right: $border;
+  height: $button-height;
+
+  &:hover {
+    transition: background-color .3s ease 0s;
+    background-color: $fill-gray--lighter;
+  }
+
+  &:last-of-type {
+    border: 0;
+  }
+}
+
+.button-group .button-group__radio:checked + .button-group__item,
+.button-group--small .button-group__radio:checked + .button-group__item {
+  background-color: $fill-gray--lighter;
+  color: $text-gray;
+}
+
+.button-group--small .button-group__item {
+  padding: .375rem .625rem;
+  height: $button-height-small;
+  font-size: $text-5; 
+}
