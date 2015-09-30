@@ -1,3 +1,6 @@
+//
+// Button Groups
+// --------------------------------------------------
 
 .button-group,
 .button-group--small {
@@ -11,7 +14,6 @@
   .button-group__radio {
     @include visuallyhidden;
   }
-  
 }
 
 .button-group__item {
