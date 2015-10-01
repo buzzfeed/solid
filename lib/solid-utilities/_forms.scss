@@ -16,15 +16,15 @@ $input-height-small: 2rem;
 
 @mixin option-input-style {
   &:before {
-    content: "";
-    display: inline-block;
-    width: .75rem;
-    height: .75rem;
-    margin-right: .375rem;
-    position: relative;
-    bottom: -1px;
-    background-color: $fill-white;
-    border: $border;
+    content: ""                   !important;
+    display: inline-block         !important;
+    width: .75rem                 !important;
+    height: .75rem                !important;
+    margin-right: .375rem         !important;
+    position: relative            !important;
+    bottom: -1px                  !important;
+    background-color: $fill-white !important;
+    border: $border               !important;
   }
 }
 
@@ -32,43 +32,43 @@ $input-height-small: 2rem;
 .textarea,
 .select,
 .date-input {
-  font-family: inherit;
-  background: $fill-white;
-  font-size: $text-4;
-  height: $input-height;
-  padding: .625rem .75rem;
-  border: $border;
+  font-family: inherit    !important;
+  background: $fill-white !important;
+  font-size: $text-4      !important;
+  height: $input-height   !important;
+  padding: .625rem .75rem !important;
+  border: $border         !important;
 }
 
 .select {
-  background-image: svg-background($down-caret);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 1rem) center;
-  background-size: .6875rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0;
-  padding-right: 2.5rem;
-  height: $input-height;
+  background-image: svg-background($down-caret) !important;
+  background-repeat: no-repeat                  !important;
+  background-position: calc(100% - 1rem) center !important;
+  background-size: .6875rem                     !important;
+  -webkit-appearance: none                      !important;
+  -moz-appearance: none                         !important;
+  border-radius: 0                              !important;
+  padding-right: 2.5rem                         !important;
+  height: $input-height                         !important;
 }
 
 .select--small,
 .text-input--small,
 .date-input--small {
-  font-size: $text-5; 
-  height: $input-height-small;
-  padding: $space-1 .625rem;
+  font-size: $text-5          !important;
+  height: $input-height-small !important;
+  padding: $space-1 .625rem   !important;
 }
 
 
 .select--small {
-  padding: 0 $space-4 0 .625rem;
-  background-size: .5rem;
+  padding: 0 $space-4 0 .625rem !important;
+  background-size: .5rem        !important;
 }
 
 .textarea {
-  min-height: $input-height * 2;
-  padding: .75rem; 
+  min-height: $input-height * 2 !important;
+  padding: .75rem               !important;
 }
 
 // hide system radio button in order to use custom style
@@ -76,19 +76,17 @@ $input-height-small: 2rem;
   @include visuallyhidden;
 
   + label {
-    cursor: pointer; 
-    display: block;
+    cursor: pointer             !important;
+    display: block              !important;
     @include option-input-style;
 
-    &:before {   
-      border-radius: 50%;
-    }
+    &:before { border-radius: 50% !important; }
   }
 }
 
 .radio:checked + label:before {
-  background-color: $fill-white;
-  border: 4px solid $fill-blue;
+  background-color: $fill-white !important;
+  border: 4px solid $fill-blue  !important;
 }
 
 // hide system checkbox in order to use custom style
@@ -96,113 +94,111 @@ $input-height-small: 2rem;
   @include visuallyhidden;
 
   + label {
-    cursor: pointer; 
-    display: block;
+    cursor: pointer               !important;
+    display: block                !important;
     @include option-input-style;
 
-    &:before { 
-      border-radius: 30%;
-    }
+    &:before { border-radius: 30% !important; }
   }
   
 }
 
 .checkbox:checked + label:before {
-  background-image: svg-background($checkmark);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $fill-blue;
-  background-size: .5rem; 
-  border-style: none;
-}
+  background-image: svg-background($checkmark) !important;
+  background-repeat: no-repeat                 !important;
+  background-position: center                  !important;
+  background-color: $fill-blue                 !important;
+  background-size: .5rem                       !important;
+  border-style: none                           !important;
+ }
 
 // labels, etc
 // -------------------------
 
 .form-label {
-  display: block;
-  font-weight: $bold;
-  margin-bottom: $space-1;
+  display: block          !important;
+  font-weight: $bold      !important;
+  margin-bottom: $space-1 !important;
 }
 
 // form label small has less margin bottom than default size form labels 
 // in order for the entire unit to scale down proportionately 
 .form-label--small {
-  font-size: $text-5;
-  margin-bottom: .25rem;
+  font-size: $text-5    !important;
+  margin-bottom: .25rem !important;
 }
 
 .form-label--optional {
-  color: $text-gray--lightest;
-  font-weight: $regular;
+  color: $text-gray--lightest !important;
+  font-weight: $regular       !important;
 }
 
 .form-label--required {
-  color: $text-red;
-  font-weight: $regular;
+  color: $text-red      !important;
+  font-weight: $regular !important;
 }
 
 .form-helper {
-  color: $text-gray--lightest;
-  display: block;
-  margin-top: $space-1;
-  font-size: $text-5; 
+  color: $text-gray--lightest !important;
+  display: block              !important;
+  margin-top: $space-1        !important;
+  font-size: $text-5          !important; 
 }
 
 .form-feedback {
-  display: block;
-  margin-top: $space-1; 
-  font-size: $text-5; 
+  display: block       !important;
+  margin-top: $space-1 !important; 
+  font-size: $text-5   !important; 
 }
 
 .form-fieldset--warning {
   .form-feedback,
   .form-label {
-    color: $text-orange;  
+    color: $text-orange !important;  
   }
 
   .text-input,
   .select {
-    border-color: $fill-orange; 
+    border-color: $fill-orange !important; 
   }
 }
 
 .form-fieldset--success {
   .form-feedback,
   .form-label {
-    color: $text-green;  
+    color: $text-green !important;  
   }
 
   .form-feedback:before {
-    content: "";
-    height: .875rem;
-    width: .875rem;
-    display: inline-block;
-    background-image: svg-background($checkmark);
-    background-repeat: no-repeat;
-    background-size: .5rem;
-    background-color: $fill-green;
-    border-radius: 50%;
-    background-position: center;
-    margin-right: .375rem;
-    position: relative;
-    bottom: -2px;
+    content: ""                                  !important;
+    height: .875rem                              !important;
+    width: .875rem                               !important;
+    display: inline-block                        !important;
+    background-image: svg-background($checkmark) !important;
+    background-repeat: no-repeat                 !important;
+    background-size: .5rem                       !important;
+    background-color: $fill-green                !important;
+    border-radius: 50%                           !important;
+    background-position: center                  !important;
+    margin-right: .375rem                        !important;
+    position: relative                           !important;
+    bottom: -2px                                 !important;
   }
 
   .text-input,
   .select {
-    border-color: $fill-green; 
+    border-color: $fill-green !important; 
   }
 }
 
 .form-fieldset--error {
   .form-feedback,
   .form-label {
-    color: $text-red;  
+    color: $text-red !important;  
   }
 
   .text-input,
   .select {
-    border-color: $fill-red;
+    border-color: $fill-red !important;
   }
 }

@@ -13,7 +13,7 @@ $gutter: $space-1;
 // must be applied to every column
 
 .col {
-  float: left;
+  float: left !important;
 }
 
 // Responsive Column and Offset Classes
