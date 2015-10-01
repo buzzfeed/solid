@@ -31,10 +31,10 @@
   &border-bottom--lighter { border-bottom: $border--lighter !important; }
   &border-left--lighter   { border-left: $border--lighter   !important; }
 
-  &border-none        { border: none; }
-  &border-top-none    { border-top: none; }
-  &border-right-none  { border-right: none; }
-  &border-bottom-none { border-bottom: none; }
-  &border-left-none   { border-left: none; }
+  &border-none        { border: none        !important; }
+  &border-top-none    { border-top: none    !important; }
+  &border-right-none  { border-right: none  !important; }
+  &border-bottom-none { border-bottom: none !important; }
+  &border-left-none   { border-left: none   !important; }
 
 }
