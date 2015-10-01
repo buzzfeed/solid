@@ -40,6 +40,15 @@ Grunt-sass uses libsass to compile your sass. Use includePaths to make solid ava
 
 Then in your scss import file import solid with `@import "solid";`
 
+## Solid Structure
+Solid is broken up into four sections:
++ solid-helpers (variables and mixins used by all imports)
++ solid-base (normalize + base element styles)
++ solid-utilities (utility classes)
++ solid-components (utility classes that require specific HTML markup)
+
+You can get everything with `@import "solid";`. Individual sections can also be imported. For example if you want the utility classes just `@import "solid-utilities";`
+
 ## Building the Solid Styleguide
 The solid styleguide lets you view Solid along with all of its documentation.
 
