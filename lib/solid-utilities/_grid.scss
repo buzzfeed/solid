@@ -7,7 +7,6 @@
 
 $gutter: $space-1;
 
-
 // Base Column Float
 // -------------------------
 // must be applied to every column
@@ -34,15 +33,15 @@ $gutter: $space-1;
   &col-11 { width: percentage(11/12) !important; }
   &col-12 { width: percentage(12/12) !important; }
 
-  &offset-1  { margin-left: percentage(1/12)  !important; }
-  &offset-2  { margin-left: percentage(2/12)  !important; }
-  &offset-3  { margin-left: percentage(3/12)  !important; }
-  &offset-4  { margin-left: percentage(4/12)  !important; }
-  &offset-5  { margin-left: percentage(5/12)  !important; }
-  &offset-6  { margin-left: percentage(6/12)  !important; }
-  &offset-7  { margin-left: percentage(7/12)  !important; }
-  &offset-8  { margin-left: percentage(8/12)  !important; }
-  &offset-9  { margin-left: percentage(9/12)  !important; }
+  &offset-1  { margin-left: percentage(1/12)  !important; }
+  &offset-2  { margin-left: percentage(2/12)  !important; }
+  &offset-3  { margin-left: percentage(3/12)  !important; }
+  &offset-4  { margin-left: percentage(4/12)  !important; }
+  &offset-5  { margin-left: percentage(5/12)  !important; }
+  &offset-6  { margin-left: percentage(6/12)  !important; }
+  &offset-7  { margin-left: percentage(7/12)  !important; }
+  &offset-8  { margin-left: percentage(8/12)  !important; }
+  &offset-9  { margin-left: percentage(9/12)  !important; }
   &offset-10 { margin-left: percentage(10/12) !important; }
   &offset-11 { margin-left: percentage(11/12) !important; }
 }
