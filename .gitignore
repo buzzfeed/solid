@@ -5,7 +5,7 @@
 *.css.map
 *.css
 
-# ignore generated side
+# ignore generated site
 _site/
 
 # ignore weird image filesystem crap
