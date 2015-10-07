@@ -1,0 +1,10 @@
+# Site settings
+title: Solid
+email: sam.thurman@buzzfeed.com
+description: Solid is a base style library. It will be used as the core styling for Buzzfeed products.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://solid.buzzfeed.com" # the base hostname & protocol for your site
+port: 9000
+
+# Build settings
+markdown: kramdown

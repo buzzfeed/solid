@@ -1,3 +1,8 @@
+---
+layout: default
+title: messaging
+---
+
 <section class="xs-mb6">
   
   <a name="success-and-error-messages"></a>
@@ -17,16 +22,16 @@
     </div>
   </div>
 
-  <pre><code class="html"><%='<div class="page-message page-message--success">'%>
-  <%='<div class="page-message__text">Your settings have been saved.'%>
-    <%='<a class="page-message__action" href="">View your settings.</a>'%>
-  <%='</div>'%>
-<%='</div>'%>
+  {% highlight html %}<div class="page-message page-message--success">
+  <div class="page-message__text">Your settings have been saved.
+    <a class="page-message__action" href="">View your settings.</a>
+  </div>
+</div>
 
-<%='<div class="page-message page-message--error">'%>
-  <%='<div class="page-message__text">Oh no, something went wrong.'%>
-    <%='<a class="page-message__action" href="">Fix this error.</a>'%>
-  <%='</div>'%>
-<%='</div>'%></code></pre> 
+<div class="page-message page-message--error">
+  <div class="page-message__text">Oh no, something went wrong.
+    <a class="page-message__action" href="">Fix this error.</a>
+  </div>
+</div>{% endhighlight %} 
 
 </section>

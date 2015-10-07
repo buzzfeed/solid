@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %> – Solid</title>
+    <title>{% if page.title %} {{ page.title }}-{% endif %} Solid</title>
     <meta name="description" content="<%= description %>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/lib/solid.css">
-    <link rel="stylesheet" type="text/css" href="/lib/solid-specific.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
     <link rel="icon" type="image/png" href="/favicon.png">
   </head>
   <body class="fill-gray--lighter">
-    <%- partial("_nav") %>
+    {% include nav.html %}
     <div class="xs-col-12 sm-col-9 lg-col-10 sm-offset-3 lg-offset-2">
       <div class="xs-col-11 xs-py3 xs-px1 xs-mx-auto xs-my4 fill-white xs-border rounded">
-        <h1 class="xs-col-11 sm-col-10 xs-mx-auto xs-border-bottom xs-pb3 xs-mb4 sm-my4"><%= title %></h1>
+        <h1 class="xs-col-11 sm-col-10 xs-mx-auto xs-border-bottom xs-pb3 xs-mb4 sm-my4">{{ page.title | capitalize }}</h1>
         <div class="xs-col-11 sm-col-10 xs-mx-auto">
-          <%- yield %>
+          {{ content }}
         </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!--Code Highlighting-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <!--
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>    
     <script src="/javascript/codehighlight.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.initHighlightingOnLoad();</script>-->
+    <script src="/javascript/prism.js"></script>
 
     <!--Show/Hide Nav on Mobile and Flip Caret-->
     <script type="text/javascript">
