@@ -1,6 +1,6 @@
 #ignore all base files
 /*
-#except lib
-!lib
+#except _lib
+!_lib
 #don't include solid specific
 lib/solid-specific.scss

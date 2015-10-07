@@ -24,8 +24,8 @@ ruby_gems:
 
 # run the jekyll server
 run:
-	jekyll serve
+	bundle exec jekyll serve
 
 # build static site into _site
 build:
-	jekyll build
+	bundle exec jekyll build
