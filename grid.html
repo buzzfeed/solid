@@ -8,7 +8,7 @@ title: grid
   <a name="the-grid"></a>
   <h2 class="bold xs-mb2">The Grid</h2>
 
-  <p class="xs-mb4">To lay out pages, Solid provides a 12-column, fluid and responsive grid system. To start a new grid, create a div with a <span class="nowrap">.<code class="language-js">clearfix</code></span> class. Then, add columns using <span class="nowrap">.<code class="language-js">xs-col-n</code></span> (n = 1 through 12) and set them beside each other using a <span class="nowrap">.<code class="language-js">col</code></span> class to float each column individually:</p>
+  <p class="xs-mb4">To lay out pages, Solid provides a 12-column, fluid and responsive grid system. To start a new grid, create a div with a <span class="nowrap">.<code class="js-highlight">clearfix</code></span> class. Then, add columns using <span class="nowrap">.<code class="js-highlight">xs-col-n</code></span> (n = 1 through 12) and set them beside each other using a <span class="nowrap">.<code class="js-highlight">col</code></span> class to float each column individually:</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-3 xs-border">.col .xs-col-3</div>
@@ -30,7 +30,7 @@ title: grid
   <a name="columns-are-for-layout"></a>
   <h2 class="bold xs-mb2">Columns Are for Layout</h2>
 
-  <p class="xs-mb4">When using Solid, column classes should, generally, only be used on container elements in html (such as <code class="language-js">div</code> or <code class="language-js">section</code>. It's bad practice to apply fluid grid-based widths directly to elements such as form fields, headers and images. Similarly, avoid applying visual styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
+  <p class="xs-mb4">When using Solid, column classes should, generally, only be used on container elements in html (such as <code class="js-highlight">div</code> or <code class="js-highlight">section</code>. It's bad practice to apply fluid grid-based widths directly to elements such as form fields, headers and images. Similarly, avoid applying visual styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
 
 </section>
 
@@ -39,7 +39,7 @@ title: grid
   <a name="nesting-columns"></a>
   <h2 class="bold xs-mb2">Nesting Columns</h2>
 
-  <p class="xs-mb4">Solid's grid is relative to its parent, meaning each column can also hold another 12-column grid inside of it. Additionally, if the parent column is being floated, there is no need to add the <span class="nowrap">.<code class="language-js">clearfix</code></span> class to that column when nesting another grid inside of it:</p>
+  <p class="xs-mb4">Solid's grid is relative to its parent, meaning each column can also hold another 12-column grid inside of it. Additionally, if the parent column is being floated, there is no need to add the <span class="nowrap">.<code class="js-highlight">clearfix</code></span> class to that column when nesting another grid inside of it:</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-6 xs-border">
@@ -79,7 +79,7 @@ title: grid
   <a name="gutters-automatic"></a>
   <h2 class="bold xs-mb2">Gutters (automatic)</h2>
 
-  <p class="xs-mb4">To get consistent gutters between columns, add Solid's <span class="nowrap">.<code class="language-js">gutters</code></span> class to the parent container. Note that nested grids will not receive gutters unless the class is applied to their parent column.</p>
+  <p class="xs-mb4">To get consistent gutters between columns, add Solid's <span class="nowrap">.<code class="js-highlight">gutters</code></span> class to the parent container. Note that nested grids will not receive gutters unless the class is applied to their parent column.</p>
 
   <div class="clearfix gutters xs-mb4">
     <div class="col xs-col-4">
@@ -158,7 +158,7 @@ title: grid
   <h2 class="bold xs-mb2">Column Offsets</h2>
 
 
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="language-js">offset-n</code></span> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <span class="nowrap">.<code class="language-js">xs-offset-1</code></span> moves a column to the right by one column width, then <span class="nowrap">.<code class="language-js">xs-offset-2</code></span> moves it to the right by two column widths, and so on.</p>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">offset-n</code></span> class (from 1-11) to offset a column div. Each step is one column width. So, for example, <span class="nowrap">.<code class="js-highlight">xs-offset-1</code></span> moves a column to the right by one column width, then <span class="nowrap">.<code class="js-highlight">xs-offset-2</code></span> moves it to the right by two column widths, and so on.</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-8 xs-offset-2 xs-border">.xs-col-8 .xs-offset-2</div>
@@ -183,7 +183,7 @@ title: grid
   <a name="responsive-grid"></a>
   <h2 class="bold xs-mb2">Responsive Grid</h2>
 
-  <p class="xs-mb4">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes (for each breakpoint needing layout adjustment). For example, if a div should take up the full width at all breakpoints, use <span class="nowrap">.<code class="language-js">xs-col-12</code></span>. Then, if that same div needs to take up half the width at the medium breakpoint and 3 columns at the largest breakpoint, add <span class="nowrap">.<code class="language-js">md-col-6</code></span> and <span class="nowrap">.<code class="language-js">lg-col-3</code></span>. Resize your browser to see the full effect below:</p>
+  <p class="xs-mb4">The responsive grid is implemented by adding <a href="/layout/responsive">breakpoint prefixes</a> to the column classes (for each breakpoint needing layout adjustment). For example, if a div should take up the full width at all breakpoints, use <span class="nowrap">.<code class="js-highlight">xs-col-12</code></span>. Then, if that same div needs to take up half the width at the medium breakpoint and 3 columns at the largest breakpoint, add <span class="nowrap">.<code class="js-highlight">md-col-6</code></span> and <span class="nowrap">.<code class="js-highlight">lg-col-3</code></span>. Resize your browser to see the full effect below:</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-12 md-col-6 lg-col-3 xs-border">
