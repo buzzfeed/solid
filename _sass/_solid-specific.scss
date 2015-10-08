@@ -3,7 +3,7 @@
 // Setup
 // -------------------------
 
-@import "solid-helpers";
+@import "../_lib/solid-helpers";
 
 // Fonts
 // -------------------------
@@ -51,6 +51,63 @@ $js-highlight-magenta: #d14;
 .solid-logo--xs {
   width: 37px;
 }
+
+
+// Solid Nav
+// -------------------------
+
+.solid-header--desktop-logo,
+.solid-nav__items { display: none; }
+
+.solid-header,
+.solid-nav__header {
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
+}
+
+.solid-header__caret {
+  background-image: svg-background($down-caret);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: .6875rem;
+  height: .6875rem;
+  margin-top: -.5rem;
+  top: 50%;
+  transform: rotate(0deg);
+  transition: transform .3s ease-in-out;
+  right: 1.375rem;
+  width: .6875rem;
+}
+
+.solid-nav--show .solid-header__caret {
+  transform: rotate(180deg);
+  transition: transform .3s ease-in-out;
+}
+
+.solid-nav--show .solid-nav__items {
+  display: block;
+}
+
+.solid-nav__group,
+.solid-nav__subitem {
+  border-left: .375rem solid $fill-white;
+}
+
+.solid-nav__group.active {
+  border-left: .375rem solid $fill-blue;
+
+  .solid-nav__item {
+    color: $text-gray;    
+  }
+}
+
+// Remove spaces between example elements
+.font-size-0 {
+  font-size: 0;
+
+  > * { font-size: $base-font-size; }
+}
+
 
 // Code Snipppet Syntax Highlighting https://highlightjs.org/
 // -------------------------

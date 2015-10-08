@@ -1,3 +1,8 @@
+---
+layout: default
+title: utilities
+---
+
 <section class="xs-mb6">
 
   <a name="about-utility-classes"></a>
@@ -26,11 +31,11 @@
     <div class="xs-float-none">.xs-float-none</div>
   </div>
 
-  <pre><code class="html"><%= '<div class="clearfix">' %>
-  <%='<div class="xs-float-left">.xs-float-left</div>'%>
-  <%='<div class="xs-float-right">.xs-float-right</div>'%>
-<%='</div>'%>
-<%='<div class="xs-float-none">.xs-float-none</div>'%></code></pre>
+  {% highlight html %}<div class="clearfix">
+  <div class="xs-float-left">.xs-float-left</div>
+  <div class="xs-float-right">.xs-float-right</div>
+</div>
+<div class="xs-float-none">.xs-float-none</div>{% endhighlight %}
 
 </section>
 
@@ -49,12 +54,12 @@
     <a href="#" class="xs-block xs-border xs-mt1">.xs-block</a>
   </div>
 
-  <pre><code class="html"><%='<div>'%>
-  <%='<div class="xs-hide">.xs-hide</div>'%>
-  <%='<div class="xs-inline xs-border xs-mr1">.xs-inline</div>'%>
-  <%='<div class="xs-inline-block xs-border">.xs-inline-block</div>'%>
-  <%='<a href="#" class="xs-block xs-border xs-mt1">.xs-block</a>'%>
-<%='</div>'%></code></pre>
+  {% highlight html %}<div>
+  <div class="xs-hide">.xs-hide</div>
+  <div class="xs-inline xs-border xs-mr1">.xs-inline</div>
+  <div class="xs-inline-block xs-border">.xs-inline-block</div>
+  <a href="#" class="xs-block xs-border xs-mt1">.xs-block</a>
+</div>{% endhighlight %}
 
 </section>
 
@@ -68,33 +73,33 @@
 
   <div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">
     <p class="xs-mb1">.xs-overflow-hidden</p>
-    <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons!</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
   </div>
 
   <div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">
     <p class="xs-mb1">.xs-overflow-auto</p>
-    <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons!</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
   </div>
 
   <div class="xs-overflow-scroll xs-border xs-p2 xs-mb4" style="height:85px;">
     <p class="xs-mb1">.xs-overflow-scroll</p>
-    <p>When life gives you lemons, don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons, what the hell am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I’m the man who’s gonna burn your house down! With the lemons!</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">'%>
-  <%='<p class="xs-mb1">.xs-overflow-hidden</p>'%>
-  <%='<p>...</p>'%>
-<%='</div>'%>
+  {% highlight html %}<div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">
+  <p class="xs-mb1">.xs-overflow-hidden</p>
+  <p>...</p>
+</div>
 
-<%='<div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">'%>
-  <%='<p class="xs-mb1">.xs-overflow-auto</p>'%>
-  <%='<p>...</p>'%>
-<%='</div>'%>
+<div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">
+  <p class="xs-mb1">.xs-overflow-auto</p>
+  <p>...</p>
+</div>
 
-<%='<div class="xs-overflow-scroll xs-border xs-p2 xs-mb2" style="height:85px;">'%>
-  <%='<p class="xs-mb1">.xs-overflow-scroll</p>'%>
-  <%='<p>...</p>'%>
-<%='</div>'%></code></pre>
+<div class="xs-overflow-scroll xs-border xs-p2 xs-mb2" style="height:85px;">
+  <p class="xs-mb1">.xs-overflow-scroll</p>
+  <p>...</p>
+</div>{% endhighlight %}
 
 
 </section>
@@ -114,11 +119,11 @@
     </div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-fit xs-border xs-mb1">.xs-fit</div>'%>
+  {% highlight html %}<div class="xs-fit xs-border xs-mb1">.xs-fit</div>
 
-<%='<div style="height:85px;" class="xs-border xs-p1">'%>
-  <%='<div class="xs-full-height xs-border xs-col-4">.xs-full-height</div>'%>
-<%='</div>'%></code></pre>
+<div style="height:85px;" class="xs-border xs-p1">
+  <div class="xs-full-height xs-border xs-col-4">.xs-full-height</div>
+</div>{% endhighlight %}
 
 </section>
 
@@ -220,14 +225,14 @@
     <div class="xs-col-6 xs-border xs-p1 xs-mt2 xs-mx-auto">.xs-mx-auto</div>
   </div>
 
-    <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p1 xs-mr0">.xs-mr0</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr1">.xs-mr1</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr2">.xs-mr2</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr3">.xs-mr3</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr4">.xs-mr4</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr5">.xs-mr5</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1 xs-mr6">.xs-mr6</div>'%>
-<%='<div class="xs-col-6 xs-border xs-p1 xs-mt2 xs-mx-auto">.xs-mx-auto</div>'%></code></pre>
+    {% highlight html %}<div class="xs-inline-block xs-border xs-p1 xs-mr0">.xs-mr0</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr1">.xs-mr1</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr2">.xs-mr2</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr3">.xs-mr3</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr4">.xs-mr4</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr5">.xs-mr5</div>
+<div class="xs-inline-block xs-border xs-p1 xs-mr6">.xs-mr6</div>
+<div class="xs-col-6 xs-border xs-p1 xs-mt2 xs-mx-auto">.xs-mx-auto</div>{% endhighlight %}
 
 </section>
 
@@ -247,13 +252,13 @@
     <div class="xs-inline-block xs-border xs-p6">.xs-p6</div>
   </div>
 
-      <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p0">.xs-p0</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p1">.xs-p1</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p2">.xs-p2</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p3">.xs-p3</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p4">.xs-p4</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p5">.xs-p5</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p6">.xs-p6</div>'%></code></pre>
+      {% highlight html %}<div class="xs-inline-block xs-border xs-p0">.xs-p0</div>
+<div class="xs-inline-block xs-border xs-p1">.xs-p1</div>
+<div class="xs-inline-block xs-border xs-p2">.xs-p2</div>
+<div class="xs-inline-block xs-border xs-p3">.xs-p3</div>
+<div class="xs-inline-block xs-border xs-p4">.xs-p4</div>
+<div class="xs-inline-block xs-border xs-p5">.xs-p5</div>
+<div class="xs-inline-block xs-border xs-p6">.xs-p6</div>{% endhighlight %}
 
 </section>
 
@@ -285,19 +290,19 @@
     </div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-border xs-p2">'%>
-  <%='<div class="xs-relative xs-t2 xs-l2 xs-border">.xs-relative .xs-t2 .xs-l2</div>'%>
-<%='</div>'%>
+  {% highlight html %}<div class="xs-border xs-p2">
+  <div class="xs-relative xs-t2 xs-l2 xs-border">.xs-relative .xs-t2 .xs-l2</div>
+</div>
 
-<%='<div class="xs-relative xs-border xs-p2">'%>
-  <%='.xs-relative'%>
-  <%='<div class="xs-absolute xs-t0 xs-l6 xs-border">.xs-absolute .xs-t0 .xs-l6</div>'%>
-<%='</div>'%>
+<div class="xs-relative xs-border xs-p2">
+  .xs-relative
+  <div class="xs-absolute xs-t0 xs-l6 xs-border">.xs-absolute .xs-t0 .xs-l6</div>
+</div>
 
-<%='<div class="xs-relative xs-p4">'%>
-  <%='<div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 xs-z1</div>'%>
-  <%='<div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t2 .xs-l2 xs-z2</div>'%>
-<%='</div>'%></code></pre>
+<div class="xs-relative xs-p4">
+  <div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 xs-z1</div>
+  <div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t2 .xs-l2 xs-z2</div>
+</div>{% endhighlight %}
 
 </section>
 
@@ -318,9 +323,9 @@
     <div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>'%>
-<%='<div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>'%></code></pre>
+  {% highlight html %}<div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>
+<div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>
+<div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>{% endhighlight %}
 
 </section>
 
@@ -334,7 +339,7 @@
 
   <img src="/images/user.png" height="100" width="100" alt="user" class="circle xs-mb2" />
 
-  <pre><code class="html"><%= '<img src="/images/user.png" width="100" height="100" alt="user" class="circle" />' %></code></pre>
+  {% highlight html %}<img src="/images/user.png" width="100" height="100" alt="user" class="circle" />{% endhighlight %}
 
 </section>
 
@@ -355,11 +360,11 @@
     <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>'%></code></pre>
+  {% highlight html %}<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>{% endhighlight %}
 
 </section>
 
@@ -377,11 +382,11 @@
     <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>  
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-mb2 xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>'%>
-<%='<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>'%></code></pre>
+  {% highlight html %}<div class="xs-inline-block xs-mb2 xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
+<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
+<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
+<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
+<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>{% endhighlight %}
 
 </section>
 
@@ -399,10 +404,10 @@
     <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>
   </div>
 
-  <pre><code class="html"><%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>'%>
-<%='<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>'%></code></pre>
+  {% highlight html %}<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>
+<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>{% endhighlight %}
 
 </section>

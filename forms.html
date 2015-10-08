@@ -1,3 +1,8 @@
+---
+layout: default
+title: forms
+---
+
 <section class="xs-mb6">
 
   <a name="form-labels"></a>
@@ -11,11 +16,11 @@
     <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label">Add your website</label>'%>
-  <%='<label class="form-label">Add your website <span class="form-label--required">*</span></label>'%>
-  <%='<label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label">Add your website</label>
+  <label class="form-label">Add your website <span class="form-label--required">*</span></label>
+  <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
+</form>{% endhighlight %}
 
 </section>
 
@@ -31,10 +36,10 @@
     <input type="text" class="text-input" placeholder="www.example.com">
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label">Add your website</label>'%>
-  <%='<input type="text" class="text-input" placeholder="www.example.com">'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label">Add your website</label>
+  <input type="text" class="text-input" placeholder="www.example.com">
+</form>{% endhighlight %}
 
 </section>
 
@@ -51,11 +56,11 @@
     <label class="form-helper">You don't need to include http://</label>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label">Add your website</label>'%>
-  <%='<input type="text" class="text-input" placeholder="www.example.com">'%>
-  <%='<label class="form-helper">You don\'t need to include http://</label>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label">Add your website</label>
+  <input type="text" class="text-input" placeholder="www.example.com">
+  <label class="form-helper">You don't need to include http://</label>
+</form>{% endhighlight %}
 
 </section>
 
@@ -71,10 +76,10 @@
     <textarea class="textarea"></textarea>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label">Add a Comment</label>'%>
-  <%='<textarea class="textarea"></textarea>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label">Add a Comment</label>
+  <textarea class="textarea"></textarea>
+</form>{% endhighlight %}
 
 </section>
 
@@ -94,14 +99,14 @@
     </select>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<select class="select">'%>
-    <%='<option value="choose">Choose your personality</option>'%>
-    <%='<option value="amazing">Amazing</option>'%>
-    <%='<option value="boring">Boring</option>'%>
-    <%='<option value="fun">Fun</option>'%>
-  <%='</select>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <select class="select">
+    <option value="choose">Choose your personality</option>
+    <option value="amazing">Amazing</option>
+    <option value="boring">Boring</option>
+    <option value="fun">Fun</option>
+  </select>
+</form>{% endhighlight %}
 
 </section>
 
@@ -119,12 +124,12 @@
     <label for="option_2">Option 2</label>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">'%>
-  <%='<label for="option_1">Option 1</label>'%>
-  <%='<input type="radio" class="radio" id="option_2" value="option_2" name="options">'%>
-  <%='<label for="option_2">Option 2</label>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
+  <label for="option_1">Option 1</label>
+  <input type="radio" class="radio" id="option_2" value="option_2" name="options">
+  <label for="option_2">Option 2</label>
+</form>{% endhighlight %}
 
 </section>
 
@@ -142,12 +147,12 @@
     <label for="check_2">Option 2</label>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes" checked="checked">'%>
-  <%='<label for="check_1">Option 1</label>'%>
-  <%='<input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">'%>
-  <%='<label for="check_2">Option 2</label>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes" checked="checked">
+  <label for="check_1">Option 1</label>
+  <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">
+  <label for="check_2">Option 2</label>
+</form>{% endhighlight %}
 
 </section>
 
@@ -162,9 +167,9 @@
     <label class="form-label form-label--small">Add your website</label>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label form-label--small">Add your website</label>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label form-label--small">Add your website</label>
+</form>{% endhighlight %}
 
 </section>
 
@@ -180,10 +185,10 @@
     <input type="text" class="text-input text-input--small" placeholder="www.example.com">
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<label class="form-label form-label--smaller">Choose a username</label>'%>
-  <%='<input type="text" class="text-input text-input--smaller" placeholder="www.example.com">'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <label class="form-label form-label--smaller">Choose a username</label>
+  <input type="text" class="text-input text-input--smaller" placeholder="www.example.com">
+</form>{% endhighlight %}
 
 </section>
 
@@ -203,14 +208,14 @@
     </select>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<select class="select select--small">'%>
-    <%='<option value="choose">Choose your personality</option>'%>
-    <%='<option value="amazing">Amazing</option>'%>
-    <%='<option value="boring">Boring</option>'%>
-    <%='<option value="fun">Fun</option>'%>
-  <%='</select>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <select class="select select--small">
+    <option value="choose">Choose your personality</option>
+    <option value="amazing">Amazing</option>
+    <option value="boring">Boring</option>
+    <option value="fun">Fun</option>
+  </select>
+</form>{% endhighlight %}
 
 </section>
 
@@ -229,13 +234,13 @@
     </fieldset>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<fieldset class="fieldset form-fieldset--warning">'%>
-    <%='<label class="form-label">Your name</label>'%>
-    <%='<input type="text" class="text-input">'%>
-    <%='<span class="form-feedback">Caps lock is on!</span>'%>
-  <%='</fieldset>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <fieldset class="fieldset form-fieldset--warning">
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <span class="form-feedback">Caps lock is on!</span>
+  </fieldset>
+</form>{% endhighlight %}
 
 </section>
 
@@ -254,13 +259,13 @@
     </fieldset>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<fieldset class="fieldset form-fieldset--error">'%>
-    <%='<label class="form-label">Your name</label>'%>
-    <%='<input type="text" class="text-input">'%>
-    <%='<span class="form-feedback">Your name can\'t be Wolverine</span>'%>
-  <%='</fieldset>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <fieldset class="fieldset form-fieldset--error">
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <span class="form-feedback">Your name can't be Wolverine</span>
+  </fieldset>
+</form>{% endhighlight %}
 
 </section>
 
@@ -279,12 +284,12 @@
     </fieldset>
   </form>
 
-  <pre><code class="html"><%='<form>'%>
-  <%='<fieldset class="fieldset form-fieldset--success">'%>
-    <%='<label class="form-label">Your name</label>'%>
-    <%='<input type="text" class="text-input">'%>
-    <%='<span class="form-feedback">Boom. Looks good!</span>'%>
-  <%='</fieldset>'%>
-<%='</form>'%></code></pre>
+  {% highlight html %}<form>
+  <fieldset class="fieldset form-fieldset--success">
+    <label class="form-label">Your name</label>
+    <input type="text" class="text-input">
+    <span class="form-feedback">Boom. Looks good!</span>
+  </fieldset>
+</form>{% endhighlight %}
 
 </section>

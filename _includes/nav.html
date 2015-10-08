@@ -16,7 +16,7 @@
 
     <ol class="list-unstyled sm-hide">
 
-      <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'typography' %}active{% endif %}">
 
         <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/">About Solid</a>
 
@@ -27,11 +27,11 @@
 
     <ol class="list-unstyled xs-mb4">
 
-      <li class="solid-nav__group <%- current.source == 'typography' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'typography' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/base/typography">Typography</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="typography.html">Typography</a>
 
-        <% if (current.source == 'typography') { %>
+        {% if page.title == 'typography' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#headers" class="xs-block xs-px3 solid-nav__subitem">Headers and Sizes</a></li>
             <li class="xs-py1"><a href="#slab" class="xs-block xs-px3 solid-nav__subitem">Slab Headers</a></li>
@@ -40,30 +40,30 @@
             <li class="xs-py1"><a href="#alignment" class="xs-block xs-px3 solid-nav__subitem">Alignment</a></li>
             <li class="xs-py1"><a href="#lists" class="xs-block xs-px3 solid-nav__subitem">Lists</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
       
-      <li class="solid-nav__group <%- current.source == 'colors' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'colors' %}active{% endif %}" >
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/base/colors">Colors</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/colors.html">Colors</a>
 
-        <% if (current.source == 'colors') { %>
+        {% if page.title == 'colors' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#fill-colors" class="xs-block xs-px3 solid-nav__subitem">Fill Colors</a></li>
             <li class="xs-py1"><a href="#social-fill-colors" class="xs-block xs-px3 solid-nav__subitem">Social Fill Colors</a></li>
             <li class="xs-py1"><a href="#text-colors" class="xs-block xs-px3 solid-nav__subitem">Text Colors</a></li>
             <li class='xs-py1'><a href="#link-colors" class="xs-block xs-px3 solid-nav__subitem">Link Colors</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'buttons' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'buttons' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/buttons">Buttons</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="buttons.html">Buttons</a>
 
-        <% if (current.source == 'buttons') { %>
+        {% if page.title == 'buttons' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#primary-buttons" class="xs-block xs-px3 solid-nav__subitem">Primary Buttons</a></li>
             <li class="xs-py1"><a href="#secondary-buttons" class="xs-block xs-px3 solid-nav__subitem">Secondary Buttons</a></li>
@@ -75,15 +75,15 @@
             <li class='xs-py1'><a href="#small-button-icon" class="xs-block xs-px3 solid-nav__subitem">Small Button with Icon</a></li>
             <li class='xs-py1'><a href="#small-social-buttons" class="xs-block xs-px3 solid-nav__subitem">Small Social Buttons</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'forms' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'forms' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/forms">Forms</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="forms.html">Forms</a>
 
-        <% if (current.source == 'forms') { %>
+        {% if page.title == 'forms' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#form-labels" class="xs-block xs-px3 solid-nav__subitem">Form Labels</a></li>
             <li class="xs-py1"><a href="#text-inputs" class="xs-block xs-px3 solid-nav__subitem">Text Inputs</a></li>
@@ -99,29 +99,29 @@
             <li class='xs-py1'><a href="#form-errors" class="xs-block xs-px3 solid-nav__subitem">Form Errors</a></li>
             <li class='xs-py1'><a href="#form-success" class="xs-block xs-px3 solid-nav__subitem">Form Success</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'tables' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'tables' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/tables">Tables</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="tables.html">Tables</a>
 
-        <% if (current.source == 'tables') { %>
+        {% if page.title == 'tables' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#default-table" class="xs-block xs-px3 solid-nav__subitem">Default Table</a></li>
             <li class="xs-py1"><a href="#bordered-table" class="xs-block xs-px3 solid-nav__subitem">Bordered Table</a></li>
             <li class="xs-py1"><a href="#faux-table-layout" class="xs-block xs-px3 solid-nav__subitem">Faux Table Layout</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'grid' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'grid' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/grid">Grid</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="grid.html">Grid</a>
 
-        <% if (current.source == 'grid') { %>
+        {% if page.title == 'grid' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#the-grid" class="xs-block xs-px3 solid-nav__subitem">The Grid</a></li>
             <li class="xs-py1"><a href="#columns-are-for-layout" class="xs-block xs-px3 solid-nav__subitem">Columns Are for Layout</a></li>
@@ -131,48 +131,48 @@
             <li class="xs-py1"><a href="#column-offsets" class="xs-block xs-px3 solid-nav__subitem">Columns Offsets</a></li>
             <li class="xs-py1"><a href="#responsive-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Grid</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'block-grid' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'block grid' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/block-grid">Block Grid</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="block-grid.html">Block Grid</a>
 
-        <% if (current.source == 'block-grid') { %>
+        {% if page.title == 'block-grid' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#basic-block-grid" class="xs-block xs-px3 solid-nav__subitem">Basic Block Grid</a></li>
             <li class="xs-py1"><a href="#responsive-block-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Block Grid</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'responsive' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'responsive' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/responsive">Responsive</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="responsive.html">Responsive</a>
 
-        <% if (current.source == 'responsive') { %>
+        {% if page.title == 'responsive' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#responsive-prefixes" class="xs-block xs-px3 solid-nav__subitem">Responsive Prefixes</a></li>
             <li class="xs-py1"><a href="#how-it-works" class="xs-block xs-px3 solid-nav__subitem">How It Works</a></li>
             <li class="xs-py1"><a href="#what-has-a-responsive-prefix" class="xs-block xs-px3 solid-nav__subitem">What Has a Responsive Prefix</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'utilities' ? 'active' : '' %>">
+      <li class="solid-nav__group {% if page.title == 'utilities' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/layout/utilities">Utility Classes</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="utilities.html">Utility Classes</a>
 
-        <% if (current.source == 'utilities') { %>
+        {% if page.title == 'utilities' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#about-utility-classes" class="xs-block xs-px3 solid-nav__subitem">About Utility Classes</a></li>
             <li class="xs-py1"><a href="#layout-utilities" class="xs-block xs-px3 solid-nav__subitem">Layout Utilities</a></li>
             <li class="xs-py1"><a href="#style-utilities" class="xs-block xs-px3 solid-nav__subitem">Style Utilities</a></li>
           </ul>
-        <% } %>
+        {% endif %}
 
       </li>
     </ol>
@@ -181,12 +181,12 @@
 
     <ol class="list-unstyled xs-pb3 sm-pb0">
 
-      <li class="solid-nav__group <%- current.source == 'messaging' ? 'active' : '' %>">
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/messaging">Messaging</a>
+      <li class="solid-nav__group {% if page.title == 'messaging' %}active{% endif %}">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="messaging.html">Messaging</a>
       </li>
 
-      <li class="solid-nav__group <%- current.source == 'button-groups' ? 'active' : '' %>">
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/interface/button-groups">Button Groups</a>
+      <li class="solid-nav__group {% if page.title == 'button groups' %}active{% endif %}">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="button-groups.html">Button Groups</a>
       </li>
 
     </ol>

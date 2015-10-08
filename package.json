@@ -77,8 +77,5 @@
       "deletions": "na",
       "hireable": false
     }
-  ],
-  "devDependencies": {
-    "harp": "^0.15.2"
-  }
+  ]
 }

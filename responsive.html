@@ -1,3 +1,8 @@
+---
+layout: default
+title: responsive
+---
+
 <section class="xs-mb6">
   
   <a name="responsive-prefixes"></a>
@@ -34,32 +39,34 @@
     </div>
   </div>
 
-  <pre><code class="html"><%= '<div class="clearfix">' %>
-  <%= '<div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">' %>
-    <%= '<p class="xs-block sm-hide">.xs-col-12</p>' %>
-    <%= '<p class="xs-hide sm-block md-hide">.sm-col-6</p>' %>
-    <%= '<p class="xs-hide md-block lg-hide">.md-col-4</p>' %>
-    <%= '<p class="xs-hide lg-block">.lg-col-3</p>' %>
-  <%= '</div>' %>
-  <%= '<div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">' %>
-    <%= '<p class="xs-block sm-hide">.xs-col-12</p>' %>
-    <%= '<p class="xs-hide sm-block md-hide">.sm-col-6</p>' %>
-    <%= '<p class="xs-hide md-block lg-hide">.md-col-4</p>' %>
-    <%= '<p class="xs-hide lg-block">.lg-col-3</p>' %>
-  <%= '</div>' %>
-  <%= '<div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">' %>
-    <%= '<p class="xs-block sm-hide">.xs-col-12</p>' %>
-    <%= '<p class="xs-hide sm-block md-hide">.sm-col-6</p>' %>
-    <%= '<p class="xs-hide md-block lg-hide">.md-col-4</p>' %>
-    <%= '<p class="xs-hide lg-block">.lg-col-3</p>' %>
-  <%= '</div>' %>
-  <%= '<div class="col xs-col-12 sm-col-6 md-col-12 lg-col-3 xs-border">' %>
-    <%= '<p class="xs-block sm-hide">.xs-col-12</p>' %>
-    <%= '<p class="xs-hide sm-block md-hide">.sm-col-6</p>' %>
-    <%= '<p class="xs-hide md-block lg-hide">.md-col-12</p>' %>
-    <%= '<p class="xs-hide lg-block">.lg-col-3</p>' %>
-  <%= '</div>' %>
-<%= '</div>' %></code></pre>
+  {% highlight html %}
+  <div class="clearfix">
+  <div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">
+    <p class="xs-block sm-hide">.xs-col-12</p>
+    <p class="xs-hide sm-block md-hide">.sm-col-6</p>
+    <p class="xs-hide md-block lg-hide">.md-col-4</p>
+    <p class="xs-hide lg-block">.lg-col-3</p>
+  </div>
+  <div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">
+    <p class="xs-block sm-hide">.xs-col-12</p>
+    <p class="xs-hide sm-block md-hide">.sm-col-6</p>
+    <p class="xs-hide md-block lg-hide">.md-col-4</p>
+    <p class="xs-hide lg-block">.lg-col-3</p>
+  </div>
+  <div class="col xs-col-12 sm-col-6 md-col-4 lg-col-3 xs-border">
+    <p class="xs-block sm-hide">.xs-col-12</p>
+    <p class="xs-hide sm-block md-hide">.sm-col-6</p>
+    <p class="xs-hide md-block lg-hide">.md-col-4</p>
+    <p class="xs-hide lg-block">.lg-col-3</p>
+  </div>
+  <div class="col xs-col-12 sm-col-6 md-col-12 lg-col-3 xs-border">
+    <p class="xs-block sm-hide">.xs-col-12</p>
+    <p class="xs-hide sm-block md-hide">.sm-col-6</p>
+    <p class="xs-hide md-block lg-hide">.md-col-12</p>
+    <p class="xs-hide lg-block">.lg-col-3</p>
+  </div>
+</div>
+{% endhighlight %}
 
 </section>
 

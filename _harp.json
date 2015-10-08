@@ -1,6 +1,0 @@
-{
-  "globals": {
-    "title": "Welcome!",
-    "description": "Solid is BuzzFeed's CSS and component library. Influenced by frameworks like Basscss, Solid uses atomic CSS classes to both rapidly prototype and develop features, providing consistent styling options, but also the flexibility to create new layout and designs without the need to write more CSS."
-  }
-}
