@@ -192,3 +192,8 @@ pre {
 
   > * { font-size: $base-font-size; }
 }
+
+body, html {
+  width: 100%;
+  min-width: 100%;
+}
