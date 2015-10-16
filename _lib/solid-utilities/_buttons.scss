@@ -85,11 +85,11 @@ $button-height-small: 2rem;
 
 .button--negative {
   background-color: $fill-red !important;
-  color: $text-white          !important; 
+  color: $text-white          !important;
 
   &:not(.button--disabled):hover {
-    color: $text-white !important; 
-    background-color: darken($fill-red, 20%) !important; 
+    color: $text-white !important;
+    background-color: darken($fill-red, 20%) !important;
   }
 
   &.button--disabled:hover        { color: $text-white                       !important; }
@@ -123,7 +123,7 @@ $button-height-small: 2rem;
   }
 }
 
-.button--small.button--icon { 
+.button--small.button--icon {
   >svg {
     width: .875rem         !important;
     height: .875rem        !important;
@@ -132,7 +132,7 @@ $button-height-small: 2rem;
   }
 }
 
-.button--secondary.button--icon { 
+.button--secondary.button--icon {
   >svg        { fill: $fill-blue  !important; }
   &:hover svg { fill: $fill-white !important; }
 }
@@ -152,7 +152,7 @@ $button-height-small: 2rem;
     color: $text-white !important;
   }
 
-  &:not(.button--disabled):active {    
+  &:not(.button--disabled):active {
     background-color: darken($color, 35%) !important;
   }
 }
@@ -165,3 +165,5 @@ $button-height-small: 2rem;
 .button--tumblr    { @include social-button($fill-tumblr); }
 .button--youtube   { @include social-button($fill-youtube); }
 .button--instagram { @include social-button($fill-instagram); }
+.button--whatsapp  { @include social-button($fill-whatsapp); }
+.button--email     { @include social-button($fill-email); }
