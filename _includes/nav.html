@@ -162,11 +162,30 @@
 
       </li>
 
-      <li class="solid-nav__group {% if page.title == 'utilities' %}active{% endif %}">
+      <li class="solid-nav__group {% if page.title == 'layout' %}active{% endif %}">
 
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="utilities.html">Utility Classes</a>
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="layout.html">Layout</a>
 
-        {% if page.title == 'utilities' %}
+        {% if page.title == 'layout' %}
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#about-layout-classes" class="xs-block xs-px3 solid-nav__subitem">About Layout Classes</a></li>
+            <li class="xs-py1"><a href="#floats" class="xs-block xs-px3 solid-nav__subitem">Floats</a></li>
+            <li class="xs-py1"><a href="#display" class="xs-block xs-px3 solid-nav__subitem">Display</a></li>
+            <li class="xs-py1"><a href="#overflow" class="xs-block xs-px3 solid-nav__subitem">Overflow</a></li>
+            <li class="xs-py1"><a href="#width-and-height" class="xs-block xs-px3 solid-nav__subitem">Width and Height</a></li>
+            <li class="xs-py1"><a href="#spacing-prefixes" class="xs-block xs-px3 solid-nav__subitem">Spacing Prefixes</a></li>
+            <li class="xs-py1"><a href="#margin" class="xs-block xs-px3 solid-nav__subitem">Margin</a></li>
+            <li class="xs-py1"><a href="#padding" class="xs-block xs-px3 solid-nav__subitem">Padding</a></li>
+            <li class="xs-py1"><a href="#positioning" class="xs-block xs-px3 solid-nav__subitem">Positioning</a></li>
+          </ul>
+        {% endif %}
+
+      </li>
+      <li class="solid-nav__group {% if page.title == 'borders' %}active{% endif %}">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="borders.html">Borders</a>
+
+        {% if page.title == 'borders' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#about-utility-classes" class="xs-block xs-px3 solid-nav__subitem">About Utility Classes</a></li>
             <li class="xs-py1"><a href="#layout-utilities" class="xs-block xs-px3 solid-nav__subitem">Layout Utilities</a></li>
