@@ -1,25 +1,14 @@
 ---
 layout: default
-title: utilities
+title: layout
 ---
 
-<section class="xs-mb6">
-
-  <a name="about-utility-classes"></a>
-  <h2 class="xs-mb2 bold">About Utility Classes</h2>
-
-  <p class="xs-mb2">One of the most powerful parts of Solid, utility classes allow for rapid front-end development and page styling without writing much CSS. They also provide sensible defaults for things like spacing units and border radii. Like the rest of Solid, these classes are considered immutable and should never be directly overridden.</p>
-
-  <p>Additionally, most of the following utility classes take advantage of Solid's <a href="/layout/responsive/">responsive prefixes</a>. To declare a single value for all breakpoints, Solid requires the use of its <code class="js-highlight">xs-</code> prefix.</p>
-
-</section>
-
-<a name="layout-utilities"></a>
-<h2 class="xs-mb4 xs-pb3 xs-border-bottom bold">Layout Utilities</h2>
+<!--Floats-->
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Float</h3>
+  <a name="floats"></a>
+  <h2 class="xs-mb2 bold">Floats</h2>
 
   <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-float-left</code></span>, <span class="nowrap">.<code class="js-highlight">xs-float-right</code></span> and <span class="nowrap">.<code class="js-highlight">xs-float-none</code></span> to float elements.
 
@@ -39,11 +28,12 @@ title: utilities
 
 </section>
 
-<!--Inline/xs-block-->
+<!--Display Types-->
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Display Types</h3>
+  <a name="display"></a>
+  <h2 class="xs-mb2 bold">Display</h2>
 
   <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-hide</code></span>, <span class="nowrap">.<code class="js-highlight">xs-inline</code></span>, <span class="nowrap">.<code class="js-highlight">xs-inline-block</code></span> and <span class="nowrap">.<code class="js-highlight">xs-block</code></span> to change an element's display.
 
@@ -67,7 +57,8 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Overflow</h3>
+  <a name="overflow"></a>
+  <h2 class="xs-mb2 bold">Overflow</h2>
 
   <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-overflow-hidden</code></span>, <span class="nowrap">.<code class="js-highlight">xs-overflow-auto</code></span>, <span class="nowrap">.<code class="js-highlight">xs-overflow-scroll</code></span> and <span class="nowrap">.<code class="js-highlight">xs-overflow-visible</code></span> to change an element's overflow behavior.
 
@@ -108,9 +99,10 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Width and Height</h3>
+  <a name="width-and-height"></a>
+  <h2 class="xs-mb2 bold">Width and Height</h2>
 
-  <p class="xs-mb4">Most widths are achieved using Solid's <a href="/layout/grid/">grid classes</a>. However, Solid also provides an <span class="nowrap">.<code class="js-highlight">xs-fit</code></span> class for setting an element's max-width to 100%, as well as <span class="nowrap">.<code class="js-highlight">xs-full-height</code></span> to set an element's height to 100%.</p>
+  <p class="xs-mb4">Most widths are achieved using Solid's <a href="grid.html">grid classes</a>. However, Solid also provides an <span class="nowrap">.<code class="js-highlight">xs-fit</code></span> class for setting an element's max-width to 100%, as well as <span class="nowrap">.<code class="js-highlight">xs-full-height</code></span> to set an element's height to 100%.</p>
 
   <div class="xs-mb4">
     <div class="xs-fit xs-border xs-mb1">.xs-fit</div>
@@ -131,7 +123,8 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Spacing</h3>
+  <a name="spacing-prefixes"></a>
+  <h2 class="xs-mb2 bold">Spacing Prefixes</h2>
 
   <p class="xs-mb4">This shorthand prefix and spacing unit system can be combined to set an element's margin, padding and position.</p>
 
@@ -210,7 +203,8 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Margin</h3>
+  <a name="margin"></a>
+  <h2 class="xs-mb2 bold">Margin</h2>
 
   <p class="xs-mb4">Margin can be set from 0-6 spacing units on any side or axis, as well as set to <span class="nowrap">.<code class="js-highlight">xs-mx-auto</code></span> for horizontal centering. In the example below, <span class="nowrap">.<code class="js-highlight">xs-mr0</code></span> through <span class="nowrap">.<code class="js-highlight">xs-mr6</code></span> are used to set margin-right of each element to the various spacing values.</p>
 
@@ -238,7 +232,8 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Padding</h3>
+  <a name="padding"></a>
+  <h2 class="xs-mb2 bold">Padding</h2>
 
   <p class="xs-mb4">Padding can be set from 0-6 spacing units on any side or axis, in the example below, <span class="nowrap">.<code class="js-highlight">xs-p0</code></span> through <span class="nowrap">.<code class="js-highlight">xs-p6</code></span> are used to set each element's padding to the various spacing values.</p>
 
@@ -266,7 +261,8 @@ title: utilities
 
 <section class="xs-mb6">
 
-  <h3 class="xs-mb2 bold">Positioning</h3>
+  <a name="positioning"></a>
+  <h2 class="xs-mb2 bold">Positioning</h2>
 
   <p class="xs-mb4">Solid includes classes for setting an element's position and hierarchy. For positioning, an element can be set to <span class="nowrap">.<code class="js-highlight">xs-relative</code></span>, <span class="nowrap">.<code class="js-highlight">xs-absolute</code></span>, <span class="nowrap">.<code class="js-highlight">xs-fixed</code></span> or <span class="nowrap">.<code class="js-highlight">xs-static</code></span>. Setting z-index and top, right, bottom, left positioning can be done by using the shorthand from the previous table.</p>
 
@@ -303,111 +299,5 @@ title: utilities
   <div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 xs-z1</div>
   <div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t2 .xs-l2 xs-z2</div>
 </div>{% endhighlight %}
-
-</section>
-
-<a name="style-utilities"></a>
-<h2 class="xs-mb4 xs-pb3 xs-border-bottom bold">Style Utilities</h2>
-
-<!--Rounded Corners-->
-
-<section class="xs-mb6">
-
-  <h3 class="xs-mb2 bold">Rounded Corners</h3>
-
-  <p class="xs-mb4">Round off corners using <span class="nowrap">.<code class="js-highlight">rounded</code></span>, <span class="nowrap">.<code class="js-highlight">rounded-top</code></span> and <span class="nowrap">.<code class="js-highlight">rounded-bottom</code></span>.</p>
-
-  <div class="xs-mb4">
-    <div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>
-    <div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>
-    <div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>
-  </div>
-
-  {% highlight html %}<div class="xs-inline-block xs-border xs-p2 rounded">.rounded</div>
-<div class="xs-inline-block xs-border xs-p2 rounded-top">.rounded-top</div>
-<div class="xs-inline-block xs-border xs-p2 rounded-bottom">.rounded-bottom</div>{% endhighlight %}
-
-</section>
-
-<!--Circles-->
-
-<section class="xs-mb6">
-
-  <h3 class="xs-mb2 bold">Circles</h3>
-
-  <p class="xs-mb4">Create a circle out of an element with the same width and height using the <span class="nowrap">.<code class="js-highlight">circle</code></span> class.</p>
-
-  <img src="/images/user.png" height="100" width="100" alt="user" class="circle xs-mb2" />
-
-  {% highlight html %}<img src="/images/user.png" width="100" height="100" alt="user" class="circle" />{% endhighlight %}
-
-</section>
-
-
-<!--Borders-->
-
-<section class="xs-mb6">
-
-  <h3 class="xs-mb2 bold">Borders</h3>
-
-  <p class="xs-mb4">Borders in Solid are semi-transparent so they work with nearly any fill they're applied on top of. Use <span class="nowrap">.<code class="js-highlight">xs-border</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-top</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-right</code></span>, <span class="nowrap">.<code class="js-highlight">xs-border-bottom</code></span> and <span class="nowrap">.<code class="js-highlight">xs-border-left</code></span> to adjust outlines on elements.</p>
-
-  <div class="xs-mb4">
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>
-  </div>
-
-  {% highlight html %}<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border">.xs-border</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top">.xs-border-top</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right">.xs-border-right</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom">.xs-border-bottom</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left">.xs-border-left</div>{% endhighlight %}
-
-</section>
-
-<section class="xs-mb6">
-
-  <h3 class="xs-mb2 bold">Lighter Borders</h3>
-
-  <p class="xs-mb4">Adding <code class="js-highlight">--lighter</code> to the border classes above results in a slightly more transparent border.</p>
-
-  <div class="xs-mb4">
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>  
-  </div>
-
-  {% highlight html %}<div class="xs-inline-block xs-mb2 xs-mr2 xs-p1 xs-border--lighter">.xs-border--lighter</div>
-<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-top--lighter">.xs-border-top--lighter</div>
-<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-right--lighter">.xs-border-right--lighter</div>
-<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-bottom--lighter">.xs-border-bottom--lighter</div>
-<div class="xs-inline-block xs-mr xs-mb22 xs-p1 xs-border-left--lighter">.xs-border-left--lighter</div>{% endhighlight %}
-
-</section>
-
-<section class="xs-mb6">
-
-  <h3 class="xs-mb2 bold">Removing Borders</h3>
-
-  <p class="xs-mb4">When a border needs to be removed (at a breakpoint, for instance), use <span class="nowrap">.<code class="js-highlight">xs-border-none</code></span> classes.</p>
-
-  <div class="xs-mb4">
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>
-    <div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>
-  </div>
-
-  {% highlight html %}<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-none">.xs-border-none</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-top-none">.xs-border-top-none</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-right-none">.xs-border-right-none</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-bottom-none">.xs-border-bottom-none</div>
-<div class="xs-inline-block xs-mr2 xs-mb2 xs-p1 xs-border xs-border-left-none">.xs-border-left-none</div>{% endhighlight %}
 
 </section>

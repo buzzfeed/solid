@@ -117,6 +117,55 @@
 
       </li>
 
+      <li class="solid-nav__group {% if page.title == 'responsive' %}active{% endif %}">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="responsive.html">Responsive</a>
+
+        {% if page.title == 'responsive' %}
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#responsive-prefixes" class="xs-block xs-px3 solid-nav__subitem">Responsive Prefixes</a></li>
+            <li class="xs-py1"><a href="#how-it-works" class="xs-block xs-px3 solid-nav__subitem">How It Works</a></li>
+            <li class="xs-py1"><a href="#what-has-a-responsive-prefix" class="xs-block xs-px3 solid-nav__subitem">What Has a Responsive Prefix</a></li>
+          </ul>
+        {% endif %}
+
+      </li>
+
+      <li class="solid-nav__group {% if page.title == 'layout' %}active{% endif %}">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="layout.html">Layout</a>
+
+        {% if page.title == 'layout' %}
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#floats" class="xs-block xs-px3 solid-nav__subitem">Floats</a></li>
+            <li class="xs-py1"><a href="#display" class="xs-block xs-px3 solid-nav__subitem">Display</a></li>
+            <li class="xs-py1"><a href="#overflow" class="xs-block xs-px3 solid-nav__subitem">Overflow</a></li>
+            <li class="xs-py1"><a href="#width-and-height" class="xs-block xs-px3 solid-nav__subitem">Width and Height</a></li>
+            <li class="xs-py1"><a href="#spacing-prefixes" class="xs-block xs-px3 solid-nav__subitem">Spacing Prefixes</a></li>
+            <li class="xs-py1"><a href="#margin" class="xs-block xs-px3 solid-nav__subitem">Margin</a></li>
+            <li class="xs-py1"><a href="#padding" class="xs-block xs-px3 solid-nav__subitem">Padding</a></li>
+            <li class="xs-py1"><a href="#positioning" class="xs-block xs-px3 solid-nav__subitem">Positioning</a></li>
+          </ul>
+        {% endif %}
+
+      </li>
+
+      <li class="solid-nav__group {% if page.title == 'borders' %}active{% endif %}">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="borders.html">Borders</a>
+
+        {% if page.title == 'borders' %}
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#borders" class="xs-block xs-px3 solid-nav__subitem">Borders</a></li>
+            <li class="xs-py1"><a href="#lighter-borders" class="xs-block xs-px3 solid-nav__subitem">Lighter Borders</a></li>
+            <li class="xs-py1"><a href="#removing-borders" class="xs-block xs-px3 solid-nav__subitem">Removing Borders</a></li>
+            <li class="xs-py1"><a href="#rounded-corners" class="xs-block xs-px3 solid-nav__subitem">Rounded Corners</a></li>
+            <li class="xs-py1"><a href="#circles" class="xs-block xs-px3 solid-nav__subitem">Circles</a></li>
+          </ul>
+        {% endif %}
+
+      </li>
+
       <li class="solid-nav__group {% if page.title == 'grid' %}active{% endif %}">
 
         <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="grid.html">Grid</a>
@@ -128,7 +177,7 @@
             <li class="xs-py1"><a href="#nesting-columns" class="xs-block xs-px3 solid-nav__subitem">Nesting Columns</a></li>
             <li class="xs-py1"><a href="#gutters-automatic" class="xs-block xs-px3 solid-nav__subitem">Gutters (automatic)</a></li>
             <li class="xs-py1"><a href="#gutters-manual" class="xs-block xs-px3 solid-nav__subitem">Gutters (manual)</a></li>
-            <li class="xs-py1"><a href="#column-offsets" class="xs-block xs-px3 solid-nav__subitem">Columns Offsets</a></li>
+            <li class="xs-py1"><a href="#column-offsets" class="xs-block xs-px3 solid-nav__subitem">Column Offsets</a></li>
             <li class="xs-py1"><a href="#responsive-grid" class="xs-block xs-px3 solid-nav__subitem">Responsive Grid</a></li>
           </ul>
         {% endif %}
@@ -148,33 +197,6 @@
 
       </li>
 
-      <li class="solid-nav__group {% if page.title == 'responsive' %}active{% endif %}">
-
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="responsive.html">Responsive</a>
-
-        {% if page.title == 'responsive' %}
-          <ul class="list-unstyled text-5 xs-hide sm-block">
-            <li class="xs-py1"><a href="#responsive-prefixes" class="xs-block xs-px3 solid-nav__subitem">Responsive Prefixes</a></li>
-            <li class="xs-py1"><a href="#how-it-works" class="xs-block xs-px3 solid-nav__subitem">How It Works</a></li>
-            <li class="xs-py1"><a href="#what-has-a-responsive-prefix" class="xs-block xs-px3 solid-nav__subitem">What Has a Responsive Prefix</a></li>
-          </ul>
-        {% endif %}
-
-      </li>
-
-      <li class="solid-nav__group {% if page.title == 'utilities' %}active{% endif %}">
-
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="utilities.html">Utility Classes</a>
-
-        {% if page.title == 'utilities' %}
-          <ul class="list-unstyled text-5 xs-hide sm-block">
-            <li class="xs-py1"><a href="#about-utility-classes" class="xs-block xs-px3 solid-nav__subitem">About Utility Classes</a></li>
-            <li class="xs-py1"><a href="#layout-utilities" class="xs-block xs-px3 solid-nav__subitem">Layout Utilities</a></li>
-            <li class="xs-py1"><a href="#style-utilities" class="xs-block xs-px3 solid-nav__subitem">Style Utilities</a></li>
-          </ul>
-        {% endif %}
-
-      </li>
     </ol>
 
     <label class="xs-block text-6 caps bold xs-mb1 sm-mb2 solid-nav__header">Components</label>
