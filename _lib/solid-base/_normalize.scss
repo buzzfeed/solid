@@ -1,4 +1,9 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+// scss-lint:disable all
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+// CUSTOM VERSION
+// Many of these styles are overwritten in _base.scss
+// overwritten styles are commented out to prevent
+// redundant CSS
 
 /**
  * 1. Set default font family to sans-serif.
@@ -7,7 +12,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  // font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -16,9 +21,9 @@ html {
  * Remove default margin.
  */
 
-body {
-  margin: 0;
-}
+// body {
+//   margin: 0;
+// }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -56,7 +61,7 @@ canvas,
 progress,
 video {
   display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  // vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -107,36 +112,36 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
+// abbr[title] {
+//   border-bottom: 1px dotted;
+// }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 
-b,
-strong {
-  font-weight: bold;
-}
+// b,
+// strong {
+//   font-weight: bold;
+// }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 
-dfn {
-  font-style: italic;
-}
+// dfn {
+//   font-style: italic;
+// }
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+// h1 {
+//   font-size: 2em;
+//   margin: 0.67em 0;
+// }
 
 /**
  * Address styling not present in IE 8/9.
@@ -151,9 +156,9 @@ mark {
  * Address inconsistent and variable font size in all browsers.
  */
 
-small {
-  font-size: 80%;
-}
+// small {
+//   font-size: 80%;
+// }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -161,19 +166,19 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  // font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
+  // vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
-}
+// sup {
+//   top: -0.5em;
+// }
 
-sub {
-  bottom: -0.25em;
-}
+// sub {
+//   bottom: -0.25em;
+// }
 
 /* Embedded content
    ========================================================================== */
@@ -182,9 +187,9 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
-  border: 0;
-}
+// img {
+//   border: 0;
+// }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -201,9 +206,9 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 
-figure {
-  margin: 1em 40px;
-}
+// figure {
+//   margin: 1em 40px;
+// }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -226,13 +231,13 @@ pre {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
+// code,
+// kbd,
+// pre,
+// samp {
+//   font-family: monospace, monospace;
+//   font-size: 1em;
+// }
 
 /* Forms
    ========================================================================== */
@@ -373,21 +378,21 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+// fieldset {
+//   border: 1px solid #c0c0c0;
+//   margin: 0 2px;
+//   padding: 0.35em 0.625em 0.75em;
+// }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
-legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
-}
+//legend {
+//  border: 0; /* 1 */
+//  padding: 0; /* 2 */
+//}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
@@ -402,9 +407,9 @@ textarea {
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
-optgroup {
-  font-weight: bold;
-}
+// optgroup {
+//   font-weight: bold;
+// }
 
 /* Tables
    ========================================================================== */
@@ -413,12 +418,12 @@ optgroup {
  * Remove most spacing between table cells.
  */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+// table {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+// }
 
-td,
-th {
-  padding: 0;
-}
+// td,
+// th {
+//   padding: 0;
+// }

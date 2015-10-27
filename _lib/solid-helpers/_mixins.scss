@@ -15,7 +15,7 @@ $breakpoints: (
   sm: 40rem,
   md: 52rem,
   lg: 64rem,
-);
+  );
 
 // returns the apropriate media query
 // for the given breakpoint name
@@ -23,26 +23,32 @@ $breakpoints: (
   @if (map-get($breakpoints, $breakpoint)) == null {
     @content;
   } @else {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-      @content;
-    }
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
   }
 }
 
 // nest content inside breakpoint prefix classes
 // in the apropriate media query block
 @mixin generate-breakpoint-prefixes {
- @each $breakpoint-name, $breakpoint-value in $breakpoints {
-   $breakpoint-prefix: "#{$breakpoint-name}-";
-   
-   @include media-query($breakpoint-name) {
-     
-     // Columns
-     .#{$breakpoint-prefix} {
-       @content;
+  @if ($critical == "true") {
+    
+    // only return xs styles if critical
+   .xs- { @content; }
+
+  } @else {
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+     $breakpoint-prefix: "#{$breakpoint-name}-";
+
+     @include media-query($breakpoint-name) {
+
+       .#{$breakpoint-prefix} {
+         @content;
+       }
      }
    }
- }
+  }
 }
 
 // hide from humans not screen readers
@@ -84,3 +90,28 @@ $breakpoints: (
 
   }
 }
+
+// Non Critical
+// -------------------------
+// If critical don't output any of these styles
+
+@mixin non-critical() {
+  @if ($critical == "true") {
+    //return false
+  } @else {
+    @content;
+  }
+}
+
+// Critical
+// -------------------------
+// If not critical don't output any of these styles
+
+@mixin critical() {
+  @if ($critical == "false") {
+    //return false
+  } @else {
+    @content;
+  }
+}
+

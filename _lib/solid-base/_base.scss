@@ -128,15 +128,6 @@ samp {
 }
 
 
-// We should define fieldset with classes if we're going to define it.
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-
 // Making sure that bold is 600, since we use semibold instead.
 
 optgroup {
@@ -157,14 +148,6 @@ q:before,
 q:after {
   content: "";
   content: none;
-}
-
-body {
-  color: $text-gray;
-}
-
-a {
-  color: $text-blue;
 }
 
 html {

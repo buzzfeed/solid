@@ -2,6 +2,14 @@
 // Variables
 // --------------------------------------------------
 
+// Config
+// -------------------------
+
+// Set this variable to true in an
+// import file to return only
+// critical styles
+$critical: "all" !default;
+
 // Fonts
 // -------------------------
 

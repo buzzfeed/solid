@@ -1,0 +1,12 @@
+//
+// Solid Critical Styles
+// --------------------------------------------------
+// this import file only includes styles
+// neccesary at first paint
+
+$critical: "true";
+
+@import "solid-helpers";
+@import "solid-base";
+@import "solid-utilities";
+@import "solid-components";
