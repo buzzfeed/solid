@@ -8,3 +8,5 @@ port: 9000
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
