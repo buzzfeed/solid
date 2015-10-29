@@ -27,7 +27,10 @@
 }
 
 @include generate-breakpoint-prefixes {
-  &block-grid-1 .block-grid__item { width: 100% !important; }
+  &block-grid-1 .block-grid__item {
+    margin: $space-1 0 !important;
+    width: 100% !important;
+  }
   &block-grid-2 .block-grid__item { width: calc-margin(percentage(1/2)) !important; }
   &block-grid-3 .block-grid__item { width: calc-margin(percentage(1/3)) !important; }
   &block-grid-4 .block-grid__item { width: calc-margin(percentage(1/4)) !important; }
