@@ -4,9 +4,15 @@
 // this import file only includes styles
 // neccesary at first paint
 
+// only output xs styles for responsive styles
 $critical: "true";
 
 @import "solid-helpers";
-@import "solid-base";
-@import "solid-utilities";
-@import "solid-components";
+
+// Base
+@import "solid-base/normalize";
+@import "solid-base/base";
+@import "solid-base/typography";
+
+// Utilities
+@import "solid-utilities/grid";

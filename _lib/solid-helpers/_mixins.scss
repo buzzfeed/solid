@@ -91,27 +91,4 @@ $breakpoints: (
   }
 }
 
-// Non Critical
-// -------------------------
-// If critical don't output any of these styles
-
-@mixin non-critical() {
-  @if ($critical == "true") {
-    //return false
-  } @else {
-    @content;
-  }
-}
-
-// Critical
-// -------------------------
-// If not critical don't output any of these styles
-
-@mixin critical() {
-  @if ($critical == "false") {
-    //return false
-  } @else {
-    @content;
-  }
-}
 

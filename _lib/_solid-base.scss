@@ -5,14 +5,6 @@
 // helpers
 @import "solid-helpers";
 
-//critical imports
-@mixin critical {
-  @import "solid-base/normalize";
-  @import "solid-base/base";
-  @import "solid-base/typography";
-}
-
-//non critical imports
-@mixin non-critical {
-  @import "solid-base/tables";  
-}
+@import "solid-base/base";
+@import "solid-base/typography";
+@import "solid-base/tables";  

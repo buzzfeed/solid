@@ -5,13 +5,7 @@
 // helpers
 @import "solid-helpers";
 
-//critical imports
-@mixin critical {
-  @import "solid-utilities/grid";
-}
-
-//non critical imports
-@mixin non-critical {
+@import "solid-utilities/grid";
 @import "solid-utilities/block-grid";
 @import "solid-utilities/colors";
 @import "solid-utilities/buttons";
@@ -20,4 +14,3 @@
 @import "solid-utilities/typography";
 @import "solid-utilities/borders";
 @import "solid-utilities/layout";
-}
