@@ -5,7 +5,7 @@
 // neccesary at first paint
 
 // only output xs styles for responsive styles
-$critical: "true";
+$generate-responsive-classes: false;
 
 @import "solid-helpers";
 

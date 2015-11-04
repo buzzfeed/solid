@@ -5,10 +5,10 @@
 // Config
 // -------------------------
 
-// Set this variable to true in an
-// import file to return only
-// critical styles
-$critical: "all" !default;
+// set to false to make responsive
+// mixin give only xs- versions of
+// responsive classes
+$generate-responsive-classes: true !default;
 
 // Fonts
 // -------------------------

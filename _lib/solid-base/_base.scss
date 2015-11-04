@@ -60,18 +60,20 @@ li {
   font: inherit;
 }
 
+
+// Normalize Patches
+// -------------------------
+
 // remove quotes from blockquote
 blockquote, 
 q {
   quotes: none;
-}
 
-blockquote:before, 
-blockquote:after,
-q:before, 
-q:after {
-  content: "";
-  content: none;
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
 // everything border box
@@ -88,12 +90,10 @@ html {
 // Responsive Images
 img { max-width: 100%; height: auto; }
 
+
 // no border on iframes
 iframe { border: 0; }
 
-
-// Normalize Patches
-// -------------------------
 
 // Ensure we only define type using our default classes.
 small {
@@ -115,6 +115,7 @@ sub {
   bottom: -.25rem;
 }
 
+
 code,
 kbd,
 pre,
@@ -134,13 +135,6 @@ fieldset {
 // Making sure that bold is 600, since we use semibold instead.
 optgroup {
   font-weight: $bold;
-}
-
-
-// We should establish our own style for blockquotes.
-blockquote, 
-q {
-  quotes: none;
 }
 
 blockquote:before, 

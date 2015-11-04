@@ -32,12 +32,8 @@ $breakpoints: (
 // nest content inside breakpoint prefix classes
 // in the apropriate media query block
 @mixin generate-breakpoint-prefixes {
-  @if ($critical == "true") {
-    
-    // only return xs styles if critical
-   .xs- { @content; }
-
-  } @else {
+  @if ($generate-responsive-classes == true) {
+    // generate prefixed classes
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
      $breakpoint-prefix: "#{$breakpoint-name}-";
 
@@ -48,6 +44,9 @@ $breakpoints: (
        }
      }
    }
+  } @else {
+    // only return xs styles
+   .xs- { @content; }
   }
 }
 
