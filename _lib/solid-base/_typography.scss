@@ -5,7 +5,6 @@
 html {
   font-size: $base-font-size;
   font-family: $sans; // This is just for reference
-  color: $text-gray;
 }
 
 body {
@@ -66,15 +65,15 @@ a {
 
   &:hover {
     color: darken($text-blue, 20%);
-    transition: color .15s ease 0s;
+    transition: color .3s ease 0s;
   }
 }
 
 // Typography Emphasis and Styling
-// strong,
-// b {
-//   font-weight: $bold;
-// }
+strong,
+b {
+  font-weight: $bold;
+}
 
 em,
 i {
