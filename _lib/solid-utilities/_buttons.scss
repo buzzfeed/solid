@@ -52,6 +52,7 @@ $button-height-small: 2rem;
   display: inline-block         !important;
   border: 1px solid transparent !important;
   text-align: center            !important;
+  line-height: 1.5              !important;
 
   &:hover { transition: background-color .15s ease 0s !important; }
 }
