@@ -18,7 +18,6 @@
 
 @mixin button-reset {
   cursor: pointer                             !important;
-  margin: 0                                   !important;
   padding: 0                                  !important;
   background-color: transparent               !important;
   // Reset unusual Firefox-on-Android default style;
@@ -31,7 +30,7 @@
 
   &,
   &:active:focus {
-      outline: 0 !important;
+    outline: 0 !important;
   }
 }
 
