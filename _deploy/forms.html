@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Forms- Solid</title>
+    <meta name="description" content="<%= description %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+  </head>
+  <body class="fill-gray--lighter">
+    <!-- Desktop Nav -->
+
+<nav class="xs-col-12 sm-col-3 lg-col-2 sm-fixed xs-t0 sm-b0 xs-l0 xs-overflow-auto sm-py3 sm-pb6 xs-border-bottom sm-border-bottom-none sm-border-right fill-white solid-nav">
+  
+  <h1 class="xs-relative xs-py3 sm-py0 sm-mb4 solid-header">
+    <div class="sm-block solid-header--desktop-logo">
+      <a href="/" class="solid-logo">Solid</a>
+    </div>
+    <div class="sm-hide solid-header--mobile">
+      <span class="solid-logo">Solid</span>
+      <div class="xs-absolute solid-header__caret"></div>
+    </div>
+  </h1>
+
+  <div class="solid-nav__items sm-block">
+
+    <ol class="list-unstyled sm-hide">
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/">About Solid</a>
+
+      </li>
+    </ol>
+
+    <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">CSS Library</label>
+
+    <ol class="list-unstyled xs-mb4">
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="typography.html">Typography</a>
+
+        
+
+      </li>
+      
+      <li class="solid-nav__group " >
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/colors.html">Colors</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="buttons.html">Buttons</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group active">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="forms.html">Forms</a>
+
+        
+          <ul class="list-unstyled text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#form-labels" class="xs-block xs-px3 solid-nav__subitem">Form Labels</a></li>
+            <li class="xs-py1"><a href="#text-inputs" class="xs-block xs-px3 solid-nav__subitem">Text Inputs</a></li>
+            <li class="xs-py1"><a href="#helper-text" class="xs-block xs-px3 solid-nav__subitem">Helper Text</a></li>
+            <li class='xs-py1'><a href="#textareas" class="xs-block xs-px3 solid-nav__subitem">Textareas</a></li>
+            <li class='xs-py1'><a href="#select-fields" class="xs-block xs-px3 solid-nav__subitem">Select Fields</a></li>
+            <li class='xs-py1'><a href="#radio-buttons" class="xs-block xs-px3 solid-nav__subitem">Radio Buttons</a></li>
+            <li class='xs-py1'><a href="#checkboxes" class="xs-block xs-px3 solid-nav__subitem">Checkboxes</a></li>
+            <li class='xs-py1'><a href="#small-form-labels" class="xs-block xs-px3 solid-nav__subitem">Small Form Labels</a></li>
+            <li class='xs-py1'><a href="#small-text-inputs" class="xs-block xs-px3 solid-nav__subitem">Small Text Inputs</a></li>
+            <li class='xs-py1'><a href="#small-select-fields" class="xs-block xs-px3 solid-nav__subitem">Small Select Fields</a></li>
+            <li class='xs-py1'><a href="#form-warnings" class="xs-block xs-px3 solid-nav__subitem">Form Warnings</a></li>
+            <li class='xs-py1'><a href="#form-errors" class="xs-block xs-px3 solid-nav__subitem">Form Errors</a></li>
+            <li class='xs-py1'><a href="#form-success" class="xs-block xs-px3 solid-nav__subitem">Form Success</a></li>
+          </ul>
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="tables.html">Tables</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="responsive.html">Responsive</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="layout.html">Layout</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="borders.html">Borders</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="grid.html">Grid</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="block-grid.html">Block Grid</a>
+
+        
+
+      </li>
+
+    </ol>
+
+    <label class="xs-block text-6 caps bold xs-mb1 sm-mb2 solid-nav__header">Components</label>
+
+    <ol class="list-unstyled xs-pb3 sm-pb0">
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="messaging.html">Messaging</a>
+      </li>
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="button-groups.html">Button Groups</a>
+      </li>
+
+    </ol>
+  </div>
+</nav>
+    <div class="xs-col-12 sm-col-9 lg-col-10 sm-offset-3 lg-offset-2">
+      <div class="xs-col-11 xs-py3 xs-px1 xs-mx-auto xs-my4 fill-white xs-border rounded">
+        <h1 class="xs-col-11 sm-col-10 xs-mx-auto xs-border-bottom xs-pb3 xs-mb4 sm-my4">Forms</h1>
+        <div class="xs-col-11 sm-col-10 xs-mx-auto">
+          <section class="xs-mb6">
+
+  <a name="form-labels"></a>
+  <h2 class="xs-mb2 bold">Form Labels</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label</code></span> class to get default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case. Additionally, use the <span class="nowrap">.<code class="js-highlight">form-label--required</code></span> class around an asterisk to declare a field required. If a field needs to be marked as optional, wrap "(optional)" in <span class="nowrap">.<code class="js-highlight">form-label--optional</code></span>.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add your website</label>
+    <label class="form-label">Add your website <span class="form-label--required">*</span></label>
+    <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Add your website<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Add your website <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;form-label--required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>What is your phone number? <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;form-label--optional&quot;</span><span class="nt">&gt;</span>(optional)<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="text-inputs"></a>
+  <h2 class="xs-mb2 bold">Text Inputs</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">text-input</code></span> class to get default styling for text inputs. BuzzFeed text inputs are always paired with a label to give users context. Placeholder text is used for additional context when necessary.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add your website</label>
+    <input type="text" class="text-input" placeholder="www.example.com">
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Add your website<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;www.example.com&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="helper-text"></a>
+  <h2 class="xs-mb2 bold">Helper Text</h2>
+
+  <p class="xs-mb4">When necessary, place additional helper text beneath inputs in a <code class="js-highlight">label</code> with a <span class="nowrap">.<code class="js-highlight">form-helper</code></span> class.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add your website</label>
+    <input type="text" class="text-input" placeholder="www.example.com">
+    <label class="form-helper">You don't need to include http://</label>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Add your website<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;www.example.com&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-helper&quot;</span><span class="nt">&gt;</span>You don&#39;t need to include http://<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="textareas"></a>
+  <h2 class="xs-mb2 bold">Textareas</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">textarea</code></span> class to get default styling for textareas. When choosing a type size and width for textareas, Solid suggests aiming for a measure of 52-78 characters.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label">Add a comment</label>
+    <textarea class="textarea"></textarea>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Add a Comment<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="select-fields"></a>
+  <h2 class="xs-mb2 bold">Select Fields</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">select</code></span> class to get default styling for select fields. Optionally, use a form label above your select if the default text is not descriptive enough, if the default is one of the valid select options, or if the selection will be saved and viewable again later.</p>
+
+  <form class="xs-mb4">
+    <select class="select">
+      <option value="choose">Choose your personality</option>
+      <option value="amazing">Amazing</option>
+      <option value="boring">Boring</option>
+      <option value="fun">Fun</option> 
+    </select>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;choose&quot;</span><span class="nt">&gt;</span>Choose your personality<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;amazing&quot;</span><span class="nt">&gt;</span>Amazing<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;boring&quot;</span><span class="nt">&gt;</span>Boring<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;fun&quot;</span><span class="nt">&gt;</span>Fun<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="radio-buttons"></a>
+  <h2 class="xs-mb2 bold">Radio Buttons</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">radio</code></span> class alongside a <code class="js-highlight">label</code> to get Solid's default styling for radio inputs.</p>
+
+  <form class="xs-mb4">
+    <input type="radio" class="radio" id="option_1" value="option_1" name="options" checked="checked">
+    <label for="option_1">Option 1</label>  
+    <input type="radio" class="radio" id="option_2" value="option_2" name="options">
+    <label for="option_2">Option 2</label>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;option_1&quot;</span> <span class="na">value=</span><span class="s">&quot;option_1&quot;</span> <span class="na">name=</span><span class="s">&quot;options&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;option_1&quot;</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;option_2&quot;</span> <span class="na">value=</span><span class="s">&quot;option_2&quot;</span> <span class="na">name=</span><span class="s">&quot;options&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;option_2&quot;</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="checkboxes"></a>
+  <h2 class="xs-mb2 bold">Checkboxes</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">checkbox</code></span> class alongside a <code class="js-highlight">label</code> to get Solid's default styling for radio inputs.</p>
+
+  <form class="xs-mb4">
+    <input type="checkbox" class="checkbox" id="check_1" value="check_1" name="checkboxes" checked="checked">
+    <label for="check_1">Option 1</label> 
+    <input type="checkbox" class="checkbox" id="check_2" value="check_2" name="checkboxes">
+    <label for="check_2">Option 2</label>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;check_1&quot;</span> <span class="na">value=</span><span class="s">&quot;check_1&quot;</span> <span class="na">name=</span><span class="s">&quot;checkboxes&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;check_1&quot;</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;check_2&quot;</span> <span class="na">value=</span><span class="s">&quot;check_2&quot;</span> <span class="na">name=</span><span class="s">&quot;checkboxes&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;check_2&quot;</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="small-form-labels"></a>
+  <h2 class="xs-mb2 bold">Small Form Labels</h2>
+
+  <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">form-label--small</code></span> class to get a smaller version of Solid's form labels.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label form-label--small">Add your website</label>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label form-label--small&quot;</span><span class="nt">&gt;</span>Add your website<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="small-text-inputs"></a>
+  <h2 class="xs-mb2 bold">Small Text Inputs</h2>
+
+  <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">text-input--small</code></span> class to get a smaller version of Solid's text inputs.</p>
+
+  <form class="xs-mb4">
+    <label class="form-label form-label--smaller">Add your website</label>
+    <input type="text" class="text-input text-input--small" placeholder="www.example.com">
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label form-label--smaller&quot;</span><span class="nt">&gt;</span>Choose a username<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input text-input--smaller&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;www.example.com&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="small-select-fields"></a>
+  <h2 class="xs-mb2 bold">Small Select Fields</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">select--small</code></span> class to get the smaller version of Solid's select field.</p>
+
+  <form class="xs-mb4">
+    <select class="select select--small">
+      <option value="choose">Choose your personality</option>
+      <option value="amazing">Amazing</option>
+      <option value="boring">Boring</option>
+      <option value="fun">Fun</option> 
+    </select>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;select select--small&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;choose&quot;</span><span class="nt">&gt;</span>Choose your personality<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;amazing&quot;</span><span class="nt">&gt;</span>Amazing<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;boring&quot;</span><span class="nt">&gt;</span>Boring<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;fun&quot;</span><span class="nt">&gt;</span>Fun<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="form-warnings"></a>
+  <h2 class="xs-mb2 bold">Form Warnings</h2>
+
+  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--warning</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+
+  <form class="xs-mb4">
+    <fieldset class="fieldset form-fieldset--warning">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <span class="form-feedback">Caps lock is on!</span>
+    </fieldset>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;fieldset form-fieldset--warning&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;form-feedback&quot;</span><span class="nt">&gt;</span>Caps lock is on!<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="form-errors"></a>
+  <h2 class="xs-mb2 bold">Form Errors</h2>
+
+  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--warning</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+
+  <form class="xs-mb4">
+    <fieldset class="fieldset form-fieldset--error">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <span class="form-feedback">Your name can't be Wolverine.</span>
+    </fieldset>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;fieldset form-fieldset--error&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;form-feedback&quot;</span><span class="nt">&gt;</span>Your name can&#39;t be Wolverine<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+<section class="xs-mb6">
+
+  <a name="form-success"></a>
+  <h2 class="xs-mb2 bold">Form Success</h2>
+
+  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--success</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+
+  <form class="xs-mb4">
+    <fieldset class="fieldset form-fieldset--success">
+      <label class="form-label">Your name</label>
+      <input type="text" class="text-input">
+      <span class="form-feedback">Boom. Looks good!</span>
+    </fieldset>
+  </form>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;fieldset form-fieldset--success&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;form-label&quot;</span><span class="nt">&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;text-input&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;form-feedback&quot;</span><span class="nt">&gt;</span>Boom. Looks good!<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+</section>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--Code Highlighting-->
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>    
+    <script src="/javascript/codehighlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- <script src="/javascript/prism.js"></script>-->
+
+    <!--Show/Hide Nav on Mobile and Flip Caret-->
+    <script type="text/javascript">
+      var _target = '.solid-header--mobile';
+      var _menu = '.solid-nav';
+      var _className = 'solid-nav--show';
+      $(document).ready(function(){
+          $(_target).on('click', function(){
+              $(_menu).toggleClass(_className);
+          });
+      });
+    </script>
+  </body>
+</html>
