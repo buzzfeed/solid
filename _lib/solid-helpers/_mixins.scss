@@ -15,7 +15,7 @@ $breakpoints: (
   sm: 40rem,
   md: 52rem,
   lg: 64rem,
-);
+  );
 
 // returns the apropriate media query
 // for the given breakpoint name
@@ -23,26 +23,31 @@ $breakpoints: (
   @if (map-get($breakpoints, $breakpoint)) == null {
     @content;
   } @else {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-      @content;
-    }
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
   }
 }
 
 // nest content inside breakpoint prefix classes
 // in the apropriate media query block
 @mixin generate-breakpoint-prefixes {
- @each $breakpoint-name, $breakpoint-value in $breakpoints {
-   $breakpoint-prefix: "#{$breakpoint-name}-";
-   
-   @include media-query($breakpoint-name) {
-     
-     // Columns
-     .#{$breakpoint-prefix} {
-       @content;
+  @if ($generate-responsive-classes == true) {
+    // generate prefixed classes
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+     $breakpoint-prefix: "#{$breakpoint-name}-";
+
+     @include media-query($breakpoint-name) {
+
+       .#{$breakpoint-prefix} {
+         @content;
+       }
      }
    }
- }
+  } @else {
+    // only return xs styles
+   .xs- { @content; }
+  }
 }
 
 // hide from humans not screen readers
@@ -84,3 +89,5 @@ $breakpoints: (
 
   }
 }
+
+
