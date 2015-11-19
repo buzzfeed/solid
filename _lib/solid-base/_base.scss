@@ -179,3 +179,10 @@ html {
 
 // Responsive Images
 img { max-width: 100%; height: auto; }
+
+
+// Overriding default iOS input style
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
