@@ -1,0 +1,45 @@
+//
+// Modals
+// --------------------------------------------------
+
+.modal {
+  background: rgba(255,255,255,.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__content {
+  background: $fill-white;
+  border: $border;
+  border-radius: 3px;
+  z-index: 10;
+  margin: 10% auto;
+  position: relative;
+  padding: $space-5;
+}
+
+.modal__close {
+  background-image: svg-background($close-icon);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  fill: $fill-gray--darker;
+  padding: $space-1;
+  float: right;
+  margin: -2.5rem -2.5rem 0 0;
+
+  &:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
