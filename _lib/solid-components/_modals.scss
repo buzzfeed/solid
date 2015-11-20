@@ -9,14 +9,14 @@
   width: 100%;
   top: 0;
   left: 0;
+  padding: $space-2;
 }
 
 .modal__content {
   background: $fill-white;
   border: $border;
   border-radius: 3px;
-  z-index: 10;
-  margin: 10% auto;
+  margin: 0 auto;
   position: relative;
   padding: $space-4;
 }
