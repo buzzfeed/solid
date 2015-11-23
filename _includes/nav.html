@@ -14,13 +14,15 @@
 
   <div class="solid-nav__items sm-block">
 
-    <ol class="list-unstyled sm-hide">
+    <ol class="list-unstyled xs-mb4">
 
-      <li class="solid-nav__group {% if page.title == 'typography' %}active{% endif %}">
-
+      <li class="solid-nav__group {% if page.title == 'welcome!' %}active{% endif %}">
         <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/">About Solid</a>
-
       </li>
+      <li class="solid-nav__group {% if page.title == 'release notes' %}active{% endif %}">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="release-notes.html">Release Notes</a>
+      </li>
+
     </ol>
 
     <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">CSS Library</label>
