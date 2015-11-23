@@ -18,6 +18,7 @@
   display: inline-block      !important;
   font-size: $base-font-size !important;
   vertical-align: top        !important;
+  line-height: 0;
 }
 
 @include generate-breakpoint-prefixes {
