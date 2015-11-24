@@ -17,7 +17,7 @@ title: modals
           <h2 class="text-2 bold">Modal title</h2>
           <p class="xs-mb2">This is my modal text. It's really good text, have you seen it?</p>
 
-          <form class="xs-mb2">
+          <form class="xs-mb4">
             <label class="form-label">Form 1</label>
             <input type="text" class="text-input xs-col-12 xs-mb2">
             <label class="form-label">Form 2</label>
@@ -28,15 +28,28 @@ title: modals
             <button class="button button--primary xs-col-12 sm-col-4 md-col-3 xs-float-right xs-mb1 sm-mb0 sm-ml1">Save</button>
             <button class="button button--secondary xs-col-12 sm-col-4 md-col-3 xs-float-left sm-float-right">Cancel</button>
           </div>
-
       </div>
     </div>
 
 
 <div class="xs-mt2">
 {% highlight html %}
-<div class="button-group">
-  <input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">
+<div class="modal">
+  <div class="modal__content xs-z4 xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
+    <a class="modal__close" href=""></a>
+      <h2 class="text-2 bold">Modal title</h2>
+      <p class="xs-mb2">This is my modal text. It's really good text, have you seen it?</p>
+      <form class="xs-mb4">
+        <label class="form-label">Form 1</label>
+        <input type="text" class="text-input xs-col-12 xs-mb2">
+        <label class="form-label">Form 2</label>
+        <input type="text" class="text-input xs-col-12">
+      </form>
+      <div class="clearfix">
+        <button class="button button--primary xs-col-12 sm-col-4 md-col-3 xs-float-right xs-mb1 sm-mb0 sm-ml1">Save</button>
+        <button class="button button--secondary xs-col-12 sm-col-4 md-col-3 xs-float-left sm-float-right">Cancel</button>
+      </div>
+  </div>
 </div>
 {% endhighlight %}
 </div>
