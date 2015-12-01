@@ -32,7 +32,9 @@ run: dist
 build: dist
 	bundle exec jekyll build
 
-# compile dist files
+# compile binaries for download
+# * executed on build
+# * not re-run by jekyll serve
 dist:
 	grunt compile_lib
 	grunt minify_lib
