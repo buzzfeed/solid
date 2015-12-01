@@ -1,4 +1,4 @@
-.PHONY: modules gems ruby_gems ruby_gems_deployment ruby_gems_deploy build run
+.PHONY: modules gems ruby_gems ruby_gems_deployment ruby_gems_deploy node_modules build run clean dist shrinkwrap
 
 APP_NAME = solid
 
@@ -10,7 +10,7 @@ export BUNDLE_PATH
 BUNDLE_ARGS =
 
 # DEV: dev target additionally installs modules and runs db migraitons
-dev: modules
+dev: modules node_modules build
 
 # update all code depenendencies
 modules: gems
@@ -40,6 +40,11 @@ dist:
 	grunt compile_lib
 	grunt minify_lib
 	grunt zip_lib
+
+# install node modules from npm-shrinkwrap.json
+node_modules:
+	npm install
+	npm prune
 
 # shrinkwrap node modules
 # * installs modules from package.json
