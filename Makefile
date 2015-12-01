@@ -10,13 +10,10 @@ export BUNDLE_PATH
 BUNDLE_ARGS =
 
 # DEV: dev target additionally installs modules and runs db migraitons
-dev: modules node_modules build
+dev: modules build
 
 # update all code depenendencies
-modules: gems
-
-# update all ruby gems
-gems: ruby_gems
+modules: ruby_gems node_modules
 
 # install ruby gems from Gemfile/Gemfile.lock
 ruby_gems:
