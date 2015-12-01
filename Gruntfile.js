@@ -1,3 +1,5 @@
+// We use Grunt to build our dist files
+// commands are run by the makefile
 var Promise = require('es6-promise').Promise;
 
 global.window = {
