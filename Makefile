@@ -1,4 +1,4 @@
-.PHONY: modules gems ruby_gems ruby_gems_deployment ruby_gems_deploy
+.PHONY: modules gems ruby_gems ruby_gems_deployment ruby_gems_deploy node_modules build run clean dist shrinkwrap
 
 APP_NAME = solid
 
@@ -10,22 +10,46 @@ export BUNDLE_PATH
 BUNDLE_ARGS =
 
 # DEV: dev target additionally installs modules and runs db migraitons
-dev: modules
+dev: modules build
 
 # update all code depenendencies
-modules: gems
-
-# update all ruby gems
-gems: ruby_gems
+modules: ruby_gems node_modules
 
 # install ruby gems from Gemfile/Gemfile.lock
 ruby_gems:
 	bundle install --path=$(BUNDLE_PATH) --clean $(BUNDLE_ARGS)
 
+# clean out generated files
+clean:
+	rm -fr dist/
+	rm -fr _site/
+
 # run the jekyll server
-run:
+run: dist
 	bundle exec jekyll serve
 
 # build static site into _site
-build:
+build: dist
 	bundle exec jekyll build
+
+# compile binaries for download
+# * executed on build
+# * not re-run by jekyll serve
+dist:
+	grunt compile_lib
+	grunt minify_lib
+	grunt zip_lib
+
+# install node modules from npm-shrinkwrap.json
+node_modules:
+	npm install
+	npm prune
+
+# shrinkwrap node modules
+# * installs modules from package.json
+# * prunes modules we don't need
+# * generates npm-shrinkwrap.json
+shrinkwrap:
+	npm install --no-shrinkwrap
+	npm prune
+	npm shrinkwrap --dev

@@ -8,3 +8,7 @@ port: 9000
 
 # Build settings
 markdown: kramdown
+
+# Ignore
+exclude:
+    - node_modules

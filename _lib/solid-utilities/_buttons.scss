@@ -136,33 +136,3 @@ $button-height-small: 2rem;
   >svg        { fill: $fill-blue  !important; }
   &:hover svg { fill: $fill-white !important; }
 }
-
-// All social buttons have similar styles use this to generate their style
-// Social buttons are deprecated and will be removed in Solid 1.3.0
-
-@mixin social-button($color) {
-  background-color: $color !important;
-  color: $text-white       !important;
-
-  &:not(.button--disabled):hover {
-    background-color: darken($color, 20%) !important;
-    color: $text-white                    !important;
-  }
-
-  &.button--disabled:hover {
-    color: $text-white !important;
-  }
-
-  &:not(.button--disabled):active {    
-    background-color: darken($color, 35%) !important;
-  }
-}
-
-.button--facebook  { @include social-button($fill-facebook); }
-.button--twitter   { @include social-button($fill-twitter); }
-.button--google    { @include social-button($fill-google); }
-.button--linkedin  { @include social-button($fill-linkedin); }
-.button--pinterest { @include social-button($fill-pinterest); }
-.button--tumblr    { @include social-button($fill-tumblr); }
-.button--youtube   { @include social-button($fill-youtube); }
-.button--instagram { @include social-button($fill-instagram); }
