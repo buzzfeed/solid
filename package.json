@@ -78,7 +78,7 @@
       "hireable": false
     }
   ],
-  "dependencies": {
+  "devDependencies": {
     "es6-promise": "^3.0.2",
     "grunt": "^0.4.5",
     "grunt-contrib-compress": "^0.14.0",
