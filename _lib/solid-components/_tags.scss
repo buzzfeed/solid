@@ -1,0 +1,64 @@
+//
+// Tags
+// --------------------------------------------------
+
+.tag {
+  background-color: $fill-white;
+  border: $border;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.tag__delete, .tag__text, .tag__link {
+  float: left;
+  padding: .2rem $space-1;
+}
+
+.tag__delete, .tag__link {
+
+  &:hover {
+    background: $fill-gray--lighter;
+  }
+}
+
+.tag__delete {
+  border-right: $border;
+  cursor: pointer;
+
+  &:before {
+    content:"";
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: svg-background($close-icon-thick);
+    background-size: .75rem;
+  }
+}
+
+
+
+
+
+
+// .tag--deletable {
+
+//   &:hover {
+
+//   }
+
+// }
+
+// .tag--clickable {
+
+//   &:hover {
+
+//   }
+
+// }
+
+
+
