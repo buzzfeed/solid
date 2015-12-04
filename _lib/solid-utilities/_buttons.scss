@@ -45,7 +45,7 @@ $button-height-small: 2rem;
   height: $button-height        !important;
   padding: .5rem .875rem        !important;
   font-size: $text-4            !important;
-  border-radius: 3px            !important;
+  border-radius: $border-radius !important;
   text-decoration: none         !important;
   cursor: pointer               !important;
   display: inline-block         !important;
