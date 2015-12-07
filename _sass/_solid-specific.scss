@@ -90,11 +90,11 @@ $js-highlight-magenta: #d14;
 
 .solid-nav__group,
 .solid-nav__subitem {
-  border-left: .375rem solid $fill-white;
+  border-left: .375rem solid $bg-white;
 }
 
 .solid-nav__group.active {
-  border-left: .375rem solid $fill-blue;
+  border-left: .375rem solid $bg-blue;
 
   .solid-nav__item {
     color: $text-gray;    
@@ -127,7 +127,7 @@ code {
   
   // Override highlight.js theme properties
   &.hljs { 
-    background-color: $fill-gray--lighter; 
+    background-color: $bg-gray--lighter; 
     padding: $space-2;
     font-size: $text-5;
     line-height: 1.75;
@@ -175,11 +175,11 @@ pre {
 
 .solid-nav__group,
 .solid-nav__subitem {
-  border-left: .375rem solid $fill-white;
+  border-left: .375rem solid $bg-white;
 }
 
 .solid-nav__group.active {
-  border-left: .375rem solid $fill-blue;
+  border-left: .375rem solid $bg-blue;
 
   .solid-nav__item {
     color: $text-gray;    

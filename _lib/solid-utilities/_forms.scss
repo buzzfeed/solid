@@ -23,7 +23,7 @@ $input-height-small: 2rem;
     margin-right: .375rem         !important;
     position: relative            !important;
     bottom: -1px                  !important;
-    background-color: $fill-white !important;
+    background-color: $bg-white !important;
     border: $border               !important;
   }
 }
@@ -33,7 +33,7 @@ $input-height-small: 2rem;
 .select,
 .date-input {
   font-family: inherit    !important;
-  background: $fill-white !important;
+  background: $bg-white !important;
   font-size: $text-4      !important;
   height: $input-height   !important;
   padding: .625rem .75rem !important;
@@ -86,8 +86,8 @@ $input-height-small: 2rem;
 }
 
 .radio:checked + label:before {
-  background-color: $fill-white !important;
-  border: 4px solid $fill-blue  !important;
+  background-color: $bg-white !important;
+  border: 4px solid $bg-blue  !important;
 }
 
 // hide system checkbox in order to use custom style
@@ -108,7 +108,7 @@ $input-height-small: 2rem;
   background-image: svg-background($checkmark) !important;
   background-repeat: no-repeat                 !important;
   background-position: center                  !important;
-  background-color: $fill-blue                 !important;
+  background-color: $bg-blue                 !important;
   background-size: .5rem                       !important;
   border-style: none                           !important;
  }
@@ -152,19 +152,20 @@ $input-height-small: 2rem;
   font-size: $text-5   !important; 
 }
 
-.form-fieldset--warning {
+.form--warning {
   .form-feedback,
   .form-label {
     color: $text-orange !important;  
   }
 
   .text-input,
-  .select {
-    border-color: $fill-orange !important; 
+  .select,
+  .textarea {
+    border-color: $bg-orange !important; 
   }
 }
 
-.form-fieldset--success {
+.form--success {
   .form-feedback,
   .form-label {
     color: $text-green !important;  
@@ -178,7 +179,7 @@ $input-height-small: 2rem;
     background-image: svg-background($checkmark) !important;
     background-repeat: no-repeat                 !important;
     background-size: .5rem                       !important;
-    background-color: $fill-green                !important;
+    background-color: $bg-green                !important;
     border-radius: 50%                           !important;
     background-position: center                  !important;
     margin-right: .375rem                        !important;
@@ -187,19 +188,21 @@ $input-height-small: 2rem;
   }
 
   .text-input,
-  .select {
-    border-color: $fill-green !important; 
+  .select,
+  .textarea {
+    border-color: $bg-green !important; 
   }
 }
 
-.form-fieldset--error {
+.form--error {
   .form-feedback,
   .form-label {
     color: $text-red !important;  
   }
 
   .text-input,
-  .select {
-    border-color: $fill-red !important;
+  .select,
+  .textarea {
+    border-color: $bg-red !important;
   }
 }

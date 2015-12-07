@@ -5,7 +5,7 @@
 // Border
 // -------------------------
 
-.table-border {
+.table--border {
   border:        $border !important;
 
   th               { border-bottom: $border !important; }
@@ -13,8 +13,8 @@
   tr:last-child td { border-bottom: 0       !important; }
 }
 
-.table-border td, 
-.table-border th {
+.table--border td, 
+.table--border th {
   padding: $space-2 !important;
 }
 

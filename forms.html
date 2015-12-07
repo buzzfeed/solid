@@ -181,13 +181,13 @@ title: Forms
   <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">text-input--small</code></span> class to get a smaller version of Solid's text inputs.</p>
 
   <form class="xs-mb4">
-    <label class="form-label form-label--smaller">Add your website</label>
+    <label class="form-label form-label--small">Add your website</label>
     <input type="text" class="text-input text-input--small" placeholder="www.example.com">
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label form-label--smaller">Choose a username</label>
-  <input type="text" class="text-input text-input--smaller" placeholder="www.example.com">
+  <label class="form-label form-label--small">Choose a username</label>
+  <input type="text" class="text-input text-input--small" placeholder="www.example.com">
 </form>{% endhighlight %}
 
 </section>
@@ -224,21 +224,21 @@ title: Forms
   <a name="form-warnings"></a>
   <h2 class="xs-mb2 bold">Form Warnings</h2>
 
-  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--warning</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--warning</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
 
   <form class="xs-mb4">
-    <fieldset class="fieldset form-fieldset--warning">
+    <fieldset class="form--warning">
       <label class="form-label">Your name</label>
       <input type="text" class="text-input">
-      <span class="form-feedback">Caps lock is on!</span>
+      <p class="form-feedback">Caps lock is on!</p>
     </fieldset>
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="fieldset form-fieldset--warning">
+  <fieldset class="form--warning">
     <label class="form-label">Your name</label>
     <input type="text" class="text-input">
-    <span class="form-feedback">Caps lock is on!</span>
+    <p class="form-feedback">Caps lock is on!</p>
   </fieldset>
 </form>{% endhighlight %}
 
@@ -249,21 +249,21 @@ title: Forms
   <a name="form-errors"></a>
   <h2 class="xs-mb2 bold">Form Errors</h2>
 
-  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--warning</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--error</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
 
   <form class="xs-mb4">
-    <fieldset class="fieldset form-fieldset--error">
+    <fieldset class="form--error">
       <label class="form-label">Your name</label>
       <input type="text" class="text-input">
-      <span class="form-feedback">Your name can't be Wolverine.</span>
+      <p class="form-feedback">Your name can't be Wolverine.</p>
     </fieldset>
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="fieldset form-fieldset--error">
+  <fieldset class="form--error">
     <label class="form-label">Your name</label>
     <input type="text" class="text-input">
-    <span class="form-feedback">Your name can't be Wolverine</span>
+    <p class="form-feedback">Your name can't be Wolverine</p>
   </fieldset>
 </form>{% endhighlight %}
 
@@ -274,10 +274,10 @@ title: Forms
   <a name="form-success"></a>
   <h2 class="xs-mb2 bold">Form Success</h2>
 
-  <p class="xs-mb4">Wrap each field in a <code class="js-highlight">fieldset</code> and add a <span class="nowrap">.<code class="js-highlight">form-fieldset--success</code></span> class to change the child <code class="js-highlight">label</code></span> and form field styling. Additionally, add a <code class="js-highlight">span</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--success</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user that their entry is successful.</p>
 
   <form class="xs-mb4">
-    <fieldset class="fieldset form-fieldset--success">
+    <fieldset class="form--success">
       <label class="form-label">Your name</label>
       <input type="text" class="text-input">
       <span class="form-feedback">Boom. Looks good!</span>
@@ -285,7 +285,7 @@ title: Forms
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="fieldset form-fieldset--success">
+  <fieldset class="form--success">
     <label class="form-label">Your name</label>
     <input type="text" class="text-input">
     <span class="form-feedback">Boom. Looks good!</span>
