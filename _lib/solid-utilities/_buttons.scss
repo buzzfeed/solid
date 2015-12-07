@@ -37,9 +37,7 @@
 $button-height: 2.625rem;
 $button-height-small: 2rem;
 
-.button,
-.button--disabled,
-.button--small {
+.button {
   @include button-reset;
   font-family: inherit          !important;
   height: $button-height        !important;
@@ -112,27 +110,25 @@ $button-height-small: 2rem;
 }
 
 
-.button--icon {
-  >svg {
-    width: 1rem         !important;
-    height: 1rem        !important;
-    fill: $bg-white   !important;
-    margin-right: .5rem !important;
-    position: relative  !important;
-    top: .125rem        !important;
-  }
+.button__icon {
+  width: 1rem         !important;
+  height: 1rem        !important;
+  fill: $bg-white   !important;
+  margin-right: .5rem !important;
+  position: relative  !important;
+  top: .125rem        !important;
 }
 
-.button--small.button--icon { 
-  >svg {
-    width: .875rem         !important;
-    height: .875rem        !important;
-    margin-right: .3125rem !important;
-    position: relative     !important;
-  }
+.button--small .button__icon { 
+  width: .875rem         !important;
+  height: .875rem        !important;
+  margin-right: .3125rem !important;
 }
 
-.button--secondary.button--icon { 
-  >svg        { fill: $bg-blue  !important; }
-  &:hover svg { fill: $bg-white !important; }
+.button--secondary .button__icon { 
+  fill: $bg-blue  !important;
+}
+
+.button--secondary:hover .button__icon {
+  fill: $bg-white !important;
 }

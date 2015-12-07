@@ -2,8 +2,7 @@
 // Button Groups
 // --------------------------------------------------
 
-.button-group,
-.button-group--small {
+.button-group {
   position: relative;
   display: inline-block;
   border: $border;
@@ -11,12 +10,12 @@
   text-decoration: none;
   color: $text-blue;
 
-  .button-group__radio {
+  input[type="radio"] {
     @include visuallyhidden;
   }
 }
 
-.button-group__item {
+.button-group label {
   display: inline-block;
   cursor: pointer;
   float: left;
@@ -34,13 +33,12 @@
   }
 }
 
-.button-group .button-group__radio:checked + .button-group__item,
-.button-group--small .button-group__radio:checked + .button-group__item {
+.button-group input[type="radio"]:checked + label {
   background-color: $bg-gray--lighter;
   color: $text-gray;
 }
 
-.button-group--small .button-group__item {
+.button-group--small label {
   padding: .375rem .625rem;
   height: $button-height-small;
   font-size: $text-5; 
