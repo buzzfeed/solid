@@ -29,7 +29,7 @@
 }
 
 .page-message--error {
-  background-color: $fill-red--lighter;
+  background-color: $bg-red--lighter;
   color: $text-red;
 
   .page-message__text,
@@ -44,7 +44,7 @@
 }
 
 .page-message--success {
-  background-color: $fill-green--lighter;
+  background-color: $bg-green--lighter;
   color: $text-green;
 
   .page-message__text, 
@@ -54,7 +54,7 @@
     &:before {
       background-image: svg-background($checkmark);
       background-size: .625rem;
-      background-color: $fill-green;
+      background-color: $bg-green;
       border-radius: 50%;
     }
   }
