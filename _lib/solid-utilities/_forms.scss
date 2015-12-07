@@ -152,19 +152,20 @@ $input-height-small: 2rem;
   font-size: $text-5   !important; 
 }
 
-.form-fieldset--warning {
+.form--warning {
   .form-feedback,
   .form-label {
     color: $text-orange !important;  
   }
 
   .text-input,
-  .select {
+  .select,
+  .textarea {
     border-color: $bg-orange !important; 
   }
 }
 
-.form-fieldset--success {
+.form--success {
   .form-feedback,
   .form-label {
     color: $text-green !important;  
@@ -187,19 +188,21 @@ $input-height-small: 2rem;
   }
 
   .text-input,
-  .select {
+  .select,
+  .textarea {
     border-color: $bg-green !important; 
   }
 }
 
-.form-fieldset--error {
+.form--error {
   .form-feedback,
   .form-label {
     color: $text-red !important;  
   }
 
   .text-input,
-  .select {
+  .select,
+  .textarea {
     border-color: $bg-red !important;
   }
 }
