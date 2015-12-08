@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   padding: $space-2;
+  z-index: $z4;
 }
 
 .modal__content {
@@ -22,22 +23,26 @@
 }
 
 .modal__close {
-  background-image: svg-background($close-icon);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 4rem;
   height: 4rem;
-  fill: $fill-gray--darker;
+
   padding: $space-1;
   float: right;
-  margin: -2rem -2rem 0 0;
-  opacity: .4;
+  margin: -1rem -3rem 0 0;
+
 
   &:hover {
-    opacity: 1;
     cursor: pointer;
   }
+}
+
+.modal__close-icon {
+  width: 1rem;
+  fill: $fill-gray--darker;
+
+    &:hover {
+      fill: $fill-blue;
+    }
 }
 
 
