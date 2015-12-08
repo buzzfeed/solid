@@ -1,6 +1,6 @@
 # solid
 
-Solid is a base style library. It will be used as the core styling for Buzzfeed products.
+Solid is a base style library. It will be used as the core styling for Buzzfeed products. For more details check out the [Solid Docs](http://solid.buzzfeed.com/).
 
 ## Including Solid in Your Project
 

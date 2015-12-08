@@ -9,10 +9,10 @@
 // Rounded Corners, Circles
 // -------------------------
 
-.rounded {        border-radius: 3px         !important; }
-.rounded-top {    border-radius: 3px 3px 0 0 !important; }
-.rounded-bottom { border-radius: 0 0 3px 3px !important; }
-.circle {         border-radius: 50%         !important; }
+.rounded {        border-radius: $border-radius                       !important; }
+.rounded-top {    border-radius: $border-radius $border-radius 0 0    !important; }
+.rounded-bottom { border-radius: 0 0 $border-radius $border-radius    !important; }
+.circle {         border-radius: 50%                                  !important; }
 
 // Borders
 // -------------------------
