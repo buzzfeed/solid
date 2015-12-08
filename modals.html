@@ -1,6 +1,6 @@
 ---
 layout: default
-title: modals
+title: Modals
 ---
 
 <section class="xs-mb6">
@@ -8,11 +8,16 @@ title: modals
   <a name="modals"></a>
   <h2 class="bold xs-mb2">Modals</h2>
 
-  <p class="xs-mb4">Modals are for fun.</p>
+  <p class="xs-mb2">Use the modal to display content in an overlay.</p>
+  <a class="button button--secondary trigger-modal js-trigger-modal" href="javascript:">Open modal</a>
 
-    <div class="modal">
-      <div class="modal__content xs-z4 xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
-        <a class="modal__close" href=""></a>
+
+      <!-- begin modal example-->
+      <div class="modal__content xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
+        <a class="modal__close" href="javascript:">
+          <svg viewBox="0 0 512 512" class="modal__close-icon" xmlns="http://www.w3.org/2000/svg">
+          <path d="M259.082 306.529l-189.82 189.82c-13.116 13.116-34.313 13.07-47.415-.032-13.075-13.075-13.116-34.33-.032-47.415l189.82-189.82-189.82-189.82c-13.116-13.116-13.07-34.313.032-47.415 13.075-13.075 34.33-13.116 47.415-.032l189.82 189.82 189.82-189.82c13.116-13.116 34.313-13.07 47.415.032 13.075 13.075 13.116 34.33.032 47.415l-189.82 189.82 189.82 189.82c13.116 13.116 13.07 34.313-.032 47.415-13.075 13.075-34.33 13.116-47.415.032l-189.82-189.82z"/></svg>
+        </a>
 
           <h2 class="text-2 bold">Modal title</h2>
           <p class="xs-mb2">This is my modal text. It's really good text, have you seen it?</p>
@@ -24,30 +29,63 @@ title: modals
             <input type="text" class="text-input xs-col-12">
           </form>
 
-          <div class="clearfix">
-            <button class="button button--primary xs-col-12 sm-col-4 md-col-3 xs-float-right xs-mb1 sm-mb0 sm-ml1">Save</button>
-            <button class="button button--secondary xs-col-12 sm-col-4 md-col-3 xs-float-left sm-float-right">Cancel</button>
+          <div class="clearfix xs-text-right">
+            <button class="button button--secondary xs-block xs-col-12 sm-inline-block sm-width-auto xs-mb1 sm-mb0">Cancel</button>
+            <button class="button button--primary xs-block xs-col-12 sm-inline-block sm-width-auto">Save</button>
+          </div>
+      </div>
+      <!-- end modal example-->
+
+    <!-- begin full screen modal-->
+    <div class="modal">
+      <div class="modal__content xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
+        <a class="modal__close js-hide-modal" href="javascript:">
+          <svg viewBox="0 0 512 512" class="modal__close-icon" xmlns="http://www.w3.org/2000/svg">
+          <path d="M259.082 306.529l-189.82 189.82c-13.116 13.116-34.313 13.07-47.415-.032-13.075-13.075-13.116-34.33-.032-47.415l189.82-189.82-189.82-189.82c-13.116-13.116-13.07-34.313.032-47.415 13.075-13.075 34.33-13.116 47.415-.032l189.82 189.82 189.82-189.82c13.116-13.116 34.313-13.07 47.415.032 13.075 13.075 13.116 34.33.032 47.415l-189.82 189.82 189.82 189.82c13.116 13.116 13.07 34.313-.032 47.415-13.075 13.075-34.33 13.116-47.415.032l-189.82-189.82z"/></svg>
+        </a>
+
+          <h2 class="text-2 bold">Modal title</h2>
+          <p class="xs-mb2">This is my modal text. It's really good text, have you seen it?</p>
+
+          <form class="xs-mb4">
+            <label class="form-label">Form 1</label>
+            <input type="text" class="text-input xs-col-12 xs-mb2">
+            <label class="form-label">Form 2</label>
+            <input type="text" class="text-input xs-col-12">
+          </form>
+
+          <div class="clearfix xs-text-right">
+            <button class="button button--secondary xs-block xs-col-12 sm-inline-block sm-width-auto xs-mb1 sm-mb0">Cancel</button>
+            <button class="button button--primary xs-block xs-col-12 sm-inline-block sm-width-auto">Save</button>
           </div>
       </div>
     </div>
+    <!-- end full screen modal-->
+
 
 
 <div class="xs-mt2">
 {% highlight html %}
 <div class="modal">
-  <div class="modal__content xs-z4 xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
-    <a class="modal__close" href=""></a>
+  <div class="modal__content xs-mt0 sm-mt6 xs-col-12 sm-col-9 md-col-7 lg-col-5 clearfix">
+    <a class="modal__close" href="javascript:">
+      <svg viewBox="0 0 512 512" class="modal__close-icon" xmlns="http://www.w3.org/2000/svg">
+      <path d="M259.082 306.529l-189.82 189.82c-13.116 13.116-34.313 13.07-47.415-.032-13.075-13.075-13.116-34.33-.032-47.415l189.82-189.82-189.82-189.82c-13.116-13.116-13.07-34.313.032-47.415 13.075-13.075 34.33-13.116 47.415-.032l189.82 189.82 189.82-189.82c13.116-13.116 34.313-13.07 47.415.032 13.075 13.075 13.116 34.33.032 47.415l-189.82 189.82 189.82 189.82c13.116 13.116 13.07 34.313-.032 47.415-13.075 13.075-34.33 13.116-47.415.032l-189.82-189.82z"/></svg>
+    </a>
+
       <h2 class="text-2 bold">Modal title</h2>
       <p class="xs-mb2">This is my modal text. It's really good text, have you seen it?</p>
+
       <form class="xs-mb4">
         <label class="form-label">Form 1</label>
         <input type="text" class="text-input xs-col-12 xs-mb2">
         <label class="form-label">Form 2</label>
         <input type="text" class="text-input xs-col-12">
       </form>
-      <div class="clearfix">
-        <button class="button button--primary xs-col-12 sm-col-4 md-col-3 xs-float-right xs-mb1 sm-mb0 sm-ml1">Save</button>
-        <button class="button button--secondary xs-col-12 sm-col-4 md-col-3 xs-float-left sm-float-right">Cancel</button>
+
+      <div class="clearfix xs-text-right">
+        <button class="button button--secondary xs-block xs-col-12 sm-inline-block sm-width-auto xs-mb1 sm-mb0">Cancel</button>
+        <button class="button button--primary xs-block xs-col-12 sm-inline-block sm-width-auto">Save</button>
       </div>
   </div>
 </div>

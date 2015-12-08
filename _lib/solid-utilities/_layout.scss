@@ -27,6 +27,7 @@
 
   &fit         { max-width: 100% !important; }
   &full-height { height: 100%    !important; }
+  &width-auto { width: auto      !important; }
 
 }
 
@@ -163,10 +164,10 @@
   &fixed    { position: fixed    !important; }
   &static   { position: static   !important; }
 
-  &z1 { z-index: 100 !important; }
-  &z2 { z-index: 200 !important; }
-  &z3 { z-index: 300 !important; }
-  &z4 { z-index: 400 !important; }
+  &z1 { z-index: $z1 !important; }
+  &z2 { z-index: $z2 !important; }
+  &z3 { z-index: $z3 !important; }
+  &z4 { z-index: $z4 !important; }
 
   &t0 { top:    0 !important; }
   &r0 { right:  0 !important; }
