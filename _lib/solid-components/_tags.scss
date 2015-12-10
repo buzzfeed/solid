@@ -9,9 +9,16 @@
   display: inline-block;
 }
 
+.tag--small {
+  font-size: $text-5;
+}
+
 .tag__delete, .tag__text, .tag__link {
   float: left;
-  padding: .2rem $space-1;
+}
+
+.tag__text, .tag__link {
+  padding: .25rem .5rem;
 }
 
 .tag__delete, .tag__link {
@@ -24,6 +31,7 @@
 .tag__delete {
   border-right: $border;
   cursor: pointer;
+  padding: .25rem;
 
   &:before {
     content:"";
@@ -34,31 +42,9 @@
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: svg-background($close-icon-thick);
-    background-size: .75rem;
+    background-image: svg-background($close-icon--light);
+    background-size: .65rem;
   }
 }
-
-
-
-
-
-
-// .tag--deletable {
-
-//   &:hover {
-
-//   }
-
-// }
-
-// .tag--clickable {
-
-//   &:hover {
-
-//   }
-
-// }
-
 
 
