@@ -116,7 +116,7 @@ $input-height-small: 2rem;
 // labels, etc
 // -------------------------
 
-.form-label {
+.label {
   display: block          !important;
   font-weight: $bold      !important;
   margin-bottom: $space-1 !important;
@@ -124,50 +124,39 @@ $input-height-small: 2rem;
 
 // form label small has less margin bottom than default size form labels 
 // in order for the entire unit to scale down proportionately 
-.form-label--small {
+.label--small {
   font-size: $text-5    !important;
   margin-bottom: .25rem !important;
 }
 
-.form-label--optional {
+.label__optional {
   color: $text-gray--lightest !important;
   font-weight: $regular       !important;
 }
 
-.form-label--required {
+.label__required {
   color: $text-red      !important;
   font-weight: $regular !important;
 }
 
-.form-helper {
+.helper-text {
   color: $text-gray--lightest !important;
   display: block              !important;
   margin-top: $space-1        !important;
   font-size: $text-5          !important; 
 }
 
-.form-feedback {
+// success, warning, error feedback
+
+.feedback-text {
   display: block       !important;
   margin-top: $space-1 !important; 
   font-size: $text-5   !important; 
 }
 
-.form--warning {
-  .form-feedback,
-  .form-label {
-    color: $text-orange !important;  
-  }
-
-  .text-input,
-  .select,
-  .textarea {
-    border-color: $bg-orange !important; 
-  }
-}
-
-.form--success {
-  .form-feedback,
-  .form-label {
+.form-group-success {
+  .label,
+  .feedback-text {
     color: $text-green !important;  
   }
 
@@ -194,9 +183,22 @@ $input-height-small: 2rem;
   }
 }
 
-.form--error {
-  .form-feedback,
-  .form-label {
+.form-group-warning {
+  .label,
+  .feedback-text {
+    color: $text-orange !important;  
+  }
+
+  .text-input,
+  .select,
+  .textarea {
+    border-color: $bg-orange !important; 
+  }
+}
+
+.form-group-error {
+  .label,
+  .feedback-text {
     color: $text-red !important;  
   }
 

@@ -5,21 +5,21 @@ title: Forms
 
 <section class="xs-mb6">
 
-  <a name="form-labels"></a>
+  <a name="labels"></a>
   <h2 class="xs-mb2 bold">Form Labels</h2>
 
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">form-label</code></span> class to get default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case. Additionally, use the <span class="nowrap">.<code class="js-highlight">form-label--required</code></span> class around an asterisk to declare a field required. If a field needs to be marked as optional, wrap "(optional)" in <span class="nowrap">.<code class="js-highlight">form-label--optional</code></span>.</p>
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">label</code></span> class to get default margins, layout and styling for form labels. BuzzFeed labels are always written in sentence case. Additionally, use the <span class="nowrap">.<code class="js-highlight">label__required</code></span> class around an asterisk to declare a field required. If a field needs to be marked as optional, wrap "(optional)" in <span class="nowrap">.<code class="js-highlight">label__optional</code></span>.</p>
 
   <form class="xs-mb4">
-    <label class="form-label">Add your website</label>
-    <label class="form-label">Add your website <span class="form-label--required">*</span></label>
-    <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
+    <label class="label">Add your website</label>
+    <label class="label">Add your website <span class="label__required">*</span></label>
+    <label class="label">What is your phone number? <span class="label__optional">(optional)</span></label>
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label">Add your website</label>
-  <label class="form-label">Add your website <span class="form-label--required">*</span></label>
-  <label class="form-label">What is your phone number? <span class="form-label--optional">(optional)</span></label>
+  <label class="label">Add your website</label>
+  <label class="label">Add your website <span class="label__required">*</span></label>
+  <label class="label">What is your phone number? <span class="label__optional">(optional)</span></label>
 </form>{% endhighlight %}
 
 </section>
@@ -32,12 +32,12 @@ title: Forms
   <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">text-input</code></span> class to get default styling for text inputs. BuzzFeed text inputs are always paired with a label to give users context. Placeholder text is used for additional context when necessary.</p>
 
   <form class="xs-mb4">
-    <label class="form-label">Add your website</label>
+    <label class="label">Add your website</label>
     <input type="text" class="text-input" placeholder="www.example.com">
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label">Add your website</label>
+  <label class="label">Add your website</label>
   <input type="text" class="text-input" placeholder="www.example.com">
 </form>{% endhighlight %}
 
@@ -48,18 +48,18 @@ title: Forms
   <a name="helper-text"></a>
   <h2 class="xs-mb2 bold">Helper Text</h2>
 
-  <p class="xs-mb4">When necessary, place additional helper text beneath inputs in a <code class="js-highlight">label</code> with a <span class="nowrap">.<code class="js-highlight">form-helper</code></span> class.</p>
+  <p class="xs-mb4">When necessary, place additional helper text beneath inputs in a <code class="js-highlight">label</code> with a <span class="nowrap">.<code class="js-highlight">helper-text</code></span> class.</p>
 
   <form class="xs-mb4">
-    <label class="form-label">Add your website</label>
+    <label class="label">Add your website</label>
     <input type="text" class="text-input" placeholder="www.example.com">
-    <label class="form-helper">You don't need to include http://</label>
+    <label class="helper-text">You don't need to include http://</label>
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label">Add your website</label>
+  <label class="label">Add your website</label>
   <input type="text" class="text-input" placeholder="www.example.com">
-  <label class="form-helper">You don't need to include http://</label>
+  <label class="helper-text">You don't need to include http://</label>
 </form>{% endhighlight %}
 
 </section>
@@ -72,12 +72,12 @@ title: Forms
   <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">textarea</code></span> class to get default styling for textareas. When choosing a type size and width for textareas, Solid suggests aiming for a measure of 52-78 characters.</p>
 
   <form class="xs-mb4">
-    <label class="form-label">Add a comment</label>
+    <label class="label">Add a comment</label>
     <textarea class="textarea"></textarea>
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label">Add a Comment</label>
+  <label class="label">Add a Comment</label>
   <textarea class="textarea"></textarea>
 </form>{% endhighlight %}
 
@@ -158,17 +158,17 @@ title: Forms
 
 <section class="xs-mb6">
 
-  <a name="small-form-labels"></a>
+  <a name="small-labels"></a>
   <h2 class="xs-mb2 bold">Small Form Labels</h2>
 
-  <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">form-label--small</code></span> class to get a smaller version of Solid's form labels.</p>
+  <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">label--small</code></span> class to get a smaller version of Solid's form labels.</p>
 
   <form class="xs-mb4">
-    <label class="form-label form-label--small">Add your website</label>
+    <label class="label label--small">Add your website</label>
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label form-label--small">Add your website</label>
+  <label class="label label--small">Add your website</label>
 </form>{% endhighlight %}
 
 </section>
@@ -181,12 +181,12 @@ title: Forms
   <p class="xs-mb4">Append the <span class="nowrap">.<code class="js-highlight">text-input--small</code></span> class to get a smaller version of Solid's text inputs.</p>
 
   <form class="xs-mb4">
-    <label class="form-label form-label--small">Add your website</label>
+    <label class="label label--small">Add your website</label>
     <input type="text" class="text-input text-input--small" placeholder="www.example.com">
   </form>
 
   {% highlight html %}<form>
-  <label class="form-label form-label--small">Choose a username</label>
+  <label class="label label--small">Choose a username</label>
   <input type="text" class="text-input text-input--small" placeholder="www.example.com">
 </form>{% endhighlight %}
 
@@ -224,21 +224,21 @@ title: Forms
   <a name="form-warnings"></a>
   <h2 class="xs-mb2 bold">Form Warnings</h2>
 
-  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--warning</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form-group-warning</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">feedback-text</code></span> class to inform the user what needs to be adjusted.</p>
 
   <form class="xs-mb4">
-    <fieldset class="form--warning">
-      <label class="form-label">Your name</label>
+    <fieldset class="form-group-warning">
+      <label class="label">Your name</label>
       <input type="text" class="text-input">
-      <p class="form-feedback">Caps lock is on!</p>
+      <p class="feedback-text">Caps lock is on!</p>
     </fieldset>
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="form--warning">
-    <label class="form-label">Your name</label>
+  <fieldset class="form-group-warning">
+    <label class="label">Your name</label>
     <input type="text" class="text-input">
-    <p class="form-feedback">Caps lock is on!</p>
+    <p class="feedback-text">Caps lock is on!</p>
   </fieldset>
 </form>{% endhighlight %}
 
@@ -249,21 +249,21 @@ title: Forms
   <a name="form-errors"></a>
   <h2 class="xs-mb2 bold">Form Errors</h2>
 
-  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--error</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user what needs to be adjusted.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form-group-error</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">feedback-text</code></span> class to inform the user what needs to be adjusted.</p>
 
   <form class="xs-mb4">
-    <fieldset class="form--error">
-      <label class="form-label">Your name</label>
+    <fieldset class="form-group-error">
+      <label class="label">Your name</label>
       <input type="text" class="text-input">
-      <p class="form-feedback">Your name can't be Wolverine.</p>
+      <p class="feedback-text">Your name can't be Wolverine.</p>
     </fieldset>
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="form--error">
-    <label class="form-label">Your name</label>
+  <fieldset class="form-group-error">
+    <label class="label">Your name</label>
     <input type="text" class="text-input">
-    <p class="form-feedback">Your name can't be Wolverine</p>
+    <p class="feedback-text">Your name can't be Wolverine</p>
   </fieldset>
 </form>{% endhighlight %}
 
@@ -274,21 +274,21 @@ title: Forms
   <a name="form-success"></a>
   <h2 class="xs-mb2 bold">Form Success</h2>
 
-  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form--success</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">form-feedback</code></span> class to inform the user that their entry is successful.</p>
+  <p class="xs-mb4">Wrap each <code class="js-highlight">label</code></span> and form field in a parent element, then add a <span class="nowrap">.<code class="js-highlight">form-group-success</code></span> class. Additionally, add a <code class="js-highlight">p</code> below the input with a <span class="nowrap">.<code class="js-highlight">feedback-text</code></span> class to inform the user that their entry is successful.</p>
 
   <form class="xs-mb4">
-    <fieldset class="form--success">
-      <label class="form-label">Your name</label>
+    <fieldset class="form-group-success">
+      <label class="label">Your name</label>
       <input type="text" class="text-input">
-      <span class="form-feedback">Boom. Looks good!</span>
+      <span class="feedback-text">Boom. Looks good!</span>
     </fieldset>
   </form>
 
   {% highlight html %}<form>
-  <fieldset class="form--success">
-    <label class="form-label">Your name</label>
+  <fieldset class="form-group-success">
+    <label class="label">Your name</label>
     <input type="text" class="text-input">
-    <span class="form-feedback">Boom. Looks good!</span>
+    <span class="feedback-text">Boom. Looks good!</span>
   </fieldset>
 </form>{% endhighlight %}
 
