@@ -37,7 +37,10 @@
 $button-height: 2.625rem;
 $button-height-small: 2rem;
 
-.button {
+.button,
+.button-primary,
+.button-secondary,
+.button-negative {
   @include button-reset;
   font-family: inherit          !important;
   height: $button-height        !important;
@@ -54,7 +57,7 @@ $button-height-small: 2rem;
   &:hover { transition: background-color .15s ease 0s !important; }
 }
 
-.button--primary {
+.button-primary {
   background-color: $bg-blue !important;
   color: $text-white           !important;
 
@@ -67,7 +70,7 @@ $button-height-small: 2rem;
   &:not(.button--disabled):active { background-color: darken($bg-blue, 35%) !important; }
 }
 
-.button--secondary {
+.button-secondary {
   border: 1px solid $bg-blue !important;
   color: $text-blue            !important;
   background: none             !important;
@@ -81,7 +84,7 @@ $button-height-small: 2rem;
   &:not(.button--disabled):active { background-color: darken($bg-blue, 20%) !important; }
 }
 
-.button--negative {
+.button-negative {
   background-color: $bg-red !important;
   color: $text-white          !important; 
 
@@ -125,10 +128,10 @@ $button-height-small: 2rem;
   margin-right: .3125rem !important;
 }
 
-.button--secondary .button__icon { 
+.button-secondary .button__icon { 
   fill: $bg-blue  !important;
 }
 
-.button--secondary:hover .button__icon {
+.button-secondary:hover .button__icon {
   fill: $bg-white !important;
 }
