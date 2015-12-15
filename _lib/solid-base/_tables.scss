@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 table {
+  @include tabular-figures;
   border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
