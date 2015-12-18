@@ -2,6 +2,7 @@
 // Modals
 // --------------------------------------------------
 
+
 .modal {
   background: rgba(255,255,255,.9);
   position: fixed;
@@ -46,6 +47,77 @@
 }
 
 
+// Modal animation - fade in
+// https://github.com/daneden/animate.css
+
+.modal--animation {
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
 
 
+// Modal content animation - zoom in
+// https://github.com/daneden/animate.css
 
+.modal__content--animation {
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.6, .6, .6);
+    transform: scale3d(.6, .6, .6);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.6, .6, .6);
+    transform: scale3d(.6, .6, .6);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
