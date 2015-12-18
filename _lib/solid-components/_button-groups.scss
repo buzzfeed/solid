@@ -20,9 +20,8 @@
   display: inline-block;
   cursor: pointer;
   float: left;
-  padding: .625rem .875rem;
+  padding: .5rem .875rem;
   border-right: $border;
-  height: $button-height;
 
   &:hover {
     transition: background-color .3s ease 0s;
@@ -41,7 +40,7 @@
 }
 
 .button-group--small .button-group__item {
-  padding: .375rem .625rem;
-  height: $button-height-small;
-  font-size: $text-5; 
+  padding: .25rem .625rem;
+  font-size: $text-5;
+  line-height: $line-height-5;
 }
