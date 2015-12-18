@@ -69,14 +69,14 @@ $input-height-small: 2rem;
 
 .textarea {
   min-height: $input-height * 2.25 !important;
-  padding: .5rem .75rem         !important;
+  padding: .5rem .75rem            !important;
 }
 
 .textarea--small {
   min-height: $input-height-small * 2.25 !important;
-  padding: .25rem .625rem       !important;
-  font-size: $text-5            !important;
-  line-height: $line-height-5   !important;
+  padding: .25rem .625rem                !important;
+  font-size: $text-5                     !important;
+  line-height: $line-height-5            !important;
 }
 
 // hide system radio button in order to use custom style
