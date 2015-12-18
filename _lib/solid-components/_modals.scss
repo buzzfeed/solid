@@ -4,7 +4,7 @@
 
 
 .modal {
-  background: rgba(255,255,255,.9);
+  background: rgba(255, 255, 255, .9);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -41,9 +41,9 @@
   width: 1rem;
   fill: $fill-gray;
 
-    &:hover {
-      fill: $fill-blue;
-    }
+  &:hover {
+    fill: $fill-blue;
+  }
 }
 
 
@@ -51,23 +51,11 @@
 // https://github.com/daneden/animate.css
 
 .modal--animation {
-  -webkit-animation-duration: .15s;
-  animation-duration: .15s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  @include prefix((animation-duration: .15s), webkit);
+  @include prefix((animation-fill-mode: both), webkit);
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
+@include keyframes(fadeIn) {
   from {
     opacity: 0;
   }
@@ -78,8 +66,7 @@
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  @include prefix((animation-name: fadeIn), webkit);
 }
 
 
@@ -87,29 +74,14 @@
 // https://github.com/daneden/animate.css
 
 .modal__content--animation {
-  -webkit-animation-duration: .25s;
-  animation-duration: .25s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  @include prefix((animation-duration: .25s), webkit);
+  @include prefix((animation-fill-mode: both), webkit);
 }
 
-@-webkit-keyframes zoomIn {
+@include keyframes(zoomIn) {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(.6, .6, .6);
-    transform: scale3d(.6, .6, .6);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(.6, .6, .6);
-    transform: scale3d(.6, .6, .6);
+    @include prefix((transform: scale3d(.6, .6, .6)), webkit);
   }
 
   50% {
@@ -118,6 +90,5 @@
 }
 
 .zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
+  @include prefix((animation-name: zoomIn), webkit);
 }
