@@ -51,7 +51,7 @@
 // https://github.com/daneden/animate.css
 
 .modal--animation {
-  @include prefix((animation-duration: .15s), webkit);
+  @include prefix((animation-duration: .05s), webkit);
   @include prefix((animation-fill-mode: both), webkit);
 }
 
@@ -74,7 +74,7 @@
 // https://github.com/daneden/animate.css
 
 .modal__content--animation {
-  @include prefix((animation-duration: .25s), webkit);
+  @include prefix((animation-duration: .15s), webkit);
   @include prefix((animation-fill-mode: both), webkit);
 }
 
