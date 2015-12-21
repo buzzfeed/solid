@@ -12,9 +12,15 @@
   left: 0;
   padding: $space-2;
   z-index: $z4;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s;
 }
 
+
 .modal__content {
+  @include prefix((animation-duration: .15s), webkit);
+  @include prefix((animation-fill-mode: both), webkit);
   background: $fill-white;
   border: $border;
   border-radius: 3px;
@@ -22,6 +28,7 @@
   position: relative;
   padding: $space-4;
 }
+
 
 .modal__close {
   width: 3rem;
@@ -37,6 +44,7 @@
   }
 }
 
+
 .modal__close-icon {
   width: 1rem;
   fill: $fill-gray;
@@ -47,38 +55,23 @@
 }
 
 
-// Modal animation - fade in
-// https://github.com/daneden/animate.css
+// Add this class to the body element to show the modal
+.js-show-modal {
+  overflow: hidden;
 
-.modal--animation {
-  @include prefix((animation-duration: .05s), webkit);
-  @include prefix((animation-fill-mode: both), webkit);
-}
-
-@include keyframes(fadeIn) {
-  from {
-    opacity: 0;
-  }
-
-  to {
+  .modal {
+    visibility: visible;
     opacity: 1;
   }
+
+  .modal__content {
+    @include prefix((animation-name: modal__content-scale), webkit);
+  }
 }
 
-.fadeIn {
-  @include prefix((animation-name: fadeIn), webkit);
-}
 
-
-// Modal content animation - zoom in
-// https://github.com/daneden/animate.css
-
-.modal__content--animation {
-  @include prefix((animation-duration: .15s), webkit);
-  @include prefix((animation-fill-mode: both), webkit);
-}
-
-@include keyframes(zoomIn) {
+// Keyframe animation for modal content
+@include keyframes(modal__content-scale) {
   from {
     opacity: 0;
     @include prefix((transform: scale3d(.6, .6, .6)), webkit);
@@ -87,8 +80,4 @@
   50% {
     opacity: 1;
   }
-}
-
-.zoomIn {
-  @include prefix((animation-name: zoomIn), webkit);
 }

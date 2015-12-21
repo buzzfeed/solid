@@ -192,16 +192,3 @@ pre {
 
   > * { font-size: $base-font-size; }
 }
-
-.modal {
-  display: none;
-}
-
-// Show modal
-.js-show-modal {
-  overflow: hidden;
-
-  .modal {
-    display: block;
-  }
-}
