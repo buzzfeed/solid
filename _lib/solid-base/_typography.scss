@@ -85,4 +85,5 @@ i {
 ol,
 ul {
   padding-left: $space-4;
+  @include tabular-figures
 }
