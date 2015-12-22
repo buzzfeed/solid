@@ -39,7 +39,7 @@
 .button--small {
   @include button-reset;
   font-family: inherit          !important;
-  padding: .5rem .875rem        !important;
+  padding: $space-1 .875rem     !important;
   font-size: $text-4            !important;
   line-height: $line-height-4   !important;
   border-radius: $border-radius !important;
@@ -102,9 +102,9 @@
 }
 
 .button--small {
-  padding: .25rem .625rem      !important;
-  font-size: $text-5           !important;
-  line-height: $line-height-5  !important;
+  padding: 0.3125rem .625rem  !important;
+  font-size: $text-5          !important;
+  line-height: $line-height-5 !important;
 }
 
 
