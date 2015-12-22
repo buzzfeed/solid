@@ -301,3 +301,57 @@ title: Layout
 </div>{% endhighlight %}
 
 </section>
+
+<!--Vertical Alignment-->
+
+<section class="xs-mb6">
+
+  <a name="vertical-alignment"></a>
+  <h2 class="xs-mb2 bold">Vertical Alignment</h2>
+  <p class="xs-mb4">Vertically align elements with the responsive <span class="nowrap">.<code class="js-highlight">xs-vertical-align-top</code></span>, <span class="nowrap">.<code class="js-highlight">xs-vertical-align-middle</code></span> or <span class="nowrap">.<code class="js-highlight">xs-vertical-align-bottom</code></span>. Keep in mind that these classes additionally require <code class="js-highlight">.td</code> or <code class="js-highlight">.th</code> to set their display to table-cell and vertically align content within a faux table layout. The vertical align classes can also be applied to <code class="js-highlight">td</code> or <code class="js-highlight">th</code> elements themselves for identical behavior within tables. Alternatively, when using vertical-align classes in combination with <code class="js-highlight">.xs-inline</code> or <code class="js-highlight">.xs-inline-block</code>, the element will be aligned within its established line height only.</p>
+  
+  <div class="xs-mb4">
+    <table class="table-border xs-mb4">
+      <tr>
+        <td class="xs-col-3">This example demonstrates how vertical align classes work in a table or faux-table environment</td>
+        <td class="xs-col-3 xs-vertical-align-bottom">.xs-vertical-align-bottom</td>
+        <td class="xs-col-3 xs-vertical-align-top">.xs-vertical-align-top</td>
+        <td class="xs-col-3 xs-vertical-align-middle">.xs-vertical-align-middle</td>
+      </tr>
+    </table>
+
+{% highlight html %}<table class="table-border">
+  <tr>
+    <td class="xs-col-3">This example demonstrates how vertical align classes work in a table or faux-table environment</td>
+    <td class="xs-col-3 xs-vertical-align-bottom">.xs-vertical-align-bottom</td>
+    <td class="xs-col-3 xs-vertical-align-top">.xs-vertical-align-top</td>
+    <td class="xs-col-3 xs-vertical-align-middle">.xs-vertical-align-middle</td>
+  </tr>
+</table>{% endhighlight %}
+  </div>
+
+  <div class="xs-mb4">
+
+    <div class="row xs-mb2 xs-border">
+      <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-bottom" />This image uses .xs-vertical-align-bottom
+    </div>
+    <div class="row xs-mb2 xs-border">
+      <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-middle" />This image uses .xs-vertical-align-middle
+    </div>
+    <div class="row xs-mb4 xs-border">
+       <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-top" />This image uses xs-vertical-align-top
+    </div>
+
+    {% highlight html %}<div class="row xs-mb2 xs-border">
+  <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-bottom" />This image uses .xs-vertical-align-bottom
+</div>
+<div class="row xs-mb2 xs-border">
+  <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-middle" />This image uses .xs-vertical-align-middle
+</div>
+<div class="row xs-mb2 xs-border">
+  <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-vertical-align-top" />This image uses xs-vertical-align-top
+</div>{% endhighlight %}
+
+  </div>
+
+</section>
