@@ -118,67 +118,6 @@ Reset timer
 </section>
 
 <section class="xs-mb6">
-  <a name="small-buttons"></a>
-  <h2 class="bold xs-mb2">Small Buttons</h2>
-
-  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button--small</code></span> class for smaller versions of all Solid's button types.</p>
-
-  <div class="xs-mb4">
-    <a class="button--small button--primary" href="#">Link</a>
-    <button class="button--small button--primary">Button</button>
-    <a class="button--small button--secondary" href="#">Link</a>
-    <button class="button--small button--secondary">Button</button>
-    <button class="button--small button--negative">Delete</button>
-  </div>
-  {% highlight html %}<a class="button--small button--primary" href="">Link</a>{% endhighlight %}
-  {% highlight html %}<button class="button--small button--primary">Button</button>{% endhighlight %}
-  {% highlight html %}<a class="button--small button--secondary" href="">Link</a>{% endhighlight %}
-  {% highlight html %}<button class="button--small button--secondary">Button</button>{% endhighlight %}
-  {% highlight html %}<button class="button--small button--negative">Delete</button>{% endhighlight %}
-</section>
-
-
-<section class="xs-mb6">
-  <a name="small-button-icon"></a>
-  <h2 class="bold xs-mb2">Small Buttons with Icon</h2>
-  <p class="xs-mb4">Combine <span class="nowrap">.<code class="js-highlight">button--primary</code></span> or <span class="nowrap">.<code class="js-highlight">button--secondary</code></span> with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon.</p>
-  <div class="xs-mb4">
-    <a class="button--small button--icon button--primary" href="#">
-      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
-      </svg>
-      Reset timer
-    </a>
-
-     <a class="button--small button--icon button--secondary" href="#">
-      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
-      </svg>
-      Reset timer
-    </a>
-
-  </div>
-
-{% highlight html %}
-<a class="button--small button--icon button--primary" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
-   </svg>
-   Reset timer
-</a>
-{% endhighlight %}
-
-{% highlight html %}
-<a class="button--small button--icon button--secondary" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
-  </svg>
-  Reset timer
-</a>
-{% endhighlight %}
-</section>
-
-<section class="xs-mb6">
   <a name="social-buttons"></a>
   <h2 class="bold xs-mb2">Social Buttons</h2>
   <p class="xs-mb4">Combine <span class="nowrap">.<code class="js-highlight">button</code></span> with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon. Use <span class="nowrap">.<code class="js-highlight">button-socialnetworkname</code></span> to assign the fill color. </p>
@@ -309,6 +248,67 @@ Reset timer
     <path d="M444.719 424.385c0 10.802-8.578 19.38-19.38 19.38h-339.63c-10.802 0-19.38-8.578-19.38-19.38v-205.875h44.797c-4.13 13.026-6.354 27.323-6.354 41.62 0 81.333 67.99 147.099 151.547 147.099 83.875 0 151.865-65.766 151.865-147.099 0-14.297-2.224-28.594-6.354-41.62h42.891v205.875zm-90.229-169.339c0 52.422-43.844 94.995-98.172 94.995-54.01 0-97.854-42.573-97.854-94.995 0-52.422 43.844-94.995 97.854-94.995 54.328 0 98.172 42.573 98.172 94.995zm90.229-114.375c0 12.073-9.849 21.922-21.922 21.922h-55.281c-12.073 0-21.922-9.849-21.922-21.922v-52.422c0-12.073 9.849-21.922 21.922-21.922h55.281c12.073 0 21.922 9.849 21.922 21.922v52.422zm55.281-66.083c0-34.312-28.276-62.589-62.589-62.589h-362.823c-34.313 0-62.589 28.276-62.589 62.589v362.823c0 34.313 28.276 62.589 62.589 62.589h362.823c34.313 0 62.589-28.276 62.589-62.589v-362.823z"/>
   </svg>
   Follow
+</a>
+{% endhighlight %}
+</section><!-- social buttons -->
+
+<section class="xs-mb6">
+  <a name="small-buttons"></a>
+  <h2 class="bold xs-mb2">Small Buttons</h2>
+
+  <p class="xs-mb4">Use the <span class="nowrap">.<code class="js-highlight">button--small</code></span> class for smaller versions of all Solid's button types.</p>
+
+  <div class="xs-mb4">
+    <a class="button--small button--primary" href="#">Link</a>
+    <button class="button--small button--primary">Button</button>
+    <a class="button--small button--secondary" href="#">Link</a>
+    <button class="button--small button--secondary">Button</button>
+    <button class="button--small button--negative">Delete</button>
+  </div>
+  {% highlight html %}<a class="button--small button--primary" href="">Link</a>{% endhighlight %}
+  {% highlight html %}<button class="button--small button--primary">Button</button>{% endhighlight %}
+  {% highlight html %}<a class="button--small button--secondary" href="">Link</a>{% endhighlight %}
+  {% highlight html %}<button class="button--small button--secondary">Button</button>{% endhighlight %}
+  {% highlight html %}<button class="button--small button--negative">Delete</button>{% endhighlight %}
+</section>
+
+
+<section class="xs-mb6">
+  <a name="small-button-icon"></a>
+  <h2 class="bold xs-mb2">Small Buttons with Icon</h2>
+  <p class="xs-mb4">Combine <span class="nowrap">.<code class="js-highlight">button--primary</code></span> or <span class="nowrap">.<code class="js-highlight">button--secondary</code></span> with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon.</p>
+  <div class="xs-mb4">
+    <a class="button--small button--icon button--primary" href="#">
+      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
+      </svg>
+      Reset timer
+    </a>
+
+     <a class="button--small button--icon button--secondary" href="#">
+      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
+      </svg>
+      Reset timer
+    </a>
+
+  </div>
+
+{% highlight html %}
+<a class="button--small button--icon button--primary" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
+   </svg>
+   Reset timer
+</a>
+{% endhighlight %}
+
+{% highlight html %}
+<a class="button--small button--icon button--secondary" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
+  </svg>
+  Reset timer
 </a>
 {% endhighlight %}
 </section>
@@ -447,4 +447,4 @@ Reset timer
     Follow
 </a>
 {% endhighlight %}
-</section>
+</section><!-- small social buttons -->
