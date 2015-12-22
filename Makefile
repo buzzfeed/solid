@@ -20,7 +20,7 @@ ruby_gems:
 	bundle install --path=$(BUNDLE_PATH) --clean $(BUNDLE_ARGS)
 
 # deploy site to s3 bucket
-deploy: build s3
+deploy: build_deploy s3
 
 # clean out generated files
 clean:
