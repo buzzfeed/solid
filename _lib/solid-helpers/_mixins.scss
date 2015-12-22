@@ -32,17 +32,17 @@ $breakpoints: (
 // nest content inside breakpoint prefix classes
 // in the apropriate media query block
 @mixin generate-breakpoint-prefixes {
- @each $breakpoint-name, $breakpoint-value in $breakpoints {
-   $breakpoint-prefix: "#{$breakpoint-name}-";
-   
-   @include media-query($breakpoint-name) {
-     
-     // Columns
-     .#{$breakpoint-prefix} {
-       @content;
-     }
-   }
- }
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    $breakpoint-prefix: "#{$breakpoint-name}-";
+
+    @include media-query($breakpoint-name) {
+      
+      // Columns
+      .#{$breakpoint-prefix} {
+        @content;
+      }
+    }
+  }
 }
 
 // hide from humans not screen readers
@@ -82,5 +82,20 @@ $breakpoints: (
     // Dump regular property anyway
     #{$prop}: #{$value};
 
+  }
+}
+
+// Keyframes
+// -------------------------
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
   }
 }
