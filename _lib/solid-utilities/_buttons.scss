@@ -137,9 +137,6 @@ $button-height-small: 2rem;
   &:hover svg { fill: $fill-white !important; }
 }
 
-// All social buttons have similar styles use this to generate their style
-// Social buttons are deprecated and will be removed in Solid 1.3.0
-
 @mixin social-button($color) {
   background-color: $color !important;
   color: $text-white       !important;
