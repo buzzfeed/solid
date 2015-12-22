@@ -7,6 +7,7 @@
 
 # ignore generated site
 _site/
+_deploy/
 
 # ignore compiled dist files
 dist/
