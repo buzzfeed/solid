@@ -33,7 +33,6 @@
 .modal__close {
   width: 3rem;
   height: 3rem;
-
   padding: $space-2;
   float: right;
   margin: -2rem -2rem 0 0;
@@ -70,7 +69,7 @@
 }
 
 
-// Keyframe animation for modal content
+// Scale up animation for modal content
 @include keyframes(modal__content-scale) {
   from {
     opacity: 0;
