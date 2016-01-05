@@ -204,6 +204,15 @@
   &l6 { left:   $space-6 !important; }
 }
 
+// Vertical Align
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+  &align-top     { vertical-align: top     !important; }
+  &align-middle  { vertical-align: middle  !important; }
+  &align-bottom  { vertical-align: bottom  !important; }
+}
+
 // Helpers
 // -------------------------
 
@@ -217,12 +226,5 @@
 
 .clearfix:after { clear: both !important; }
 
-// Vertical Align
-// -------------------------
 
-@include generate-breakpoint-prefixes {
-  &vertical-align-top     { vertical-align: top     !important; }
-  &vertical-align-middle  { vertical-align: middle  !important; }
-  &vertical-align-bottom  { vertical-align: bottom  !important; }
-}
 
