@@ -14,20 +14,22 @@
   font-size: $text-6;
 }
 
-.tag__delete, .tag__text, .tag__link {
-}
-
-.tag__text, .tag__link, .tag__delete {
-  padding: 0 .4rem;
-}
-
-.tag__link {
-  &:hover {
+.tag--small {
+  .tag__text, .tag__link, .tag__delete {
+    padding: 0 .4rem;
   }
 }
 
+.tag__text, .tag__link, .tag__delete {
+  padding: 0.2rem .4rem;
+}
+
+.tag__text, .tag__link {
+  float: left;
+}
+
 .tag__delete {
-  display: inline-block; 
+  float: left; 
   border-right: $border;
 }
 
@@ -37,5 +39,8 @@
   cursor: pointer;
   fill: $fill-gray;
   vertical-align: middle;
+  &:hover {
+    fill: $fill-gray--darker;
+  }
 }
 
