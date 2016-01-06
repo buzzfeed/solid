@@ -6,45 +6,36 @@
   background-color: $fill-white;
   border: $border;
   border-radius: 3px;
-  display: inline-block;
-}
-
-.tag--small {
+  display: inline-block; 
   font-size: $text-5;
 }
 
+.tag--small {
+  font-size: $text-6;
+}
+
 .tag__delete, .tag__text, .tag__link {
-  float: left;
 }
 
-.tag__text, .tag__link {
-  padding: .25rem .5rem;
+.tag__text, .tag__link, .tag__delete {
+  padding: 0 .4rem;
 }
 
-.tag__delete, .tag__link {
-
+.tag__link {
   &:hover {
-    background: $fill-gray--lighter;
   }
 }
 
 .tag__delete {
+  display: inline-block; 
   border-right: $border;
-  cursor: pointer;
-  padding: .25rem;
-
-  &:before {
-    content:"";
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: svg-background($close-icon--light);
-    background-size: .65rem;
-  }
 }
 
+
+.tag__delete-icon {
+  width: .75rem;
+  cursor: pointer;
+  fill: $fill-gray;
+  vertical-align: middle;
+}
 
