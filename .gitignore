@@ -17,3 +17,5 @@ node_modules/
 
 # ignore weird image filesystem crap
 .DS_Store
+
+.bundle/
