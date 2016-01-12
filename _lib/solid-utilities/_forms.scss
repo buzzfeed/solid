@@ -2,12 +2,6 @@
 // Forms Base Styles
 // --------------------------------------------------
 
-// Variables
-// -------------------------
-
-$input-height: 2.625rem;
-$input-height-small: 2rem;
-
 // Option Input Style
 // -------------------------
 // Adds some base custom styles to radio buttons and checkboxes. 
@@ -32,12 +26,12 @@ $input-height-small: 2rem;
 .textarea,
 .select,
 .date-input {
-  font-family: inherit    !important;
-  background: $fill-white !important;
-  font-size: $text-4      !important;
-  height: $input-height   !important;
-  padding: .625rem .75rem !important;
-  border: $border         !important;
+  font-family: inherit        !important;
+  background: $fill-white     !important;
+  font-size: $text-4          !important;
+  line-height: $line-height-4 !important;
+  padding: .5rem .75rem       !important;
+  border: $border             !important;
 }
 
 .select {
@@ -49,22 +43,27 @@ $input-height-small: 2rem;
   -moz-appearance: none                         !important;
   border-radius: 0                              !important;
   padding-right: 2.5rem                         !important;
-  height: $input-height                         !important;
-  line-height: 1                                !important;
+}
+
+// Hide select arrow in IE 10+
+select::-ms-expand,
+.select::-ms-expand { 
+  display: none;
 }
 
 .select--small,
 .text-input--small,
 .date-input--small {
   font-size: $text-5          !important;
-  height: $input-height-small !important;
-  padding: $space-1 .625rem   !important;
+  line-height: $line-height-5 !important;
+  padding: 0.3125rem .625rem  !important;
 }
 
 
 .select--small {
-  padding: 0 $space-4 0 .625rem !important;
-  background-size: .5rem        !important;
+  padding-right: 2rem                               !important;
+  background-position: calc(100% - 0.875rem) center !important;
+  background-size: .5rem                            !important;
 }
 
 .textarea {
@@ -73,7 +72,7 @@ $input-height-small: 2rem;
 }
 
 .textarea--small {
-  min-height: $space-4 * 2.5  !important;
+  min-height: 2rem * 2.5      !important;
   padding: .375rem .625rem    !important;
   font-size: $text-5          !important;
   line-height: $line-height-5 !important;
