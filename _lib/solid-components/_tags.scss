@@ -1,0 +1,46 @@
+//
+// Tags
+// --------------------------------------------------
+
+.tag {
+  background-color: $fill-white;
+  border: $border;
+  border-radius: 3px;
+  display: inline-block; 
+  font-size: $text-5;
+}
+
+.tag--small {
+  font-size: $text-6;
+}
+
+.tag--small {
+  .tag__text, .tag__link, .tag__delete {
+    padding: 0 .4rem;
+  }
+}
+
+.tag__text, .tag__link, .tag__delete {
+  padding: 0.2rem .4rem;
+}
+
+.tag__text, .tag__link {
+  float: left;
+}
+
+.tag__delete {
+  float: left; 
+  border-right: $border;
+}
+
+
+.tag__delete-icon {
+  width: .75rem;
+  cursor: pointer;
+  fill: $fill-gray;
+  vertical-align: middle;
+  &:hover {
+    fill: $fill-gray--darker;
+  }
+}
+
