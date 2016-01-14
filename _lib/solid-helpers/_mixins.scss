@@ -99,3 +99,13 @@ $breakpoints: (
     @content;
   }
 }
+
+// Enables tabular figures in opentype compatible browsers
+// http://thenewcode.com/575/Elegant-Table-Data-With-OpenType
+@mixin tabular-figures {
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings:"tnum" 1; // Firefox 31+
+  -moz-font-feature-settings:"tnum=1"; 
+  -webkit-font-feature-settings: 'tnum' 1; // Chrome 31+, Android 4.4+, Opera 24+
+  font-feature-settings: 'tnum' 1; // IE10+
+}
