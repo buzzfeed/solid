@@ -30,16 +30,14 @@
 
 .page-message__delete {
   float: right;
+  padding: .2rem .4rem;
+  margin: -.2rem -.4rem;
+  cursor: pointer;
 }
 
 .page-message__delete-icon {
   width: .75rem;
-  cursor: pointer;
-  fill: $fill-gray;
   vertical-align: middle;
-  &:hover {
-    fill: $fill-gray--darker;
-  }
 }
 
 .page-message--error {
@@ -54,6 +52,14 @@
       background-image: svg-background($exclamation-circle);
       background-size: 1rem;
     }
+  }
+
+  .page-message__delete-icon {
+    fill: darken($fill-red--lighter, 20%);
+  }
+
+  & .page-message__delete:hover .page-message__delete-icon {
+    fill: $fill-red;
   }
 }
 
@@ -74,10 +80,11 @@
   }
 
   .page-message__delete-icon {
-    fill: darken($fill-green--lighter, 25%);
-    &:hover {
-      fill: $fill-green;
-    }
+    fill: darken($fill-green--lighter, 20%);
+  }
+
+  & .page-message__delete:hover .page-message__delete-icon {
+    fill: $fill-green;
   }
 }
 
