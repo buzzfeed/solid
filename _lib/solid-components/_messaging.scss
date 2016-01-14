@@ -28,6 +28,20 @@
   text-decoration: underline;
 }
 
+.page-message__delete {
+  float: right;
+}
+
+.page-message__delete-icon {
+  width: .75rem;
+  cursor: pointer;
+  fill: $fill-gray;
+  vertical-align: middle;
+  &:hover {
+    fill: $fill-gray--darker;
+  }
+}
+
 .page-message--error {
   background-color: $fill-red--lighter;
   color: $text-red;
@@ -56,6 +70,13 @@
       background-size: .625rem;
       background-color: $fill-green;
       border-radius: 50%;
+    }
+  }
+
+  .page-message__delete-icon {
+    fill: darken($fill-green--lighter, 25%);
+    &:hover {
+      fill: $fill-green;
     }
   }
 }
