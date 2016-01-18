@@ -2,22 +2,13 @@
 // Tags
 // --------------------------------------------------
 
+//Base Tag Styling 
 .tag {
   background-color: $fill-white;
   border: $border;
   border-radius: 3px;
   display: inline-block; 
   font-size: $text-5;
-}
-
-.tag--small {
-  font-size: $text-6;
-}
-
-.tag--small {
-  .tag__text, .tag__link, .tag__delete {
-    padding: 0 .4rem;
-  }
 }
 
 .tag__text, .tag__link, .tag__delete {
@@ -28,19 +19,38 @@
   float: left;
 }
 
+// Small Tag Styling 
+.tag--small {
+  font-size: $text-6;
+}
+
+.tag--small {
+  .tag__text, .tag__link, {
+    padding: 0 .4rem;
+  }
+  .tag__delete {
+    padding: 0 .3rem;
+  }
+}
+
+// Delete Icon Styling  
 .tag__delete {
   float: left; 
   border-right: $border;
+  cursor: pointer;
 }
-
 
 .tag__delete-icon {
   width: .75rem;
-  cursor: pointer;
   fill: $fill-gray;
   vertical-align: middle;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 50ms;
+  -webkit-transition-timing-function: ease-in;
+
   &:hover {
-    fill: $fill-gray--darker;
+    fill: darken($fill-gray, 40%);
   }
 }
 
