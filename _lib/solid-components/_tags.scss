@@ -6,31 +6,20 @@
 .tag {
   background-color: $fill-white;
   border: $border;
-  border-radius: 3px;
+  border-radius: $border-radius;
   display: inline-block; 
   font-size: $text-5;
 }
 
-.tag__text, .tag__link, .tag__delete {
+.tag__text, 
+.tag__link, 
+.tag__delete {
   padding: 0.2rem .4rem;
 }
 
-.tag__text, .tag__link {
+.tag__text, 
+.tag__link {
   float: left;
-}
-
-// Small Tag Styling 
-.tag--small {
-  font-size: $text-6;
-}
-
-.tag--small {
-  .tag__text, .tag__link, {
-    padding: 0 .4rem;
-  }
-  .tag__delete {
-    padding: 0 .3rem;
-  }
 }
 
 // Delete Icon Styling  
@@ -51,6 +40,21 @@
 
   &:hover {
     fill: darken($fill-gray, 40%);
+  }
+}
+
+// Small Tag Styling 
+.tag--small {
+  font-size: $text-6;
+}
+
+.tag--small {
+  .tag__text, 
+  .tag__link, {
+    padding: 0 .4rem;
+  }
+  .tag__delete {
+    padding: 0 .3rem;
   }
 }
 
