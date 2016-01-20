@@ -14,7 +14,7 @@
 .tag__text, 
 .tag__link, 
 .tag__delete {
-  padding: 0.2rem .4rem;
+  padding: 0 .4rem;
 }
 
 .tag__text, 
@@ -37,6 +37,8 @@
   transition-timing-function: ease-in-out;
   -webkit-transition: 50ms;
   -webkit-transition-timing-function: ease-in;
+  // the svg is 1px off, despite numerous attempts at fixing the artboard. is this issue due to inline-block positioning?
+  margin-left: 1px;
 
   &:hover {
     fill: darken($fill-gray, 40%);
@@ -55,6 +57,9 @@
   }
   .tag__delete {
     padding: 0 .3rem;
+  }
+  .tag__delete-icon {
+    width: .65rem;
   }
 }
 
