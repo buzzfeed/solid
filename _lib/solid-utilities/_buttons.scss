@@ -87,6 +87,19 @@
   &.button--disabled.button--invert:hover {
     color: $text-gray !important;
   }
+
+  &.button--invert-2 {
+    background-color: $fill-white !important;
+    color: $text-gray             !important;
+  }
+  &:not(.button--disabled).button--invert-2:hover {
+    background-color: darken($fill-white, 10%) !important;
+    color: $text-gray                         !important;
+  }
+  &:not(.button--disabled).button--invert-2:active {
+    background-color: darken($fill-white, 15%) !important;
+  }
+
 }
 
 .button-secondary {
