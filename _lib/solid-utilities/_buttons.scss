@@ -75,14 +75,17 @@
 
   &.button--invert {
     background-color: $fill-white !important;
-    color: $text-blue !important;
+    color: $text-gray             !important;
   }
   &:not(.button--disabled).button--invert:hover {
     background-color: darken($fill-white, 5%) !important;
-    color: darken($text-blue, 20%) !important;
+    color: $text-gray                         !important;
   }
   &:not(.button--disabled).button--invert:active {
     background-color: darken($fill-white, 15%) !important;
+  }
+  &.button--disabled.button--invert:hover {
+    color: $text-gray !important;
   }
 }
 
@@ -101,14 +104,17 @@
 
   &.button--invert {
     border-color: $fill-white !important;
-    color: $text-white !important;
+    color: $text-white        !important;
   }
   &:not(.button--disabled).button--invert:hover {
     background-color: $fill-white !important;
-    color: $text-blue !important;
+    color: $text-gray             !important;
   }
   &:not(.button--disabled).button--invert:active {
     background-color: darken($fill-white, 5%) !important;
+  }
+  &.button--disabled.button--invert:hover {
+    color: $text-white !important;
   }
 }
 
