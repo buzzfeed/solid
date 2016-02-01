@@ -78,7 +78,7 @@
     color: $text-gray             !important;
   }
   &:not(.button--disabled).button--inverted:hover {
-    background-color: darken($fill-white, 5%) !important;
+    background-color: darken($fill-white, 10%) !important;
     color: $text-gray                         !important;
   }
   &:not(.button--disabled).button--inverted:active {
