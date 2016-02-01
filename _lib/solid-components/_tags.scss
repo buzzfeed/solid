@@ -2,29 +2,29 @@
 // Tags
 // --------------------------------------------------
 
-//Base Tag Styling 
+//Base Tag Styling
 .tag {
   background-color: $fill-white;
   border: $border;
   border-radius: $border-radius;
-  display: inline-block; 
-  font-size: $text-5;
+  display: inline-block;
+  font-size: $text-6;
 }
 
-.tag__text, 
-.tag__link, 
+.tag__text,
+.tag__link,
 .tag__delete {
   padding: 0 .4rem;
 }
 
-.tag__text, 
+.tag__text,
 .tag__link {
   float: left;
 }
 
-// Delete Icon Styling  
+// Delete Icon Styling
 .tag__delete {
-  float: left; 
+  float: left;
   border-right: $border;
   cursor: pointer;
 }
@@ -45,21 +45,12 @@
   }
 }
 
-// Small Tag Styling 
-.tag--small {
-  font-size: $text-6;
+.tag__delete {
+  padding: 0 .3rem;
 }
 
-.tag--small {
-  .tag__text, 
-  .tag__link, {
-    padding: 0 .4rem;
-  }
-  .tag__delete {
-    padding: 0 .3rem;
-  }
-  .tag__delete-icon {
-    width: .65rem;
-  }
+.tag__delete-icon {
+  width: .65rem;
 }
+
 
