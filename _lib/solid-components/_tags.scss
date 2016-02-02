@@ -30,7 +30,7 @@
 }
 
 .tag__delete-icon {
-  width: .75rem;
+  width: .65rem;
   fill: $fill-gray;
   vertical-align: middle;
   transition: 200ms;
@@ -46,11 +46,13 @@
 }
 
 .tag__delete {
-  padding: 0 .3rem;
+	padding: 0 .3rem;
+		&:hover {
+	  	.tag__delete-icon {
+	    	fill: darken($fill-gray, 40%);
+	  	}
+		}
 }
 
-.tag__delete-icon {
-  width: .65rem;
-}
 
 
