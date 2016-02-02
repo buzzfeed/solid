@@ -46,7 +46,7 @@
 }
 
 .tag__delete {
-	padding: 0 .25rem;
+	padding: 0 .3125rem;
 		&:hover {
 	  	.tag__delete-icon {
 	    	fill: darken($fill-gray, 40%);
