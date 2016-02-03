@@ -37,7 +37,15 @@
 .button,
 .button-blue,
 .button-red,
-.button-white {
+.button-white,
+.button-facebook,
+.button-twitter,
+.button-google,
+.button-linkedin,
+.button-pinterest,
+.button-tumblr,
+.button-youtube,
+.button-instagram {
   @include button-reset;
   font-family: inherit          !important;
   padding: .5rem .875rem        !important;
@@ -193,11 +201,11 @@
   }
 }
 
-.button--facebook  { @include social-button($fill-facebook); }
-.button--twitter   { @include social-button($fill-twitter); }
-.button--google    { @include social-button($fill-google); }
-.button--linkedin  { @include social-button($fill-linkedin); }
-.button--pinterest { @include social-button($fill-pinterest); }
-.button--tumblr    { @include social-button($fill-tumblr); }
-.button--youtube   { @include social-button($fill-youtube); }
-.button--instagram { @include social-button($fill-instagram); }
+.button-facebook  { @include social-button($fill-facebook); }
+.button-twitter   { @include social-button($fill-twitter); }
+.button-google    { @include social-button($fill-google); }
+.button-linkedin  { @include social-button($fill-linkedin); }
+.button-pinterest { @include social-button($fill-pinterest); }
+.button-tumblr    { @include social-button($fill-tumblr); }
+.button-youtube   { @include social-button($fill-youtube); }
+.button-instagram { @include social-button($fill-instagram); }
