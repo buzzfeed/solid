@@ -34,24 +34,20 @@
   }
 }
 
-$button-height: 2.625rem;
-$button-height-small: 2rem;
-
 .button,
 .button--disabled,
 .button--small {
   @include button-reset;
   font-family: inherit          !important;
-  height: $button-height        !important;
   padding: .5rem .875rem        !important;
   font-size: $text-4            !important;
+  line-height: $line-height-4   !important;
   border-radius: $border-radius !important;
   text-decoration: none         !important;
   cursor: pointer               !important;
   display: inline-block         !important;
   border: 1px solid transparent !important;
   text-align: center            !important;
-  line-height: 1.5              !important;
 
   &:hover { transition: background-color .15s ease 0s !important; }
 }
@@ -106,9 +102,9 @@ $button-height-small: 2rem;
 }
 
 .button--small {
-  font-size: $text-5           !important;
-  padding: .25rem .625rem      !important;
-  height: $button-height-small !important;
+  padding: 0.3125rem .625rem  !important;
+  font-size: $text-5          !important;
+  line-height: $line-height-5 !important;
 }
 
 
