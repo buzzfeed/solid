@@ -67,11 +67,13 @@ select::-ms-expand,
 }
 
 .textarea {
+  display: block           !important;
   min-height: $space-5 * 2 !important;
   padding: .5rem .75rem    !important;
 }
 
 .textarea--small {
+  display: block              !important;
   min-height: 2rem * 2.5      !important;
   padding: .375rem .625rem    !important;
   font-size: $text-5          !important;
