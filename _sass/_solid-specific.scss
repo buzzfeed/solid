@@ -192,3 +192,32 @@ pre {
 
   > * { font-size: $base-font-size; }
 }
+
+// Example of a project-specific button in buttons.html
+
+.button-purple {
+  background-color: violet !important;
+  color: $text-white       !important; 
+
+  &:not(.button--disabled):hover {
+    color: $text-white                    !important; 
+    background-color: darken(violet, 10%) !important; 
+  }
+
+  &.button--disabled:hover        { color: $text-white                    !important; }
+  &:not(.button--disabled):active { background-color: darken(violet, 35%) !important; }
+
+  &.button--outline {
+    border: 1px solid violet !important;
+    color: violet            !important;
+    background: none         !important;
+
+    &:not(.button--disabled):hover {
+      background-color: violet       !important;
+      color: $text-white             !important;
+    }
+
+    &.button--disabled:hover        { color: violet                         !important; }
+    &:not(.button--disabled):active { background-color: darken(violet, 10%) !important; }
+  }
+}
