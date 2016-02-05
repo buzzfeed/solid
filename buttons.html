@@ -16,8 +16,10 @@ title: Buttons
     <button class="button-blue">Button</button>
   </div>
   
-{% highlight html %}<a class="button-blue" href="">Link</a>
-<button class="button-blue">Button</button>{% endhighlight %}
+{% highlight html %}
+<a class="button-blue" href="">Link</a>
+<button class="button-blue">Button</button>
+{% endhighlight %}
 
 </section>
 
@@ -33,8 +35,11 @@ title: Buttons
     <a class="button-blue button--outline" href="">Link</a>
     <button class="button-blue button--outline">Button</button>
   </div>
-{% highlight html %}<a class="button-blue button--outline" href="">Link</a>
-<button class="button-blue button--outline">Button</button>{% endhighlight %}
+
+{% highlight html %}
+<a class="button-blue button--outline" href="">Link</a>
+<button class="button-blue button--outline">Button</button>
+{% endhighlight %}
 
 </section>
 
@@ -55,11 +60,14 @@ title: Buttons
     <a class="button-red button--outline" href="">Link</a>
     <button class="button-red button--outline">Button</button>
   </div>
-{% highlight html %}<a class="button-red" href="">Link</a>
+
+{% highlight html %}
+<a class="button-red" href="">Link</a>
 <button class="button-red">Button</button>
 
 <a class="button-red button--outline" href="">Link</a>
-<button class="button-red button--outline">Button</button>{% endhighlight %}
+<button class="button-red button--outline">Button</button>
+{% endhighlight %}
 
 </section>
 
@@ -84,11 +92,14 @@ title: Buttons
       <button class="button-white button--outline">Button</button>
     </div>
   </div>
-{% highlight html %}<a class="button-white" href="">Link</a>
+
+{% highlight html %}
+<a class="button-white" href="">Link</a>
 <button class="button-white">Button</button>
 
 <a class="button-white button--outline" href="">Link</a>
-<button class="button-white button--outline">Button</button>{% endhighlight %}
+<button class="button-white button--outline">Button</button>
+{% endhighlight %}
 
 </section>
 
@@ -100,93 +111,127 @@ title: Buttons
   <p class="xs-mb4">This button type is used for inactive links and page actions.</p>
 
   <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-blue button--disabled</code></p>
     <button class="button-blue button--disabled">Button</button>
     <button class="button-blue button--outline button--disabled">Button</button>
+  </div>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-red button--disabled</code></p>
     <button class="button-red button--disabled">Button</button>
     <button class="button-red button--outline button--disabled">Button</button>
-    <div class="xs-inline-block xs-p1 rounded fill-gray--darker">
+  </div>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-white button--disabled</code></p>
+    <div class="xs-p1 fill-gray--darker">
       <button class="button-white button--disabled">Button</button>
       <button class="button-white button--outline button--disabled">Button</button>
-    </div>      
+    </div>
   </div>
-{% highlight html %}<button class="button-blue button--disabled">Button</button>
+
+{% highlight html %}
+<button class="button-blue button--disabled">Button</button>
 <button class="button-blue button--outline button--disabled">Button</button>
 <button class="button-red button--disabled">Button</button>
 <button class="button-red button--outline button--disabled">Button</button>
 <button class="button-white button--disabled">Button</button>
-<button class="button-white button--outline button--disabled">Button</button>{% endhighlight %}
+<button class="button-white button--outline button--disabled">Button</button>
+{% endhighlight %}
 
 </section>
 
 <section class="xs-mb6">
   <a name="button-icon"></a>
   <h2 class="bold xs-mb2">Button + Icon</h2>
-  <p class="xs-mb4">Combine <span class="nowrap">.<code class="js-highlight">button-blue</code></span> or <span class="nowrap">.<code class="js-highlight">button-blue button--outline</code></span> with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon.</p>
+  <p class="xs-mb4">Combine any of our button colors with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon.</p>
+
 
   <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-blue button--icon</code></p>
     <button class="button-blue button--icon" href="#">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-
      <button class="button-blue button--outline button--icon" href="#">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
+  </div>
 
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-red button--icon</code></p>
     <button class="button-red button--icon" href="#">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-
      <button class="button-red button--outline button--icon" href="#">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
+  </div>
 
-    <div class="xs-inline-block xs-p1 rounded fill-gray--darker">
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-white button--icon</code></p>
+    <div class="xs-p1 fill-gray--darker">
       <button class="button-white button--icon" href="#">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
         </svg>
         Button
       </button>
-
        <button class="button-white button--outline button--icon" href="#">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
         </svg>
         Button
       </button>
-    </div>      
-
+    </div>
   </div>
 
 {% highlight html %}
-<a class="button button--icon button-blue" href="#">
+<button class="button-blue button--icon" href="#">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
   </svg>
-Reset timer
-</a>
+  Button
+</button>
+
+<button class="button-blue button--outline button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-red button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-red button--outline button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-white button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-white button--outline button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
 {% endhighlight %}
 
-{% highlight html %}
-<a class="button button--icon button-blue button--outline" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
-   </svg>
-   Reset timer
-</a>
-{% endhighlight %}
 </section>
 
 <section class="xs-mb6">
