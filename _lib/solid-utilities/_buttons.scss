@@ -183,6 +183,21 @@
   &:not(.button--disabled):hover svg { fill: $fill-white !important; }
 }
 
+.button-red.button--outline.button--icon {
+  >svg        { fill: $fill-red  !important; }
+  &:not(.button--disabled):hover svg { fill: $fill-white !important; }
+}
+
+.button-white.button--icon {
+  >svg        { fill: $fill-gray--darker  !important; }
+  &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
+}
+
+.button-white.button--outline.button--icon {
+  >svg        { fill: $fill-white  !important; }
+  &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
+}
+
 @mixin social-button($color) {
   background-color: $color !important;
   color: $text-white       !important;
