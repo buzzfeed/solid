@@ -6,54 +6,60 @@ title: Buttons
 <section class="xs-mb6">
 
   <a name="primary-buttons"></a>
-  <h2 class="bold xs-mb2">Blue Buttons</h2>
+  <h2 class="bold xs-mb2">Primary Actions</h2>
 
-  <p class="xs-mb4">This button type is used for primary links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+  <p class="xs-mb4">Our <code class="js-highlight">button-blue</code> class is used for primary links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
 
   <div class="xs-mb4">
-    <p class="xs-mb1">.<code class="js-highlight">button-blue</code></p>
+    <p class="xs-mb1"><code class="js-highlight">button-blue</code></p>
     <a class="button-blue" href="#">Link</a>
     <button class="button-blue">Button</button>
   </div>
   
-{% highlight html %}<a class="button-blue" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button-blue">Button</button>{% endhighlight %}
+{% highlight html %}<a class="button-blue" href="">Link</a>
+<button class="button-blue">Button</button>{% endhighlight %}
 
 </section>
 
 <section class="xs-mb6">
 
   <a name="secondary-buttons"></a>
-  <h2 class="bold xs-mb2">Blue Outline Buttons</h2>
+  <h2 class="bold xs-mb2">Secondary Actions</h2>
 
-  <p class="xs-mb4">This button type is used for secondary links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+  <p class="xs-mb4">We use a combination of our <code class="js-highlight">button-blue</code> and <code class="js-highlight">button--outline</code> classes for secondary links and page actions.</p>
 
   <div class="xs-mb4">
-    <p class="xs-mb1">.<code class="js-highlight">button-blue.button--outline</code></p>
+    <p class="xs-mb1"><code class="js-highlight">button-blue button--outline</code></p>
     <a class="button-blue button--outline" href="">Link</a>
     <button class="button-blue button--outline">Button</button>
   </div>
-{% highlight html %}<a class="button-blue button--outline" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button-blue button--outline">Button</button>{% endhighlight %}
+{% highlight html %}<a class="button-blue button--outline" href="">Link</a>
+<button class="button-blue button--outline">Button</button>{% endhighlight %}
 
 </section>
 
 <section class="xs-mb6">
 
   <a name="negative-buttons"></a>
-  <h2 class="bold xs-mb2">Red Buttons</h2>
+  <h2 class="bold xs-mb2">Negative Actions</h2>
 
-  <p class="xs-mb4">This button type is used for destructive or negative links and page actions. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+  <p class="xs-mb4">We use our <code class="js-highlight">button-red</code> and <code class="js-highlight">button--outline</code> classes for buttons that represent destructive or negative links and page actions.</p>
 
   <div class="xs-mb4">
-    <p class="xs-mb1">.<code class="js-highlight">button-red</code></p>
+    <p class="xs-mb1"><code class="js-highlight">button-red</code></p>
     <a class="button-red" href="">Link</a>
     <button class="button-red">Button</button>
+  </div>
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-red button--outline</code></p>
     <a class="button-red button--outline" href="">Link</a>
     <button class="button-red button--outline">Button</button>
   </div>
-{% highlight html %}<a class="button button-red" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button button-red">Button</button>{% endhighlight %}
+{% highlight html %}<a class="button-red" href="">Link</a>
+<button class="button-red">Button</button>
+
+<a class="button-red button--outline" href="">Link</a>
+<button class="button-red button--outline">Button</button>{% endhighlight %}
 
 </section>
 
@@ -62,19 +68,27 @@ title: Buttons
   <a name="white-buttons"></a>
   <h2 class="bold xs-mb2">White Buttons</h2>
 
-  <p class="xs-mb4">This button type is used as a primary and secondary replacement for dark backgrounds. It can be used with either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags.</p>
+  <p class="xs-mb4">This button type is used as a primary and secondary replacement for dark backgrounds.</p>
 
   <div class="xs-mb4">
-    <p class="xs-mb1">.<code class="js-highlight">button-white</code></p>
+    <p class="xs-mb1"><code class="js-highlight">button-white</code></p>
     <div class="xs-p2 fill-gray--darker">
       <a class="button-white" href="">Link</a>
       <button class="button-white">Button</button>
+    </div>
+  </div>
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button-white button--outline</code></p>
+    <div class="xs-p2 fill-gray--darker">
       <a class="button-white button--outline" href="">Link</a>
       <button class="button-white button--outline">Button</button>
     </div>
   </div>
-{% highlight html %}<a class="button button-red" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button button-red">Button</button>{% endhighlight %}
+{% highlight html %}<a class="button-white" href="">Link</a>
+<button class="button-white">Button</button>
+
+<a class="button-white button--outline" href="">Link</a>
+<button class="button-white button--outline">Button</button>{% endhighlight %}
 
 </section>
 
@@ -86,17 +100,21 @@ title: Buttons
   <p class="xs-mb4">This button type is used for inactive links and page actions.</p>
 
   <div class="xs-mb4">
-    <a class="button--disabled button-blue" href="">Link</a>
-    <button class="button--disabled button-blue">Button</button>
-    <a class="button--disabled button-blue button--outline" href="">Link</a>
-    <button class="button--disabled button-blue button--outline">Button</button>
-    <button class="button--disabled button-red">Delete</button>
+    <button class="button-blue button--disabled">Button</button>
+    <button class="button-blue button--outline button--disabled">Button</button>
+    <button class="button-red button--disabled">Button</button>
+    <button class="button-red button--outline button--disabled">Button</button>
+    <div class="xs-inline-block xs-p1 rounded fill-gray--darker">
+      <button class="button-white button--disabled">Button</button>
+      <button class="button-white button--outline button--disabled">Button</button>
+    </div>      
   </div>
-{% highlight html %}<a class="button--disabled button-blue" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button--disabled button-blue">Button</button>{% endhighlight %}
-{% highlight html %}<a class="button--disabled button-blue button--outline" href="">Link</a>{% endhighlight %}
-{% highlight html %}<button class="button--disabled button-blue button--outline">Button</button>{% endhighlight %}
-{% highlight html %}<button class="button--disabled button-red">Delete</button>{% endhighlight %}
+{% highlight html %}<button class="button-blue button--disabled">Button</button>
+<button class="button-blue button--outline button--disabled">Button</button>
+<button class="button-red button--disabled">Button</button>
+<button class="button-red button--outline button--disabled">Button</button>
+<button class="button-white button--disabled">Button</button>
+<button class="button-white button--outline button--disabled">Button</button>{% endhighlight %}
 
 </section>
 
