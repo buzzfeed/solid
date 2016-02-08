@@ -5,16 +5,12 @@ Solid is a base style library. It will be used as the core styling for Buzzfeed 
 ## Including Solid in Your Project
 
 ### Dependencies
-You must have NPM installed. If you have installed the [Buzzfeed webapp](https://github.com/buzzfeed/buzzfeed) congrats! You already do.
+You must have NPM installed.
 
 ### Install
 When inside your project directory type:
 ```
 npm install bf-solid --save
-```
-or using Bower:
-```
-bower install git+ssh://git@github.com/buzzfeed/solid.git#<RELEASE_VERSION> --save
 ```
 
 This will give you `solid.scss` and all of its scss files inside `node_modules/solid/lib`. This package includes the static, uncompiled SCSS files. Whether you want to build them into your project with Grunt, Gulp, etc. is up to you.
@@ -49,14 +45,12 @@ Solid is broken up into four sections:
 
 You can get everything with `@import "solid";`. Individual sections can also be imported. For example if you want the utility classes just `@import "solid-utilities";`
 
-## Building the Solid Styleguide
-The solid styleguide lets you view Solid along with all of its documentation.
-
-## Set Up the Styleguide Locally (optional)
+## Developing Solid
+The Solid styleguide lets you view Solid along with all of its documentation. Access to the Solid git repo is restricted to BuzzFeed employees. If you are not a BuzzFeed employee check out the Solid docs [online](http://solid.buzzfeed.com/).
 
 ### Dependencies
 
-This installation guide assumes that you have the [Buzzfeed webapp](https://github.com/buzzfeed/buzzfeed) installed. That will set you up with the correct versions of node and ruby.
+This installation guide assumes that you have the [BuzzFeed webapp](https://github.com/buzzfeed/buzzfeed) installed. That will set you up with the correct versions of node and ruby.
 
 ### Downloading the repo
 
