@@ -35,8 +35,17 @@
 }
 
 .button,
-.button--disabled,
-.button--small {
+.button-primary,
+.button-secondary,
+.button-negative,
+.button-facebook,
+.button-twitter,
+.button-google,
+.button-linkedin,
+.button-pinterest,
+.button-tumblr,
+.button-youtube,
+.button-instagram {
   @include button-reset;
   font-family: inherit          !important;
   padding: .5rem .875rem        !important;
@@ -52,7 +61,7 @@
   &:hover { transition: background-color .15s ease 0s !important; }
 }
 
-.button--primary {
+.button-primary {
   background-color: $fill-blue !important;
   color: $text-white           !important;
 
@@ -63,9 +72,24 @@
 
   &.button--disabled:hover        { color: $text-white                        !important; }
   &:not(.button--disabled):active { background-color: darken($fill-blue, 35%) !important; }
+
+  &.button--inverted {
+    background-color: $fill-white !important;
+    color: $text-gray             !important;
+  }
+  &:not(.button--disabled).button--inverted:hover {
+    background-color: darken($fill-white, 10%) !important;
+    color: $text-gray                         !important;
+  }
+  &:not(.button--disabled).button--inverted:active {
+    background-color: darken($fill-white, 15%) !important;
+  }
+  &.button--disabled.button--inverted:hover {
+    color: $text-gray !important;
+  }
 }
 
-.button--secondary {
+.button-secondary {
   border: 1px solid $fill-blue !important;
   color: $text-blue            !important;
   background: none             !important;
@@ -77,9 +101,24 @@
 
   &.button--disabled:hover        { color: $text-blue                         !important; }
   &:not(.button--disabled):active { background-color: darken($fill-blue, 20%) !important; }
+
+  &.button--inverted {
+    border-color: $fill-white !important;
+    color: $text-white        !important;
+  }
+  &:not(.button--disabled).button--inverted:hover {
+    background-color: $fill-white !important;
+    color: $text-gray             !important;
+  }
+  &:not(.button--disabled).button--inverted:active {
+    background-color: darken($fill-white, 5%) !important;
+  }
+  &.button--disabled.button--inverted:hover {
+    color: $text-white !important;
+  }
 }
 
-.button--negative {
+.button-negative {
   background-color: $fill-red !important;
   color: $text-white          !important; 
 
@@ -128,9 +167,19 @@
   }
 }
 
-.button--secondary.button--icon {
+.button-primary.button--icon.button--inverted {
+  >svg        { fill: $fill-gray--darker  !important; }
+  &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
+}
+
+.button-secondary.button--icon {
   >svg        { fill: $fill-blue  !important; }
   &:not(.button--disabled):hover svg { fill: $fill-white !important; }
+}
+
+.button-secondary.button--icon.button--inverted {
+  >svg        { fill: $fill-white  !important; }
+  &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
 }
 
 @mixin social-button($color) {
@@ -151,11 +200,11 @@
   }
 }
 
-.button--facebook  { @include social-button($fill-facebook); }
-.button--twitter   { @include social-button($fill-twitter); }
-.button--google    { @include social-button($fill-google); }
-.button--linkedin  { @include social-button($fill-linkedin); }
-.button--pinterest { @include social-button($fill-pinterest); }
-.button--tumblr    { @include social-button($fill-tumblr); }
-.button--youtube   { @include social-button($fill-youtube); }
-.button--instagram { @include social-button($fill-instagram); }
+.button-facebook  { @include social-button($fill-facebook); }
+.button-twitter   { @include social-button($fill-twitter); }
+.button-google    { @include social-button($fill-google); }
+.button-linkedin  { @include social-button($fill-linkedin); }
+.button-pinterest { @include social-button($fill-pinterest); }
+.button-tumblr    { @include social-button($fill-tumblr); }
+.button-youtube   { @include social-button($fill-youtube); }
+.button-instagram { @include social-button($fill-instagram); }
