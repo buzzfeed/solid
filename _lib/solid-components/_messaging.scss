@@ -29,7 +29,7 @@
   text-decoration: underline;
 }
 
-.page-message__delete {
+.page-message__close {
   position: absolute;
   right: .25rem;
   top: .375rem;
@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.page-message__delete-icon {
+.page-message__close-icon {
   width: .75rem;
 }
 
@@ -55,11 +55,11 @@
     }
   }
 
-  .page-message__delete-icon {
+  .page-message__close-icon {
     fill: darken($fill-red--lighter, 20%);
   }
 
-  & .page-message__delete:hover .page-message__delete-icon {
+  & .page-message__close:hover .page-message__close-icon {
     fill: $fill-red;
   }
 }
@@ -80,11 +80,11 @@
     }
   }
 
-  .page-message__delete-icon {
+  .page-message__close-icon {
     fill: darken($fill-green--lighter, 20%);
   }
 
-  & .page-message__delete:hover .page-message__delete-icon {
+  & .page-message__close:hover .page-message__close-icon {
     fill: $fill-green;
   }
 }
