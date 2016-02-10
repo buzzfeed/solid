@@ -137,8 +137,8 @@
       color: $text-gray             !important;
     }
 
-    &.button--disabled:hover        { color: $text-white             !important; }
-    &:not(.button--disabled):active { background-color: $fill-white  !important; }
+    &.button--disabled:hover        { color: $text-white                         !important; }
+    &:not(.button--disabled):active { background-color: darken($fill-white, 10%) !important; }
   }
 }
 
