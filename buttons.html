@@ -70,24 +70,31 @@ title: Buttons
 
   <p class="xs-mb2">We use our <code class="js-highlight">button-red</code> and <code class="js-highlight">button--outline</code> classes for buttons that represent destructive or negative links and page actions.</p>
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1"><code class="js-highlight">button-red</code></p>
     <a class="button-red xs-mr1" href="">Link</a>
     <button class="button-red">Button</button>
   </div>
+
   <div class="xs-mb4">
+{% highlight html %}
+<a class="button-red" href="">Link</a>
+<button class="button-red">Button</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1"><code class="js-highlight">button-red button--outline</code></p>
     <a class="button-red button--outline xs-mr1" href="">Link</a>
     <button class="button-red button--outline">Button</button>
   </div>
 
+  <div>
 {% highlight html %}
-<a class="button-red" href="">Link</a>
-<button class="button-red">Button</button>
-
 <a class="button-red button--outline" href="">Link</a>
 <button class="button-red button--outline">Button</button>
 {% endhighlight %}
+  </div>
 
 </section>
 
@@ -98,14 +105,23 @@ title: Buttons
 
   <p class="xs-mb2">This button type is used as a primary and secondary replacement for dark backgrounds.</p>
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1"><code class="js-highlight">button-white</code></p>
     <div class="xs-p2 fill-gray--darker">
       <a class="button-white xs-mr1" href="">Link</a>
       <button class="button-white">Button</button>
     </div>
   </div>
+
   <div class="xs-mb4">
+{% highlight html %}
+<a class="button-white button--outline" href="">Link</a>
+<button class="button-white button--outline">Button</button>
+{% endhighlight %}
+  </div>
+
+
+  <div class="xs-mb2">
     <p class="xs-mb1"><code class="js-highlight">button-white button--outline</code></p>
     <div class="xs-p2 fill-gray--darker">
       <a class="button-white button--outline xs-mr1" href="">Link</a>
@@ -113,13 +129,12 @@ title: Buttons
     </div>
   </div>
 
+  <div>
 {% highlight html %}
-<a class="button-white" href="">Link</a>
-<button class="button-white">Button</button>
-
 <a class="button-white button--outline" href="">Link</a>
 <button class="button-white button--outline">Button</button>
 {% endhighlight %}
+  </div>
 
 </section>
 
@@ -130,7 +145,7 @@ title: Buttons
 
   <p class="xs-mb2">Add <code class="js-highlight">button--disabled</code> for inactive links and page actions.</p>
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-blue button--disabled</code>,<br>
       <code class="js-highlight">button-blue button--outline button--disabled</code>
@@ -140,6 +155,13 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-blue button--disabled">Button</button>
+<button class="button-blue button--outline button--disabled">Button</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-red button--disabled</code>,<br>
       <code class="js-highlight">button-red button--outline button--disabled</code>
@@ -149,6 +171,13 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-red button--disabled">Button</button>
+<button class="button-red button--outline button--disabled">Button</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-white button--disabled</code>,<br>
       <code class="js-highlight">button-white button--outline button--disabled</code>
@@ -159,14 +188,12 @@ title: Buttons
     </div>
   </div>
 
+  <div>
 {% highlight html %}
-<button class="button-blue button--disabled">Button</button>
-<button class="button-blue button--outline button--disabled">Button</button>
-<button class="button-red button--disabled">Button</button>
-<button class="button-red button--outline button--disabled">Button</button>
 <button class="button-white button--disabled">Button</button>
 <button class="button-white button--outline button--disabled">Button</button>
 {% endhighlight %}
+  </div>
 
 </section>
 
@@ -176,7 +203,7 @@ title: Buttons
   <p class="xs-mb2">Combine any of our button colors and styles with <span class="nowrap">.<code class="js-highlight">button--icon</code></span> to include an icon.</p>
 
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-blue button--icon</code>,<br>
       <code class="js-highlight">button-blue button--outline button--icon</code>
@@ -196,6 +223,20 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-blue button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-blue button--outline button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-red button--icon</code>,<br>
       <code class="js-highlight">button-red button--outline button--icon</code>
@@ -215,6 +256,20 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-red button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-red button--outline button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-white button--icon</code>,<br>
       <code class="js-highlight">button-white button--outline button--icon</code>
@@ -235,27 +290,8 @@ title: Buttons
     </div>
   </div>
 
+  <div>
 {% highlight html %}
-<button class="button-blue button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-blue button--outline button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-red button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-red button--outline button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
 <button class="button-white button--icon" href="#">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
@@ -266,6 +302,7 @@ title: Buttons
   Button
 </button>
 {% endhighlight %}
+  </div>
 
 </section>
 
@@ -396,7 +433,7 @@ title: Buttons
 
   <p class="xs-mb2">Use the <span class="nowrap">.<code class="js-highlight">button--small</code></span> class for smaller versions of all Solid's button types.</p>
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-blue button--small</code>,<br>
       <code class="js-highlight">button-blue button--outline button--small</code>
@@ -406,6 +443,13 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-blue button--small">Button</button>
+<button class="button-blue button--outline button--small">Button</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-red button--small</code>,<br>
       <code class="js-highlight">button-red button--outline button--small</code>
@@ -415,6 +459,13 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-red button--small">Button</button>
+<button class="button-red button--outline button--small">Button</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-white button--small</code>,<br>
       <code class="js-highlight">button-white button--outline button--small</code>
@@ -425,14 +476,13 @@ title: Buttons
     </div>
   </div>
 
+  <div>
 {% highlight html %}
-<button class="button-blue button--small">Button</button>
-<button class="button-blue button--outline button--small">Button</button>
-<button class="button-red button--small">Button</button>
-<button class="button-red button--outline button--small">Button</button>
 <button class="button-white button--small">Button</button>
 <button class="button-white button--outline button--small">Button</button>
 {% endhighlight %}
+  </div>
+
 </section>
 
 
@@ -441,7 +491,7 @@ title: Buttons
   <h2 class="bold xs-mb2">Small Buttons with Icons</h2>
   <p class="xs-mb2">Combine <code class="js-highlight">button--small</code> with <code class="js-highlight">button--icon</code> to get a smaller version of Solid's icon buttons.</p>
 
-  <div class="xs-mb4">
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-blue button--small button--icon</code>,<br>
       <code class="js-highlight">button-blue button--outline button--small button--icon</code>
@@ -461,6 +511,20 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-blue button--small button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-blue button--outline button--small button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-red button--small button--icon</code>,<br>
       <code class="js-highlight">button-red button--outline button--small button--icon</code>
@@ -480,6 +544,20 @@ title: Buttons
   </div>
 
   <div class="xs-mb4">
+{% highlight html %}
+<button class="button-red button--small button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+
+<button class="button-red button--outline button--small button--icon" href="#">
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
+  Button
+</button>
+{% endhighlight %}
+  </div>
+
+  <div class="xs-mb2">
     <p class="xs-mb1">
       <code class="js-highlight">button-white button--small button--icon</code>,<br>
       <code class="js-highlight">button-white button--outline button--small button--icon</code>
@@ -500,27 +578,8 @@ title: Buttons
     </div>
   </div>
 
+  <div>
 {% highlight html %}
-<button class="button-blue button--small button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-blue button--outline button--small button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-red button--small button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
-<button class="button-red button--outline button--small button--icon" href="#">
-  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
-  Button
-</button>
-
 <button class="button-white button--small button--icon" href="#">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
@@ -531,6 +590,7 @@ title: Buttons
   Button
 </button>
 {% endhighlight %}
+  </div>
 
 </section>
 
