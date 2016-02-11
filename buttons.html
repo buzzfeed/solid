@@ -5,6 +5,26 @@ title: Buttons
 
 <section class="xs-mb6">
 
+  <a name="button"></a>
+  <h2 class="bold xs-mb2">Button</h2>
+
+  <p class="xs-mb2">Our default <code class="js-highlight">button</code> class can be used with <code class="js-highlight">a</code> tags for tertiary actions, particularly when it's necessary to vertically align those actions with other button types.</p>
+
+  <div class="xs-mb4">
+    <p class="xs-mb1"><code class="js-highlight">button</code> beside <code class="js-highlight">button-blue</code></p>
+    <a class="button xs-mr1" href="#">Link</a>
+    <button class="button-blue">Button</button>
+  </div>
+  
+{% highlight html %}
+<a class="button" href="">Link</a>
+<button class="button-blue">Button</button>
+{% endhighlight %}
+
+</section>
+
+<section class="xs-mb6">
+
   <a name="primary-buttons"></a>
   <h2 class="bold xs-mb2">Primary Buttons</h2>
 
@@ -640,84 +660,8 @@ title: Buttons
 {% endhighlight %}
 </section>
 
-<section class="xs-mb6">
-  <a name="custom-buttons"></a>
-  <h2 class="bold xs-mb2">Custom Button Colors</h2>
-  <p class="xs-mb2">If you need a button color that doesn't exist in Solid, you can use the <code class="js-highlight">button</code> class to get the base layout properties of our buttons. Then, simply write feature-specific CSS to style for color, hover, disabled state, etc., using the same class modifiers in use for Solid's other buttons.</p>
-
-  <div class="xs-mb4">
-    <p class="xs-mb1"><code class="js-highlight">button</code></p>
-    <button class="button">Button Base</button>
-  </div>
-  <div class="xs-mb4">
-    <p class="xs-mb1">
-      <code class="js-highlight">button button-purple</code>,<br>
-      <code class="js-highlight">button button--outline button-purple</code>
-    </p>
-    <button class="button button-purple xs-mr1">New Purple Button</button>
-    <button class="button button--outline button-purple">New Purple Button</button>
-  </div>
-  <div class="xs-mb4">
-    <p class="xs-mb1">
-      <code class="js-highlight">button button--disabled button-purple</code>,<br>
-      <code class="js-highlight">button button--outline button--disabled button-purple</code>
-    </p>
-    <button class="button button--disabled button-purple xs-mr1">New Purple Button</button>
-    <button class="button button--outline button--disabled button-purple">New Purple Button</button>
-  </div>
-  <div class="xs-mb4">
-    <p class="xs-mb1">
-      <code class="js-highlight">button button--small button-purple</code>,<br>
-      <code class="js-highlight">button button--outline button--small button-purple</code>
-    </p>
-    <button class="button button--small button-purple xs-mr1">New Purple Button</button>
-    <button class="button button--outline button--small button-purple">New Purple Button</button>
-  </div>
-
-  <div class="xs-mb4">
-{% highlight css %}
-// Purple Button for My Project
-
-.button-purple {
-  background-color: violet !important;
-  color: $text-white       !important; 
-
-  &:not(.button--disabled):hover {
-    color: $text-white                    !important; 
-    background-color: darken(violet, 10%) !important; 
-  }
-
-  &.button--disabled:hover        { color: $text-white                    !important; }
-  &:not(.button--disabled):active { background-color: darken(violet, 35%) !important; }
-
-  &.button--outline {
-    border: 1px solid violet !important;
-    color: violet            !important;
-    background: none         !important;
-
-    &:not(.button--disabled):hover {
-      background-color: violet !important;
-      color: $text-white       !important;
-    }
-
-    &.button--disabled:hover        { color: violet                         !important; }
-    &:not(.button--disabled):active { background-color: darken(violet, 10%) !important; }
-  }
-}
-{% endhighlight %}
-  </div>
-
-{% highlight html %}
-<button class="button">Button Base</button>
-
-<button class="button button-purple">New Purple Button</button>
-<button class="button button--outline button-purple">New Purple Button</button>
-
-<button class="button button--disabled button-purple">New Purple Button</button>
-<button class="button button--outline button--disabled button-purple">New Purple Button</button>
-
-<button class="button button--small button-purple xs-mr1">New Purple Button</button>
-<button class="button button--outline button--small button-purple">New Purple Button</button>
-{% endhighlight %}
-
-</section>
+<!--
+I need a new type of button! Save me, Solid!
+We've got you, buddy. Hang in there:
+https://gist.github.com/niederme/9a5b81923e5a45d2d1da
+-->
