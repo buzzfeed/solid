@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 .page-message {
+  position: relative;
   margin-top: .125rem;
   padding: .75rem;
   font-size: $text-4;
@@ -28,6 +29,18 @@
   text-decoration: underline;
 }
 
+.page-message__close {
+  position: absolute;
+  right: .25rem;
+  top: .375rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.page-message__close-icon {
+  width: .75rem;
+}
+
 .page-message--error {
   background-color: $fill-red--lighter;
   color: $text-red;
@@ -40,6 +53,14 @@
       background-image: svg-background($exclamation-circle);
       background-size: 1rem;
     }
+  }
+
+  .page-message__close-icon {
+    fill: darken($fill-red--lighter, 20%);
+  }
+
+  & .page-message__close:hover .page-message__close-icon {
+    fill: $fill-red;
   }
 }
 
@@ -57,6 +78,14 @@
       background-color: $fill-green;
       border-radius: 50%;
     }
+  }
+
+  .page-message__close-icon {
+    fill: darken($fill-green--lighter, 20%);
+  }
+
+  & .page-message__close:hover .page-message__close-icon {
+    fill: $fill-green;
   }
 }
 
