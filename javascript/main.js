@@ -17,8 +17,3 @@ $('.modal').click(function(){
 $('.modal__content').click(function(event){
   event.stopPropagation();
 });
-
-//hide modal if click Cancel button
-$('.modal__content .button-blue.button--outline').click(function(){
-  $('body').removeClass('js-show-modal');
-});
