@@ -22,10 +22,12 @@
   }
 }
 
-.text-input,
+.text-input, 
+.text-input--small,
 .textarea,
+.textarea--small,
 .select,
-.date-input {
+.select--small {
   font-family: inherit        !important;
   background: $fill-white     !important;
   font-size: $text-4          !important;
@@ -52,8 +54,7 @@ select::-ms-expand,
 }
 
 .select--small,
-.text-input--small,
-.date-input--small {
+.text-input--small {
   font-size: $text-5          !important;
   line-height: $line-height-5 !important;
   padding: 0.3125rem .625rem  !important;
@@ -167,7 +168,11 @@ select::-ms-expand,
   }
 
   .text-input,
-  .select {
+  .text-input--small,
+  .textarea,
+  .textarea--small,
+  .select,
+  .select--small {
     border-color: $fill-orange !important; 
   }
 }
@@ -195,7 +200,11 @@ select::-ms-expand,
   }
 
   .text-input,
-  .select {
+  .text-input--small,
+  .textarea,
+  .textarea--small,
+  .select,
+  .select--small {
     border-color: $fill-green !important; 
   }
 }
@@ -207,7 +216,11 @@ select::-ms-expand,
   }
 
   .text-input,
-  .select {
+  .text-input--small,
+  .textarea,
+  .textarea--small,
+  .select,
+  .select--small {
     border-color: $fill-red !important;
   }
 }
