@@ -109,7 +109,7 @@
   &:hover { color: $text-blue !important; }
   }
 
-.link-gray--lighter {
+.link-gray-lighter {
   color: $text-gray-lightest !important;
   &:hover { color: $text-gray !important; }
 }
@@ -175,4 +175,13 @@
 .text-1.slab,
 .text-2.slab, {
   line-height: 1.1 !important;
+}
+
+
+
+// @TODO remove in Solid 2.0
+// -------------------------
+.link-gray--lighter {
+  color: $text-gray--lightest !important;
+  &:hover { color: $text-gray !important; }
 }
