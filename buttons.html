@@ -6,7 +6,7 @@ title: Buttons
 <section class="xs-mb6">
 
   <a name="buttons"></a>
-  <h2 class="bold xs-mb2">Buttons</h2>
+  <h2 class="bold xs-mb2">Primary Buttons</h2>
 
   <p class="xs-mb2">Our <span class="nowrap">.<code class="js-highlight">button</code></span> class is used for primary links and page actions. It can be applied to either <code class="js-highlight">a</code> or <code class="js-highlight">button</code> tags. All additional button classes are additive.</p>
 
@@ -24,19 +24,19 @@ title: Buttons
 
 <section class="xs-mb6">
 
-  <a name="red-buttons"></a>
-  <h2 class="bold xs-mb2">Outline Buttons</h2>
+  <a name="secondary-buttons"></a>
+  <h2 class="bold xs-mb2">Secondary Buttons</h2>
 
-  <p class="xs-mb2">The <span class="nowrap">.<code class="js-highlight">button--outline</code></span> modifier class is great for secondary links and page actions.</p>
+  <p class="xs-mb2">The <span class="nowrap">.<code class="js-highlight">button--secondary</code></span> modifier class is great for secondary links and page actions.</p>
 
   <div class="xs-mb4">
-    <a class="button button--outline xs-mr1" href="">Link</a>
-    <button class="button button--outline">Button</button>
+    <a class="button button--secondary xs-mr1" href="">Link</a>
+    <button class="button button--secondary">Button</button>
   </div>
 
 {% highlight html %}
-<a class="button button--outline" href="">Link</a>
-<button class="button button--outline">Button</button>
+<a class="button button--secondary" href="">Link</a>
+<button class="button button--secondary">Button</button>
 {% endhighlight %}
 
 </section>
@@ -62,24 +62,24 @@ title: Buttons
 
 <section class="xs-mb6">
 
-  <a name="red-buttons"></a>
-  <h2 class="bold xs-mb2">Red Buttons</h2>
+  <a name="negative-buttons"></a>
+  <h2 class="bold xs-mb2">Negative Buttons</h2>
 
-  <p class="xs-mb2">We use our <span class="nowrap">.<code class="js-highlight">button--red</code> modifier class for buttons that represent destructive or negative links and page actions.</p>
+  <p class="xs-mb2">We use our <span class="nowrap">.<code class="js-highlight">button--negative</code> modifier class for buttons that represent destructive or negative links and page actions.</p>
 
   <div class="xs-mb4">
-    <a class="button button--red xs-mr1" href="">Link</a>
-    <button class="button button--red xs-mr1">Button</button>
-    <a class="button button--red button--outline xs-mr1" href="">Link</a>
-    <button class="button button--red button--outline">Button</button>
+    <a class="button button--negative xs-mr1" href="">Link</a>
+    <button class="button button--negative xs-mr1">Button</button>
+    <a class="button button--negative button--secondary xs-mr1" href="">Link</a>
+    <button class="button button--negative button--secondary">Button</button>
   </div>
 
   <div class="xs-mb4">
 {% highlight html %}
-<a class="button button--red" href="">Link</a>
-<button class="button button--red">Button</button>
-<a class="button button--red button--outline" href="">Link</a>
-<button class="button button--red button--outline">Button</button>
+<a class="button button--negative" href="">Link</a>
+<button class="button button--negative">Button</button>
+<a class="button button--negative button--secondary" href="">Link</a>
+<button class="button button--negative button--secondary">Button</button>
 {% endhighlight %}
   </div>
 
@@ -96,17 +96,17 @@ title: Buttons
     <div class="xs-p2 fill-gray--darker">
       <a class="button button--white xs-mr1" href="">Link</a>
       <button class="button button--white xs-mr1">Button</button>
-      <a class="button button--white button--outline xs-mr1" href="">Link</a>
-      <button class="button button--white button--outline">Button</button>
+      <a class="button button--white button--secondary xs-mr1" href="">Link</a>
+      <button class="button button--white button--secondary">Button</button>
     </div>
   </div>
 
   <div class="xs-mb4">
 {% highlight html %}
-<a class="button button--white button--outline" href="">Link</a>
-<button class="button button--white button--outline">Button</button>
-<a class="button button--white button--outline" href="">Link</a>
-<button class="button button--white button--outline">Button</button>
+<a class="button button--white button--secondary" href="">Link</a>
+<button class="button button--white button--secondary">Button</button>
+<a class="button button--white button--secondary" href="">Link</a>
+<button class="button button--white button--secondary">Button</button>
 {% endhighlight %}
   </div>
 
@@ -121,23 +121,23 @@ title: Buttons
 
   <div class="xs-mb3">
     <button class="button button--disabled xs-mr1">Button</button>
-    <button class="button button--outline button--disabled xs-mr1">Button</button>
-    <button class="button button--red button--disabled xs-mr1">Button</button>
-    <button class="button button--red button--outline button--disabled xs-mr1">Button</button>
+    <button class="button button--secondary button--disabled xs-mr1">Button</button>
+    <button class="button button--negative button--disabled xs-mr1">Button</button>
+    <button class="button button--negative button--secondary button--disabled xs-mr1">Button</button>
     <div class="xs-inline-block xs-p1 fill-gray--darker">
       <button class="button button--white button--disabled xs-mr1">Button</button>
-      <button class="button button--white button--outline button--disabled">Button</button>
+      <button class="button button--white button--secondary button--disabled">Button</button>
     </div>
   </div>
 
   <div class="xs-mb4">
 {% highlight html %}
 <button class="button button--disabled">Button</button>
-<button class="button button--outline button--disabled">Button</button>
-<button class="button button--red button--disabled">Button</button>
-<button class="button button--red button--outline button--disabled">Button</button>
+<button class="button button--secondary button--disabled">Button</button>
+<button class="button button--negative button--disabled">Button</button>
+<button class="button button--negative button--secondary button--disabled">Button</button>
 <button class="button button--white button--disabled">Button</button>
-<button class="button button--white button--outline button--disabled">Button</button>
+<button class="button button--white button--secondary button--disabled">Button</button>
 {% endhighlight %}
   </div>
 
@@ -156,19 +156,19 @@ title: Buttons
       </svg>
       Button
     </button>
-     <button class="button button--outline button--icon xs-mr1" href="">
+     <button class="button button--secondary button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-    <button class="button button--red button--icon xs-mr1" href="">
+    <button class="button button--negative button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-     <button class="button button--red button--outline button--icon xs-mr1" href="">
+     <button class="button button--negative button--secondary button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
@@ -181,7 +181,7 @@ title: Buttons
         </svg>
         Button
       </button>
-       <button class="button button--white button--outline button--icon" href="">
+       <button class="button button--white button--secondary button--icon" href="">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
         </svg>
@@ -197,17 +197,17 @@ title: Buttons
   Button
 </button>
 
-<button class="button button--outline button--icon" href="">
+<button class="button button--secondary button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
 
-<button class="button button--red button--icon" href="">
+<button class="button button--negative button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
 
-<button class="button button--red button--outline button--icon" href="">
+<button class="button button--negative button--secondary button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
@@ -217,7 +217,7 @@ title: Buttons
   Button
 </button>
 
-<button class="button button--white button--outline button--icon" href="">
+<button class="button button--white button--secondary button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
@@ -355,23 +355,23 @@ title: Buttons
 
   <div class="xs-mb3">
     <button class="button button--small xs-mr1">Button</button>
-    <button class="button button--outline button--small xs-mr1">Button</button>
-    <button class="button button--red button--small xs-mr1">Button</button>
-    <button class="button button--red button--outline button--small xs-mr1">Button</button>
+    <button class="button button--secondary button--small xs-mr1">Button</button>
+    <button class="button button--negative button--small xs-mr1">Button</button>
+    <button class="button button--negative button--secondary button--small xs-mr1">Button</button>
     <div class="xs-inline-block xs-p1 fill-gray--darker">
       <button class="button button--white button--small xs-mr1">Button</button>
-      <button class="button button--white button--outline button--small">Button</button>
+      <button class="button button--white button--secondary button--small">Button</button>
     </div>
   </div>
 
   <div class="xs-mb4">
 {% highlight html %}
 <button class="button button--small">Button</button>
-<button class="button button--outline button--small">Button</button>
-<button class="button button--red button--small">Button</button>
-<button class="button button--red button--outline button--small">Button</button>
+<button class="button button--secondary button--small">Button</button>
+<button class="button button--negative button--small">Button</button>
+<button class="button button--negative button--secondary button--small">Button</button>
 <button class="button button--white button--small">Button</button>
-<button class="button button--white button--outline button--small">Button</button>
+<button class="button button--white button--secondary button--small">Button</button>
 {% endhighlight %}
   </div>
 
@@ -390,19 +390,19 @@ title: Buttons
       </svg>
       Button
     </button>
-     <button class="button button--outline button--small button--icon xs-mr1" href="">
+     <button class="button button--secondary button--small button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-    <button class="button button--red button--small button--icon xs-mr1" href="">
+    <button class="button button--negative button--small button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
       Button
     </button>
-     <button class="button button--red button--outline button--small button--icon xs-mr1" href="">
+     <button class="button button--negative button--secondary button--small button--icon xs-mr1" href="">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
       </svg>
@@ -415,7 +415,7 @@ title: Buttons
         </svg>
         Button
       </button>
-        <button class="button button--white button--outline button--small button--icon" href="">
+        <button class="button button--white button--secondary button--small button--icon" href="">
           <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 256c0-134.391 109.609-244 244-244 62.589 0 123.271 25.099 168.068 67.354l41.302-40.984c5.719-6.036 14.615-7.625 21.922-4.448 7.625 3.177 12.708 10.484 12.708 18.745v142.333c0 11.12-9.214 20.333-20.333 20.333h-142.333c-8.26 0-15.568-5.083-18.745-12.708-3.177-7.307-1.589-16.203 4.448-21.922l43.526-43.844c-29.547-27.641-68.943-43.526-110.563-43.526-89.594 0-162.667 73.073-162.667 162.667 0 89.594 73.073 162.667 162.667 162.667 50.516 0 97.219-22.875 128.354-63.224 1.589-2.224 4.448-3.495 7.307-3.813 2.859 0 5.719.953 7.943 2.859l43.526 43.844c3.495 3.495 3.813 9.531.635 13.661-46.385 55.917-115.01 88.005-187.766 88.005-134.391 0-244-109.609-244-244z"/>
           </svg>
@@ -431,17 +431,17 @@ title: Buttons
   Button
 </button>
 
-<button class="button button--outline button--small button--icon" href="">
+<button class="button button--secondary button--small button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
 
-<button class="button button--red button--small button--icon" href="">
+<button class="button button--negative button--small button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
 
-<button class="button button--red button--outline button--small button--icon" href="">
+<button class="button button--negative button--secondary button--small button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
@@ -451,7 +451,7 @@ title: Buttons
   Button
 </button>
 
-<button class="button button--white button--outline button--small button--icon" href="">
+<button class="button button--white button--secondary button--small button--icon" href="">
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">...</svg>
   Button
 </button>
@@ -579,5 +579,11 @@ title: Buttons
   Follow
 </button>
 {% endhighlight %}
+</section>
+
+<section class="xs-mb6">
+  <a name="custom-buttons"></a>
+  <h2 class="bold xs-mb2">Custom Buttons</h2>
+  <p class="xs-mb2">When including solid with Sass it is possible to use the <span class="nowrap">.<code class="js-highlight">button-style</code></span> mixin to include new colored button styles in your app. For an example see <a href="https://gist.github.com/samthurman/e45a62e6da16b9dbaae9">this gist</a>.</p>
 </section>
 

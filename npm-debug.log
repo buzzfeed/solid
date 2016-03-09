@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-copy',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.7.3
+3 info using node@v0.10.37
+4 verbose node symlink /usr/local/bin/node
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData grunt-contrib-copy@~1.0.0
+9 silly fetchNamedPackageData grunt-contrib-copy
+10 silly mapToRegistry name grunt-contrib-copy
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-copy
+14 verbose request uri https://registry.npmjs.org/grunt-contrib-copy
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 13:33:41
+17 verbose request using bearer token for auth
+18 verbose request id fc80ef3b432e4861
+19 verbose etag "56d9f57b-9b52"
+20 verbose lastModified Fri, 04 Mar 2016 20:52:11 GMT
+21 http request GET https://registry.npmjs.org/grunt-contrib-copy
+22 http 304 https://registry.npmjs.org/grunt-contrib-copy
+23 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+23 verbose headers   'last-modified': 'Fri, 04 Mar 2016 20:52:11 GMT',
+23 verbose headers   etag: '"56d9f57b-9b52"',
+23 verbose headers   expires: 'Thu, 10 Mar 2016 00:33:41 GMT',
+23 verbose headers   'access-control-allow-origin': '*',
+23 verbose headers   'access-control-allow-methods': 'GET',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Wed, 09 Mar 2016 18:33:41 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-iad2141-IAD',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1457548421.559528,VS0,VE13' }
+24 silly get cb [ 304,
+24 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+24 silly get     'last-modified': 'Fri, 04 Mar 2016 20:52:11 GMT',
+24 silly get     etag: '"56d9f57b-9b52"',
+24 silly get     expires: 'Thu, 10 Mar 2016 00:33:41 GMT',
+24 silly get     'access-control-allow-origin': '*',
+24 silly get     'access-control-allow-methods': 'GET',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Wed, 09 Mar 2016 18:33:41 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-iad2141-IAD',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1457548421.559528,VS0,VE13' } ]
+25 verbose etag https://registry.npmjs.org/grunt-contrib-copy from cache
+26 verbose get saving grunt-contrib-copy to /Users/samthurman/.npm/registry.npmjs.org/grunt-contrib-copy/.cache.json
+27 verbose correctMkdir /Users/samthurman/.npm correctMkdir not in flight; initializing
+28 verbose stack TypeError: Invalid Version: 0.4.0rc7
+28 verbose stack     at new SemVer (/usr/local/lib/node_modules/npm/node_modules/semver/semver.js:293:11)
+28 verbose stack     at SemVer.compare (/usr/local/lib/node_modules/npm/node_modules/semver/semver.js:342:13)
+28 verbose stack     at compare (/usr/local/lib/node_modules/npm/node_modules/semver/semver.js:566:31)
+28 verbose stack     at rcompare (/usr/local/lib/node_modules/npm/node_modules/semver/semver.js:576:10)
+28 verbose stack     at Array.sort (native)
+28 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:121:48)
+28 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+28 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+28 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+28 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+29 verbose cwd /opt/buzzfeed/solid
+30 error Darwin 14.3.0
+31 error argv "node" "/usr/local/bin/npm" "install" "grunt-contrib-copy" "--save-dev"
+32 error node v0.10.37
+33 error npm  v3.7.3
+34 error Invalid Version: 0.4.0rc7
+35 error If you need help, you may report this error at:
+35 error     <https://github.com/npm/npm/issues>
+36 verbose exit [ 1, true ]

@@ -38,44 +38,59 @@
 // -------------------------
 // generates every style needed for a new button
 // when passed the apropriate colors
+//
+// $fill-color     - background color for the button
+// $text-color     - button text color
+// $secondary-text-color       - text color used with secondary modifier class (defaults to fill color)
+// $secondary-hover-text-color - background color used with secondary modifier class (defaults to text color)
 
-@mixin button-style($fill-color, $text-color, $outline-text-color, $outline-hover-text-color) {
+@mixin button-style($fill-color, $text-color, $secondary-text-color:$fill-color, $secondary-hover-text-color:$text-color) {
+  //button state colors
+  $hover-background-color:  darken($fill-color, 20%);
+  $active-background-color: darken($fill-color, 35%);
+  $secondary-active-background-color: darken($fill-color, 20%);
 
   //base style
   background-color: $fill-color         !important;
   color: $text-color                    !important; 
-  border-color: $outline-text-color     !important; 
+  border-color: $secondary-text-color     !important; 
   border: none                          !important;
 
   //only have hover styles if button is not disabled
   &:not(.button--disabled) {
     &:hover {
-      background-color: darken($fill-color, 20%) !important;
+      background-color: $hover-background-color  !important;
       transition: background-color .15s ease 0s  !important;
     }
 
-    &:active { background-color: darken($fill-color, 35%) !important; }
+    &:active { background-color: $active-background-color !important; }
   }
 
-  //button outline style
-  &.button--outline {
+  //colored button + secondary button styles
+  &.button--secondary {
     border: 1px solid $fill-color !important;
-    color: $outline-text-color    !important;
+    color: $secondary-text-color    !important;
     background: none              !important;
+  }
 
-    //only have hover styles if button is not disabled
-    &:not(.button--disabled) {
-      &:active { background-color: darken($fill-color, 20%) !important; }
-      &:hover {
-        background-color: $fill-color     !important;
-        color: $outline-hover-text-color  !important;
-      }
+  //only have hover styles if button is not disabled
+  &.button--secondary:not(.button--disabled) {
+    &:active { 
+      background-color: $secondary-active-background-color !important;
+      border-color:     $secondary-active-background-color !important;
+      color:            $secondary-hover-text-color !important;
     }
 
-    &.button--icon {
-      >svg                               { fill: $fill-color  !important; }
-      &:not(.button--disabled):hover svg { fill: $fill-white !important; }
+    &:hover {
+      background-color: $fill-color     !important;
+      color: $secondary-hover-text-color  !important;
     }
+  }
+
+  //colored button + secondary + icon button styles
+  &.button--secondary.button--icon {
+    >svg                               { fill: $fill-color  !important; }
+    &:not(.button--disabled):hover svg { fill: $fill-white !important; }
   }
 }
 
@@ -94,43 +109,43 @@
   border: 1px solid transparent !important;
   text-align: center            !important;
 
-  @include button-style($fill-blue, $text-white, $text-blue, $text-white);
+  @include button-style($fill-blue, $text-white);
 }
 
 // Colored Buttons
 // -------------------------
 
-.button--red {
-  @include button-style($fill-red, $text-white, $text-red, $text-white);
+.button--negative {
+  @include button-style($fill-red, $text-white);
 }
 
 .button--white {
-  @include button-style($fill-white, $text-gray, $text-white, $text-gray);
+  @include button-style($fill-white, $text-gray);
 
-  // white button has custom hover states
-  &.button--outline:not(.button--disabled):active { background-color: darken($fill-white, 10%) !important; }
+  // white button has unique hover states
+  &.button--secondary:not(.button--disabled):active { background-color: darken($fill-white, 10%) !important; }
 
   &.button--icon {
     >svg                               { fill: $fill-gray--darker  !important; }
     &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
   }
 
-  &.button--outline.button--icon {
+  &.button--secondary.button--icon {
     >svg                               { fill: $fill-white  !important; }
     &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
   }
 }
 
-// transparent button has different fill rules
+// transparent button has unique fill rules
 .button--transparent {
   background-color: transparent         !important;
-  color: $text-gray                     !important; 
+  color: $text-blue                     !important; 
   border-color: transparent             !important; 
   border: none                          !important;
 
   &:not(.button--disabled):hover {
     background-color: transparent         !important;
-    color: $text-blue                     !important; 
+    color: darken($text-blue, 20%)        !important;
   }
 }
 
