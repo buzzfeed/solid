@@ -84,6 +84,6 @@
     "grunt-contrib-compress": "~1.1.1",
     "grunt-cssnano": "^2.0.1",
     "grunt-sass": "^1.1.0",
-    "grunt-contrib-copy": "~1.0.0"
+    "grunt-contrib-copy": "^1.0.0"
   }
 }
