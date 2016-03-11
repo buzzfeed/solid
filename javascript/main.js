@@ -17,4 +17,3 @@ $('.modal').click(function(){
 $('.modal__content').click(function(event){
   event.stopPropagation();
 });
-
