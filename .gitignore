@@ -9,9 +9,6 @@
 _site/
 _deploy/
 
-# ignore compiled dist files
-dist/
-
 # ignore node modules
 node_modules/
 
