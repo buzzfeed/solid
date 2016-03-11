@@ -24,7 +24,6 @@ deploy: build_deploy s3
 
 # clean out generated files
 clean:
-	rm -fr dist/
 	rm -fr _site/
 	rm -fr _deploy/
 
