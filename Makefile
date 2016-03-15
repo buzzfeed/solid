@@ -32,7 +32,7 @@ run: dist
 	bundle exec jekyll serve
 
 # build static site into _site
-build: dist
+build:
 	bundle exec jekyll build
 
 # build static site into _deploy
