@@ -12,8 +12,13 @@ $slab: "Caponi-Slab-Semibold", Georgia, serif;
 // -------------------------
 
 $border: 1px solid rgba(0, 0, 0, .2);
-$border--lighter: 1px solid rgba(0, 0, 0, .1);
+$border-lighter: 1px solid rgba(0, 0, 0, .1);
 $border-radius: 3px;
+
+//@TODO Remove in 2.0
+// -------------------------
+
+$border--lighter: 1px solid rgba(0, 0, 0, .1);
 
 // Spacing
 // -------------------------
