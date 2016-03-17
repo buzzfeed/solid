@@ -139,7 +139,7 @@ select::-ms-expand,
 }
 
 .form-label--optional {
-  color: $text-gray--lightest !important;
+  color: $text-gray-lightest !important;
   font-weight: $regular       !important;
 }
 
@@ -149,7 +149,7 @@ select::-ms-expand,
 }
 
 .form-helper {
-  color: $text-gray--lightest !important;
+  color: $text-gray-lightest !important;
   display: block              !important;
   margin-top: $space-1        !important;
   font-size: $text-5          !important; 

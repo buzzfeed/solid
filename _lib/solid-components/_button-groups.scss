@@ -25,7 +25,7 @@
 
   &:hover {
     transition: background-color .3s ease 0s;
-    background-color: $fill-gray--lighter;
+    background-color: $fill-gray-lighter;
   }
 
   &:last-of-type {
@@ -35,7 +35,7 @@
 
 .button-group .button-group__radio:checked + .button-group__item,
 .button-group--small .button-group__radio:checked + .button-group__item {
-  background-color: $fill-gray--lighter;
+  background-color: $fill-gray-lighter;
   color: $text-gray;
 }
 
