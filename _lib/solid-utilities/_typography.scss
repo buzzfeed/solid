@@ -5,32 +5,32 @@
 // Text Size
 // -------------------------
 
-.text-1 { 
+.text-1 {
   font-size:   $text-1       !important;
   line-height: $line-height-1 !important;
 }
 
-.text-2 { 
+.text-2 {
   font-size:   $text-2       !important;
   line-height: $line-height-2 !important;
 }
 
-.text-3 { 
+.text-3 {
   font-size:   $text-3       !important;
   line-height: $line-height-3 !important;
 }
 
-.text-4 { 
+.text-4 {
   font-size:   $text-4       !important;
   line-height: $line-height-4 !important;
 }
 
-.text-5 { 
+.text-5 {
   font-size:   $text-5       !important;
   line-height: $line-height-5 !important;
 }
 
-.text-6 { 
+.text-6 {
   font-size:   $text-6       !important;
   line-height: $line-height-6 !important;
 }
@@ -76,10 +76,10 @@
   // scss-lint:disable VendorPrefix
   -webkit-font-feature-settings: "liga", "kern" !important;
   font-feature-settings:         "liga", "kern" !important;
-  // scss-lint:enable VendorPrefix
+  @include font-smoothing;
   &.bold {
-    font-family: $slab    !important;
-    font-weight: $regular !important;
+    font-family: $slab    !important; // This is included to override faux-italics applied by browsers
+    font-weight: $regular !important; // This is included to override faux-bold applied by browsers 
   }
 
   &.italic { font-family: $slab !important; }
@@ -87,7 +87,7 @@
 
 // List styles
 // -------------------------
-// Unstyled keeps list items block level, 
+// Unstyled keeps list items block level,
 // just removes default browser padding and list-style
 
 .list-unstyled {
@@ -109,8 +109,8 @@
   &:hover { color: $text-blue !important; }
   }
 
-.link-gray--lighter {
-  color: $text-gray--lightest !important;
+.link-gray-lighter {
+  color: $text-gray-lightest !important;
   &:hover { color: $text-gray !important; }
 }
 
@@ -161,7 +161,7 @@
 
 // Slab specific fixes
 // -------------------------
-// Slab should never be an h6 or .type-6, 
+// Slab should never be an h6 or .type-6,
 // these classes disallow that from happening
 // (type will default to Sans)
 
@@ -175,4 +175,13 @@
 .text-1.slab,
 .text-2.slab, {
   line-height: 1.1 !important;
+}
+
+
+
+// @TODO remove in Solid 2.0
+// -------------------------
+.link-gray--lighter {
+  color: $text-gray--lightest !important;
+  &:hover { color: $text-gray !important; }
 }

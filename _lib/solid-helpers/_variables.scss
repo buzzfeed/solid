@@ -2,6 +2,11 @@
 // Variables
 // --------------------------------------------------
 
+// Config
+// -------------------------
+
+$font-smoothing: true !default; //Controls whether or not we use font sizing. See the font-smoothing mixin in _mixins.scss
+
 // Fonts
 // -------------------------
 
@@ -12,8 +17,13 @@ $slab: "Caponi-Slab-Semibold", Georgia, serif;
 // -------------------------
 
 $border: 1px solid rgba(0, 0, 0, .2);
-$border--lighter: 1px solid rgba(0, 0, 0, .1);
+$border-lighter: 1px solid rgba(0, 0, 0, .1);
 $border-radius: 3px;
+
+//@TODO Remove in 2.0
+// -------------------------
+
+$border--lighter: 1px solid rgba(0, 0, 0, .1);
 
 // Spacing
 // -------------------------
@@ -37,18 +47,18 @@ $z4: 400;
 
 // Fills
 $fill-red: #e32;
-$fill-red--lighter: #feebe9;
+$fill-red-lighter: #feebe9;
 $fill-pink: #eb2649;
 $fill-blue: #07e;
 $fill-yellow: #fe0;
-$fill-yellow--lighter: #fffab6;
+$fill-yellow-lighter: #fffab6;
 $fill-green: #6fb824;
-$fill-green--lighter: #f1f8e9;
+$fill-green-lighter: #f1f8e9;
 $fill-orange: #f49c1a;
 $fill-promoted-orange: #edb802;
-$fill-gray--lighter: #f4f4f4;
+$fill-gray-lighter: #f4f4f4;
 $fill-gray: #aaa;
-$fill-gray--darker: #222;
+$fill-gray-darker: #222;
 $fill-white: #fff;
 
 // Social Fills
@@ -66,8 +76,8 @@ $fill-snapchat: #fffc00;
 // Type Colors
 $text-white: #fff;
 $text-gray: #333;
-$text-gray--lighter: #666;
-$text-gray--lightest: #999;
+$text-gray-lighter: #666;
+$text-gray-lightest: #999;
 $text-red: #e32;
 $text-orange: #f49c1a;
 $text-green: #6fb824;
@@ -88,20 +98,19 @@ $text-instagram: #517fa4;
 
 $base-font-size: 16px;
 
-$text-1: 2.25rem;   // 36px
+$text-1: 1.75rem;   // 28px
 $text-2: 1.375rem;  // 22px
 $text-3: 1.125rem;  // 18px
 $text-4: 1rem;      // 16px
 $text-5: .875rem;  // 14px
 $text-6: .75rem;   // 12px
 
-$line-height-1: 2.5rem; // 40px
+$line-height-1: 2.25rem; // 36px
 $line-height-2: 1.625rem; // 26px
 $line-height-3: 1.375rem; // 22px
 $line-height-4: 1.5rem; // 24px
 $line-height-5: 1.25rem; // 20px
 $line-height-6: 1rem; // 16px
-
 
 $regular: 400;
 $bold: 600;
@@ -122,3 +131,15 @@ $solid-logo: "%3Csvg%20width%3D%22100%22%20height%3D%2234%22%20viewBox%3D%220%20
 $close-icon: "%3Csvg%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asketch%3D%22http%3A//www.bohemiancoding.com/sketch/ns%22%3E%3Ctitle%3EArtboard%201%3C/title%3E%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%3Cpath%20d%3D%22M256%20302.855l-187.452%20187.452c-12.952%2012.952-33.885%2012.907-46.823-.032-12.912-12.912-12.952-33.902-.032-46.823l187.452-187.452-187.452-187.452c-12.952-12.952-12.907-33.885.032-46.823%2012.912-12.912%2033.902-12.952%2046.823-.032l187.452%20187.452%20187.452-187.452c12.952-12.952%2033.885-12.907%2046.823.032%2012.912%2012.912%2012.952%2033.902.032%2046.823l-187.452%20187.452%20187.452%20187.452c12.952%2012.952%2012.907%2033.885-.032%2046.823-12.912%2012.912-33.902%2012.952-46.823.032l-187.452-187.452z%22/%3E%3C/svg%3E";
 $close-icon--thick: "%3Csvg%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3Eclose-thick%3C/title%3E%3Cpath%20d%3D%22M164.874%20258.048L50.198%20139.276c-25.597-25.597-25.597-63.48%200-89.078%2025.597-25.597%2063.48-25.597%2089.078%200l114.676%20114.676L368.628%2050.198c25.597-25.597%2068.09-25.597%2093.174%200%2025.597%2025.597%2025.597%2068.09%200%2093.174L347.126%20258.048l114.676%20114.676c25.597%2025.597%2025.597%2063.48%200%2089.078-25.597%2025.597-63.48%2025.597-89.078%200L258.048%20347.126%20143.372%20461.802c-25.597%2025.597-68.09%2025.597-93.174%200-25.597-25.597-25.597-68.09%200-93.174l114.676-110.58z%22%20fill%3D%22%234A4A4A%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E";
 $close-icon--light: "%3Csvg%20width%3D%22450%22%20height%3D%22450%22%20viewBox%3D%220%200%20450%20450%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3Eclose-thick%3C/title%3E%3Cpath%20d%3D%22M133.874%20227.048L19.198%20108.276C-6.4%2082.68-6.4%2044.796%2019.198%2019.198c25.597-25.597%2063.48-25.597%2089.078%200l114.676%20114.676L337.628%2019.198c25.597-25.597%2068.09-25.597%2093.174%200%2025.597%2025.597%2025.597%2068.09%200%2093.174L316.126%20227.048l114.676%20114.676c25.597%2025.597%2025.597%2063.48%200%2089.078-25.597%2025.597-63.48%2025.597-89.078%200L227.048%20316.126%20112.372%20430.802c-25.597%2025.597-68.09%2025.597-93.174%200-25.597-25.597-25.597-68.09%200-93.174l114.676-110.58z%22%20fill%3D%22%23B3B3B3%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E";
+
+
+// @TODO remove in Solid 2.0
+// -------------------------
+$fill-red--lighter: #feebe9;
+$fill-yellow--lighter: #fffab6;
+$fill-green--lighter: #f1f8e9;
+$fill-gray--lighter: #f4f4f4;
+$fill-gray--darker: #222;
+$text-gray--lighter: #666;
+$text-gray--lightest: #999;
+

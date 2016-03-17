@@ -28,11 +28,11 @@ clean:
 	rm -fr _deploy/
 
 # run the jekyll server
-run: dist
+run:
 	bundle exec jekyll serve
 
 # build static site into _site
-build: dist
+build:
 	bundle exec jekyll build
 
 # build static site into _deploy
@@ -45,6 +45,7 @@ build_deploy: dist
 dist:
 	grunt compile_lib
 	grunt minify_lib
+	grunt latest_solid
 	grunt zip_lib
 
 # deploy to s3 bucket
