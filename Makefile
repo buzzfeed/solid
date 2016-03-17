@@ -28,7 +28,7 @@ clean:
 	rm -fr _deploy/
 
 # run the jekyll server
-run: dist
+run:
 	bundle exec jekyll serve
 
 # build static site into _site
