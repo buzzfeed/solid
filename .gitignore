@@ -2,8 +2,7 @@
 .sass-cache
 
 # ignore generated css
-*.css.map
-*.css
+.sass-cache/
 
 # ignore generated site
 _site/
@@ -15,4 +14,5 @@ node_modules/
 # ignore weird image filesystem crap
 .DS_Store
 
+# ignore ruby gems
 .bundle/
