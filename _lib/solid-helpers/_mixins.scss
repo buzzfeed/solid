@@ -36,7 +36,7 @@ $breakpoints: (
     $breakpoint-prefix: "#{$breakpoint-name}-";
 
     @include media-query($breakpoint-name) {
-      
+
       // Columns
       .#{$breakpoint-prefix} {
         @content;
@@ -105,7 +105,24 @@ $breakpoints: (
 @mixin tabular-figures {
   font-variant-numeric: tabular-nums;
   -moz-font-feature-settings:"tnum" 1; // Firefox 31+
-  -moz-font-feature-settings:"tnum=1"; 
+  -moz-font-feature-settings:"tnum=1";
   -webkit-font-feature-settings: 'tnum' 1; // Chrome 31+, Android 4.4+, Opera 24+
   font-feature-settings: 'tnum' 1; // IE10+
+}
+
+
+// Font Smoothing
+// This will be enabled automatically when using the .slab class. 
+// You may want to disable it for performance reasons, since these styles will cascade down. 
+// https://davidwalsh.name/font-smoothing
+// ------------------------------
+
+@mixin font-smoothing {
+	@if $font-smoothing == true { // Font smoothing variable exists in the variables partial and can be overridden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+} @else {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+	}
 }
