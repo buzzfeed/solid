@@ -78,8 +78,8 @@
   font-feature-settings:         "liga", "kern" !important;
   @include font-smoothing;
   &.bold {
-    font-family: $slab    !important;
-    font-weight: $regular !important;
+    font-family: $slab    !important; // This is included to override faux-italics applied by browsers
+    font-weight: $regular !important; // This is included to override faux-bold applied by browsers 
   }
 
   &.italic { font-family: $slab !important; }
