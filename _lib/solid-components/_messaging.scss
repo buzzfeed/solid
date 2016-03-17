@@ -42,7 +42,7 @@
 }
 
 .page-message--error {
-  background-color: $fill-red--lighter;
+  background-color: $fill-red-lighter;
   color: $text-red;
 
   .page-message__text,
@@ -56,7 +56,7 @@
   }
 
   .page-message__close-icon {
-    fill: darken($fill-red--lighter, 20%);
+    fill: darken($fill-red-lighter, 20%);
   }
 
   & .page-message__close:hover .page-message__close-icon {
@@ -65,7 +65,7 @@
 }
 
 .page-message--success {
-  background-color: $fill-green--lighter;
+  background-color: $fill-green-lighter;
   color: $text-green;
 
   .page-message__text, 
@@ -81,7 +81,7 @@
   }
 
   .page-message__close-icon {
-    fill: darken($fill-green--lighter, 20%);
+    fill: darken($fill-green-lighter, 20%);
   }
 
   & .page-message__close:hover .page-message__close-icon {

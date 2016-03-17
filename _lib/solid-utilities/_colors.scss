@@ -6,18 +6,18 @@
 // -------------------------
 
 .fill-red {               background-color: $fill-red             !important; }
-.fill-red--lighter {      background-color: $fill-red--lighter    !important; }
+.fill-red-lighter {      background-color: $fill-red-lighter      !important; }
 .fill-pink {              background-color: $fill-pink            !important; }
 .fill-blue {              background-color: $fill-blue            !important; }
 .fill-yellow {            background-color: $fill-yellow          !important; }
-.fill-yellow--lighter {   background-color: $fill-yellow--lighter !important; }
+.fill-yellow-lighter {   background-color: $fill-yellow-lighter   !important; }
 .fill-green {             background-color: $fill-green           !important; }
-.fill-green--lighter {    background-color: $fill-green--lighter  !important; }
+.fill-green-lighter {    background-color: $fill-green-lighter    !important; }
 .fill-orange {            background-color: $fill-orange          !important; }
 .fill-promoted-orange {   background-color: $fill-promoted-orange !important; }
-.fill-gray--lighter {     background-color: $fill-gray--lighter   !important; }
+.fill-gray-lighter {     background-color: $fill-gray-lighter     !important; }
 .fill-gray {              background-color: $fill-gray            !important; }
-.fill-gray--darker {      background-color: $fill-gray--darker    !important; }
+.fill-gray-darker {      background-color: $fill-gray-darker      !important; }
 .fill-white {             background-color: $fill-white           !important; }
 
 
@@ -40,9 +40,20 @@
 
 .text-gray {              color: $text-gray           !important; }
 .text-white {             color: $text-white          !important; }
-.text-gray--lighter {     color: $text-gray--lighter  !important; }
-.text-gray--lightest {    color: $text-gray--lightest !important; }
+.text-gray-lighter {     color: $text-gray-lighter    !important; }
+.text-gray-lightest {    color: $text-gray-lightest   !important; }
 .text-red {               color: $text-red            !important; }
 .text-orange {            color: $text-orange         !important; }
 .text-green {             color: $text-green          !important; }
 .text-blue {              color: $text-blue           !important; }
+
+
+// @TODO remove in version
+// -------------------------
+.fill-red-lighter {      background-color: $fill-red-lighter    !important; }
+.fill-yellow-lighter {   background-color: $fill-yellow-lighter !important; }
+.fill-green-lighter {    background-color: $fill-green-lighter  !important; }
+.fill-gray-lighter {     background-color: $fill-gray-lighter   !important; }
+.fill-gray-darker {      background-color: $fill-gray-darker    !important; }
+.text-gray-lighter {     color: $text-gray-lighter              !important; }
+.text-gray-lightest {    color: $text-gray-lightest             !important; }

@@ -25,11 +25,11 @@
   &border-bottom { border-bottom: $border !important; }
   &border-left   { border-left: $border   !important; }
 
-  &border--lighter        { border: $border--lighter        !important; }
-  &border-top--lighter    { border-top: $border--lighter    !important; }
-  &border-right--lighter  { border-right: $border--lighter  !important; }
-  &border-bottom--lighter { border-bottom: $border--lighter !important; }
-  &border-left--lighter   { border-left: $border--lighter   !important; }
+  &border-lighter        { border: $border-lighter        !important; }
+  &border-top-lighter    { border-top: $border-lighter    !important; }
+  &border-right-lighter  { border-right: $border-lighter  !important; }
+  &border-bottom-lighter { border-bottom: $border-lighter !important; }
+  &border-left-lighter   { border-left: $border-lighter   !important; }
 
   &border-none        { border: none        !important; }
   &border-top-none    { border-top: none    !important; }
@@ -37,4 +37,13 @@
   &border-bottom-none { border-bottom: none !important; }
   &border-left-none   { border-left: none   !important; }
 
+
+// @TODO Remove in 2.0
+
+  &border--lighter        { border: $border--lighter        !important; }
+  &border-top--lighter    { border-top: $border--lighter    !important; }
+  &border-right--lighter  { border-right: $border--lighter  !important; }
+  &border-bottom--lighter { border-bottom: $border--lighter !important; }
+  &border-left--lighter   { border-left: $border--lighter   !important; }
+  
 }
