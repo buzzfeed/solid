@@ -48,15 +48,31 @@ module.exports = function(grunt) {
              expand: true
          }]
       }
+    },
+    copy: {
+      latest: {
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: 'solid.<%= pkg.version %>.css',
+          dest: 'dist/',
+          rename: function(dest, src) {
+            src = "solid.latest.css" //always available latest css
+            return dest + src;
+          }
+        }]
+      }
     }
   });
 
 grunt.loadNpmTasks('grunt-sass');
 grunt.loadNpmTasks('grunt-cssnano');
 grunt.loadNpmTasks('grunt-contrib-compress');
+grunt.loadNpmTasks('grunt-contrib-copy');
 
 grunt.registerTask('compile_lib', ['sass:lib']);
 grunt.registerTask('minify_lib', ['cssnano:lib']);
+grunt.registerTask('latest_solid', ['copy:latest']);
 grunt.registerTask('zip_lib', ['compress:lib']);
 
 }
