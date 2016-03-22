@@ -23,7 +23,7 @@
   // Reset unusual Firefox-on-Android default style;
   // https://github.com/necolas/normalize.css/issues/214
   background-image: none                      !important;
-  border: 0                                   !important;
+  border: 1px solid transparent               !important;
   white-space: nowrap                         !important;
   @include prefix((appearance: none), webkit);
   @include prefix((user-select: none));
@@ -52,9 +52,9 @@
 
   //base style
   background-color: $fill-color         !important;
-  color: $text-color                    !important; 
-  border-color: $secondary-text-color     !important; 
-  border: none                          !important;
+  color: $text-color                    !important;
+  border-color: $secondary-text-color   !important;
+  border: 1px solid transparent         !important;
 
   //only have hover styles if button is not disabled
   &:not(.button--disabled) {
@@ -69,20 +69,20 @@
   //colored button + secondary button styles
   &.button--secondary {
     border: 1px solid $fill-color !important;
-    color: $secondary-text-color    !important;
+    color: $secondary-text-color  !important;
     background: none              !important;
   }
 
   //only have hover styles if button is not disabled
   &.button--secondary:not(.button--disabled) {
-    &:active { 
+    &:active {
       background-color: $secondary-active-background-color !important;
       border-color:     $secondary-active-background-color !important;
-      color:            $secondary-hover-text-color !important;
+      color:            $secondary-hover-text-color        !important;
     }
 
     &:hover {
-      background-color: $fill-color     !important;
+      background-color: $fill-color       !important;
       color: $secondary-hover-text-color  !important;
     }
   }
@@ -90,7 +90,7 @@
   //colored button + secondary + icon button styles
   &.button--secondary.button--icon {
     >svg                               { fill: $fill-color  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-white !important; }
+    &:not(.button--disabled):hover svg { fill: $fill-white  !important; }
   }
 }
 
@@ -139,13 +139,13 @@
 // transparent button has unique fill rules
 .button--transparent {
   background-color: transparent         !important;
-  color: $text-blue                     !important; 
-  border-color: transparent             !important; 
-  border: none                          !important;
+  color: $text-blue                     !important;
+  border-color: transparent             !important;
+  border: 1px solid transparent         !important;
 
   &:not(.button--disabled):hover {
-    background-color: transparent         !important;
-    color: darken($text-blue, 20%)        !important;
+    background-color: transparent       !important;
+    color: darken($text-blue, 20%)      !important;
   }
 }
 
@@ -211,7 +211,7 @@
     color: $text-white !important;
   }
 
-  &:not(.button--disabled):active {    
+  &:not(.button--disabled):active {
     background-color: darken($color, 35%) !important;
   }
 }
