@@ -22,9 +22,15 @@
       <li class="solid-nav__group {% if page.title == 'Release Notes' %}active{% endif %}">
         <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="release-notes.html">Release Notes</a>
       </li>
-      <li class="solid-nav__group {% if page.title == 'Variables' %}active{% endif %}">
-        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="variables.html">Variables</a>
-           {% if page.title == 'Variables' %}
+    </ol>
+
+
+ <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">Resources</label>
+
+    <ol class="list-unstyled xs-mb4">
+      <li class="solid-nav__group {% if page.title == 'SCSS Variables' %}active{% endif %}">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="variables.html">SCSS Variables</a>
+           {% if page.title == 'SCSS Variables' %}
           <ul class="list-unstyled text-5 xs-hide sm-block">
             <li class="xs-py1"><a href="#typography" class="xs-block xs-px3 solid-nav__subitem">Typography</a></li>
             <li class="xs-py1"><a href="#colors" class="xs-block xs-px3 solid-nav__subitem">Colors</a></li>
@@ -33,8 +39,8 @@
           </ul>
         {% endif %}
       </li>
-
     </ol>
+
 
     <label class="xs-block text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">CSS Library</label>
 
