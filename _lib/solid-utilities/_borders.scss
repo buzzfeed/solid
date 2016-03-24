@@ -11,7 +11,9 @@
 
 .rounded {        border-radius: $border-radius                       !important; }
 .rounded-top {    border-radius: $border-radius $border-radius 0 0    !important; }
+.rounded-right {  border-radius: 0 $border-radius $border-radius 0    !important; }
 .rounded-bottom { border-radius: 0 0 $border-radius $border-radius    !important; }
+.rounded-left {   border-radius: $border-radius 0 0 $border-radius    !important; }
 .circle {         border-radius: 50%                                  !important; }
 
 // Borders
