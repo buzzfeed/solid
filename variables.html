@@ -1,0 +1,204 @@
+---
+layout: default
+title: SASS Variables
+---
+
+<section class="xs-mb4">
+
+  <h2 class="bold xs-mb2">Using Solid Variables in Custom SCSS</h2>
+  <p>By importing Solid as an SCSS partial you get access to all of Solid's <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variables_" target="_blank">SASS variables</a>. Use these to keep your styles consistent whenever you write custom SCSS.</p>
+
+</section>
+
+
+<section class="xs-mb6">
+  <a name="typography"></a>
+  <h2 class="xs-mb1 bold">Typography</h2>
+  <p class="xs-mb2">Used by the <a href="/typography.html">typography utility classes</a>.</p>
+  <p class="bold xs-mb1">Text Sizes</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-text-element {
+  font-size: $text-1;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$text-1</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-2</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-3</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-4</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-5</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$text-6</span></code>
+
+  <p class="bold xs-mb1">Line Heights</p>
+  <div class="xs-mb2">
+  {% highlight scss %}
+  .my-custom-text-element {
+  line-height: $line-height-1;
+}
+  {% endhighlight %}
+  </div>
+
+
+  <code class="js-highlight xs-block"><span class="nowrap">$line-height-1</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$line-height-2</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$line-height-3</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$line-height-4</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$line-height-5</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$line-height-6</span></code>
+
+  <p class="bold xs-mb1">Font Styles</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-text-element {
+  font-family: $sans;
+  font-weight: $bold;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$sans</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$slab</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$regular</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$bold</span></code>
+</section>
+
+
+<section class="xs-mb6">
+  <a name="colors"></a>
+  <h2 class="xs-mb1 bold">Colors</h2>
+  <p class="xs-mb2">Used by the <a href="/colors.html">color utility classes</a>.</p>
+  <p class="bold xs-mb1">Fill Colors</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-element {
+  background-color: $fill-blue;
+}
+{% endhighlight %}
+  </div>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-red</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-red-lighter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-pink</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-blue</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-yellow</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-yellow-lighter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-green</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-green-lighter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-orange</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-promoted-orange</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-gray-lighter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-gray</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-gray-darker</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$fill-white</span></code>
+
+  <p class="bold xs-mb1">Social Fill Colors</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-element {
+  background-color: $fill-facebook;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-facebook</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-twitter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-google</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-linkedin</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-pinterest</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-tumblr</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-youtube</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-instagram</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$fill-vine</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$fill-snapchat</span></code>
+
+  <p class="bold xs-mb1">Text Colors</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-text-element {
+  color: $text-gray;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$text-white</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-gray</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-gray-lighter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-gray-lightest</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-red</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-orange</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-green</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$text-blue</span></code>
+
+  <p class="bold xs-mb1">Social Text Colors</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-text-element {
+color: $text-facebook;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$text-facebook</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-twitter</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-google</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-linkedin</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-pinterest</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-tumblr</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$text-youtube</span></code>
+  <code class="js-highlight xs-block xs-mb1"><span class="nowrap">$text-instagram</span></code>
+</section>
+
+
+<section class="xs-mb6">
+  <a name="layout"></a>
+  <h2 class="xs-mb1 bold">Layout</h2>
+  <p class="xs-mb2">Used by the <a href="/layout.html">layout utility classes</a>.</p>
+  <p class="bold xs-mb1">Spacing</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-element {
+  margin-bottom: $space-2;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$space-1</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$space-2</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$space-3</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$space-4</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$space-5</span></code>
+  <code class="js-highlight xs-block xs-mb4"><span class="nowrap">$space-6</span></code>
+
+  <p class="bold xs-mb1">Z-Index</p>
+  <div class="xs-mb2">
+{% highlight scss %}
+.my-custom-element {
+  z-index: $z4;
+}
+{% endhighlight %}
+  </div>
+
+  <code class="js-highlight xs-block"><span class="nowrap">$z1</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$z2</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$z3</span></code>
+  <code class="js-highlight xs-block xs-mb1"><span class="nowrap">$z4</span></code>
+</section>
+
+
+<section class="xs-mb6">
+  <a name="borders"></a>
+  <h2 class="xs-mb1 bold">Borders</h2>
+  <p class="xs-mb2">Used by the <a href="/borders.html">border utility classes</a>.</p>
+  <div class="xs-mb2">
+  {% highlight scss %}
+.my-custom-element {
+  border: $border;
+  border-radius: $border-radius;
+}
+{% endhighlight %}
+  </div>
+  <code class="js-highlight xs-block"><span class="nowrap">$border</span></code>
+  <code class="js-highlight xs-block"><span class="nowrap">$border-lighter</span></code>
+  <code class="js-highlight xs-block xs-mb1"><span class="nowrap">$border-radius</span></code>
+</section>
