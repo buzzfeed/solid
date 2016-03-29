@@ -48,6 +48,33 @@
 .text-blue {              color: $text-blue           !important; }
 
 
+// SVG Fill Colors
+// -------------------------
+
+.svg-gray {              fill: $text-gray           !important; }
+.svg-white {             fill: $text-white          !important; }
+.svg-gray-lighter {      fill: $text-gray-lighter   !important; }
+.svg-gray-lightest {     fill: $text-gray-lightest  !important; }
+.svg-red {               fill: $text-red            !important; }
+.svg-orange {            fill: $text-orange         !important; }
+.svg-green {             fill: $text-green          !important; }
+.svg-blue {              fill: $text-blue           !important; }
+
+
+// SVG Fill Social Colors
+// -------------------------
+.svg-facebook {          fill: $fill-facebook        !important; }
+.svg-twitter {           fill: $fill-twitter         !important; }
+.svg-google {            fill: $fill-google          !important; }
+.svg-linkedin {          fill: $fill-linkedin        !important; }
+.svg-pinterest {         fill: $fill-pinterest       !important; }
+.svg-tumblr {            fill: $fill-tumblr          !important; }
+.svg-youtube {           fill: $fill-youtube         !important; }
+.svg-instagram {         fill: $fill-instagram       !important; }
+.svg-vine {              fill: $fill-vine            !important; }
+.svg-snapchat {          fill: $fill-snapchat        !important; }
+
+
 // @TODO remove in version
 // -------------------------
 .fill-red-lighter {      background-color: $fill-red-lighter    !important; }
