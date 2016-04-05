@@ -64,7 +64,7 @@ li {
 // -------------------------
 
 // remove quotes from blockquote
-blockquote, 
+blockquote,
 q {
   quotes: none;
 
@@ -136,11 +136,16 @@ optgroup {
   font-weight: $bold;
 }
 
-blockquote:before, 
+blockquote:before,
 blockquote:after,
-q:before, 
+q:before,
 q:after {
   content: "";
   content: none;
 }
 
+// Overriding default iOS input style
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
