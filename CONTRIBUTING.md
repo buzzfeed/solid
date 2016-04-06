@@ -101,3 +101,15 @@ You should add a concise descriptive comment about what is in this merge, and th
 Because of Github permissioning on buzzfeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach
 
 how not to contribute. We want to avoid people just pushing code into this without #solid looking at it and approving the PR. 
+
+# Deprecating Code
+
+To deprecate SCSS, move the old classes to the very bottom of the SCSS file. Use this comment to indicate when the deprecated SCSS will be removed:
+
+````
+// @TODO remove in version X
+// -------------------------
+.deprecated-class {
+    color: #000;
+}
+````
