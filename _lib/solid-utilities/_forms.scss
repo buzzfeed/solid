@@ -87,7 +87,7 @@ select::-ms-expand,
 
   + label {
     cursor: pointer             !important;
-    display: block              !important;
+    display: block                        ;
     @include option-input-style;
 
     &:before { border-radius: 50% !important; }
