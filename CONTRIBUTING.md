@@ -98,7 +98,7 @@ You should add a concise descriptive comment about what is in this merge, and th
 
 ### 9. A Note on Merging
 
-Because of Github permissioning on buzzfeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach out to someone in #solid-prs to merge your PR into develop.
+Because of Github permissioning on BuzzFeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach out to someone in #solid-prs to merge your PR into develop.
 
 # Deprecating Code
 
