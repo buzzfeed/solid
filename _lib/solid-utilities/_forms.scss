@@ -86,6 +86,7 @@ select::-ms-expand,
   @include visuallyhidden;
 
   + label {
+    font-size: $text-5;
     cursor: pointer             !important;
     display: block              !important;
     @include option-input-style;
@@ -104,6 +105,7 @@ select::-ms-expand,
   @include visuallyhidden;
 
   + label {
+    font-size: $text-5;
     cursor: pointer               !important;
     display: block                !important;
     @include option-input-style;
