@@ -34,7 +34,13 @@
   line-height: $line-height-4 !important;
   padding: .5rem .75rem       !important;
   border: $border             !important;
+
+  &[disabled] {
+    opacity: .35              !important;
+  }
+
 }
+
 
 .select {
   background-image: svg-background($down-caret) !important;
@@ -92,6 +98,10 @@ select::-ms-expand,
     @include option-input-style;
 
     &:before { border-radius: 50% !important; }
+
+    &[disabled] {
+      opacity: .35                !important;
+    }
   }
 }
 
@@ -111,8 +121,11 @@ select::-ms-expand,
     @include option-input-style;
 
     &:before { border-radius: 30% !important; }
-  }
 
+    &[disabled] {
+      opacity: .35                !important;
+    }
+  }
 }
 
 .checkbox:checked + label:before {
