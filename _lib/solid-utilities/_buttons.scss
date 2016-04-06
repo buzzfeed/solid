@@ -79,15 +79,15 @@
 
   //only have hover styles if button is not disabled
   &.button--secondary:not(.button--disabled) {
+    &:hover {
+      background-color: $fill-color       !important;
+      color: $secondary-hover-text-color  !important;
+    }
+
     &:active {
       background-color: $secondary-active-background-color !important;
       border-color:     $secondary-active-background-color !important;
       color:            $secondary-hover-text-color        !important;
-    }
-
-    &:hover {
-      background-color: $fill-color       !important;
-      color: $secondary-hover-text-color  !important;
     }
   }
 
