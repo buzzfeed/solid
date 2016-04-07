@@ -100,8 +100,7 @@ select::-ms-expand,
     &:before { border-radius: 50% !important; }
   }
 
-  &:disabled + label,
-  &:disabled + label:before {
+  &:disabled + label {
     opacity: .35                !important;
   }
 }
@@ -124,8 +123,7 @@ select::-ms-expand,
     &:before { border-radius: 30% !important; }
   }
 
-  &:disabled + label,
-  &:disabled + label:before {
+  &:disabled + label {
     opacity: .35                !important;
   }
 }
