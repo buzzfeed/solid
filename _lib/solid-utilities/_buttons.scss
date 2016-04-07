@@ -48,13 +48,14 @@
   //button state colors
   $hover-background-color:  darken($fill-color, 20%);
   $active-background-color: darken($fill-color, 35%);
-  $secondary-active-background-color: darken($fill-color, 20%);
+  $secondary-active-background-color: darken($fill-color, 35%);
 
   //base style
-  background-color: $fill-color         !important;
-  color: $text-color                    !important;
-  border-color: $secondary-text-color   !important;
-  border: 1px solid transparent         !important;
+  background-color: $fill-color             !important;
+  color: $text-color                        !important;
+  border-color: $secondary-text-color       !important;
+  border: 1px solid transparent             !important;
+  transition: background-color .1s ease 0s  !important;
 
   //only have hover styles if button is not disabled
   &:not(.button--disabled) {
@@ -71,19 +72,22 @@
     border: 1px solid $fill-color !important;
     color: $secondary-text-color  !important;
     background: none              !important;
+      &:hover {
+      transition: background-color .15s ease 0s  !important;
+    }
   }
 
   //only have hover styles if button is not disabled
   &.button--secondary:not(.button--disabled) {
+    &:hover {
+      background-color: $fill-color       !important;
+      color: $secondary-hover-text-color  !important;
+    }
+
     &:active {
       background-color: $secondary-active-background-color !important;
       border-color:     $secondary-active-background-color !important;
       color:            $secondary-hover-text-color        !important;
-    }
-
-    &:hover {
-      background-color: $fill-color       !important;
-      color: $secondary-hover-text-color  !important;
     }
   }
 

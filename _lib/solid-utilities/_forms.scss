@@ -4,8 +4,8 @@
 
 // Option Input Style
 // -------------------------
-// Adds some base custom styles to radio buttons and checkboxes. 
-// In order to specify shape, border radius is applied 
+// Adds some base custom styles to radio buttons and checkboxes.
+// In order to specify shape, border radius is applied
 // in class name for the element.
 
 @mixin option-input-style {
@@ -22,7 +22,7 @@
   }
 }
 
-.text-input, 
+.text-input,
 .text-input--small,
 .textarea,
 .textarea--small,
@@ -34,7 +34,13 @@
   line-height: $line-height-4 !important;
   padding: .5rem .75rem       !important;
   border: $border             !important;
+
+  &:disabled {
+    opacity: .35              !important;
+  }
+
 }
+
 
 .select {
   background-image: svg-background($down-caret) !important;
@@ -49,7 +55,7 @@
 
 // Hide select arrow in IE 10+
 select::-ms-expand,
-.select::-ms-expand { 
+.select::-ms-expand {
   display: none;
 }
 
@@ -57,13 +63,13 @@ select::-ms-expand,
 .text-input--small {
   font-size: $text-5          !important;
   line-height: $line-height-5 !important;
-  padding: 0.3125rem .625rem  !important;
+  padding: .3125rem .625rem  !important;
 }
 
 
 .select--small {
   padding-right: 2rem                               !important;
-  background-position: calc(100% - 0.875rem) center !important;
+  background-position: calc(100% - .875rem) center !important;
   background-size: .5rem                            !important;
 }
 
@@ -86,11 +92,16 @@ select::-ms-expand,
   @include visuallyhidden;
 
   + label {
+    font-size: $text-5          !important;
     cursor: pointer             !important;
-    display: block              !important;
+    display: block;
     @include option-input-style;
 
     &:before { border-radius: 50% !important; }
+  }
+
+  &:disabled + label {
+    opacity: .35                !important;
   }
 }
 
@@ -104,13 +115,17 @@ select::-ms-expand,
   @include visuallyhidden;
 
   + label {
+    font-size: $text-5            !important;
     cursor: pointer               !important;
-    display: block                !important;
+    display: block;
     @include option-input-style;
 
     &:before { border-radius: 30% !important; }
   }
-  
+
+  &:disabled + label {
+    opacity: .35                !important;
+  }
 }
 
 .checkbox:checked + label:before {
@@ -126,20 +141,20 @@ select::-ms-expand,
 // -------------------------
 
 .form-label {
-  display: block          !important;
+  display: block;
   font-weight: $bold      !important;
   margin-bottom: $space-1 !important;
 }
 
-// form label small has less margin bottom than default size form labels 
-// in order for the entire unit to scale down proportionately 
+// form label small has less margin bottom than default size form labels
+// in order for the entire unit to scale down proportionately
 .form-label--small {
   font-size: $text-5    !important;
   margin-bottom: .25rem !important;
 }
 
 .form-label--optional {
-  color: $text-gray-lightest !important;
+  color: $text-gray-lightest  !important;
   font-weight: $regular       !important;
 }
 
@@ -149,22 +164,22 @@ select::-ms-expand,
 }
 
 .form-helper {
-  color: $text-gray-lightest !important;
+  color: $text-gray-lightest  !important;
   display: block              !important;
   margin-top: $space-1        !important;
-  font-size: $text-5          !important; 
+  font-size: $text-5          !important;
 }
 
 .form-feedback {
   display: block       !important;
-  margin-top: $space-1 !important; 
-  font-size: $text-5   !important; 
+  margin-top: $space-1 !important;
+  font-size: $text-5   !important;
 }
 
 .form-fieldset--warning {
   .form-feedback,
   .form-label {
-    color: $text-orange !important;  
+    color: $text-orange !important;
   }
 
   .text-input,
@@ -173,14 +188,14 @@ select::-ms-expand,
   .textarea--small,
   .select,
   .select--small {
-    border-color: $fill-orange !important; 
+    border-color: $fill-orange !important;
   }
 }
 
 .form-fieldset--success {
   .form-feedback,
   .form-label {
-    color: $text-green !important;  
+    color: $text-green !important;
   }
 
   .form-feedback:before {
@@ -205,14 +220,14 @@ select::-ms-expand,
   .textarea--small,
   .select,
   .select--small {
-    border-color: $fill-green !important; 
+    border-color: $fill-green !important;
   }
 }
 
 .form-fieldset--error {
   .form-feedback,
   .form-label {
-    color: $text-red !important;  
+    color: $text-red !important;
   }
 
   .text-input,

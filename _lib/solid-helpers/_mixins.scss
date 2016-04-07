@@ -32,16 +32,21 @@ $breakpoints: (
 // nest content inside breakpoint prefix classes
 // in the apropriate media query block
 @mixin generate-breakpoint-prefixes {
+  @if ($generate-responsive-classes == true) {
+    // generate prefixed classes
   @each $breakpoint-name, $breakpoint-value in $breakpoints {
     $breakpoint-prefix: "#{$breakpoint-name}-";
 
     @include media-query($breakpoint-name) {
-
       // Columns
       .#{$breakpoint-prefix} {
         @content;
       }
     }
+   }
+  } @else {
+    // only return xs styles
+   .xs- { @content; }
   }
 }
 

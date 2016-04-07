@@ -1,0 +1,20 @@
+---
+category: release-notes
+version: 1.5.0
+title: No Double Dashes in Colors and Borders
+
+breaking-changes:
+
+potential-breaking-changes:
+  - .button--primary is now .button
+
+deprecated:
+  - Due to breaking buttons changes we now have a deprecated buttons partial you can load for the old styles. It is named solid-utilities/_buttons.deprecated.scss. It will be removed in Solid 2.0.
+
+release-notes:
+  - New white button.
+  - New transparent button.
+  - New button mixin can be used to make additional buttons.
+  - Fixed bug to extend input error state borders to textareas and small inputs.
+  - Table padding lessened to .75rem
+---

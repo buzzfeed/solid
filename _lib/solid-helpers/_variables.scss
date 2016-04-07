@@ -5,7 +5,14 @@
 // Config
 // -------------------------
 
-$font-smoothing: true !default; //Controls whether or not we use font sizing. See the font-smoothing mixin in _mixins.scss
+// set to false to make responsive
+// mixin give only xs- versions of
+// responsive classes
+$generate-responsive-classes: true !default;
+
+// Controls whether or not we use font sizing. 
+// See the font-smoothing mixin in _mixins.scss
+$font-smoothing: true !default;
 
 // Fonts
 // -------------------------
