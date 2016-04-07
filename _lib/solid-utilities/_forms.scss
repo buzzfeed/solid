@@ -34,7 +34,13 @@
   line-height: $line-height-4 !important;
   padding: .5rem .75rem       !important;
   border: $border             !important;
+
+  &:disabled {
+    opacity: .35              !important;
+  }
+
 }
+
 
 .select {
   background-image: svg-background($down-caret) !important;
@@ -57,13 +63,13 @@ select::-ms-expand,
 .text-input--small {
   font-size: $text-5          !important;
   line-height: $line-height-5 !important;
-  padding: 0.3125rem .625rem  !important;
+  padding: .3125rem .625rem  !important;
 }
 
 
 .select--small {
   padding-right: 2rem                               !important;
-  background-position: calc(100% - 0.875rem) center !important;
+  background-position: calc(100% - .875rem) center !important;
   background-size: .5rem                            !important;
 }
 
@@ -88,10 +94,14 @@ select::-ms-expand,
   + label {
     font-size: $text-5          !important;
     cursor: pointer             !important;
-    display: block                        ;
+    display: block;
     @include option-input-style;
 
     &:before { border-radius: 50% !important; }
+  }
+
+  &:disabled + label {
+    opacity: .35                !important;
   }
 }
 
@@ -107,12 +117,15 @@ select::-ms-expand,
   + label {
     font-size: $text-5            !important;
     cursor: pointer               !important;
-    display: block                          ;
+    display: block;
     @include option-input-style;
 
     &:before { border-radius: 30% !important; }
   }
 
+  &:disabled + label {
+    opacity: .35                !important;
+  }
 }
 
 .checkbox:checked + label:before {
@@ -128,7 +141,7 @@ select::-ms-expand,
 // -------------------------
 
 .form-label {
-  display: block                    ;
+  display: block;
   font-weight: $bold      !important;
   margin-bottom: $space-1 !important;
 }
