@@ -6,9 +6,9 @@ title: FAQ
 <section>
 
   <h2 class="bold xs-mb2">Why So Many !importants?!</h2>
-  <p class="xs-mb4">We use <code class="js-highlight">!important</code> on any utility or single responsibility class. They are not meant to be overridden &mdash; meaning, if you need to override them you shouldn't use them in the first place. Your custom CSS should not include <code class="js-highlight">!important</code> unless you are extending the Solid system and creating similar single responsibility classes.</p>
+  <p class="xs-mb6">We use <code class="js-highlight">!important</code> on any utility or single responsibility class. They are not meant to be overridden &mdash; meaning, if you need to override them you shouldn't use them in the first place. Your custom CSS should not include <code class="js-highlight">!important</code> unless you are extending the Solid system and creating similar single responsibility classes.</p>
 
-  <h3 class="bold text-red xs-mb2">Incorrect:</h3>
+  <h3 class="bold text-red">Incorrect:</h3>
   <p class="xs-mb2">
   A custom class is attempting to override a Solid class by using three margins but changing the fourth.
   </p>
@@ -17,7 +17,7 @@ title: FAQ
 <div class="xs-m2 header">content</div>
 {% endhighlight %}
   </div>
-  <div class="xs-mb4">
+  <div class="xs-mb6">
 {% highlight scss %}
 .header {
 margin-left: 10rem !important;
@@ -26,7 +26,7 @@ margin-left: 10rem !important;
   </div>
   
 
-  <h3 class="bold text-green xs-mb2">Correct:</h3>
+  <h3 class="bold text-green">Correct:</h3>
     <p class="xs-mb2">
     Custom classes are welcome, so long as they are not competing with or attempting to override Solid's utility classes.
     </p>
@@ -35,7 +35,7 @@ margin-left: 10rem !important;
 <div class="xs-mr2 xs-my2 header">content</div>
 {% endhighlight %}
     </div>
-    <div class="xs-mb4">
+    <div class="xs-mb6">
 {% highlight scss %}
  .header {
   margin-left: 10rem;
@@ -43,7 +43,7 @@ margin-left: 10rem !important;
 {% endhighlight %}
     </div>
 
-    <h3 class="bold text-green xs-mb2">(also) Correct:</h3>
+    <h3 class="bold text-green">Also Correct:</h3>
     <p class="xs-mb2">
     Extending the system, this custom class bears one and only one responsibility, and therefore can use <code class="js-highlight">!important</code>.
     </p>
