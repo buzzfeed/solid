@@ -92,6 +92,7 @@ select::-ms-expand,
   + label {
     font-size: $text-5          !important;
     cursor: pointer             !important;
+    line-height: $line-height-form;
     display: block;
     @include option-input-style;
 
@@ -115,6 +116,7 @@ select::-ms-expand,
   + label {
     font-size: $text-5            !important;
     cursor: pointer               !important;
+    line-height: $line-height-form;
     display: block;
     @include option-input-style;
 
