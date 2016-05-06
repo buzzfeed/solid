@@ -1,6 +1,6 @@
 {
   "name": "bf-solid",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Solid CSS Styling",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
