@@ -28,19 +28,17 @@
 .textarea--small,
 .select,
 .select--small {
-  font-family: inherit        !important;
-  background: $fill-white     !important;
-  font-size: $text-4          !important;
-  line-height: $line-height-4 !important;
-  padding: .5rem .75rem       !important;
-  border: $border             !important;
+  font-family: inherit           !important;
+  background: $fill-white        !important;
+  font-size: $text-4             !important;
+  line-height: $line-height-form !important;
+  padding: .5rem .75rem          !important;
+  border: $border                !important;
 
   &:disabled {
     opacity: .35              !important;
   }
-
 }
-
 
 .select {
   background-image: svg-background($down-caret) !important;
@@ -61,9 +59,9 @@ select::-ms-expand,
 
 .select--small,
 .text-input--small {
-  font-size: $text-5          !important;
-  line-height: $line-height-5 !important;
-  padding: .3125rem .625rem  !important;
+  font-size: $text-5                   !important;
+  line-height: $line-height-form-small !important;
+  padding: 0.3125rem .625rem           !important;
 }
 
 
@@ -80,11 +78,11 @@ select::-ms-expand,
 }
 
 .textarea--small {
-  display: block              !important;
-  min-height: 2rem * 2.5      !important;
-  padding: .375rem .625rem    !important;
-  font-size: $text-5          !important;
-  line-height: $line-height-5 !important;
+  display: block                       !important;
+  min-height: 2rem * 2.5               !important;
+  padding: .375rem .625rem             !important;
+  font-size: $text-5                   !important;
+  line-height: $line-height-form-small !important;
 }
 
 // hide system radio button in order to use custom style
@@ -94,6 +92,7 @@ select::-ms-expand,
   + label {
     font-size: $text-5          !important;
     cursor: pointer             !important;
+    line-height: $line-height-form;
     display: block;
     @include option-input-style;
 
@@ -117,6 +116,7 @@ select::-ms-expand,
   + label {
     font-size: $text-5            !important;
     cursor: pointer               !important;
+    line-height: $line-height-form;
     display: block;
     @include option-input-style;
 

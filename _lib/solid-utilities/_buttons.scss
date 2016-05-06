@@ -105,7 +105,7 @@
   font-family: inherit          !important;
   padding: .5rem .875rem        !important;
   font-size: $text-4            !important;
-  line-height: $line-height-4   !important;
+  line-height: $line-height-form   !important;
   border-radius: $border-radius !important;
   text-decoration: none         !important;
   cursor: pointer               !important;
@@ -171,9 +171,9 @@
 // -------------------------
 
 .button--small {
-  padding: .3125rem .625rem   !important;
-  font-size: $text-5          !important;
-  line-height: $line-height-5 !important;
+  padding: .3125rem .625rem            !important;
+  font-size: $text-5                   !important;
+  line-height: $line-height-form-small !important;
 }
 
 
