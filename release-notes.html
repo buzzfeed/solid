@@ -16,7 +16,7 @@ title: Release Notes
           <h4 class="bold">
             {{post.title}}
           </h4>
-          <p class="xs-mb1 text-5 text-gray-lightest">{{ post.date | date: '%B %d, %Y' }}</p>
+          <p class="xs-mb1 xs-text-5 text-gray-lightest">{{ post.date | date: '%B %d, %Y' }}</p>
           <ul>
             {% for note in post.breaking-changes %}
              <li class="xs-mb1"><span class="text-red bold">Breaking Change:</span> {{note}}</li>
