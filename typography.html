@@ -9,64 +9,73 @@ title: Typography
     <a name="headers"></a>
     <h2 class="xs-mb2 bold">Headers and Sizing</h2>
 
-    <p class="xs-mb4">Header sizes are defined from <code class="js-highlight">h1</code> to <code class="js-highlight">h6</code>. Additionally, Solid provides utility classes ranging from <span class="nowrap">.<code class="js-highlight">text-1</code></span> to <span class="nowrap">.<code class="js-highlight">text-6</code></span> for sizing blocks of text. Headers and text sizing classes have no margins or padding by default.</p>
+    <p class="xs-mb4">Header sizes are defined from <code class="js-highlight">h1</code> to <code class="js-highlight">h6</code>. Additionally, Solid provides <a href="/responsive.html">responsive</a> prefixed utility classes ranging from <span class="nowrap">.<code class="js-highlight">xs-text-1</code></span> to <span class="nowrap">.<code class="js-highlight">xs-text-6</code></span> for sizing blocks of text. For the same font size across devices, use the default <span class="nowrap">.<code class="js-highlight">xs-text-n</code></span> class. Headers and text sizing classes have no margins or padding by default.</p>
 
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h1</code>, .<code class="js-highlight">text-1</code>
-        <span class="text-5 text-gray-lightest xs-ml1">1.75rem, 28px</span>
+        <code class="js-highlight">h1</code>, .<code class="js-highlight">xs-text-1</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">1.75rem, 28px</span>
       </p>
       <h1>BuzzFeed is the social news and entertainment company</h1>
     </div>
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h2</code>, .<code class="js-highlight">text-2</code>
-        <span class="text-5 text-gray-lightest xs-ml1">1.375rem, 22px</span>
+        <code class="js-highlight">h2</code>, .<code class="js-highlight">xs-text-2</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">1.375rem, 22px</span>
       </p>
       <h2>BuzzFeed is the social news and entertainment company</h2>
     </div>
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h3</code>, .<code class="js-highlight">text-3</code>
-        <span class="text-5 text-gray-lightest xs-ml1">1.125rem, 18px</span>
+        <code class="js-highlight">h3</code>, .<code class="js-highlight">xs-text-3</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">1.125rem, 18px</span>
       </p>
       <h3>BuzzFeed is the social news and entertainment company</h3>
     </div>
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h4</code>, .<code class="js-highlight">text-4</code>
-        <span class="text-5 text-gray-lightest xs-ml1">1rem, 16px</span>
+        <code class="js-highlight">h4</code>, .<code class="js-highlight">xs-text-4</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">1rem, 16px</span>
       </p>
       <h4>BuzzFeed is the social news and entertainment company</h4>
     </div>
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h5</code>, .<code class="js-highlight">text-5</code>
-        <span class="text-5 text-gray-lightest xs-ml1">0.875rem, 14px</span>
+        <code class="js-highlight">h5</code>, .<code class="js-highlight">xs-text-5</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">0.875rem, 14px</span>
       </p>
       <h5>BuzzFeed is the social news and entertainment company.</h5>
     </div>
     <div class="xs-mb4">
       <p class="xs-mb1">
-        <code class="js-highlight">h6</code>, .<code class="js-highlight">text-6</code>
-        <span class="text-5 text-gray-lightest xs-ml1">0.75rem, 12px</span>
+        <code class="js-highlight">h6</code>, .<code class="js-highlight">xs-text-6</code>
+        <span class="xs-text-5 text-gray-lightest xs-ml1">0.75rem, 12px</span>
       </p>
       <h6>BuzzFeed is the social news and entertainment company.</h6>
     </div>
-
+    
+    <div class="xs-mb5">
 {% highlight html %}
 <h1>BuzzFeed is the social news and entertainment company</h1>
-<p class="text-1">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-1">BuzzFeed is the social news and entertainment company</p>
 <h2>BuzzFeed is the social news and entertainment company</h2>
-<p class="text-2">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-2">BuzzFeed is the social news and entertainment company</p>
 <h3>BuzzFeed is the social news and entertainment company</h3>
-<p class="text-3">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-3">BuzzFeed is the social news and entertainment company</p>
 <h4>BuzzFeed is the social news and entertainment company</h4>
-<p class="text-4">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-4">BuzzFeed is the social news and entertainment company</p>
 <h5>BuzzFeed is the social news and entertainment company</h5>
-<p class="text-5">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-5">BuzzFeed is the social news and entertainment company</p>
 <h6>BuzzFeed is the social news and entertainment company</h6>
-<p class="text-6">BuzzFeed is the social news and entertainment company</p>
+<p class="xs-text-6">BuzzFeed is the social news and entertainment company</p>
+{% endhighlight %}
+    </div>
+
+     <div class="xs-mb4 xs-p2 xs-border">
+      <p class="xs-text-6 md-text-5 lg-text-4"><span class="xs-inline-block md-hide lg-hide">.xs-text-6</span><span class="xs-hide sm-hide md-inline-block lg-hide">.md-text-5</span><span class="xs-hide sm-hide md-hide lg-inline-block">.lg-text-4</span><span class="xs-mr1 xs-pr1 xs-border-right"></span>Resize this window to see responsive text in action. </p>
+    </div>
+{% highlight html %}
+<p class="xs-text-6 md-text-5 lg-text-4">Resize this window to see responsive text in action.</p>
 {% endhighlight %}
 
 </section>
@@ -76,7 +85,7 @@ title: Typography
   <a name="slab"></a>
   <h2 class="xs-mb2 bold">Slab Headers</h2>
 
-  <p class="xs-mb4">Caponi Slab Semibold is BuzzFeed News' headline typeface (please avoid any other usage). It can be applied to <code class="js-highlight">h1</code> through <code class="js-highlight">h5</code> and <span class="nowrap">.<code class="js-highlight">text-1</code></span> through <span class="nowrap">.<code class="js-highlight">text-5</code></span> using <span class="nowrap">.<code class="js-highlight">slab</code></span> .</p>
+  <p class="xs-mb4">Caponi Slab Semibold is BuzzFeed News' headline typeface (please avoid any other usage). It can be applied to any text element using <span class="nowrap">.<code class="js-highlight">slab</code></span>.</p>
 
   <div class="xs-mb4">
     <p class="xs-mb1">.<code class="js-highlight">slab</code></p>

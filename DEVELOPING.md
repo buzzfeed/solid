@@ -64,11 +64,11 @@ To add documentation to an `<h2>` in html
 ```
 
 
-To add documentation to a `<p>` in html with class `.text-1`
+To add documentation to a `<p>` in html with class `.xs-text-1`
 
 ```
 <pre>
-    <code> <%= '<p class="text-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+    <code> <%= '<p class="xs-text-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
 </pre>
 ```
 
@@ -82,11 +82,11 @@ To add documentation to the `$text-2` variable in css:
 ```
 
 
-To add documentation to an `<h2>` in html, a `<p>` in html with class `.text-1`, and the `$text-1` variable in css all in the same `<pre>` tag:
+To add documentation to an `<h2>` in html, a `<p>` in html with class `.xs-text-1`, and the `$text-1` variable in css all in the same `<pre>` tag:
 
 ```
 <pre>
-    <code class="html"> <%= '<h1> Yale Will Offer Its First Online Degree </h1>' %> <br /> <%= '<p class="text-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
+    <code class="html"> <%= '<h1> Yale Will Offer Its First Online Degree </h1>' %> <br /> <%= '<p class="xs-text-1"> Yale Will Offer Its First Online Degree </p>' %> </code>
     <code class="css"> <%= ".class { font-size: $text-1; }" %> </code>
 </pre>
 ```
