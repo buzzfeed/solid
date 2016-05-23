@@ -36,7 +36,7 @@ build:
 	bundle exec jekyll build
 
 # build static site into _deploy
-build_deploy: dist
+build_deploy:
 	bundle exec jekyll build --destination _deploy
 
 # compile binaries for download
