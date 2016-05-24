@@ -14,27 +14,27 @@
 
   &text-2 {
     font-size: $text-2          !important;
-    line-height: $line-height-2 !important;
+    line-height: $line-height-1 !important;
   }
 
   &text-3 {
     font-size: $text-3          !important;
-    line-height: $line-height-3 !important;
+    line-height: $line-height-1 !important;
   }
 
   &text-4 {
     font-size: $text-4          !important;
-    line-height: $line-height-4 !important;
+    line-height: $line-height-2 !important;
   }
 
   &text-5 {
     font-size: $text-5          !important;
-    line-height: $line-height-5 !important;
+    line-height: $line-height-2 !important;
   }
 
   &text-6 {
     font-size: $text-6          !important;
-    line-height: $line-height-6 !important;
+    line-height: $line-height-2 !important;
   }
 }
 
@@ -82,7 +82,7 @@
   @include font-smoothing;
   &.bold {
     font-family: $slab    !important; // This is included to override faux-italics applied by browsers
-    font-weight: $regular !important; // This is included to override faux-bold applied by browsers 
+    font-weight: $regular !important; // This is included to override faux-bold applied by browsers
   }
 
   &.italic { font-family: $slab !important; }
