@@ -88,6 +88,22 @@
   &.italic { font-family: $slab !important; }
 }
 
+// Slab should never be an h6 or .type-6
+.text-6 .slab,
+.slab.text-6 {
+  font-family: $sans    !important;
+  font-weight: $regular !important;
+}
+
+// Caponi Specific Line-Height Per Font-Size
+.text-1.slab,
+.text-2.slab,
+.text-3.slab,
+.text-4.slab,
+.text-5.slab {
+  line-height: 1.1 !important;
+}
+
 // List styles
 // -------------------------
 // Unstyled keeps list items block level,
@@ -158,66 +174,4 @@
 .link-instagram {
   color: $text-instagram !important;
   &:hover { color: darken($text-instagram, 20%) !important; }
-}
-
-
-
-// Slab specific fixes
-// -------------------------
-// Slab should never be an h6 or .type-6,
-// these classes disallow that from happening
-// (type will default to Sans)
-
-.text-6 .slab,
-.slab.text-6 {
-  font-family: $sans    !important;
-  font-weight: $regular !important;
-}
-
-// Caponi Specific Line-Height Per Font-Size
-.text-1.slab,
-.text-2.slab,
-.text-3.slab,
-.text-4.slab,
-.text-5.slab {
-  line-height: 1.1 !important;
-}
-
-
-
-// @TODO remove in Solid 2.0
-// -------------------------
-.link-gray--lighter {
-  color: $text-gray--lightest !important;
-  &:hover { color: $text-gray !important; }
-}
-
-.text-1 {
-  font-size:   $text-1        !important;
-  line-height: $line-height-1 !important;
-}
-
-.text-2 {
-  font-size:   $text-2        !important;
-  line-height: $line-height-1 !important;
-}
-
-.text-3 {
-  font-size:   $text-3        !important;
-  line-height: $line-height-1 !important;
-}
-
-.text-4 {
-  font-size:   $text-4        !important;
-  line-height: $line-height-2 !important;
-}
-
-.text-5 {
-  font-size:   $text-5        !important;
-  line-height: $line-height-2 !important;
-}
-
-.text-6 {
-  font-size:   $text-6        !important;
-  line-height: $line-height-2 !important;
 }
