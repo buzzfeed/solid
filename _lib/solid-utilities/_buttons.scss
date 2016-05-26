@@ -130,13 +130,13 @@
   &.button--secondary:not(.button--disabled):active { background-color: darken($fill-white, 10%) !important; }
 
   &.button--icon {
-    >svg                               { fill: $fill-gray--darker  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
+    >svg                               { fill: $fill-gray-darker  !important; }
+    &:not(.button--disabled):hover svg { fill: $fill-gray-darker !important; }
   }
 
   &.button--secondary.button--icon {
     >svg                               { fill: $fill-white  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-gray--darker !important; }
+    &:not(.button--disabled):hover svg { fill: $fill-gray-darker !important; }
   }
 }
 

@@ -39,13 +39,4 @@
   &border-bottom-none { border-bottom: none !important; }
   &border-left-none   { border-left: none   !important; }
 
-
-// @TODO Remove in 2.0
-
-  &border--lighter        { border: $border--lighter        !important; }
-  &border-top--lighter    { border-top: $border--lighter    !important; }
-  &border-right--lighter  { border-right: $border--lighter  !important; }
-  &border-bottom--lighter { border-bottom: $border--lighter !important; }
-  &border-left--lighter   { border-left: $border--lighter   !important; }
-  
 }
