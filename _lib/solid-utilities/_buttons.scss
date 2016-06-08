@@ -72,7 +72,8 @@
     border: 1px solid $fill-color !important;
     color: $secondary-text-color  !important;
     background: none              !important;
-      &:hover {
+    
+    &:hover {
       transition: background-color .15s ease 0s  !important;
     }
   }
@@ -185,16 +186,16 @@
     width: 1rem         !important;
     height: 1rem        !important;
     fill: $fill-white   !important;
-    margin-right: .5rem !important;
     position: relative  !important;
     top: .125rem        !important;
+    margin-right: .5rem; // so it can be overwritten by solid classes
   }
 
   &.button--small >svg {
     width: .875rem         !important;
     height: .875rem        !important;
-    margin-right: .3125rem !important;
     position: relative     !important;
+    margin-right: .3125rem;  // so it can be overwritten by solid classes
   }
 }
 
