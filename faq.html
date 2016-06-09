@@ -3,10 +3,10 @@ layout: default
 title: FAQ
 ---
 
-<section>
+<section class="xs-mb6">
 
   <h2 class="bold xs-mb2">Why So Many !importants?!</h2>
-  <p class="xs-mb6">We use <code class="js-highlight">!important</code> on any utility or single responsibility class. They are not meant to be overridden &mdash; meaning, if you need to override them you shouldn't use them in the first place. Your custom CSS should not include <code class="js-highlight">!important</code> unless you are extending the Solid system and creating similar single responsibility classes.</p>
+  <p class="xs-mb4">We use <code class="js-highlight">!important</code> on any utility or single responsibility class. They are not meant to be overridden &mdash; meaning, if you need to override them you shouldn't use them in the first place. Your custom CSS should not include <code class="js-highlight">!important</code> unless you are extending the Solid system and creating similar single responsibility classes.</p>
 
   <h3 class="bold text-red">Incorrect:</h3>
   <p class="xs-mb2">
@@ -17,14 +17,13 @@ title: FAQ
 <div class="xs-m2 header">content</div>
 {% endhighlight %}
   </div>
-  <div class="xs-mb6">
+  <div class="xs-mb4">
 {% highlight scss %}
 .header {
 margin-left: 10rem !important;
 }
 {% endhighlight %}
   </div>
-  
 
   <h3 class="bold text-green">Correct:</h3>
     <p class="xs-mb2">
@@ -35,7 +34,7 @@ margin-left: 10rem !important;
 <div class="xs-mr2 xs-my2 header">content</div>
 {% endhighlight %}
     </div>
-    <div class="xs-mb6">
+    <div class="xs-mb4">
 {% highlight scss %}
  .header {
   margin-left: 10rem;
