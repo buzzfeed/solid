@@ -131,13 +131,14 @@ title: Layout
   <a name="spatial-units"></a>
   <h2 class="xs-mb2 bold">Spatial Units and Naming</h2>
 
-  <p class="xs-mb4">Margin, padding, and positioning classes use spatial values 0-6 in the class names. Each value represents a specific spacing unit based on 1rem=16px. Each class uses the first letter of its name to indicate properties and directions. For example, in the class <span class="nowrap">.<code class="js-highlight">xs-my0</code></span>, "m" stands for margin.</p>
+  <p class="xs-mb4">Margin, padding, and positioning classes use spatial values 0-6 in the class names. Solid also has a half spacing unit, referred to as 05. Each value represents a specific spacing unit based on 1rem=16px. Each class uses the first letter of its name to indicate properties and directions. For example, in the class <span class="nowrap">.<code class="js-highlight">xs-my0</code></span>, "m" stands for margin.</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-3">
       <p class="xs-mb1 xs-block bold">Spatial Units</p>
       <ul class="list-unstyled">
         <li><span class="bold">0 </span>= 0</li>
+        <li><span class="bold">05 </span>= .25rem</li>
         <li><span class="bold">1 </span>= .5rem</li>
         <li><span class="bold">2 </span>= 1rem</li>
         <li><span class="bold">3 </span>= 1.5rem</li>
@@ -179,7 +180,7 @@ title: Layout
   <a name="spacing"></a>
   <h2 class="xs-mb2 bold">Spacing</h2>
   <p class="xs-text-3 bold xs-block">Uniform Spacing</p>
-  <p class="xs-mb2">Uniform spacing classes add equal spacing to all sides of an element. These classes can be used with spatial values 0-6.</p>
+  <p class="xs-mb2">Uniform spacing classes add equal spacing to all sides of an element. These classes can be used with spatial values 0-6, and the half spacing unit 05.</p>
 
 
   <div class="clearfix xs-mb4">
@@ -187,6 +188,7 @@ title: Layout
       <p class="xs-mb1 xs-block bold">Margin</p>
       <ul class="list-unstyled">
         <li><span class="nowrap">.<code class="js-highlight">xs-m0</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m05</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-m1</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-m2</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-m3</code></span></li>
@@ -200,6 +202,7 @@ title: Layout
       <p class="xs-mb1 xs-block bold">Padding</p>
       <ul class="list-unstyled">
         <li><span class="nowrap">.<code class="js-highlight">xs-p0</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p05</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-p1</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-p2</code></span></li>
         <li><span class="nowrap">.<code class="js-highlight">xs-p3</code></span></li>
@@ -212,18 +215,22 @@ title: Layout
 
 
     <div class="clearfix xs-border-lighter xs-mb2">
+      <div class="xs-border xs-float-left xs-inline-block xs-m05">xs-m05</div>
       <div class="xs-border xs-float-left xs-inline-block xs-m1">xs-m1</div>
       <div class="xs-border xs-float-left xs-inline-block xs-m2">xs-m2</div>
       <div class="xs-border xs-float-left xs-inline-block xs-m3">xs-m3</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-p05">xs-p05</div>
       <div class="xs-border xs-float-left xs-inline-block xs-p1">xs-p1</div>
       <div class="xs-border xs-float-left xs-inline-block xs-p2">xs-p2</div>
       <div class="xs-border xs-float-left xs-inline-block xs-p3">xs-p3</div>
     </div>
 
     {% highlight html %}<div class="clearfix xs-border-lighter">
+  <div class="xs-border xs-float-left xs-inline-block xs-m05">xs-m05</div>
   <div class="xs-border xs-float-left xs-inline-block xs-m1">xs-m1</div>
   <div class="xs-border xs-float-left xs-inline-block xs-m2">xs-m2</div>
   <div class="xs-border xs-float-left xs-inline-block xs-m3">xs-m3</div>
+  <div class="xs-border xs-float-left xs-inline-block xs-p05">xs-p05</div>
   <div class="xs-border xs-float-left xs-inline-block xs-p1">xs-p1</div>
   <div class="xs-border xs-float-left xs-inline-block xs-p2">xs-p2</div>
   <div class="xs-border xs-float-left xs-inline-block xs-p3">xs-p3</div>
@@ -232,7 +239,7 @@ title: Layout
 
 
   <p class="xs-mt4 xs-text-3 bold xs-block">Individual Spacing</p>
-  <p class="xs-mb2">Individual spacing classes are used to add space to a specific side of an element. These classes can be used with spatial values 0-6.</p>
+  <p class="xs-mb2">Individual spacing classes are used to add space to a specific side of an element. These classes can be used with spatial values 0-6, and the half spacing unit 05.</p>
 
   <div class="clearfix xs-mb4">
     <div class="col xs-col-2">
@@ -315,7 +322,7 @@ title: Layout
   <a name="positioning"></a>
   <h2 class="xs-mb2 bold">Positioning</h2>
 
-  <p class="xs-mb2">For positioning, an element can be set to  <span class="nowrap">.<code class="js-highlight">xs-relative</code></span>, <span class="nowrap">.<code class="js-highlight">xs-absolute</code></span>, <span class="nowrap">.<code class="js-highlight">xs-fixed</code></span> or <span class="nowrap">.<code class="js-highlight">xs-static</code></span>. Positioning classes such as <span class="nowrap">.<code class="js-highlight">xs-relative</code></span> can be used in conjunction with the directional classes, such as <span class="nowrap">.<code class="js-highlight">xs-t1</code></span> to position the element. The directional classes are used with spatial values 0-6.</p>
+  <p class="xs-mb2">For positioning, an element can be set to  <span class="nowrap">.<code class="js-highlight">xs-relative</code></span>, <span class="nowrap">.<code class="js-highlight">xs-absolute</code></span>, <span class="nowrap">.<code class="js-highlight">xs-fixed</code></span> or <span class="nowrap">.<code class="js-highlight">xs-static</code></span>. Positioning classes such as <span class="nowrap">.<code class="js-highlight">xs-relative</code></span> can be used in conjunction with the directional classes, such as <span class="nowrap">.<code class="js-highlight">xs-t1</code></span> to position the element. The directional classes are used with spatial values 0-6 and the half space variable 05.</p>
 
 
   <div class="clearfix xs-mb4">
