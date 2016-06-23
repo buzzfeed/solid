@@ -12,8 +12,8 @@
 
 @include generate-breakpoint-prefixes {
   &overflow-hidden  { overflow: hidden  !important; }
-  &overflow-auto    { overflow: auto    !important; }
-  &overflow-scroll  { overflow: scroll  !important; }
+  &overflow-auto    { overflow: auto    !important; -webkit-overflow-scrolling: touch; }
+  &overflow-scroll  { overflow: scroll  !important; -webkit-overflow-scrolling: touch; }
   &overflow-visible { overflow: visible !important; }
 
   &hide         { display: none         !important; }
