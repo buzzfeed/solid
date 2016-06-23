@@ -121,17 +121,23 @@
 .link-blue {
   color: $text-blue !important;
   &:hover { color: darken($text-blue, 20%) !important; }
-  }
+}
 
 .link-gray {
   color: $text-gray !important;
   &:hover { color: $text-blue !important; }
-  }
+}
 
 .link-gray-lighter {
   color: $text-gray-lightest !important;
   &:hover { color: $text-gray !important; }
 }
+
+.link-white {
+  color: $text-white !important;
+  &:hover { color: darken($text-white, 20%) !important; }
+}
+
 
 // Social Link Styles
 // -------------------------
