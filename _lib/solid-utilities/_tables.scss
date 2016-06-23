@@ -1,5 +1,5 @@
 //
-// Table Utility Classes
+// Table Classes
 // --------------------------------------------------
 
 // Border
@@ -8,19 +8,19 @@
 .table-border {
   border:        $border !important;
 
-  th               { border-bottom: $border !important; }
-  tr td            { border-bottom: $border !important; }
-  tr:last-child td { border-bottom: 0       !important; }
+  th               { border-bottom: $border; }
+  tr td            { border-bottom: $border; }
+  tr:last-child td { border-bottom: 0; }
 }
 
-.table-border td, 
+.table-border td,
 .table-border th {
-  padding: .75rem !important;
+  padding: .75rem;
 }
 
 
 
-// Layout
+// Layout Utilities
 // -------------------------
 
 .table {
@@ -29,6 +29,6 @@
   display:         table    !important;
 }
 
-.td, 
+.td,
 .th { display: table-cell !important; }
 .tr { display: table-row !important; }
