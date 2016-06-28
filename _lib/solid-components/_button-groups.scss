@@ -20,7 +20,7 @@
   display: inline-block;
   cursor: pointer;
   float: left;
-  padding: .5rem .875rem;
+  padding: $space-1 .875rem;
   border-right: $border;
 
   &:hover {
