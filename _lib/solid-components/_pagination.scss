@@ -7,11 +7,11 @@
   align-items: center;
 
 
-  .pagination-text {
+  .pagination__text {
     padding-right: $space-2;
   }
 
-  .pagination-button {
+  .pagination__button {
     position: relative;
     border: $border;
     text-decoration: none;
@@ -35,47 +35,47 @@
     }
   }
 
-  .pagination-button {
+  .pagination__button {
     padding: $space-1 .875rem;
   }
 
-  .pagination-button--prev {
+  .pagination__button--prev {
     border-top-left-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
     border-right: none;
   }
 
-  .pagination-button--next {
+  .pagination__button--next {
     border-top-right-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
   }
 
 
 
-  .pagination-button__prev-icon,
-  .pagination-button__next-icon {
+  .pagination__button--prev-icon,
+  .pagination__button--next-icon {
     width: .875rem;
     fill: $fill-blue;
     position: relative;
     top: 2px;
   }
 
-  .pagination-button__prev-icon {
+  .pagination__button--prev-icon {
     right: 1px;
   }
 
-  .pagination-button__next-icon {
+  .pagination__button--next-icon {
     left: 1px;
   }
 
-  .pagination-button--disabled:hover {
+  .pagination__button--disabled:hover {
     cursor: auto;
     background-color: $fill-white;
   }
 
-  .pagination-button--disabled {
-    .pagination-button__prev-icon,
-    .pagination-button__next-icon  {
+  .pagination__button--disabled {
+    .pagination__button__prev-icon,
+    .pagination__button__next-icon  {
       opacity: .3;
     }
   }
@@ -83,19 +83,19 @@
 
 // Small Pagination
 .pagination--small {
-  .pagination-button__prev-icon,
-  .pagination-button__next-icon  {
+  .pagination__button__prev-icon,
+  .pagination__button__next-icon  {
     width: .625rem;
     top: 1px;
   }
 
-  .pagination-button {
+  .pagination__button {
     padding: 0.3125rem .625rem;
     font-size: $text-5;
     line-height: $line-height-form-small;
   }
 
-  .pagination-text {
+  .pagination__text {
     font-size: $text-5;
   }
 }

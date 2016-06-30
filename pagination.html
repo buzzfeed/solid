@@ -7,17 +7,17 @@ title: Pagination
 
   <a name="pagination"></a>
   <h2 class="bold xs-mb2">Default Pagination</h2>
-  <p class="xs-mb2">Use pagination to navigate to different pages, as well as to denote which page you are currently viewing. Use the <span class="nowrap">.<code class="js-highlight">pagination-button--disabled</code></span> class to disable a pagination button.</p>
+  <p class="xs-mb2">Use pagination to navigate to different pages, as well as to denote which page you are currently viewing. Use the <span class="nowrap">.<code class="js-highlight">pagination__button--disabled</code></span> class to disable a pagination button.</p>
 
     <div class="pagination">
-      <span class="pagination-text"><span class="bold">1 - 25</span> of 65,705</span>
-      <button class="pagination-button pagination-button--prev pagination-button--disabled">
-        <svg class="pagination-button__prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <span class="pagination__text"><span class="bold">1 - 25</span> of 65,705</span>
+      <button class="pagination__button pagination__button--prev pagination__button--disabled">
+        <svg class="pagination__button--prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M368.619 16.892l24.485 24.449c2.938 2.934 4.897 7.335 4.897 11.246 0 3.912-1.959 8.313-4.897 11.246l-192.448 192.168 192.448 192.168c2.938 2.934 4.897 7.335 4.897 11.246 0 4.401-1.959 8.313-4.897 11.246l-24.485 24.449c-2.938 2.934-7.345 4.89-11.263 4.89s-8.325-1.956-11.263-4.89l-228.196-227.864c-2.938-2.934-4.897-7.335-4.897-11.246 0-3.912 1.959-8.313 4.897-11.246l228.196-227.864c2.938-2.934 7.345-4.89 11.263-4.89s8.325 1.956 11.263 4.89v.002z"/>
         </svg>
       </button>
-      <button class="pagination-button pagination-button--next">
-        <svg class="pagination-button__next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <button class="pagination__button pagination__button--next">
+        <svg class="pagination__button--next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M142.382 16.892l-24.485 24.449c-2.938 2.934-4.897 7.335-4.897 11.246 0 3.912 1.959 8.313 4.897 11.246l192.448 192.168-192.448 192.168c-2.938 2.934-4.897 7.335-4.897 11.246 0 4.401 1.959 8.313 4.897 11.246l24.485 24.449c2.938 2.934 7.345 4.89 11.263 4.89s8.325-1.956 11.263-4.89l228.196-227.864c2.938-2.934 4.897-7.335 4.897-11.246 0-3.912-1.959-8.313-4.897-11.246l-228.196-227.864c-2.938-2.934-7.345-4.89-11.263-4.89s-8.325 1.956-11.263 4.89v.002z"/>
         </svg>
       </button>
@@ -27,14 +27,14 @@ title: Pagination
 <div class="xs-mt2">
 {% highlight html %}
 <div class="pagination">
-  <span class="pagination-text"><span class="bold">1 - 25</span> of 65,705</span>
-  <button class="pagination-button pagination-button--prev pagination-button--disabled">
-    <svg class="pagination-button__prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <span class="pagination__text"><span class="bold">1 - 25</span> of 65,705</span>
+  <button class="pagination__button pagination__button--prev pagination__button--disabled">
+    <svg class="pagination__button--prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <path d="M368.619 16.892l24.485 24.449c2.938 2.934 4.897 7.335 4.897 11.246 0 3.912-1.959 8.313-4.897 11.246l-192.448 192.168 192.448 192.168c2.938 2.934 4.897 7.335 4.897 11.246 0 4.401-1.959 8.313-4.897 11.246l-24.485 24.449c-2.938 2.934-7.345 4.89-11.263 4.89s-8.325-1.956-11.263-4.89l-228.196-227.864c-2.938-2.934-4.897-7.335-4.897-11.246 0-3.912 1.959-8.313 4.897-11.246l228.196-227.864c2.938-2.934 7.345-4.89 11.263-4.89s8.325 1.956 11.263 4.89v.002z"/>
     </svg>
   </button>
-  <button class="pagination-button pagination-button--next">
-    <svg class="pagination-button__next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <button class="pagination__button pagination__button--next">
+    <svg class="pagination__button--next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <path d="M142.382 16.892l-24.485 24.449c-2.938 2.934-4.897 7.335-4.897 11.246 0 3.912 1.959 8.313 4.897 11.246l192.448 192.168-192.448 192.168c-2.938 2.934-4.897 7.335-4.897 11.246 0 4.401 1.959 8.313 4.897 11.246l24.485 24.449c2.938 2.934 7.345 4.89 11.263 4.89s8.325-1.956 11.263-4.89l228.196-227.864c2.938-2.934 4.897-7.335 4.897-11.246 0-3.912-1.959-8.313-4.897-11.246l-228.196-227.864c-2.938-2.934-7.345-4.89-11.263-4.89s-8.325 1.956-11.263 4.89v.002z"/>
     </svg>
   </button>
@@ -51,14 +51,14 @@ title: Pagination
   <p class="xs-mb2">Small pagination has smaller buttons and smaller text. </p>
 
   <div class="pagination pagination--small">
-      <span class="pagination-text"><span class="bold">1 - 25</span> of 65,705</span>
-      <button class="pagination-button pagination-button--prev pagination-button--disabled">
-        <svg class="pagination-button__prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <span class="pagination__text"><span class="bold">1 - 25</span> of 65,705</span>
+      <button class="pagination__button pagination__button--prev pagination__button--disabled">
+        <svg class="pagination__button--prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M368.619 16.892l24.485 24.449c2.938 2.934 4.897 7.335 4.897 11.246 0 3.912-1.959 8.313-4.897 11.246l-192.448 192.168 192.448 192.168c2.938 2.934 4.897 7.335 4.897 11.246 0 4.401-1.959 8.313-4.897 11.246l-24.485 24.449c-2.938 2.934-7.345 4.89-11.263 4.89s-8.325-1.956-11.263-4.89l-228.196-227.864c-2.938-2.934-4.897-7.335-4.897-11.246 0-3.912 1.959-8.313 4.897-11.246l228.196-227.864c2.938-2.934 7.345-4.89 11.263-4.89s8.325 1.956 11.263 4.89v.002z"/>
         </svg>
       </button>
-      <button class="pagination-button pagination-button--next">
-        <svg class="pagination-button__next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <button class="pagination__button pagination__button--next">
+        <svg class="pagination__button--next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="M142.382 16.892l-24.485 24.449c-2.938 2.934-4.897 7.335-4.897 11.246 0 3.912 1.959 8.313 4.897 11.246l192.448 192.168-192.448 192.168c-2.938 2.934-4.897 7.335-4.897 11.246 0 4.401 1.959 8.313 4.897 11.246l24.485 24.449c2.938 2.934 7.345 4.89 11.263 4.89s8.325-1.956 11.263-4.89l228.196-227.864c2.938-2.934 4.897-7.335 4.897-11.246 0-3.912-1.959-8.313-4.897-11.246l-228.196-227.864c-2.938-2.934-7.345-4.89-11.263-4.89s-8.325 1.956-11.263 4.89v.002z"/>
         </svg>
       </button>
@@ -68,14 +68,14 @@ title: Pagination
 <div class="xs-mt2">
 {% highlight html %}
 <div class="pagination pagination--small">
-  <span class="pagination-text"><span class="bold">1 - 25</span> of 65,705</span>
-  <button class="pagination-button pagination-button--prev pagination-button--disabled">
-    <svg class="pagination-button__prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <span class="pagination__text"><span class="bold">1 - 25</span> of 65,705</span>
+  <button class="pagination__button pagination__button--prev pagination__button--disabled">
+    <svg class="pagination__button--prev-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <path d="M368.619 16.892l24.485 24.449c2.938 2.934 4.897 7.335 4.897 11.246 0 3.912-1.959 8.313-4.897 11.246l-192.448 192.168 192.448 192.168c2.938 2.934 4.897 7.335 4.897 11.246 0 4.401-1.959 8.313-4.897 11.246l-24.485 24.449c-2.938 2.934-7.345 4.89-11.263 4.89s-8.325-1.956-11.263-4.89l-228.196-227.864c-2.938-2.934-4.897-7.335-4.897-11.246 0-3.912 1.959-8.313 4.897-11.246l228.196-227.864c2.938-2.934 7.345-4.89 11.263-4.89s8.325 1.956 11.263 4.89v.002z"/>
     </svg>
   </button>
-  <button class="pagination-button pagination-button--next">
-    <svg class="pagination-button__next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <button class="pagination__button pagination__button--next">
+    <svg class="pagination__button__next-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <path d="M142.382 16.892l-24.485 24.449c-2.938 2.934-4.897 7.335-4.897 11.246 0 3.912 1.959 8.313 4.897 11.246l192.448 192.168-192.448 192.168c-2.938 2.934-4.897 7.335-4.897 11.246 0 4.401 1.959 8.313 4.897 11.246l24.485 24.449c2.938 2.934 7.345 4.89 11.263 4.89s8.325-1.956 11.263-4.89l228.196-227.864c2.938-2.934 4.897-7.335 4.897-11.246 0-3.912-1.959-8.313-4.897-11.246l-228.196-227.864c-2.938-2.934-7.345-4.89-11.263-4.89s-8.325 1.956-11.263 4.89v.002z"/>
     </svg>
   </button>
