@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solid</title>
+    <description>Solid is a base style library. It will be used as the core styling for Buzzfeed products.</description>
+    <link>http://solid.buzzfeed.com/</link>
+    <atom:link href="http://solid.buzzfeed.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 21 Jul 2016 12:18:45 -0400</pubDate>
+    <lastBuildDate>Thu, 21 Jul 2016 12:18:45 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Introducing The Half Space</title>
+        <description></description>
+        <pubDate>Thu, 23 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/06/23/2.2.0.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/06/23/2.2.0.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Removed Important On Button Icon SVG Margin</title>
+        <description></description>
+        <pubDate>Fri, 10 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/06/10/2.1.1.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/06/10/2.1.1.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Orange You Glad I Added Pink</title>
+        <description></description>
+        <pubDate>Thu, 02 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/06/02/2.1.0.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/06/02/2.1.0.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Solid 2</title>
+        <description></description>
+        <pubDate>Fri, 27 May 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/05/27/2.0.0.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/05/27/2.0.0.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Responsive Typography Line Height</title>
+        <description></description>
+        <pubDate>Thu, 26 May 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/05/26/1.6.4.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/05/26/1.6.4.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Responsive Typography</title>
+        <description></description>
+        <pubDate>Mon, 23 May 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/05/23/1.6.3.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/05/23/1.6.3.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Card Component</title>
+        <description></description>
+        <pubDate>Thu, 12 May 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/05/12/1.6.2.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/05/12/1.6.2.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Updated Line Height Values For Headers</title>
+        <description></description>
+        <pubDate>Fri, 06 May 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/05/06/1.6.1.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/05/06/1.6.1.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>SVG Colors, Button State Tweaks and Less Important Labels</title>
+        <description></description>
+        <pubDate>Thu, 07 Apr 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/04/07/1.6.0.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/04/07/1.6.0.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Bug Fix For Deprecated Text And Fill Color Classes</title>
+        <description></description>
+        <pubDate>Wed, 30 Mar 2016 00:00:00 -0400</pubDate>
+        <link>http://solid.buzzfeed.com/release-notes/2016/03/30/1.5.3.html</link>
+        <guid isPermaLink="true">http://solid.buzzfeed.com/release-notes/2016/03/30/1.5.3.html</guid>
+        
+        
+        <category>release-notes</category>
+        
+      </item>
+    
+  </channel>
+</rss>

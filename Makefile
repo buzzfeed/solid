@@ -19,8 +19,15 @@ modules: ruby_gems node_modules
 ruby_gems:
 	bundle install --path=$(BUNDLE_PATH) --clean $(BUNDLE_ARGS)
 
-# deploy site to s3 bucket
-deploy: build_deploy s3
+# compile binaries for download
+# * executed on build
+# * not re-run by jekyll serve
+dist: build
+	grunt zip_build
+	grunt compile_lib
+	grunt minify_lib
+	grunt latest_solid
+	grunt zip_lib
 
 # clean out generated files
 clean:
@@ -29,28 +36,15 @@ clean:
 
 # run the jekyll server
 run:
-	bundle exec jekyll serve
+	(cd docs/ && bundle exec jekyll serve)
 
 # build static site into _site
 build:
-	bundle exec jekyll build
+	(cd docs/ && bundle exec jekyll build)
 
 # build static site into _deploy
 build_deploy:
-	bundle exec jekyll build --destination _deploy
-
-# compile binaries for download
-# * executed on build
-# * not re-run by jekyll serve
-dist:
-	grunt compile_lib
-	grunt minify_lib
-	grunt latest_solid
-	grunt zip_lib
-
-# deploy to s3 bucket
-s3:
-	rsync -crvze ssh --delete _deploy/ solid.buzzfeed.com:/var/www/solid.buzzfeed.com/
+	(cd docs/ && bundle exec jekyll build --destination .tmp/_deploy)
 
 # install node modules from npm-shrinkwrap.json
 node_modules:

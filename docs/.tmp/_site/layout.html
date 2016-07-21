@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Layout - Solid</title>
+
+    <meta name="description" content="<%= description %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+  </head>
+  <body class="fill-gray-lighter">
+    <!-- Desktop Nav -->
+
+<nav class="xs-col-12 sm-col-3 lg-col-2 sm-fixed xs-t0 sm-b0 xs-l0 xs-overflow-auto sm-py3 sm-pb6 xs-border-bottom sm-border-bottom-none sm-border-right fill-white solid-nav">
+
+  <h1 class="xs-relative xs-py3 sm-py0 sm-mb4 solid-header">
+    <div class="sm-block solid-header--desktop-logo">
+      <a href="/" class="solid-logo">Solid</a>
+    </div>
+    <div class="sm-hide solid-header--mobile">
+      <span class="solid-logo">Solid</span>
+      <div class="xs-absolute solid-header__caret"></div>
+    </div>
+  </h1>
+
+  <div class="solid-nav__items sm-block">
+
+    <ol class="list-unstyled xs-mb4">
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/">WTF is Solid?</a>
+      </li>
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="release-notes.html">Release Notes</a>
+      </li>
+    </ol>
+
+
+ <label class="xs-block xs-text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">Resources</label>
+
+    <ol class="list-unstyled xs-mb4">
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="variables.html">SASS Variables</a>
+           
+      </li>
+      <li class="solid-nav__group ">
+              <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="sketch-template.html">Sketch Template</a>
+      </li>
+      <li class="solid-nav__group ">
+              <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="faq.html">FAQ</a>
+      </li>
+    </ol>
+
+
+    <label class="xs-block xs-text-6 bold caps xs-mt4 sm-mt0 xs-mb1 sm-mb2 solid-nav__header">CSS Library</label>
+
+    <ol class="list-unstyled xs-mb4">
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="typography.html">Typography</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group " >
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="/colors.html">Colors</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="buttons.html">Buttons</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="forms.html">Forms</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="tables.html">Tables</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="responsive.html">Responsive</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group active">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="layout.html">Layout</a>
+
+        
+          <ul class="list-unstyled xs-text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#floats" class="xs-block xs-px3 solid-nav__subitem">Floats</a></li>
+            <li class="xs-py1"><a href="#display" class="xs-block xs-px3 solid-nav__subitem">Display</a></li>
+            <li class="xs-py1"><a href="#overflow" class="xs-block xs-px3 solid-nav__subitem">Overflow</a></li>
+            <li class="xs-py1"><a href="#width-and-height" class="xs-block xs-px3 solid-nav__subitem">Width and Height</a></li>
+            <li class="xs-py1"><a href="#spatial-units" class="xs-block xs-px3 solid-nav__subitem">Spatial Units</a></li>
+            <li class="xs-py1"><a href="#spacing" class="xs-block xs-px3 solid-nav__subitem">Spacing</a></li>
+            <li class="xs-py1"><a href="#positioning" class="xs-block xs-px3 solid-nav__subitem">Positioning</a></li>
+            <li class="xs-py1"><a href="#vertical-alignment" class="xs-block xs-px3 solid-nav__subitem">Vertical Alignment</a></li>
+          </ul>
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="borders.html">Borders</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="grid.html">Grid</a>
+
+        
+
+      </li>
+
+      <li class="solid-nav__group ">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="block-grid.html">Block Grid</a>
+
+        
+
+      </li>
+
+    </ol>
+
+    <label class="xs-block xs-text-6 caps bold xs-mb1 sm-mb2 solid-nav__header">Components</label>
+
+    <ol class="list-unstyled xs-pb3 sm-pb0">
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="button-groups.html">Button Groups</a>
+      </li>
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="cards.html">Cards</a>
+      </li>
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="messaging.html">Messaging</a>
+      </li>
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="modals.html">Modals</a>
+      </li>
+
+      <li class="solid-nav__group ">
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="tags.html">Tags</a>
+      </li>
+
+
+    </ol>
+
+  </div>
+
+</nav>
+
+    <div class="xs-col-12 sm-col-9 lg-col-10 sm-offset-3 lg-offset-2">
+      <div class="xs-col-11 xs-py3 xs-px1 xs-mx-auto xs-my4 fill-white xs-border rounded">
+        <h1 class="xs-col-11 sm-col-10 xs-mx-auto xs-border-bottom xs-pb3 xs-mb4 sm-my4">Layout</h1>
+        <div class="xs-col-11 sm-col-10 xs-mx-auto">
+          <!--Floats-->
+
+<section class="xs-mb6">
+
+  <a name="floats"></a>
+  <h2 class="xs-mb2 bold">Floats</h2>
+
+  <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-float-left</code></span>, <span class="nowrap">.<code class="js-highlight">xs-float-right</code></span> and <span class="nowrap">.<code class="js-highlight">xs-float-none</code></span> to float elements.
+
+  <div class="xs-mb4">
+    <div class="clearfix">
+      <div class="xs-float-left">.xs-float-left</div>
+      <div class="xs-float-right">.xs-float-right</div>
+    </div>
+    <div class="xs-float-none">.xs-float-none</div>
+  </div>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-float-left&quot;</span><span class="nt">&gt;</span>.xs-float-left<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-float-right&quot;</span><span class="nt">&gt;</span>.xs-float-right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-float-none&quot;</span><span class="nt">&gt;</span>.xs-float-none<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</section>
+
+<!--Display Types-->
+
+<section class="xs-mb6">
+
+  <a name="display"></a>
+  <h2 class="xs-mb2 bold">Display</h2>
+
+  <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-hide</code></span>, <span class="nowrap">.<code class="js-highlight">xs-inline</code></span>, <span class="nowrap">.<code class="js-highlight">xs-inline-block</code></span> and <span class="nowrap">.<code class="js-highlight">xs-block</code></span> to change an element's display.
+
+  <div class="xs-mb4">
+    <div class="xs-hide">.xs-hide</div>
+    <div class="xs-inline xs-border xs-mr1">.xs-inline</div>
+    <div class="xs-inline-block xs-border">.xs-inline-block</div>
+    <a href="#" class="xs-block xs-border xs-mt1">.xs-block</a>
+  </div>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-hide&quot;</span><span class="nt">&gt;</span>.xs-hide<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-inline xs-border xs-mr1&quot;</span><span class="nt">&gt;</span>.xs-inline<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-inline-block xs-border&quot;</span><span class="nt">&gt;</span>.xs-inline-block<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;xs-block xs-border xs-mt1&quot;</span><span class="nt">&gt;</span>.xs-block<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</section>
+
+<!--Overflow-->
+
+<section class="xs-mb6">
+
+  <a name="overflow"></a>
+  <h2 class="xs-mb2 bold">Overflow</h2>
+
+  <p class="xs-mb4">Use <span class="nowrap">.<code class="js-highlight">xs-overflow-hidden</code></span>, <span class="nowrap">.<code class="js-highlight">xs-overflow-auto</code></span>, <span class="nowrap">.<code class="js-highlight">xs-overflow-scroll</code></span> and <span class="nowrap">.<code class="js-highlight">xs-overflow-visible</code></span> to change an element's overflow behavior.
+
+  <div class="xs-overflow-hidden xs-border xs-p2 xs-mb2" style="height:85px;">
+    <p class="xs-mb1">.xs-overflow-hidden</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
+  </div>
+
+  <div class="xs-overflow-auto xs-border xs-p2 xs-mb2" style="height:85px;">
+    <p class="xs-mb1">.xs-overflow-auto</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
+  </div>
+
+  <div class="xs-overflow-scroll xs-border xs-p2 xs-mb4" style="height:85px;">
+    <p class="xs-mb1">.xs-overflow-scroll</p>
+    <p>When life gives you lemons, don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons, what the hell am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down! With the lemons!</p>
+  </div>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-overflow-hidden xs-border xs-p2 xs-mb2&quot;</span> <span class="na">style=</span><span class="s">&quot;height:85px;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;xs-mb1&quot;</span><span class="nt">&gt;</span>.xs-overflow-hidden<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-overflow-auto xs-border xs-p2 xs-mb2&quot;</span> <span class="na">style=</span><span class="s">&quot;height:85px;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;xs-mb1&quot;</span><span class="nt">&gt;</span>.xs-overflow-auto<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-overflow-scroll xs-border xs-p2 xs-mb2&quot;</span> <span class="na">style=</span><span class="s">&quot;height:85px;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;xs-mb1&quot;</span><span class="nt">&gt;</span>.xs-overflow-scroll<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+</section>
+
+<!--Widths-->
+
+<section class="xs-mb6">
+
+  <a name="width-and-height"></a>
+  <h2 class="xs-mb2 bold">Width and Height</h2>
+
+  <p class="xs-mb4">Most widths are achieved using Solid's <a href="grid.html">grid classes</a>. However, Solid also provides an <span class="nowrap">.<code class="js-highlight">xs-fit</code></span> class for setting an element's max-width to 100%, as well as an <span class="nowrap">.<code class="js-highlight">xs-width-auto</code></span> to set an element's width to auto. Use <span class="nowrap">.<code class="js-highlight">xs-full-height</code></span> to set an element's height to 100%.</p>
+
+  <div class="xs-mb4">
+    <div class="xs-fit xs-border xs-mb1">.xs-fit</div>
+    <div class="xs-width-auto xs-border xs-mb1">.xs-width-auto</div>
+    <div style="height:85px;" class="xs-border xs-p1">
+      <div class="xs-full-height xs-border xs-col-4">.xs-full-height</div>
+    </div>
+  </div>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-fit xs-border xs-mb1&quot;</span><span class="nt">&gt;</span>.xs-fit<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-width-auto xs-border xs-mb1&quot;</span><span class="nt">&gt;</span>.xs-width-auto<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;height:85px;&quot;</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-p1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-full-height xs-border xs-col-4&quot;</span><span class="nt">&gt;</span>.xs-full-height<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</section>
+
+
+
+<!--Spatial Units and Naming-->
+
+<section class="xs-mb6">
+  <a name="spatial-units"></a>
+  <h2 class="xs-mb2 bold">Spatial Units and Naming</h2>
+
+  <p class="xs-mb4">Margin, padding, and positioning classes use spatial values 0-6 in the class names. Solid also has a half spacing unit, referred to as 05. Each value represents a specific spacing unit based on 1rem=16px. Each class uses the first letter of its name to indicate properties and directions. For example, in the class <span class="nowrap">.<code class="js-highlight">xs-my0</code></span>, "m" stands for margin.</p>
+
+  <div class="clearfix xs-mb4">
+    <div class="col xs-col-3">
+      <p class="xs-mb1 xs-block bold">Spatial Units</p>
+      <ul class="list-unstyled">
+        <li><span class="bold">0 </span>= 0</li>
+        <li><span class="bold">05 </span>= .25rem</li>
+        <li><span class="bold">1 </span>= .5rem</li>
+        <li><span class="bold">2 </span>= 1rem</li>
+        <li><span class="bold">3 </span>= 1.5rem</li>
+        <li><span class="bold">4 </span>= 2rem</li>
+        <li><span class="bold">5 </span>= 3rem</li>
+        <li><span class="bold">6 </span>= 4.5rem</li>
+      </ul>
+    </div>
+
+    <div class="col xs-col-3">
+      <p class="xs-mb1 xs-block bold">Properties</p>
+      <ul class="list-unstyled">
+        <li><span class="bold">m </span>= margin</li>
+        <li><span class="bold">p </span>= padding</li>
+        <li><span class="bold">z </span>= z-index</li>
+      </ul>
+    </div>
+
+     <div class="col xs-col-3">
+      <p class="xs-mb1 xs-block bold">Directions</p>
+      <ul class="list-unstyled">
+        <li><span class="bold">t </span>= top</li>
+        <li><span class="bold">b </span>= bottom</li>
+        <li><span class="bold">r </span>= right</li>
+        <li><span class="bold">l </span>= left</li>
+        <li><span class="bold">x </span>= x-axis</li>
+        <li><span class="bold">y </span>= y-axis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!--Spacing-->
+
+<section class="xs-mb6">
+
+  <a name="spacing"></a>
+  <h2 class="xs-mb2 bold">Spacing</h2>
+  <p class="xs-text-3 bold xs-block">Uniform Spacing</p>
+  <p class="xs-mb2">Uniform spacing classes add equal spacing to all sides of an element. These classes can be used with spatial values 0-6, and the half spacing unit 05.</p>
+
+
+  <div class="clearfix xs-mb4">
+    <div class="col xs-col-3">
+      <p class="xs-mb1 xs-block bold">Margin</p>
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-m0</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m05</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m2</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m3</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m4</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m5</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-m6</code></span></li>
+      </ul>
+    </div>
+
+    <div class="col xs-col-3">
+      <p class="xs-mb1 xs-block bold">Padding</p>
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-p0</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p05</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p2</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p3</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p4</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p5</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-p6</code></span></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <div class="clearfix xs-border-lighter xs-mb2">
+      <div class="xs-border xs-float-left xs-inline-block xs-m05">xs-m05</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-m1">xs-m1</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-m2">xs-m2</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-m3">xs-m3</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-p05">xs-p05</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-p1">xs-p1</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-p2">xs-p2</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-p3">xs-p3</div>
+    </div>
+
+    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix xs-border-lighter&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-m05&quot;</span><span class="nt">&gt;</span>xs-m05<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-m1&quot;</span><span class="nt">&gt;</span>xs-m1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-m2&quot;</span><span class="nt">&gt;</span>xs-m2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-m3&quot;</span><span class="nt">&gt;</span>xs-m3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-p05&quot;</span><span class="nt">&gt;</span>xs-p05<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-p1&quot;</span><span class="nt">&gt;</span>xs-p1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-p2&quot;</span><span class="nt">&gt;</span>xs-p2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-p3&quot;</span><span class="nt">&gt;</span>xs-p3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+
+  <p class="xs-mt4 xs-text-3 bold xs-block">Individual Spacing</p>
+  <p class="xs-mb2">Individual spacing classes are used to add space to a specific side of an element. These classes can be used with spatial values 0-6, and the half spacing unit 05.</p>
+
+  <div class="clearfix xs-mb4">
+    <div class="col xs-col-2">
+      <p class="xs-mb1 xs-block bold">Margin</p>
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-mt1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-mb1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-mr1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-ml1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-mx1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-my1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-mx-auto</code></span></li>
+      </ul>
+    </div>
+    <div class="col xs-col-4 xs-mt4">
+      <ul class="list-unstyled">
+        <li>margin-top</li>
+        <li>margin-bottom</li>
+        <li>margin-right</li>
+        <li>margin-left</li>
+        <li>margin left and right</li>
+        <li>margin top and bottom</li>
+        <li>auto (horizontally centered)</li>
+      </ul>
+    </div>
+
+    <div class="col xs-col-1 xs-mr2">
+      <p class="xs-mb1 xs-block bold">Padding</p>
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-pt1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-pb1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-pr1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-pl1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-px1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-py1</code></span></li>
+      </ul>
+    </div>
+    <div class="col xs-col-4 xs-mt4">
+      <ul class="list-unstyled">
+        <li>padding-top</li>
+        <li>padding-bottom</li>
+        <li>padding-right</li>
+        <li>padding-left</li>
+        <li>padding left and right</li>
+        <li>padding top and bottom</li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="clearfix xs-border-lighter xs-mb2">
+      <div class="xs-border xs-float-left xs-inline-block xs-mt3">xs-mt3</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-mt4">xs-mt4</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-mt5">xs-mt5</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-mt6">xs-mt6</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-pl3">xs-pl3</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-pl4">xs-pl4</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-pl5">xs-pl5</div>
+      <div class="xs-border xs-float-left xs-inline-block xs-pl6">xs-pl6</div>
+    </div>
+
+    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix xs-border-lighter&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-mt3&quot;</span><span class="nt">&gt;</span>xs-mt3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-mt4&quot;</span><span class="nt">&gt;</span>xs-mt4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-mt5&quot;</span><span class="nt">&gt;</span>xs-mt5<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-mt6&quot;</span><span class="nt">&gt;</span>xs-mt6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-pl3&quot;</span><span class="nt">&gt;</span>xs-pl3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-pl4&quot;</span><span class="nt">&gt;</span>xs-pl4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-pl5&quot;</span><span class="nt">&gt;</span>xs-pl5<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-float-left xs-inline-block xs-pl6&quot;</span><span class="nt">&gt;</span>xs-pl6<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+</section>
+
+
+<!--Positioning-->
+
+<section class="xs-mb6">
+
+  <a name="positioning"></a>
+  <h2 class="xs-mb2 bold">Positioning</h2>
+
+  <p class="xs-mb2">For positioning, an element can be set to  <span class="nowrap">.<code class="js-highlight">xs-relative</code></span>, <span class="nowrap">.<code class="js-highlight">xs-absolute</code></span>, <span class="nowrap">.<code class="js-highlight">xs-fixed</code></span> or <span class="nowrap">.<code class="js-highlight">xs-static</code></span>. Positioning classes such as <span class="nowrap">.<code class="js-highlight">xs-relative</code></span> can be used in conjunction with the directional classes, such as <span class="nowrap">.<code class="js-highlight">xs-t1</code></span> to position the element. The directional classes are used with spatial values 0-6 and the half space variable 05.</p>
+
+
+  <div class="clearfix xs-mb4">
+   <div class="col xs-col-5 sm-col-2 xs-mr2">
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-relative</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-absolute</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-fixed</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-static</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-t1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-b1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-r1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-l1</code></span></li>
+      </ul>
+    </div>
+    <div class="col xs-col-4">
+      <ul class="list-unstyled">
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>static</li>
+        <li>top</li>
+        <li>bottom</li>
+        <li>right</li>
+        <li>left</li>
+      </ul>
+    </div>
+  </div>
+
+
+   <p class="xs-text-3 bold xs-block">Z-Index</p>
+    <p class="xs-mb2">Use the z-index classes to set the stack order of an element. These classes can be used with values 1-4.</p>
+
+
+  <div class="clearfix xs-mb4">
+   <div class="col xs-col-5 sm-col-2 xs-mr2">
+      <ul class="list-unstyled">
+        <li><span class="nowrap">.<code class="js-highlight">xs-z1</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-z2</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-z3</code></span></li>
+        <li><span class="nowrap">.<code class="js-highlight">xs-z4</code></span></li>
+
+      </ul>
+    </div>
+    <div class="col xs-col-4">
+      <ul class="list-unstyled">
+        <li>z-index: 100</li>
+        <li>z-index: 200</li>
+        <li>z-index: 300</li>
+        <li>z-index: 400</li>
+      </ul>
+    </div>
+    </div>
+
+
+  <div class="xs-mb4">
+    <div class="xs-border xs-p2">
+      <div class="xs-relative xs-t2 xs-l2 xs-border">.xs-relative .xs-t2 .xs-l2</div>
+    </div>
+  </div>
+
+  <div class="xs-mb4">
+    <div class="xs-relative xs-border xs-p2">
+      .xs-relative
+      <div class="xs-absolute xs-t0 xs-l6 xs-border">.xs-absolute .xs-t0 .xs-l6</div>
+    </div>
+  </div>
+
+  <div class="xs-mb4">
+    <div class="xs-relative xs-p4">
+      <div class="xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1">.xs-absolute .xs-t1 .xs-l1 .xs-z1</div>
+      <div class="xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white">.xs-absolute .xs-t4 .xs-l4 .xs-z2</div>
+    </div>
+  </div>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-border xs-p2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-relative xs-t2 xs-l2 xs-border&quot;</span><span class="nt">&gt;</span>.xs-relative .xs-t2 .xs-l2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-relative xs-border xs-p2&quot;</span><span class="nt">&gt;</span>
+  .xs-relative
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-absolute xs-t0 xs-l6 xs-border&quot;</span><span class="nt">&gt;</span>.xs-absolute .xs-t0 .xs-l6<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-relative xs-p4&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-absolute xs-t1 xs-l1 xs-z1 xs-border xs-p1&quot;</span><span class="nt">&gt;</span>.xs-absolute .xs-t1 .xs-l1 .xs-z1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-absolute xs-t4 xs-l4 xs-z2 xs-border xs-p1 fill-white&quot;</span><span class="nt">&gt;</span>.xs-absolute .xs-t4 .xs-l4 .xs-z2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</section>
+
+<!--Vertical Alignment-->
+
+<section class="xs-mb6">
+
+  <a name="vertical-alignment"></a>
+  <h2 class="xs-mb2 bold">Vertical Alignment</h2>
+  <p class="xs-mb4">Vertically align elements with <span class="nowrap">.<code class="js-highlight">xs-align-bottom</code></span>, <span class="nowrap">.<code class="js-highlight">xs-align-middle</code></span> or <span class="nowrap">.<code class="js-highlight">xs-align-top</code></span> classes.</p>
+  <div class="xs-mb4">
+    <table class="table-border xs-mb4">
+      <tr>
+        <td class="xs-col-3">This example demonstrates how vertical align classes work in a table or faux-table environment.</td>
+        <td class="xs-col-3 xs-align-bottom">.xs-align-bottom</td>
+        <td class="xs-col-3 xs-align-middle">.xs-align-middle</td>
+        <td class="xs-col-3 xs-align-top">.xs-align-top</td>
+      </tr>
+    </table>
+    <div class="xs-mb2">
+      <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-align-bottom xs-mr1" />This image uses .xs-align-bottom
+    </div>
+    <div class="xs-mb2">
+      <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-align-middle xs-mr1" />This image uses .xs-align-middle
+    </div>
+    <div class="xs-mb4">
+       <img src="/images/user.png" height="50" width="50" alt="user" class="circle xs-align-top xs-mr1" />This image uses .xs-align-top
+    </div>
+  </div>
+  <div class="xs-mb4">
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-border&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;xs-col-3&quot;</span><span class="nt">&gt;</span>This example demonstrates how vertical align classes work in a table or faux-table environment.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;xs-col-3 xs-align-bottom&quot;</span><span class="nt">&gt;</span>.xs-align-bottom<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;xs-col-3 xs-align-middle&quot;</span><span class="nt">&gt;</span>.xs-align-middle<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;xs-col-3 xs-align-top&quot;</span><span class="nt">&gt;</span>.xs-align-top<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+  </div>
+  <div class="xs-mb4">
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-mb2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/user.png&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">alt=</span><span class="s">&quot;user&quot;</span> <span class="na">class=</span><span class="s">&quot;circle xs-align-bottom&quot;</span> <span class="nt">/&gt;</span>This image uses .xs-align-bottom
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-mb2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/user.png&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">alt=</span><span class="s">&quot;user&quot;</span> <span class="na">class=</span><span class="s">&quot;circle xs-align-middle&quot;</span> <span class="nt">/&gt;</span>This image uses .xs-align-middle
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;xs-mb2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/user.png&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">alt=</span><span class="s">&quot;user&quot;</span> <span class="na">class=</span><span class="s">&quot;circle xs-align-top&quot;</span> <span class="nt">/&gt;</span>This image uses .xs-align-top
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+  </div>
+
+</section>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/javascript/main.js"></script>
+
+    <!--Code Highlighting-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>    
+    <script src="/javascript/codehighlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <!--Show/Hide Nav on Mobile and Flip Caret-->
+    <script type="text/javascript">
+      var _target = '.solid-header--mobile';
+      var _menu = '.solid-nav';
+      var _className = 'solid-nav--show';
+      $(document).ready(function(){
+          $(_target).on('click', function(){
+              $(_menu).toggleClass(_className);
+          });
+      });
+    </script>
+  </body>
+</html>

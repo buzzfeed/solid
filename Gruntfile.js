@@ -13,7 +13,8 @@ module.exports = function(grunt) {
     sass: {
       lib: {
         options: {
-          sourceMap: false
+          sourceMap: false,
+          includePaths: ['_lib']
         },
         files: [
           {
@@ -47,6 +48,17 @@ module.exports = function(grunt) {
              cwd: '_lib/',
              expand: true
          }]
+      },
+      build: {
+         options: {
+             archive: 'docs/_dist/solid-docs.zip',
+             mode: 'zip'
+         },
+         files: [{
+             src: ['**/*'],
+             cwd: 'docs/.tmp/_site/',
+             expand: true
+         }]
       }
     },
     copy: {
@@ -73,6 +85,7 @@ grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.registerTask('compile_lib', ['sass:lib']);
 grunt.registerTask('minify_lib', ['cssnano:lib']);
 grunt.registerTask('latest_solid', ['copy:latest']);
+grunt.registerTask('zip_build', ['compress:build']);
 grunt.registerTask('zip_lib', ['compress:lib']);
 
 }
