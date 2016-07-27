@@ -3,8 +3,8 @@
 // --------------------------------------------------
 
 .card {
-  box-shadow: 0 1px 0 rgba(173, 168, 168, .1), 0 2px 1px rgba(181, 179, 179, .1);
-  border: 1px solid rgba(41, 41, 41, .1);
+  box-shadow: 0 1px 1px rgba(173, 168, 168, .1);
+  border: $border-lighter;
   background-color: $fill-white;
   border-radius: $border-radius;
 }
