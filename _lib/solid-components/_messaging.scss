@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.page-message__icon-alert{
+.page-message__icon{
   vertical-align: middle;
   height: $space-2;
   border-radius: 50%;
@@ -51,7 +51,7 @@
     fill: $fill-red;
   }
 
-  .page-message__icon-alert {
+  .page-message__icon {
   fill: $fill-red-lighter;
   background-color: $fill-red;
   }
@@ -75,7 +75,7 @@
     fill: $fill-green;
   }
 
-  .page-message__icon-alert {
+  .page-message__icon {
   fill: $fill-green-lighter;
   background-color: $fill-green;
   }
@@ -98,7 +98,7 @@
     & .page-message__close:hover .page-message__icon-close {
       fill: $fill-orange;
     }
-  .page-message__icon-alert {
+  .page-message__icon {
   fill: lighten($fill-orange, 40%);
   background-color: $fill-orange;
   
