@@ -4,25 +4,10 @@
 
 .page-message {
   position: relative;
-  margin-top: .125rem;
-  padding: .75rem;
+  margin-top: $space-05;
+  padding: $space-2;
   font-size: $text-4;
   font-weight: $bold;
-}
-
-.page-message__text {
-
-  &:before {
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    position: relative;
-    bottom: -2px;
-    margin-right: $space-1;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 .page-message__action {
@@ -31,14 +16,22 @@
 
 .page-message__close {
   position: absolute;
-  right: .25rem;
-  top: .375rem;
-  padding: .5rem;
+  right: $space-05;
+  top: $space-1;
+  padding: $space-1;
   cursor: pointer;
 }
 
-.page-message__close-icon {
-  width: .75rem;
+.page-message__icon{
+  vertical-align: middle;
+  height: $space-2;
+  border-radius: 50%;
+  margin-bottom: .15rem;
+  margin-right: $space-1;
+}
+
+.page-message__icon-close {
+  width: $space-3;
 }
 
 .page-message--error {
@@ -48,20 +41,21 @@
   .page-message__text,
   .page-message__action {
     color: $text-red;
-
-    &:before {
-      background-image: svg-background($exclamation-circle);
-      background-size: 1rem;
-    }
   }
 
-  .page-message__close-icon {
+  .page-message__icon-close {
     fill: darken($fill-red-lighter, 20%);
   }
 
-  & .page-message__close:hover .page-message__close-icon {
+  & .page-message__close:hover .page-message__icon-close {
     fill: $fill-red;
   }
+
+  .page-message__icon {
+  fill: $fill-red-lighter;
+  background-color: $fill-red;
+  }
+
 }
 
 .page-message--success {
@@ -71,22 +65,45 @@
   .page-message__text, 
   .page-message__action {
     color: $text-green;
-
-    &:before {
-      background-image: svg-background($checkmark);
-      background-size: .625rem;
-      background-color: $fill-green;
-      border-radius: 50%;
-    }
   }
 
-  .page-message__close-icon {
+  .page-message__icon-close {
     fill: darken($fill-green-lighter, 20%);
   }
 
-  & .page-message__close:hover .page-message__close-icon {
+  & .page-message__close:hover .page-message__icon-close {
     fill: $fill-green;
   }
+
+  .page-message__icon {
+  fill: $fill-green-lighter;
+  background-color: $fill-green;
+  }
+
+}
+
+.page-message--warning {
+  background-color: lighten($fill-orange, 40%);
+  color: $text-orange;
+
+  .page-message__text,
+  .page-message__action {
+    color: $text-orange;
+  }
+
+    .page-message__icon-close {
+    fill: lighten($fill-orange, 20%)
+    }
+
+    & .page-message__close:hover .page-message__icon-close {
+      fill: $fill-orange;
+    }
+  .page-message__icon {
+  fill: lighten($fill-orange, 40%);
+  background-color: $fill-orange;
+  
+  }
+
 }
 
 .page-message__action:hover {
