@@ -35,14 +35,6 @@ Open the site in your web browser:
 
 <http://localhost:9000/>
 
-## Linting
-
-We use scss lint to keep our scss clean and consistent.
-
-To run scss_lint:
-
-`scss-lint scss/`
-
 ## Code Snippets
 
 To add code snippets/highlighted syntax to pages in solid, wrap your markup inside <%= ' ' %>

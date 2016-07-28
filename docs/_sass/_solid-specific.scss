@@ -3,7 +3,7 @@
 // Setup
 // -------------------------
 
-@import "../_lib/solid-helpers";
+@import "../../_lib/solid-helpers";
 
 // Fonts
 // -------------------------
@@ -97,7 +97,7 @@ $js-highlight-magenta: #d14;
   border-left: .375rem solid $fill-blue;
 
   .solid-nav__item {
-    color: $text-gray;    
+    color: $text-gray;
   }
 }
 
@@ -124,10 +124,10 @@ code {
     font-size: $text-5;
     color: $js-highlight-magenta;
   }
-  
+
   // Override highlight.js theme properties
-  &.hljs { 
-    background-color: $fill-gray-lighter; 
+  &.hljs {
+    background-color: $fill-gray-lighter;
     padding: $space-2;
     font-size: $text-5;
     line-height: 1.75;
@@ -182,7 +182,7 @@ pre {
   border-left: .375rem solid $fill-blue;
 
   .solid-nav__item {
-    color: $text-gray;    
+    color: $text-gray;
   }
 }
 

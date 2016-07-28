@@ -5,8 +5,7 @@
 .sass-cache/
 
 # ignore generated site
-_site/
-_deploy/
+_docs/.tmp/
 
 # ignore node modules
 node_modules/

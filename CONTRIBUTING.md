@@ -9,7 +9,7 @@ Coming soon!
 
 ## Getting Started
 
-### 1. Set Up 
+### 1. Set Up
 
 You must have an account with [Github](https://github.com/) and [git](https://help.github.com/articles/set-up-git/) must be installed on your computer.
 
@@ -20,15 +20,15 @@ Before you can access any BuzzFeed repos, you will need to [generate an SSH key]
 
 ### 2. Fork the Repo Locally
 
-Visit <https://github.com/buzzfeed/solid> and click the fork button. 
+Visit <https://github.com/buzzfeed/solid> and click the fork button.
 
 Next, clone this fork down to your local PC.
 
-### 3. Check Out a New Branch 
+### 3. Check Out a New Branch
 
-Each time you address a new feature or bug fix, it is best to create a new branch with a descriptive name. That way, it's easy to pause one task and switch to another. 
+Each time you address a new feature or bug fix, it is best to create a new branch with a descriptive name. That way, it's easy to pause one task and switch to another.
 
-This also simplifies our process of tracking contributions to the master code base. 
+This also simplifies our process of tracking contributions to the master code base.
 
 ```
 $ git branch my-feature-or-bug-branch
@@ -64,7 +64,7 @@ The first step is to create a [“remote”](https://help.github.com/articles/ad
 $ git remote add origin git://github.com/buzzfeed/solid.git
 ````
 
-Fetch and merge updates: 
+Fetch and merge updates:
 
 `IS THIS CORRECT? ⤵`
 
@@ -83,7 +83,7 @@ $ git push origin my-feature-or-bug-branch
 
 ### 8. Submit a Pull Request
 
-Once you're ready to submit your feature or bug, go to your fork on the web (<https://github.com/YOUR_GITHUB_USERNAME/solid>), and click the **Pull Requests** nav item at the top right. 
+Once you're ready to submit your feature or bug, go to your fork on the web (<https://github.com/YOUR_GITHUB_USERNAME/solid>), and click the **Pull Requests** nav item at the top right.
 
 Next, click the green **New pull request** button and select the following from the dropdowns:
 
@@ -98,7 +98,7 @@ You should add a concise descriptive comment about what is in this merge, and th
 
 ### 9. A Note on Merging
 
-Because of Github permissioning on BuzzFeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach out to someone in #solid-prs to merge your PR into develop.
+Because of Github permissions on BuzzFeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach out to someone in #solid-prs to merge your PR into develop.
 
 # Deprecating Code
 

@@ -5,11 +5,11 @@ description: Solid is a base style library. It will be used as the core styling 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://solid.buzzfeed.com" # the base hostname & protocol for your site
 port: 9000
+destination: .tmp/_site
 
 # Build settings
 markdown: kramdown
 
-# Ignore
 sass:
   style: compressed
 exclude:
