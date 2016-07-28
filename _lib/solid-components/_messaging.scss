@@ -5,7 +5,7 @@
 .page-message {
   position: relative;
   margin-top: $space-05;
-  padding: .8rem;
+  padding: $space-2;
   font-size: $text-4;
   font-weight: $bold;
 }
@@ -17,7 +17,7 @@
 .page-message__close {
   position: absolute;
   right: $space-05;
-  top: .3rem;
+  top: $space-1;
   padding: $space-1;
   cursor: pointer;
 }
