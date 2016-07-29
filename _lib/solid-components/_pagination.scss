@@ -74,8 +74,8 @@
   }
 
   .pagination__button--disabled {
-    .pagination__button__prev-icon,
-    .pagination__button__next-icon  {
+    .pagination__button--prev-icon,
+    .pagination__button--next-icon  {
       opacity: .3;
     }
   }
@@ -83,8 +83,8 @@
 
 // Small Pagination
 .pagination--small {
-  .pagination__button__prev-icon,
-  .pagination__button__next-icon  {
+  .pagination__button--prev-icon,
+  .pagination__button--next-icon  {
     width: .625rem;
     top: 1px;
   }
