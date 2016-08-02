@@ -127,6 +127,9 @@ $line-height-3: 1.5; // default line-height set on the body
 $line-height-form: 1.5rem;
 $line-height-form-small: 1.25rem;
 
+// Disabled opacity for buttons, forms, pagination
+$disabled-opacity: .3;
+
 // SVG
 // -------------------------
 // encoding this as utf8 is good!
