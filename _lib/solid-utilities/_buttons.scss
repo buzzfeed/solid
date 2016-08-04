@@ -160,7 +160,7 @@
 
 .button--disabled,
 .button:disabled {
-  opacity: $disabled-opacity !important;
+  opacity: $opacity-disabled !important;
 
   &:hover {
     cursor: default  !important;
