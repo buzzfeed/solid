@@ -1,0 +1,212 @@
+---
+layout: default
+title: Flexbox
+---
+
+<section class="xs-mb6">
+
+  <a name="flexbox"></a>
+  <h2 class="xs-mb2 bold">Flexbox</h2>
+
+  <p class="xs-mb4">This is a lil' description of Flexbox</p>
+
+</section>
+
+<!-- Order Properties -->
+<section class="xs-mb6">
+  <a name="order-properties"></a>
+  <h2 class="bold xs-mb2">Order Properties</h2>
+
+  <p class="xs-mb4">Order properties determine how the order of items are laid out despite how they appear in the markup. Assign ordering to items using the classes <code class="js-highlight">xs-flex-order-1</code>, .<code class="js-highlight">xs-flex-order-2</code>, or .<code class="js-highlight">xs-flex-order-3</code>.</p>
+
+  <!-- Example 1 -->
+  <div class="flex xs-mb2">
+
+    <div class="xs-flex-grow-1 xs-flex-order-1 md-flex-order-3 xs-p2 xs-border fill-yellow-lighter">
+      <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-1</span> <span class="xs-hide md-inline-block">.md-flex-order-3</span>
+      <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+    </div>
+
+    <div class="xs-flex-grow-1 xs-flex-order-2 xs-p2 xs-border-right xs-border-top xs-border-bottom xs-border-left-none md-border-left md-border-right-none fill-green-lighter">
+      <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-2</span><span class="xs-hide md-inline-block">.md-flex-order-2</span>
+      <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+    </div>
+
+    <div class="xs-flex-grow-1 xs-flex-order-3 md-flex-order-1 xs-p2 xs-border xs-border-left-none md-border-left md-border-right-none fill-red-lighter">
+      <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-3</span> <span class="xs-hide md-inline-block">.md-flex-order-1</span>
+      <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+    </div>
+
+  </div>
+
+{% highlight html %}
+<div class="flex xs-mb2">
+
+  <div class="xs-flex-order-1 md-flex-order-3 xs-p2 xs-flex-grow-1">
+    <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-1</span>
+    <span class="xs-hide md-inline-block">.md-flex-order-3</span>
+  </div>
+    
+  <div class="xs-flex-order-2 xs-p2 xs-flex-grow-1">
+    <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-2</span>
+  </div>
+
+  <div class="xs-flex-order-3 md-flex-order-1 xs-p2 xs-flex-grow-1">
+    <span class="xs-text-4 xs-inline-block md-hide">.xs-flex-order-3</span>
+    <span class="xs-hide md-inline-block">.md-flex-order-1</span>
+  </div>
+
+</div>
+{% endhighlight %}
+</section>
+
+<!-- Direction  -->
+<section class="xs-mb6">
+  <a name="order-properties"></a>
+  <h2 class="bold xs-mb2">Direction</h2>
+
+  <p class="xs-mb4">This applies to the direction that items are placed along the main axis. Assigning a parent .<code class="js-highlight">xs-flex-row</code> means that the children will be distributed left to right. A left to right direction on the x-axis is also the .<code class="js-highlight">display-flex</code> default.</p>
+
+  <!-- Flex Row -->
+  <div class="xs-mb4">
+    .<code class="js-highlight">xs-flex-row</code> <p class="xs-text-5 xs-mb2 text-gray-lightest xs-ml05">applies to the parent</p>
+
+    <div class="xs-flex-row xs-mb2">
+
+    <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
+      <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+    </div>
+
+    <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+      <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+    </div>
+
+    <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-red-lighter">
+      <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+    </div>
+
+    </div>
+
+{% highlight html %}
+<div class="xs-flex-row">
+
+  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  </div>
+</div>
+{% endhighlight %}
+
+  </div>
+
+  <!-- Flex Row Reverse -->
+  <div class="xs-mb4">
+    .<code class="js-highlight">xs-flex-row-reverse</code> <p class="xs-text-5 xs-mb2 text-gray-lightest xs-ml05">applies to the parent</p>
+
+    <div class="xs-flex-row-reverse xs-mb2">
+
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-yellow-lighter">
+        <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+      </div>
+
+      <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+        <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+      </div>
+
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-red-lighter">
+        <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+      </div>
+
+    </div>
+
+{% highlight html %}
+<div class="xs-flex-row-reverse">
+
+  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  </div>
+</div>
+{% endhighlight %}
+
+  </div>
+
+  <!-- Flex Column -->
+  <div class="xs-mb4">
+    .<code class="js-highlight">xs-flex-column</code> <p class="xs-text-5 xs-mb2 text-gray-lightest xs-ml05">applies to the parent</p>
+
+    <div class="xs-flex-column xs-mb2">
+
+      <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+        <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+      </div>
+
+      <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+        <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+      </div>
+
+    </div>
+
+{% highlight html %}
+<div class="xs-flex-column-reverse">
+
+  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
+
+</div>
+{% endhighlight %}
+
+  </div>
+
+  <!-- Flex Column Reverse -->
+  <div class="xs-mb4">
+    .<code class="js-highlight">xs-flex-column-reverse</code> <p class="xs-text-5 xs-mb2 text-gray-lightest xs-ml05">applies to the parent</p>
+
+    <div class="xs-flex-column-reverse xs-mb2">
+
+      <div class="xs-p2 xs-border fill-yellow-lighter xs-flex-grow-1">
+        <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+      </div>
+
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-bottom-none fill-green-lighter">
+        <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+      </div>
+
+    </div>
+
+{% highlight html %}
+<div class="xs-flex-column-reverse">
+
+  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
+
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
+
+</div>
+{% endhighlight %}
+
+  </div>
+
+</section>
