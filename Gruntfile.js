@@ -73,6 +73,14 @@ module.exports = function(grunt) {
             return dest + src;
           }
         }]
+      },
+      deployDist: {
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: ['**'],
+          dest: 'docs/.tmp/_deploy/dist/'
+        }]
       }
     }
   });
@@ -85,6 +93,7 @@ grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.registerTask('compile_lib', ['sass:lib']);
 grunt.registerTask('minify_lib', ['cssnano:lib']);
 grunt.registerTask('latest_solid', ['copy:latest']);
+grunt.registerTask('copy_deploy_dist', ['copy:deployDist']);
 grunt.registerTask('zip_build', ['compress:build']);
 grunt.registerTask('zip_lib', ['compress:lib']);
 

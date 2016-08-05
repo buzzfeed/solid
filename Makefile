@@ -45,6 +45,7 @@ build:
 # build static site into _deploy
 build_deploy:
 	(cd docs/ && bundle exec jekyll build --destination .tmp/_deploy)
+	grunt copy_deploy_dist
 
 # install node modules from npm-shrinkwrap.json
 node_modules:
