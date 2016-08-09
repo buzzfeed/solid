@@ -3,7 +3,7 @@ The Solid styleguide lets you view Solid along with all of its documentation.
 
 ## Dependencies
 
-This installation guide assumes that you have the [BuzzFeed webapp](https://github.com/buzzfeed/buzzfeed) installed. That will set you up with the correct versions of node and ruby.
+This guide assumes you have installed node and ruby.
 
 ## Downloading the repo
 
@@ -14,12 +14,6 @@ Open a terminal window. Clone the repo into a new folder:
 Move into that directory
 
 `cd /opt/buzzfeed/solid`
-
-## Prepare required directories
-
-```bash
-[ ! -d /buzzfeed ] && sudo mkdir -p /buzzfeed && sudo chown `id -u`:`id -g` /buzzfeed
-```
 
 ## Build the app
 
