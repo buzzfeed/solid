@@ -23,7 +23,7 @@ ruby_gems:
 # * executed on build
 # * not re-run by jekyll serve
 dist: build
-	grunt compress_build
+	grunt compress_dist_docs
 	grunt compile_lib
 	grunt minify_lib
 	grunt latest_solid
