@@ -51,8 +51,9 @@ module.exports = function(grunt) {
       },
       build: {
          options: {
-             archive: 'docs/_dist/solid-docs.zip',
-             mode: 'zip'
+             archive: 'docs/_dist/solid-docs.tar.gz',
+             mode: 'tar',
+             level: 'gzip'
          },
          files: [{
              src: ['**/*'],
@@ -94,7 +95,7 @@ grunt.registerTask('compile_lib', ['sass:lib']);
 grunt.registerTask('minify_lib', ['cssnano:lib']);
 grunt.registerTask('latest_solid', ['copy:latest']);
 grunt.registerTask('copy_deploy_dist', ['copy:deployDist']);
-grunt.registerTask('zip_build', ['compress:build']);
+grunt.registerTask('compress_build', ['compress:build']);
 grunt.registerTask('zip_lib', ['compress:lib']);
 
 }
