@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         },
         files: [{
           src: ['**/*'],
-          cwd: '.tmp/_site/',
+          cwd: 'docs/.tmp/_site/',
           expand: true
         }]
       },
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
          },
          files: [{
            src: ['solid-docs.<%= pkg.version %>.tar.gz'],
-           cwd: '.tmp/',
+           cwd: '.tmp/docs/_site/',
            dest: '.tmp/',
            expand: true
          }]
