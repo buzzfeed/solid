@@ -23,11 +23,16 @@ ruby_gems:
 # * executed on build
 # * not re-run by jekyll serve
 dist: build
-	grunt compress_dist_docs
 	grunt compile_lib
 	grunt minify_lib
 	grunt latest_solid
 	grunt zip_lib
+
+# compress docs so that they can
+# be attached to a github release
+release_docs: build
+	grunt compress_release_docs
+	open .tmp/
 
 # clean out generated files
 clean:

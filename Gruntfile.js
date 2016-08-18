@@ -49,25 +49,25 @@ module.exports = function(grunt) {
              expand: true
          }]
       },
-      build_tar: {
+      tar_docs: {
         options: {
-          archive: 'docs/.tmp/solid-docs.tar.gz',
+          archive: '.tmp/solid-docs.<%= pkg.version %>.tar.gz',
           mode: 'tar'
         },
         files: [{
           src: ['**/*'],
-          cwd: 'docs/.tmp/_site/',
+          cwd: '.tmp/_site/',
           expand: true
         }]
       },
-      build_gzip: {
+      gzip_docs: {
          options: {
            mode: 'gzip'
          },
          files: [{
-           src: ['solid-docs.tar.gz'],
-           cwd: 'docs/.tmp/',
-           dest: 'docs/_dist/',
+           src: ['solid-docs.<%= pkg.version %>.tar.gz'],
+           cwd: '.tmp/',
+           dest: '.tmp/',
            expand: true
          }]
       }
@@ -105,7 +105,7 @@ grunt.registerTask('compile_lib', ['sass:lib']);
 grunt.registerTask('minify_lib', ['cssnano:lib']);
 grunt.registerTask('latest_solid', ['copy:latest']);
 grunt.registerTask('copy_deploy_dist', ['copy:deployDist']);
-grunt.registerTask('compress_dist_docs', ['compress:build_tar', 'compress:build_gzip']);
+grunt.registerTask('compress_release_docs', ['compress:tar_docs', 'compress:gzip_docs']);
 grunt.registerTask('zip_lib', ['compress:lib']);
 
 }

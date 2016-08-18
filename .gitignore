@@ -7,6 +7,9 @@
 # ignore generated site
 docs/.tmp/
 
+# ignore temporary assets
+.tmp/
+
 # ignore node modules
 node_modules/
 
