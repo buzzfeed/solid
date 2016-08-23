@@ -58,7 +58,7 @@
   transition: background-color .1s ease 0s  !important;
 
   //only have hover styles if button is not disabled
-  &:not(.button--disabled) {
+  &:not(.button--disabled):not(:disabled) {
     &:hover {
       background-color: $hover-background-color  !important;
       transition: background-color .15s ease 0s  !important;
@@ -79,7 +79,7 @@
   }
 
   //only have hover styles if button is not disabled
-  &.button--secondary:not(.button--disabled) {
+  &.button--secondary:not(.button--disabled):not(:disabled) {
     &:hover {
       background-color: $fill-color       !important;
       color: $secondary-hover-text-color  !important;
@@ -95,7 +95,7 @@
   //colored button + secondary + icon button styles
   &.button--secondary.button--icon {
     >svg                               { fill: $fill-color  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-white  !important; }
+    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-white  !important; }
   }
 }
 
@@ -128,16 +128,16 @@
   @include button-style($fill-white, $text-gray);
 
   // white button has unique hover states
-  &.button--secondary:not(.button--disabled):active { background-color: darken($fill-white, 10%) !important; }
+  &.button--secondary:not(.button--disabled):not(:disabled):active { background-color: darken($fill-white, 10%) !important; }
 
   &.button--icon {
     >svg                               { fill: $fill-gray-darker  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-gray-darker !important; }
+    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
   }
 
   &.button--secondary.button--icon {
     >svg                               { fill: $fill-white  !important; }
-    &:not(.button--disabled):hover svg { fill: $fill-gray-darker !important; }
+    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
   }
 }
 
@@ -148,7 +148,7 @@
   border-color: transparent             !important;
   border: 1px solid transparent         !important;
 
-  &:not(.button--disabled):hover {
+  &:not(.button--disabled):not(:disabled):hover {
     background-color: transparent       !important;
     color: darken($text-blue, 20%)      !important;
   }
@@ -158,7 +158,8 @@
 // Disabled Button
 // -------------------------
 
-.button--disabled {
+.button--disabled,
+.button:disabled {
   opacity: .3 !important;
 
   &:hover {
@@ -207,16 +208,17 @@
   background-color: $color !important;
   color: $text-white       !important;
 
-  &:not(.button--disabled):hover {
+  &:not(.button--disabled):not(:disabled):hover {
     background-color: darken($color, 20%) !important;
     color: $text-white                    !important;
   }
 
-  &.button--disabled:hover {
+  &.button--disabled:hover,
+  &:disabled:hover {
     color: $text-white !important;
   }
 
-  &:not(.button--disabled):active {
+  &:not(.button--disabled):not(:disabled):active {
     background-color: darken($color, 35%) !important;
   }
 }
