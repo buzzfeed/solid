@@ -34,52 +34,41 @@
   // directional properties 
   &flex-row {
     flex-direction: row;
-    display: flex;
   }
 
   &flex-row-reverse {
     flex-direction: row-reverse;
-    display: flex;
   }
 
   &flex-column {
     flex-direction: column;
-    display: flex;
   }
 
   &flex-column-reverse {
     flex-direction: column-reverse;
-    display: flex;
   }
 
 }
 
-
-
 // Justify Content - Parent
 .justify-content-start {
   justify-content: flex-start;
-  display: flex;
 }
 
 .justify-content-end {
   justify-content: flex-start;
-  display: flex;
 }
 
 .justify-content-center {
   justify-content: center;
-  display: flex;
 }
 
 .justify-content-between {
   justify-content: space-between;
-  display: flex;
 }
 
 .justify-content-around {
   justify-content: space-around;
-  display: flex;
 }
 
 
@@ -87,22 +76,18 @@
 
 .align-items-start {
   align-items: flex-start;
-  display: flex;
 }
 
 .align-items-end {
   align-items: flex-end;
-  display: flex;
 }
 
 .align-items-center {
   align-items: center;
-  display: flex;
 }
 
 .align-items-baseline {
   align-items: baseline;
-  display: flex;
 }
 
 
