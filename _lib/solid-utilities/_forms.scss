@@ -36,7 +36,7 @@
   border: $border                !important;
 
   &:disabled {
-    opacity: .35              !important;
+    opacity: $opacity-disabled   !important;
   }
 }
 
@@ -100,7 +100,7 @@ select::-ms-expand,
   }
 
   &:disabled + label {
-    opacity: .35                !important;
+    opacity: $opacity-disabled    !important;
   }
 }
 
@@ -124,7 +124,7 @@ select::-ms-expand,
   }
 
   &:disabled + label {
-    opacity: .35                !important;
+    opacity: $opacity-disabled   !important;
   }
 }
 

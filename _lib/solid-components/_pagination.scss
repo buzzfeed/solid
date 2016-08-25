@@ -76,7 +76,7 @@
   .pagination__button--disabled {
     .pagination__button--prev-icon,
     .pagination__button--next-icon  {
-      opacity: .3;
+      opacity: $opacity-disabled;
     }
   }
 }
