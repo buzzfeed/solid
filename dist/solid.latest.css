@@ -832,7 +832,7 @@ td {
 
 .button--disabled,
 .button:disabled {
-  opacity: .3 !important; }
+  opacity: 0.3 !important; }
   .button--disabled:hover,
   .button:disabled:hover {
     cursor: default  !important;
@@ -963,7 +963,7 @@ td {
   .textarea--small:disabled,
   .select:disabled,
   .select--small:disabled {
-    opacity: .35              !important; }
+    opacity: 0.3 !important; }
 
 .select {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2712%27%20height%3D%278%27%20viewBox%3D%270%200%20488%20285%27%3E%3Cpath%20d%3D%27M483.11%2029.381l-24.449-24.485c-2.934-2.938-7.335-4.897-11.246-4.897-3.912%200-8.313%201.959-11.246%204.897l-192.168%20192.448-192.168-192.448c-2.934-2.938-7.335-4.897-11.246-4.897-4.401%200-8.313%201.959-11.246%204.897l-24.449%2024.485c-2.934%202.938-4.89%207.345-4.89%2011.263s1.956%208.325%204.89%2011.263l227.864%20228.196c2.934%202.938%207.335%204.897%2011.246%204.897%203.912%200%208.313-1.959%2011.246-4.897l227.864-228.196c2.934-2.938%204.89-7.345%204.89-11.263s-1.956-8.325-4.89-11.263z%27%20fill%3D%27%23000%27/%3E%3C/svg%3E") !important;
@@ -1029,7 +1029,7 @@ select::-ms-expand,
     .radio + label:before {
       border-radius: 50% !important; }
   .radio:disabled + label {
-    opacity: .35                !important; }
+    opacity: 0.3 !important; }
 
 .radio:checked + label:before {
   background-color: #fff !important;
@@ -1062,7 +1062,7 @@ select::-ms-expand,
     .checkbox + label:before {
       border-radius: 30% !important; }
   .checkbox:disabled + label {
-    opacity: .35                !important; }
+    opacity: 0.3 !important; }
 
 .checkbox:checked + label:before {
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2710%27%20height%3D%2710%27%20viewBox%3D%270%200%20512%20512%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cpath%20d%3D%27M491.185%20120.619l-42.818-42.818c-5.667-5.667-13.538-8.815-21.409-8.815-7.871%200-15.742%203.148-21.409%208.815l-206.534%20206.849-92.563-92.877c-5.667-5.667-13.538-8.815-21.409-8.815-7.871%200-15.742%203.148-21.409%208.815l-42.818%2042.818c-5.667%205.667-8.815%2013.538-8.815%2021.409%200%207.871%203.148%2015.742%208.815%2021.409l113.972%20113.972%2042.818%2042.818c5.667%205.667%2013.538%208.815%2021.409%208.815%207.871%200%2015.742-3.148%2021.409-8.815l42.818-42.818%20227.943-227.943c5.667-5.667%208.815-13.538%208.815-21.409%200-7.871-3.148-15.742-8.815-21.409z%27%20fill%3D%27%23fff%27/%3E%3C/svg%3E") !important;
@@ -3788,7 +3788,7 @@ select::-ms-expand,
     background-color: #fff; }
   .pagination .pagination__button--disabled .pagination__button--prev-icon,
   .pagination .pagination__button--disabled .pagination__button--next-icon {
-    opacity: .3; }
+    opacity: 0.3; }
 
 .pagination--small .pagination__button--prev-icon,
 .pagination--small .pagination__button--next-icon {
