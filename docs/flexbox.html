@@ -45,19 +45,19 @@ title: Flexbox
       </div>
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-start fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+  {% highlight html %}
+  <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-start fill-red-lighter xs-p2">
+    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+      item one
     </div>
-    {% endhighlight %}
+    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+      item two
+    </div>
+    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+      item three
+    </div>
+  </div>
+  {% endhighlight %}
   </div>
 
   <!-- Example: Justify Content End -->
@@ -77,19 +77,19 @@ title: Flexbox
       </div>
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-end fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
-    </div>
-    {% endhighlight %}
+{% highlight html %}
+<div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-end fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item one
+  </div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item two
+  </div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item three
+  </div>
+</div>
+{% endhighlight %}
   </div>
 
   <!-- Example: Justify Content Center -->
@@ -109,23 +109,84 @@ title: Flexbox
       </div>
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-center fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+{% highlight html %}
+<div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-center fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item one
+  </div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item two
+  </div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+    item three
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+
+</section>
+
+
+<!-- ALIGN ITEMS -->
+<section class="xs-mb6">
+
+  <a name="order-properties"></a>
+  <h2 class="bold xs-mb2">Align Items</h2>
+  <p class="xs-mb4">Align-items defines how items are aligned along the <span class="bold">cross axis</span>. By default, the cross axis direction is top to bottom.</p>
+  
+  <!-- Example: Align Items Start -->
+  <div class="xs-mb5">
+    .<code class="js-highlight">xs-align-items-start</code> 
+    <p class="xs-mb2 xs-ml05">This aligns flex items at the top, or start, of the cross axis. <span class="bold">Class applies to the parent</span></p>
+
+    <div class="flex xs-align-items-start xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
       <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
         item two
       </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
         item three
       </div>
     </div>
-    {% endhighlight %}
+
+{% highlight html %}
+<div class="flex xs-align-items-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
   </div>
 
-</section>
+  <!-- Example: Align Items End -->
+  <div class="xs-mb5">
+    .<code class="js-highlight">xs-align-items-start</code> 
+    <p class="xs-mb2 xs-ml05">This aligns flex items at the top, or start, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
+    <div class="flex xs-align-items-start xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
+        item one
+      </div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+        item two
+      </div>
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
+        item three
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="flex xs-align-items-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
+  </div
+
+</section>
 <!-- GROW AND SHRINK -->
 <section class="xs-mb6">
   <a name="order-properties"></a>
@@ -149,23 +210,23 @@ title: Flexbox
       </div>
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-mb2">
+{% highlight html %}
+<div class="flex xs-mb2">
 
-      <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
-        <span class="xs-px2"></span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
+    <span class="xs-px2"></span>
+  </div>
 
-      <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
-        <span>.xs-flex-grow-1</span>
-      </div>
+  <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+    <span>.xs-flex-grow-1</span>
+  </div>
 
-      <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter">
-        <span class="xs-px2"></span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter">
+    <span class="xs-px2"></span>
+  </div>
 
-    </div>
-    {% endhighlight %}
+</div>
+{% endhighlight %}
   </div>
 
 </section>
@@ -195,22 +256,22 @@ title: Flexbox
       </div>
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-mb2">
+{% highlight html %}
+<div class="flex xs-mb2">
 
-      <div class="xs-flex-order-1 xs-flex-grow-1 xs-p2 ">
-        <span>.xs-flex-order-1</span>
-      </div>
-        
-      <div class="xs-flex-order-2 xs-flex-grow-1 xs-p2 ">
-        <span class="xs-text-4">.xs-flex-order-2</span>
-      </div>
+  <div class="xs-flex-order-1 xs-flex-grow-1 xs-p2 ">
+    <span>.xs-flex-order-1</span>
+  </div>
+    
+  <div class="xs-flex-order-2 xs-flex-grow-1 xs-p2 ">
+    <span class="xs-text-4">.xs-flex-order-2</span>
+  </div>
 
-      <div class="xs-flex-order-3 xs-flex-grow-1 xs-p2 ">
-        <span class="xs-text-4">.xs-flex-order-3</span>
-      </div>
-    </div>
-    {% endhighlight %}
+  <div class="xs-flex-order-3 xs-flex-grow-1 xs-p2 ">
+    <span class="xs-text-4">.xs-flex-order-3</span>
+  </div>
+</div>
+{% endhighlight %}
   </div>
 
 </section>
@@ -242,22 +303,22 @@ title: Flexbox
 
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-flex-row">
+{% highlight html %}
+<div class="flex xs-flex-row">
 
-      <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
-      </div>
-    </div>
-    {% endhighlight %}
+  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  </div>
+</div>
+{% endhighlight %}
   </div>
 
   <!-- Flex Row Reverse -->
@@ -281,22 +342,22 @@ title: Flexbox
 
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-flex-row-reverse">
+{% highlight html %}
+<div class="flex xs-flex-row-reverse">
 
-      <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
-        <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
-      </div>
-    </div>
-    {% endhighlight %}
+  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
+    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  </div>
+</div>
+{% endhighlight %}
   </div>
 
   <!-- Flex Column -->
@@ -317,19 +378,19 @@ title: Flexbox
 
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-flex-column-reverse">
+{% highlight html %}
+<div class="flex xs-flex-column-reverse">
 
-      <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
-        <span class="xs-block text-gray-lighter">First item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+    <span class="xs-block text-gray-lighter">First item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-        <span class="xs-block text-green">Second item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block text-green">Second item in the markup</span>
+  </div>
 
-    </div>
-    {% endhighlight %}
+</div>
+{% endhighlight %}
   </div>
 
   <!-- Flex Column Reverse -->
@@ -349,19 +410,19 @@ title: Flexbox
 
     </div>
 
-    {% highlight html %}
-    <div class="flex xs-flex-column-reverse">
+{% highlight html %}
+<div class="flex xs-flex-column-reverse">
 
-      <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
-        <span class="xs-block text-gray-lighter">First item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+    <span class="xs-block text-gray-lighter">First item in the markup</span>
+  </div>
 
-      <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-        <span class="xs-block text-green">Second item in the markup</span>
-      </div>
+  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+    <span class="xs-block text-green">Second item in the markup</span>
+  </div>
 
-    </div>
-    {% endhighlight %}
+</div>
+{% endhighlight %}
   </div>
 
 </section>
