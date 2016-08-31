@@ -1,0 +1,111 @@
+.flex {
+  display: flex;
+}
+
+@include generate-breakpoint-prefixes {
+
+  // flex ordering
+  &flex-order-1 {
+    order: 1;
+  }
+
+  &flex-order-2 {
+    order: 2;
+  }
+
+  &flex-order-3 {
+    order: 3;
+  }
+
+  // flex grow properties
+  &flex-grow-1 {
+    flex-grow: 1;
+  }
+
+  &flex-grow-2 {
+    flex-grow: 2;
+  }
+
+  &flex-grow-3 {
+    flex-grow: 3;
+  }
+
+  // flex shrink properties
+  &flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  &flex-shrink-1 {
+    flex-shrink: 1;
+  }
+
+  // directional properties 
+  &flex-row {
+    flex-direction: row;
+  }
+
+  &flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &flex-column {
+    flex-direction: column;
+  }
+
+  &flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  // flex wrap and nowrap
+  &flex-wrap {
+    flex-wrap: wrap         !important;
+  }
+  
+  &flex-nowrap {
+    flex-wrap: nowrap       !important;
+  }
+
+  // Justify Content - Parent
+  &justify-content-start {
+    justify-content: flex-start;
+  }
+
+  &justify-content-end {
+    justify-content: flex-end;
+  }
+
+  &justify-content-center {
+    justify-content: center;
+  }
+
+  &justify-content-between {
+    justify-content: space-between;
+  }
+
+  &justify-content-around {
+    justify-content: space-around;
+  }
+
+
+  // Align Items - Parent
+
+  &align-items-start {
+    align-items: flex-start;
+  }
+
+  &align-items-end {
+    align-items: flex-end;
+  }
+
+  &align-items-center {
+    align-items: center;
+  }
+
+  &align-items-baseline {
+    align-items: baseline;
+  }
+
+
+}
+
+

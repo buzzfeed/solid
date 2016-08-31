@@ -1,0 +1,89 @@
+{
+  "name": "bf-solid",
+  "version": "2.0.0",
+  "description": "Solid CSS Styling",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buzzfeed/solid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buzzfeed/solid/issues"
+  },
+  "homepage": "https://github.com/buzzfeed/solid",
+  "contributors": [
+    {
+      "name": "Emily Brick",
+      "email": "brick.emily@gmail.com",
+      "url": "https://github.com/emilybrick",
+      "contributions": 46,
+      "additions": "na",
+      "deletions": "na",
+      "hireable": false
+    },
+    {
+      "name": "Allison Chefec",
+      "email": null,
+      "url": "https://github.com/allisonchefec",
+      "contributions": 29,
+      "additions": "na",
+      "deletions": "na"
+    },
+    {
+      "name": "Cap Watkins",
+      "email": "cwatkins@gmail.com",
+      "url": "https://github.com/capwatkins",
+      "contributions": 18,
+      "additions": "na",
+      "deletions": "na",
+      "hireable": false
+    },
+    {
+      "name": "John Niedermeyer",
+      "email": "john@nieder.me",
+      "url": "https://github.com/niederme",
+      "contributions": 7,
+      "additions": "na",
+      "deletions": "na",
+      "hireable": false
+    },
+    {
+      "name": "Finn Smith",
+      "email": "finn@timeghost.net",
+      "url": "https://github.com/finn",
+      "contributions": 3,
+      "additions": "na",
+      "deletions": "na",
+      "hireable": true
+    },
+    {
+      "name": "Sam Thurman",
+      "email": null,
+      "url": "https://github.com/samthurman",
+      "contributions": 2,
+      "additions": "na",
+      "deletions": "na"
+    },
+    {
+      "name": "Elaine Dunlap",
+      "email": null,
+      "url": "https://github.com/medun",
+      "contributions": 1,
+      "additions": "na",
+      "deletions": "na",
+      "hireable": false
+    }
+  ],
+  "devDependencies": {
+    "es6-promise": "^3.0.2",
+    "grunt": "~0.4.5",
+    "grunt-contrib-compress": "~1.1.1",
+    "grunt-cssnano": "^2.0.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}

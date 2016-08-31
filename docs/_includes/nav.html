@@ -217,6 +217,22 @@
 
       </li>
 
+      <li class="solid-nav__group {% if page.title == 'Flexbox' %}active{% endif %}">
+
+        <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="flexbox.html">Flexbox</a>
+
+        {% if page.title == 'Flexbox' %}
+          <ul class="list-unstyled xs-text-5 xs-hide sm-block">
+            <li class="xs-py1"><a href="#justify-content" class="xs-block xs-px3 solid-nav__subitem">Justify Content</a></li>
+            <li class="xs-py1"><a href="#align-items" class="xs-block xs-px3 solid-nav__subitem">Align Items</a></li>
+            <li class="xs-py1"><a href="#grow-shrink" class="xs-block xs-px3 solid-nav__subitem">Grow and Shrink</a></li>
+            <li class="xs-py1"><a href="#order" class="xs-block xs-px3 solid-nav__subitem">Order Properties</a></li>
+            <li class="xs-py1"><a href="#direction" class="xs-block xs-px3 solid-nav__subitem">Direction</a></li>
+          </ul>
+        {% endif %}
+
+      </li>
+
       <li class="solid-nav__group {% if page.title == 'Block Grid' %}active{% endif %}">
 
         <a class="xs-block xs-px2 xs-py2 sm-py1 bold solid-nav__item" href="block-grid.html">Block Grid</a>
