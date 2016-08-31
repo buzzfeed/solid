@@ -3,7 +3,7 @@ layout: default
 title: Flexbox
 ---
 
-<section class="xs-mb6">
+<section class="xs-mb4">
 
   <a name="flexbox"></a>
 
@@ -12,7 +12,7 @@ title: Flexbox
     <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
       <path d="M17.5 8.7h3v12.6h-3V8.7zM19 29.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z"/>
     </svg>
-    Flexbox classes are currently in beta, and we'd love to hear your thoughts. Send feedback to <a href="#">solid@buzzfeed.com</a>.</div>
+    Flexbox classes are currently in beta, but we'd love to hear your thoughts. Send feedback to <a href="#">solid@buzzfeed.com</a>.</div>
   </div>
 
   <h2 class="xs-mb2 bold">Introducing Flexbox in Solid</h2>
@@ -21,11 +21,48 @@ title: Flexbox
 
 </section>
 
+<table class="table-border xs-mb4">
+  <tr>
+    <th>Class</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html">Display Flex</a></td>
+    <td><span class="nowrap">.<code class="js-highlight">flex</code></span></td>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html#justify-content">Justify Content</a></td>
+    <td>
+      <span class="nowrap">.<code class="js-highlight">xs-justify-content-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-justify-content-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-justify-content-center</code></span>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html#align-items">Align Items</a></td>
+    <td>
+      <span class="nowrap">.<code class="js-highlight">xs-align-items-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-align-items-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-align-items-center</code></span>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html#grow-shrink">Grow & Shrink</a></td>
+    <td>
+      <span class="nowrap">.<code class="js-highlight">xs-flex-grow-1</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-grow-2</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-grow-3</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-shrink-0</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-shrink-1</code></span>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html#order">Order</a></td>
+    <td><span class="nowrap">.<code class="js-highlight">xs-flex-order-1</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-order-2</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-order-3</code></span>, </td>
+  </tr>
+  <tr>
+    <td><a href="flexbox.html#direction">Direction</a></td>
+    <td><span class="nowrap">.<code class="js-highlight">xs-flex-row</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-row-reverse</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-column</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-column-reverse</code></span>, </td>
+  </tr>
+</table>
+
 <!-- JUSTIFY CONTENT -->
 <section class="xs-mb6">
 
   <a name="order-properties"></a>
-  <h2 class="bold xs-mb2">Justify Content</h2>
+  <h2 class="bold xs-mb2" id="justify-content">Justify Content</h2>
   <p class="xs-mb4">Justify-content defines how items are aligned along the <span class="bold">main axis</span>. By default, the main axis is flex-row (left-to-right). If the parent module is defined as flex-column, then justify-content would determine how items are aligned top-to-bottom.</p>
   
   <!-- Example: Justify Content Start -->
@@ -131,7 +168,7 @@ title: Flexbox
 <section class="xs-mb6">
 
   <a name="order-properties"></a>
-  <h2 class="bold xs-mb2">Align Items</h2>
+  <h2 class="bold xs-mb2" id="align-items">Align Items</h2>
   <p class="xs-mb4">Align-items defines how items are aligned along the <span class="bold">cross axis</span>. By default, the cross axis direction is top to bottom.</p>
   
   <!-- Example: Align Items Start -->
@@ -162,10 +199,10 @@ title: Flexbox
 
   <!-- Example: Align Items End -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-align-items-start</code> 
-    <p class="xs-mb2 xs-ml05">This aligns flex items at the top, or start, of the cross axis. <span class="bold">Class applies to the parent</span></p>
+    .<code class="js-highlight">xs-align-items-end</code> 
+    <p class="xs-mb2 xs-ml05">This aligns flex items at the bottom, or end, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
-    <div class="flex xs-align-items-start xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+    <div class="flex xs-align-items-end xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
       <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -178,7 +215,33 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-align-items-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+<div class="flex xs-align-items-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
+  </div>
+
+  <!-- Example: Align Items Center -->
+  <div class="xs-mb5">
+    .<code class="js-highlight">xs-align-items-center</code> 
+    <p class="xs-mb2 xs-ml05">This aligns flex items in the middle of the cross axis. <span class="bold">Class applies to the parent</span></p>
+
+    <div class="flex xs-align-items-center xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
+        item one
+      </div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
+        item two
+      </div>
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
+        item three
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="flex xs-align-items-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
   <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
   <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
@@ -190,7 +253,7 @@ title: Flexbox
 <!-- GROW AND SHRINK -->
 <section class="xs-mb6">
   <a name="order-properties"></a>
-  <h2 class="bold xs-mb2">Grow and Shrink</h2>
+  <h2 class="bold xs-mb2" id="grow-shrink">Grow & Shrink</h2>
   <p class="xs-mb4">By default, all flex items have flex-grow set to 0, which means the items will inherit the width of the content inside of it. Flex grow and flex shrink allows an item to grow or shrink respectively if necessary. Read more about flex-grow and flex-shrink <a href="https://css-tricks.com/almanac/properties/f/flex-grow/">here</a>.</p>
 
   <!-- Example: Flex Grow 1-->
@@ -234,7 +297,7 @@ title: Flexbox
 <!-- ORDER PROPERTIES -->
 <section class="xs-mb6">
   <a name="order-properties"></a>
-  <h2 class="bold xs-mb2">Order Properties</h2>
+  <h2 class="bold xs-mb2" id="order">Order Properties</h2>
   <p class="xs-mb4">Order properties determine how the order of items are laid out despite how they appear in the markup. Assign ordering to items using the classes <code class="js-highlight">xs-flex-order-1</code>, .<code class="js-highlight">xs-flex-order-2</code>, or .<code class="js-highlight">xs-flex-order-3</code>.</p>
 
   <!-- Example: Flex Order -->
@@ -279,7 +342,7 @@ title: Flexbox
 <!-- DIRECTION  -->
 <section class="xs-mb6">
   <a name="order-properties"></a>
-  <h2 class="bold xs-mb2">Direction</h2>
+  <h2 class="bold xs-mb2" id="direction">Direction</h2>
   <p class="xs-mb4">This applies to the direction that items are placed along the main axis. Assigning a parent .<code class="js-highlight">xs-flex-row</code> means that the children will be distributed left-to-right, and .<code class="js-highlight">xs-flex-row-reverse</code> right-to-left respectively.</p>
 
   <!-- Flex Row -->
