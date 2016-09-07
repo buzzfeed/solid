@@ -31,6 +31,7 @@ dist: build
 # compress docs so that they can
 # be attached to a github release
 release_docs: build
+	grunt copy_deploy_dist
 	grunt compress_release_docs
 	open .tmp/
 
@@ -38,6 +39,7 @@ release_docs: build
 clean:
 	rm -fr _site/
 	rm -fr _deploy/
+	rm -fr .tmp/
 
 # run the jekyll server
 run:
@@ -46,11 +48,6 @@ run:
 # build static site into _site
 build:
 	(cd docs/ && bundle exec jekyll build)
-
-# build static site into _deploy
-build_deploy:
-	(cd docs/ && bundle exec jekyll build --destination .tmp/_deploy)
-	grunt copy_deploy_dist
 
 # install node modules from npm-shrinkwrap.json
 node_modules:

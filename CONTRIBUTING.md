@@ -1,11 +1,6 @@
-`DRAFT`
 # Contributing to Solid
 
-Solid is a living framework for all basic BuzzFeed styling and we want everyone to pitch in. Read on to learn how to contribute.
-
-## Dos and Don'ts
-
-Coming soon!
+Solid is a living framework for all basic BuzzFeed styling and we want every BuzzFeed developer to feel comfortable pitching in!
 
 ## Getting Started
 
@@ -13,34 +8,22 @@ Coming soon!
 
 You must have an account with [Github](https://github.com/) and [git](https://help.github.com/articles/set-up-git/) must be installed on your computer.
 
-You will also need to be invited to the [BuzzFeed organization](https://github.com/buzzfeed) on Github — If you don't already have access, email <helpdesk@buzzfeed.com> and CC: your manager.
-
-Before you can access any BuzzFeed repos, you will need to [generate an SSH key](https://help.github.com/articles/generating-ssh-keys/) and add the public key to your GitHub account. (This should only be necessary to do once per computer.)
-
 
 ### 2. Fork the Repo Locally
+**note: BuzzFeed contributors can ignore this step and clone the repo directly**
 
 Visit <https://github.com/buzzfeed/solid> and click the fork button.
 
-Next, clone this fork down to your local PC.
+Next, clone this fork down to your local PC. Now that you have a local fork of the repo you'll want to [keep it in sync](https://help.github.com/articles/syncing-a-fork/). For a deeper dive into repo forks check out github's [forking documentation](https://guides.github.com/activities/forking/).
 
 ### 3. Check Out a New Branch
 
-Each time you address a new feature or bug fix, it is best to create a new branch with a descriptive name. That way, it's easy to pause one task and switch to another.
-
-This also simplifies our process of tracking contributions to the master code base.
+Please create a branch with a short, descriptive name.
 
 ```
-$ git branch my-feature-or-bug-branch
-$ git checkout my-feature-or-bug-branch
+$ git checkout -b my-feature-or-bug-branch
 ```
 
-You can also checkout existing branches, by doing a fetch:
-
-````
-$ git fetch
-$ git checkout some-other-branch
-````
 ### 4. Write Your Code!
 
 Do your best to follow the patterns and examples laid out in the Solid docs.
@@ -49,33 +32,14 @@ Do your best to follow the patterns and examples laid out in the Solid docs.
 
 ````
 $ git add .
-$ git commit -m "fixes #58 - bug description here"
+$ git commit -m "fixes bug xxx"
 ````
 
 This will commit your changes to your local copy of the repo, (distinct from your fork on Github).
 
-### 6. (Optional) Merge Down From Master
+### 6. Push It
 
-If you know there of important changes in the master code base, or if a pull request was denied because your are out-of-sync with master, you'll need to merge down.
-
-The first step is to create a [“remote”](https://help.github.com/articles/adding-a-remote/) to the buzzfeed/solid repo. (This should only be necessary to do once.)
-
-````
-$ git remote add origin git://github.com/buzzfeed/solid.git
-````
-
-Fetch and merge updates:
-
-`IS THIS CORRECT? ⤵`
-
-````
-$ git fetch origin
-$ git merge origin/master
-````
-
-### 7. Push It
-
-Up until now, you've been working locally. When you're ready to share your branch, you will need to push it up to `buzzfeed/solid` on Github. ()Your local branches aren't automatically synchronized to the remotes you write to – you have to explicitly push the branches you want to share.)
+Up until now, you've been working locally. When you're ready to share your branch, you will need to push it up to `buzzfeed/solid` on Github. (Your local branches aren't automatically synchronized to the remotes you write to – you have to explicitly push the branches you want to share.)
 
 ````
 $ git push origin my-feature-or-bug-branch
@@ -94,20 +58,45 @@ Next, click the green **New pull request** button and select the following from 
 
 If all looks good, click the green **Create pull request** button.
 
-You should add a concise descriptive comment about what is in this merge, and then submit. Someone from the team will review your request, and work with you to ensure there will be no problems on merge.
+You should add a concise descriptive comment about what is in this merge, and then submit. From github's [open source contribution documentation](https://guides.github.com/activities/contributing-to-open-source/):
+>Make sure to be clear about what problem is occurring and how someone can recreate that problem or why your feature will help. Then be equally as clear about the steps you took to make your changes.
 
-### 9. A Note on Merging
+Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
 
-Because of Github permissions on BuzzFeed repos, it *might* be possible for you to merge your own Pull Request. **Please don't do this!** Always reach out to someone in #solid-prs to merge your PR into develop.
+## Drafting a Solid Release
+Any Solid team member can draft a new release.
 
-# Deprecating Code
+### 1. Pick a Release Number and Name
+Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. This allows users to safely update Solid versions without breaking their app.
 
-To deprecate SCSS, move the old classes to the very bottom of the SCSS file. Use this comment to indicate when the deprecated SCSS will be removed:
+**Major Version:** Includes serious breaking/architectural changes.
 
-````
-// @TODO remove in version X
-// -------------------------
-.deprecated-class {
-    color: #000;
-}
-````
+**Minor Version:** Adds new functionality.
+
+**Patch:** Reserved for bug fixes and small changes. Users should feel safe staying up to the most recent patch version.
+
+Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
+
+### 2. Write Release Notes
+Release notes can be found in docs/\_posts/release-notes/. Release notes must
+be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
+
+### 3. Update Node Package Version
+In `package.json` update the `"version"` field to the new release number.
+
+### 4. Generate Distribution Files
+`make dist` in the terminal.
+
+### 5. Update Distribution Links
+Update the Download link `href`s in `index.html` to correspond to the binaries you just generated.
+
+### 6. Open a PR, Get a Review, Et Cetera
+In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
+
+### 7. Generate Compressed Docs
+We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
+
+### 8. Draft a Github Release
+On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description. Attach the gzipped docs you generated in step 7 to this release.
+
+All done! If you want to deploy this release see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.

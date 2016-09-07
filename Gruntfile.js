@@ -90,7 +90,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'dist/',
           src: ['**'],
-          dest: 'docs/.tmp/_deploy/dist/'
+          dest: 'docs/.tmp/_site/dist/'
         }]
       }
     }
