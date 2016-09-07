@@ -39,6 +39,7 @@ release_docs: build
 clean:
 	rm -fr _site/
 	rm -fr _deploy/
+	rm -fr .tmp/
 
 # run the jekyll server
 run:

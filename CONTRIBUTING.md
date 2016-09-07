@@ -58,4 +58,45 @@ Next, click the green **New pull request** button and select the following from 
 
 If all looks good, click the green **Create pull request** button.
 
-You should add a concise descriptive comment about what is in this merge, and then submit. Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
+You should add a concise descriptive comment about what is in this merge, and then submit. From github's [open source contribution documentation](https://guides.github.com/activities/contributing-to-open-source/):
+>Make sure to be clear about what problem is occurring and how someone can recreate that problem or why your feature will help. Then be equally as clear about the steps you took to make your changes.
+
+Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
+
+## Drafting a Solid Release
+Any Solid team member can draft a new release.
+
+### 1. Pick a Release Number and Name
+Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. This allows users to safely update Solid versions without breaking their app.
+
+**Major Version:** Includes serious breaking/architectural changes.
+
+**Minor Version:** Adds new functionality.
+
+**Patch:** Reserved for bug fixes and small changes. Users should feel safe staying up to the most recent patch version.
+
+Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
+
+### 2. Write Release Notes
+Release notes can be found in docs/\_posts/release-notes/. Release notes must
+be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
+
+### 3. Update Node Package Version
+In `package.json` update the `"version"` field to the new release number.
+
+### 4. Generate Distribution Files
+`make dist` in the terminal.
+
+### 5. Update Distribution Links
+Update the Download link `href`s in `index.html` to correspond to the binaries you just generated.
+
+### 6. Open a PR, Get a Review, Et Cetera
+In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
+
+### 7. Generate Compressed Docs
+We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
+
+### 8. Draft a Github Release
+On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description. Attach the gzipped docs you generated in step 7 to this release.
+
+All done! If you want to deploy this release see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.
