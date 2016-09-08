@@ -33,13 +33,13 @@ title: Flexbox
   <tr>
     <td><a href="flexbox.html#justify-content">Justify Content</a></td>
     <td>
-      <span class="nowrap">.<code class="js-highlight">xs-justify-content-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-justify-content-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-justify-content-center</code></span>
+      <span class="nowrap">.<code class="js-highlight">xs-flex-justify-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-center</code></span>
     </td>
   </tr>
   <tr>
     <td><a href="flexbox.html#align-items">Align Items</a></td>
     <td>
-      <span class="nowrap">.<code class="js-highlight">xs-align-items-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-align-items-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-align-items-center</code></span>
+      <span class="nowrap">.<code class="js-highlight">xs-flex-align-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-align-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-align-center</code></span>
     </td>
   </tr>
   <tr>
@@ -67,10 +67,10 @@ title: Flexbox
   
   <!-- Example: Justify Content Start -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-justify-content-start</code> 
+    .<code class="js-highlight">xs-flex-justify-start</code> 
     <p class="xs-mb2 xs-ml05">This is the default alignment, which aligns items at the start of the main axis. <span class="bold">Class applies to the parent</span></p>
 
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-start fill-red-lighter xs-p2">
+    <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-start fill-red-lighter xs-p2">
       <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -83,7 +83,7 @@ title: Flexbox
     </div>
 
   {% highlight html %}
-  <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-start fill-red-lighter xs-p2">
+  <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-start fill-red-lighter xs-p2">
     <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
       item one
     </div>
@@ -99,10 +99,10 @@ title: Flexbox
 
   <!-- Example: Justify Content End -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-justify-content-end</code> 
+    .<code class="js-highlight">xs-flex-justify-end</code> 
     <p class="xs-mb2 xs-ml05">This class aligns items at the end of the main axis.<span class="bold"> Class applies to the parent</span></p>
 
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-end fill-red-lighter xs-p2">
+    <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-end fill-red-lighter xs-p2">
       <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -115,7 +115,7 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-end fill-red-lighter xs-p2">
+<div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-end fill-red-lighter xs-p2">
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
     item one
   </div>
@@ -131,10 +131,10 @@ title: Flexbox
 
   <!-- Example: Justify Content Center -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-justify-content-center</code> 
+    .<code class="js-highlight">xs-flex-justify-center</code> 
     <p class="xs-mb2 xs-ml05">This class aligns items in the center of the main axis.<span class="bold"> Class applies to the parent</span></p>
 
-    <div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-center fill-red-lighter xs-p2">
+    <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-center fill-red-lighter xs-p2">
       <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -147,7 +147,7 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-mb3 xs-p1 xs-border xs-justify-content-center fill-red-lighter xs-p2">
+<div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-center fill-red-lighter xs-p2">
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
     item one
   </div>
@@ -173,10 +173,10 @@ title: Flexbox
   
   <!-- Example: Align Items Start -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-align-items-start</code> 
+    .<code class="js-highlight">xs-flex-align-start</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items at the top, or start, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
-    <div class="flex xs-align-items-start xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+    <div class="flex xs-flex-align-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
       <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -189,7 +189,7 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-align-items-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+<div class="flex xs-flex-align-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
   <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
   <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
@@ -199,10 +199,10 @@ title: Flexbox
 
   <!-- Example: Align Items End -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-align-items-end</code> 
+    .<code class="js-highlight">xs-flex-align-end</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items at the bottom, or end, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
-    <div class="flex xs-align-items-end xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+    <div class="flex xs-flex-align-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
       <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -215,7 +215,7 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-align-items-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+<div class="flex xs-flex-align-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
   <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
   <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
@@ -225,10 +225,10 @@ title: Flexbox
 
   <!-- Example: Align Items Center -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-align-items-center</code> 
+    .<code class="js-highlight">xs-flex-align-center</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items in the middle of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
-    <div class="flex xs-align-items-center xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
+    <div class="flex xs-flex-align-center xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
       <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
         item one
       </div>
@@ -241,7 +241,7 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-align-items-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+<div class="flex xs-flex-align-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
   <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
   <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
