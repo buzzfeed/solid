@@ -16,7 +16,9 @@ title: Flexbox
   </div>
 
   <h2 class="xs-mb2 bold">Introducing Flexbox in Solid</h2>
-  <p>Flexbox is a way to efficiently lay out, align, and distribute items on a page. If you want to learn more about Flexbox and how to use it, there is plenty of good documentation around the web, including this <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks article</a> and this <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">MDN spec</a>. One thing to note is that this system uses a flexible box layout model, which doesn't play particularly nice with our traditional grid model. When using Flexbox with Solid, be considerate about using it independently of other Solid layout classes, such as floats or block (as flex will override these).
+  <p class="xs-mb1">Flexbox is a way to efficiently lay out, align, and distribute items on a page. If you want to learn more about Flexbox and how to use it, there is plenty of good documentation around the web (including this <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks article</a> and this <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">MDN spec</a>).</p>
+
+  <p>One thing to note is that this system uses a flexible box layout model, which doesn't play particularly nice with our traditional grid model. When using Flexbox with Solid, be considerate about incorporating it independently of other Solid layout classes, such as floats or block (as flex will override these). Happy flexing!
   </p>
 
 </section>
@@ -67,96 +69,60 @@ title: Flexbox
   
   <!-- Example: Justify Content Start -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-justify-start</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-justify-start</code> 
     <p class="xs-mb2 xs-ml05">This is the default alignment, which aligns items at the start of the main axis. <span class="bold">Class applies to the parent</span></p>
 
     <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-start fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
-  {% highlight html %}
-  <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-start fill-red-lighter xs-p2">
-    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-      item one
-    </div>
-    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-      item two
-    </div>
-    <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-      item three
-    </div>
-  </div>
-  {% endhighlight %}
+{% highlight html %}
+<div class="flex xs-flex-justify-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
   </div>
 
   <!-- Example: Justify Content End -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-justify-end</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-justify-end</code> 
     <p class="xs-mb2 xs-ml05">This class aligns items at the end of the main axis.<span class="bold"> Class applies to the parent</span></p>
 
-    <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-end fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+    <div class="flex xs-flex-justify-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
 {% highlight html %}
-<div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-end fill-red-lighter xs-p2">
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item one
-  </div>
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item two
-  </div>
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item three
-  </div>
+<div class="flex xs-flex-justify-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
 </div>
 {% endhighlight %}
   </div>
 
   <!-- Example: Justify Content Center -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-justify-center</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-justify-center</code> 
     <p class="xs-mb2 xs-ml05">This class aligns items in the center of the main axis.<span class="bold"> Class applies to the parent</span></p>
 
-    <div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-center fill-red-lighter xs-p2">
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+    <div class="flex xs-flex-justify-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
 {% highlight html %}
-<div class="flex xs-mb3 xs-p1 xs-border xs-flex-justify-center fill-red-lighter xs-p2">
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item one
-  </div>
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item two
-  </div>
-  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-    item three
-  </div>
+<div class="flex xs-flex-justify-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
 </div>
 {% endhighlight %}
   </div>
@@ -173,19 +139,13 @@ title: Flexbox
   
   <!-- Example: Align Items Start -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-align-start</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-align-start</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items at the top, or start, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
     <div class="flex xs-flex-align-start xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
-      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
 {% highlight html %}
@@ -199,19 +159,13 @@ title: Flexbox
 
   <!-- Example: Align Items End -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-align-end</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-align-end</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items at the bottom, or end, of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
     <div class="flex xs-flex-align-end xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
-      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
 {% highlight html %}
@@ -225,19 +179,13 @@ title: Flexbox
 
   <!-- Example: Align Items Center -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-align-center</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-align-center</code> 
     <p class="xs-mb2 xs-ml05">This aligns flex items in the middle of the cross axis. <span class="bold">Class applies to the parent</span></p>
 
     <div class="flex xs-flex-align-center xs-mb3 xs-p1  xs-border fill-red-lighter xs-p2">
-      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">
-        item one
-      </div>
-      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">
-        item two
-      </div>
-      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">
-        item three
-      </div>
+      <div class="xs-border xs-p05 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p2 xs-mr1 fill-yellow-lighter text-gray">item three</div>
     </div>
 
 {% highlight html %}
@@ -254,7 +202,7 @@ title: Flexbox
 <section class="xs-mb6">
   <a name="order-properties"></a>
   <h2 class="bold xs-mb2" id="grow-shrink">Grow & Shrink</h2>
-  <p class="xs-mb4">By default, all flex items have flex-grow set to 0, which means the items will inherit the width of the content inside of it. Flex grow and flex shrink allows an item to grow or shrink respectively if necessary. Read more about flex-grow and flex-shrink <a href="https://css-tricks.com/almanac/properties/f/flex-grow/">here</a>.</p>
+  <p class="xs-mb4">By default, all flex items have flex-grow set to 0, which means the items will inherit the width of the content inside of it. Flex grow and shrink allow items to grow or shrink respectively if necessary. Read more about grow and shrink properties <a href="https://css-tricks.com/almanac/properties/f/flex-grow/">here</a>.</p>
 
   <!-- Example: Flex Grow 1-->
   <div class="xs-mb5">
@@ -307,12 +255,10 @@ title: Flexbox
         <span>.xs-flex-order-3</span>
         <span class="xs-block text-gray-lighter">First item in the markup</span>
       </div>
-
       <div class="xs-flex-order-2 xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
         <span>.xs-flex-order-2</span>
         <span class="xs-block text-green">Second item in the markup</span>
       </div>
-
       <div class="xs-flex-order-1 xs-flex-grow-1 xs-p2 xs-border xs-border-right-none md-border-left fill-red-lighter">
         <span>.xs-flex-order-1</span>
         <span class="xs-block text-red">Third item in the markup</span>
@@ -320,18 +266,18 @@ title: Flexbox
     </div>
 
 {% highlight html %}
-<div class="flex xs-mb2">
-
-  <div class="xs-flex-order-1 xs-flex-grow-1 xs-p2 ">
+<div class="flex">
+  <div class="xs-flex-order-3 xs-p2 xs-border xs-border-left-none fill-yellow-lighter">
+    <span>.xs-flex-order-3</span>
+    <span class="xs-block text-gray-lighter">First item in the markup</span>
+  </div>
+  <div class="xs-flex-order-2 xs-p2 xs-border fill-green-lighter">
+    <span>.xs-flex-order-2</span>
+    <span class="xs-block text-green">Second item in the markup</span>
+  </div>
+  <div class="xs-flex-order-1 xs-p2 xs-border xs-border-right-none fill-red-lighter">
     <span>.xs-flex-order-1</span>
-  </div>
-    
-  <div class="xs-flex-order-2 xs-flex-grow-1 xs-p2 ">
-    <span class="xs-text-4">.xs-flex-order-2</span>
-  </div>
-
-  <div class="xs-flex-order-3 xs-flex-grow-1 xs-p2 ">
-    <span class="xs-text-4">.xs-flex-order-3</span>
+    <span class="xs-block text-red">Third item in the markup</span>
   </div>
 </div>
 {% endhighlight %}
@@ -347,38 +293,31 @@ title: Flexbox
 
   <!-- Flex Row -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-row</code> 
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-row</code> 
     <p class="xs-mb2 xs-ml05">This is the default flex direction, which defines the direction of items as left-to-right. <span class="bold">Class applies to the parent.</span></p>
 
     <div class="flex xs-flex-row xs-mb3">
-
-    <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
-      <span class="xs-block text-gray-lighter">First item in the markup</span>
-    </div>
-
-    <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
-      <span class="xs-block text-green">Second item in the markup</span>
-    </div>
-
-    <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-red-lighter">
-      <span class="xs-block xs-text-red">Third item in the markup</span>
-    </div>
-
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
+        <span class="xs-block text-gray-lighter">First item in the markup</span>
+      </div>
+      <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+        <span class="xs-block text-green">Second item in the markup</span>
+      </div>
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-red-lighter">
+        <span class="xs-block xs-text-red">Third item in the markup</span>
+      </div>
     </div>
 
 {% highlight html %}
 <div class="flex xs-flex-row">
-
-  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-yellow-lighter">
+    <span class="xs-block text-gray-lighter">First item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+    <span class="xs-block text-green">Second item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-red-lighter">
+    <span class="xs-block text-red">Third item in the markup</span>
   </div>
 </div>
 {% endhighlight %}
@@ -386,38 +325,31 @@ title: Flexbox
 
   <!-- Flex Row Reverse -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-row-reverse</code>
-    <p class="xs-mb2 xs-ml05">This class defines direction of items as right-to-sleft. <span class="bold">Class applies to the parent.</span></p>
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-row-reverse</code>
+    <p class="xs-mb2 xs-ml05">This class defines the direction of items as right-to-left. <span class="bold">Class applies to the parent.</span></p>
 
     <div class="flex xs-flex-row-reverse xs-mb3">
-
       <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-yellow-lighter">
         <span class="xs-block text-gray-lighter">First item in the markup</span>
       </div>
-
       <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
         <span class="xs-block text-green">Second item in the markup</span>
       </div>
-
       <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-red-lighter">
         <span class="xs-block text-red">Third item in the markup</span>
       </div>
-
     </div>
 
 {% highlight html %}
 <div class="flex xs-flex-row-reverse">
-
-  <div class="xs-p2 xs-border xs-border-right-none fill-yellow-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-gray-lighter">First item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-left-none fill-yellow-lighter">
+    <span class="xs-block text-gray-lighter">First item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-green">Second item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
+    <span class="xs-block text-green">Second item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border xs-border-left-none fill-red-lighter xs-flex-grow-1 ">
-    <span class="xs-block xs-text-5 text-red">Third item in the markup</span>
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-right-none fill-red-lighter">
+    <span class="xs-block text-red">Third item in the markup</span>
   </div>
 </div>
 {% endhighlight %}
@@ -425,65 +357,52 @@ title: Flexbox
 
   <!-- Flex Column -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-column</code>
-    <p class="xs-mb2">This class defines direction of items as top-to-bottom. <span class="bold">Class applies to the parent.</span></p>
-
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-column</code>
+    <p class="xs-mb2">This class defines the direction of items as top-to-bottom. <span class="bold">Class applies to the parent.</span></p>
 
     <div class="flex xs-flex-column xs-mb3">
-
-      <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+      <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter">
         <span class="xs-block text-gray-lighter">First item in the markup</span>
       </div>
-
       <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
         <span class="xs-block text-green">Second item in the markup</span>
       </div>
-
     </div>
 
 {% highlight html %}
 <div class="flex xs-flex-column-reverse">
-
-  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter">
     <span class="xs-block text-gray-lighter">First item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+  <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
     <span class="xs-block text-green">Second item in the markup</span>
   </div>
-
 </div>
 {% endhighlight %}
   </div>
 
   <!-- Flex Column Reverse -->
   <div class="xs-mb5">
-    .<code class="js-highlight">xs-flex-column-reverse</code>
-    <p class="xs-mb2">This class defines direction of items as bottom-to-stop. <span class="bold">Class applies to the parent.</span></p>
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-column-reverse</code>
+    <p class="xs-mb2">This class defines the direction of items as bottom-to-top. <span class="bold">Class applies to the parent.</span></p>
 
     <div class="flex xs-flex-column-reverse xs-mb3">
-
-      <div class="xs-p2 xs-border fill-yellow-lighter xs-flex-grow-1">
+      <div class="xs-flex-grow-1 xs-p2 xs-border fill-yellow-lighter">
         <span class="xs-block text-gray-lighter">First item in the markup</span>
       </div>
-
       <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-bottom-none fill-green-lighter">
         <span class="xs-block text-green">Second item in the markup</span>
       </div>
-
     </div>
 
 {% highlight html %}
 <div class="flex xs-flex-column-reverse">
-
-  <div class="xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter xs-flex-grow-1">
+  <div class="xs-flex-grow-1 xs-p2 xs-border xs-border-bottom-none fill-yellow-lighter">
     <span class="xs-block text-gray-lighter">First item in the markup</span>
   </div>
-
-  <div class="xs-p2 xs-border fill-green-lighter xs-flex-grow-1 ">
+  <div class="xs-flex-grow-1 xs-p2 xs-border fill-green-lighter">
     <span class="xs-block text-green">Second item in the markup</span>
   </div>
-
 </div>
 {% endhighlight %}
   </div>
