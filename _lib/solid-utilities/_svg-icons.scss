@@ -1,0 +1,51 @@
+//
+// SVG Utility Class
+// --------------------------------------------------
+
+// SVG Sizes
+// -------------------------
+
+.svg-1, 
+.svg-2,
+.svg-3, 
+.svg-4, 
+.svg-5, 
+.svg-6{
+	display: inline-block   !important;
+	vertical-align: middle	!important;
+	position: relative;
+}
+
+.svg-6 {
+	width: $text-6		!important;
+	height: $text-6		!important;
+}
+
+.svg-5 {
+	width: $text-5	!important;
+	height: $text-5	!important;
+}
+
+.svg-4 {
+	width: $text-4		!important;
+	height: $text-4		!important;
+	top: -1px;
+}
+
+.svg-3 {
+	width: $text-3		!important;
+	height: $text-3		!important;
+	top: -1px;
+}
+
+.svg-2 {
+	width: $text-2		!important;
+	height: $text-2		!important;
+	top: -2px;
+}
+
+.svg-1 {
+	width: $text-1		!important;
+	height: $text-1		!important;
+	top: -5px;
+}
