@@ -93,10 +93,13 @@ Update the Download link `href`s in `index.html` to correspond to the binaries y
 ### 6. Open a PR, Get a Review, Et Cetera
 In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
 
-### 7. Generate Compressed Docs
+### 7. Publish the Node Package
+in a terminal window, from within the Solid directory type `npm publish bf-solid`
+
+### 8. Generate Compressed Docs
 We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
 
-### 8. Draft a Github Release
-On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description. Attach the gzipped docs you generated in step 7 to this release.
+### 9. Draft a Github Release
+On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description. Attach the gzipped docs you generated in step 8 to this release.
 
 All done! If you want to deploy this release see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.
