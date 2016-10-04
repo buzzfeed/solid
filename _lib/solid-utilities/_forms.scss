@@ -89,6 +89,9 @@ select::-ms-expand,
 .radio {
   @include visuallyhidden;
 
+  // Override for Chrome bug where height collapses on toggle
+  height: 0px;
+
   + label {
     font-size: $text-5          !important;
     cursor: pointer             !important;
@@ -112,6 +115,9 @@ select::-ms-expand,
 // hide system checkbox in order to use custom style
 .checkbox {
   @include visuallyhidden;
+
+  // Override for Chrome bug where height collapses on toggle
+  height: 0px;
 
   + label {
     font-size: $text-5            !important;
