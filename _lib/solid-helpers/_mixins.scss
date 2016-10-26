@@ -17,16 +17,22 @@ $breakpoints: (
   lg: 64rem,
 );
 
+// Include Breakpoint Media Queries
+// -------------------------
 // returns the apropriate media query
 // for the given breakpoint name
 @mixin media-query($breakpoint) {
-  @if (map-get($breakpoints, $breakpoint)) == null {
-    @content;
-  } @else {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @if (map-has-key($breakpoints, $breakpoint) != true) {
+      @error "Media query mixin requires a valid Solid breakpoint";
+    } 
+    @else if(map-get($breakpoints, $breakpoint)) == null {
       @content;
+    } 
+    @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
     }
-  }
 }
 
 // nest content inside breakpoint prefix classes
