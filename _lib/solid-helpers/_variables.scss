@@ -23,21 +23,21 @@ $slab: "Caponi-Slab-Semibold", "Proxima Nova", Helvetica, Arial, sans-serif !def
 // Borders
 // -------------------------
 
-$border: 1px solid rgba(0, 0, 0, .2) !default;
+$border:         1px solid rgba(0, 0, 0, .2) !default;
 $border-lighter: 1px solid rgba(0, 0, 0, .1) !default;
-$border-radius: 3px !default;
+$border-radius:  3px !default;
 
 
 // Spacing
 // -------------------------
 
-$space-05: .25rem !default;//  4px
-$space-1: .5rem !default;  //  8px
-$space-2:   1rem !default; // 16px
-$space-3: 1.5rem !default; // 24px
-$space-4:   2rem !default; // 32px
-$space-5:   3rem !default; // 48px
-$space-6: 4.5rem !default; // 72px
+$space-05: .25rem !default; // 4px
+$space-1: .5rem   !default; // 8px
+$space-2:   1rem  !default; // 16px
+$space-3: 1.5rem  !default; // 24px
+$space-4:   2rem  !default; // 32px
+$space-5:   3rem  !default; // 48px
+$space-6: 4.5rem  !default; // 72px
 
 // Z-index
 // -------------------------
@@ -50,53 +50,53 @@ $z4: 400 !default;
 // -------------------------
 
 // Fills
-$fill-red: #e32 !default;
-$fill-red-lighter: #feebe9 !default;
-$fill-pink: #eb2649 !default;
-$fill-blue: #07e !default;
-$fill-yellow: #fe0 !default;
-$fill-yellow-lighter: #fffab6 !default;
-$fill-green: #6fb824 !default;
-$fill-green-lighter: #f1f8e9 !default;
-$fill-orange: #f49c1a !default;
-$fill-promoted-orange: #edb802 !default;
-$fill-gray-lighter: #f4f4f4 !default;
-$fill-gray: #aaa !default;
-$fill-gray-darker: #222 !default;
-$fill-white: #fff !default;
+$fill-red:             #e32    !default;
+$fill-red-lighter:     #feebe9 !default;
+$fill-pink:            #f43192 !default;
+$fill-blue:            #0f65ef !default;
+$fill-yellow:          #ffee00 !default;
+$fill-yellow-lighter:  #fffab6 !default;
+$fill-green:           #68af15 !default;
+$fill-green-lighter:   #e1efd0 !default;
+$fill-orange:          #f47f16 !default;
+$fill-promoted-orange: #f7ad19 !default;
+$fill-gray-lighter:    #f4f4f4 !default;
+$fill-gray:            #aaa    !default;
+$fill-gray-darker:     #222    !default;
+$fill-white:           #fff    !default;
 
 // Social Fills
-$fill-facebook: #3b5998 !default;
-$fill-twitter: #55acee !default;
-$fill-google: #dd4b39 !default;
-$fill-linkedin: #0077b5 !default;
+$fill-facebook:  #3b5998 !default;
+$fill-twitter:   #55acee !default;
+$fill-google:    #dd4b39 !default;
+$fill-linkedin:  #0077b5 !default;
 $fill-pinterest: #bd081c !default;
-$fill-tumblr: #36465d !default;
-$fill-youtube: #cd201f !default;
+$fill-tumblr:    #36465d !default;
+$fill-youtube:   #cd201f !default;
 $fill-instagram: #517fa4 !default;
-$fill-vine: #00b488 !default;
-$fill-snapchat: #fffc00 !default;
+$fill-vine:      #00b488 !default;
+$fill-snapchat:  #fffc00 !default;
 
 // Type Colors
-$text-white: #fff !default;
-$text-gray: #333 !default;
-$text-gray-lighter: #666 !default;
-$text-gray-lightest: #999 !default;
-$text-red: #e32 !default;
-$text-pink: #eb2649 !default;
-$text-orange: #f49c1a !default;
-$text-promoted-orange: #edb802 !default;
-$text-green: #6fb824 !default;
-$text-blue: #07e !default;
+$text-white:           #fff    !default;
+$text-gray:            #222222 !default;
+$text-gray-lighter:    #3b3b3b !default;
+$text-gray-lightest:   #999999 !default;
+$text-red:             #e32    !default;
+$text-pink:            #f43192 !default;
+$text-orange:          #f47f16 !default;
+$text-promoted-orange: #f7ad19 !default;
+$text-green:           #68af15 !default;
+$text-blue:            #0f65ef !default;
 
 // Social Type Colors
-$text-facebook: #3b5998 !default;
-$text-twitter: #55acee !default;
-$text-google: #dd4b39 !default;
-$text-linkedin: #0077b5 !default;
+$text-facebook:  #3b5998 !default;
+$text-twitter:   #55acee !default;
+$text-google:    #dd4b39 !default;
+$text-linkedin:  #0077b5 !default;
 $text-pinterest: #bd081c !default;
-$text-tumblr: #36465d !default;
-$text-youtube: #cd201f !default;
+$text-tumblr:    #36465d !default;
+$text-youtube:   #cd201f !default;
 $text-instagram: #517fa4 !default;
 
 // Typography Sizes and Weights
@@ -104,15 +104,15 @@ $text-instagram: #517fa4 !default;
 
 $base-font-size: 16px !default;
 
-$text-1: 1.75rem !default;   // 28px
-$text-2: 1.375rem !default;  // 22px
-$text-3: 1.125rem !default;  // 18px
-$text-4: 1rem !default;      // 16px
-$text-5: .875rem !default;   // 14px
-$text-6: .75rem !default;    // 12px
+$text-1: 1.75rem  !default; // 28px
+$text-2: 1.375rem !default; // 22px
+$text-3: 1.125rem !default; // 18px
+$text-4: 1rem     !default; // 16px
+$text-5: .875rem  !default; // 14px
+$text-6: .75rem   !default; // 12px
 
 $regular: 400 !default;
-$bold: 600 !default;
+$bold: 600    !default;
 
 // Line height
 // -------------------------
@@ -124,7 +124,7 @@ $line-height-2: 1.3 !default; // set on h4-h6 and .text-4-.text-6
 $line-height-3: 1.5 !default; // default line-height set on the body
 
 // Line heights specific to forms, buttons and tags.
-$line-height-form: 1.5rem !default;
+$line-height-form:       1.5rem  !default;
 $line-height-form-small: 1.25rem !default;
 
 // Disabled opacity for buttons, forms, pagination
