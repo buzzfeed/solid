@@ -17,16 +17,22 @@ $breakpoints: (
   lg: 64rem,
 );
 
+// Include Solid Breakpoint Media Queries
+// -------------------------
 // returns the apropriate media query
 // for the given breakpoint name
-@mixin media-query($breakpoint) {
-  @if (map-get($breakpoints, $breakpoint)) == null {
-    @content;
-  } @else {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+@mixin solid-breakpoint ($breakpoint) {
+    @if (map-has-key($breakpoints, $breakpoint) != true) {
+      @error "Solid-breakpoint media query mixin requires a valid Solid breakpoint";
+    } 
+    @else if(map-get($breakpoints, $breakpoint)) == null {
       @content;
+    } 
+    @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
     }
-  }
 }
 
 // nest content inside breakpoint prefix classes
@@ -130,4 +136,20 @@ $breakpoints: (
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
 	}
+}
+
+// @TODO Remove in 4.0, renamed to solid-breakpoint above
+
+@mixin media-query($breakpoint) {
+    @if (map-has-key($breakpoints, $breakpoint) != true) {
+      @error "Media query mixin requires a valid Solid breakpoint";
+    } 
+    @else if(map-get($breakpoints, $breakpoint)) == null {
+      @content;
+    } 
+    @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
 }
