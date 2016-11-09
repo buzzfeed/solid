@@ -13,14 +13,14 @@ title: SASS Mixins
 
 <section class="xs-mb6">
 
-  <a name="breakpoint-media-query"></a>
-  <h2 class="xs-mb1 bold">Breakpoint Media Query</h2>
-  <p class="xs-mb2">Use the  <code class="js-highlight"><span class="nowrap">breakpoint-media-query</span></code> mixin to apply styles at the standard Solid breakpoints. This mixin requires a Solid breakpoint prefix (<code class="js-highlight">xs</code>, <code class="js-highlight">sm</code>, <code class="js-highlight">md</code>, or <code class="js-highlight">lg</code>) in order to call the appropriate media query.</p>
+  <a name="solid-breakpoint"></a>
+  <h2 class="xs-mb1 bold">Solid Breakpoint</h2>
+  <p class="xs-mb2">Use the  <code class="js-highlight"><span class="nowrap">solid-breakpoint</span></code> mixin to apply styles at the standard Solid breakpoints. This mixin requires a Solid breakpoint prefix (<code class="js-highlight">xs</code>, <code class="js-highlight">sm</code>, <code class="js-highlight">md</code>, or <code class="js-highlight">lg</code>) in order to call the appropriate media query.</p>
 
   <div class="xs-mb2">
   {% highlight scss %}
 .custom-style-that-needs-media-query {
-  @include breakpoint-media-query ($breakpoint);
+  @include solid-breakpoint ($breakpoint);
   }
   {% endhighlight %}
   </div>

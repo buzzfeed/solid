@@ -17,13 +17,13 @@ $breakpoints: (
   lg: 64rem,
 );
 
-// Include Breakpoint Media Queries
+// Include Solid Breakpoint Media Queries
 // -------------------------
 // returns the apropriate media query
 // for the given breakpoint name
-@mixin breakpoint-media-query ($breakpoint) {
+@mixin solid-breakpoint ($breakpoint) {
     @if (map-has-key($breakpoints, $breakpoint) != true) {
-      @error "Media query mixin requires a valid Solid breakpoint";
+      @error "Solid-breakpoint media query mixin requires a valid Solid breakpoint";
     } 
     @else if(map-get($breakpoints, $breakpoint)) == null {
       @content;
