@@ -231,3 +231,4 @@
 .button--tumblr    { @include social-button($fill-tumblr); }
 .button--youtube   { @include social-button($fill-youtube); }
 .button--instagram { @include social-button($fill-instagram); }
+.button--sms       { @include social-button($fill-green); }
