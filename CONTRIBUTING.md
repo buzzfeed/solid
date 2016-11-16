@@ -30,10 +30,10 @@ Do your best to follow the patterns and examples laid out in the Solid docs.
 
 ### 5. Stage and Commit Your Changes
 
-````
+```
 $ git add .
 $ git commit -m "fixes bug xxx"
-````
+```
 
 This will commit your changes to your local copy of the repo, (distinct from your fork on Github).
 
@@ -41,9 +41,9 @@ This will commit your changes to your local copy of the repo, (distinct from you
 
 Up until now, you've been working locally. When you're ready to share your branch, you will need to push it up to `buzzfeed/solid` on Github. (Your local branches aren't automatically synchronized to the remotes you write to – you have to explicitly push the branches you want to share.)
 
-````
+```
 $ git push origin my-feature-or-bug-branch
-````
+```
 
 ### 8. Submit a Pull Request
 
@@ -81,20 +81,20 @@ Example: if the current Solid version is `2.1.0` and I am drafting a new release
 Release notes can be found in docs/\_posts/release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
-### 3. Update Node Package Version
-Use the command `npm version [major|minor|patch]`. This will increment your package version by one using the semantic versioning scheme described in step 1. So for example if you are on solid version `1.2.1` and you use the command `npm version patch` you will update the version to `1.2.2`.
-
-### 4. Generate Distribution Files
+### 3. Generate Distribution Files
 `make dist` in the terminal.
 
-### 5. Update Distribution Links
+### 4. Update Distribution Links
 Update the Download link `href`s in `index.html` to correspond to the binaries you just generated.
 
-### 6. Open a PR, Get a Review, Et Cetera
+### 5. Open a PR, Get a Review, Et Cetera
 In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
 
+### 6. Update Node Package Version
+Use the command `npm version [version number]` then `git push`. This will create a new commit with the correct git version tag and Solid's package version in `package.json` updated. 
+
 ### 7. Publish the Node Package
-in a terminal window, from within the Solid directory type `npm publish bf-solid`
+in a terminal window, from within the Solid directory type `npm publish bf-solid`.
 
 ### 8. Generate Compressed Docs
 We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
