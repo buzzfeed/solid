@@ -82,7 +82,7 @@ Release notes can be found in docs/\_posts/release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
 ### 3. Update Node Package Version
-In `package.json` update the `"version"` field to the new release number.
+Use the command `npm version [major|minor|patch]`. This will increment your package version by one using the semantic versioning scheme described in step 1. So for example if you are on solid version `1.2.1` and you use the command `npm version patch` you will update the version to `1.2.2`.
 
 ### 4. Generate Distribution Files
 `make dist` in the terminal.
