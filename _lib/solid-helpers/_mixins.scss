@@ -138,7 +138,7 @@ $breakpoints: (
 	}
 }
 
-// @TODO Remove in 4.0, renamed to solid-breakpoint above
+// @TODO Remove in 3.0, renamed to solid-breakpoint above
 
 @mixin media-query($breakpoint) {
     @if (map-has-key($breakpoints, $breakpoint) != true) {
