@@ -29,7 +29,7 @@
   @include prefix((user-select: none));
 
   &,
-  &:active:focus {
+  &:active {
     outline: 0 !important;
   }
 }
