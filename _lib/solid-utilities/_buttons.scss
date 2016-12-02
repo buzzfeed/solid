@@ -28,7 +28,6 @@
   @include prefix((appearance: none), webkit);
   @include prefix((user-select: none));
 
-  &,
   &:active {
     outline: 0 !important;
   }
