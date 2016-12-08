@@ -94,7 +94,7 @@ In your PR you should see the updated `package.json`, `index.html`, and distribu
 Use the command `npm version [version number]` then `git push`. This will create a new commit with the correct git version tag and Solid's package version in `package.json` updated. 
 
 ### 7. Publish the Node Package
-in a terminal window, from within the Solid directory type `npm publish bf-solid`.
+in a terminal window, from within the Solid directory type `npm publish`.
 
 ### 8. Generate Compressed Docs
 We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
