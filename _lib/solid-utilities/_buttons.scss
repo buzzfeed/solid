@@ -222,14 +222,14 @@
   }
 }
 
-.button--facebook  { @include social-button($fill-facebook); }
-.button--twitter   { @include social-button($fill-twitter); }
-.button--google    { @include social-button($fill-google); }
-.button--linkedin  { @include social-button($fill-linkedin); }
-.button--pinterest { @include social-button($fill-pinterest); }
-.button--tumblr    { @include social-button($fill-tumblr); }
-.button--youtube   { @include social-button($fill-youtube); }
-.button--instagram { @include social-button($fill-instagram); }
-.button--sms       { @include social-button($fill-green); }
-.button--rss       { @include social-button($fill-rss); }
-.button--apple     { @include social-button($fill-apple); }
+.button--facebook     { @include social-button($fill-facebook); }
+.button--twitter      { @include social-button($fill-twitter); }
+.button--google       { @include social-button($fill-google); }
+.button--linkedin     { @include social-button($fill-linkedin); }
+.button--pinterest    { @include social-button($fill-pinterest); }
+.button--tumblr       { @include social-button($fill-tumblr); }
+.button--youtube      { @include social-button($fill-youtube); }
+.button--instagram    { @include social-button($fill-instagram); }
+.button--sms          { @include social-button($fill-green); }
+.button--rss          { @include social-button($fill-orange); }
+.button--apple-news   { @include social-button($fill-gray-darker); }
