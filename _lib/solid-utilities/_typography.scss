@@ -120,22 +120,70 @@
 
 .link-blue {
   color: $text-blue !important;
-  &:hover { color: darken($text-blue, 20%) !important; }
+
+  path {
+    fill: $text-blue !important;
+    }
+
+  &:hover { color: darken($text-blue, 20%) !important; 
+    
+    path {
+      transition: fill .15s ease 0s;
+      fill: darken($text-blue, 20%) !important;
+      cursor: pointer;
+    }
+  }
 }
 
 .link-gray {
   color: $text-gray !important;
-  &:hover { color: $text-blue !important; }
+  
+  path {
+    fill: $text-gray !important;
+    }
+
+  &:hover { color: $text-blue !important;
+  
+    path {
+        transition: fill .15s ease 0s;
+        fill: $text-blue !important;
+        cursor: pointer;
+    }
+  }
 }
 
 .link-gray-lighter {
   color: $text-gray-lightest !important;
-  &:hover { color: $text-gray !important; }
+
+  path {
+    fill: $text-gray-lightest !important;
+    }
+
+  &:hover { color: $text-gray !important; 
+
+    path {
+        transition: fill .15s ease 0s;
+        fill: $text-gray !important;
+        cursor: pointer;
+    }
+  }
 }
 
 .link-white {
   color: $text-white !important;
-  &:hover { color: darken($text-white, 20%) !important; }
+
+  path {
+    fill: $text-white !important;
+    }
+
+  &:hover { color: darken($text-white, 20%) !important; 
+
+    path {
+        transition: fill .15s ease 0s;
+        fill: darken($text-white, 20%) !important;
+        cursor: pointer;
+    }
+  }
 }
 
 
