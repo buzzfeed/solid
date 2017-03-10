@@ -212,7 +212,6 @@ td {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 h1,
@@ -234,8 +233,7 @@ ol,
 ul,
 li {
   margin: 0;
-  padding: 0;
-  font: inherit; }
+  padding: 0; }
 
 blockquote,
 q {
@@ -341,9 +339,15 @@ h6.slab {
 a {
   text-decoration: none;
   color: #0f65ef; }
+  a path {
+    fill: #0f65ef; }
   a:hover {
     color: #093c8f;
     transition: color .15s ease 0s; }
+    a:hover path {
+      transition: fill .15s ease 0s;
+      fill: #093c8f;
+      cursor: pointer; }
 
 strong,
 b {
@@ -1636,23 +1640,47 @@ select::-ms-expand,
 
 .link-blue {
   color: #0f65ef !important; }
+  .link-blue path {
+    fill: #0f65ef !important; }
   .link-blue:hover {
     color: #093c8f !important; }
+    .link-blue:hover path {
+      transition: fill .15s ease 0s;
+      fill: #093c8f !important;
+      cursor: pointer; }
 
 .link-gray {
   color: #222 !important; }
+  .link-gray path {
+    fill: #222 !important; }
   .link-gray:hover {
     color: #0f65ef !important; }
+    .link-gray:hover path {
+      transition: fill .15s ease 0s;
+      fill: #0f65ef !important;
+      cursor: pointer; }
 
 .link-gray-lighter {
   color: #999 !important; }
+  .link-gray-lighter path {
+    fill: #999 !important; }
   .link-gray-lighter:hover {
     color: #222 !important; }
+    .link-gray-lighter:hover path {
+      transition: fill .15s ease 0s;
+      fill: #222 !important;
+      cursor: pointer; }
 
 .link-white {
   color: #fff !important; }
+  .link-white path {
+    fill: #fff !important; }
   .link-white:hover {
     color: #cccccc !important; }
+    .link-white:hover path {
+      transition: fill .15s ease 0s;
+      fill: #cccccc !important;
+      cursor: pointer; }
 
 .link-facebook {
   color: #3b5998 !important; }
