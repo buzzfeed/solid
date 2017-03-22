@@ -63,18 +63,10 @@ h6.slab {
 a {
   text-decoration: none; 
   color: $text-blue;
-  path {
-    fill: $text-blue;
-    }
 
   &:hover {
     color: darken($text-blue, 20%);
     transition: color .15s ease 0s;
-    path {
-          transition: fill .15s ease 0s;
-          fill: darken($text-blue, 20%);
-          cursor: pointer;
-        }
   }
 }
 
