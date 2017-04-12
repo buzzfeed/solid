@@ -27,9 +27,11 @@
   &flex-nowrap { flex-wrap: nowrap                       !important; }
 
   // justify content
-  &flex-justify-start  { justify-content: flex-start     !important; }
-  &flex-justify-end    { justify-content: flex-end       !important; }
-  &flex-justify-center { justify-content: center         !important; }
+  &flex-justify-start         { justify-content: flex-start     !important; }
+  &flex-justify-end           { justify-content: flex-end       !important; }
+  &flex-justify-center        { justify-content: center         !important; }
+  &flex-justify-space-around  { justify-content: space-around   !important; }
+  &flex-justify-space-between { justify-content: space-between  !important; }
 
   // align items
 
