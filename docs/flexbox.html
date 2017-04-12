@@ -27,7 +27,7 @@ title: Flexbox
   <tr>
     <td><a href="flexbox.html#justify-content">Justify Content</a></td>
     <td>
-      <span class="nowrap">.<code class="js-highlight">xs-flex-justify-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-center</code></span>
+      <span class="nowrap">.<code class="js-highlight">xs-flex-justify-start</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-end</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-center</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-justify-space-between</code></span>, <span class="nowrap">.<code class="js-highlight">xs-flex-space-around</code></span>
     </td>
   </tr>
   <tr>
@@ -112,6 +112,45 @@ title: Flexbox
 
 {% highlight html %}
 <div class="flex xs-flex-justify-center xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
+    
+  <!-- Example: Justify Content Space Between -->
+  <div class="xs-mb5">
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-justify-space-between</code> 
+    <p class="xs-mb2 xs-ml05">This class aligns items in an evenly distributed manner on the main axis, but with the first and last item at the start and end of the main axis respectively.<span class="bold"> Class applies to the parent</span></p>
+
+    <div class="flex xs-flex-justify-space-between xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+    </div>
+
+{% highlight html %}
+<div class="flex xs-flex-justify-space-between xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+  <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+</div>
+{% endhighlight %}
+  </div>
+    
+    <!-- Example: Justify Content Space Around -->
+  <div class="xs-mb5">
+    .<code class="js-highlight">flex</code>  .<code class="js-highlight">xs-flex-justify-space-around</code> 
+    <p class="xs-mb2 xs-ml05">This class aligns items in an evenly distributed manner with equal space around each one on the main axis. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.<span class="bold"> Class applies to the parent</span></p>
+
+    <div class="flex xs-flex-justify-space-around xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
+      <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
+    </div>
+
+{% highlight html %}
+<div class="flex xs-flex-justify-space-around xs-mb3 xs-p1 xs-border fill-red-lighter xs-p2">
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item one</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item two</div>
   <div class="xs-border xs-p1 xs-mr1 fill-yellow-lighter text-gray">item three</div>
