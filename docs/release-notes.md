@@ -38,7 +38,7 @@ title: Release Notes
       </div>
     {% endfor %}
   </div>
-  
+
 </section>
 
 </section>
