@@ -38,7 +38,7 @@
   &flex-align-end           { align-items: flex-end           !important; }
   &flex-align-center        { align-items: center             !important; }
   &flex-align-baseline      { align-items: baseline           !important; }
-  &flex-align-space-around  { align-content: space-around     !important; }
-  &flex-align-space-between { align-content: space-between    !important; }
+  &flex-align-space-around  { align-items: space-around     !important; }
+  &flex-align-space-between { align-items: space-between    !important; }
 
 }
