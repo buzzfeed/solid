@@ -34,10 +34,11 @@
   &flex-justify-space-between { justify-content: space-between  !important; }
 
   // align items
-
-  &flex-align-start    { align-items: flex-start         !important; }
-  &flex-align-end      { align-items: flex-end           !important; }
-  &flex-align-center   { align-items: center             !important; }
-  &flex-align-baseline { align-items: baseline           !important; }
+  &flex-align-start         { align-items: flex-start         !important; }
+  &flex-align-end           { align-items: flex-end           !important; }
+  &flex-align-center        { align-items: center             !important; }
+  &flex-align-baseline      { align-items: baseline           !important; }
+  &flex-align-space-around  { align-content: space-around     !important; }
+  &flex-align-space-between { align-content: space-between    !important; }
 
 }
