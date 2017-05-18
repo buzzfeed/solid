@@ -339,9 +339,15 @@ h6.slab {
 a {
   text-decoration: none;
   color: #0f65ef; }
+  a path {
+    fill: #0f65ef; }
   a:hover {
     color: #093c8f;
     transition: color .15s ease 0s; }
+    a:hover path {
+      transition: fill .15s ease 0s;
+      fill: #093c8f;
+      cursor: pointer; }
 
 strong,
 b {
