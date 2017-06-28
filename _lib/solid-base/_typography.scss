@@ -43,6 +43,10 @@ h6 {
   line-height: $line-height-2;
 }
 
+//  Unbold header elements by default
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
 
 // Caponi should never be an h6 or .type-6, 
 // these classes disallow that from happening
