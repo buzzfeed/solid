@@ -27,6 +27,13 @@ module.exports = function(grunt) {
         ]
       }
     },
+    exec: {
+      inject_version: {
+        cmd: function() {
+          return 'echo version: ' + this.file.readJSON("package.json").version + ' > docs/_data/npm.yml';
+        }
+      }
+    },
     cssnano: {
       options: {
         sourcemap: false
@@ -97,6 +104,7 @@ module.exports = function(grunt) {
   });
 
 grunt.loadNpmTasks('grunt-sass');
+grunt.loadNpmTasks('grunt-exec');
 grunt.loadNpmTasks('grunt-cssnano');
 grunt.loadNpmTasks('grunt-contrib-compress');
 grunt.loadNpmTasks('grunt-contrib-copy');

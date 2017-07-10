@@ -43,10 +43,12 @@ clean:
 
 # run the jekyll server
 run:
+	grunt exec:inject_version
 	(cd docs/ && bundle exec jekyll serve)
 
 # build static site into _site
 build:
+	grunt exec:inject_version
 	(cd docs/ && bundle exec jekyll build)
 
 # install node modules from npm-shrinkwrap.json
