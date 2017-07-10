@@ -23,11 +23,11 @@
 }
 
 .page-message__icon{
-  vertical-align: middle;
   height: $space-2;
   border-radius: 50%;
-  margin-bottom: .15rem;
   margin-right: $space-1;
+  position: relative;
+  top: .1875rem; //so the icon aligns with the first line of text
 }
 
 .page-message__icon-close {
@@ -62,7 +62,7 @@
   background-color: $fill-green-lighter;
   color: $text-green;
 
-  .page-message__text, 
+  .page-message__text,
   .page-message__action {
     color: $text-green;
   }
@@ -101,11 +101,11 @@
   .page-message__icon {
   fill: lighten($fill-orange, 40%);
   background-color: $fill-orange;
-  
+
   }
 
 }
 
 .page-message__action:hover {
-  color: $text-blue;  
+  color: $text-blue;
 }
