@@ -7,6 +7,9 @@
 # ignore generated site
 docs/.tmp/
 
+# ignore generated version file
+docs/_data/npm.yml
+
 # ignore temporary assets
 .tmp/
 
