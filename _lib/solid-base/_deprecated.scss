@@ -1,7 +1,10 @@
 //
-// @TODO Remove in 3.0
-// Deprecated Messaging
-// --------------------------------------------------
+// Deprecated SCSS Classes
+// Classes that would cause breaking changes if removed
+// ----------------------------------------------------------
+
+
+// Page Messaging:
 
 .page-message {
   position: relative;
@@ -69,7 +72,7 @@
   background-color: $fill-green-lighter;
   color: $text-green;
 
-  .page-message__text, 
+  .page-message__text,
   .page-message__action {
     color: $text-green;
 
@@ -91,5 +94,9 @@
 }
 
 .page-message__action:hover {
-  color: $text-blue;  
+  color: $text-blue;
 }
+
+// Non-prefixed flex class
+
+.flex { display: flex !important; }

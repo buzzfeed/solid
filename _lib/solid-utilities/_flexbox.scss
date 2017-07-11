@@ -1,6 +1,11 @@
-.flex { display: flex !important; }
+//
+// Flexbox Utility Classes
+// --------------------------------------------------
 
 @include generate-breakpoint-prefixes {
+
+  // flex
+  &flex { display:flex                                   !important; }
 
   // flex order
   &flex-order-1 { order: 1                               !important; }
