@@ -11,33 +11,33 @@ title: Messaging
   <p class="xs-mb4">Use the following code snippets to add Success, Error, and Warning messaging to your page. The <span class="nowrap">.<code class="js-highlight">page-message__action</code></span> link is optional. To allow users to dismiss the message, include the optional <span class="nowrap">.<code class="js-highlight">page-message__close</code></span> markup, with inline <span class="nowrap"><code class="js-highlight">svg</code></span>.</p>
 
   <div class="page-message page-message--success xs-mb2">
+    <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+      <title>Success</title>
+      <path d="M16.1 26.1c-.4 0-.8-.2-1.1-.5l-6.5-6.7 2.2-2.1 5.4 5.6 11.3-11 2.1 2.1-12.3 12.2c-.3.3-.7.4-1.1.4z"/>
+    </svg>
     <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Success</title>
-        <path d="M16.1 26.1c-.4 0-.8-.2-1.1-.5l-6.5-6.7 2.2-2.1 5.4 5.6 11.3-11 2.1 2.1-12.3 12.2c-.3.3-.7.4-1.1.4z"/>
-      </svg>
       Your settings have been saved.
       <a class="page-message__action" href="#">View your settings.</a>
     </div>
   </div>
 
   <div class="page-message page-message--error xs-mb2">
+    <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+      <title>Error</title>
+      <path d="M19 16.878l-6.364-6.363-2.12 2.12L16.878 19l-6.365 6.364 2.12 2.12L19 21.122l6.364 6.365 2.12-2.12L21.122 19l6.365-6.364-2.12-2.12L19 16.877z"/>
+    </svg>
     <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Error</title>
-        <path d="M19 16.878l-6.364-6.363-2.12 2.12L16.878 19l-6.365 6.364 2.12 2.12L19 21.122l6.364 6.365 2.12-2.12L21.122 19l6.365-6.364-2.12-2.12L19 16.877z"/>
-      </svg>
       Oh no, something went wrong.
       <a class="page-message__action" href="#">Fix this error.</a>
     </div>
   </div>
 
-  <div class="page-message page-message--warning xs-mb4">
-    <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Warning</title>
-        <path d="M17.5 8.7h3v12.6h-3V8.7zM19 29.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z"/>
-      </svg>
+  <div class="page-message page-message--warning xs-mb2">
+    <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+      <title>Warning</title>
+      <path d="M17.5 8.7h3v12.6h-3V8.7zM19 29.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z"/>
+    </svg>
+    <div class="page-message__text xs-mr2">
       This warning message is dismissible.
     </div>
     <span class="page-message__close">
@@ -51,49 +51,49 @@ title: Messaging
   </div>
 
 <div class="xs-mb2">
-{% highlight html %} <div class="page-message page-message--success">
-    <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Success</title>
-        <path d="M16.1 26.1c-.4 0-.8-.2-1.1-.5l-6.5-6.7 2.2-2.1 5.4 5.6 11.3-11 2.1 2.1-12.3 12.2c-.3.3-.7.4-1.1.4z"/>
-      </svg>
-      Your settings have been saved.
-      <a class="page-message__action" href="#">View your settings.</a>
-    </div>
-  </div>{% endhighlight %}
+{% highlight html %}<div class="page-message page-message--success xs-mb2">
+  <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+    <title>Success</title>
+    <path d="M16.1 26.1c-.4 0-.8-.2-1.1-.5l-6.5-6.7 2.2-2.1 5.4 5.6 11.3-11 2.1 2.1-12.3 12.2c-.3.3-.7.4-1.1.4z"/>
+  </svg>
+  <div class="page-message__text">
+    Your settings have been saved.
+    <a class="page-message__action" href="#">View your settings.</a>
+  </div>
+</div>{% endhighlight %}
 </div>
 
 <div class="xs-mb2">
-{% highlight html %}<div class="page-message page-message--error">
-    <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Error</title>
+{% highlight html %}<div class="page-message page-message--error xs-mb2">
+  <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+    <title>Error</title>
+    <path d="M19 16.878l-6.364-6.363-2.12 2.12L16.878 19l-6.365 6.364 2.12 2.12L19 21.122l6.364 6.365 2.12-2.12L21.122 19l6.365-6.364-2.12-2.12L19 16.877z"/>
+  </svg>
+  <div class="page-message__text">
+    Oh no, something went wrong.
+    <a class="page-message__action" href="#">Fix this error.</a>
+  </div>
+</div>{% endhighlight %}
+</div>
+
+<div class="xs-mb2">
+{% highlight html %}<div class="page-message page-message--warning xs-mb2">
+  <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+    <title>Warning</title>
+    <path d="M17.5 8.7h3v12.6h-3V8.7zM19 29.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z"/>
+  </svg>
+  <div class="page-message__text xs-mr2">
+    This warning message is dismissible.
+  </div>
+  <span class="page-message__close">
+    <a href="#" aria-label="Dismiss message">
+      <svg class="page-message__icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-label="Dismiss message">
+        <title>Dismiss</title>
         <path d="M19 16.878l-6.364-6.363-2.12 2.12L16.878 19l-6.365 6.364 2.12 2.12L19 21.122l6.364 6.365 2.12-2.12L21.122 19l6.365-6.364-2.12-2.12L19 16.877z"/>
       </svg>
-      Oh no, something went wrong.
-      <a class="page-message__action" href="#">Fix this error.</a>
-    </div>
-  </div>{% endhighlight %}
-</div>
-
-<div class="xs-mb2">
-{% highlight html %}<div class="page-message page-message--warning">
-    <div class="page-message__text">
-      <svg class="page-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
-        <title>Warning</title>
-        <path d="M17.5 8.7h3v12.6h-3V8.7zM19 29.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z"/>
-      </svg>
-    This warning message is dismissible.
-    </div>
-    <span class="page-message__close">
-      <a href="#" aria-label="Dismiss message">
-        <svg class="page-message__icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-          <title>Dismiss</title>
-          <path d="M19 16.878l-6.364-6.363-2.12 2.12L16.878 19l-6.365 6.364 2.12 2.12L19 21.122l6.364 6.365 2.12-2.12L21.122 19l6.365-6.364-2.12-2.12L19 16.877z"/>
-        </svg>
-      </a>
-    </span>
-  </div>{% endhighlight %}
+    </a>
+  </span>
+</div>{% endhighlight %}
 </div>
 
 </section>
