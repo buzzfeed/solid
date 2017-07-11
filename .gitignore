@@ -4,20 +4,15 @@
 # ignore generated css
 .sass-cache/
 
-# ignore generated site
-docs/.tmp/
-
-# ignore generated version file
-docs/_data/npm.yml
-
 # ignore temporary assets
 .tmp/
 
 # ignore node modules
 node_modules/
+npm-debug.log
 
 # ignore weird image filesystem crap
 .DS_Store
 
-# ignore ruby gems
-.bundle/
+# ignore generated solid files
+dist/
