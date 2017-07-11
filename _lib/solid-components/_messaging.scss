@@ -8,6 +8,8 @@
   padding: $space-2;
   font-size: $text-4;
   font-weight: $bold;
+  display: flex;
+  align-items: center;
 }
 
 .page-message__action {
@@ -25,9 +27,8 @@
 .page-message__icon{
   height: $space-2;
   border-radius: 50%;
-  margin-right: $space-1;
-  position: relative;
-  top: .1875rem; //so the icon aligns with the first line of text
+  margin-right: $space-2;
+  flex-shrink: 0;
 }
 
 .page-message__icon-close {
