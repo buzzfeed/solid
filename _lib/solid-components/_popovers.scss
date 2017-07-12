@@ -3,24 +3,13 @@
 // --------------------------------------------------
 $background-caret-size: .625rem;
 $foreground-caret-size: .5625rem;
-// End Tooltip Specific Variables //
 
-// Center contents of the Pen
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5rem;
-  background-color: $fill-gray-lighter;
-}
-
-// Tooltip
 .popover-right, .popover-left, .popover-bottom, .popover-top {
     width: 100%;
     position: relative;
     padding: $space-2;
 
-  // shared styles between right, left, bottom, and top caret for the tooltip
+  // shared styles between right, left, bottom, and top caret for the popover
   &:before, &:after {
     content: " ";
     pointer-events: none;
@@ -30,11 +19,11 @@ body {
     border: solid transparent;
     right: 100%;
   }
-  &:before { //foreground caret styles for right, left, bottom, & top tooltip
+  &:before { //foreground caret styles for right, left, bottom, & top popover
     border-color: transparent;
     border-width: $background-caret-size;
   }
-  &:after { // background caret styles for right, left, bottom, & top tooltip
+  &:after { // background caret styles for right, left, bottom, & top popover
     border-color: transparent;
     border-width: $foreground-caret-size;
   }
@@ -42,15 +31,15 @@ body {
 
 .popover-right, .popover-left {
   &:before {
-    margin-top: -($background-caret-size); //foreground caret styles for right & left tooltip
+    margin-top: -($background-caret-size); //foreground caret styles for right & left popover
   }
   &:after {
-    margin-top: -($foreground-caret-size); //background caret styles for between right & left tooltip
+    margin-top: -($foreground-caret-size); //background caret styles for between right & left popover
   }
 }
 
 .popover-right {
-  &:before, &:after { // caret styles for the right tooltip
+  &:before, &:after { // caret styles for the right popover
     right: 100%;
     top: 50%;
   }
@@ -74,7 +63,7 @@ body {
 }
 
 .popover-left {
-  &:before, &:after { // caret styles for the left tooltip
+  &:before, &:after { // caret styles for the left popover
     left: 100%;
     top: 50%;
   }
@@ -99,15 +88,15 @@ body {
 
 .popover-top, .popover-bottom {
   &:before {
-    margin-left: -($background-caret-size); // foreground caret styles shared between top and bottom tooltip
+    margin-left: -($background-caret-size); // foreground caret styles shared between top and bottom popover
   }
   &:after {
-    margin-left: -($foreground-caret-size); // background caret styles shared between top and bottom tooltip
+    margin-left: -($foreground-caret-size); // background caret styles shared between top and bottom popover
   }
 }
 
 .popover-top {
-  &:before, &:after { // caret styles for the top tooltip
+  &:before, &:after { // caret styles for the top popover
     left: 50%;
     bottom: 100%;
   }
@@ -131,7 +120,7 @@ body {
 }
 
 .popover-bottom {
-  &:before, &:after { // caret styles for the bottom tooltip
+  &:before, &:after { // caret styles for the bottom popover
     left: 50%;
     top: 100%;
   }
