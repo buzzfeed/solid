@@ -8,7 +8,7 @@
   &block-grid-3,
   &block-grid-4,
   &block-grid-5,
-  &block-grid-6 { 
+  &block-grid-6 {
     font-size: 0        !important;
     margin: (-$space-1) !important;
     padding: 0          !important;
@@ -16,7 +16,7 @@
 }
 
 .block-grid__item {
-  display: inline-block      !important;
+  display: inline-block                ;
   margin: $space-1           !important;
   font-size: $base-font-size !important;
   vertical-align: top        !important;
@@ -52,4 +52,3 @@
   &block-grid-5.no-gutters .block-grid__item { width: (percentage(1/5)) !important; }
   &block-grid-6.no-gutters .block-grid__item { width: (percentage(1/6)) !important; }
 }
-
