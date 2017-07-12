@@ -83,15 +83,15 @@ Use the command `npm version [version number]` then `git push`. This will create
 ### 3. Generate Distribution Files
 `make dist` in the terminal.
 
-### 4. Publish the Node Package
-in a terminal window, from within the Solid directory type `npm publish`.
-
-### 5. Write Release Notes
+### 4. Write Release Notes
 Release notes can be found in docs/\_posts/release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
-### 6. Commit, Open a PR, Get a Review, Et Cetera
+### 5. Commit, Open a PR, Get a Review, Et Cetera
 Make a commit that is the number of your release - i.e. `solid-2-6-3`. In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
+
+### 6. Publish the Node Package
+in a terminal window and when on master, from within the Solid directory type `npm publish`.
 
 ### 7. Generate Compressed Docs
 We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
