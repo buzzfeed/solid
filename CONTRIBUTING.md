@@ -63,6 +63,8 @@ You should add a concise descriptive comment about what is in this merge, and th
 
 Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
 
+
+
 ## Drafting a Solid Release
 Any Solid team member can draft a new release.
 
@@ -78,25 +80,20 @@ Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. 
 Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
 
 ### 2. Update Node Package Version
-Use the command `npm version [version number]` then `git push`. This will create a new commit with the correct git version tag and Solid's package version in `package.json` updated.
+Use the command `npm version [version number]`. This will create a new commit with the correct git version tag and Solid's package version in `package.json` updated.
 
-### 3. Generate Distribution Files
-`make dist` in the terminal.
-
-### 4. Publish the Node Package
-in a terminal window, from within the Solid directory type `npm publish`.
-
-### 5. Write Release Notes
-Release notes can be found in docs/\_posts/release-notes/. Release notes must
+### 3. Write Release Notes
+Release notes can be found in release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
-### 6. Commit, Open a PR, Get a Review, Et Cetera
-Make a commit that is the number of your release - i.e. `solid-2-6-3`. In your PR you should see the updated `package.json`, `index.html`, and distribution binaries, along with your new release notes. Ask your reviewer to merge if all is well.
+### 4. Commit, Open a PR, Get a Review, Et Cetera
+Push to github and open a PR. In your PR you should see the updated `package.json`, your solid updates and your new release notes. Ask your reviewer to merge if all is well.
 
-### 7. Generate Compressed Docs
-We attach our compiled docs to each release so that rig can pull them down and deploy them. To generate this file run `make release_docs`. This will generate a compressed copy of the docs in the `.tmp` directory.
+### 5. Publish the Node Package
+After merging into master, within the Solid directory, type `npm publish`. This will create the distribution files automatically for you.
 
-### 8. Draft a Github Release
-On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description. Attach the gzipped docs you generated in step 8 to this release.
+### 6. Draft a Github Release
+On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description.
 
-All done! If you want to deploy this release see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.
+### 7. Update and deploy the docs
+All done! If you want to deploy this release to [https://solid.buzzfeed.com](https://solid.buzzfeed.com) see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.

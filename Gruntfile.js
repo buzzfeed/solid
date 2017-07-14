@@ -27,13 +27,6 @@ module.exports = function(grunt) {
         ]
       }
     },
-    exec: {
-      inject_version: {
-        cmd: function() {
-          return 'echo version: ' + this.file.readJSON("package.json").version + ' > docs/_data/npm.yml';
-        }
-      }
-    },
     cssnano: {
       options: {
         sourcemap: false
@@ -55,28 +48,6 @@ module.exports = function(grunt) {
              cwd: '_lib/',
              expand: true
          }]
-      },
-      tar_docs: {
-        options: {
-          archive: 'docs/.tmp/solid-docs.<%= pkg.version %>.tar.gz',
-          mode: 'tar'
-        },
-        files: [{
-          src: ['**/*'],
-          cwd: 'docs/.tmp/_site/',
-          expand: true
-        }]
-      },
-      gzip_docs: {
-         options: {
-           mode: 'gzip'
-         },
-         files: [{
-           src: ['solid-docs.<%= pkg.version %>.tar.gz'],
-           cwd: 'docs/.tmp/',
-           dest: '.tmp/',
-           expand: true
-         }]
       }
     },
     copy: {
@@ -91,29 +62,21 @@ module.exports = function(grunt) {
             return dest + src;
           }
         }]
-      },
-      deployDist: {
-        files: [{
-          expand: true,
-          cwd: 'dist/',
-          src: ['**'],
-          dest: 'docs/.tmp/_site/dist/'
-        }]
       }
-    }
+    },
+    clean: [
+      'dist/',
+      '.tmp/'
+    ]
   });
 
 grunt.loadNpmTasks('grunt-sass');
-grunt.loadNpmTasks('grunt-exec');
 grunt.loadNpmTasks('grunt-cssnano');
 grunt.loadNpmTasks('grunt-contrib-compress');
+grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-contrib-copy');
 
-grunt.registerTask('compile_lib', ['sass:lib']);
-grunt.registerTask('minify_lib', ['cssnano:lib']);
-grunt.registerTask('latest_solid', ['copy:latest']);
-grunt.registerTask('copy_deploy_dist', ['copy:deployDist']);
-grunt.registerTask('compress_release_docs', ['compress:tar_docs', 'compress:gzip_docs']);
-grunt.registerTask('zip_lib', ['compress:lib']);
+grunt.registerTask('prepare_solid_dist', ['sass:lib', 'cssnano:lib', 'copy:latest', 'compress:lib']);
+grunt.registerTask('dist', ['clean', 'prepare_solid_dist']);
 
 }
