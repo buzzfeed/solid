@@ -55,3 +55,57 @@ $gutter: $space-1;
     padding: 0 $gutter !important;
   }
 }
+
+@supports (display:grid;) {
+  @include generate-breakpoint-prefixes {
+    &grid {
+      display: grid;
+      grid-template-columns: repeat($grid-size, 1fr);
+      grid-template-rows: auto;
+
+      >* {
+        grid-column-end: span 12;
+      }
+    }
+
+    &grid-gap-05 { grid-gap: $space-05 !important; }
+    &grid-gap-1  { grid-gap: $space-1  !important; }
+    &grid-gap-2  { grid-gap: $space-2  !important; }
+    &grid-gap-3  { grid-gap: $space-3  !important; }
+
+    &grid-colgap-05 { grid-column-gap: $space-05 !important; }
+    &grid-colgap-1  { grid-column-gap: $space-1  !important; }
+    &grid-colgap-2  { grid-column-gap: $space-2  !important; }
+    &grid-colgap-3  { grid-column-gap: $space-3  !important; }
+
+    &grid-rowgap-05 { grid-row-gap: $space-05 !important; }
+    &grid-rowgap-1  { grid-row-gap: $space-1  !important; }
+    &grid-rowgap-2  { grid-row-gap: $space-2  !important; }
+    &grid-rowgap-3  { grid-row-gap: $space-3  !important; }
+
+    &col-1 { grid-column-end: span 1 !important; }
+    &col-2 { grid-column-end: span 2 !important; }
+    &col-3 { grid-column-end: span 3 !important; }
+    &col-4 { grid-column-end: span 4 !important; }
+    &col-5 { grid-column-end: span 5 !important; }
+    &col-6 { grid-column-end: span 6 !important; }
+    &col-7 { grid-column-end: span 7 !important; }
+    &col-8 { grid-column-end: span 8 !important; }
+    &col-9 { grid-column-end: span 9 !important; }
+    &col-10 { grid-column-end: span 10 !important; }
+    &col-11 { grid-column-end: span 11 !important; }
+    &col-12 { grid-column-end: span 12 !important; }
+
+    &offset-1  { grid-column-start: 2 !important;  }
+    &offset-2  { grid-column-start: 3 !important;  }
+    &offset-3  { grid-column-start: 4 !important;  }
+    &offset-4  { grid-column-start: 5 !important;  }
+    &offset-5  { grid-column-start: 6 !important;  }
+    &offset-6  { grid-column-start: 7 !important;  }
+    &offset-7  { grid-column-start: 8 !important;  }
+    &offset-8  { grid-column-start: 9 !important;  }
+    &offset-9  { grid-column-start: 10 !important;  }
+    &offset-10 { grid-column-start: 11 !important; }
+    &offset-11 { grid-column-start: 12 !important; }
+  }
+}
