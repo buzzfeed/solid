@@ -49,7 +49,7 @@ $z4: 400 !default;
 // Colors
 // -------------------------
 
-// Fills 
+// Fills
 $fill-red:             #e32    !default;
 $fill-red-lighter:     #feebe9 !default;
 $fill-pink:            #f43192 !default;
@@ -66,6 +66,7 @@ $fill-gray-lighter:    #f4f4f4 !default;
 $fill-gray:            #aaa    !default;
 $fill-gray-darker:     #222    !default;
 $fill-white:           #fff    !default;
+$fill-black:           #000    !default;
 
 // Social Fills
 $fill-facebook:  #3b5998 !default;
@@ -78,9 +79,13 @@ $fill-youtube:   #cd201f !default;
 $fill-instagram: #517fa4 !default;
 $fill-vine:      #00b488 !default;
 $fill-snapchat:  #fffc00 !default;
+$fill-whatsapp:  #43d854 !default;
+$fill-lineapp:   #00c300 !default;
+$fill-vk:        #4c75a3 !default;
 
 // Type Colors
 $text-white:           #fff    !default;
+$text-black:           #000    !default;
 $text-gray:            #222    !default;
 $text-gray-lighter:    #666    !default;
 $text-gray-lightest:   #999    !default;
@@ -101,6 +106,11 @@ $text-pinterest: #bd081c !default;
 $text-tumblr:    #36465d !default;
 $text-youtube:   #cd201f !default;
 $text-instagram: #517fa4 !default;
+$text-vine:      #00b488 !default;
+$text-snapchat:  #fffc00 !default;
+$text-whatsapp:  #43d854 !default;
+$text-lineapp:   #00c300 !default;
+$text-vk:        #4c75a3 !default;
 
 // Typography Sizes and Weights
 // -------------------------
