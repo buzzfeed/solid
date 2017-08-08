@@ -38,7 +38,8 @@ Do your best to follow the SCSS patterns and examples laid out in the Solid docs
 Release notes can be found in release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
-### 7. Update package.json by bumping the release number
+
+### 7. Bump the release number in package.json
 
 Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. This allows users to safely update Solid versions without breaking their app.
 
@@ -50,6 +51,7 @@ Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. 
 
 Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
 
+
 ### 8. Stage and Commit Your Changes
 
 ```
@@ -57,7 +59,9 @@ $ git add .
 $ git commit -m "fixes bug xxx"
 ```
 
+
 This will commit your changes to your local copy of the repo, (distinct from your fork on Github).
+
 
 ### 9. Push It
 
@@ -66,6 +70,7 @@ Up until now, you've been working locally. When you're ready to share your branc
 ```
 $ git push origin my-feature-or-bug-branch
 ```
+
 
 ### 10. Submit a Pull Request
 
@@ -86,36 +91,3 @@ You should add a concise descriptive comment about what is in this merge, and th
 Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
 
 
-
-## Drafting a Solid Release
-Any Solid team member can draft a new release.
-
-### 1. Pick a Release Number and Name
-Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. This allows users to safely update Solid versions without breaking their app.
-
-**Major Version:** Includes serious breaking/architectural changes.
-
-**Minor Version:** Adds new functionality.
-
-**Patch:** Reserved for bug fixes and small changes. Users should feel safe staying up to the most recent patch version.
-
-Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
-
-### 2. Update Node Package Version
-Use the command `npm version [version number]`. This will create a new commit with the correct git version tag and Solid's package version in `package.json` updated.
-
-### 3. Write Release Notes
-Release notes can be found in release-notes/. Release notes must
-be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
-
-### 4. Commit, Open a PR, Get a Review, Et Cetera
-Push to github and open a PR. In your PR you should see the updated `package.json`, your solid updates and your new release notes. Ask your reviewer to merge if all is well.
-
-### 5. Publish the Node Package
-After merging into master, within the Solid directory, type `npm publish`. This will create the distribution files automatically for you.
-
-### 6. Draft a Github Release
-On [https://github.com/buzzfeed/solid/releases] click the `Draft a New Release` button. Enter the release name as the title and the release notes in the description.
-
-### 7. Update and deploy the docs
-All done! If you want to deploy this release to [https://solid.buzzfeed.com](https://solid.buzzfeed.com) see [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) on mono.
