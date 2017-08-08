@@ -23,7 +23,7 @@ Create a fresh branch off master with a short, descriptive name.
 $ git checkout -b my-feature-or-bug-branch
 ```
 
-BuzzFeed employees employees are encouraged to create branch that match the prefix of their corresponding Jira card. For example:
+BuzzFeed employees are encouraged to create a branch with a name that matches the prefix of their corresponding Jira card. For example:
 ```
 $ git checkout -b SOLID-300-change-fill-red-variable
 ```
@@ -38,8 +38,19 @@ Do your best to follow the SCSS patterns and examples laid out in the Solid docs
 Release notes can be found in release-notes/. Release notes must
 be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
 
+### 7. Update package.json by bumping the release number
 
-### 7. Stage and Commit Your Changes
+Release numbers follow a semantic versioning scheme of `major`.`minor`.`patch`. This allows users to safely update Solid versions without breaking their app.
+
+**Major Version:** Includes serious breaking/architectural changes.
+
+**Minor Version:** Adds new functionality.
+
+**Patch:** Reserved for bug fixes and small changes. Users should feel safe staying up to the most recent patch version.
+
+Example: if the current Solid version is `2.1.0` and I am drafting a new release which adds a new button color, the new version would be `2.2.0`.
+
+### 8. Stage and Commit Your Changes
 
 ```
 $ git add .
@@ -48,7 +59,7 @@ $ git commit -m "fixes bug xxx"
 
 This will commit your changes to your local copy of the repo, (distinct from your fork on Github).
 
-### 6. Push It
+### 9. Push It
 
 Up until now, you've been working locally. When you're ready to share your branch, you will need to push it up to `buzzfeed/solid` on Github. (Your local branches aren't automatically synchronized to the remotes you write to – you have to explicitly push the branches you want to share.)
 
@@ -56,7 +67,7 @@ Up until now, you've been working locally. When you're ready to share your branc
 $ git push origin my-feature-or-bug-branch
 ```
 
-### 8. Submit a Pull Request
+### 10. Submit a Pull Request
 
 Once you're ready to submit your feature or bug, go to your fork on the web (<https://github.com/YOUR_GITHUB_USERNAME/solid>), and click the **Pull Requests** nav item at the top right.
 
