@@ -18,17 +18,28 @@ Next, clone this fork down to your local PC. Now that you have a local fork of t
 
 ### 3. Check Out a New Branch
 
-Please create a branch with a short, descriptive name.
-
+Create a fresh branch off master with a short, descriptive name.  
 ```
 $ git checkout -b my-feature-or-bug-branch
 ```
 
+BuzzFeed employees employees are encouraged to create branch that match the prefix of their corresponding Jira card. For example:
+```
+$ git checkout -b SOLID-300-change-fill-red-variable
+```
+
 ### 4. Write Your Code!
 
-Do your best to follow the patterns and examples laid out in the Solid docs.
+Do your best to follow the SCSS patterns and examples laid out in the Solid docs.
 
-### 5. Stage and Commit Your Changes
+
+### 6. Write Release Notes
+
+Release notes can be found in release-notes/. Release notes must
+be named `year`-`month`-`day`-`release number`.html and are written in Yaml front matter. Name your release concisely and consider the changes it includes. Jokes, on occasion, are OK. Please see existing release notes for examples.
+
+
+### 7. Stage and Commit Your Changes
 
 ```
 $ git add .
