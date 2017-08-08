@@ -93,8 +93,8 @@ You should add a concise descriptive comment about what is in this merge, and th
 Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
 
 
-###10. For BuzzFeed employees, once your PR has been approved by at least 1 Solid contributor, you can go ahead and merge the PR back into master. 
+### 10. For BuzzFeed employees, once your PR has been approved by at least 1 Solid contributor, you can go ahead and merge the PR back into master. 
 
-###11. Run `NPM Publish` to publish the latest version with your newly added changes.
+### 11. Run `NPM Publish` to publish the latest version with your newly added changes.
 
 
