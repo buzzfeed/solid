@@ -26,9 +26,10 @@
   &float-none  { float: none  !important; }
 
   &fit         { max-width: 100% !important; }
-  &full-height { height: 100%    !important; }
-  &width-auto  { width: auto      !important; }
-  &height-auto { height: auto      !important; }
+  &full-width  { width:     100% !important; }
+  &full-height { height:    100% !important; }
+  &width-auto  { width:     auto !important; }
+  &height-auto { height:    auto !important; }
 
 }
 
