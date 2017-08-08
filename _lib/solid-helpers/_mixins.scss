@@ -24,10 +24,10 @@ $breakpoints: (
 @mixin solid-breakpoint ($breakpoint) {
     @if (map-has-key($breakpoints, $breakpoint) != true) {
       @error "Solid-breakpoint media query mixin requires a valid Solid breakpoint";
-    } 
+    }
     @else if(map-get($breakpoints, $breakpoint)) == null {
       @content;
-    } 
+    }
     @else {
       @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
         @content;
@@ -123,8 +123,8 @@ $breakpoints: (
 
 
 // Font Smoothing
-// This will be enabled automatically when using the .slab class. 
-// You may want to disable it for performance reasons, since these styles will cascade down. 
+// This will be enabled automatically when using the .slab class.
+// You may want to disable it for performance reasons, since these styles will cascade down.
 // https://davidwalsh.name/font-smoothing
 // ------------------------------
 
@@ -143,13 +143,34 @@ $breakpoints: (
 @mixin media-query($breakpoint) {
     @if (map-has-key($breakpoints, $breakpoint) != true) {
       @error "Media query mixin requires a valid Solid breakpoint";
-    } 
+    }
     @else if(map-get($breakpoints, $breakpoint)) == null {
       @content;
-    } 
+    }
     @else {
       @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
         @content;
       }
     }
+}
+
+// SVG
+// iOS 8 and below doesn't handle well
+// touch event when SVGs are involved.
+// This add a transparent layer on top
+// of SVGs. It helps to target.
+//
+// Parent has to be `position: relative`
+// ------------------------------
+
+@mixin ios-svg($width, $height: $width) {
+  &:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $width;
+    height: $height;
+  }
 }
