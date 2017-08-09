@@ -32,7 +32,7 @@ $ git checkout -b SOLID-300-change-fill-red-variable
 
 ### 4. Write Your Code!
 
-Do your best to follow the SCSS patterns and examples laid out in the Solid docs.
+Do your best to follow the SCSS patterns and examples laid out in the [Solid docs](https://solid.buzzfeed.com).
 
 
 ### 5. Write Release Notes
@@ -94,13 +94,12 @@ Someone from the team will review your request, and work with you to ensure ther
 
 
 ### 10. Merge the PR back into master.
-This step applies only to BuzzFeed employees.
+>This step applies to BuzzFeed employees only.
 
 ### 11. Run `NPM Publish` to publish the latest version with your newly added changes.
 
 
-Sweet! You're good to go now. 
 
 Make sure to communicate any changes you make to library to maintain transparency and awareness for those developing with Solid.
-To update the [Solid documentation](https://solid.buzzfeed.com), follow this [readme](https://github.com/buzzfeed/mono/blob/master/solid_docs/readme.md) in the Solid Docs app.
+To update the [Solid docs](https://solid.buzzfeed.com), follow this [readme](https://github.com/buzzfeed/mono/blob/master/solid_docs/readme.md) in the Solid Docs app.
 
