@@ -97,9 +97,9 @@ Someone from the team will review your request, and work with you to ensure ther
 >This step applies to BuzzFeed employees only.
 
 ### 11. Run `NPM Publish` to publish the latest version with your newly added changes.
-
+>This step applies to BuzzFeed employees only.
 
 
 Make sure to communicate any changes you make to library to maintain transparency and awareness for those developing with Solid.
-To update the [Solid docs](https://solid.buzzfeed.com), follow this [readme](https://github.com/buzzfeed/mono/blob/master/solid_docs/readme.md) in the Solid Docs app.
+To update the [Solid docs](https://solid.buzzfeed.com), follow this [readme](https://github.com/buzzfeed/mono/blob/master/solid_docs/readme.md) in /mono.
 
