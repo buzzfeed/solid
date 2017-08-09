@@ -94,10 +94,9 @@ Someone from the team will review your request, and work with you to ensure ther
 
 
 ### 10. Merge the PR back into master.
->This step applies to BuzzFeed employees only.
+>Steps 10 & 11 step apply to BuzzFeed employees only.
 
 ### 11. Run `NPM Publish` to publish the latest version with your newly added changes.
->This step applies to BuzzFeed employees only.
 
 
 Make sure to communicate any changes you make to library to maintain transparency and awareness for those developing with Solid.
