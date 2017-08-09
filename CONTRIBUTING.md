@@ -100,5 +100,6 @@ Someone from the team will review your request, and work with you to ensure ther
 
 
 Make sure to communicate any changes you make to library to maintain transparency and awareness for those developing with Solid.
-To update the [Solid docs](https://solid.buzzfeed.com), follow this [readme](https://github.com/buzzfeed/mono/blob/master/solid_docs/readme.md) in /mono.
+
+If you want to text & deploy this release to [https://solid.buzzfeed.com](https://solid.buzzfeed.com), or make any changes to the documentation, see the [solid_docs](https://github.com/buzzfeed/mono/tree/master/solid_docs#solid-docs) in mono.
 
