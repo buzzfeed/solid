@@ -155,10 +155,9 @@ $breakpoints: (
 }
 
 // SVG
-// iOS 8 and below doesn't handle well
-// touch event when SVGs are involved.
-// This add a transparent layer on top
-// of SVGs. It helps to target.
+// iOS 8 and below don't handle touch events correctly
+// when SVGs are involved. This mixin adds a transparent layer
+// on top of the element to act as the touch target.
 //
 // Parent has to be `position: relative`
 // ------------------------------
