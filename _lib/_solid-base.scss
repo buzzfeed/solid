@@ -6,8 +6,17 @@
 @import "solid-helpers";
 
 // imports
+/* 2 SOLID-BASE:normalize */
 @import "solid-base/normalize";
+
+/* 2 SOLID-BASE:base */
 @import "solid-base/base";
+
+/* 2 SOLID-BASE:typography */
 @import "solid-base/typography";
+
+/* 2 SOLID-BASE:tables */
 @import "solid-base/tables";
+
+/* 2 SOLID-BASE:deprecated */
 @import "solid-base/deprecated";

@@ -66,35 +66,38 @@
     &:active { background-color: $active-background-color !important; }
   }
 
-  //colored button + secondary button styles
-  &.button--secondary {
-    border: 1px solid $fill-color !important;
-    color: $secondary-text-color  !important;
-    background: none              !important;
+  @if ($solid-lite-buttons == false) {
+    //colored button + secondary button styles
+    &.button--secondary {
+      border: 1px solid $fill-color !important;
+      color: $secondary-text-color  !important;
+      background: none              !important;
 
-    &:hover {
-      transition: background-color .15s ease 0s  !important;
-    }
-  }
-
-  //only have hover styles if button is not disabled
-  &.button--secondary:not(.button--disabled):not(:disabled) {
-    &:hover {
-      background-color: $fill-color       !important;
-      color: $secondary-hover-text-color  !important;
+      &:hover {
+        transition: background-color .15s ease 0s  !important;
+      }
     }
 
-    &:active {
-      background-color: $secondary-active-background-color !important;
-      border-color:     $secondary-active-background-color !important;
-      color:            $secondary-hover-text-color        !important;
-    }
-  }
 
-  //colored button + secondary + icon button styles
-  &.button--secondary.button--icon {
-    >svg                               { fill: $fill-color  !important; }
-    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-white  !important; }
+    //only have hover styles if button is not disabled
+    &.button--secondary:not(.button--disabled):not(:disabled) {
+      &:hover {
+        background-color: $fill-color       !important;
+        color: $secondary-hover-text-color  !important;
+      }
+
+      &:active {
+        background-color: $secondary-active-background-color !important;
+        border-color:     $secondary-active-background-color !important;
+        color:            $secondary-hover-text-color        !important;
+      }
+    }
+
+    //colored button + secondary + icon button styles
+    &.button--secondary.button--icon {
+      >svg                               { fill: $fill-color  !important; }
+      &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-white  !important; }
+    }
   }
 }
 
@@ -118,41 +121,41 @@
 
 // Colored Buttons
 // -------------------------
-
-.button--negative {
-  @include button-style($fill-red, $text-white);
-}
-
-.button--white {
-  @include button-style($fill-white, $text-gray);
-
-  // white button has unique hover states
-  &.button--secondary:not(.button--disabled):not(:disabled):active { background-color: darken($fill-white, 10%) !important; }
-
-  &.button--icon {
-    >svg                               { fill: $fill-gray-darker  !important; }
-    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
+@if ($solid-lite-buttons == false) {
+  .button--negative {
+    @include button-style($fill-red, $text-white);
   }
 
-  &.button--secondary.button--icon {
-    >svg                               { fill: $fill-white  !important; }
-    &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
+  .button--white {
+    @include button-style($fill-white, $text-gray);
+
+    // white button has unique hover states
+    &.button--secondary:not(.button--disabled):not(:disabled):active { background-color: darken($fill-white, 10%) !important; }
+
+    &.button--icon {
+      >svg                               { fill: $fill-gray-darker  !important; }
+      &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
+    }
+
+    &.button--secondary.button--icon {
+      >svg                               { fill: $fill-white  !important; }
+      &:not(.button--disabled):not(:disabled):hover svg { fill: $fill-gray-darker !important; }
+    }
+  }
+
+  // transparent button has unique fill rules
+  .button--transparent {
+    background-color: transparent         !important;
+    color: $text-blue                     !important;
+    border-color: transparent             !important;
+    border: 1px solid transparent         !important;
+
+    &:not(.button--disabled):not(:disabled):hover {
+      background-color: transparent       !important;
+      color: darken($text-blue, 20%)      !important;
+    }
   }
 }
-
-// transparent button has unique fill rules
-.button--transparent {
-  background-color: transparent         !important;
-  color: $text-blue                     !important;
-  border-color: transparent             !important;
-  border: 1px solid transparent         !important;
-
-  &:not(.button--disabled):not(:disabled):hover {
-    background-color: transparent       !important;
-    color: darken($text-blue, 20%)      !important;
-  }
-}
-
 
 // Disabled Button
 // -------------------------
@@ -222,14 +225,46 @@
   }
 }
 
-.button--facebook     { @include social-button($fill-facebook); }
-.button--twitter      { @include social-button($fill-twitter); }
-.button--google       { @include social-button($fill-google); }
-.button--linkedin     { @include social-button($fill-linkedin); }
-.button--pinterest    { @include social-button($fill-pinterest); }
-.button--tumblr       { @include social-button($fill-tumblr); }
-.button--youtube      { @include social-button($fill-youtube); }
-.button--instagram    { @include social-button($fill-instagram); }
-.button--sms          { @include social-button($fill-green); }
-.button--rss          { @include social-button($fill-orange); }
-.button--apple-news   { @include social-button($fill-gray-darker); }
+@if (index($social-buttons, facebook) != null) {
+  .button--facebook { @include social-button($fill-facebook); }
+}
+@if (index($social-buttons, twitter) != null) {
+  .button--twitter { @include social-button($fill-twitter); }
+}
+
+@if (index($social-buttons, google) != null) {
+  .button--google { @include social-button($fill-google); }
+}
+
+@if (index($social-buttons, linkedin) != null) {
+  .button--linkedin { @include social-button($fill-linkedin); }
+}
+
+@if (index($social-buttons, pinterest) != null) {
+  .button--pinterest { @include social-button($fill-pinterest); }
+}
+
+@if (index($social-buttons, tumblr) != null) {
+  .button--tumblr { @include social-button($fill-tumblr); }
+}
+
+@if (index($social-buttons, youtube) != null) {
+  .button--youtube { @include social-button($fill-youtube); }
+}
+
+@if (index($social-buttons, instagram) != null) {
+  .button--instagram { @include social-button($fill-instagram); }
+}
+
+@if (index($social-buttons, sms) != null) {
+  .button--sms { @include social-button($fill-green); }
+}
+
+@if (index($social-buttons, rss) != null) {
+  .button--rss { @include social-button($fill-orange); }
+}
+
+@if (index($social-buttons, apple-news) != null) {
+  .button--apple-news { @include social-button($fill-gray-darker); }
+}
+

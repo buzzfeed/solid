@@ -3,6 +3,12 @@
   solid.buzzfeed.com
 */
 
+$solid-lite: true;
+$solid-lite-buttons: true;
+$generate-responsive-classes: true;
+$include-deprecated: false;
+$social-buttons: facebook twitter google;
+
 /* 1: SOLID HELPERS */
 @import "solid-helpers";
 

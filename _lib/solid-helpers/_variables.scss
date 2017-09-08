@@ -9,6 +9,10 @@
 // mixin give only xs- versions of
 // responsive classes
 $generate-responsive-classes: true !default;
+$solid-lite: false !default;
+$solid-lite-buttons: false !default;
+$include-deprecated: true !default;
+$social-buttons: facebook twitter google linkedin pinterest tumblr youtube instagram sms rss apple !default;
 
 // Controls whether or not we use font sizing.
 // See the font-smoothing mixin in _mixins.scss

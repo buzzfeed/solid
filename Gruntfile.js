@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "_lib/",
-            src: ['solid.scss'],
+            src: ['*.scss'],
             dest: 'dist',
             ext: '.<%= pkg.version %>.css'
           }
@@ -33,7 +33,8 @@ module.exports = function(grunt) {
       },
       lib: {
         files: {
-         'dist/solid.<%= pkg.version %>.min.css' : 'dist/solid.<%= pkg.version %>.css'
+         'dist/solid.<%= pkg.version %>.min.css' : 'dist/solid.<%= pkg.version %>.css',
+         'dist/solid-lite.<%= pkg.version %>.min.css' : 'dist/solid-lite.<%= pkg.version %>.css'
         }
       }
     },
