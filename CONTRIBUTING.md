@@ -93,11 +93,11 @@ You should add a concise descriptive comment about what is in this merge, and th
 Someone from the team will review your request, and work with you to ensure there will be no problems on merge. Once everything is good someone from the team will merge your change in!
 
 
-### 10. Merge the PR back into master.
->Steps 10 & 11 step apply to BuzzFeed employees only.
+### 10. Merge the PR back into master. (BuzzFeed employees only)
 
-### 11. Run `NPM Publish` to publish the latest version with your newly added changes.
+### 11. Run `NPM Publish` to publish the latest version with your newly added changes. (BuzzFeed employees only)
 
+>You'll need access to Solid on NPM in order to complete this step. If you don't have access, someone in #solid on Slack will be able to grant you access.
 
 Make sure to communicate any changes you make to library to maintain transparency and awareness for those developing with Solid.
 
