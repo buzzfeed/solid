@@ -9,7 +9,12 @@ $popover-fg-caret-size: .5625rem;
 .popover-right, .popover-left, .popover-bottom, .popover-top {
   width: 100%;
   position: relative;
-  padding: $space-2;
+  padding: $space-1;
+  font-size: $text-5;
+  box-shadow: 0 1px 1px rgba(173, 168, 168, .1);
+  border: $border-lighter;
+  background-color: $fill-white;
+  border-radius: $border-radius;
 
   // shared styles between right, left, bottom, and top caret for the popover
   &:before, &:after {
