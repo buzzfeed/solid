@@ -7,7 +7,8 @@ $popover-fg-caret-size: .5625rem;
 
 
 .popover-right, .popover-left, .popover-bottom, .popover-top {
-  width: 100%;
+  display: inline-block;
+  width: auto;
   position: relative;
   padding: $space-1;
   font-size: $text-5;
