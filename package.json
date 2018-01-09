@@ -1,6 +1,6 @@
 {
   "name": "bf-solid",
-  "version": "2.10.4",
+  "version": "2.10.4-test",
   "description": "Solid CSS Styling",
   "scripts": {
     "prepublish": "grunt dist"
