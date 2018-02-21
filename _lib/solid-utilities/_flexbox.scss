@@ -4,8 +4,9 @@
 
 @include generate-breakpoint-prefixes {
 
-  // flex
-  &flex { display:flex                                   !important; }
+  // &flex is located in './_layout.scss' so that switching on flexbox
+  // at the smallest breakpoint doesn't override all other display mode
+  // rules due to rule order.
 
   // flex order
   &flex-order-1 { order: 1                               !important; }
