@@ -6,6 +6,7 @@
 
 # ignore temporary assets
 .tmp/
+.idea/
 
 # ignore node modules
 node_modules/
