@@ -43,8 +43,8 @@
 
 .regular,
 .normal { font-weight:    $regular  !important; }
-
 .bold   { font-weight:    $bold     !important; }
+.xbold  { font-weight:    $xbold    !important; }
 .italic { font-style:     italic    !important; }
 .caps   { text-transform: uppercase !important; }
 
@@ -125,8 +125,8 @@
     fill: $text-blue !important;
     }
 
-  &:hover { color: darken($text-blue, 20%) !important; 
-    
+  &:hover { color: darken($text-blue, 20%) !important;
+
     path {
       transition: fill .15s ease 0s;
       fill: darken($text-blue, 20%) !important;
@@ -137,13 +137,13 @@
 
 .link-gray {
   color: $text-gray !important;
-  
+
   path {
     fill: $text-gray !important;
     }
 
   &:hover { color: $text-blue !important;
-  
+
     path {
         transition: fill .15s ease 0s;
         fill: $text-blue !important;
@@ -159,7 +159,7 @@
     fill: $text-gray-lightest !important;
     }
 
-  &:hover { color: $text-gray !important; 
+  &:hover { color: $text-gray !important;
 
     path {
         transition: fill .15s ease 0s;
@@ -176,7 +176,7 @@
     fill: $text-white !important;
     }
 
-  &:hover { color: darken($text-white, 20%) !important; 
+  &:hover { color: darken($text-white, 20%) !important;
 
     path {
         transition: fill .15s ease 0s;
