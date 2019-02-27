@@ -1,0 +1,25 @@
+// Display
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+  &overflow-hidden  { overflow: hidden  !important; }
+  &overflow-auto    { overflow: auto    !important; -webkit-overflow-scrolling: touch; }
+  &overflow-scroll  { overflow: scroll  !important; -webkit-overflow-scrolling: touch; }
+  &overflow-visible { overflow: visible !important; }
+
+  &hide         { display: none         !important; }
+  &inline       { display: inline       !important; }
+  &block        { display: block        !important; }
+  &flex         { display: flex         !important; }
+  &inline-block { display: inline-block !important; }
+
+  &float-left  { float: left  !important; }
+  &float-right { float: right !important; }
+  &float-none  { float: none  !important; }
+
+  &fit         { max-width: 100% !important; }
+  &full-height { height: 100%    !important; }
+  &width-auto  { width: auto      !important; }
+  &height-auto { height: auto      !important; }
+
+}
