@@ -1,9 +1,4 @@
 @include generate-breakpoint-prefixes {
-  &t0 { top:    0 !important; }
-  &r0 { right:  0 !important; }
-  &b0 { bottom: 0 !important; }
-  &l0 { left:   0 !important; }
-
   &t05 { top:    $space-05 !important; }
   &r05 { right:  $space-05 !important; }
   &b05 { bottom: $space-05 !important; }
