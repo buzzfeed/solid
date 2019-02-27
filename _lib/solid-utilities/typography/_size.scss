@@ -1,0 +1,35 @@
+// Text Size
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+
+  &text-1 {
+    font-size: $text-1          !important;
+    line-height: $line-height-1 !important;
+  }
+
+  &text-2 {
+    font-size: $text-2          !important;
+    line-height: $line-height-1 !important;
+  }
+
+  &text-3 {
+    font-size: $text-3          !important;
+    line-height: $line-height-1 !important;
+  }
+
+  &text-4 {
+    font-size: $text-4          !important;
+    line-height: $line-height-2 !important;
+  }
+
+  &text-5 {
+    font-size: $text-5          !important;
+    line-height: $line-height-2 !important;
+  }
+
+  &text-6 {
+    font-size: $text-6          !important;
+    line-height: $line-height-2 !important;
+  }
+}
