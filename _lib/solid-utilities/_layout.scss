@@ -13,21 +13,21 @@
 
 // Margin
 // -------------------------
-@import "layout/margin.scss";
+@import "layout/_margin.scss";
 
 // Padding
 // -------------------------
-@import "layout/padding.scss";
+@import "layout/_padding.scss";
 
 // Positioning
 // -------------------------
-@import "layout/positioning.scss";
-@import "layout/absolute-positioning.scss";
+@import "layout/_positioning.scss";
+@import "layout/_absolute-positioning.scss";
 
 // Vertical Align
 // -------------------------
-@import "layout/vertical-align";
+@import "layout/_vertical-align.scss";
 
 // Helpers
 // -------------------------
-@import "layout/helpers";
+@import "layout/_helpers.scss";
