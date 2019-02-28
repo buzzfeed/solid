@@ -1,0 +1,9 @@
+.clearfix:before,
+%clearfix:before,
+.clearfix:after,
+%clearfix:after {
+  content: " "   !important;
+  display: table !important;
+}
+
+.clearfix:after { clear: both !important; }

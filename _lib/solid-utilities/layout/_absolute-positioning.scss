@@ -1,0 +1,36 @@
+@include generate-breakpoint-prefixes {
+  &t05 { top:    $space-05 !important; }
+  &r05 { right:  $space-05 !important; }
+  &b05 { bottom: $space-05 !important; }
+  &l05 { left:   $space-05 !important; }
+
+  &t1 { top:    $space-1 !important; }
+  &r1 { right:  $space-1 !important; }
+  &b1 { bottom: $space-1 !important; }
+  &l1 { left:   $space-1 !important; }
+
+  &t2 { top:    $space-2 !important; }
+  &r2 { right:  $space-2 !important; }
+  &b2 { bottom: $space-2 !important; }
+  &l2 { left:   $space-2 !important; }
+
+  &t3 { top:    $space-3 !important; }
+  &r3 { right:  $space-3 !important; }
+  &b3 { bottom: $space-3 !important; }
+  &l3 { left:   $space-3 !important; }
+
+  &t4 { top:    $space-4 !important; }
+  &r4 { right:  $space-4 !important; }
+  &b4 { bottom: $space-4 !important; }
+  &l4 { left:   $space-4 !important; }
+
+  &t5 { top:    $space-5 !important; }
+  &r5 { right:  $space-5 !important; }
+  &b5 { bottom: $space-5 !important; }
+  &l5 { left:   $space-5 !important; }
+
+  &t6 { top:    $space-6 !important; }
+  &r6 { right:  $space-6 !important; }
+  &b6 { bottom: $space-6 !important; }
+  &l6 { left:   $space-6 !important; }
+}

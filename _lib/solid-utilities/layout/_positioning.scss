@@ -1,0 +1,16 @@
+@include generate-breakpoint-prefixes {
+  &relative { position: relative !important; }
+  &absolute { position: absolute !important; }
+  &fixed    { position: fixed    !important; }
+  &static   { position: static   !important; }
+
+  &z1 { z-index: $z1 !important; }
+  &z2 { z-index: $z2 !important; }
+  &z3 { z-index: $z3 !important; }
+  &z4 { z-index: $z4 !important; }
+
+  &t0 { top:    0 !important; }
+  &r0 { right:  0 !important; }
+  &b0 { bottom: 0 !important; }
+  &l0 { left:   0 !important; }
+}

@@ -1,0 +1,20 @@
+// Text Alignment + Responsive Prefixes
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+  &text-left    { text-align: left    !important; }
+  &text-center  { text-align: center  !important; }
+  &text-right   { text-align: right   !important; }
+  &text-justify { text-align: justify !important; }
+}
+
+.nowrap { white-space: nowrap !important; }
+.truncate {
+  white-space:   nowrap   !important;
+  overflow:      hidden   !important;
+  text-overflow: ellipsis !important;
+}
+
+.decoration-none         { text-decoration: none         !important; }
+.decoration-underline    { text-decoration: underline    !important; }
+.decoration-line-through { text-decoration: line-through !important; }

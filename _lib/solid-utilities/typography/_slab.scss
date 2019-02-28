@@ -1,0 +1,33 @@
+// Typeface Classes
+// -------------------------
+.slab {
+  font-family: $slab !important;
+  line-height: 1.1   !important;
+  // Needed b/c chrome still needs prefix
+  // scss-lint:disable VendorPrefix
+  -webkit-font-feature-settings: "liga", "kern" !important;
+  font-feature-settings:         "liga", "kern" !important;
+  @include font-smoothing;
+  &.bold {
+    font-family: $slab    !important; // This is included to override faux-italics applied by browsers
+    font-weight: $regular !important; // This is included to override faux-bold applied by browsers
+  }
+
+  &.italic { font-family: $slab !important; }
+}
+
+// Slab should never be an h6 or .type-6
+.text-6 .slab,
+.slab.text-6 {
+  font-family: $sans    !important;
+  font-weight: $regular !important;
+}
+
+// Caponi Specific Line-Height Per Font-Size
+.text-1.slab,
+.text-2.slab,
+.text-3.slab,
+.text-4.slab,
+.text-5.slab {
+  line-height: 1.1 !important;
+}

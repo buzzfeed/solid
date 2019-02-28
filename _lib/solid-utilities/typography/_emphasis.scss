@@ -1,0 +1,10 @@
+// Typography Emphasis and Styling
+// -------------------------
+
+.regular,
+.normal { font-weight:    $regular  !important; }
+
+.bold   { font-weight:    $bold     !important; }
+.xbold  { font-weight:    $xbold    !important; }
+.italic { font-style:     italic    !important; }
+.caps   { text-transform: uppercase !important; }
