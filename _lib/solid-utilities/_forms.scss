@@ -10,15 +10,15 @@
 
 @mixin option-input-style {
   &:before {
-    content: ""                   !important;
-    display: inline-block         !important;
-    width: .75rem                 !important;
-    height: .75rem                !important;
-    margin-right: .375rem         !important;
-    position: relative            !important;
-    bottom: -1px                  !important;
-    background-color: $fill-white !important;
-    border: $border               !important;
+    content: ""                         !important;
+    display: inline-block               !important;
+    width: .75rem                       !important;
+    height: .75rem                      !important;
+    margin-right: .375rem               !important;
+    position: relative                  !important;
+    bottom: -1px                        !important;
+    background-color: $fill-white       !important;
+    border: 1px solid $fill-gray-light  !important;
   }
 }
 
@@ -28,13 +28,13 @@
 .textarea--small,
 .select,
 .select--small {
-  font-family: inherit           !important;
-  background: $fill-white        !important;
-  font-size: $text-4             !important;
-  line-height: $line-height-form !important;
-  padding: .5rem .75rem          !important;
-  border: $border                !important;
-  border-radius: $border-radius  !important;
+  font-family: inherit                !important;
+  background: $fill-white             !important;
+  font-size: $text-4                  !important;
+  line-height: $line-height-form      !important;
+  padding: .5rem .75rem               !important;
+  border: 1px solid $fill-gray-light  !important;
+  border-radius: $border-radius       !important;
 
   &:disabled {
     opacity: $opacity-disabled   !important;
