@@ -67,6 +67,7 @@
   &.button--secondary {
     border-color: $fill-color;
     color: $secondary-text-color;
+    background-color: none;
   }
 
   //only have hover styles if button is not disabled
@@ -109,10 +110,6 @@
   }
 
   @include button-style($fill-blue, $text-white);
-}
-
-.button--secondary {
-  background: none;
 }
 
 // Colored Buttons
