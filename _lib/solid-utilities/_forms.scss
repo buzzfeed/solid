@@ -143,6 +143,11 @@ select::-ms-expand,
   border-style: none                           !important;
  }
 
+  input:focus + label::before {
+    box-shadow: 0 0 0px 2px $highlight-outline                           !important;
+  }
+
+
 // labels, etc
 // -------------------------
 
