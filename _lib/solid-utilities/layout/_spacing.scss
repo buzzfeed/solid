@@ -1,0 +1,20 @@
+
+// Spacing
+// -------------------------
+
+@include generate-breakpoint-prefixes {
+  $sizes: ("0": 0, "05": $space-05, "1": $space-1, "2": $space-2, "3": $space-3, "4": $space-4, "5": $space-5, "6": $space-6);
+  $properties: ("m": "margin", "p": "padding");
+
+  @each $propPrefix, $property in $properties {
+    @each $name, $size in $sizes {
+      &#{$propPrefix}#{$name}                            { #{$property}: $size        !important; } // m0
+      &#{$propPrefix}t#{$name}, &#{$propPrefix}y#{$name} { #{$property}-top: $size    !important; } // mt0, my0
+      &#{$propPrefix}r#{$name}, &#{$propPrefix}x#{$name} { #{$property}-right: $size  !important; } // mr0, mx0
+      &#{$propPrefix}b#{$name}, &#{$propPrefix}y#{$name} { #{$property}-bottom: $size !important; } // mb0, my0
+      &#{$propPrefix}l#{$name}, &#{$propPrefix}x#{$name} { #{$property}-left: $size   !important; } // ml0, mx0
+    }
+  }
+
+  &mx-auto { margin-left: auto !important; margin-right: auto !important; }
+}
