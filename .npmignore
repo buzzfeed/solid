@@ -1,10 +1,18 @@
-#ignore all base files
-/*
+# Development files
+node_modules/
+.git/
+.github/
+.vscode/
+*.log
+.DS_Store
 
-#except for...
-!_lib
-!release-notes
-!dist
+# Documentation (use files field in package.json instead)
+DEVELOPING.md
+CONTRIBUTING.md
 
-#don't include solid specific
-lib/solid-specific.scss
+# Keep these
+!dist/
+!_lib/
+!README.md
+!LICENSE.md
+!package.json

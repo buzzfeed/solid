@@ -4,26 +4,26 @@
 
 // Text Size
 // -------------------------
-@import "typography/_size.scss";
+@forward "typography/_size.scss";
 
 // Typography Emphasis and Styling
 // -------------------------
-@import "typography/_emphasis.scss";
+@forward "typography/_emphasis.scss";
 
 // Text Alignment + Responsive Prefixes
 // -------------------------
-@import "typography/_alignment.scss";
+@forward "typography/_alignment.scss";
 
 // Typeface Classes
 // -------------------------
-@import "typography/_slab.scss";
+@forward "typography/_slab.scss";
 
 // List styles
 // -------------------------
 // Unstyled keeps list items block level,
 // just removes default browser padding and list-style
-@import "typography/_list.scss";
+@forward "typography/_list.scss";
 
 // Link Styles
 // -------------------------
-@import "typography/_link.scss";
+@forward "typography/_link.scss";

@@ -2,6 +2,5 @@
 // Solid Helpers
 // --------------------------------------------------
 
-// imports
-@import "solid-helpers/mixins";
-@import "solid-helpers/variables";
+@forward "solid-helpers/variables";
+@forward "solid-helpers/mixins";

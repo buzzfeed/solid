@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Messaging
 // --------------------------------------------------
@@ -45,7 +48,7 @@
   }
 
   .page-message__icon-close {
-    fill: darken($fill-red-lighter, 20%);
+    fill: color.adjust($fill-red-lighter, $lightness: -20%);
   }
 
   & .page-message__close:hover .page-message__icon-close {
@@ -69,7 +72,7 @@
   }
 
   .page-message__icon-close {
-    fill: darken($fill-green-lighter, 20%);
+    fill: color.adjust($fill-green-lighter, $lightness: -20%);
   }
 
   & .page-message__close:hover .page-message__icon-close {
@@ -84,7 +87,7 @@
 }
 
 .page-message--warning {
-  background-color: lighten($fill-orange, 40%);
+  background-color: color.adjust($fill-orange, $lightness: 40%);
   color: $text-orange;
 
   .page-message__text,
@@ -93,14 +96,14 @@
   }
 
     .page-message__icon-close {
-    fill: lighten($fill-orange, 20%)
+    fill: color.adjust($fill-orange, $lightness: 20%)
     }
 
     & .page-message__close:hover .page-message__icon-close {
       fill: $fill-orange;
     }
   .page-message__icon {
-  fill: lighten($fill-orange, 40%);
+  fill: color.adjust($fill-orange, $lightness: 40%);
   background-color: $fill-orange;
 
   }

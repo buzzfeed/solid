@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Popovers
 // --------------------------------------------------
@@ -62,7 +65,7 @@ $popover-fg-caret-size: .525rem;
   }
 
   &:before {
-    border-right-color: lighten($fill-gray, 20%);
+    border-right-color: color.adjust($fill-gray, $lightness: 20%);
   }
 
   &:after {
@@ -92,7 +95,7 @@ $popover-fg-caret-size: .525rem;
   }
 
   &:before {
-    border-left-color: lighten($fill-gray, 20%);
+    border-left-color: color.adjust($fill-gray, $lightness: 20%);
   }
 
   &:after {
@@ -134,7 +137,7 @@ $popover-fg-caret-size: .525rem;
   }
 
   &:before {
-    border-bottom-color: lighten($fill-gray, 20%);
+    border-bottom-color: color.adjust($fill-gray, $lightness: 20%);
   }
 
   &:after {
@@ -164,7 +167,7 @@ $popover-fg-caret-size: .525rem;
   }
 
   &:before {
-    border-top-color: lighten($fill-gray, 20%);
+    border-top-color: color.adjust($fill-gray, $lightness: 20%);
   }
 
   &:after {

@@ -1,5 +1,5 @@
 //
 // Grid Utility Classes
 // --------------------------------------------------
-@import "grid/_columns.scss";
-@import "grid/_offset.scss";
+@forward "grid/_columns.scss";
+@forward "grid/_offset.scss";

@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Tags
 // --------------------------------------------------
@@ -42,15 +45,15 @@
   margin-left: 1px;
 
   &:hover {
-    fill: darken($fill-gray, 40%);
+    fill: color.adjust($fill-gray, $lightness: -40%);
   }
 }
 
 .tag__delete {
-	padding: 0 .3125rem;
-		&:hover {
-	  	.tag__delete-icon {
-	    	fill: darken($fill-gray, 40%);
-	  	}
-		}
+  padding: 0 .3125rem;
+    &:hover {
+      .tag__delete-icon {
+        fill: color.adjust($fill-gray, $lightness: -40%);
+      }
+    }
 }

@@ -9,25 +9,25 @@
 
 // Display
 // -------------------------
-@import "layout/_display.scss";
+@forward "layout/_display.scss";
 
 // Margin
 // -------------------------
-@import "layout/_margin.scss";
+@forward "layout/_margin.scss";
 
 // Padding
 // -------------------------
-@import "layout/_padding.scss";
+@forward "layout/_padding.scss";
 
 // Positioning
 // -------------------------
-@import "layout/_positioning.scss";
-@import "layout/_absolute-positioning.scss";
+@forward "layout/_positioning.scss";
+@forward "layout/_absolute-positioning.scss";
 
 // Vertical Align
 // -------------------------
-@import "layout/_vertical-align.scss";
+@forward "layout/_vertical-align.scss";
 
 // Helpers
 // -------------------------
-@import "layout/_helpers.scss";
+@forward "layout/_helpers.scss";
