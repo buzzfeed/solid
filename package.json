@@ -2,7 +2,6 @@
   "name": "bf-solid",
   "version": "3.0.0",
   "description": "Solid CSS Styling - BuzzFeed's functional CSS framework",
-  "type": "module",
   "main": "dist/solid.latest.css",
   "style": "dist/solid.latest.css",
   "exports": {
@@ -29,7 +28,7 @@
     "compress": "cd dist && tar -czf solid.$npm_package_version.tar.gz *.css",
     "build": "npm run clean && npm run sass:compile && npm run css:minify && npm run copy:latest && npm run compress",
     "dev": "sass _lib/solid.scss dist/solid.$npm_package_version.css --watch",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint:scss": "sass _lib/solid.scss --no-source-map --no-color 2>&1 | grep -v 'Compiled' || true"
   },
   "keywords": [

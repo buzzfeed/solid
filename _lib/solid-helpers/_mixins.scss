@@ -26,7 +26,7 @@ $breakpoints: (
 // for the given breakpoint name
 @mixin solid-breakpoint ($breakpoint) {
     @if (map.has-key($breakpoints, $breakpoint) != true) {
-      @error "Solid breakpoint mixin requires a valid Solid breakpoint";
+      @error "solid-breakpoint mixin requires a valid Solid breakpoint";
     }
     @else if(map.get($breakpoints, $breakpoint)) == null {
       @content;
