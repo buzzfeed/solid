@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Typography Base Styles
 // --------------------------------------------------
@@ -18,12 +21,12 @@ h1 {
   line-height: $line-height-1;
 }
 
-h2 { 
+h2 {
   font-size:   $text-2;
   line-height: $line-height-1;
 }
 
-h3 { 
+h3 {
   font-size:   $text-3;
   line-height: $line-height-1;
 }
@@ -33,12 +36,12 @@ h4 {
   line-height: $line-height-2;
 }
 
-h5 { 
+h5 {
   font-size:   $text-5;
   line-height: $line-height-2;
 }
 
-h6 { 
+h6 {
   font-size:   $text-6;
   line-height: $line-height-2;
 }
@@ -48,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-// Caponi should never be an h6 or .type-6, 
+// Caponi should never be an h6 or .type-6,
 // these classes disallow that from happening
 // (type will default to Proxima)
 
@@ -60,16 +63,16 @@ h6.slab {
   font-weight: $regular;
 }
 
-// This is getting the color from $text-blue 
-// instead of $link-blue because $link-blue 
+// This is getting the color from $text-blue
+// instead of $link-blue because $link-blue
 // does not exist as a variable. .link-blue
 // using the $text-blue variable
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: $text-blue;
 
   &:hover {
-    color: darken($text-blue, 20%);
+    color: color.adjust($text-blue, $lightness: -20%);
     transition: color .15s ease 0s;
   }
 }

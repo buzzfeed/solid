@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../../solid-helpers" as *;
+
 // Link Styles
 // -------------------------
 
@@ -8,11 +11,11 @@
     fill: $text-blue !important;
   }
 
-  &:hover { color: darken($text-blue, 20%) !important;
+  &:hover { color: color.adjust($text-blue, $lightness: -20%) !important;
 
     path {
       transition: fill .15s ease 0s;
-      fill: darken($text-blue, 20%) !important;
+      fill: color.adjust($text-blue, $lightness: -20%) !important;
       cursor: pointer;
     }
   }
@@ -59,11 +62,11 @@
     fill: $text-white !important;
   }
 
-  &:hover { color: darken($text-white, 20%) !important;
+  &:hover { color: color.adjust($text-white, $lightness: -20%) !important;
 
     path {
       transition: fill .15s ease 0s;
-      fill: darken($text-white, 20%) !important;
+      fill: color.adjust($text-white, $lightness: -20%) !important;
       cursor: pointer;
     }
   }
@@ -75,40 +78,40 @@
 
 .link-facebook {
   color: $text-facebook !important;
-  &:hover { color: darken($text-facebook, 20%) !important; }
+  &:hover { color: color.adjust($text-facebook, $lightness: -20%) !important; }
 }
 
 .link-twitter {
   color: $text-twitter !important;
-  &:hover { color: darken($text-twitter, 20%) !important; }
+  &:hover { color: color.adjust($text-twitter, $lightness: -20%) !important; }
 }
 
 .link-google {
   color: $text-google !important;
-  &:hover { color: darken($text-google, 20%) !important; }
+  &:hover { color: color.adjust($text-google, $lightness: -20%) !important; }
 }
 
 .link-linkedin {
   color: $text-linkedin !important;
-  &:hover { color: darken($text-linkedin, 20%) !important; }
+  &:hover { color: color.adjust($text-linkedin, $lightness: -20%) !important; }
 }
 
 .link-pinterest {
   color: $text-pinterest !important;
-  &:hover { color: darken($text-pinterest, 20%) !important; }
+  &:hover { color: color.adjust($text-pinterest, $lightness: -20%) !important; }
 }
 
 .link-tumblr {
   color: $text-tumblr !important;
-  &:hover { color: darken($text-tumblr, 20%) !important; }
+  &:hover { color: color.adjust($text-tumblr, $lightness: -20%) !important; }
 }
 
 .link-youtube {
   color: $text-youtube !important;
-  &:hover { color: darken($text-youtube, 20%) !important; }
+  &:hover { color: color.adjust($text-youtube, $lightness: -20%) !important; }
 }
 
 .link-instagram {
   color: $text-instagram !important;
-  &:hover { color: darken($text-instagram, 20%) !important; }
+  &:hover { color: color.adjust($text-instagram, $lightness: -20%) !important; }
 }

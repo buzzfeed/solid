@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "variables" as *;
+
 //
 // Mixins
 // --------------------------------------------------
@@ -22,14 +25,14 @@ $breakpoints: (
 // returns the apropriate media query
 // for the given breakpoint name
 @mixin solid-breakpoint ($breakpoint) {
-    @if (map-has-key($breakpoints, $breakpoint) != true) {
-      @error "Solid-breakpoint media query mixin requires a valid Solid breakpoint";
-    } 
-    @else if(map-get($breakpoints, $breakpoint)) == null {
+    @if (map.has-key($breakpoints, $breakpoint) != true) {
+      @error "solid-breakpoint mixin requires a valid Solid breakpoint";
+    }
+    @else if(map.get($breakpoints, $breakpoint)) == null {
       @content;
-    } 
+    }
     @else {
-      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @media (min-width: #{map.get($breakpoints, $breakpoint)}) {
         @content;
       }
     }
@@ -123,8 +126,8 @@ $breakpoints: (
 
 
 // Font Smoothing
-// This will be enabled automatically when using the .slab class. 
-// You may want to disable it for performance reasons, since these styles will cascade down. 
+// This will be enabled automatically when using the .slab class.
+// You may want to disable it for performance reasons, since these styles will cascade down.
 // https://davidwalsh.name/font-smoothing
 // ------------------------------
 
@@ -141,14 +144,14 @@ $breakpoints: (
 // @TODO Remove in 3.0, renamed to solid-breakpoint above
 
 @mixin media-query($breakpoint) {
-    @if (map-has-key($breakpoints, $breakpoint) != true) {
+    @if (map.has-key($breakpoints, $breakpoint) != true) {
       @error "Media query mixin requires a valid Solid breakpoint";
-    } 
-    @else if(map-get($breakpoints, $breakpoint)) == null {
+    }
+    @else if(map.get($breakpoints, $breakpoint)) == null {
       @content;
-    } 
+    }
     @else {
-      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @media (min-width: #{map.get($breakpoints, $breakpoint)}) {
         @content;
       }
     }

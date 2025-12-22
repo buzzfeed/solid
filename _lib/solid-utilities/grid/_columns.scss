@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "../../solid-helpers" as *;
+
 //
 // Grid Utility Classes
 // --------------------------------------------------
@@ -20,18 +23,18 @@ $gutter: $space-1;
 
 @include generate-breakpoint-prefixes {
 
-  &col-1  { width: percentage(1/12)  !important; }
-  &col-2  { width: percentage(2/12)  !important; }
-  &col-3  { width: percentage(3/12)  !important; }
-  &col-4  { width: percentage(4/12)  !important; }
-  &col-5  { width: percentage(5/12)  !important; }
-  &col-6  { width: percentage(6/12)  !important; }
-  &col-7  { width: percentage(7/12)  !important; }
-  &col-8  { width: percentage(8/12)  !important; }
-  &col-9  { width: percentage(9/12)  !important; }
-  &col-10 { width: percentage(10/12) !important; }
-  &col-11 { width: percentage(11/12) !important; }
-  &col-12 { width: percentage(12/12) !important; }
+  &col-1  { width: math.percentage(math.div(1, 12))  !important; }
+  &col-2  { width: math.percentage(math.div(2, 12))  !important; }
+  &col-3  { width: math.percentage(math.div(3, 12))  !important; }
+  &col-4  { width: math.percentage(math.div(4, 12))  !important; }
+  &col-5  { width: math.percentage(math.div(5, 12))  !important; }
+  &col-6  { width: math.percentage(math.div(6, 12))  !important; }
+  &col-7  { width: math.percentage(math.div(7, 12))  !important; }
+  &col-8  { width: math.percentage(math.div(8, 12))  !important; }
+  &col-9  { width: math.percentage(math.div(9, 12))  !important; }
+  &col-10 { width: math.percentage(math.div(10, 12)) !important; }
+  &col-11 { width: math.percentage(math.div(11, 12)) !important; }
+  &col-12 { width: math.percentage(math.div(12, 12)) !important; }
 
 }
 

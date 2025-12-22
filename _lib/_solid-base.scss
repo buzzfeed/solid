@@ -2,12 +2,8 @@
 // Solid Base
 // --------------------------------------------------
 
-// helpers
-@import "solid-helpers";
-
-// imports
-@import "solid-base/normalize";
-@import "solid-base/base";
-@import "solid-base/typography";
-@import "solid-base/tables";
-@import "solid-base/deprecated";
+@forward "solid-base/normalize";
+@forward "solid-base/base";
+@forward "solid-base/typography";
+@forward "solid-base/tables";
+@forward "solid-base/deprecated";

@@ -1,3 +1,5 @@
+@use "../../solid-helpers" as *;
+
 @include generate-breakpoint-prefixes {
   &relative { position: relative !important; }
   &absolute { position: absolute !important; }

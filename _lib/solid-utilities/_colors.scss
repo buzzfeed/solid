@@ -2,6 +2,6 @@
 // Color Utility Classes
 // --------------------------------------------------
 
-@import "colors/_brand.scss";
-@import "colors/_social-core.scss";
-@import "colors/_social-extra.scss";
+@forward "colors/_brand.scss";
+@forward "colors/_social-core.scss";
+@forward "colors/_social-extra.scss";

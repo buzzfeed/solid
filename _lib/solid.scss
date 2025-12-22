@@ -3,8 +3,7 @@
   solid.buzzfeed.com
 */
 
-
-@import "solid-helpers";
-@import "solid-base";
-@import "solid-utilities";
-@import "solid-components";
+@forward "solid-helpers";
+@forward "solid-base";
+@forward "solid-utilities";
+@forward "solid-components";

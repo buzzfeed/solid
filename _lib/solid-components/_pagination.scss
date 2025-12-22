@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Pagination
 // --------------------------------------------------
@@ -31,7 +34,7 @@
 
     &:active {
       transition: background-color .15s ease 0s;
-      background-color: darken($fill-gray-lighter, 5%);
+      background-color: color.adjust($fill-gray-lighter, $lightness: -5%);
     }
   }
 

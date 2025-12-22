@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../solid-helpers" as *;
+
 //
 // Deprecated SCSS Classes
 // Classes that would cause breaking changes if removed
@@ -60,7 +63,7 @@
   }
 
   .page-message__close-icon {
-    fill: darken($fill-red-lighter, 20%);
+    fill: color.adjust($fill-red-lighter, $lightness: -20%);
   }
 
   & .page-message__close:hover .page-message__close-icon {
@@ -85,7 +88,7 @@
   }
 
   .page-message__close-icon {
-    fill: darken($fill-green-lighter, 20%);
+    fill: color.adjust($fill-green-lighter, $lightness: -20%);
   }
 
   & .page-message__close:hover .page-message__close-icon {
